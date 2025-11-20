@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Qt::Salesforce::getQuote(),GetQuoteFieldsWebService,Main Page,Qt::Quotes::getQuote(),Render Quote PDF,Web Services" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Qt::Salesforce::getQuote() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Qt::Salesforce::getQuote()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Qt::Salesforce::getQuote().html#column-one">navigation</a>, <a href="./Qt::Salesforce::getQuote().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <b>getQuote()</b>
+</p>
+<hr />
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 5%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> <a href="./Qt::Quotes::getQuote().html" title="Qt::Quotes::getQuote()">getQuote()</a> is no longer supported by Catch-e.<br /> You <b><u>must</u></b> use the <a href="GetQuoteFieldsWebService.html" title="GetQuoteFieldsWebService">getQuoteFieldsWebService</a> or <a href="Render_Quote_PDF.html" title="Render Quote PDF">Render Quote PDF</a> API instead.
+</td></tr></table>
+<p><br />
+<b>Synopsis</b>
+</p><p>Generates a lease quote for a new vehicle.<br /><br />
+</p><p>A collection of parameters (listed below) are passed into the web service. These are used to construct a lease quotation related to a salesforce opportunity. A large collection of output fields(1) is returned in XML format.<br /><br />
+</p><p>- A code identifying an existing Catch-e client must be passed in<br />
+- The ID for the related opportunity record is required and is stored on the quote<br />
+- Alpha numeric unique driver identifier is required and a new driver record(2) will be created if a driver bearing the identifier doesn't already exist<br />
+- Driver details can be updated when creating a new quote, contact catch-e for a complete list of fields<br />
+- When creating a second quote for any given opportunity, pass in the parent_quote_id to link the two quote together<br />
+- A default contract type is used when creating the quote, contact Catch-e to modify the default type<br />
+- The redbook list price may be overridden using the approximate_price field<br />
+- The return fields can be limited by specifying the field name in the parameters with the return_ prefix<br /><br />
+</p><p>If a problem occurs a Catch-e error code (listed below) will be returned with the results. If successfully created, the quote PDF can be extracted using the quote download web service.<br /><br />
+</p><p>(1) Contact Catch-e for a complete list<br /><br />
+(2) The driver_surname field is required when creating a new driver record<br /><br />
+</p><p><b>Input Fields</b>
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Query string key </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> variant_code </td><td style="width: 9%"> <div class="center">string</center> </td><td style="width: 65%"> Redbook variant identifier </td><td style="width: 8%"> <center>yes</div>
+</td></tr>
+<tr>
+<td> 2 </td><td> approximate_price </td><td> <div class="center">decimal</center> </td><td> Numeric dollar value </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 3 </td><td> state_registered </td><td> <div class="center">string</center> </td><td> State codes, VIC, NSW, ACT, NT, TAS, WA, SA, QLD.  This value is used to get the default 'Insurance Location' </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 4 </td><td> annual_kilometres </td><td> <div class="center">integer</center> </td><td> Non zero number </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 5 </td><td> lease_period </td><td> <div class="center">integer</center> </td><td> 1 - 60 </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 6 </td><td> annual_salary </td><td> <div class="center">decimal</center> </td><td> Annual gross salary </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 7 </td><td> postcode </td><td> <div class="center">integer</center> </td><td> Valid for given state_registered </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 8</td><td> client_code </td><td> <div class="center">string</center> </td><td> Short text string identifying the client </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 9</td><td> opportunity_id </td><td> <div class="center">string</center> </td><td> Salesforce opportunity id </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 10</td><td> parent_quote_id </td><td> <div class="center">int</center> </td><td> Quote ID to use as the parent of the new quote </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 11</td><td> driver_employee_alias </td><td> <div class="center">string</center> </td><td> Unique reference used to identify this driver </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 12</td><td> driver_surname </td><td> <div class="center">string</center> </td><td> Surname of the driver </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 13</td><td> driver_[field_name]* </td><td> <div class="center">mixed</center> </td><td> Other driver fields that are to be populated, prefixed with 'driver_' </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 14 </td><td> return_[field_name]* </td><td> <div class="center">mixed</center> </td><td> As many of the Field Name(s) as required prefixed with 'return_' </td><td> <center>no</div>
+</td></tr></table>
+<p>* See Field Names below
+</p><p><br />
+<b>Input URL Example</b>
+</p>
+<pre>
+https://yourname.catch-e.net.au/services/qt/salesforce/getQuote/?variant_code=AUDI08PB&amp;approximate_price=36355&amp;state_registered=VIC
+&amp;annual_kilometres=20000&amp;lease_period=36&amp;annual_salary=70000&amp;client_code=ABC&amp;opportunity_id=006O0000001sx9B&amp;driver_employee_alias=PACMAN01
+&amp;driver_surname=Yasin&amp;postcode=3000&amp;return_packageing_benefit=&amp;return_ecm_gross_per_year=
+</pre>
+<p><br />
+<b>Output Fields</b>
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> XML element </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> [field_name]* </td><td style="width: 9%"> <div class="center">mixed</center> </td><td style="width: 65%"> Field names and values </td><td style="width: 8%"> <center>no</div>
+</td></tr></table>
+<p>* See Field Names below
+</p><p><br />
+</p><p><b>Output Example</b>
+</p><p><br />
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;quote&gt;
+</dd></dl>
+<dl><dd><dl><dd>&lt;packageing_benefit&gt;4000&lt;/packageing_benefit&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd>&lt;/quote&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+<b>Error Codes</b>
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_MISSING_FIELD_VARIANT_ID </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_MISSING_FIELD_APPROXIMATE_PRICE </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_MISSING_FIELD_STATE_REGISTERED </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_MISSING_FIELD_ANNUAL_KILOMETRES </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 5 </td><td> CATCH_E_ERROR_MISSING_FIELD_LEASE_PERIOD </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 6 </td><td> CATCH_E_ERROR_MISSING_FIELD_ANNUAL_GROSS_SALARY </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 7 </td><td> CATCH_E_ERROR_VARIANT_CODE_NOT_FOUND </td><td> Input field invalid record not found
+</td></tr>
+<tr>
+<td> 8 </td><td> CATCH_E_ERROR_VARIANT_CODE_NOT_ACTIVE </td><td> Input field invalid record not active
+</td></tr>
+<tr>
+<td> 9 </td><td> CATCH_E_ERROR_APPROXIMATE_PRICE_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 10 </td><td> CATCH_E_ERROR_STATE_REGISTERED_INVALID </td><td> Input field invalid not recognised
+</td></tr>
+<tr>
+<td> 11 </td><td> CATCH_E_ERROR_ANNUAL_KILOMETRES_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 12 </td><td> CATCH_E_ERROR_LEASE_PERIOD_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 13 </td><td> CATCH_E_ERROR_ANNUAL_GROSS_SALARY_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 14 </td><td> CATCH_E_ERROR_BAD_CLIENT_CODE_DEFAULT </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 15 </td><td> CATCH_E_ERROR_BAD_QUOTE_TEMPLATE </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 16 </td><td> CATCH_E_ERROR_BAD_CONTRACT_TYPE_DEFAULT </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 17 </td><td> CATCH_E_ERROR_QUOTE_VALIDATION_FAILED </td><td> Data set up issue. With this Error Code, an additional element will be included called &lt;error_message&gt; given additional details (see example below)
+</td></tr>
+<tr>
+<td> 18 </td><td> CATCH_E_ERROR_MISSING_FIELD_VARIANT_CODE </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 19 </td><td> CATCH_E_ERROR_VARIANT_CODE_NOT_FOUND </td><td> Variant cannot be read
+</td></tr>
+<tr>
+<td> 20 </td><td> CATCH_E_ERROR_VARIANT_CODE_NOT_ACTIVE </td><td> Variant is inactive
+</td></tr>
+<tr>
+<td> 21 </td><td> CATCH_E_ERROR_MISSING_FIELD_CLIENT_CODE </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 22 </td><td> CATCH_E_ERROR_CLIENT_CODE_INVALID </td><td> Client cannot be read
+</td></tr>
+<tr>
+<td> 23 </td><td> CATCH_E_ERROR_MISSING_FIELD_DRIVER_EMPLOYEE_ALIAS </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 24 </td><td> CATCH_E_ERROR_BLANK_FIELD_DRIVER_EMPLOYEE_ALIAS </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 25 </td><td> CATCH_E_ERROR_MISSING_FIELD_DRIVER_SURNAME </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 26 </td><td> CATCH_E_ERROR_BLANK_FIELD_DRIVER_SURNAME </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 27 </td><td> CATCH_E_ERROR_OPPORTUNITY_ID_REQUIRED </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 28 </td><td> CATCH_E_ERROR_PARENT_QUOTE_ID_INVALID </td><td> Quote cannot be read
+</td></tr>
+<tr>
+<td> 29 </td><td> CATCH_E_ERROR_FAILED_CREATING_DRIVER </td><td> Driver record insert failed
+</td></tr>
+<tr>
+<td> 30 </td><td> CATCH_E_ERROR_FAILED_UPDATING_DRIVER </td><td> Driver record update failed
+</td></tr>
+<tr>
+<td> 31 </td><td> CATCH_E_ERROR_DRIVER_WRONG_CLIENT </td><td> Driver assigned to a different client
+</td></tr>
+<tr>
+<td> 32 </td><td> CATCH_E_ERROR_MISSING_FIELD_POSTCODE </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 33 </td><td> CATCH_E_ERROR_POSTCODE_INVALID </td><td> Input field not an int
+</td></tr></table>
+<p><br />
+<b>Error Output Example 1</b>
+</p><p><br />
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_MISSING_FIELD_POSTCODE&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+<b>Error Output Example 2</b>
+</p><p><br />
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_QUOTE_VALIDATION_FAILED&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+&lt;error_message&gt;Validation failed due to the following error(s):
+</p><p><br />
+1. Contract Term(Months) must be between 1 and 60.
+</p><p>2. A valid Insurance Postcode is required!
+</p><p>&lt;/error_message&gt;
+</p><p><br />
+<b>Field Names</b>
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+Please contact <a href="mailto:support@catch-e.com.au" class='external text' title="mailto:support@catch-e.com.au" rel="nofollow">Catch-e support</a> for a list of available fields.
+<tr><td></td></tr></table>
+<div class="printfooter">
+Retrieved from "<a href="./Qt::Salesforce::getQuote().html">https://help.catch-e.net.au/mediawiki/index.php/Qt::Salesforce::getQuote%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Qt::Salesforce::getQuote()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Qt::Salesforce::getQuote().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::getQuote%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.08 secs. -->
+</body></html>

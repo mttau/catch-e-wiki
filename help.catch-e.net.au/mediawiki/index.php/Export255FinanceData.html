@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Export255FinanceData,255 Finance,Job Scheduler,Job Scheduler:Job,Main Page,SYSTEM,Scheduler Job Types" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Export255FinanceData - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Export255FinanceData</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Export255FinanceData.html#column-one">navigation</a>, <a href="Export255FinanceData.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> / <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> &rarr; <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Job Types</a> &rarr; <a href="Scheduler_Job_Types.html#Fleet_Management_.28fm.29" title="Scheduler Job Types">fm</a> | <a href="Scheduler_Job_Types.html#Finance" title="Scheduler Job Types">finance</a> | <strong>export255FinanceData</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Export255FinanceData.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Export255FinanceData.html#Job_Steps"><span class="tocnumber">2</span> <span class="toctext">Job Steps</span></a></li>
+<li class='toclevel-1'><a href="Export255FinanceData.html#Parameters"><span class="tocnumber">3</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="Export255FinanceData.html#Destination"><span class="tocnumber">4</span> <span class="toctext">Destination</span></a></li>
+<li class='toclevel-1'><a href="Export255FinanceData.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This job type creates and puts an XML file as detailed in the <a href="255_Finance.html" title="255 Finance">255 Finance</a> page into the receivers nominated SFTP folder.
+</p><p>Event Code, Deals Partner Code and Destination are all mandatory fields.
+<br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;action=edit&amp;section=2" title="Edit section: Job Steps">edit</a>]</div><a name="Job_Steps"></a><h4>Job Steps</h4>
+<ol><li> File is written and stored in <i>[gb_interface_exports]</i> at 'pending' status.
+</li><li> File is transferred via STFP to the nominated folder and <i>[gb_interface_exports]status_flag</i> is set to 'processsed'
+</li><li> The <i>[fm_contract_events]</i> records used to identify contracts for this file have their <i>[fm_contract_events]completed_flag</i> set to 'yes'
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;action=edit&amp;section=3" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>Once the "Method" 'export255FinanceData' has been selected, the following input parameters will be displayed
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td>Event Code</td><td> Select the relevant event code from the available list. See <a href="255_Finance.html" title="255 Finance">255 Finance</a> for the full set of set-up steps for this process.
+</td></tr>
+<tr>
+<td>Deals Partner Code</td><td> Enter the Deals Partner Code advised by 255 Finance.
+</td></tr>
+<tr>
+<td>Destination</td><td> Drop down list which shows the stored active sftp connections added in <i>gb_dmz_upload_file_destinations</i> table.
+</td></tr>
+<tr>
+<td>Remote Prefix</td><td> 255Finance will advise the text for this field. Format is likely to be MFT_{clientname}
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;action=edit&amp;section=4" title="Edit section: Destination">edit</a>]</div><a name="Destination"></a><h4>Destination</h4>
+<p>For this job to make a successful SFTP transfer, the SFTP access credentials need to be stored in the table <i>gb_dmz_upload_file_destinations</i>.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Field </th><th> Datatype
+</th></tr>
+<tr>
+<td style="width: 12%;"> dmz_upload_file_destination_id </td><td> int(10) unsigned
+</td></tr>
+<tr>
+<td> name </td><td> varchar(50) NOT NULL
+</td></tr>
+<tr>
+<td> type </td><td> ENUM (sftp,s3) NOT NULL
+</td></tr>
+<tr>
+<td> configuration </td><td> BLOB [encrypted]
+</td></tr>
+<tr>
+<td> status_flag </td><td> enum('active','inactive')
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20696) Create 255 Finance Interface. Live dd/08/2020
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:2784-0!1!0!0!!en!2 and timestamp 20251120231613 -->
+<div class="printfooter">
+Retrieved from "<a href="Export255FinanceData.html">https://help.catch-e.net.au/mediawiki/index.php/Export255FinanceData</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Export255FinanceData">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Export255FinanceData.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Export255FinanceData&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.02 secs. -->
+</body></html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Mail Query,Mail Query,Auto Send Emails,Catch-e support,Channels Setup,Clients:Events,Clients:Events:Queries,Contract Event Email,Contracts:Events,Drivers:Events,Drivers:Events:Queries" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Mail Query - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Mail Query</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Mail_Query.html#column-one">navigation</a>, <a href="Mail_Query.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr;   <a href="Scheduler_Job_Types.html#Queries" title="Scheduler Job Types">Method</a> &rarr; <strong>mailQuery</strong> &rarr; <a href="Auto_Send_Emails.html" title="Auto Send Emails">Auto Send Emails</a>  &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> <a href="System_Reports.html" title="System Reports">Send a System Report</a> | <a href="SMS_Setup.html" title="SMS Setup">Send an SMS</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Mail_Query.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class='toclevel-2'><a href="Mail_Query.html#Parameters"><span class="tocnumber">1.1</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-2'><a href="Mail_Query.html#Event_Table"><span class="tocnumber">1.2</span> <span class="toctext">Event Table</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Mail_Query.html#How_it_works"><span class="tocnumber">2</span> <span class="toctext">How it works</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Building_the_Mail_Query"><span class="tocnumber">3</span> <span class="toctext">Building the Mail Query</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Mail_Fields"><span class="tocnumber">4</span> <span class="toctext">Mail Fields</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Recipient_Fields"><span class="tocnumber">5</span> <span class="toctext">Recipient Fields</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Embedded_Fields"><span class="tocnumber">6</span> <span class="toctext">Embedded Fields</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Attachments"><span class="tocnumber">7</span> <span class="toctext">Attachments</span></a>
+<ul>
+<li class='toclevel-2'><a href="Mail_Query.html#Template_Attachments"><span class="tocnumber">7.1</span> <span class="toctext">Template Attachments</span></a>
+<ul>
+<li class='toclevel-3'><a href="Mail_Query.html#Troubleshooting_tips"><span class="tocnumber">7.1.1</span> <span class="toctext">Troubleshooting tips</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Mail_Query.html#Query_Attachments"><span class="tocnumber">7.2</span> <span class="toctext">Query Attachments</span></a>
+<ul>
+<li class='toclevel-3'><a href="Mail_Query.html#Report_file_type"><span class="tocnumber">7.2.1</span> <span class="toctext">Report file type</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Mail_Query.html#Required_parameters"><span class="tocnumber">8</span> <span class="toctext">Required parameters</span></a>
+<ul>
+<li class='toclevel-2'><a href="Mail_Query.html#Contract_Events"><span class="tocnumber">8.1</span> <span class="toctext">Contract Events</span></a></li>
+<li class='toclevel-2'><a href="Mail_Query.html#Driver_Events"><span class="tocnumber">8.2</span> <span class="toctext">Driver Events</span></a></li>
+<li class='toclevel-2'><a href="Mail_Query.html#Client_Events"><span class="tocnumber">8.3</span> <span class="toctext">Client Events</span></a></li>
+<li class='toclevel-2'><a href="Mail_Query.html#Event_Validation"><span class="tocnumber">8.4</span> <span class="toctext">Event Validation</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Mail_Query.html#Mail_Query_for_Channels"><span class="tocnumber">9</span> <span class="toctext">Mail Query for Channels</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#System_Errors"><span class="tocnumber">10</span> <span class="toctext">System Errors</span></a></li>
+<li class='toclevel-1'><a href="Mail_Query.html#Troubleshooting"><span class="tocnumber">11</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="Mail_Query.html#mailQuery_Event_Email_-_created_without_an_email_icon"><span class="tocnumber">11.1</span> <span class="toctext">mailQuery Event Email - created without an email icon</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Mail_Query.html#System_Notes"><span class="tocnumber">12</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>This job type allows you to send an email to multiple drivers, clients or suppliers. This can contain an attached report and an event can also be created to record the email.<br />
+</p><p>The attachment can be configured to deliver any of the standard <a href="System_Reports.html" title="System Reports">system reports</a> available from the <a href="Reports.html" title="Reports">Fleet / Administration / Reports</a> or <a href="Standard_Reports.html" title="Standard Reports">Reporting / Standard Reports</a> menus.<br />
+</p><p>If you have an account set up with an SMS Provider you can use mailQuery to <a href="SMS_Setup.html" title="SMS Setup">send an SMS</a>.
+<br />
+mailQuery is most suitable for executing repetitive, high-volume processes. E.g.
+<br />
+</p>
+<ul><li> You want a set and forget method of sending an emailed report to all your clients once a month.
+</li><li> You want to alert drivers to some key event (vehicle insurance due, vehicle due-off).<br />
+</li><li> You want to notify drivers of an upcoming event e.g. Registration renewal via SMS.<br />
+</li></ul>
+<p>Contact your <a href="Catch-e_support.html#Account_Manager" title="Catch-e support">Catch-e Account Manager</a> if you would like us to set-up a mailQuery for you.
+<br />
+Email attachments may be <a href="Email_Setup.html#Email_Attachments_as_URLs" title="Email Setup">converted to URLs</a> if they exceed your set size limit.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=2" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>Each type of job has different parameters that need to be defined in the <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Scheduler / Job</a> for it to run. Below are the parameters that are used in a mailQuery job.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 12%;"> Query ID</td><td> Input Text, query_id for the required gb_queries record.  Includes a search icon to search queries by Name or Description.
+</td></tr>
+<tr>
+<td>Mail Footer</td><td>Check this to use the stored mail footer text in …
+</td></tr>
+
+
+<tr>
+<td>Attachment Format</td><td>	Choose the required format for the attachment file from '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>', 'Office(xls)', 'Text (csv)' or 'Text (txt)'.
+<p>'<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>' is the default value and saves with an xlsx suffix. Further parameter variables are hidden if this format is chosen. <br />
+<a href="Office(xls)_Format.html" title="Office(xls) Format">'Office(xls)'</a> enables you to  <a href="Office(xls)_Format.html" title="Office(xls) Format">customise</a> the presentation of the generated files. Further parameter variables are hidden if this format is chosen.<br />
+'Text (csv)' generates a text delimited file and uses the CSV, Comma Separated Variable, format.<br />
+'Text (txt)' generates a text delimited file and uses the Text (Tab Delimited) format.<br />
+</p>
+</td></tr>
+<tr>
+<td>Create Event</td><td> It is enable by default if event key fields i.e. 'event_contract_id', 'event_driver_id', or 'event_client_id' is passed in the query. Based on event key defined, it will create an event that stores the email into a Contract, Client or Driver event. If this is un-checked, "Event Table" and "Event Type" are disabled.
+</td></tr>
+<tr>
+<td>Event Table</td><td> Displays the type of event that will be created. <br />
+<p>Field is not editable and shows value based on set-up done in the query. Refer <a href="Mail_Query.html#Event_Table" title="Mail Query">Event Table</a> for set-up details.
+</p>
+</td></tr>
+<tr>
+<td>Event Type</td><td>Select the event you want to create and store the email record against. This is a list of events that belong to the chosen "Event Table".<br />
+<p><b>Note:</b> The contract events 'Accident', 'Cost Centre Change', 'Division Change', 'Driver Change' and 'Location Change' are excluded from the drop down list.  
+</p>
+</td></tr>
+<tr>
+<td><a href="Auto_Send_Emails.html" title="Auto Send Emails">Auto Send Emails</a></td><td>Un-check this if you want to leave the generated emails in 'Pending' status to be reviewed and sent later from the Mail Queue. 'Pending' emails cannot be sent from the events tab. The field is checked by default.
+</td></tr>
+<tr>
+<td><a href="Mail_Limit.html" title="Mail Limit">Mail Limit</a></td><td> Numeric value to set the limit of emails being sent. Default value for this field is 'blank'.
+</td></tr></table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=3" title="Edit section: Event Table">edit</a>]</div><a name="Event_Table"></a><h4>Event Table</h4>
+<p>Event Table is one of the parameters available to set-up the job which shows the event type it will create. It is not editable and set-up is required to be done within the query.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Query attribute </th><th> Display Value </th><th> Comment
+</th></tr>
+<tr>
+<td style="width: 12%;"> event_contract_id</td><td style="width: 20%;"> Contract</td><td> To create contract events.
+</td></tr>
+<tr>
+<td> event_client_id</td><td> Client </td><td> To create client events.
+</td></tr>
+<tr>
+<td> event_driver_id</td><td> Driver </td><td> To create client events.
+</td></tr>
+<tr>
+<td> No event attributes </td><td> Event key not defined in this query </td><td> Event key is missing in the query and require correct set-up before query can be saved/scheduled.
+</td></tr>
+<tr>
+<td> Multiple event attributes </td><td> Multiple event keys in this query! </td><td> Only one type of contract, client or driver events can be created by the job. Correct set-up in query is required before it can be saved/scheduled.
+</td></tr></table>
+<p><br /> <br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=4" title="Edit section: How it works">edit</a>]</div><a name="How_it_works"></a><h3>How it works</h3>
+<p>To create a mailQuery Job, you first need to write a specially formatted <a href="User_Defined_Queries.html" title="User Defined Queries">query</a> called a mail query, and save it in the <i>[gb_queries]</i> table (this is normally done for you by Catch-e staff). You will now be able to select the query from the search list when setting up the job.
+</p><p>The query contains all the information needed to create the email batch, including the contents of the attachment (if required).
+</p><p>When the scheduler runs the job to send the email batch, it also sends an email notification to confirm it has run.  To receive this notification, add your email address in the Mail Recipients section on the Scheduler/Job tab.  The notification can have an exceptions file attached. The exceptions file gives details of warnings or errors from generating the email batch (not errors from the scheduled job itself). There are two cases when an exceptions file can be created:
+<br />
+</p>
+<ol><li> If there are any fatal errors, e.g. one of the mandatory <a href="Mail_Query.html#Mail_Fields" title="">Mail Fields</a> is missing, the exceptions file will contain fatal errors. The mail batch will not be created or sent in this case.
+</li><li> If there are no fatal errors, the exceptions file will contain warnings, e.g. one of the recipients addresses is empty. The mail batch will be created and sent, but skips the ones with warnings.
+</li></ol>
+<p>If you only want to receive the notification when there are errors or warnings, check on <i>Attachment Required</i>.
+</p><p>The next section, Building the Mail Query, describes how to construct the mail query.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=5" title="Edit section: Building the Mail Query">edit</a>]</div><a name="Building_the_Mail_Query"></a><h3>Building the Mail Query</h3>
+<p>Start by creating a normal query that has all the fields you want to send in the attachment, these are known as the <a href="Mail_Query.html#Report_Attachments" title="">Attachment Fields</a>. Don't worry that it comes out in one big set as the Scheduler will split it by client / supplier at run time.
+</p>
+<pre>
+Query
+-----
+SELECT t2.client_id AS client_id, t2.reg_no AS reg_no, t2.contract_start AS contract_start
+FROM fm_clients AS t1, fm_contracts AS t2
+WHERE t1.name LIKE 'L%' AND t2.client_id = t1.client_id
+</pre>
+<p>If you want to attach a supporting file to the email, add a specially named field called <i>_attachment_</i> at the begining of the <a href="Mail_Query.html#Report_Attachments" title="">Attachment Fields</a>, like this:
+</p>
+<pre>
+Query
+-----
+SELECT '' AS _attachment_, t2.client_id AS client_id, t2.reg_no AS reg_no, t2.contract_start AS contract_start
+FROM fm_clients AS t1, fm_contracts AS t2
+WHERE t1.name LIKE 'L%' AND t2.client_id = t1.client_id
+</pre>
+<p>Finally, you need to add the fields used to create the emails, these are known as the <a href="Mail_Query.html#Mail_Fields" title="">Mail Fields</a>. They are added to the SELECT statement <u>before</u> the <i>_attachment_</i> field.  Add any new table joins as required. One of the Mail Fields, called <i>mail_group_by</i>, is used to group the data into individual emails, the scheduler splits the data on this field.  So you must also change the ORDER BY statement to sort by the <i>mail_group_by</i> field first.
+<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> &nbsp;&nbsp;You MUST change the ORDER BY statement to sort by the <i>mail_group_by</i> field first
+</td></tr></table>
+<p><br />
+The SELECT statement now comprises of two 'sections', the <a href="Mail_Query.html#Mail_Fields" title="">Mail Fields</a> to the left of <i>_attachment_</i>, and the <a href="Mail_Query.html#Attachment_Fields" title="">Attachment Fields</a> to the right.
+</p><p>Note 1: the query can contain <a href="User_Defined_Queries.html" title="User Defined Queries">Derived Fields</a> and <a href="Mail_Query.html#Embedded_Fields" title="">Embedded Fields</a>.
+</p><p>Note 2: Store the email details in <i>gb_templates</i> and join the record into the query. This keeps the query down to a manageable size, keeps email details stored in the one table and makes minor edits to the email text easier.
+</p><p>Here is an example that you can try in your Query Browser:
+</p><p><br />
+</p>
+<pre>
+Query
+-----
+SELECT t1.client_code AS 'mail_group_by',
+t1.contact1_email AS recipient_1_to_address, t1.contact1_name AS recipient_1_to_name,
+t3.mail_sender_address AS sender_address, t3.mail_subject AS subject, t3.mail_message AS message, 
+'client_contract_list' as attachment_name,
+'' AS _attachment_,
+t2.client_id AS client_id, t2.reg_no AS reg_no, t2.contract_start AS contract_start
+FROM fm_clients AS t1
+INNER JOIN fm_contracts AS t2 ON t2.client_id = t1.client_id
+INNER JOIN gb_templates AS t3 ON t3.name = 'inventory_report'
+WHERE t1.name LIKE 'L%' 
+ORDER BY mail_group_by ASC
+</pre>
+<p><br />
+Examples of how the output will be displayed is below:
+<br />
+</p>
+<pre>
+Sample Output
+-------------
+Field names:
+
+mail_group_by | sender_address | subject | message | recipient_1_to_address | attachment_name | first_name | _attachment_ |
+client_id | reg_no | contract_start
+
+3 Data rows:
+
+LS3 | support@catch-e.com.au | Contract List | Dear {first_name}, please find attached  your Contract List | pkent@lister.com |
+client_contract_list | Peter |  | 100109 | YSC52S | 2004-03-05
+LS3 | support@catch-e.com.au | Contract List | Dear {first_name}, please find attached  your Contract List | pkent@lister.com |
+client_contract_list | Peter |  | 100123 | ZKX622 | 2004-07-01
+LR1 | support@catch-e.com.au | Contract List | Dear {first_name}, please find attached  your Contract List | jsmith@pos.com.au |
+client_contract_list | Judith |  | 105831 | 1CBR312 | 2005-09-21
+</pre>
+<p>Running this in a mailQuery scheduled job, would generate these two emails:
+</p><p><b>Email 1</b>
+</p>
+<table border="1" cellpadding="0" cellspacing="0">
+
+<tr>
+<td width="100px"> <b>To:</b>
+</td><td>pkent@lister.com
+</td></tr>
+<tr>
+<td><b>Sender</b>
+</td><td>support@catch-e.com.au
+</td></tr>
+<tr>
+<td><b>Subject</b>
+</td><td> Contract List
+</td></tr>
+<tr>
+<td><b>Message</b>
+</td><td>Dear Peter, please find attached  your Contract List
+</td></tr>
+<tr>
+<td> <b>Attachment</b>
+</td><td><b>Name: </b>client_contract_list.csv<br /><b>Contents:</b><br />100109, YSC52S, 2004-03-05<br />100123, ZKX622, 2004-07-01<br />
+</td></tr></table>
+<p><br />
+<b>Email 2</b>
+</p>
+<table border="1" cellpadding="0" cellspacing="0">
+
+<tr>
+<td width="100px"> <b>To:</b>
+</td><td>jsmith@pos.com.au
+</td></tr>
+<tr>
+<td><b>Sender</b>
+</td><td>support@catch-e.com.au
+</td></tr>
+<tr>
+<td><b>Subject</b>
+</td><td> Contract List
+</td></tr>
+<tr>
+<td><b>Message</b>
+</td><td>Dear Judith, please find attached  your Contract List
+</td></tr>
+<tr>
+<td> <b>Attachment</b>
+</td><td><b>Name: </b>client_contract_list.csv<br /><b>Contents:</b><br />105831, 1CBR312, 2005-09-21
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=6" title="Edit section: Mail Fields">edit</a>]</div><a name="Mail_Fields"></a><h3>Mail Fields</h3>
+<p>These are the fields to the left of the <i>_attachment_</i> field in the SELECT statement of your query. They are used to create each email in the batch.  The <i>mail_group_flag</i> field determines when the next email has been reached.
+</p><p>Most of these fields are manadatory.
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Name </th><th> Type </th><th> From Example </th><th> Description
+</th></tr>
+<tr>
+<td width="15%" align="left">mail_group_by</td><td width="10%" align="left">Mandatory</td><td width="20%" align="left">LRS</td><td width="55%" align="left">A change in value here, determines when the next email has been reached.
+</td></tr>
+<tr>
+<td>sender_address</td><td>Mandatory</td><td>support@catch-e.com.au </td><td>Addess of sender (you).
+</td></tr>
+<tr>
+<td>sender_name</td><td>Optional</td><td>  </td><td>Name of sender.
+</td></tr>
+<tr>
+<td>subject</td><td>Mandatory</td><td>Contract List</td><td>Subject.
+</td></tr>
+<tr>
+<td>message</td><td>Mandatory</td><td>Dear {first_name}, please... </td><td>Message. Note: This example contains the <a href="Mail_Query.html#Embedded_Fields" title="">Embedded Field</a> {first_name} or alternatively #first_name#.
+</td></tr>
+<tr>
+<td>message_format</td><td>Optional</td><td> 'text' </td><td>Message format can be either 'text' or 'html', defaults to 'text'
+</td></tr>
+<tr>
+<td>attachment_name</td><td>Mandatory <br /> (if _attachment_ is in use)</td><td>client_contract_list</td><td>File name of the attachment. You can use the same attachment name for all reports, E.g. 'client_contract_list' as attachment_name.<br />Alternatively, you can use a field reference as the attachment name E.g. t1.reg_no as attachment_name.<br />This could be concatenated to be more descriptive. E.g. CONCAT('Your Reg ',t1.reg_no) as attachment_name.
+</td></tr>
+<tr>
+<td>recipient_1_to_address </td><td>Mandatory</td><td>client_contract_list</td><td>Address of the recipient. There has to be a minimum of one recipient. See the <b>Recipient Fields</b> section below for more details.
+</td></tr>
+<tr>
+<td>reply_to_address</td><td>Optional</td><td> </td><td>Alternative reply to address, if not set will reply to sender_address. This feature is currently disabled (Ref:3676)
+</td></tr>
+<tr>
+<td>reply_to_name</td><td>Optional</td><td> </td><td>Alternative reply to name. This feature is currently disabled (Ref:3676)
+</td></tr></table>
+<p>Note: Standard footer text is automatically added to the end of the <i>message</i>, unless you turn off the <i>Mail Footer?</i> checkbox parameter when setting up the Job.  See <a href="Mail_Query.html#Attachment_Fields" title="">Attachment Fields</a> below.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=7" title="Edit section: Recipient Fields">edit</a>]</div><a name="Recipient_Fields"></a><h3>Recipient Fields</h3>
+<p>You can have as many recipients as you like. Each recipient is given a number and must contain the 'address' field.
+</p><p>Here is the standard layout for a recipient field:
+</p><p>recipient_#_XX_FFFFFF
+</p><p>Where:
+</p>
+<table border="0" cellpadding="0" cellspacing="0">
+
+<tr>
+<td width="60px"> #
+</td><td> Recipient number 1, 2, 3 ...
+</td></tr>
+<tr>
+<td>XX
+</td><td>Recipeint type To:, Cc:, Bcc: - use lower case with no colon i.e. to, cc, or bcc
+</td></tr>
+<tr>
+<td>FFFFFF
+</td><td>Field name can be 'address', 'name', 'receipt_flag'
+</td></tr></table>
+<p>Example:
+</p>
+<pre>
+SELECT t1.contact1_email AS recipient_1_to_address, t1.contact1_name AS recipient_1_to_name, 'yes' AS recipient_1_to_receipt_flag,
+t1.contact2_email AS recipient_2_cc_address, 'no' AS recipient_2_cc_receipt_flag ...
+</pre>
+<p>This would generate one To: recipient, e.g. "Gray Quinn"&lt;gray.quinn@catch-e.com.au&gt; with a read receipt prompt, and one Cc: recipient &lt;ian.rawlings@catch-e.com.au&gt; without a read receipt prompt.
+</p><p><a href="./Image:Info.png.html" class="image" title="Image:info.png"><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="Image:info.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> If you are using a <i>message_format</i> of 'html', you might find it easier to create a gb_templates record and get the <i>message</i> from there.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=8" title="Edit section: Embedded Fields">edit</a>]</div><a name="Embedded_Fields"></a><h3>Embedded Fields</h3>
+<p>Embedded fields are used to add dynamic content to the email <i>subject</i> and <i>message</i> fields.  For example, instead of beginning the email message "Dear Sir," you might want to personalise it with "Dear Judith," where "Judith" comes from the <i>given_name</i> field from <i>fm_drivers</i>.
+</p><p>To do this you must first add the <i>given_name</i> field to your SELECT statement e.g.:
+</p>
+<pre>
+SELECT ... t1.given_name AS first_name, ...
+</pre>
+<p>This <i>MUST</i> be placed to the left of the <i>_attachment_</i> field.
+</p><p>Now you can embed the field into the <i>message</i> field as follows:
+</p>
+<pre>
+SELECT ... 'Dear {first_name}, please find attached  your Contract List' AS message, ...
+</pre>
+<p><a href="./Image:Info.png.html" class="image" title="Image:info.png"><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="Image:info.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> You can also use the hash character for field delimiters e.g. #first_name#
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=9" title="Edit section: Attachments">edit</a>]</div><a name="Attachments"></a><h3>Attachments</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=10" title="Edit section: Template Attachments">edit</a>]</div><a name="Template_Attachments"></a><h4>Template Attachments</h4>
+<p>Attachments can be added to a mailQuery by adding a field called <i>template_id_attachments</i> to the selection query.
+Point this field to the <i>[gb_templates]template_id</i> record that's being used to deliver the email sender and content details.
+</p>
+<pre>
+[gb_templates]template_id AS template_id_attachments,
+</pre>
+<p>The template attachments should be set-up like other system emails, which means creating a <i>[gb_template_attachments]</i> record for each required attachment and linking it to the <i>[gb_templates]</i> record being used in the mailQuery.<br />
+</p><p>Attached files can be viewed anytime from the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> "Batch-Item" email pop-up.<br />
+If an event was also created, the template attachments can be found in the <a href="./Contracts:Events.html" title="Contracts:Events">Contracts / Events</a> <a href="./Image:Email.gif.html" class="image" title="Image:email.gif"><img src="../../clients/help/wiki/images/6/66/Email.gif" alt="Image:email.gif" width="16" height="16" longdesc="/mediawiki/index.php/Image:Email.gif" /></a> or <a href="./Drivers:Events.html#Field_Descriptions" title="Drivers:Events">Drivers / Events</a> <a href="./Image:Email.gif.html" class="image" title="Image:email.gif"><img src="../../clients/help/wiki/images/6/66/Email.gif" alt="Image:email.gif" width="16" height="16" longdesc="/mediawiki/index.php/Image:Email.gif" /></a> email pop-up for the selected record along with any report attachment that was created.<br /> 
+</p><p>Refer to <a href="Template_Attachments.html" title="Template Attachments">Email Attachments</a> for further general information about template attachments.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=11" title="Edit section: Troubleshooting tips">edit</a>]</div><a name="Troubleshooting_tips"></a><h5>Troubleshooting tips</h5>
+<p>The template attachments are recalled from the location of the stored source file (see xxx). If this source file is changed, the Mail Query or Event record will display the current file, not the one that was sent.
+If the <i>[gb_template_attachments]status_flag</i> is changed to 'inactive' or the attachment location is missing or broken, the email will still send without the template attachment.<br />
+If the scheduler jobs "Auto Send Emails" checkbox is un-checked and emails fail, check the <i>[gb_files]status_flag</i> of the stored source file.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=12" title="Edit section: Query Attachments">edit</a>]</div><a name="Query_Attachments"></a><h4>Query Attachments</h4>
+<p>A mail query can include an attached report. Add in a blank column called <i>_attachment_</i>. 
+The fields that are listed in the query on the right hand side of  <i>_attachment_</i> will be in the report attachment in the order they are listed in the query.<br />
+If you do not want to include a report attachment to the email, simply leave <i>_attachment_</i> off the query.<br />
+</p>
+<pre>
+-- Query attachment fields start here
+  '' AS _attachment_,
+  t3.client_id AS 'Client ID',
+  t1.reg_no AS 'Registration No',
+  DATE_FORMAT(t1.reg_renewal, '%D %M %Y') AS 'Reg Renewal'
+</pre>
+<p>The query attachment can have as many fields as you like. However, <b>all</b> the field names in the query must be unique, including the <a href="Mail_Query.html#Mail_Fields" title="">Mail Fields</a>. If any fields you want in the attachment will be are duplicates of other fields used in the query (E.g. <i>reg_no</i> is a selection column and it's also listed in the query fields), restate one of the columns with an alias to make them unique (e.g. reg_no AS 'Registration No').<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> &nbsp;&nbsp;Also remember that you cannot use the field name <b>record_id</b> as it is a reserved word.
+</td></tr></table>
+<p><br />
+</p><p>Like other emailed attachments, these will be <a href="Email_Setup.html#Email_Attachments_as_URLs" title="Email Setup">converted to URLs</a> if they exceed your set size limit.
+<br />
+</p><p>Report attachments can be viewed anytime from the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> "Batch-Item" email pop-up.<br />
+If an event was also created, the report attachment can be found on the <a href="./Contracts:Events.html" title="Contracts:Events">Contracts / Events</a> <a href="./Image:Email.gif.html" class="image" title="Image:email.gif"><img src="../../clients/help/wiki/images/6/66/Email.gif" alt="Image:email.gif" width="16" height="16" longdesc="/mediawiki/index.php/Image:Email.gif" /></a> , <a href="./Drivers:Events.html#Field_Descriptions" title="Drivers:Events">Drivers / Events</a> <a href="./Image:Email.gif.html" class="image" title="Image:email.gif"><img src="../../clients/help/wiki/images/6/66/Email.gif" alt="Image:email.gif" width="16" height="16" longdesc="/mediawiki/index.php/Image:Email.gif" /></a> or <a href="./Clients:Events.html" title="Clients:Events">Client / Events</a> <a href="./Image:Clip.gif.html" class="image" title="Image:clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt="Image:clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a> email pop-up for the selected record along with any static attachments that were created.<br /> 
+It's also stored and accessible from the <a href="./Contracts:Events.html" title="Contracts:Events">Contracts / Events</a> <a href="./Image:Clip.gif.html" class="image" title="Image:clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt="Image:clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a>,<a href="./Drivers:Events.html#Field_Descriptions" title="Drivers:Events">Drivers / Events</a> <a href="./Image:Clip.gif.html" class="image" title="Image:clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt="Image:clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a>  or <a href="./Clients:Events.html" title="Clients:Events">Client / Events</a> <a href="./Image:Clip.gif.html" class="image" title="Image:clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt="Image:clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a> column  for the selected record.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=13" title="Edit section: Report file type">edit</a>]</div><a name="Report_file_type"></a><h5>Report file type</h5>
+<p>The default file output type is Comma Separated Variable (CSV), though other options are available such as Tab separated.  See the Parameters section below:
+</p><p><a href="./Image:MailQuery_1.png.html" class="image" title="Image:mailQuery_1.png"><img src="../../clients/help/wiki/images/7/75/MailQuery_1.png" alt="Image:mailQuery_1.png" width="667" height="180" longdesc="/mediawiki/index.php/Image:MailQuery_1.png" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=14" title="Edit section: Required parameters">edit</a>]</div><a name="Required_parameters"></a><h3>Required parameters</h3>
+<p>The following parameters included in the mailQuery are required for event creation and should be included to the left of the <i>_attachment_</i> field in the SELECT statement of your query. 
+</p><p>See also <a href="Contract_Event_Email.html" title="Contract Event Email">Contract Event Email</a>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=15" title="Edit section: Contract Events">edit</a>]</div><a name="Contract_Events"></a><h4>Contract Events</h4>
+<p>If you are creating a 'Contract' event, the following values can be configured in your query to populate into new event records created by the job.<br /> 
+Use the "Query Field" below in the query to identify the field you are configuring. If the field is not specified in your query, the "Default Value" will be used.<br />
+If you don't want users to create events like this from the <b>Contracts / Events</b> tab, make sure the <a href="Posting_Classes.html" title="Posting Classes">Posting Classes / Details</a> "System Event" check box is checked.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Query Field </th><th> Type </th><th> Default Value </th><th> Description </th><th> {table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Configurable
+</td></tr>
+<tr>
+<td>event_contract_id</td><td>Mandatory</td><td><i>N/A</i></td><td>The contract id the event should be assigned to </td><td>[fm_contract_events]contract_id
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Value field</td><td>[fm_contract_events]event_value
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td><i>Selected posting class description</i></td><td>Value for the Event Description field</td><td>[fm_contract_events]description
+</td></tr>
+<tr>
+<td>event_amount</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Amount field</td><td>[fm_contract_events]event_amount
+</td></tr>
+<tr>
+<td>event_action_id</td><td>Optional</td><td><i>None</i></td><td>Value for the Event Action field</td><td>[fm_contract_events]contract_event_action_id
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Due Date field</td><td>[fm_contract_events]due_date
+</td></tr>
+<tr>
+<td>event_completed_flag</td><td>Optional</td><td><i>yes</i> (displays as checked)</td><td>Status of the Event Completed field</td><td>[fm_contract_events]completed_flag
+</td></tr>
+<tr>
+<td>event_table_name</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Table Name field</td><td>[fm_contract_events]table_name
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Not Configurable
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>CURDATE()</td><td>When the job is run, the field "Date" will be populated with the system date.</td><td>[fm_contract_events]event_date
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>NULL</td><td>This will be populated if a report attachment is created by the job, otherwise it will be 'NULL'.</td><td>[fm_contract_events]attachment_id
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>100000</td><td>When the job is run, the field "User" is populated with the system user record 'admin'.</td><td>[fm_contract_events]user_id
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=16" title="Edit section: Driver Events">edit</a>]</div><a name="Driver_Events"></a><h4><a href="./Drivers:Events:Queries.html" title="Drivers:Events:Queries">Driver Events</a></h4>
+<p>The following parameters apply if the Event Table "Driver" is selected in the mailQuery job configuration.<br />
+When the mailQuery job is run, the system date is used as the event "Date" for any new record that are created.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Name </th><th> Type </th><th> Default Value </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Configurable
+</td></tr>
+<tr>
+<td>event_driver_id</td><td>Mandatory</td><td>Automatic</td><td>The driver id the event should be assigned to
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td>NULL</td><td>Value for the Event Value field
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td>Selected posting class description</td><td>Value for the Event Description field
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td>NULL</td><td>Value for the Event Due Date field
+</td></tr>
+<tr>
+<td>event_completed_flag</td><td>Optional</td><td>yes</td><td>The default value of 'yes' is populated into this field. This means the "Completed" check box of the event will be checked on creation.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=17" title="Edit section: Client Events">edit</a>]</div><a name="Client_Events"></a><h4> <a href="./Clients:Events:Queries.html" title="Clients:Events:Queries">Client Events</a> </h4>
+<p>The following parameters apply to events if the selected "Event Table" is 'Client' is selected in job configuration.<br />
+When the mailQuery job is run, the system date is used as the event "Date" for any new record that are created.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Name </th><th> Type </th><th> Default Value </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Configurable
+</td></tr>
+<tr>
+<td>event_client_id</td><td>Mandatory</td><td>automatic</td><td>The client id the event should be assigned to
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td>NULL</td><td>Value for the Event Value field
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td>Selected posting class description</td><td>Value for the Event Description field
+</td></tr>
+<tr>
+<td>event_action_id</td><td>Optional</td><td>None</td><td>Value for the Event Action field
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td>NULL</td><td>Value for the Event Due Date field
+</td></tr>
+<tr>
+<td>event_last_edit </td><td>Optional</td><td> </td><td>Last Edit
+</td></tr>
+<tr>
+<td>event_user_id_edit </td><td>Optional</td><td> </td><td>You can over-write this record with a particular user's record, so their name will be displayed in the <a href="./Clients:Events.html" title="Clients:Events">Clients / Events</a> tab and the event will display in their KPI's.
+</td></tr>
+<tr>
+<td>event_completed_flag </td><td>Optional</td><td>yes</td><td>The default value of 'yes' is populated into this field. This means the "Completed" check box of the event will be checked on creation.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Not Configurable
+</td></tr>
+<tr>
+<td>attachment_id</td><td>Not available</td><td>NULL</td><td>This will be populated if a report attachment is created, otherwise it will be 'NULL'.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=18" title="Edit section: Event Validation">edit</a>]</div><a name="Event_Validation"></a><h4>Event Validation</h4>
+<p>The "Event Type" field is blank for new records, if you forget to select this or remove it from an existing job and the "Create Event" check box is selected, the following warning will appear;
+</p>
+<div class="thumb tnone"><div style="width:462px;"><a href="./Image:Mailquery_warning.png.html" class="internal" title=""><img src="../../clients/help/wiki/images/c/c5/Mailquery_warning.png" alt="" width="460" height="324" longdesc="/mediawiki/index.php/Image:Mailquery_warning.png" /></a>  <div class="thumbcaption" ><div class="magnify" style="float:right"><a href="./Image:Mailquery_warning.png.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="Enlarge" /></a></div></div></div></div>
+<p>Scheduler behaviour where ‘Auto send emails’ = ‘OFF’ <br />
+<b>‘Create Event’ flag OFF</b> <br />
+Under this setting, the expectation is the following;
+</p>
+<ul><li>Emails generated from the query are allocated a batch_no,
+</li><li>Sent to the Mail Queue with ‘pending’ status, and
+</li><li>No driver event is created.
+</li></ul>
+<p>It will then be up to the User to select the created batch_no and manually send the emails from the Mail Queue.  Once complete, the status of the batch will be updated to ‘sent’. <br />
+<b>‘Create Event’ flag ON</b> <br />
+Under this setting, the expectation is the following;
+</p>
+<ul><li>Emails generated from the query are allocated a batch_no,
+</li><li>Sent to the Mail Queue with ‘pending’ status, and
+</li><li>One driver event is created with   icon
+</li></ul>
+<p>Email will not be able to be sent from the Drivers/Event tab as it is in ‘pending’ status.  The ‘Send’ option will disappear.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=19" title="Edit section: Mail Query for Channels">edit</a>]</div><a name="Mail_Query_for_Channels"></a><h3><a href="Channels_Setup.html#Emails_-_Scheduler" title="Channels Setup">Mail Query for Channels</a></h3>
+<p>Mail queries can be set up to send channel specific content. The two types of channel specific content are:
+</p>
+<ul><li> Channel specific logo on Office(xls) report attachments
+</li><li> Channel specific content for the subject and body of the email
+</li></ul>
+<p>To use the channel specific logo on an Office(xls) attachment simply include the field <b>[fm_clients]channel_id</b> in the SELECT part of the mail query. To the left of _attachment_ if you don't want this field on the report.
+</p><p>To use channel specific mail content from <a href="Email_Setup.html" title="Email Setup">gb_templates</a> simply include channel_id in the table join to gb_templates.
+<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> &nbsp;&nbsp;If gb_templates records have been set up for channels you MUST include channel_id in the table join otherwise you will get duplicate mail
+</td></tr></table>
+<p><br />
+</p><p>Example:
+</p>
+<pre>
+SELECT
+  t1.contract_id AS mail_group_by,
+  t2.home_email AS recipient_1_to_address,
+  t4.mail_sender_name AS sender_name,
+  t4.mail_sender_address AS sender_address,
+  t4.mail_subject AS subject,
+  t4.mail_message AS message,
+  t4.mail_message_format as message_format,
+  t1.contract_id AS event_contract_id,
+  'Email to driver' as event_description,
+  t1.contract_id,
+  t1.reg_no,
+  t1.description,
+  t2.given_name AS first_name,
+  DATE_FORMAT(t1.reg_renewal, '%D %M %Y') AS 'reg_renewal',
+  t1.contract_id AS contract,
+  t1.reg_no AS registration,
+  t1.description AS contract_description,
+  t2.given_name,
+  
+-- Note: Assuming the template_id is itself linked to gb_template_attachments, those fixed attachments will be included in the outgoing email
+  t4.template_id as template_id_attachments,
+
+-- Note: channel_id only needs to be included when an Office(xls) report attachment is being created and you want it to use a channel specific logo
+  t3.channel_id,
+
+-- Note: Each attachment produced by the mailQuery can be named by including attachment_name in the mailQuery. 
+  CONCAT('Your Reg is: ',t1.reg_no) as attachment_name,
+
+-- Report attachment fields start here
+  '' AS _attachment_,
+
+  t3.client_id AS client_id,
+  t1.reg_no AS reg_no,
+  t1.contract_start AS contract_start
+
+FROM fm_contracts AS t1
+INNER JOIN fm_drivers AS t2 ON t2.driver_id = t1.driver_id
+INNER JOIN fm_clients AS t3 ON t3.client_id = t1.client_id
+
+-- Note: channel_id must be included in the join condition if additional gb_templates records exist for channels otherwise the mail will double up
+INNER JOIN gb_templates AS t4 ON t4.name = 'pdf_contract_event_email_message' AND t4.sub_name = 'REGDUE' AND t4.channel_id = t3.channel_id
+
+WHERE t1.reg_renewal=  DATE_ADD(CURDATE(), INTERVAL 45 DAY)
+AND t2.home_email&nbsp;!= ''
+AND (t1.suspend_date = '0000-00-00' OR t1.suspend_date &gt; DATE_ADD(CURDATE(), INTERVAL 45 DAY))
+ORDER BY t2.driver_id ASC;</pre>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=20" title="Edit section: System Errors">edit</a>]</div><a name="System_Errors"></a><h3>System Errors</h3>
+<p>Details about error code and its troubleshooting information.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_EVENT_KEY_NOT_DEFINED </td><td> When the query linked to the job is missing one of the event key fields i.e. 'event_contract_id', 'event_driver_id', or 'event_client_id'
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_EVENT_MULTIPLE_KEYS </td><td> When the query linked to the job contains one more than one of the event key fields i.e. 'event_contract_id', 'event_driver_id', or 'event_client_id'
+</td></tr></table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=21" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h3>Troubleshooting</h3>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:MailQuery:Troubleshooting&amp;action=edit&amp;section=1" title="Template:MailQuery:Troubleshooting">edit</a>]</div><a name="mailQuery_Event_Email_-_created_without_an_email_icon"></a><h5><strong>mailQuery Event Email</strong> - created without an email icon</h5>
+<p>An event email can be created without a corresponding Mail Queue record in the following circumstances
+</p>
+<ol><li> It was created from a mailQuery scheduler job
+</li><li> The recipient_1_to_address in the query is blank.
+</li></ol>
+<p>An email record cannot be created in this situation, because you can't re-send a mailQuery email from an Event tab.<br />
+</p><p>To fix this, check where the required email address comes from and update the source record. (E.g. Client contact, Driver, etc).
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;action=edit&amp;section=22" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 2506: gb::queries::mailQuery(). Live 13/11/2009
+</li><li> 3753: Create mailQuery SQL and scheduled job. Live 21/03/2011
+</li><li> 6989: Update mailquery for event Due Off in 90 Days. Live 29/01/2012
+</li><li> 7061: Allow braces to be used as field delimiters for mail. Live 20/02/2012
+</li><li> 7059: getMailQuery() make attachment optional. Live 15/02/2012
+</li><li> 14039: Change mailQuery default event type to 'blank'. Live 22/08/2016
+</li><li> 14080: Make changes to Bespoke Driver Reports channel aware. Live 12/12/2016
+</li><li> (DEV-16583) Customise mailQuery attached file names. Live 16/02/2018
+</li><li> (DEV-20145) View attachment from contract events screen for mailQuery. Live 21/05/2018
+</li><li> (DEV-20112) Add file attachments to mailQuery jobs. Live 17/06/2019
+</li><li> (DEV-20591) mailQuery enhancements to Driver Events. Live 04/03/2019
+</li><li> (DEV-20220) mailQuery job type - enable 'Pending' status emails. Live 25/05/2019
+</li><li> (DEV-20217) Create a limit for emails that a mailQuery job can send. Live 12/08/2019 
+</li><li> (DEV-20593) mailQuery enhancements to Client Events. Live 21/10/2019
+</li><li> (DEV-20880) Remove extra column called Name from Scheduler mailQuery output. Live 06/11/2019
+</li><li> (DEV-20893) Scheduler - add event_completed_flag field to Driver Events and Client Events create function. Live 09/12/2019
+</li><li> (DEV-21030) mailQuery remove System Event codes from list (A,CC, DIV, Driver &amp; LOC). 14/04/2020
+</li><li> (DEV-21092) Set up Scheduler to send excel attachments as .xlsx. Live 21/07/2020
+</li><li> (DEV-20906) Mail Query event creation enhancement. 05/10/2020
+</li><li>(DEV-21477) MailQuery - Create provision for 'Attachment Format' to allow for '.txt' output. Live 27/09/2021
+</li><li>(DEV-21536) PROPER() function error - Illegal mix of collations.  Live 07/10/2021
+</li><li> (DEV-22292) Missing Column Headings in Generated Reports from Catch-e. Live 11/06/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Mail_Query.html">https://help.catch-e.net.au/mediawiki/index.php/Mail_Query</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Mail_Query">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Mail_Query.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Query&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.27 secs. -->
+</body></html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Standard Reports:FBT Per Vehicle,Contracts:Contract,Contracts:FBT,FBT Reduced Value / Date,Main Page,REPORTING,Standard Reports,Standard Reports:FBT Per Driver" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Standard Reports:FBT Per Vehicle - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Standard Reports:FBT Per Vehicle</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Standard_Reports:FBT_Per_Vehicle.html#column-one">navigation</a>, <a href="./Standard_Reports:FBT_Per_Vehicle.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="REPORTING.html" title="REPORTING">Reporting</a> / <a href="Standard_Reports.html" title="Standard Reports">Standard Reports</a> &rarr; <strong>FBT Per Vehicle</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:FBT_Per_Vehicle&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This report allocates the FBT cost and Reportable Benefit cost sorted by each vehicle, then driver.<br /> Your clients can then easily allocate the reportable benefits for Group Certificate reporting.<br /> The CSV version of this report contains additional fields including "Business Area" which is the contract location field.<br /> See also the companion report <a href="./Standard_Reports:FBT_Per_Driver.html" title="Standard Reports:FBT Per Driver">FBT Per Driver</a>
+<br /><br /> 
+</p><p>It calculates the number of days during the FBT year each driver had use of each vehicle, using the driver changes from the contracts events screen.<br /> Where a driver change event is undated the contract start date is used to calculated the number of days during the first FBT year of the contract.<br /> Where the 3rd Party Start date found on the <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> tab is populated that date is used to calculated the number of days during the first FBT year of the contract. Otherwise the FBT year start date annually of 1st April is used.<br /> If the <a href="./Contracts:FBT.html" title="Contracts:FBT">Contracts / FBT</a> "Benefit Type" = 'statutory', the value recorded in the "<a href="FBT_Reduced_Value_/_Date.html" title="FBT Reduced Value / Date">FBT Reduced Value / Date</a>" field is applied in this report in the 5th FBT year.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:FBT_Per_Vehicle&amp;action=edit&amp;section=2" title="Edit section: Fields included are:">edit</a>]</div><a name="Fields_included_are:"></a><h4>Fields included are:</h4>
+<ul><li>Contract ID
+</li><li>Reg No
+</li><li>State
+</li><li>Division
+</li><li>Business Area
+</li><li>Contract Start
+</li><li>Contract End
+</li><li>Suspend Date
+</li><li>Cost Centre
+</li><li>Description
+</li><li>FBT Benefit Type
+</li><li>Record ID
+</li><li>Event Date
+</li><li>Last Edit
+</li><li>Client Code
+</li><li>Client Name
+</li><li>Client Code Name
+</li><li>Posting Map Code
+</li><li>Client Group Code
+</li><li>Group Name
+</li><li>Driver ID
+</li><li>Driver Name
+</li><li>Employee No
+</li><li>Acct Manager
+</li><li>Filter Date
+</li><li>Fbt Statutory Rate Date (Entered on the Fleet | Administration | Contracts | FBT screen)
+</li><li>Fbt Year Start (April 1st prior to Fbt Year End )
+</li><li>Fbt Year End (March 31st of the 'Year ending' entered on the Report Request Screen)
+</li><li>Fbt Business Use (Business Usage.  Entered on the Fleet | Administration | Contracts | FBT screen)
+</li><li>Operating Benefit Net (Entered as event type ECM on the Contract | Events screen) 
+</li><li>Non Use Days (Entered as event type NON on the Contract | Events screen)
+</li><li>Fbt Days Use (Days Available - Non Use Days)
+</li><li>Days Available (Non Use Days + FBT Days Use)
+</li><li>Statutory Benefit Net (If the Benefit Type entered on the Fleet | Administration | Contracts | FBT screen is 'exempt' then the Statutory Benefit Net is zero.  Otherwise, Fbt Value * Stat Percent * (Fbt Days Use / Fbt Year Days) - Employee Contribution. )
+</li><li>Base Value (If Benefit Type is Statutory then Fbt Value.
+</li></ul>
+<p>If Benefit Type is Operating then Operating Cost.  Operating Cost = Lease Cost + Other Cost.
+Lease Cost = Amount Net + Amount Gst (both from fm_contract_budgets).
+Other Cost = Total Cost + Gst Cost (both fm_contract_budgets). ) 
+</p>
+<ul><li>Stat Percent If Benefit Type is Statutory and Km per year &lt;= Max km, Statutory Rate * 100. If Benefit Type is Operating Fbt Business Use * 100.
+</li><li>Fbt Cost If Benefit Type is Statutory, Actual Benefit * Fbt Type1 Gross Up Factor * Fbt tax rate. If Benefit Type is Operating, Fbt Benefit Net * Fbt Type1 Gross Up Factor * Fbt tax rate		
+</li><li>Benefit Reportable If Benefit Type is Statutory, Actual Benefit * Fbt Type2 Gross Up Factor;
+</li></ul>
+<p>(Actual Benefit is Fbt Value * Stat Percent * (Fbt Days Use / Fbt Year Days) - Employee Contribution.)
+If Benefit Type is Operating, Fbt Benefit Net * Fbt Type2 Gross Up Factor
+(Fbt Benefit Net is (1 - Fbt Business Use) * Operating Cost - Employee Contribution.)
+</p>
+<ul><li>Allocation End
+</li><li>Allocation Start
+</li><li>Allocation Days
+</li><li>Allocation Ecm
+</li><li>Allocation Non Use Days
+</li><li>Allocation Days Percent
+</li><li>Allocation Fbt Cost
+</li><li>Allocation Benefit Reportable
+</li></ul>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:FBT_Per_Vehicle&amp;action=edit&amp;section=3" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 15653: When a quote is 'accepted', the 'event_date' is not populated in the 'Driver Change' event record. Live xx/10/2017
+</li><li> (DEV-21720) FBT Per Driver and FBT Per Vehicle - reports not working. Live 22/08/2022
+</li><li> (DEV-22296) Reports are affected by Client Code Display Issue (Alphanumeric Codes Showing as '0'). Live dd/mm/2025
+</li><li> (DEV-22258) FBT Per Driver Report - contracts excluded when cost_centre field is NULL. Live 13/10/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Standard_Reports:FBT_Per_Vehicle.html">https://help.catch-e.net.au/mediawiki/index.php/Standard_Reports:FBT_Per_Vehicle</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Standard_Reports:FBT_Per_Vehicle">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Standard_Reports:FBT_Per_Vehicle.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:FBT_Per_Vehicle&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.05 secs. -->
+</body></html>

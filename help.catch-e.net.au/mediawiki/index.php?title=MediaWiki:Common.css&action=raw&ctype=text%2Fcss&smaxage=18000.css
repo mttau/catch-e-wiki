@@ -1,0 +1,16 @@
+/*<pre><nowiki>*/
+
+/********************************************************
+ * This page sets up site-specific CSS styles.
+ ********************************************************/
+
+table_normal {
+  background: green;
+  color: blue;
+  border: 1px solid black;
+  padding: 0px;
+  margin : 0px;
+  border-collapse: collapse;
+}
+
+/*</pre></nowiki>*/</pre>

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Derived Fields funds check,Derived Fields,Funds Check,Job Scheduler,Main Page,SYSTEM,User Defined Queries" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Derived Fields funds check - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Derived Fields funds check</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Derived_Fields_funds_check.html#column-one">navigation</a>, <a href="Derived_Fields_funds_check.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> &rarr; <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a> &rarr; <strong>funds_check</strong>
+</p>
+<hr />
+<p>This library is used to show the <a href="Funds_Check.html" title="Funds Check">Funds Check</a> pop up screen fields and values <br /><br />
+</p>
+<pre>
+# library_type standard
+# library_path /lib/PDF
+# library_name funds_check
+</pre>
+<p><br />
+</p><p>The following <b>Input Fields</b> are required as input from your query:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Field </th><th> Source </th><th> Rules
+</th></tr>
+<tr>
+<td width="15%" align="left">contract_id</td><td width="20%" align="left"> [fm_contracts]contract_id </td><td width="65%" align="left"> Mandatory
+</td></tr></table>
+<p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Path </th><th> Library </th><th> Reports that use this library
+</th></tr>
+<tr>
+<td> /lib/PDF </td><td> funds_finance_budget</td><td>Each Category row delivers a placeholder for its Budget amount.
+<p>The <i>[gl_reporting_groups]</i>name is used as the middle section of the placeholder. E.g. finance
+</p>
+</td></tr>
+
+<tr>
+<td> /lib/PDF</td><td>funds_finance_actual</td><td>Placeholder for the category row Actual amount
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_finance_variance</td><td>Placeholder for the category row Variance amount
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_finance_available</td><td>Placeholder for the category row Available amount
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_finance_ posting_class_codes</td><td>A delimited list of posting_class_codes linked to this category stored in <i>[gl_reporting_class_maps]</i>
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_finance_report_budget_as_actual</td><td>Displays the value stored in <i>[gl_reporting_groups]</i> report_budget_as_actual for this category
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_finance_available_to_claim</td><td>Displays the value stored in [gl_reporting_groups]available_to_claim for this category
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_unmapped_budget</td><td>Placeholder for the unmapped Budget amount.
+<p>This will only report a value if there are posting_classes used that are not stored in <i>[gl_reporting_class_maps]</i> and linked to a category
+</p>
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_ unmapped_actual</td><td>Placeholder for the unmapped Actual amount
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_ unmapped_variance</td><td>Placeholder for the unmapped Variance amount
+</td></tr>
+<tr>
+<td> /lib/PDF </td><td>funds_ unmapped_available</td><td>Placeholder for the unmapped Available amount
+</td></tr>
+<tr>
+<td>  /lib/PDF</td><td>funds_ unmapped_posting_class_codes</td><td>A delimited list of <i>posting_class_codes</i> that are not stored in <i>[gl_reporting_class_maps]</i> and linked to a category
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_total_budget</td><td>Total for all Budget amounts
+</td></tr>
+<tr>
+<td> /lib/PDF </td><td>funds_total_actual</td><td>Total for all Actual amounts
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_total_variance</td><td>Total for all Variance amounts
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_total_available</td><td>Total for all Available amounts
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_received</td><td>Funds Received
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_variance</td><td>Funds variance (Received less Expected)
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_available_balance</td><td>Current Funds Balance (incl GST)
+</td></tr>
+<tr>
+<td> /lib/PDF</td><td>funds_actual_balance</td><td>funds_total_variance + funds_variance
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields_funds_check&amp;action=edit&amp;section=1" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li>(DEV-20889) Create Funds Check library for use in the scheduler. Live dd/11/2019
+</li><li>(DEV-21270) Funds Check placeholder #funds_variance# is not rounding properly. Live dd/11/2020
+</li><li>(DEV-21401) Update Funds Check to include all Billings in the Budget column.Live dd/mm/2020
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Derived_Fields_funds_check.html">https://help.catch-e.net.au/mediawiki/index.php/Derived_Fields_funds_check</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Derived_Fields_funds_check">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Derived_Fields_funds_check.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields_funds_check&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.05 secs. -->
+</body></html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Fuel,Account Manager,Administration,FLEET,Global Controls,Main Page,Quotes,Quotes:Contract,Quotes:Lease,Quotes:Vehicle,Reference Data:qt variants" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Fuel - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Fuel</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Fuel.html#column-one">navigation</a>, <a href="Fuel.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a>  &rarr; <a href="./Quotes:Lease.html" title="Quotes:Lease">Lease</a> &rarr; <strong>Fuel (F)</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Fuel.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Fuel.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="Fuel.html#Field_Descriptions"><span class="tocnumber">3</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="Fuel.html#Calculation"><span class="tocnumber">4</span> <span class="toctext">Calculation</span></a></li>
+<li class='toclevel-1'><a href="Fuel.html#Re-calculation_triggers"><span class="tocnumber">5</span> <span class="toctext">Re-calculation triggers</span></a></li>
+<li class='toclevel-1'><a href="Fuel.html#Troubleshooting"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="Fuel.html#Quotes_.2F_Lease_-_Fuel_.28F.29_profile_.22Litres_per_100KM.22_is_not_right"><span class="tocnumber">6.1</span> <span class="toctext">Quotes / Lease - Fuel (F) profile "Litres per 100KM" is not right</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Fuel.html#Set-up"><span class="tocnumber">7</span> <span class="toctext">Set-up</span></a>
+<ul>
+<li class='toclevel-2'><a href="Fuel.html#.5Bgb_controls.5D"><span class="tocnumber">7.1</span> <span class="toctext">[gb_controls]</span></a></li>
+<li class='toclevel-2'><a href="Fuel.html#.5Bqt_fuel_types.5D"><span class="tocnumber">7.2</span> <span class="toctext">[qt_fuel_types]</span></a></li>
+<li class='toclevel-2'><a href="Fuel.html#.5Bqt_variants.5D"><span class="tocnumber">7.3</span> <span class="toctext">[qt_variants]</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>A fuel budget can be calculated in a quote by the system when the required data tables are populated.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Review_fuel_costs.html" title="Review fuel costs">Review fuel costs</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=3" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Include? </td><td> Check Box </td><td> Check to include fuel in the quote. </td><td>
+</td></tr>
+<tr>
+<td> Fuel Type </td><td> Drop List </td><td> Fuel Type will default from the selected variant's stored fuel type.  You can edit this. </td><td> [qt_quote_fuel]fuel_type_id<br />[qt_fuel_types]fuel_name
+</td></tr>
+<tr>
+<td> Cost per Litre<br />Cost per Kwh</td><td> Number </td><td> Cost per Litre (CPL) will calculate when a fuel type is selected.  You can edit this.<br /> If the selected fuel type is 'Electric', the field name "Cost per Kwh" is shown.  </td><td>
+<p>[qt_quote_fuel]cost_per_litre
+</p>
+</td></tr>
+<tr>
+<td> Fuel Usage </td><td> Drop List </td><td> Select the kind of fuel usage this vehicle is expected to have (Combined, Country, Metro).<br /> Each usage has a corresponding Litres per 100KM that reflects the usage and changes the calculated budget accordingly.<br /> Your system has a stored default that is put into new quotes. This can be edited. </td><td>
+</td></tr>
+<tr>
+<td> Litres per 100KM<br />Kwh per 100KM </td><td> Number </td><td> This defaults from the selected variant's stored mileage use. You can edit this.<br /> If the selected fuel type is 'Electric', the field name "Kwh per 100KM" is shown.<br />
+<p>These values come from data imports from either Glasses or RedBook (your vehicle data provider).<br /> Refer to Glasses or RedBook directly if you have any queries about the set values.
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td> Monthly Budget </td><td> Number </td><td> Calculates based on the fuel type, cost and mileage.  You can edit this. </td><td> [qt_quote_budgets]amount_net
+</td></tr>
+<tr>
+<td> Total Budget </td><td> Number </td><td>  </td><td> [qt_quote_budgets]total_amount_net
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=4" title="Edit section: Calculation">edit</a>]</div><a name="Calculation"></a><h4>Calculation</h4>
+<ol><li> Selecting a variant determines which <b>Fuel Type</b> to use.
+</li><li> Selecting a "Delivery State" enables the <b>Cost per Litre</b> to be calculated. This is <i>[qt_fuel_types]fuel_cpl</i> + <i><a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">gb_controls]fuel_cost_adjustment</a></i>
+</li><li> The default or selected <b>Fuel Usage</b> enables the <b>Litres per 100KM</b> to be calculated. This is <i>[qt_variants]fuel_{fuel_usage}</i> + <i><a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">gb_controls]qt_fuel_usage</a></i>.
+</li><li> Selecting the "Annual KMs" enables the <b>Kms</b> to be calculated. 
+</li><li> <b>Total Budget</b> can now be calculated. This is <b>Cost per Litre</b> * <b>Litres per 100KM</b> * <b>	Kms</b>) / 100 
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=5" title="Edit section: Re-calculation triggers">edit</a>]</div><a name="Re-calculation_triggers"></a><h4>Re-calculation triggers</h4>
+<p>The fuel profile selections and costs are re-calculated if you change any of the following fields:<br /> 
+<a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> "Effective Date", "Term(Months)", "Annual KMs" or "Delivery State"<br />
+<a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> "Variant"<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=6" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Fuel:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Fuel:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Fuel_.28F.29_profile_.22Litres_per_100KM.22_is_not_right"></a><h5>Quotes / Lease - <strong>Fuel (F) profile</strong> "Litres per 100KM" is not right</h5>
+<p>The values stored for each variant's fuel usage come from data imports provide by either Glasses or RedBook. These values are not normally altered by Catch-e.<br /> Glasses or RedBook are the original source of this data, so refer to them directly to ask about set values,
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=7" title="Edit section: Set-up">edit</a>]</div><a name="Set-up"></a><h4>Set-up</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=8" title="Edit section: [gb_controls]">edit</a>]</div><a name=".5Bgb_controls.5D"></a><h5>[gb_controls]</h5>
+<p>We recommend you review these controls periodically.<br /> Visit the following process page: <a href="Review_fuel_costs.html" title="Review fuel costs">Review fuel costs</a>
+</p>
+<dl><dd> <i><a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">gb_controls]qt_fuel_usage</a></i> - Use this control to set the default entry for the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quote / Lease</a> <b>Fuel Profile</b> "Fuel Usage" field.
+<dl><dd> This field is used in the vehicle's fuel consumption calculation and thus, the fuel budget. 
+</dd><dd> This can be set as 'combined', 'metro' or 'country'.
+</dd></dl>
+</dd><dd> <i><a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">gb_controls]fuel_cost_adjustment</a></i> - set a scale to adjust the fuel costs up or down for each state.
+<dl><dd> <a href="./Quotes:Contract.html" title="Quotes:Contract">Quote / Contract</a> "Delivery State" is the state that is used to trigger this scaling.
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=9" title="Edit section: [qt_fuel_types]">edit</a>]</div><a name=".5Bqt_fuel_types.5D"></a><h5>[qt_fuel_types]</h5>
+<p>This table stores the costs of each fuel type.<br /> We recommend you review these periodically.<br /> Visit the following process page: <a href="Review_fuel_costs.html" title="Review fuel costs">Review fuel costs</a>
+</p>
+<dl><dd> <i>[qt_fuel_types]fuel_cpl</i> - stores the "Cost per Litre" for each fuel type.
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;action=edit&amp;section=10" title="Edit section: [qt_variants]">edit</a>]</div><a name=".5Bqt_variants.5D"></a><h5>[qt_variants]</h5>
+<p>Go to <b>Setup / Reference Data</b> '<a href="./Reference_Data:qt_variants.html" title="Reference Data:qt variants">qt variants</a>' to review or update the values for selected variants<br /> Contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> if you need to review or change your data process.<br />
+</p><p>These values come from data imports from either Glasses or RedBook (your vehicle data provider) and further updated by linked scheduler queries.<br />
+</p>
+<dl><dd> <i>[qt_variants]fuel_type_translation_id</i> - stores the variant's fuel type. 
+</dd><dd> <i>[qt_variants]fuel_metro</i> - stores the variant's "Litres per 100KM" for metro fuel use. 
+</dd><dd> <i>[qt_variants]fuel_country</i> - stores the variant's "Litres per 100KM" for country fuel use. 
+</dd><dd> <i>[qt_variants]fuel_combined</i> - stores the variant's "Litres per 100KM" for combined fuel use. 
+</dd></dl>
+<p><br /><br />
+</p><div class="printfooter">
+Retrieved from "<a href="Fuel.html">https://help.catch-e.net.au/mediawiki/index.php/Fuel</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Fuel">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Fuel.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fuel&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.09 secs. -->
+</body></html>

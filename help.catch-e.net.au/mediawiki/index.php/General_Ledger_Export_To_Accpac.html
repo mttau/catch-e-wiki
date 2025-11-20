@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="General Ledger Export To Accpac,ACCOUNTS,Global Controls,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>General Ledger Export To Accpac - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">General Ledger Export To Accpac</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="General_Ledger_Export_To_Accpac.html#column-one">navigation</a>, <a href="General_Ledger_Export_To_Accpac.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> / Export Accounts / Accpac / <strong>General Ledger</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Accpac.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Accpac.html#Workflow"><span class="tocnumber">2</span> <span class="toctext">Workflow</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Accpac.html#Interface_File_Specification"><span class="tocnumber">3</span> <span class="toctext">Interface File Specification</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Accpac.html#Sales_Ledger_Interface"><span class="tocnumber">4</span> <span class="toctext">Sales Ledger Interface</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Accpac&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This option is used to export a sales, purchases of journal file to the AccPac external accounts system.
+<br /><br />
+The standard AccPac export files do not require a general journal export because the Sales Ledger export is split by cost code.  Discuss with Catch-e if you require alterations to this method.
+<br /><br />
+Note 20/06/2011 the export files were modified so that PL exports summarised by supplier invoice and gl code, i.e. contract level was removed.  The SL exports were left at exporting at the contract level and may need to be modified if requested by future client users.  As at 20/06/2011 the SL and GL Accpac exports are not used by any clients of Catch-e.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Accpac&amp;action=edit&amp;section=2" title="Edit section: Workflow">edit</a>]</div><a name="Workflow"></a><h4>Workflow</h4>
+<ol><li>Click on the ‘New’ tab 
+</li><li>Select Purchases or Sales from the select box 
+</li><li>Review Control Items and Control Total 
+</li><li>Click ‘Create’ 
+</li><li>Click ‘Export’ 
+</li><li>Save the txt file generated and import into the external accounts system 
+</li><li>Select the Control Type again, Export and Save if both Debits and Credits exist
+</li><li>Click ‘Edit’ 
+</li><li>Update the status from ‘pending’ to ‘exported ok’ 
+</li><li>Add any notes if required. 
+</li></ol>
+<p><br /><br />
+Note that Credit transactions (i.e. the opposite to normal) are generated as separate files to allow exporting to Accpac separately.  There is a single Export ID containing both the debits and credits.<br /><br />
+The system will display 'Control Credits' and 'Control Credits' and an overall control total.  You can select the Debit or Credit file individually using the "Select Control Type" drop down list per batch.
+<br /><br />
+The ‘create’ action flags the relevant transactions as exported and will not be duplicated in any subsequent ‘create’ actions.
+<br /><br />
+</p><p>Copies of exported files can be re-created anytime by using the search icon and selecting the relevant file.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Accpac&amp;action=edit&amp;section=3" title="Edit section: Interface File Specification">edit</a>]</div><a name="Interface_File_Specification"></a><h4>Interface File Specification</h4>
+<p><b>Purchase Ledger:</b><br /><br />
+<b>Header Row:</b><br />
+</p>
+<ol><li> H to denote header row
+</li><li> Vendor Code (refer <a href="Global_Controls.html" title="Global Controls"> Global Control</a> gl.accpac_pl_export_supplier_code nominating field to use)
+</li><li> Invoice No (22chr CapAlphanumeric)
+</li><li> Invoice Date (dd/mm/yyyy)
+</li><li> Invoice Total Amount including GST
+</li><li> PO number (22chr CapAlphanumeric) if any
+</li><li> Order number (22chr CapAlphanumeric) if any
+</li><li> Invoice transaction description (60 characters) if any<br /><br />
+</li></ol>
+<p><b>Detail Row:</b>
+</p>
+<ol><li> D to denote detail row
+</li><li> Expense class code (gl code from contract types)
+</li><li> Ex Tax amount
+</li><li> Tax amount
+</li><li> Purchase Item Tax Class
+</li><li> Expense transaction description including the Supplier Ref from the Contracts/Payments screen (up to 60 characters)
+</li></ol>
+<p><br /><br />
+Purchase Tax Classes are as follows:
+Tax Class Description
+</p>
+<ol><li> Taxable Purchasers
+</li><li> Input Taxed Purchasers
+</li><li> GST Free Purchasers
+</li><li> Capital Taxable Purchasers
+</li><li> Capital Non Taxable Purchasers
+</li></ol>
+<p><br /><br />
+Note detail rows containing GST are forced to have an exact GST amount based on the current GST rate (e.g. 10%).  If a supplier invoice has a non 10% GST amount the detail row is split into 2 rows.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Accpac&amp;action=edit&amp;section=4" title="Edit section: Sales Ledger Interface">edit</a>]</div><a name="Sales_Ledger_Interface"></a><h4>Sales Ledger Interface</h4>
+<p><b>Header Row:</b>
+</p>
+<ol><li> Contract ID, 6 numerics
+</li><li> Invoice No, 22chr CapAlphanumeric
+</li><li> Invoice Date (dd/mm/yyyy)
+</li><li> Invoice Total Amount
+</li></ol>
+<p><b>Detail Row:</b>
+</p>
+<ol><li> Item Category, see list below
+</li><li> Ex Tax amount
+</li><li> Tax amount
+</li><li> Sales Item Tax Class, see list below
+</li><li> Quantity,
+</li><li> Unit billing rate (ex GST)
+</li></ol>
+<p><br /><br />
+Sales Tax Classes are as follows:
+Tax Class Description
+</p>
+<ol><li> Taxable Items
+</li><li> GST Free Items
+</li><li> Input Taxed Items
+</li><li> Capital Taxable Items
+</li><li> Capital Non Taxable Items
+</li></ol>
+<div class="printfooter">
+Retrieved from "<a href="General_Ledger_Export_To_Accpac.html">https://help.catch-e.net.au/mediawiki/index.php/General_Ledger_Export_To_Accpac</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=General_Ledger_Export_To_Accpac">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/General_Ledger_Export_To_Accpac.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Accpac&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.05 secs. -->
+</body></html>

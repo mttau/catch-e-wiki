@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Employees:Item,Accept an item,Activate an item,Add a BPAY Payment Ref to an item,Add a bank account to an item,Add a new Employer,Approvals,Attach,AutoBuildClaims,Catch-e Support,Change the bank account on an item" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Employees:Item - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Employees:Item</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Employees:Item.html#column-one">navigation</a>, <a href="./Employees:Item.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Packaging.html" title="Packaging">Packaging</a> / <a href="Employees.html" title="Employees">Employees</a> &rarr; <a href="./Employees:Header.html" title="Employees:Header">Header</a> &rarr; <a href="./Employees:Contact.html" title="Employees:Contact">Contact</a> | <a href="./Employees:Finances.html" title="Employees:Finances">Finances</a> | <a href="./Employees:Assets_Liabilities.html" title="Employees:Assets Liabilities">Assets &amp; Liabilities</a> | <a href="./Employees:Packages.html" title="Employees:Packages">Current Packages</a> | <strong>Item</strong> | <a href="./Employees:Transactions.html" title="Employees:Transactions">Transactions</a> | <a href="./Employees:Events.html" title="Employees:Events">Events</a> | <a href="./Employees:Contracts.html" title="Employees:Contracts">Contracts</a> | <a href="./Employees:Vehicle_events.html" title="Employees:Vehicle events">Vehicle Events</a> | <a href="./Employees:Vehicle_FBT.html" title="Employees:Vehicle FBT">Vehicle FBT</a> |  <a href="./Employees:Vehicle_maintenance.html" title="Employees:Vehicle maintenance">Vehicle Maintenance</a> | <a href="./Employees:Vehicle_claim.html" title="Employees:Vehicle claim">Vehicle Claim</a> | <a href="./Employees:Password.html" title="Employees:Password">Password</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Employees:Item.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Employees:Item.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Employees:Item.html#Field_Descriptions"><span class="tocnumber">3</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Employees:Item.html#Action_Buttons"><span class="tocnumber">4</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Employees:Item.html#Validations_and_Alerts"><span class="tocnumber">5</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Employees:Item.html#Troubleshooting"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Employees:Item.html#Car_Details_-_unable_to_add_quote_or_contract"><span class="tocnumber">6.1</span> <span class="toctext">Car Details - unable to add quote or contract</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Employees:Item.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Employees:Item&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>User can navigate to this tab by clicking though from the <a href="./Employees:Packages.html" title="Employees:Packages">Employees / Current Packages</a> “Package Item” hyperlink.<br /> The record you clicked on will be displayed.<br />
+</p><p>Visit <a href="./Drivers:Item.html" title="Drivers:Item">Drivers / Item</a> for the <a href="Drivers.html" title="Drivers">driver</a> version of this page.<br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Employees:Item&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<p>Process pages are listed below:<br />
+</p>
+<dl><dd> <a href="Add_a_bank_account_to_an_item.html" title="Add a bank account to an item">Add a bank account to an item</a>
+</dd><dd> <a href="Add_a_BPAY_Payment_Ref_to_an_item.html" title="Add a BPAY Payment Ref to an item">Add a BPAY Payment Ref to an item</a>
+</dd><dd> <a href="Change_the_bank_account_on_an_item.html" title="Change the bank account on an item">Change the bank account on an item</a>
+</dd><dd> <a href="Accept_an_item.html" title="Accept an item">Accept an item</a>
+</dd><dd> <a href="Activate_an_item.html" title="Activate an item">Activate an item</a>
+</dd><dd> <a href="Double_the_first_billing_for_Associate_or_Novated_Leases.html" title="Double the first billing for Associate or Novated Leases">Double the first billing for Associate or Novated Leases</a>
+</dd><dd> <a href="Populating_Vary_Button_for_an_Item_screen.html" title="Populating Vary Button for an Item screen">Populating Vary Button for an Item screen</a>
+</dd><dd> <a href="Suspend_an_item_that_has_not_started.html" title="Suspend an item that has not started">Suspend an item that has not started</a>
+</dd><dd> <a href="Suspend_an_item.html" title="Suspend an item">Suspend an item</a>
+</dd></dl>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Item&amp;action=edit&amp;section=1" title="Template:Item">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Payroll Details
+</td></tr>
+<tr>
+<td><a href="Package_Item.html" title="Package Item">Package Item</a></td><td>List Box </td><td>Displays the name of the package item you are viewing. When creating or editing, this field is a selectable list.<br /> The list box sorts in alphabetical order by “Package Item”. You can select any package item that is available in your system. <br /> On <b>Vary</b>  this field is display only.
+</td><td>[sp_package_items]package_name
+</td></tr>
+<tr>
+<td> Benefit Type </td><td> Text </td><td> This is a read-only field that displays this Package Item’s Benefit Type. This can be ‘Type 1’, ‘Type 2’ or ‘Exempt’
+</td><td>[sp_package_items]benefit_type
+</td></tr>
+<tr>
+<td>Pay Cycle</td><td>Text Display Only</td><td> This is a read-only field that displays the driver’s pay cycle. This is the same display as Employees / Contact “Pay Cycle”.
+<p>The behaviour of this field will change when the Item is linked to a Contract, as described below.
+<br /> On <b>Edit</b> when,
+</p>
+<ul><li> Employee Pay Cycle is the same as Contract Pay Cycle and no option for REG12 has been set up, ‘Pay Cycle’ is not editable.
+</li><li>  Employee Pay Cycle is the same as Contract Pay Cycle and REG12 has been set up, ‘Pay Cycle’ is editable, but will only display the Pay Cycle and related REG12 option.
+</li><li>  Employee Pay Cycle is not the same as Contract Pay Cycle, ‘Pay Cycle’ will be editable offering the Contract Pay Cycle and Driver Pay Cycle with the related REG12 option, where available
+</li></ul>
+<p>On <b>Vary</b> when,<br />
+</p>
+<ul><li>  Employee Pay Cycle is the same as Contract Pay Cycle and no option for REG12 has been set up, ‘Pay Cycle’ is not editable.
+</li><li>  Employee Pay Cycle is the same as Contract Pay Cycle and REG12 has been set up, ‘Pay Cycle’ is editable, but will only display the Pay Cycle and related REG12 option.
+</li><li>  Employee Pay Cycle is not the same as Contract Pay Cycle, ‘Pay Cycle’ will be editable displaying the Contract Pay Cycle and REG12 option, where available
+</li></ul>
+</td><td>[gb_pay_cycles]description
+</td></tr>
+<tr>
+<td>Payroll Date</td><td>	Date</td><td>	This is a read-only field that displays the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> “Payroll Date”
+</td><td>[fm_clients]payroll_date
+</td></tr>
+<tr>
+<td><a href="Packaged_Car_Profile.html" title="Packaged Car Profile">Car Details</a></td><td> Lookup </td><td>If the selected Package Item is for a car benefit, a car profile will determine some of the item’s attributes.
+<p>Depending on the <a href="Packaged_Car_Profile.html" title="Packaged Car Profile">car profile</a> that is configured for the package item, you can look up and link contracts and quotes that match the item’s profile.
+If a contract or quote is linked to this item, you will see the contract or quote status displayed respectively.  <br /> Where the Item is not linked to a car profile, this field will remain hidden.
+The <a href="https://help.catch-e.net.au/clients/help/wiki/images/2/2b/Car_Details_Display.jpg" class='internal' title="Car Details Display.jpg">displayed status</a> is a link to the contract or quote respectively. <br /> A Quote ID and /or Contract ID can only be allocated to an Item once.  Multiple allocations are not possible. <br />
+When related links have been saved, this field will display a hyperlink based on the following logic:
+</p>
+<ol><li> <b>Item has Quote ID linked only</b> - Hyperlink will display Quote Status e.g.: Quote Sent. When selected, the User will be navigated to <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> tab.
+</li><li> <b>Item has Contract ID linked only</b> - Hyperlink will display Contract Status and the Registration Number e.g.: Active (ABC123). When selected, the User will be navigated to <a href="./Contracts:Billing.html" title="Contracts:Billing">Contracts / Billing</a> tab.
+</li><li> <b>Item has both Quote ID and Contract ID linked</b> - Hyperlink will display Contract Status and the Registration Number e.g.: Active (ABC123). When selected, the User will be navigated to <a href="./Contracts:Billing.html" title="Contracts:Billing">Contracts / Billing</a> tab. <br />
+</li></ol>
+<p>This field can be <a href="Screen_Aliases.html" title="Screen Aliases">renamed</a>.
+</p>
+</td><td>[sp_employee_package_item_cars] employee_package_item_car_id
+</td></tr>
+<tr>
+<td>Item ID</td><td>Num</td><td>	This is a read-only field that displays the unique Item ID for this record.
+<p>When a new record is being created, this displays as ‘Supplied on save’ like the <a href="Approvals.html" title="Approvals">Approvals / Approval</a> “Approval ID” field does.
+</p>
+</td><td>[sp_employee_package_items]employee_package_item_id
+</td></tr>
+<tr>
+<td>Description</td><td>	Text </td><td>	Displays and stored the selected Package Item name.
+</td><td>[sp_employee_package_items]description
+</td></tr>
+<tr>
+<td>Tax Method</td><td>	List box</td><td>	When creating a new record, the expected method will default in from <i>[sp_package_items]tax_method</i>, but it can be edited. Choose between
+<p>‘Pre Tax’ and ‘Post Tax’. 
+</p>
+</td><td>[sp_employee_package_items]tax_method
+</td></tr>
+<tr>
+<td>Total Deduction</td><td>	Num</td><td>	Enter the annual amount or the total amount of the expected deductions.
+<p><br /> On Vary, this field will be read-only, however any changes made to the ‘Deduction Per Pay’ value will be re-calculated into this field.<br />
+</p>
+</td><td>[sp_employee_package_items]total_deductions
+</td></tr>
+<tr>
+<td>Employee Contribution</td><td> Num </td><td> The Annual Value of an Employee Contribution to a particular benefit such as a Novated Lease.<br /> This field can be <a href="./Screen_Aliases:Employees.html" title="Screen Aliases:Employees">renamed</a>.
+</td><td>	[sp_employee_package_items]employee_contribution
+</td></tr>
+<tr>
+<td>Compress</td><td>	Check Box</td><td>	Check this if the amount you have entered in the "Total Deductions" field is an annualised amount and you want to to divide this over the remaining pay cycles in the current FBT year. This field can be <a href="Screen_Aliases.html" title="Screen Aliases">renamed</a>.
+</td><td>	[sp_employee_package_items]compress_flag
+</td></tr>
+<tr>
+<td>Inertia	</td><td>Check Box</td><td>	Check this if the item should continue to be deducted and disbursed until further notice. Even though an "End Date" will be entered, this field marks the record to continue. This field has a matching check box in the contract record that will be updated to match when the contract is created. This field can be <a href="Screen_Aliases.html" title="Screen Aliases">renamed</a>.
+</td><td> [sp_employee_package_items]inertia_flag
+</td></tr>
+<tr>
+<td> Cycles </td><td> Number </td><td> Enter the number of times you expect to deduct this item from a payroll. 999 is the maximum number of cycles an item can have.<br /> "Cycles" has a default value in some circumstances:
+<ol><li> If the selected "Package Item" is configured with a cycles default, this will be shown. This number can be changed.
+</li><li> If either the "Compress" or "Inertia" check box is selected, the number of remaining payrolls in the current FBT year will be shown. You can reduce this number, but it cannot be increased.
+</li></ol>
+<p>If both of the conditions above are met, the "Package Item" cycles default will be used, except when;
+</p>
+<dl><dd> it is higher than the number of remaining payrolls in the current FBT year, in which case,
+</dd><dd> the number of remaining payrolls in the current FBT year will be shown<br />
+</dd></dl>
+<p>On Vary the screen name will update from “Cycles” to “Remaining Cycles”.
+The number now displayed for this field represents the number of the remaining pay runs still ‘pending’.
+<br />On Save, ‘Cycles’ will be displayed.<br />
+</p>
+</td><td>[sp_employee_package_items]cycles
+</td></tr>
+<tr>
+<td> Start Date </td><td> Date </td><td>	When a new item is being created, the next available pay run date will be selected by default.<br /> Visit the <a href="Start_Periodic.html" title="Start Periodic">Start Periodic</a> page to see how this the default date is calculated.<br /> If the date should be further into the future - select another date from the available list. A years worth of dates are shown.<br />
+<p>If no date or list is being shown, this means the pay run dates cannot be determined.<br /> This can happen if the client does not have a populated "Payroll Date".<br /> Go to the process page <a href="Add_a_new_Employer.html#Quote_Defaults" title="Add a new Employer">Add a new Employer</a> to check the set-up steps.<br />
+</p><p>When updating the “Status” of an item to ‘Active’, you will be alerted if the selected date is no longer available.<br />
+</p><p>On <b>Vary</b> this field name will show as “Next Date”. This is the next ‘pending’ pay run date.<br /> You can change this by selecting another date from the available list.
+</p>
+</td><td>[sp_employee_package_items] start_date
+</td></tr>
+<tr>
+<td>End Date</td><td>	Date	</td><td>When creating a new record, the “End Date” date will be calculated based on the entered “Cycles” and “Start Date” but can be edited. If you edit an existing record and update either the “Cycles” or “Start Date” value, the “End Date” will be re-calculated.
+<p>This logic is not applied if a record is created or edited in the Current Packages tab, so the “End Date” may not be correct. Changing the “Cycles” or “Start Date” value in the Item tab will trigger a re-calculation  that corrects this date.
+</p>
+</td><td>[sp_employee_package_items]end_date
+</td></tr>
+<tr>
+<td>Deduction Per Pay</td><td>	Num	</td><td>Once the “Total Deductions” and “Cycles” fields are populated, this field will populate with the “Deduction Total” / “Cycles” rounded down to 2 decimal places.E.g. 20,000 / 15 = 1,333.33
+</td><td>[sp_employee_package_items]deduction_per_pay
+</td></tr>
+<tr>
+<td>Status</td><td> Drop List </td><td> When creating a new record, this will default to ‘Quoting’. It can be updated to one of the statuses listed below.<br />
+<p><b>Item</b>
+</p>
+<ul><li> Quoting - this is the default status and indicates the item is being quoted. 
+</li><li> Pending - use this when you expect to proceed with an item, but paperwork remains to be finished.
+</li><li> Expired - the item start date has passed and the item cannot progress with it's current data. Edit the item to refresh the dates and calculations.
+</li><li> Deleted - the item will not be proceeding. Use the <a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a> button to update the item. Deleted items are no longer accessible on screen.
+</li><li> <a href="./Item:Suspended.html" title="Item:Suspended">Suspended</a> - the item will not be proceeding. The item is visible with a pink background on the <a href="./Employees:Packages.html" title="Employees:Packages"> Employees / Current Packages</a> tab.
+</li></ul>
+<p><b>Item with a linked contract</b>
+</p>
+<ul><li> <a href="./Item:Accepted.html" title="Item:Accepted">Accepted</a> - some paperwork remains to be finished. Create the package contract without dates. The Delete button is now disabled.<br /> 
+</li><li> <a href="./Item:Accepted.html" title="Item:Accepted">Active</a> - make the item active and begin processing transactions. The package contract will be created or updated to match. 
+</li><li> <a href="./Item:Suspended.html" title="Item:Suspended">Suspended</a> - the item has finished, or the Employee is leaving. Suspending an item will also suspend the package contract.
+</li></ul>
+<p><b>Item with a linked contract (that has previously been Suspended)</b>
+</p>
+<ul><li> Inactive - can be used to indicate an item where the employee is on leave for some time, but is expected to take up this item again on their return. Catch-e recommends leaving items in 'Suspended' status. Suspended items can be updated to be active again if and when required.
+</li></ul>
+</td><td>[sp_employee_package_items]status_flag
+</td></tr>
+<tr>
+<td>Notes</td><td>	Text</td><td>	Unlimited text notes. If more than 2 lines are stored a message appears when moving the mouse pointer over the text box to alert the user of the additional lines.
+<p>When a Contract is linked to the Item, the saved notes will also be displayed in the Contracts / Contract screen.  Any changes in either field will update both.
+</p>
+</td><td>	[sp_employee_package_items]
+<p>notes
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Disbursement Details
+</td></tr>
+<tr>
+<td>Disbursement Type</td><td>	List box</td><td>	Choose from ‘Claim’, ‘Periodic’ or ‘Recurring’.
+<p>This is blank on creation but must be chosen when saving a record at ‘Active’ status.
+New field
+</p>
+</td><td>[sp_employee_package_items]disbursement_type
+</td></tr>
+<tr>
+<td>Supplier</td><td>	<a href="Lookup_with_Supplier_Type.html" title="Lookup with Supplier Type">Lookup</a></td><td>	Select the supplier that will be paid for this disbursement. The field displays the Supplier Name.
+<p>If the chosen “Disbursement Type” is ‘Claim’, the default reimbursement supplier is populated in and cannot be changed.
+This field enables predictive text and will add the selected supplier. If you enter a supplier name and it does not exist, when you tab off the field you will be asked if you want to create a new supplier. If OK is chosen, you will be navigated to a modal screen called <a href="Create_Supplier.html" title="Create Supplier">Create Supplier</a> to create the desired record. On Save, the id of the new record will be saved here.<br />
+When the Disbursement Type has been entered, a Supplier will need to be selected.
+Where a default Supplier has not been set up, the field will remain blank allowing you to select the required Supplier from the list.  If you are logged in as a Channel user, this will be restricted to Suppliers that only belong to your Channel.
+You can also restrict this field to be read-only.  If this restriction has been set, then you cannot edit the Supplier that has defaulted in.  Ideally this flag will have this restriction applied if a default Supplier has also been set.
+If you enter a supplier name and it does not exist, when you tab off the field you will be asked if you want to create a new supplier. If OK is chosen, you will be navigated to a modal screen called Create Supplier to create the desired record. On Save, the id of the new record will be saved here.
+</p><p><br />
+</p>
+</td><td>[sp_employee_package_items]supplier_id <br />
+<p><i>Default setting</i> <br />
+[sp_package_item_defaults]supplier_id_default <br />
+<i>Read only setting</i> <br />
+[sp_package_item_defaults]supplier_id_edit
+</p>
+</td></tr>
+<tr>
+<td> Reference </td><td> Text </td><td> When the item's <b>Payment Method</b> is 'Direct Credit', enter the reference you want to show in the recipient's bank account here.<br /> If you are paying a supplier and their <b>ABA Format Type</b> field is set as 'Supplier', this field is not used and can be left blank.<br /> See also the <a href="Disbursements_ABA_file.html" title="Disbursements ABA file">Disbursements ABA file</a> page that details the rules used for the 'Reference' field.<br />
+<p>When the item's <b>Payment Method</b> is 'Bpay' enter the BPAY Payment Ref here.<br /> See also the process page <a href="Add_a_BPAY_Payment_Ref_to_an_item.html" title="Add a BPAY Payment Ref to an item">add a BPAY Payment Ref to an item</a>.<br />
+</p><p>Only alpha or numeric characters can be entered. No special characters are allowed. 
+</p>
+</td><td> [sp_employee_package_items]reference
+</td></tr>
+<tr>
+<td> Substantiation Required </td><td> Check Box </td><td> Check this if substantiation is required for the item. If it is un-checked, no substantiation is expected. This check box is intended for use with item's where the “Disbursement Type” is 'Recurring'.<br />
+<p>If "Substantiation" is checked when the item is made 'Active', a substantiation event will be created in the contract at the same time as the contract record is created. Attach your documents to this event.<br /> 
+</p><p>If "Substantiation" is un-checked when the item is made 'Active', you can check the field on, and then <a href="Create_a_substantiation_event.html" title="Create a substantiation event">manually create the event</a>.<br /> 
+</p><p>When the <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> job runs, a range of validation checks are run on each contract.<br /> If the events are not set-up correctly, no claims will be created for disbursement. Each Package Item can be set with a preferred default setting for this field, so it may default as checked, or un-checked. If the item's “Disbursement Type” field is blank or ‘Claim’ has been selected, this field is disabled.
+</p>
+</td><td> [sp_employee_package_items]substantiation_flag
+</td></tr>
+<tr>
+<td>Disbursement Cycle</td><td>List Box</td><td>	Choose the frequency of the disbursements that are required.<br /> This field is only required when the "Disbursement Type" is 'Periodic' and is disabled when it is ‘Claim’ or ‘Recurring’.If the  "Disbursement Type" is ‘Recurring’ and linked to an item can create an approval by scheduler job  <a href="./Sp::approvals:autoBuildClaims().html" title="Sp::approvals:autoBuildClaims()">Sp::approvals:autoBuildClaims()</a>.
+</td><td>[sp_employee_package_items]disbursement_cycle_id links to [sp_disbursements_cycles]disbursement_cycle_id
+</td></tr>
+<tr>
+<td>Number of Disbursements</td><td> Number </td><td> Enter the number of the disbursements that are required. The number must be positive.<br />
+<p>This is blank on creation but must be populated when saving a record at ‘Active’ status and the “Disbursement Type” is ‘Periodic’.<br />
+999 is the maximum number of disbursements an item can have.<br />
+This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’.
+</p>
+</td><td>[sp_employee_package_items]disbursement_periods
+</td></tr>
+<tr>
+<td>1st Disbursement Due</td><td>	Date</td><td>	Enter the first date this disbursement should be made.
+<p>This is blank on creation but must be populated when saving a record at ‘Active’ status and the “Disbursement Type” is ‘Periodic’.<br />
+This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’. This is blank by default. 
+</p>
+</td><td>[sp_employee_package_items]first_disbursement_date
+</td></tr>
+<tr>
+<td>Final Disbursement Due</td><td>	Calc</td><td>	This is a calculated field showing the expected final disbursement date based on the “Number of Disbursements” and the “1st Disbursement Due”.
+<p>This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’. This uses the same logic as Contracts / Payments.
+</p>
+</td><td>	Calculated date
+</td></tr>
+<tr>
+<td>Disbursement Total</td><td>	Num</td><td>	Enter the total amount of the expected disbursement. This will be saved as the net amount (Total – GST) and then calculated to display on the screen. Enter a negative amount if you need to reverse a benefit.
+<p>This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’.	
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td>Disbursement GST</td><td>Num</td><td>	Enter the gst amount of the expected disbursement.
+<p>This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’.
+</p>
+</td><td>[sp_employee_package_items]disbursement_amount_gst
+</td></tr>
+<tr>
+<td>Disbursement Net</td><td>Calc</td><td>This is the amount that will be saves as net.
+<p>(Total – GST)
+This field is disabled when the “Disbursement Type” is ‘Claim’ or ‘Recurring’. 
+</p>
+</td><td>[sp_employee_package_items]disbursement_amount_net
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Payment Details
+</td></tr>
+<tr>
+<td> Bank	</td><td><a href="./Image:Bank.gif.html" class="image" title="Image:Bank.gif"><img src="../../clients/help/wiki/images/8/8c/Bank.gif" alt="Image:Bank.gif" width="16" height="14" longdesc="/mediawiki/index.php/Image:Bank.gif" /></a></td><td>	In view mode the bank icon is displayed if the "Payee" is 'Employee', otherwise it is hidden.<br />
+<p>Click this to open the <a href="View_Bank_Accounts.html" title="View Bank Accounts">View Bank Accounts</a> modal window.<br />
+From the <a href="View_Bank_Accounts.html" title="View Bank Accounts">View Bank Accounts</a> modal window, you can change the item's selected bank account, or create and add new bank account if required.
+</p>
+</td><td>[fm_driver_bank_accounts]
+</td></tr>
+<tr>
+<td>Add Bank</td><td> <a href="./Image:Plus.gif.html" class="image" title="Image:Plus.gif"><img src="../../clients/help/wiki/images/7/72/Plus.gif" alt="Image:Plus.gif" width="16" height="16" longdesc="/mediawiki/index.php/Image:Plus.gif" /></a></td><td> In edit mode, the add icon is displayed if the "Payee" is 'Employee', otherwise it is hidden.<br />
+<p>Click this to open the <a href="Select_Bank_Account.html" title="Select Bank Account">Select Bank Account</a> modal window. This provides a list of eligible bank accounts that can be selected. The selected record will be linked and saved on this package item record.
+</p>
+</td><td>[sp_employee_package_items]
+<p>driver_bank_account_id
+</p>
+</td></tr>
+<tr>
+<td> <a href="Payee_and_Payment_Method_combination.html" title="Payee and Payment Method combination">Payee</a> </td><td> Drop List </td><td> Choose from ‘Employee’ or ‘Supplier’.<br /> You can set a preferred payee for a supplier by choosing one in the <b>Suppliers / Account</b> "Payee" field.<br /> If the chosen "Payee" is part of an available <a href="Payee_and_Payment_Method_combination.html" title="Payee and Payment Method combination">Payee and Payment Method combination</a>, then the "Payee" will default into new item records when the supplier is chosen.<br /> Access to this field can be <a href="Role_Restrictions.html#Packaging_.2F_Employees" title="Role Restrictions">role restricted</a>.This field can be <a href="Screen_Aliases.html" title="Screen Aliases">re-named</a>.
+</td><td> [sp_employee_package_items]payee_payment_method_id
+</td></tr>
+<tr>
+<td> <a href="Payee_and_Payment_Method_combination.html" title="Payee and Payment Method combination">Payment Method</a> </td><td> Drop List </td><td> Choose from ‘Direct Credit’ or 'Bpay'.<br /> You can set a preferred payment method for a supplier by choosing one in the <b>Suppliers / Account</b> "Pay Method" field.<br /> Direct Credit transactions will be included in <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">Disbursements (ABA)</a> files for payment.<br /> Bpay transactions will be included in <a href="Disbursements.html" title="Disbursements">Disbursements (BPAY)</a> files for payment. See also the process page <a href="Add_a_BPAY_Payment_Ref_to_an_item.html" title="Add a BPAY Payment Ref to an item">add a BPAY Payment Ref to an item</a>.<br /> Access to this field can be <a href="Role_Restrictions.html#Packaging_.2F_Employees" title="Role Restrictions">role restricted</a>.
+</td><td> [sp_employee_package_items]payee_payment_method_id
+</td></tr>
+<tr>
+<td>Financial Institution	</td><td> Display </td><td> Displays the Financial Institution that the linked driver bank account BSB belongs to.<br /> This is found by matching the <i>[sp_financial_institutions]</i> number to the leading 2 or 3 digits in <i>[fm_driver_bank_accounts]bsb</i>
+</td><td> [sp_employee_package_items]driver_bank_account_id<br /> <i>linked to</i><br /> [fm_driver_bank_accounts]bsb<br /> <i>linked to</i><br /> [sp_financial_institutions]number
+</td></tr>
+<tr>
+<td>Account Name</td><td>	Display </td><td> Displays the Account Name of the linked Employee bank account. If the “Payee” is ‘Supplier’ this will be blank.
+</td><td>[fm_driver_bank_accounts]account_name
+</td></tr>
+<tr>
+<td>BSB</td><td>	Display</td><td> Displays the “BSB” for the linked Employee or Supplier bank account
+</td><td>	[fm_driver_bank_accounts]bsb<br /> <i>or</i><br />[fm_suppliers]bank_bsb
+</td></tr>
+<tr>
+<td>Account Number	</td><td>Display</td><td>	Displays the “Account Number” for the linked Employee or Supplier bank account
+</td><td>[fm_driver_bank_accounts]account_number<br /> <i>or</i><br />[fm_suppliers]bank_account_number
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Item Summary
+</td></tr>
+<tr>
+<td>Contract ID</td><td>	Hyperlink </td><td> Update the item's status to 'Accepted' or 'Active' to create the linked benefit contract.<br /> When a contract is linked, the Contract ID is a hyperlink. this navigates to <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a>.<br /> To return here from the contract, click on the <a href="./Contracts:Header.html" title="Contracts:Header">Contracts / Header</a> "Vehicle" field.  Once the field is populated, this field is display only.<br />
+<p>If the item is for a car that will be directly linked to the vehicle contract, this field is updated when a <b>Car Details</b> "Contract ID" has been added to the item and saved.<br /> See also the <a href="Direct_Novated_Lease_Item.html" title="Direct Novated Lease Item">Direct Novated Lease Item</a> page.
+</p>
+</td><td>[sp_employee_package_items]contract_id
+</td></tr>
+<tr>
+<td> Life Budget </td><td>	Display </td><td> Displays the Life Budget Total Net of the linked contract.<br /> <b>Contracts / Billing</b> Life Budget <u>Totals</u> “Net”.
+</td><td> <i>Calculated amount</i><br /> SUM( [fm_contract_budgets]amount_net ) WHERE status IN (‘pending’,’posted’)
+</td></tr>
+<tr>
+<td> Life Disbursements </td><td> Display </td><td> Displays the Life Disbursements of the linked contract.
+<p>This is the total of all payments and claims that are pending, on hold or posted.<br />
+If the "Payee" is 'Supplier', claims are not selected or shown, so the value will be 0 in these scenarios.
+</p>
+</td><td> <i>Calculated amount</i><br /> SUM( [fm_maintenance]total_cost ) WHERE status IN (’posted’) and reimbursement_flag = 'yes' +<br />SUM( [fm_contract_payment_schedules]amount_net ) WHERE status IN (’posted’) and date is in or before the current month.
+</td></tr>
+<tr>
+<td>Variance</td><td> Display </td><td> Displays the difference between "Life Budget" and "Life Disbursements".<br /> Currently the calculations do not select disbursement records that are 'History Only', or are dated after the current month end.<br /><br /> Note: This field may show a value that is incorrect. If you think there may be an issue, use the following screen and reports to check:<br /> <b>Contracts / Header</b> - click on the Funds Check icon to open the Funds Balance screen. This will show a summary of the Budgets(amounts invoiced), Actuals (including History Only records) and Funds Received<br /><b>Employees / Transactions</b> - filter by "Item" and print the 'Text(CSV)' report.<br /> <b>Contracts / FBT</b> - print the 'Employee Contract' report.  </td><td> Life Budget – Life Disbursements
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Item&amp;action=edit&amp;section=2" title="Template:Item">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View
+</td></tr>
+<tr>
+<td><a href="./Image:Vary.gif.html" class="image" title="Image:Vary.gif"><img src="../../clients/help/wiki/images/6/65/Vary.gif" alt="Image:Vary.gif" width="41" height="20" longdesc="/mediawiki/index.php/Image:Vary.gif" /></a></td><td> Vary is shown when an item is linked to a contract that has begun billing.
+<p>Use this to change various attributes of the item including Cycles, Deductions Per Pay and the End Date.
+</p>
+<ol><li> ‘Cycles’ will be re-named to ‘Remaining Cycles’ displaying the remaining ‘pending’ pay runs.
+</li><li> ‘Start Date’ will be renamed to ‘Next Date’ and displaying the number of the remaining ‘pending’ pay runs.
+</li><li> ‘End Date’ will be read-only.
+</li><li> ‘Total Deductions will become a read-only field but will still re-calculate any updates mase to ‘Deduction Per Pay’.
+</li></ol>
+<p>Refer to 'Cycles' above to read how it is affected on Vary also.
+<br /> Use this to change various attributes of the item including Cycles, Deductions Per Pay and the End Date.<br /> These changes will update the contract's Lease Term, Description, Contract End, Total Billings and Remaining Periods.<br /> If the item's Cycles or Deductions Per Pay are changed, <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> details will also be updated to match.<br /> If the item's Periodic Disbursement details are changed, <a href="./Contracts:Payments.html" title="Contracts:Payments">Contracts / Payments</a> details will also be updated to match.<br /> Only pending billing and payment records will be updated from these changes.<br /> If adjustments need to be made to correct past transactions, add adjustment records to the <a href="./Contracts:Payments.html" title="Contracts:Payments">Contracts / Payments</a> tab and the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab.<br />
+</p>
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Click to edit an item.<br />
+<p>Edit is hidden when an item has a linked contract that has begin billing. Use "Vary" in this situation.
+<br /> Refer to 'Cycles' above to read how it is affected on Edit also.<br />
+</p>
+</td></tr>
+<tr>
+<td><a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a></td><td>Click to delete the item.<br /> Items that are linked to a contract cannot be deleted. The Delete button will be disabled for these items.<br /> Deleted items are no longer visible on the Current Packages tab or the Item tab.
+</td></tr>
+<tr>
+<td><a href="./Image:Attach.gif.html" class="image" title="Image:Attach.gif"><img src="../../clients/help/wiki/images/f/f9/Attach.gif" alt="Image:Attach.gif" width="49" height="21" longdesc="/mediawiki/index.php/Image:Attach.gif" /></a></td><td>Click to <a href="Attach.html#Attach_Locations" title="Attach">Attach</a> a related document to a saved item.<br /> The document can then be opened at any stage by selecting the paperclip icon <a href="./Image:Clip.gif.html" class="image" title=" image:clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt=" image:clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a>  located in the Header area.<br /> Multiple files can be attached (these will convert into a zip that contains all the attached files).
+</td></tr>
+<tr>
+<td><a href="./Image:New.gif.html" class="image" title="Image:New.gif"><img src="../../clients/help/wiki/images/e/e0/New.gif" alt="Image:New.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:New.gif" /></a></td><td>Press 'New' to create a new Package Item.
+</td></tr>
+
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Edit
+</td></tr>
+<tr>
+<td><a href="./Image:Create.gif.html" class="image" title="Image:Create.gif"><img src="../../clients/help/wiki/images/b/bd/Create.gif" alt="Image:Create.gif" width="46" height="20" longdesc="/mediawiki/index.php/Image:Create.gif" /></a></td><td> Click to save a new item record you are creating.
+</td></tr>
+<tr>
+<td><a href="./Image:Save.gif.html" class="image" title="Image:Save.gif"><img src="../../clients/help/wiki/images/9/96/Save.gif" alt="Image:Save.gif" width="38" height="20" longdesc="/mediawiki/index.php/Image:Save.gif" /></a></td><td>When you have finished editing the record, click to save.
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td>Click to discard your current changes.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Item&amp;action=edit&amp;section=3" title="Template:Item">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<p>Below are alerts that you may receive if a record cannot be saved.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Create
+</td></tr>
+<tr>
+<td>Driver Id - Employee Pay Cycle is inactive </td><td> New items cannot be created for pay cycles that are inactive.<br /> A pay cycle is normally made inactive if the Employer is closing down that pay cycle.<br /> To fix this, you will need to
+<ol><li> Cancel out of the item 
+</li><li> Go to <a href="./Clients:Packaging_defaults.html" title="Clients:Packaging defaults">Clients / Packaging Defaults</a> and review the stored pay cycles. Make any required updates.
+</li><li> Go to the <b>Employees / Contact</b> tab and update the "Pay Cycle" to the new active pay cycle.
+</li></ol>
+</td></tr>
+<tr>
+<td>Start Date - Value is required and can't be empty </td><td> You will see this message if the system cannot calculate a list of possible "Start Date" entries.<br /> This can happen if the client does not have a payroll date recorded for the employee's pay cycle.<br /> To fix this, you will need to
+<ol><li> Cancel out of the item 
+</li><li> Go to <a href="./Clients:Packaging_defaults.html" title="Clients:Packaging defaults">Clients / Packaging Defaults</a> and enter a "Payroll Date" for the employee's pay cycle.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Create - Employee Package Item Cars
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified quote is already assigned to another package item.</td><td>A quote cannot be linked to more than one item.
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified contract is already assigned to another package item. </td><td> A contract cannot be linked to more than one item.<br /> To find the existing linked item, go to Contracts / Contract tab and enter this "Contract ID". Click on the header "Description" hyperlink to get to the linked item.
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified quote does not meet employee package item cars association requirements.  </td><td> The selected quote cannot be linked for one of the following reasons:
+<ol><li> the quote's "Type Code" is not configured to enable item links
+</li><li> the quote's "Driver ID" is not the same as the item's "Employee ID"
+</li><li> the quote's "Client Code" is not the same as the employee "Client" item's driver's.
+</li></ol>
+<p>See also <a href="Packaged_Car_Profile.html" title="Packaged Car Profile">Packaged Car Profile</a> for configuration details.
+</p>
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified contract does not meet employee package item cars association requirements.  </td><td> The selected contract cannot be linked for one of the following reasons:
+<ol><li> the contract's "Contract Type" is not configured to enable item links
+</li><li> the contract's "Driver ID" is not the same as the item's "Employee ID"
+</li><li> the contract's "Client Code" is not the same as the employee "Client" item's driver's.
+</li></ol>
+<p>See also <a href="Packaged_Car_Profile.html" title="Packaged Car Profile">Packaged Car Profile</a> for configuration details.
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Edit
+</td></tr>
+<tr>
+<td>Employee's Pay Cycle must be populated before you can edit this Package Item </td><td> You will need to do the following;
+<ol><li> Click on <b>OK</b>
+</li><li> Navigate back to the Employees / Contact tab 
+</li><li> Click on <b>Edit</b>
+</li><li> Select the correct "Pay Cycle" for this employee
+</li><li> Click on <b>Save</b>
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Field entry
+</td></tr>
+<tr>
+<td>The BSB is a 6 digit number</td><td>"BSB Number" is not populated fully with 6 digits. This field must be populated correctly for changes to be saved.
+</td></tr>
+<tr>
+<td>Invalid  Quote ID</td><td> The <b>Car Details</b> "Quote ID" is invalid. There are a few reasons this may happen
+<ol><li> the entered quote has already been recorded on another Item
+</li><li> the entered quote's Contract Type is not configured with a Car Profile 
+</li></ol>
+</td></tr>
+<tr>
+<td>Invalid  Contract ID</td><td> The <b>Car Details</b> "Contract ID" is invalid. There are a few reasons this may happen
+<ol><li> the entered contract has already been recorded on another Item
+</li><li> the entered contract's Contract Type is not configured with a Car Profile 
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save
+</td></tr>
+<tr>
+<td>403 Forbidden </td><td> You will have to close this window and open a new system window. This error can happen if non-text characters are entered in the "Reference" field.
+</td></tr>
+<tr>
+<td>Start Date in the past, OK to proceed	</td><td>This alert will appear if you are updating an item’s status to ‘Active’ and the stored “Start Date” has passed.
+<p>OK – will proceed using this stored ‘Start Date’ and continues with the ’Active’ process. <br />Choose this if you are intending to create a back-dated record.
+Cancel – Return to screen in Edit mode. <br />Choose this to review and update the “Start Date” to a future-dated payroll date.
+</p>
+</td></tr>
+<tr>
+<td> Account Number - The input does not match against pattern'/<br />
+<p>^\d(6,9)$/'
+</p>
+</td><td> The Account Number must be between 6 and 9 digits long. The record will not be created.
+</td></tr>
+<tr>
+<td>Bsb - The specified BSB could not be matched to a valid financial institution.
+</td><td>The first 2 or 3 numbers of the BSB need to be the same as a stored <i>[sp_financial_institutions]financial_institution_number</i>.<br /> Visit <a href="https://bank.codes/australia-bsb-number-checker/" class='external text' title="https://bank.codes/australia-bsb-number-checker/" rel="nofollow">BSB Number Checker</a> to confirm the code you are trying to use.<br /> If the code is correct, add the record to your <i>[sp_financial_institutions]</i> table.
+</td></tr>
+<tr>
+<td>Contract Id - Specified contract does not meet employee<br /> package item association requirements
+</td><td>A Contract ID will not save unless
+<ol><li> The contract is linked to a Contract Type where the “Group” is ‘Salary Packaged’.
+</li><li> The contract holds this Employee as the stored driver or there is no recorded driver on the contract.
+</li><li> The contract is not already linked to an item record.
+</li></ol>
+</td></tr>
+<tr>
+<td>Disbursement Type – Value is required and can’t be empty	</td><td>Item records must be complete when saving to ‘Active’ status. Select the “Disbursement Type” or save the item with a different status.
+</td></tr>
+<tr>
+<td>Disbursement Cycle Id – Value is required and can’t be empty	</td><td>Item records must be complete when saving to ‘Active’ status. Select the “Disbursement Cycle” or save the item with a different status.
+</td></tr>
+<tr>
+<td>Disbursement Periods – Value is required and can’t be empty	</td><td>Item records must be complete when saving to ‘Active’ status. Enter the number of  “Disbursement Periods” or save the item with a different status.
+</td></tr>
+<tr>
+<td>“Email” address is invalid!</td><td>	The “Email” address or addresses must be valid. Visit the <a href="Email_Address.html" title="Email Address">Email Address</a> page for the requirements.
+</td></tr>
+<tr>
+<td> Failure resolving default company. Aborting... </td><td> When an item is being made 'Active', the contract is created with a link to a company record.<br /> You will see this message if the company set-up is incorrect. The likely issue is this: you have more than one company record where <i>[gb_companies]default_flag</i> = 'yes'.<br /> Visit the <a href="Company.html#Validations_and_Alerts" title="Company">Company</a> page to review your setup or contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> for assistance.
+</td></tr>
+<tr>
+<td>First Disbursement Date - Value is required and can’t be empty	</td><td>Item records must be complete when saving to ‘Active’ status. Populate the “1st Disbursement Due” date or save the item with a different status.
+</td></tr>
+<tr>
+<td>Incomplete Bank BSB / Account number</td><td>"BSB Number" or "Bank Account Number" field is blank. Both fields must be populated correctly for changes to be saved.
+</td></tr>
+<tr>
+<td>“Supplier Code” cannot be blank!</td><td> Enter a “Supplier Code”
+</td></tr>
+<tr>
+<td>“Supplier Code” already exists!</td><td> Change the “Supplier Code” to something different.
+</td></tr>
+<tr>
+<td>“Name” cannot be blank!</td><td>	Add a “Name”
+</td></tr>
+<tr>
+<td>Number of Disbursements must be between 0 and 999!</td><td>Disbursements cannot be negative.
+</td></tr>
+<tr>
+<td>“Reference” field must contain 18 characters or less!</td><td>If the “Payment Method” is ‘Direct Credit’, the “Reference” field can only be 18 characters long. Reduce this to 18.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save - Employee Package Item Cars
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - No record matching the input was found </td><td> The selected quote or contract record can't be found.<br /> Check that you've entered the correct record id or use the <a href="Lookup.html" title="Lookup">lookup</a> to select an eligible record.
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified Contract Id is already assigned to an existing employee salary package. </td><td> A contract cannot be linked to more than one item.<br /> To find the existing linked item, go to Contracts / Contract tab and enter this "Contract ID". Click on the header "Description" hyperlink to get to the linked item.
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified Quote Id is already assigned to an existing employee salary package. </td><td> A quote cannot be linked to more than one item.
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified quote does not meet employee package item cars association requirements.  </td><td> The selected quote cannot be linked for one of the following reasons:
+<ol><li> the quote's "Type Code" is not configured to enable item links
+</li><li> the quote's "Driver ID" is not the same as the item's "Employee ID"
+</li><li> the quote's "Client Code" is not the same as the employee "Client" item's driver's.
+</li></ol>
+<p>See also <a href="Packaged_Car_Profile.html" title="Packaged Car Profile">Packaged Car Profile</a> for configuration details.
+</p>
+</td></tr>
+<tr>
+<td>Employee Package Item Cars - Specified contract does not meet employee package item cars association requirements.  </td><td> The selected contract cannot be linked for one of the following reasons:
+<ol><li> the contract's "Contract Type" is not configured to enable item links
+</li><li> the contract's "Driver ID" is not the same as the item's "Employee ID"
+</li><li> the contract's "Client Code" is not the same as the employee "Client" item's driver's.
+</li></ol>
+<p>See also <a href="Packaged_Car_Profile.html" title="Packaged Car Profile">Packaged Car Profile</a> for configuration details.
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save - Car Details Direct Link
+</td></tr>
+<tr>
+<td> Employee Package Item Id - Item is linked to a Vehicle Lease.<br /> Changes must be made in the contract. </td><td> Go to the contract to make your changes.<br /> See also the details here: <a href="Direct_Novated_Lease_Item.html" title="Direct Novated Lease Item">Direct Novated Lease Item</a>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save at '<a href="./Item:Accepted.html" title="Item:Accepted">Accepted</a>' status
+</td></tr>
+
+<tr>
+<td> Status Flag - Unable to create a contract. Missing Contract<br /> Type</td><td> Each "Package Item" must be linked to a Contract Type record.<br /> The Contract Type "Group" must be '<a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a>'.<br /> You will need to do the following;
+<ol><li> Click on <b>OK</b>
+</li><li> Click on <b>Cancel</b>
+</li><li> Create a new Contract Type record to match the selected "Package Item". Go to <a href="Create_a_Contract_Type_to_match_each_Package_Item_record.html" title="Create a Contract Type to match each Package Item record">Create a Contract Type to match each Package Item record</a> to see the process to do this.
+</li><li> Return to this item and you will be able to update the status.  
+</li></ol>
+</td></tr>
+<tr>
+<td> Call to a member function getPaymentMethod() on null </td><td> The update is looking for the "Payee" and the "Payment Method". You will need to do the following;
+<ol><li> Click on <b>OK</b>
+</li><li> "Payee" - select this
+</li><li> "Payment Method" - select this
+</li><li> Click on <b>Create</b>
+</li></ol>
+</td></tr>
+<tr>
+<td> Call to a member function getPostingClassId() on null </td><td> The update is looking for the Substantiation Posting Class. You will need to do the following;
+<ol><li> Save item with a different status or cancel the changes you are making.
+</li><li> Create the required Substantiation Posting Class. Go to <a href="Create_a_Substantiation_Posting_Class.html" title="Create a Substantiation Posting Class">Create a Substantiation Posting Class</a> to see the process to do this.
+</li><li> Return to this item and you will be able to update the status.
+</li></ol>
+</td></tr>
+<tr>
+<td> Failed to update Package Item due to following.<br /> Start Date - The specified date is invalid </td><td> Select a new Start Date.
+</td></tr>
+<tr>
+<td> Failed to update Package Item due to following.<br /> Unable to perform this action! Please try again.<br /><br /> If the problem persists please contact your system administrator.<br /><br /> Error:<br /> Invalid driver pay cycle or misconfigured client payroll data </td><td>
+<p>The update is looking for the pay cycle and payroll date records it needs to create budget records when the contract is created. You will need to do the following;
+</p>
+<ol><li> Click on <b>OK</b>
+</li><li> Click on <b>Cancel</b>
+</li><li> Check that the Employees / Contact "Pay Cycle" is entered
+</li><li> Check that the Clients / Quote Defaults "Pay Cycle" and "Payroll Date" is entered for the pay cycle that belongs to this employee. 
+</li><li> Try this again
+</li></ol>
+</td></tr>
+<tr>
+<td> Failed to update Package Item due to following.<br /> Unable to perform this action! Please try again.<br /><br /> If the problem persists please contact your system administrator.<br /><br /> Error:<br /> Statement could not be executed (23000 - 1048 - Column 'posting_class_id' cannot be null) </td><td> The update is looking for entries in the linked Contract Types / Accrual tab. These are required to create budget records when the contract is created. You will need to do the following;
+<ol><li> Click on <b>OK</b>
+</li><li> Click on <b>Cancel</b>
+</li><li> Escalate this issue with your System Administrator. They will need to set-up the required Contract Types / Accrual records.
+</li></ol>
+</td></tr>
+<tr>
+<td> Failed to update Package Item due to following.<br /> Unable to perform this action! Please try again.<br /><br /> If the problem persists please contact your system administrator.<br /><br /> Error:<br /> Statement could not be executed (23000 - 1048 - Column 'posting_map_id' cannot be null) </td><td> The update is looking for a linked Contract Type for this Package Item. This is required to create a contract. You will need to do the following;
+<ol><li> Click on <b>OK</b>
+</li><li> Click on <b>Cancel</b>
+</li><li> Escalate this issue with your System Administrator. They will need to set-up the required link to the correct Contract Type record.
+</li></ol>
+</td></tr>
+<tr>
+<td> Failure resolving default company. Aborting... </td><td> The contract cannot be created as the company to select for to populate into the Contracts /Contract "Company" field cannot be identified.<br />
+<p>You will need to do the following;
+</p>
+<ol><li> Click on <b>OK</b>
+</li><li> Click on <b>Cancel</b>
+</li><li> Contact Catch-e to check and update your <a href="Company.html" title="Company"><i>[gb_companies]</i></a> table to configure a default company.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Vary
+</td></tr>
+<tr>
+<td> Cycles - The input is not greater than the present number of billed cycles </td><td> "Cycles" must be the same number or higher than the last Contracts / Lease "Period" that has been invoiced.
+</td></tr>
+<tr>
+<td> End Date - The specified end date is earlier than the last posted billing record.  </td><td> "End Date" must be the same date or greater the last Contracts / Lease "Period" that has been invoiced.
+</td></tr>
+<tr>
+<td> Disbursement Periods - The input is lower than the present number of posted disbursement periods </td><td> "Number of Disbursements" can't be lower than the posted records in Contracts / Payments. Increase this to match.
+</td></tr>
+
+<tr>
+<td>Item is being suspended
+<p>All pending payroll records will be deleted.
+Click OK to confirm or Cancel to change.
+</p>
+</td><td>If an item has not started being processed and the “Status” is updated to be ‘Suspended’, all pending payroll records will be deleted as no transactions will ever be created for this item.
+</td></tr>
+<tr>
+<td>Item is being suspended
+<p>"End Date" {end_date} is applied as the final payroll date.
+Click OK to confirm or Cancel to change.
+</p>
+</td><td>If an item is finishing early and the “Status” is updated to be ‘Suspended’, you are alerted to confirm the final payroll date that this item will be processed on. If it is not correct, cancel the changes and update the “Cycles” or “End Date” before saving.
+</td></tr>
+
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Attach
+</td></tr>
+<tr>
+<td>File has already been uploaded. </td><td> This file is already attached, no need to upload.
+</td></tr>
+<tr>
+<td>Selected files exceed maximum allowable attachment size</td><td>A five megabyte total size limit applies to all of the files attached to a record. The size of the file or files you are to attaching exceeds this.
+<p>1. Review and reduce the size of the files being <a href="Attach.html" title="Attach">attached</a> to the record<br />
+2. If the size of all the files being attached is reasonable<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ask your System Administrator to review the set limit in <a href="Global_Controls.html#Quote_.28QT.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "attach_max_file_size"
+</p>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Item&amp;action=edit&amp;section=4" title="Template:Item">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Car_Details:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Car Details:Troubleshooting">edit</a>]</div><a name="Car_Details_-_unable_to_add_quote_or_contract"></a><h5>Car Details - unable to add quote or contract</h5>
+<p>A quote and/or contract record cannot be added to an item if it is already linked to another item.<br />
+Follow the process steps here: <a href="Move_linked_car_details.html" title="Move linked car details">Move linked car details</a> to firstly un-link the contract then link to the new contract.<br />
+</p><p>As a last resort, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> and note the Contract ID that needs to be unlinked and they will do this.
+<br />
+<br />
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Item&amp;action=edit&amp;section=5" title="Template:Item">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21036) Create Employee / Item tab.  Live 18/08/2020 <br />
+</li><li> (DEV-21189) Add new statuses to [sp_employee_package_items]status_flag enum. Live 05/10/2020
+</li><li> (DEV-21248) Create hyperlinks in Contracts module to linked Item record. Live 09/11/2020
+</li><li> (DEV-21264) Update Employee / Item tab to show “Payee” and add Package Item defaults. Live 19/01/2021
+</li><li> (API-20130) Employees / Item tab - update 'Accepted' logic. Live 12/04/2021
+</li><li> (DEV-21411) Employees / Item tab - Supplier selection and creation - enhance Live 07/06/2021
+</li><li> (DEV-21430) Employees / Item tab - create screen alias for Employee Contribution. Live 07/06/2021
+</li><li> (DEV-21438) Employees / Item tab - retain Start Date when contract has started. Live 15/06/2021
+</li><li> (DEV-21467) Employees / Item tab - disable Delete button if item linked to a contract. Live dd/mm/2021
+</li><li> (DEV-21497) Employees / Item tab - optimise APIs. Live 13/09/2021
+</li><li> (DEV-21503) Employees / Item tab - add Attach button. Live dd/11/2021
+</li><li> (API-20225) When 'Cycle' is updated from the Item, Contract billing periods are incorrect. Live 06/12/2021
+</li><li> (API-20231) Packaged Item - Leading '0' not displayed on screen. Live 13/12/2021
+</li><li> (DEV-21512) Employee / Item tab - limit supplier selection to linked channel. Live 24/01/2022
+</li><li> (API-20219) Employees / Item tab - 'Active' logic double dips on Start Periodic calculation. Live 07/02/2022
+</li><li> (DEV-21596) Packaged Item - Contract ID is not 'read only' on edit Live 14/02/2022
+</li><li> (API-20260) Employees / Item tab - update budget logic to include add_gst_flag. Live mm/dd/2022
+</li><li> (API-20251) Fix getEmployeeEndDates bug when driver pay cycle is 'Bi-Monthly' .Live mm/dd/2022
+</li><li> (DEV-21556) Employees / Item tab - bind Status and Suspend Date. Live 22/08/2022
+</li><li> (DEV-21644) Create new Item Status called 'Quoting'. Live 05/09/2022
+</li><li> (API-20306) Employees / Item - create and apply a default Company ID on Accept/  Live 05/09/2022
+</li><li> (DEV-21674) Unable to make Item active if Disbursement Periods are greater than 255. Live 05/09/2022
+</li><li> (DEV-21733) Item cycle showing as blank and wrong data populated on the contract . Live 17/10/2022
+</li><li> (API-20334) Fatal exception thrown when Vary Employee Package Item API is called and Contract Payment Structure is 'inactive'. Live 10/10/22
+</li><li> (API-20333) Call to a member function getPaymentMethod() on null. Live 10/10/2022
+</li><li> (DEV-21601) Employees / Item tab - Create Item Notes. Live 17/10/2022
+</li><li> (DEV-21779) Create 2 new fields in the [sp_employee_package_items] table. Live 21/11/2022
+</li><li> (DEV-21813) Employees / Item tab - Enable Bank Account to be changed without Vary. Live dd/04/2023
+</li><li> (DEV-21753  API-20336) Employees / Item tab - create car profile. Live 08/05/2023
+</li><li> (API-20409) Employees / Item - create missing Contract ID in specific scenario. Live 05/06/2023
+</li><li> (API-20448) calculatePackageItemDeductionPerPay API - input filter issue with total_deduction field. Live 14/08/2023
+</li><li> (DEV-21737) Employees / Item tab - Contracts / Lease 'Periodic' date can duplicate on Vary. Live dd/08/2023
+</li><li> (API-20455) Duplicate sp_employee_package_item_cars quote id or contract id PUT API error. Live 25/09/2023
+</li><li> (API-20472) Employees / Item - unknown error message when updating Status to Suspended. Live 12/10/2023
+</li><li> (DEV-21957) Item - Car Quote ID not saving when item created or edited. Live dd/10/2023
+</li><li> (DEV-21963) Employees / Item - unable to update Cycles field to be 0 on Edit. Live 06/11/2023
+</li><li> (CAT-18195) Employees / Item tab – Create, Edit and Vary - add logic for linked Novated. Live 27/09/2023
+</li><li> (API-20424) Update Start Periodic calculation. Live dd/12/2023
+</li><li> (API-20541) Unable to Create Novated Lease Item Live 06/05/2024
+</li><li> (API-20553) Employees / Item tab - build records in [sp_pay_runs] when item made active. Live 08/07/2024
+</li><li> (DEV-22104) (API-20561) Employees / Item tab - Package Item field - disable on Vary. Live 08/07/2024
+</li><li> (API-20522) February Pay Run date not available if Payroll Date is 30th. Live 08/07/2024
+</li><li> (API-20570) Employees / Item Start Date - remove 10 pay cycle limit. Live dd/mm/2024
+</li><li> (DEV-22091) (API-20554) Clients / Packaging Defaults - create Pay Cycle Active checkbox. Live 07/10/2024</small>
+</li></ul>
+<p><a href="Activate_an_item.html" title="Activate an item">Activate an item</a>
+</p><div class="printfooter">
+Retrieved from "<a href="./Employees:Item.html">https://help.catch-e.net.au/mediawiki/index.php/Employees:Item</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Employees:Item">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Employees:Item.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Employees:Item&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.26 secs. -->
+</body></html>

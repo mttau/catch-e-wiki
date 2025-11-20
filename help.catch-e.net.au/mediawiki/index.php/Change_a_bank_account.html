@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Change a bank account,Global Controls,Invoice Footer,Main Page,Receipts (ABA),Reference Data,SETUP,Workflow" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Change a bank account - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Change a bank account</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Change_a_bank_account.html#column-one">navigation</a>, <a href="Change_a_bank_account.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a>  &rarr; <b>Accounting</b> &rarr; <strong>Change a bank account</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Change_a_bank_account.html#Client_Set-up"><span class="tocnumber">1</span> <span class="toctext">Client Set-up</span></a></li>
+<li class='toclevel-1'><a href="Change_a_bank_account.html#Catch-e_Set-up"><span class="tocnumber">2</span> <span class="toctext">Catch-e Set-up</span></a>
+<ul>
+<li class='toclevel-2'><a href="Change_a_bank_account.html#Bank_Account_Details"><span class="tocnumber">2.1</span> <span class="toctext">Bank Account Details</span></a></li>
+<li class='toclevel-2'><a href="Change_a_bank_account.html#Invoice_Footer_Details"><span class="tocnumber">2.2</span> <span class="toctext">Invoice Footer Details</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Change_a_bank_account.html#Useful_Queries"><span class="tocnumber">3</span> <span class="toctext">Useful Queries</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;action=edit&amp;section=1" title="Edit section: Client Set-up">edit</a>]</div><a name="Client_Set-up"></a><h4>Client Set-up</h4>
+<p>The banking details used to create the <a href="Receipts_(ABA).html#Set-up" title="Receipts (ABA)">Receipts (ABA)</a> file for direct debits are stored in the <i>[gb_controls]</i> table.<br />
+You can update these details yourselves.<br />
+Go to <a href="SETUP.html" title="SETUP">Setup</a> / <a href="Reference_Data.html" title="Reference Data">Reference Data</a> &rarr; <a href="Global_Controls.html" title="Global Controls">gb_controls</a> to update the details shown below.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"><a href="SETUP.html" title="SETUP">Setup</a> / <a href="Reference_Data.html" title="Reference Data">Reference Data</a> &rarr; <a href="Global_Controls.html" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="55%" align="left">Comment</th><th width="20%" align="left">Default Value
+</th></tr>
+<tr>
+<td> gb </td><td> bank_accounts </td><td> <b><u>Receivables</u></b><br /> <b>Financial Institution</b> - the three letter code for your bank<br /><b>Company Name</b> - the name to use in your ABA file.<br /><b>Bsb</b> - the BSB to use in your file.<br /><b>Account Number</b> - the account number to use in your file. </td><td>
+</td></tr>
+<tr>
+<td> gb </td><td> becs_details </td><td> <b>Company Name Short</b> - the short name to use in your ABA file<br /><b>Identification Number</b> - the identification number to use in your ABA file.<br /><b>Aba File Description</b> - the description to use as your referent in your ABA file.<br /><b>User Credits Only</b> - set to no to add the self balancing row to the ABA file. </td><td>
+</td></tr>
+<tr>
+<td> gb </td><td> aba_identification_number_debit </td><td> <b>Value</b> - enter the identification number which is assigned by APCA and User Financial Institutions for transacting debit ABA files.  </td><td>
+</td></tr>
+<tr>
+<td> gb </td><td> aba_user_debits_only_flag </td><td> <b>Value</b> - is used to determine if your organisation is a full ABA user (allowing debits and credits) or a debit user only.<br /> If your organisation is debit only, any items in the batch that result in a credit will be excluded from the ABA file.  </td><td> yes
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;action=edit&amp;section=2" title="Edit section: Catch-e Set-up">edit</a>]</div><a name="Catch-e_Set-up"></a><h4>Catch-e Set-up</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;action=edit&amp;section=3" title="Edit section: Bank Account Details">edit</a>]</div><a name="Bank_Account_Details"></a><h5>Bank Account Details</h5>
+<p>Copy the following table into an email and fill in the details, then <a href="mailto:support@catch-e.com.au" class='external free' title="mailto:support@catch-e.com.au" rel="nofollow">mailto:support@catch-e.com.au</a>
+<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 70%;">
+<tr>
+<th width="40%" align="left"> Field </th><th width="60%" align="left"> Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Change Bank Account Details
+</td></tr>
+<tr>
+<td> Date to update on </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Bank Account
+</td></tr>
+<tr>
+<td>Company Name (if you have more than one) </td><td>
+</td></tr>
+<tr>
+<td> Bank </td><td>
+</td></tr>
+<tr>
+<td> Bank - E.g. ANZ, CBA, NAB</td><td>
+</td></tr>
+<tr>
+<td> Account Name</td><td>
+</td></tr>
+<tr>
+<td> Account Name SHORT</td><td>
+</td></tr>
+<tr>
+<td> BSB</td><td>
+</td></tr>
+<tr>
+<td>Account Number</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Reimbursement ABA file details (Process = 'becs')
+</td></tr>
+<tr>
+<td> APCA Number</td><td>
+</td></tr>
+<tr>
+<td> ABA Description - E.g. Claim Payment</td><td>
+</td></tr>
+<tr>
+<td> ABA Self Balancing (yes or no)</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Payment ABA file details (Process = 'payables')
+</td></tr>
+<tr>
+<td> APCA Number</td><td>
+</td></tr>
+<tr>
+<td> ABA Description - E.g. Payment</td><td>
+</td></tr>
+<tr>
+<td> ABA Self Balancing (yes or no)</td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;action=edit&amp;section=4" title="Edit section: Invoice Footer Details">edit</a>]</div><a name="Invoice_Footer_Details"></a><h5>Invoice Footer Details</h5>
+<p>Copy the following table into an email and fill in the details, then <a href="mailto:support@catch-e.com.au" class='external free' title="mailto:support@catch-e.com.au" rel="nofollow">mailto:support@catch-e.com.au</a><br />
+In a typical configuration, only rows 1 - 4 have details.<br />
+For more context visit the the <a href="Invoice_Footer.html" title="Invoice Footer">Invoice Footer</a> page.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th width="5%" align="left">Left </th><th width="25%" align="left">Left Value </th><th width="5%" align="left">Middle </th><th width="65%" align="left">Middle Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Change Invoice Footer Details for  Periodic, Combined, Recharges, Recharges Fuel
+</td></tr>
+<tr>
+<td> footer_1_1_text </td><td> </td><td> footer_1_2_text </td><td>
+</td></tr>
+<tr>
+<td> footer_2_1_text </td><td> </td><td> footer_2_2_text </td><td>
+</td></tr>
+<tr>
+<td> footer_3_1_text </td><td> </td><td> footer_3_2_text </td><td>
+</td></tr>
+<tr>
+<td>  </td><td> </td><td> footer_4_text </td><td>
+</td></tr>
+<tr>
+<td>  </td><td> </td><td> footer_5_text </td><td>
+</td></tr>
+<tr>
+<td>  </td><td> </td><td> footer_6_text </td><td>
+</td></tr>
+<tr>
+<td>  </td><td> </td><td> footer_7_text </td><td>
+</td></tr>
+<tr>
+<td>  </td><td> </td><td> footer_7_text </td><td>
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;action=edit&amp;section=5" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h3>Useful Queries</h3>
+<pre>
+select * from gb_companies;
+select * from gl_bank_accounts; 
+select * from gl_bank_account_aba_mappings;
+select * from gl_bank_account_bpay_mappings;
+
+select coy.name as company, ba.bank_account_id, ba.bank, ba.account_name, ba.account_name_short
+, baam.process_type, baam.apca_number, baam.aba_description, baam.aba_self_balancing_flag
+from gl_bank_accounts as ba
+inner join gl_bank_account_aba_mappings as baam on baam.bank_account_id = ba.bank_account_id 
+left join gb_companies as coy on coy.company_id = ba.company_id
+</pre>
+<p><br /><br />
+</p><div class="printfooter">
+Retrieved from "<a href="Change_a_bank_account.html">https://help.catch-e.net.au/mediawiki/index.php/Change_a_bank_account</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Change_a_bank_account">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Change_a_bank_account.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Change_a_bank_account&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.06 secs. -->
+</body></html>

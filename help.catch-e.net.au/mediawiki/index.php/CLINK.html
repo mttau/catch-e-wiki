@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="CLINK,CLINK,Card Interface Set-up,Card Transactions,FLEET,FLEET CONTROLS,Interface To:Interface,Interface To:Mappings,Interface To Card Services,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>CLINK - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">CLINK</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="CLINK.html#column-one">navigation</a>, <a href="CLINK.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="FLEET_CONTROLS.html" title="FLEET CONTROLS">Controls</a> / Interfaces / <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Services</a> &rarr; <a href="./Interface_To:Interface.html" title="Interface To:Interface">Interface</a> | <a href="./Interface_To:Mappings.html" title="Interface To:Mappings">Mappings</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Card_Interface_Set-up.html" title="Card Interface Set-up">Card Interface Set-up</a> &rarr; <strong>CLINK (Linkt)</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="CLINK.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="CLINK.html#Which_transactions_will_import"><span class="tocnumber">2</span> <span class="toctext">Which transactions will import</span></a>
+<ul>
+<li class='toclevel-2'><a href="CLINK.html#Total_trip_charges"><span class="tocnumber">2.1</span> <span class="toctext">Total trip charges</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Trips_without_an_e-Tag_device"><span class="tocnumber">2.2</span> <span class="toctext">Trips without an e-Tag device</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Fees_charges_and_adjustments"><span class="tocnumber">2.3</span> <span class="toctext">Fees charges and adjustments</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="CLINK.html#Validation_Rules"><span class="tocnumber">3</span> <span class="toctext">Validation Rules</span></a></li>
+<li class='toclevel-1'><a href="CLINK.html#File_Columns_and_Mappings"><span class="tocnumber">4</span> <span class="toctext">File Columns and Mappings</span></a>
+<ul>
+<li class='toclevel-2'><a href="CLINK.html#Header"><span class="tocnumber">4.1</span> <span class="toctext">Header</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Total_trip_charges_2"><span class="tocnumber">4.2</span> <span class="toctext">Total trip charges</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Trips_without_an_e-Tag_device_2"><span class="tocnumber">4.3</span> <span class="toctext">Trips without an e-Tag device</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#eTag_Total_Amount"><span class="tocnumber">4.4</span> <span class="toctext">eTag Total Amount</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Fees_charges_and_adjustments_2"><span class="tocnumber">4.5</span> <span class="toctext">Fees charges and adjustments</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#Total_Amount"><span class="tocnumber">4.6</span> <span class="toctext">Total Amount</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#State_Trip_details"><span class="tocnumber">4.7</span> <span class="toctext">State Trip details</span></a></li>
+<li class='toclevel-2'><a href="CLINK.html#State_Trip_details_.28Sub_Total.29"><span class="tocnumber">4.8</span> <span class="toctext">State Trip details (Sub Total)</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="CLINK.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The Linkt file is a record of all travel by drivers using a e-tag device supplied by Linkt.<br /> This includes travel in multiple states under the one account, these being VIC, NSW &amp; QLD.<br />  
+The import file must be in .csv format.<br />
+E-tags are linked to the associated contract using the same process as fuel cards.<br /><br />
+</p><p>Visit the supplier's home page here: <a href="https://www.linkt.com.au" class='external free' title="https://www.linkt.com.au" rel="nofollow">https://www.linkt.com.au</a><br />
+</p><p>The interface code is <b>CLINK</b> owing to the supplier's previous name, City Link.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=2" title="Edit section: Which transactions will import">edit</a>]</div><a name="Which_transactions_will_import"></a><h4>Which transactions will import</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=3" title="Edit section: Total trip charges">edit</a>]</div><a name="Total_trip_charges"></a><h5>Total trip charges</h5>
+<p>Data is combined from the <a href="CLINK.html#Total_trip_charges" title="CLINK">Total trip charges</a> section and the <a href="CLINK.html#State_Trip_details" title="CLINK">State Trip details</a> section of the file to enable each trip to be imported to the linked contract.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=4" title="Edit section: Trips without an e-Tag device">edit</a>]</div><a name="Trips_without_an_e-Tag_device"></a><h5>Trips without an e-Tag device</h5>
+<p>Data from the <a href="CLINK.html#Trips_without_an_e-Tag_device" title="CLINK">Trips without an e-Tag device</a> section is used to create an itemised record for all the trips that a vehicle has made with no e-Tag.<br /> These transactions will import successfully if you create a card record to match each vehicle. Without a matching card record, these records will fail the validation checks in <a href="Card_Transactions.html" title="Card Transactions">Card Services / Transactions</a> as 'Failed Card' .<br />
+</p><p>To create a matching card record:
+</p>
+<ol><li> The vehicle registration is 'ABC123'.
+</li><li> Create a card with a "Card Number" of 'No Tag ABC123'.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=5" title="Edit section: Fees charges and adjustments">edit</a>]</div><a name="Fees_charges_and_adjustments"></a><h5>Fees charges and adjustments</h5>
+<p>The only fees, charges and adjustments that can be imported from this section are those that can be linked to a contract via a registration number.
+Where the registration number is provided in the 'Source Reference' column of the import file and the 'Details' description is supported, the import will accept it.
+</p><p>The list of accepted 'Details' descriptions is shown below.  These descriptions will also be imported if registration numbers or other details follow e.g., 'No Tag in Vehicle Fee - ABC123 VIC'
+</p>
+<ol><li> Late Toll Notice Admin Fee
+</li><li> Video Matching Fee
+</li><li> No Tag in Vehicle Fee
+</li><li> CityLink Tulla Pass
+</li><li> Admin Fee
+</li></ol>
+<p>No other fees, charges and adjustments will be imported via card interface upload as they are applied at Account/Client level. The interface allocates at contract level. Should any other charges appear on the client’s invoice, they will need to be added manually via an approval.
+</p><p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left">
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=6" title="Edit section: Validation Rules">edit</a>]</div><a name="Validation_Rules"></a><h4><b>Validation Rules</b></h4>
+<p>Validation for 'Fees, Charges &amp; Adjustments' is based on being able to link the Reg No(s) and Card Number(s) provided in the import file to Catch-e data. <br />
+If a transaction cannot be validated, it will fail with a 'Failed Card' alert. To resolve this refer to <a href="CLINK.html#Trips_without_an_e-Tag_device" title="CLINK">how to create a matching card</a>. <br />
+Reg No &amp; Card Number are identified and sourced from the import file using the following logic.
+</p>
+<ol><li> <b>Identify Reg No</b>	
+<ol><li> If data in column B is a number, then set Reg No to 'empty'
+</li><li> If column B is not a number, then set Reg No to column B removing any text after the last space e.g. 'ABC123 VIC' becomes 'ABC123'
+</li></ol>
+</li><li> <b>Identify Card Number</b>	
+<ol><li> If column C is not empty and is a number then set Card Number to column C e.g. '123456789'
+</li><li> If column C is not empty and is not a number then set Card Number to column C but remove the first 5 characters. It is assumed the first 5 characters are 'eTag ' e.g. 'eTag 123456789' becomes '123456789'
+</li><li> If column C is empty then set Card Number to 'No Tag ' + {Reg No} e.g. 'No Tag ABC123'
+</li></ol>
+</li></ol>
+</td></tr></table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=7" title="Edit section: File Columns and Mappings">edit</a>]</div><a name="File_Columns_and_Mappings"></a><h4>File Columns and Mappings</h4>
+<p>The Linkt import file consists of various sections that are detailed below.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=8" title="Edit section: Header">edit</a>]</div><a name="Header"></a><h5>Header</h5>
+<p>This section contains header records in columns A and B that summarise the invoice details.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="4%" align="left">Row</th><th width="10%" align="left">Row Name</th><th width="18%" align="left">[table]field</th><th width="68%" align="left">Comments
+</th></tr>
+<tr>
+<td>1</td><td>Account number</td><td></td><td>Displays Linkt Client Account Number
+</td></tr>
+<tr>
+<td>2</td><td>Account name</td><td></td><td>Displays the name in which the Account is under
+</td></tr>
+<tr>
+<td>3</td><td>Invoice number</td><td>[fm_fuel]invoice_no</td><td>Displays invoice number charges to be paid under
+</td></tr>
+<tr>
+<td>4</td><td>Invoice period</td><td></td><td>Displays the period for which the charges apply
+</td></tr>
+<tr>
+<td>5</td><td>Date issued</td><td></td><td>Displays invoice issue date
+</td></tr>
+<tr>
+<td>6</td><td>Opening balance</td><td></td><td>Displays amount owing from previous periods
+</td></tr>
+<tr>
+<td>7</td><td>Payments received</td><td></td><td>Displays last received payment made
+</td></tr>
+<tr>
+<td>8</td><td>Total charged for trips</td><td></td><td>Displays amount owing for trips taken on Linkt tolled roads.  This includes trips made without an e-tag.
+</td></tr>
+<tr>
+<td>9</td><td>Total charged for day passes</td><td></td><td>Displays amount owing for trips taken on Linkt tolled roads with day passes
+</td></tr>
+<tr>
+<td>10</td><td>Total fees charges and adjustments</td><td></td><td>Displays fees accrued due to trips taken on Linkt tolled roads without an e-tag.  Any adjustments, such as credits, will also be included in this amount
+</td></tr>
+<tr>
+<td>11</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>12</td><td>Amount due</td><td></td><td>Displays amount due for payment
+</td></tr>
+<tr>
+<td>13</td><td>Due Date</td><td></td><td>Date payment is required
+</td></tr>
+<tr>
+<td>14</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>15</td><td>Total GST from invoice period</td><td></td><td>Displays GST amount incurred for shown invoice period
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=9" title="Edit section: Total trip charges">edit</a>]</div><a name="Total_trip_charges_2"></a><h5>Total trip charges</h5>
+<p>This section contains a summary of charges by <b>Registration / eTag</b>. The table below details how this section is presented in the data file.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>A</td><td>Current fleet id</td><td></td><td>Displays Linkt allocated code
+</td></tr>
+<tr>
+<td>B</td><td>Current LPN</td><td>[fm_fuel]reg_no</td><td>Displays vehicle registration number and state were travel occurred. Only the registration number is used in the validation process. E.g. ABC123 VIC
+</td></tr>
+<tr>
+<td>C</td><td>Vehicle class</td><td></td><td>Displays the class of vehicle. E.g. CAR
+</td></tr>
+<tr>
+<td>D</td><td>e-Tag device</td><td></td><td>Displays e-tag number allocated to respective registration number. E.g. eTag 123456789012
+</td></tr>
+<tr>
+<td>E</td><td>Tag class</td><td></td><td>Displays the class of vehicle. E.g. CAR
+</td></tr>
+<tr>
+<td>F</td><td>Trips</td><td></td><td>Displays number of trips made for invoice period. E.g. 25
+</td></tr>
+<tr>
+<td>G</td><td>GST</td><td>[fm_fuel]product_gst</td><td>GST amount of all trips made in the invoice period. E.g. $10.45
+</td></tr>
+<tr>
+<td>H</td><td>Net Amount</td><td>[fm_fuel]product_net</td><td>Net amount of all trips made in the invoice period. E.g. $114.83
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=10" title="Edit section: Trips without an e-Tag device">edit</a>]</div><a name="Trips_without_an_e-Tag_device_2"></a><h5>Trips without an e-Tag device</h5>
+<p>This section contains a summary of charges by <b>Registration / State</b>. I.e. the vehicle has travelled on City Link toll roads without an e-Tag device.
+The information provided in this section is the same as that shown above, except for the e-Tag Device column.
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>D</td><td>e-Tag device</td><td></td><td>Displays the Registration Number and State of vehicles. E.g. 'eTag ABC123 VIC'
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=11" title="Edit section: eTag Total Amount">edit</a>]</div><a name="eTag_Total_Amount"></a><h5>eTag Total Amount</h5>
+<p>This row shows the total Net Amount of the totals detailed in the <a href="CLINK.html#Total_trip_charges" title="CLINK">Total trip charges</a> and <a href="CLINK.html#Trips_without_an_e-Tag_device" title="CLINK">Trips without an e-Tag device</a> sections above. It matches the value in the header row <b>Total charged for trips</b>.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>A</td><td>eTag Total Amount</td><td></td><td>Row name
+</td></tr>
+<tr>
+<td>H</td><td>Net Amount</td><td></td><td>Net amount of all trips made in the invoice period for all vehicles. E.g. $7,214.94
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=12" title="Edit section: Fees charges and adjustments">edit</a>]</div><a name="Fees_charges_and_adjustments_2"></a><h5>Fees charges and adjustments</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>A</td><td>Date</td><td></td><td>Date of travel
+</td></tr>
+<tr>
+<td>B</td><td>Source Reference</td><td>[fm_fuel]reg_no</td><td>Displays vehicle registration number and state were travel occurred. Only the registration number is used in the validation process
+</td></tr>
+<tr>
+<td>C</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>D</td><td>Details</td><td></td><td>Reason for fee charge
+</td></tr>
+<tr>
+<td>E</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>F</td><td>Additional Information</td><td></td><td>Displays date and time of when trip was recorded
+</td></tr>
+<tr>
+<td>G</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>H</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>I</td><td>GST</td><td>[fm_fuel]product_gst</td><td>GST amount applied to trips made for invoice period
+</td></tr>
+<tr>
+<td>J</td><td>Net Amount</td><td>[fm_fuel]product_net</td><td>NET amount applied to trips made for invoice period
+</td></tr>
+<tr>
+<td>K</td><td>Account ID </td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=13" title="Edit section: Total Amount">edit</a>]</div><a name="Total_Amount"></a><h5>Total Amount</h5>
+<p>This row shows the total Net Amount for the transactions detailed in the <a href="CLINK.html#Fees_charges_and_adjustments" title="CLINK">Fees charges and adjustments</a> section above. It matches the values in the header rows <b>Total charged for day passes</b> + <b>Total fees charges and adjustments</b>.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>A</td><td>Total Amount</td><td></td><td>Row name
+</td></tr>
+<tr>
+<td>H</td><td>Net Amount</td><td></td><td>Net amount of all fees and charges. E.g. $1,052.07
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=14" title="Edit section: State Trip details">edit</a>]</div><a name="State_Trip_details"></a><h5>State Trip details</h5>
+<p>Each state (VIC, NSW, QLD), is shown in a separate section, but the details are presented in the same manner and are itemised by vehicle.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>A</td><td>Fleet identifier</td><td></td><td>Displays City Link allocated code
+</td></tr>
+<tr>
+<td>B</td><td>Licence plate</td><td>[fm_fuel]reg_no</td><td>Displays the vehicle registration number and the state of travel. E.g. 'ABC123 VIC'
+</td></tr>
+<tr>
+<td>C</td><td>e-Tag device</td><td></td><td>Displays the e-tag number for this registration number. If the vehicle has travelled without an e-Tag device, this field will be blank. E.g. 'eTag 123456789012' or ' '
+</td></tr>
+<tr>
+<td>D</td><td>Travel details</td><td>[fm_maintenance]description</td><td>Shows the location of the eTag reader.
+</td></tr>
+<tr>
+<td>E</td><td>Travel date &amp; time<br />Start</td><td>[fm_maintenance]odometer_date</td><td>Start date of the trip.
+</td></tr>
+<tr>
+<td>F</td><td> </td><td>[fm_maintenance]description</td><td>Start time of the trip. This is added to the description stored in Catch-e so you can see when the trip was made.
+</td></tr>
+<tr>
+<td>G</td><td>Finish</td><td> </td><td>Finish date of the trip.
+</td></tr>
+<tr>
+<td>H</td><td> </td><td> </td><td>Finish time of the trip.
+</td></tr>
+<tr>
+<td>I</td><td>GST</td><td>[fm_fuel]product_gst</td><td>GST amount applied to trips made in the invoice period
+</td></tr>
+<tr>
+<td>J</td><td>Net Amount</td><td>[fm_fuel]product_net</td><td>Net amount applied to trips made in the invoice period
+</td></tr>
+<tr>
+<td>K</td><td>Account ID</td><td> </td><td>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=15" title="Edit section: State Trip details (Sub Total)">edit</a>]</div><a name="State_Trip_details_.28Sub_Total.29"></a><h5>State Trip details (Sub Total)</h5>
+<p>Each vehicle listed in a detail section also has a sub total row. There is no total row.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="2%" align="left">Column</th><th width="10%" align="left">Column Name</th><th width="18%" align="left">[table]field</th><th width="70%" align="left">Comments
+</th></tr>
+<tr>
+<td>D</td><td>Travel details</td><td></td><td>Row description. The description you see depends on whether the vehicle had an eTag or not. E.g. 'Total Trips for eTag 123456789012' or 'Total Trips for ABC123 VIC No Tag-CAR'
+</td></tr>
+<tr>
+<td>H</td><td>Net Amount</td><td></td><td>Net amount of all trips for the vehicle above. E.g. $27.33
+</td></tr></table>
+<p><br />
+</p><p><br />
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;action=edit&amp;section=16" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 4952: Citylink interface change November 2011.  Live 22/12/2011
+</li><li> 5281: Citylink csv file cater for rego in etag column.  Live 24/01/2012
+</li><li> 15871: Citylink file import not working as expected due to date format. Live 08/05/2017
+</li><li> 16044: Citylink import not picking up all the records. Live 27/06/2017
+</li><li> (DEV-20336) Update CLINK interface to itemise 'No tag' transactions. Live 28/03/2022
+</li><li> (DEV-21587) Card Interface - CLINK - Increase Character Limit on Reg No. Live 23/05/2022
+</li><li> (DEV-21667) No Tag In Vehicle Fee not uploading following DEV-20336. Live 11/07/2022
+</li><li> (DEV-21809) Include 'Admin Fee' rows under 'Fees charges and adjustments' section to Linkt fuel imports. Live 20/02/2023
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="CLINK.html">https://help.catch-e.net.au/mediawiki/index.php/CLINK</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=CLINK">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/CLINK.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=CLINK&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.10 secs. -->
+</body></html>

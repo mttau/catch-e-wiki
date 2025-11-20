@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="AcceptQuote,APIs,Authenticate with the API,Main Page,Manage Roles:Apis,Quotes:Accept,Roles:Apis" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>AcceptQuote - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">AcceptQuote</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="AcceptQuote.html#column-one">navigation</a>, <a href="AcceptQuote.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <b>IT Set-up</b>  &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Quotes" title="APIs">Quotes</a> → <strong>acceptQuote</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="AcceptQuote.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Authentication"><span class="tocnumber">3</span> <span class="toctext">Authentication</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#URL_Examples"><span class="tocnumber">5</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Path_Variables"><span class="tocnumber">6</span> <span class="toctext">Path Variables</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Headers"><span class="tocnumber">7</span> <span class="toctext">Headers</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Body"><span class="tocnumber">8</span> <span class="toctext">Body</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#Response_Details"><span class="tocnumber">9</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="AcceptQuote.html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This API replicates the system function of accepting a quote.<br /> Visit <a href="./Quotes:Accept.html" title="Quotes:Accept">Quotes &rarr; Accept</a> to see the business rules and update detail.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>Quote:Accept</b>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=3" title="Edit section: Authentication">edit</a>]</div><a name="Authentication"></a><h4>Authentication</h4>
+<p><a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate with the API</a> before running this API.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=5" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.catch-e.com/qt/quotes/153103/accept
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=6" title="Edit section: Path Variables">edit</a>]</div><a name="Path_Variables"></a><h4>Path Variables</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Key </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> quote_id </td><td> string </td><td> Quote to accept. </td><td> Required
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=7" title="Edit section: Headers">edit</a>]</div><a name="Headers"></a><h4>Headers</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Key </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td>Audit-User-Id </td><td> string </td><td> User Id to use for audit purposes. This header requires the Audit:UserIdOverride permission to be associated with your role.<br /> </td><td> Optional
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=8" title="Edit section: Body">edit</a>]</div><a name="Body"></a><h4>Body</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">JSON Field </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td>procurement_check_flag </td><td> string </td><td> Default value 'no'. Set to 'yes' to override the procurement check warnings and indicate acceptance of any applicable procurement fees. </td><td> Optional
+</td></tr>
+<tr>
+<td> timezone </td><td> string </td><td> Used to set the [qt_quotes]quote_accepted date. </td><td>Optional
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=9" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 204 No Content
+</td></tr>
+<tr>
+<td> <pre>
+{
+   &quot;contract_id&quot;: &quot;102615&quot;
+}
+</pre> </td><td> The request was successful request. The created contract_id is returned.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 401 - Unauthorized
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unauthorized&quot;,
+    &quot;status&quot;: 401,
+    &quot;detail&quot;: &quot;Unauthorized&quot;
+}
+</pre>
+</td><td>
+<ol><li> You have not <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticated</a> before running this API or
+</li><li> The token_timeout of the current session has passed. You need to <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticate</a> again.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 403 - Forbidden
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Forbidden&quot;,
+    &quot;status&quot;: 403,
+    &quot;detail&quot;: &quot;Forbidden&quot;
+}
+</pre>
+</td><td> You do not have permissions for this request.<br />
+<ol><li> Go to <b>System Roles</b> and enter 'web_services'
+</li><li> Navigate to the <a href="./Roles:Apis.html" title="Roles:Apis"> Roles / APIs</a> tab to make sure the permission you need to run this API is checked.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  <pre>
+&quot;luxuryChargeEventNotFound&quot;: &quot;Quote cannot be accepted until client confirms the 'Luxury Car Charge'.                               
+Create a Luxury Charge Event to record client confirmation and try again&quot;
+</pre> </td><td>  Missing luxuryChargeEvent
+</td></tr>
+<tr>
+<td>  <pre>
+   &quot;quote_id&quot;: {
+     &quot;noRecordFound&quot;: &quot;No record matching input was found&quot; </pre></td><td> A pre-existing quote_id must be passed.
+</td></tr>
+<tr>
+<td>  <pre>
+   &quot;quote_id&quot;: {
+            &quot;costCentreNotFound&quot;: &quot;Cost Centre '' does not exist&quot;
+</pre> </td><td>  Invalid cost centre
+</td></tr>
+<tr>
+<td>  <pre>
+   &quot;quote_id&quot;: {
+            &quot;divisionNotFound&quot;: &quot;Division '' does not exist&quot;
+</pre> </td><td>  Invalid division
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;quote_id&quot;: {
+            &quot;costCentreRequired&quot;: &quot;Cost Centre Code is required&quot;
+</pre></td><td> Missing cost centre
+</td></tr>
+<tr>
+<td> <pre> &quot;procurement_check_flag&quot;: {
+            &quot;procurementFeeConfirmationRequired&quot;: &quot;Confirm that 'A-Z Vehicles R Us' has agreed to pay a procurement fee of $500.00 on this vehicle&quot; </pre> </td><td>User need to confirm the procurement fee
+</td></tr>
+<tr>
+<td><pre>
+&quot;procurement_check_flag&quot;: {
+            &quot;isEmpty&quot;: &quot;Value is required and can't be empty&quot;}</pre></td><td>User need to add the procurement_check_flag which is yes / no
+</td></tr>
+<tr>
+<td>  <pre>  &quot;quote_id&quot;: {
+            &quot;quoteAcceptedMoreThanOnce&quot;: &quot;You cannot accept this quote more than once&quot;
+</pre>
+</td><td> If the gb_control 'accept_quote_multiple_times_flag' is set to no , quote cannot be accept  more than  one time.
+</td></tr>
+<tr>
+<td>  <pre>
+   &quot;quote_id&quot;: {
+     &quot;quoteInvalidStatus&quot;: &quot;Quote must be in open, accepted or sent status to be accepted.&quot; </pre></td><td> Quote must be in open, accepted or sent status
+</td></tr>
+<tr>
+<td>  <pre>&quot;quote_id&quot;: {
+            &quot;preferredDealerNotSelected&quot;: &quot;You must select a 'Preferred Dealer' before you can accept this quote&quot;  </pre></td><td> Missing 'preferred dealer' from the quote
+</td></tr>
+<tr>
+<td>  <pre>&quot;quote_id&quot;: {
+            &quot;applicationReferenceNotPopulated&quot;: &quot;Application Reference must be populated!&quot; </pre></td><td> Application Reference is mandatory.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 500 - Unexpected error
+</td></tr>
+<tr>
+<td>   <pre>
+{
+    &quot;status&quot;: 500,
+    &quot;title&quot;: &quot;Unexpected error&quot;,
+    &quot;describedBy&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;detail&quot;: &quot;JSON encoding error occurred: Malformed UTF-8 characters, possibly incorrectly encoded&quot;,
+}
+</pre>
+</td><td> If a query has encrypted fields which are not decrypted using aes_decrypt() in JSON response, below error is thrown. Please decrypt the fields in query before adding the query in [gb_report_queries] table.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20205) acceptQuote - Accept a quote. Live 22/11/2021
+</li><li> (API-20393) Update locking mechanism for Quote APIs. Live 06/03/2023
+</li><li> (API-20390) Quote Accept and Settle + API - add updates for EV Exempt Vehicles. Live dd/03/2023
+</li><li> (API-20677) Add Quote Insurance Billing type - Annually. Live 12/05/2025
+</li><li> (API-20716) Fix null object access in acceptQuote API causing Bugsnag error. Live 14/07/2025
+</li><li> (API-20727) Quotes / Finance - Application Reference - enable field to be mandatory on Accept. Live dd/08/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="AcceptQuote.html">https://help.catch-e.net.au/mediawiki/index.php/AcceptQuote</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=AcceptQuote">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/AcceptQuote.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=AcceptQuote&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.05 secs. -->
+</body></html>

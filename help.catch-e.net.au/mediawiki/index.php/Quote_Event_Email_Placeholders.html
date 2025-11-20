@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Quote Event Email Placeholders,Catch-e Support,Domain Setup,Email Setup,Main Page,Quote Event Email,SPF records,System Implementation" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Quote Event Email Placeholders - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Quote Event Email Placeholders</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Quote_Event_Email_Placeholders.html#column-one">navigation</a>, <a href="Quote_Event_Email_Placeholders.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Implementation.html" title="System Implementation">System Configuration</a> &rarr; <a href="Domain_Setup.html" title="Domain Setup">Domain Setup</a> &rarr; <a href="SPF_records.html" title="SPF records">SPF Setup</a> &rarr; <a href="Email_Setup.html" title="Email Setup">Email Setup</a> &rarr; <a href="Quote_Event_Email.html" title="Quote Event Email">Quote Event Email</a> &rarr; <strong>Quote Event Email Placeholders</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Event_Email_Placeholders&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Download this request form <a href="https://help.catch-e.net.au/clients/help/wiki/images/2/2b/Quote_event_email_request.docx" class='internal' title="Quote event email request.docx">Quote Event Email Request</a> and send it to <a href="Catch-e_Support.html#Request_forms" title="Catch-e Support">Catch-e Support</a> if you want to set-up a Quote Event Email.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Event_Email_Placeholders&amp;action=edit&amp;section=2" title="Edit section: Placeholders">edit</a>]</div><a name="Placeholders"></a><h4>Placeholders</h4>
+<p>The placeholders listed below are available for use in Quote Event Emails when [gb_templates]name = 'pdf_quote_event_email_message'.<br />
+</p><p>The markers ## or {} can be used to make placeholders. E.g. #quote_id# or {quote_id} are both fine.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Placeholder</th><th>Description (Location of data in system screens)</th><th>[table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Driver Details
+</td></tr>
+<tr>
+<td>driver_id</td><td>Drivers/Contact "Driver ID"</td><td>[fm_contracts]driver_id
+</td></tr>
+<tr>
+<td>driver_contact1_name </td><td>Drivers/Contact "Given Name"</td><td>[fm_drivers]given_name
+</td></tr>
+<tr>
+<td>driver_name </td><td>Drivers/Contact "Given Name" "Surname"</td><td>[fm_drivers]given_name] [fm_drivers]surname
+</td></tr>
+<tr>
+<td>driver_email </td><td>Drivers/Contact "Email"</td><td>[fm_drivers]home_email
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Client Details
+</td></tr>
+<tr>
+<td>client_name </td><td>Clients/Contact "Name"</td><td>[fm_clients]name
+</td></tr>
+<tr>
+<td>client_contact1_name </td><td>Clients/Contact "Contact 1" Name</td><td>[fm_clients]contact1_name
+</td></tr>
+<tr>
+<td>client_contact1_email </td><td>Clients/Contact "Contact 1" Email</td><td>[fm_clients]contact1_email
+</td></tr>
+<tr>
+<td>client_contact2_name </td><td>Clients/Contact "Contact 2" Name</td><td>[fm_clients]contact2_name
+</td></tr>
+<tr>
+<td>client_contact2_email </td><td>Clients/Contact "Contact 2" Email</td><td>[fm_clients]contact2_email
+</td></tr>
+<tr>
+<td>client_contact3_name </td><td>Clients/Contact "A/C Payable" Name</td><td>[fm_clients]contact3_name
+</td></tr>
+<tr>
+<td>client_contact3_email </td><td>Clients/Contact "A/C Payable" Email</td><td>[fm_clients]contact3_email
+</td></tr>
+<tr>
+<td>client_contact4_name </td><td>Clients/Contact "CC" Name</td><td>[fm_clients]contact4_name
+</td></tr>
+<tr>
+<td>client_contact4_email </td><td>Clients/Contact "CC" Email</td><td>[fm_clients]contact4_email
+</td></tr>
+<tr>
+<td>client_contact5_name </td><td>Clients/Contact "Payroll" Name</td><td>[fm_clients]contact5_name
+</td></tr>
+<tr>
+<td>client_contact5_email </td><td>Clients/Contact "Payroll" Email</td><td>[fm_clients]contact5_email
+</td></tr>
+<tr>
+<td>cost_centre_contact</td><td>Clients/Cost Centre "Contact" Name</td><td>[fm_client_cost_centres]contact_name
+</td></tr>
+<tr>
+<td>cost_centre_email </td><td>Clients/Cost Centre "Contact" Email</td><td>[fm_client_cost_centres]contact_email
+</td></tr>
+<tr>
+<td>cost_centre_name </td><td>Clients/Cost Centre "Contact" Email</td><td>[fm_client_cost_centres]description
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Quote Details
+</td></tr>
+<tr>
+<td>quote_id</td><td>Quotes/Contract "Quote Id"</td><td>[qt_quotes]quote_id
+</td></tr>
+<tr>
+<td>opportunity_no</td><td>Quotes/Contract "Opportunity No"</td><td>[qt_quotes]opportunity_id
+</td></tr>
+<tr>
+<td>date</td><td>Quotes/Contract "Effective Date"</td><td>[qt_quotes]date
+</td></tr>
+<tr>
+<td>quote_date</td><td>Quotes/Contract "Quote Date"</td><td> [qt_quotes]quote_date
+</td></tr>
+<tr>
+<td>duration</td><td>Quotes/Contract "Valid for"</td><td> [qt_quotes]duration
+</td></tr>
+<tr>
+<td>state</td><td>Quotes/Contract "State"</td><td> [qt_quotes]state
+</td></tr>
+<tr>
+<td>cost_centre</td><td>Quotes/Contract "Cost Centre"</td><td> [qt_quotes]cost_centre
+</td></tr>
+<tr>
+<td>division</td><td>Quotes/Contract "Division"</td><td>[qt_quotes]division
+</td></tr>
+<tr>
+<td>quote_description</td><td> Quotes/Contract "Description" </td><td>[gl_posting_maps]name
+</td></tr>
+<tr>
+<td>term</td><td>Quotes/Contract "Term"</td><td>[qt_quotes]term
+</td></tr>
+<tr>
+<td>contract_kms</td><td>Quotes/Contract "Annual KMS"</td><td>[qt_quotes]contract_kms
+</td></tr>
+<tr>
+<td>vehicle_description</td><td>Quotes/Vehicle "Make, Model, Body Type, Variant"</td><td>[qt_variants]short_description
+</td></tr>
+<tr>
+<td>plate_year</td><td>Quotes/Vehicle "Plate Year"</td><td>[qt_quotes]plate_year
+</td></tr>
+<tr>
+<td>new_used</td><td>Quotes/Vehicle "New or Used"</td><td>[qt_quotes]new_used
+</td></tr>
+<tr>
+<td>list_price_net</td><td>Quotes/Vehicle "List Price (Exc GST)"</td><td>[qt_quotes]list_price_net
+</td></tr>
+<tr>
+<td>discounts_net</td><td>Quotes/Vehicle "Fleet Discount" + "Confidential Rebate" + "Bonus" + "Dealer Discount" (Exc GST)</td><td>discount_net+rebate_net+bonus_amount_net+dealer_discount_net
+</td></tr>
+<tr>
+<td>margin_delivery_net</td><td>Quotes/Vehicle "Margin" + "Dealer Delivery Fee" (Exc GST)</td><td>margin_net + dealer_delivery_net
+</td></tr>
+<tr>
+<td>total_options_net</td><td>Quotes/Vehicle "Total Options" (Exc GST)</td><td>[qt_quotes]optional_equipment_net
+</td></tr>
+<tr>
+<td>luxury_car_tax</td><td>Quotes/Vehicle "Luxury Car Tax" (Exc GST)</td><td>[qt_quotes]luxury_car_tax
+</td></tr>
+<tr>
+<td>total_registration_net</td><td>Quotes/Vehicle "Initial CTP" + "Initial Registration" + "Premium Plate" (Exc GST)</td><td>ctp_initial_net + reg_initial_net + premium_plates_net
+</td></tr>
+<tr>
+<td>stamp_duty</td><td>Quotes/Vehicle "Purc. Stamp Duty"</td><td>purchase_stamp_duty
+</td></tr>
+<tr>
+<td>total_gst</td><td>Quotes/Vehicle "Total On Road Price" (GST)</td><td>[qt_quotes]on_road_price_gst
+</td></tr>
+<tr>
+<td>total_on_road_price</td><td>Quotes/Vehicle "Total On Road Price" (Total)</td><td>[qt_quotes]on_road_price_net + [qt_quotes]on_road_price_gst
+</td></tr>
+<tr>
+<td>optional_equipment_1</td><td>Quotes/Options</td><td>[qt_quote_optional_equipment]description for each selected option, separated by a comma and space.
+</td></tr>
+<tr>
+<td>broker_fee</td><td>Quotes/Finance "Broker Fee"</td><td>[qt_quotes]broker_fee
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Quote Events Email
+</td></tr>
+<tr>
+<td>quote_event_action_id </td><td> Quotes/Events "Action"</td><td> [qt_quote_event_actions]quote_event_action_id
+</td></tr>
+<tr>
+<td>event_amount </td><td> Quotes/Events "Amount"</td><td> [qt_quote_events]event_amount
+</td></tr>
+<tr>
+<td>quote_event_id </td><td> </td><td>[qt_quote_events]quote_event_id
+</td></tr>
+<tr>
+<td>event_completed_flag </td><td> Quotes/Events "Completed"</td><td> [qt_quote_events]completed_flag
+</td></tr>
+<tr>
+<td>event_date </td><td> </td><td> [qt_quote_events]event_date
+</td></tr>
+<tr>
+<td>event_description </td><td> Quotes/Events "Description"</td><td> [qt_quote_events]description
+</td></tr>
+<tr>
+<td>event_due_date </td><td>Quote/Events "Due Date"</td><td> [qt_quote_events]due_date
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Financier Details
+</td></tr>
+<tr>
+<td>financier_name </td><td>Quotes/Financier "Financier"</td><td>[fm_suppliers]name
+</td></tr>
+<tr>
+<td>financier_email</td><td>Suppliers/Detail "Email"</td><td>[fm_suppliers]email
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Supplier Details
+</td></tr>
+<tr>
+<td>dealer_name </td><td>Quotes/Vehicle "Preferred Dealer"</td><td>[fm_suppliers]name
+</td></tr>
+<tr>
+<td>dealer_contact</td><td>Suppliers/Details "Contact"</td><td>[fm_supplier]contact
+</td></tr>
+<tr>
+<td>dealer_email</td><td>Suppliers/Detail "Email"</td><td>[fm_suppliers]email
+</td></tr>
+<tr>
+<td>dealer_phone</td><td>Suppliers/Detail "Phone"</td><td>[fm_suppliers]phone
+</td></tr>
+<tr>
+<td>insurer_name </td><td>Quotes/Contract "Insurer"</td><td>[fm_suppliers]name
+</td></tr>
+<tr>
+<td>insurer_contact </td><td>Suppliers/Details "Contact"</td><td>[fm_supplier]contact
+</td></tr>
+<tr>
+<td>insurer_email </td><td>Suppliers/Detail "Email"</td><td>[fm_suppliers]email
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Other Details
+</td></tr>
+<tr>
+<td>date_filter</td><td></td><td>today's date
+</td></tr>
+<tr>
+<td>account_manager_name </td><td>Clients/Contact "A/C Manager"</td><td>[gb_users]full_name
+</td></tr>
+<tr>
+<td>account_manager_email </td><td>Users/Details "Email" (for the A/C Manager's user details)</td><td>[gb_users]email
+</td></tr>
+<tr>
+<td>sender_direct </td><td>Users/Details "Direct" (for the user who is sending the email)</td><td>[gb_users]direct
+</td></tr>
+<tr>
+<td>sender_email </td><td>Users/Details "Email" (for the user who is sending the email)</td><td>[gb_users]sender_email
+</td></tr>
+<tr>
+<td>sender_fax </td><td>Users/Details "Fax"</td><td>[gb_users]fax
+</td></tr>
+<tr>
+<td>sender_full_name </td><td>Users/Details "Name"</td><td>[gb_users]full_name
+</td></tr>
+<tr>
+<td>sender_job_title </td><td>Users/Details "Job Title"</td><td>[gb_users]job_title
+</td></tr>
+<tr>
+<td>sender_mobile </td><td>Users/Details "Mobile"</td><td>[gb_users]mobile
+</td></tr>
+<tr>
+<td>sender_phone </td><td>Users/Details "Phone"</td><td>[gb_users]phone
+</td></tr>
+<tr>
+<td>sender_organisation </td><td>Users/Details "Organisation"</td><td> [gb_users]organisation
+</td></tr>
+<tr>
+<td>created_full_name</td><td>Quotes/Contract "Created By"</td><td>[gb_users]full_name
+</td></tr>
+</table>
+<p><br />
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Event_Email_Placeholders&amp;action=edit&amp;section=3" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 9144::Quote Events (Vehicle Procurement) Live 25/11/2015
+</li><li> 14796: Extend quote event email recipients. Live 14/12/2016
+</li><li> 15956: Additional quote event email placeholders. Live dd/06/2017
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Quote_Event_Email_Placeholders.html">https://help.catch-e.net.au/mediawiki/index.php/Quote_Event_Email_Placeholders</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Quote_Event_Email_Placeholders">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Quote_Event_Email_Placeholders.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Event_Email_Placeholders&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

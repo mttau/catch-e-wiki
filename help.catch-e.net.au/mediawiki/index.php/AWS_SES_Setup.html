@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="AWS SES Setup,Catch-e Support,Email Setup,Emailing Setup,Global Controls,Mail Failed Scheduler Jobs,Main Page,SMTP Setup" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>AWS SES Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">AWS SES Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="AWS_SES_Setup.html#column-one">navigation</a>, <a href="AWS_SES_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; IT Set-up  &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Emailing_Setup.html" title="Emailing Setup">Email Configuration</a> | <a href="Mail_Failed_Scheduler_Jobs.html" title="Mail Failed Scheduler Jobs">Mail Failed Scheduler Jobs</a> &rarr; <strong>SES</strong> | <a href="SMTP_Setup.html" title="SMTP Setup">SMTP</a> &rarr; <a href="Email_Setup.html" title="Email Setup">Email Setup</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="AWS_SES_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="AWS_SES_Setup.html#Set-up_Steps"><span class="tocnumber">2</span> <span class="toctext">Set-up Steps</span></a>
+<ul>
+<li class='toclevel-2'><a href="AWS_SES_Setup.html#Update_Global_Controls"><span class="tocnumber">2.1</span> <span class="toctext">Update Global Controls</span></a></li>
+<li class='toclevel-2'><a href="AWS_SES_Setup.html#Run_Test_Emails"><span class="tocnumber">2.2</span> <span class="toctext">Run Test Emails</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="AWS_SES_Setup.html#Useful_SQL"><span class="tocnumber">3</span> <span class="toctext">Useful SQL</span></a></li>
+<li class='toclevel-1'><a href="AWS_SES_Setup.html#AWS_Documentation_for_verifying_a_DKIM_domain_identity_with_your_DNS_provider"><span class="tocnumber">4</span> <span class="toctext">AWS Documentation for verifying a DKIM domain identity with your DNS provider</span></a>
+<ul>
+<li class='toclevel-2'><a href="AWS_SES_Setup.html#System_Notes"><span class="tocnumber">4.1</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>Amazon Simple Email Service (SES) is our recommended emailing method.<br /> DomainKeys Identified Mail (DKIM) is the authentication method we use for SES.<br /> Each Domain Name that will send emails needs 4 domain keys listed against the Domain Name.<br />
+<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 12%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> Once your SES keys are set-up, they <u>must</u> remain in place.<br /> If these keys are removed, your emails will not send and drivers and employees will receive error messages in the Driver Portal.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=2" title="Edit section: Set-up Steps">edit</a>]</div><a name="Set-up_Steps"></a><h3>Set-up Steps</h3>
+<ol><li>  Send an email to <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> listing the domains you want to use to email from Catch-e. 
+</li><li> <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> will:
+<ol><li> Raise a service request task
+</li><li> Check that any existing entries in the <i>[gb_mail_sender_domains]</i> table are listed.
+</li><li> List all the required URLs on the task and assign to the System Administrator
+</li><li> Create the 4 entries (per domain) for the listed URLs and document the domain keys (DKIM) into the task. Assign to the Analyst
+</li><li> Email the client with the domain key (DKIM) details.
+</li></ol>
+</li><li> When you receive a return email from us with the details of the domain key entries, enter or arrange for them to be added to your Domain Name records.
+</li><li> There will be 4 DKIM entries per domain. 
+</li><li> Let <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> know when the DKIM entries have been added to your domain.
+</li><li> <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> will:
+<ol><li> Note the confirmation on the task and task and assign to the System Administrator
+</li><li> Check and confirm that the activation has been successful (can take up to 72 hours - but typically completed within 1 hour of client DNS change) and assign to the Analyst
+</li><li> Update the relevant controls to use SES
+</li><li> Run confirmation email tests to confirm the update.
+</li></ol>
+</li><li> The set-up can finish here. 
+</li><li> Before you finish, check to see if you have any processes that use the email return path to authenticate the origin of emails. E.g. SMSGlobal for email to sms services. 
+</li><li> If you are using any processes like this, you will need to nominate a sub-domain to use for the return path.
+</li><li> This should be a sub-domain, and not your main domain name, so the configuration does not disrupt your organisations settings. E.g. use <b>ses.catch-e.com.au</b>, not <b>catch-e.com.au</b>
+</li><li> Advise <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> of the sub-domain name you want to use
+</li><li> <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e</a> will:
+<ol><li> Email you the entries that need to be added to your DNS
+</li></ol>
+</li><li> Add or forward these entries to your Domain Manager to update
+</li><li> Advise <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> when this has been done
+</li><li> <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e</a> will:
+<ol><li> Configure and verify the sub-domain name in AWS
+</li><li> Email confirmation of this to you.
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=3" title="Edit section: Update Global Controls">edit</a>]</div><a name="Update_Global_Controls"></a><h4>Update Global Controls</h4>
+<p>Once the domain keys have been verified, <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> will activate the Amazon SES service by updating the controls below to use the values shown.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"> Setup / Reference Data &rarr; <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Default Value
+</th></tr>
+<tr>
+<td>gb</td><td>mail_transmission_provider</td><td>Catch-e was initially developed using <a href="SMTP_Setup.html" title="SMTP Setup">SMTP</a>.<br /> <strong>SES</strong> was introduced later and is now our recommended protocol for clients.
+</td><td>ses
+</td></tr>
+<tr>
+<td>gb</td><td>mail_sender_domains_enforcing_flag</td><td><strong>SES</strong> function does not refer to data in the <i>gb_mail_sender</i> table,  so this setting should be 'no'.
+</td><td>no
+</td></tr>
+<tr>
+<td>gb</td><td>email_attachments_max_size_in_bytes</td><td>This control sets the maximum allowable size of email attachments.<br /> The default value is 7864320 (7.5MB) which is the maximum size that the <strong>SES</strong> email method will support.<br /> If emails are sent with attachments that are larger thank this, the email will convert the <a href="Emailing_Setup.html#Email_Attachments_as_URLs" title="Emailing Setup">email attachments into URLs</a>.
+</td><td>7864320
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=4" title="Edit section: Run Test Emails">edit</a>]</div><a name="Run_Test_Emails"></a><h4>Run Test Emails</h4>
+<p><a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> will conduct the following tests;
+<br />
+</p>
+<ol><li> Send a test email to yourself to confirm reception.
+</li><li> Send a test email to "bounce@simulator.amazonses.com" 
+</li><li> Check that the associated <i>[gb_mail_recipients]status_flag</i> record has been updated to 'bounced'
+</li><li> Send a test email to "complaint@simulator.amazonses.com" 
+</li><li> Check that the associated <i>[gb_mail_recipients]status_flag</i> record has been updated to 'complaint'
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=5" title="Edit section: Useful SQL">edit</a>]</div><a name="Useful_SQL"></a><h3>Useful SQL</h3>
+<pre>
+-- All 'enrolled' domains will need to have their DNS records updated.
+SELECT * FROM gb_mail_sender_domains;
+
+-- Returns all recipients for the nominated mail_batch_no and their respective status_flag.
+SELECT * FROM gb_mail_recipients
+WHERE mail_batch_no = 'nnnnnn' 
+-- AND mail_item_no = 1
+-- ADN recipient_no = 1
+;
+
+-- Provides additional information for the nominated mail_batch_no and their respective delivery_status &amp; delivery_status_message.
+SELECT * FROM gb_mail_recipient_statuses
+WHERE mail_batch_no = 'nnnnnn'
+-- AND mail_item_no = 1
+-- ADN recipient_no = 1
+;
+</pre>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=6" title="Edit section: AWS Documentation for verifying a DKIM domain identity with your DNS provider">edit</a>]</div><a name="AWS_Documentation_for_verifying_a_DKIM_domain_identity_with_your_DNS_provider"></a><h2>AWS Documentation for verifying a DKIM domain identity with your DNS provider</h2>
+<p><a href="https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html#just-verify-domain-proc" class='external text' title="https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html#just-verify-domain-proc" rel="nofollow">Follow guidelines by your DNS hosting provider which is listed on table after step 5</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-20965) SES bounce callback does not parse email address in bounced recipients properly. Live 10/02/2020
+</li><li> (API-20039) Add AWS SES (Simple Email Service) to API. Live 10/02/2020
+</li><li> (PORTAL-16792) Add AWS SES (Simple Email Service) to Portal. Live 10/02/2020
+</li><li> (DEV-20990) Empty recipient To: bug in Html Mime Mail library. Live 24/02/2020
+</li><li> (DEV-21164) Update [gb_controls]email_attachments_max_size_in_bytes value. Live 24/08/2020
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="AWS_SES_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/AWS_SES_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=AWS_SES_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/AWS_SES_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=AWS_SES_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.08 secs. -->
+</body></html>

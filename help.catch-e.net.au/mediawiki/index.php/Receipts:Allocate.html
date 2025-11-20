@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Receipts:Allocate,ABA file,Catch-e support,Clients:Contract defaults,Contracts:Lease,Create a receipt batch,Delete a receipt batch,FLEET,Fm::billings,Import a receipt batch,Importdata:whole Table" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Receipts:Allocate - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Receipts:Allocate</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Receipts:Allocate.html#column-one">navigation</a>, <a href="./Receipts:Allocate.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Receipts.html" title="Receipts">Receivables</a> &rarr; <a href="./Receipts:Search.html" title="Receipts:Search">Search</a> | <strong>Allocate</strong> &rarr; <a href="./Receipts:Allocate:Import.html" title="Receipts:Allocate:Import">Import</a> | <a href="Receipts_(ABA).html" title="Receipts (ABA)">Receipts (ABA)</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Receipts_Setup.html" title="Receipts Setup">Receipts Setup</a> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Process_Pages"><span class="tocnumber">1</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Top_Buttons"><span class="tocnumber">2</span> <span class="toctext">Top Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Batch"><span class="tocnumber">3</span> <span class="toctext">Batch</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Item"><span class="tocnumber">4</span> <span class="toctext">Item</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Summary"><span class="tocnumber">5</span> <span class="toctext">Summary</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Detail"><span class="tocnumber">6</span> <span class="toctext">Detail</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Action_Buttons"><span class="tocnumber">7</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Validations_and_Alerts"><span class="tocnumber">8</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Troubleshooting"><span class="tocnumber">9</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Receipts:Allocate.html#I_can.27t_locate_an_invoice_row_to_receipt"><span class="tocnumber">9.1</span> <span class="toctext">I can't locate an invoice row to receipt</span></a></li>
+<li class='toclevel-2'><a href="./Receipts:Allocate.html#Banking_Software_shows_odd_details_in_fields._E.g._.3Ctcxspan_txchref.3D.22123..."><span class="tocnumber">9.2</span> <span class="toctext">Banking Software shows odd details in fields. E.g. &lt;tcxspan txchref="123...</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#System_Locks"><span class="tocnumber">10</span> <span class="toctext">System Locks</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#System_Locks_2"><span class="tocnumber">11</span> <span class="toctext">System Locks</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#Orphaned_Locks"><span class="tocnumber">12</span> <span class="toctext">Orphaned Locks</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate.html#System_Notes"><span class="tocnumber">13</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=1" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Create_a_receipt_batch.html" title="Create a receipt batch">Create a receipt batch</a>
+</dd><dd><a href="Import_a_receipt_batch.html" title="Import a receipt batch">Import a receipt batch</a>
+</dd><dd><a href="Print_a_receipt_batch_ABA_file.html" title="Print a receipt batch ABA file">Print a receipt batch ABA file</a>
+</dd><dd><a href="Unpost_a_receipt_batch.html" title="Unpost a receipt batch">Unpost a receipt batch</a>
+</dd><dd><a href="Delete_a_receipt_batch.html" title="Delete a receipt batch">Delete a receipt batch</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=2" title="Edit section: Top Buttons">edit</a>]</div><a name="Top_Buttons"></a><h4>Top Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View mode
+</td></tr>
+<tr>
+<td>New Batch</td><td>Click to create a new batch.
+</td></tr>
+<tr>
+<td>Import</td><td>Click to import a file to create a batch. Visit the <a href="./Receipts:Allocate:Import.html" title="Receipts:Allocate:Import">Import</a> page for more detail.
+</td></tr>
+<tr>
+<td><a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a></td><td>Click to <a href="Delete_a_receipt_batch.html" title="Delete a receipt batch">delete the selected batch</a>. You will need to confirm an alert message to make sure you really want to do this before the delete will be done.<br /> Once deleted, the batch cannot be seen or selected from the <a href="./Receipts:Search.html" title="Receipts:Search">Recepts / Search</a> screen anymore. Only items in 'Pending' batches can be deleted.<br /> This button is disabled if the selected batch is in 'Posted' status. If you want modify or delete items in a posted batch, you will need to <b>Un-Post</b> the batch first.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=3" title="Edit section: Batch">edit</a>]</div><a name="Batch"></a><h4>Batch</h4>
+<p>The Batch section contains summary information. It is intended to help you manage your processing work by grouping your receipts. E.g. you might create one batch per banking day, so that the Target equals the value of your days receipts. You could break it down further in a way that helps you.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td>Banking Date</td><td>Date</td><td>For a new batch, the default is yesterday's date. Edit this to show the correct date for your batch. This is a required field.</td><td>[sl_receipts]transaction_date
+</td></tr>
+<tr>
+<td>Bank Account </td><td> List </td><td> If you have one bank account set-up, this is displayed and a list becomes available if there are more than one.<br /> The bank account you select is used when generating the <a href="Receipts_(ABA).html" title="Receipts (ABA)">Receipts (ABA) file</a> and is helpful when doing reconciliations and reports.<br /> As receipt batches are not exported to your accounting system, there is no impact to your accounts if the wrong bank account is selected when processing receipts. </td><td>[sl_receipts]gl_code_id
+</td></tr>
+<tr>
+<td>Target</td><td>Num</td><td>Enter the target value for the total batch.</td><td>[sl_receipts]amount
+</td></tr>
+<tr>
+<td>Variance</td><td>Num</td><td>The variance is the difference between the Batch Target and the sum of allocated amounts within the batch.</td><td>
+</td></tr>
+<tr>
+<td>Collation</td><td>List</td><td>This is only required when you want to generate a <a href="Receipts_(ABA).html" title="Receipts (ABA)">Receipts (ABA) file</a>. It determines how the information is collated in the <a href="Receipts_(ABA).html" title="Receipts (ABA)">Receipts (ABA) file</a>.<br />
+<p><b>Client</b>: The ABA file will contain 1 row per client and the Lodgement Reference will be the "Client Code". This will use the record of the client that was <i>invoiced</i>.<br /> i.e. if a contract in the receipt has since been moved to a different client, this is not used.<br />
+</p><p><b>Contract</b>: The ABA file will contain 1 row per contract and the Lodgement Reference will be the "Contract ID".
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td>Status</td><td>Text</td><td>The status of the batch; Pending, Posted, Accounted, Cancelled.</td><td>[sl_receipts]status_flag
+</td></tr>
+<tr>
+<td>Last Edit</td><td>Date</td><td>The date and time of the last edit to this batch.</td><td>[sl_receipts]last_edit
+</td></tr>
+<tr>
+<td>By</td><td>Text</td><td>Displays the User Login of the user who edited the batch last.</td><td>[sl_receipts]user_id_edit
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=4" title="Edit section: Item">edit</a>]</div><a name="Item"></a><h4>Item</h4>
+<p>An item is equivalent to one deposit line. I.e. the EFT payment of one customer.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Receipt Type </td><td> Drop List </td><td> When you create a new item and the client, driver or contract is selected, this field will updated to match the stored value in the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Payment Method" field.<br /> This field will not auto-populate if you are creating the item for a "Client Group".<br />
+<p>If it is blank, or not the receipt type you want, you can edit this. Choose from 'Direct Debit','Cheque','Cash','Other','Credit Card','Eft','Bpay','Payway'.<br />
+</p><p>If the client's stored "Payment Method" is not suitable, go to <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> and update this field to be suitable.<br />
+</p>
+</td><td>[sl_receipt_items]receipt_type
+</td></tr>
+<tr>
+<td> Bank Ref </td><td> Text<br /> List </td><td> Enter or choose a bank reference.<br />
+<p>This field is free-text by default, but can be configured as a list.<br /> 
+</p><p>If you want to use a list, go to <a href="Receipts_Setup.html#Bank_Ref" title="Receipts Setup">Receipts Setup</a> for details.
+</p>
+</td><td>[sl_receipt_items]bank_ref<br /> <i>may link to</i><br /> [sl_receipt_item_bank_references]
+<p>description
+</p>
+</td></tr>
+<tr>
+<td>Target</td><td>Num</td><td>Enter the value of the Deposit Item.</td><td>[sl_receipt_item]amount
+</td></tr>
+<tr>
+<td>Variance</td><td>Num</td><td>Displays the difference between the Item Target and the sum of Allocated values in the Item</td><td>
+</td></tr>
+<tr>
+<td>Client Group</td><td>Text</td><td>Enter or lookup the Group Code if you want to view all client transactions within the Group.
+</td></tr>
+<tr>
+<td>Client</td><td>Text</td><td>Enter or lookup the Client Code.
+</td></tr>
+<tr>
+<td>Driver</td><td>Num</td><td>Enter or lookup the Driver ID. The Item will display only items for the filtered Driver.
+</td></tr>
+<tr>
+<td>Reg No</td><td>Text</td><td>Enter or lookup the Reg No. The Item will display only items for the filtered Driver.
+</td></tr>
+<tr>
+<td>Contract ID</td><td>Num</td><td>Enter or lookup the Contract ID. The Item will display only items for the filtered Contract.
+</td></tr>
+<tr>
+<td>Invoice</td><td>Num</td><td>Enter or lookup the Invoice. The Item will display only invoice rows for the filtered invoice.
+</td></tr>
+<tr>
+<td>On or before?</td><td>Date</td><td>If you would like to remove current invoices from the listing, enter or select a date here to exclude them.
+</td></tr>
+<tr>
+<td>Invoices Paid from</td><td>Date</td><td>Enter or select a date here if you would like to view paid invoices. This enables you to de-allocate a payment if it was done incorrectly, or a direct-debit transaction has reversed.
+</td></tr>
+<tr>
+<td>Notes</td><td>Text</td><td>Enter any particular notes and details you would like to remember about the particular Item.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=5" title="Edit section: Summary">edit</a>]</div><a name="Summary"></a><h4>Summary</h4>
+<p>The Summary section displays the outstanding invoices and "On Account" amounts. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> </td><td>Icon</td><td>Click on the PDF icon to view the selected invoice.
+</td></tr>
+<tr>
+<td>Client</td><td>Text</td><td>Displays the Client Code. There can be multiple Client Codes showing if the receipt item is for a group.
+</td></tr>
+<tr>
+<td>Invoice No</td><td>Num</td><td>Displays the Invoice No.
+</td></tr>
+<tr>
+<td>Date</td><td>Date</td><td>Displays the Invoice Date. For client-level 'On Account' entries, the date shown is from the last 'On Account' transaction. For contract-level entries, the date is blank.
+</td></tr>
+<tr>
+<td>Type</td><td>Text</td><td>Describes the Invoice Type (E.g. combined, recharge) or the On Account entry type. If the entry displays 'Balancing', this means there are 'On Account' entries for the selected client and the 'Balancing' row is the sum of those 'On Account' entries.
+</td></tr>
+<tr>
+<td>Invoiced</td><td>Num</td><td>Shows the total value of the invoice
+</td></tr>
+<tr>
+<td>Due</td><td>Num</td><td>Shows the unpaid portion of the invoice
+</td></tr>
+<tr>
+<td>Checkbox</td><td>Check</td><td>Check ON the box to allocate a payment, or OFF to remove it. In the summary screen, the Checkbox can only allocate a payment fully. If you need to partially pay an invoice, you will need to do this in the Detail section.
+</td></tr>
+<tr>
+<td>Allocated</td><td>Num</td><td>Displays the value that has been allocated as Paid for this row.
+</td></tr>
+<tr>
+<td>Balance</td><td>Num</td><td>Displays the outstanding balance of the row.
+</td></tr>
+<tr>
+<td>Totals</td><td>Num</td><td>Displays totals of the Invoices, Allocated and Outstanding columns.
+<p><a href="./Image:Info.png.html" class="image" title="Image:info.png"><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="Image:info.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> Remember that changing the filters will change the totals.
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=6" title="Edit section: Detail">edit</a>]</div><a name="Detail"></a><h4>Detail</h4>
+<p>The Detail section displays outstanding invoice rows and On Account amounts at contract level. This section contains Driver details and is more suited to managing Novated or Packaged vehicles. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> </td><td>Icon</td><td>Click on the PDF icon to view the selected invoice.
+</td></tr>
+<tr>
+<td>Client</td><td>Text</td><td>Displays the Client Code. There can be multiple Client Codes showing if the receipt item is for a group.
+</td></tr>
+<tr>
+<td>Invoice No</td><td>Num</td><td>Displays the Invoice No.
+</td></tr>
+<tr>
+<td>Contract</td><td>Num</td><td>Displays the Contract ID of the row.
+</td></tr>
+<tr>
+<td>Reg</td><td>Text</td><td>Displays the Reg No of the row.
+</td></tr>
+<tr>
+<td>Type</td><td>Text</td><td>Displays the Contract Type of the subject vehicle.
+</td></tr>
+<tr>
+<td>Name</td><td>Text</td><td>Displays the name of the driver of the subject vehicle.
+</td></tr>
+<tr>
+<td>Description</td><td>Text</td><td>Displays a description of the row. This can be 'On account' by contract if there are unallocated amounts stored for the selected contracts.
+</td></tr>
+<tr>
+<td>Due</td><td>Num</td><td>Shows the unpaid portion of the invoice
+</td></tr>
+<tr>
+<td>Checkbox</td><td>Check</td><td>Check ON the box to allocate a payment, or OFF to remove it. In the detail screen, if you check ON the Checkbox, the Allocated field becomes enabled. You can then partially allocate a payment against the row.
+</td></tr>
+<tr>
+<td>Allocated</td><td>Num</td><td>Displays the value that has been allocated as Paid for this row.
+</td></tr>
+<tr>
+<td>Balance</td><td>Num</td><td>Displays the outstanding balance of the row.
+</td></tr>
+<tr>
+<td>Totals</td><td>Num</td><td>Displays totals of the Due, Allocated and Outstanding columns.
+<p><a href="./Image:Info.png.html" class="image" title="Image:info.png"><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="Image:info.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> Remember that changing the filters will change the totals.
+</p>
+</td></tr></table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=7" title="Edit section: Action Buttons">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View mode
+</td></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a></td><td>Print an <a href="ABA_file.html" title="ABA file">Text(ABA)</a> or Text(CSV) file for the current batch. This will only print successfully if all of the clients in the batch have a suitable "Payment Method" and the <b>Batch</b> "Collation" has been selected.
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Click to edit the selected record.
+</td></tr>
+<tr>
+<td><a href="./Image:Check.gif.html" class="image" title="Image:Check.gif"><img src="../../clients/help/wiki/images/0/04/Check.gif" alt="Image:Check.gif" width="54" height="24" longdesc="/mediawiki/index.php/Image:Check.gif" /></a></td><td>Select Check to perform the data validations that are required before posting is allowed. If data is missing or incorrect, validation messages will guide you to correct these before being allowed to post.<br /> Once the check validation has passed, the Post button is enabled.
+</td></tr>
+<tr>
+<td><a href="./Image:Post.gif.html" class="image" title="Image:Post.gif"><img src="../../clients/help/wiki/images/d/dc/Post.gif" alt="Image:Post.gif" width="45" height="21" longdesc="/mediawiki/index.php/Image:Post.gif" /></a></td><td>If the check process is completed successfully, the Post button is enabled.<br /> Posted receipt batches can be unposted and edited if required.
+</td></tr>
+<tr>
+<td><a href="./Image:Un-Post.png.html" class="image" title="Image:Un-Post.png"><img src="../../clients/help/wiki/images/9/94/Un-Post.png" alt="Image:Un-Post.png" width="55" height="24" longdesc="/mediawiki/index.php/Image:Un-Post.png" /></a></td><td>Click to <a href="Unpost_a_receipt_batch.html" title="Unpost a receipt batch">unpost a receipt batch</a>. The batch will update from 'Posted' back into 'Pending' status. Do this if you need to edit the receipt.<br />
+<p>If a receipt batch has been exported, you can only unpost if your role has <a href="Receipts_Setup.html#Unpost_Exported_Receipts" title="Receipts Setup">permission</a> to do so. 'Admin' users usually have this permission by default.
+</p>
+</td></tr>
+<tr>
+<td><a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a></td><td>Click to delete the selected item.<br /> You will need to confirm an alert message to make sure you really want to do this before the delete will be done.<br /> Once deleted, the item cannot be seen or selected from the <b>Item</b> "Item No" field anymore.<br /> Only items with a pending' status can be deleted.<br /> If the batch has been posted, you need to <a href="Unpost_a_receipt_batch.html" title="Unpost a receipt batch">unpost the receipt batch</a> before you can delete an item.<br />
+</td></tr>
+<tr>
+<td>New Item</td><td>Click to create a new item record in your batch.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Edit mode
+</td></tr>
+<tr>
+<td><a href="./Image:Save.gif.html" class="image" title="Image:Save.gif"><img src="../../clients/help/wiki/images/9/96/Save.gif" alt="Image:Save.gif" width="38" height="20" longdesc="/mediawiki/index.php/Image:Save.gif" /></a></td><td>When you have finished editing the record, click to save.
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td>Cancel if you don't want to save your current edits.
+</td></tr>
+<tr>
+<td>On Account</td><td>If you have received money and you don't have an invoice to match the money too, you can use the On Account button to receipt this money to a client or contract ahead of the required invoice being created.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=8" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<p>Below are alerts you may see during this process and the reasons why they have happened. In most cases, you should be able to identify a data error and once corrected, Save or Post the record.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save
+</td></tr>
+<tr>
+<td>Please input a valid Banking Date</td><td>Enter the Allocate / Batch "Banking Date" to save the batch.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Print
+</td></tr>
+<tr>
+<td colspan="2">If there is a validation error, the ABA file will not print, but you can still print the CSV file. Below are the validation messages and what they mean.</td><td>
+</td></tr>
+<tr>
+<td>Banking details need to be set up in gb_controls! </td><td> Receivables banking details have not been entered in Catch-e to allow the ABA output file to be created.  To have this feature enabled, please contact your <a href="Catch-e_support.html" title="Catch-e support">Account Manager</a>.
+</td></tr>
+<tr>
+<td> Print failed, check client banking details!   </td><td>  This validation message will go on further to identify the Client Name affected and which area of their banking details is set up incorrectly.  Essentially, you have a client in the batch that has a blank or incorrect "BSB Number" or a blank "Bank Account Number" or their "Payment Method" is not set to Direct Debit. You can also print the CSV file to identify the affected client(s) and amend.
+</td></tr>
+<tr>
+<td> Batch collation must be selected  </td><td> "Collation" has not been populated. Select a collation method.
+</td></tr>
+<tr>
+<td> ABA batch total wrong   </td><td> you have an on account transaction in the batch that does not match the selected "Collation". E.g. a contract-level entry where a Client level collation has been selected.
+</td></tr>
+<tr>
+<td> ABA file contains lines with -ve values  </td><td> The ABA file would contain a line that is negative, this is not allowed. Print the CSV file and identify the negative line and remove it from the batch.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Check
+</td></tr>
+<tr>
+<td>Receipt target does not match item targets!</td><td>Check and update the Allocate / Item "Target" to match the value of the Receipt Items so that "Variance" comes to '0'.
+</td></tr>
+<tr>
+<td>Receipt item # does not balance!</td><td>Check and update the Allocate / Batch "Target" to match the value of the Receipt so that Batch "Variance" comes to '0'.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Delete (Top Buttons)
+</td></tr>
+<tr>
+<td>The receipt batch and all allocations will be deleted. Continue?</td><td>This alert is to make sure you really want to delete the selected batch. Click <b>OK</b> to continue.<br /> Once deleted, the entire batch is now in a deleted status and is no longer visible in <a href="./Receipts:Search.html" title="Receipts:Search">Receipts / Search</a> screen.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Delete (Action Buttons)
+</td></tr>
+<tr>
+<td>The receipt item and all allocations will be deleted. Continue?</td><td>This alert is to make sure you really want to delete the selected item. Click <b>OK</b> to continue.<br /> Once deleted, the item is no longer visible or selectable in the "Item No" list field.
+</td></tr>
+<tr>
+<td>No more receipt items remain, the receipt batch has been deleted.</td><td>The entire batch is now in a deleted status and is no longer visible in <a href="./Receipts:Search.html" title="Receipts:Search">Receipts / Search</a> screen.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Un-Post
+</td></tr>
+<tr>
+<td>This action will return receipt  {batch###} to pending status, are you sure?<br />Ok or Cancel</td><td> You can unpost this transaction, but you may need to do further updates to correct data in your accounting system.
+</td></tr>
+<tr>
+<td>This action will return receipt  {batch###}<br />This batch has been exported and other systems may be affected.<br />This transaction has been exported and other systems may be affected, are you sure?<br /> Ok or Cancel</td><td> You can unpost this transaction, but you may need to do further updates to correct data in your accounting system.
+</td></tr>
+<tr>
+<td>This receipt batch has been exported and other systems are affected.<br /> Only authorized users can Un-Post.<br />Ok</td><td> Contact your System Administrator for assistance.<br />
+<p>To give access to a role to un-post an invoice, go to <a href="./Roles:Details.html" title="Roles:Details">Roles / Details</a> and check on "Unpost Exported Receipts".
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=9" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Receipts:Allocate:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Receipts:Allocate:Troubleshooting">edit</a>]</div><a name="I_can.27t_locate_an_invoice_row_to_receipt"></a><h5>I can't locate an invoice row to receipt</h5>
+<p>Invoice rows can become hidden in the receipt screens when
+</p>
+<ol><li> The <b>Allocate / Item</b> '"Reg No" field is populated
+</li><li> The target contract has had a registration change
+</li></ol>
+<p>In this situation, invoice rows have been filtered out because the "Reg No" stored on the invoice does not match the receipt filter.<br />
+In this case, filter by "Client" or "Driver" to see all the available records.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Receipts:ABA:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Receipts:ABA:Troubleshooting">edit</a>]</div><a name="Banking_Software_shows_odd_details_in_fields._E.g._.3Ctcxspan_txchref.3D.22123..."></a><h5>Banking Software shows odd details in fields. E.g. &lt;tcxspan txchref="123...</h5>
+<p>Check your browser extensions.<br /> If you are using PABX extensions for phone dialling from your computer, it can treat some fields as though they should be phone numbers and corrupt the details in the fields.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=10" title="Edit section: System Locks">edit</a>]</div><a name="System_Locks"></a><h4>System Locks</h4>
+<p>System locks are invoked when the billing process is occurring to prevent data corruptions.<br />
+</p><p>If possible, run your billing process after hours or use the <a href="./Fm::billings.html" title="Fm::billings">scheduler</a> billing jobs to do this. <br />
+</p><p>The locks listed below will be in place: <br />
+</p><p>1. Any updates in Contracts / Billing and <a href="./Contracts:Lease.html" title="Contracts:Lease">Contract / Lease</a> tabs will not be saved and the user will be warned. <br />
+2. <a href="./Importdata:whole_Table.html" title="Importdata:whole Table">Whole table import</a> on tables* used in the billing process will not be saved and the user will be warned.<br /> 
+</p><p>Tables*: <i>fm_billing, fm_contract_budgets, fm_maintenance, bk_booking_billing_items and sl_receipt_item_lines</i>. <br />
+</p><p>Some <a href="./Roles:Details.html" title="Roles:Details">Role "Session Timeout"</a> values are deliberately set to a short timeframe and may be shorter that some POST process run times. Therefore, during the POST process, your session timeout value will be temporarily reset to the greater of your <a href="./Roles:Details.html" title="Roles:Details">Role</a> "Session Timeout" value or 8 hours. Once the POST process is complete your session timeout value will revert back to your <a href="./Roles:Details.html" title="Roles:Details">Role</a> "Session Timeout" value. <br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a></td><td align="left">Users - do not shut down your browser screen when you are in the middle of a process or have a records open in Edit mode. This causes orphaned locks.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:System_Locks&amp;action=edit&amp;section=1" title="Template:System Locks">edit</a>]</div><a name="System_Locks_2"></a><h4>System Locks</h4>
+<p>Records are locked by the system if a user is editing the record or running a process that updates the record (E.g. Billings, Payments, Receipts)<br />
+If you try to access a record that is locked, you will alerted and prevented from using the locked record.<br /> 
+The alert shows the login of the user who has locked the record.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Edit
+</td></tr>
+
+<tr>
+<td>Table {table_name} already locked by user: {user_login} </td><td> The table cannot be edited while another user is editing it. Wait and try again later. Visit <a href="System_Locks.html" title="System Locks">System Locks</a> for more details.
+</td></tr>
+</table>
+<p><br />
+<b>Suggested steps:</b>
+</p>
+<ol><li> Wait a short time for the user to finish their editing process.
+</li><li> Contact the named user and ask them to finish the work they are doing and/or exit the record they have open. 
+</li><li> If the user is editing or processing a different record and you still get the lock message, they have probably orphaned that lock.<br />
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:System_Locks&amp;action=edit&amp;section=2" title="Template:System Locks">edit</a>]</div><a name="Orphaned_Locks"></a><h4>Orphaned Locks</h4>
+<p>Records can be orphaned if they are locked, but the user is no longer editing that record.<br />
+</p><p>Orphaned locks happen for two main reasons:
+</p>
+<ol><li> A record was in edit mode and the user closed down their browser window instead of logging out of the system. <b>Please DO NOT do this.</b>
+</li><li> The user's internet connection dropped out. Even a lost connection which lasts only an instant may mean the system is unable to find related locks related to the session concerned.<br />
+</li></ol>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a></td><td align="left"> Users - do not shut down your browser screen when you are in the middle of a process or have a records open in edit mode. This causes orphaned locks.
+</td></tr></table>
+<p><br />
+<b>To fix orphaned locks:</b>
+</p>
+<ol><li> The user should logout of the system correctly and then log back in again. This should remove the orphaned lock/s.<br />
+</li><li> Logout by clicking on the <a href="Logout.html" title="Logout">Logout</a> <a href="./Image:Logout.gif.html" class="image" title="Image:logout.gif"><img src="../../clients/help/wiki/images/b/bd/Logout.gif" alt="Image:logout.gif" width="18" height="18" longdesc="/mediawiki/index.php/Image:Logout.gif" /></a> icon. This creates a logout record and closes out the users current session.
+</li><li> If the user is running two session, they will need to repeat this process for both of their sessions.<br />
+</li><li> Orphaned locks on contracts and quotes are usually tidied up by the system, by a process which runs every 5 minutes.
+</li><li> If you have tried to remove the locks by logging back in and you have waited 10 minutes and the lock has not be removed, please escalate to your System Administrator. 
+</li><li> You System Administrator may email <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> if required to check and remove the locks for you.
+</li></ol>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;action=edit&amp;section=11" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7226:Receipts pdf_aba_file_client template not correct.Live 08/05/2014.
+</li><li> (DEV-20547) Add foreign key constraints for batch_no, invoice_no and payment_no. Live 18/01/2021
+</li><li> (DEV-21575) Introduce a Drop list for Receipts / Bank Ref. Live 14/02/2022
+</li><li> (DEV-21641) Enable Un-Post for exported Receipts. Live 11/07/2022
+</li><li> (DEV-21689) Receipts Module does not display Pay Run. Live 01/08/2022
+</li><li> (DEV-21768) Bank Account changes when Receipt edited. Live 07/11/2022
+</li><li> (DEV-21856) Set the Billing processes gb_sessions.timeout value to NOW plus 8 hours. Live dd/04/2023
+</li><li> (DEV-21991) Duplicate Receipts being created for single Invoices. Live 26/02/2024
+</li><li> (DEV-22019) Enable Receipt Type to default from Client's 'Payment Method'. Live 06/05/2024
+</li><li> (DEV-22293) Use Receipts to run autoBuildClaims by client. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Receipts:Allocate.html">https://help.catch-e.net.au/mediawiki/index.php/Receipts:Allocate</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Receipts:Allocate">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Receipts:Allocate.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.25 secs. -->
+</body></html>

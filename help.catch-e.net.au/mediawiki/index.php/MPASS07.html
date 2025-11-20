@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="MPASS07,Card Interface Set-up,FLEET,FLEET CONTROLS,Interface To:Interface,Interface To:Mappings,Interface To Card Services,Main Page,WEX Motorpass" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>MPASS07 - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">MPASS07</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="MPASS07.html#column-one">navigation</a>, <a href="MPASS07.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="FLEET_CONTROLS.html" title="FLEET CONTROLS">Controls</a> / Interfaces / <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Services</a> &rarr; <a href="./Interface_To:Interface.html" title="Interface To:Interface">Interface</a> | <a href="./Interface_To:Mappings.html" title="Interface To:Mappings">Mappings</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Card_Interface_Set-up.html" title="Card Interface Set-up">Card Interface Set-up</a> &rarr; <strong>MPASS07</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=MPASS07&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The <a href="WEX_Motorpass.html" title="WEX Motorpass">WEX Motorpass</a> (WEX) card can be used for purchasing fuel as well as a range for vehicle services such as maintenance, tyres, scheduled services etc. The file format must be .txt, i.e. Text (Tab Delimited). Column headings are expected in the file but not account opening and closing balances.<br /> 
+</p><p>The MPASS07 interface has been introduced to allow the import of a revised file format introduced by Motorpass in 2015. That format was used in the "E07".<br /> Sometime before 01/07/2021 WEX changed the file name to "E17" without a change to the file format.<br /><br />
+</p><p>This interface reads and ignore each row from the file until a row with the heading of "Account No" in the first column is reached.<br /> 
+</p><p>Real data starts after the line starting with  'Account No' heading. <br />
+</p><p>Maximum up to 100 rows are ignored if they do not have line starting with 'Account No' in it. If the line starting with 'Account no' is not found within first 100 rows, the file is invalidated.
+</p><p>You can leave these rows of the file in, or delete them prior to uploading if you prefer. 
+</p><p>The '17' file format differs from the '05' file in the following ways:<br />
+</p>
+<dl><dd>Column 18, 'Merchant No', has been removed<br />
+</dd><dd>All columns between column 7 'Amount', and column 17 'Driver Name', have been shifted 1 column to the right<br />
+</dd><dd>The gap created in column 7 has been filled by the new field 'Transaction Time'
+</dd></dl>
+<p><b>Product Code 89</b> is a WEX Fuel Rebate. These rebates are negative and reduce the fuel costs and (if applicable), the recharge amount of fuel.
+The transactions import with a quantity value. The fuel data will change this to a zero quantity value when loaded into Catch-e. Doing this maintains continuity on fuel reports and billings where appropriate.
+</p>
+<hr />
+<p>Validation and business rules for MPASS07.
+</p>
+<ol><li>	IF number of columns NOT = 30 (empty rows will fall into this category) OR column 14 (Voucher) NOT = 'Voucher' THEN File column validation fails with error message “The format of the Import File does not match the selected Card Interface! Please check your selections and try again!”
+</li><li>	Any row with empty column 1 or empty column 2 is ignored
+</li><li>	IF column 13 (product code) = 89 THEN fm_fuel.quantity = 0 ELSE fm_fuel.quantity = column 8 (Litres)
+</li><li>	IF column 17 (Brand Description) contains text 'NON FUEL' AND column 21 (Merchant Name) is populated THEN fm_fuel.site_location = column 21 (Merchant Name) + column 23 (Merchant Suburb) ELSE fm_fuel.site_location = column 16 (Brand Description) + column 23 (Merchant Suburb)
+</li></ol>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=MPASS07&amp;action=edit&amp;section=2" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 11423: Update Current MOTORPASS Interface for '05' files and create new interface for '07' files. Live 23/06/2015
+</li><li> (DEV-20905) Modify the MPASS07 interface. Live dd/mm/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="MPASS07.html">https://help.catch-e.net.au/mediawiki/index.php/MPASS07</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=MPASS07">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/MPASS07.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=MPASS07&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.05 secs. -->
+</body></html>

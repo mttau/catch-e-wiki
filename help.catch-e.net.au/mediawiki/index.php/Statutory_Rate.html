@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Statutory Rate,Administration,Contracts,Contracts:Fbt,FLEET,Main Page,Quotes:Contract" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Statutory Rate - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Statutory Rate</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Statutory_Rate.html#column-one">navigation</a>, <a href="Statutory_Rate.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <a href="./Contracts:Fbt.html" title="Contracts:Fbt">FBT</a> &rarr; <strong>Statutory Rate</strong>
+</p>
+<hr />
+<p>Statutory Rate and FBT calculations are displayed in a number of locations in the system - Quote documents, Contracts/FBT and various FBT reports.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Statutory_Rate&amp;action=edit&amp;section=1" title="Edit section: Quoting">edit</a>]</div><a name="Quoting"></a><h4>Quoting</h4>
+<p>When a <a href="./Quotes:Contract.html" title="Quotes:Contract">quote</a> is performed, the Statutory Rate that will be used is determined by two factors;
+</p>
+<ol><li> The "Annual KMs" of the quote - determines which distance bracket the vehicle belongs to
+</li><li> The "Effective Date" of the quote - determines the yearly rate that will be used.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Statutory_Rate&amp;action=edit&amp;section=2" title="Edit section: Contracts and Reports">edit</a>]</div><a name="Contracts_and_Reports"></a><h4>Contracts and Reports</h4>
+<p>When the quote is transferred to a contract, the "Statutory Rate Date" field in Contracts/FBT can be used to refine the Statutory Rate that is used.<br />
+The date entered determines which statutory rate will be applied to FBT calculations on the Contracts/FBT screen, in Driver Reports and in FBT reports.<br />
+If the date is blank or earlier than 11/05/2011, the existing rates will be used.<br /> 
+If the date entered is 11/05/2011 or later, the new rates announced in the 2011 Federal Budget will be used.<br />
+This means that a date must be entered in this field for the new rates to apply to the contract. In most cases, the Start Date of the contract will be suitable; however, there are some scenarios where your driver may be disadvantaged by using the Start Date to determine the statutory rate.<br /><br /> 
+</p><p>For example;<br />
+01/03/2011 a business enters into a contract for a new vehicle expecting 7% at 40,001 kms<br />
+15/05/2011 a vehicle is delivered (3rd party start date – to calculate FBT from this date)<br />
+01/07/2011 your organisation takes over management of this fleet (contract start date).<br /><br />
+</p><p>In the scenario above, it is desirable (and appropriate) to apply the pre-existing rate to the contract, so the Statutory Rate Date should be 01/03/2011.<br /><br /> 
+</p><p>A scheduled job exists to populate the Statutory Rate Date with the Start Date if it is blank. You can over-ride this with an alternative date if needed.
+</p><p><b>Note:</b><br />
+The Statutory Rate that would be applicable if the 'Statutory' Benefit Type was in use is always displayed. This should not be mistaken as the percentage rate used to determine the annual Fringe Benefit, Reportable Benefit and Fringe Benefits Tax (FBT)which is calculated from the Business Usage when using the 'Operating' Cost method. The mitigation of FBT cost using an Employee Contribution is determined by FBT Value x (100-Business Usage)% = Employee Contribution.
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Statutory_Rate&amp;action=edit&amp;section=3" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 4236: Changes to the Statutory FBT rates. Live 20/05/2011 
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Statutory_Rate.html">https://help.catch-e.net.au/mediawiki/index.php/Statutory_Rate</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Statutory_Rate">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Statutory_Rate.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Statutory_Rate&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.04 secs. -->
+</body></html>

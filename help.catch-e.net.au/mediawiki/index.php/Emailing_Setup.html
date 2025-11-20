@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Emailing Setup,Emailing Setup,AWS SES Setup,Email Setup,Global Controls,Invoice System Placeholders,Mail Failed Scheduler Jobs,Mail Queue,Main Page,SMTP Setup" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Emailing Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Emailing Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Emailing_Setup.html#column-one">navigation</a>, <a href="Emailing_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; IT Set-up  &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>Email Configuration</strong> | <a href="Mail_Failed_Scheduler_Jobs.html" title="Mail Failed Scheduler Jobs">Mail Failed Scheduler Jobs</a> &rarr; <a href="AWS_SES_Setup.html" title="AWS SES Setup">SES</a> | <a href="SMTP_Setup.html" title="SMTP Setup">SMTP</a> &rarr; <a href="Email_Setup.html" title="Email Setup">Email Setup</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Emailing_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Emailing_Setup.html#Mail_Method"><span class="tocnumber">2</span> <span class="toctext">Mail Method</span></a></li>
+<li class='toclevel-1'><a href="Emailing_Setup.html#Email_Addresses"><span class="tocnumber">3</span> <span class="toctext">Email Addresses</span></a></li>
+<li class='toclevel-1'><a href="Emailing_Setup.html#Email_Attachments_as_URLs"><span class="tocnumber">4</span> <span class="toctext">Email Attachments as URLs</span></a></li>
+<li class='toclevel-1'><a href="Emailing_Setup.html#HTML_Email_Templates"><span class="tocnumber">5</span> <span class="toctext">HTML Email Templates</span></a></li>
+<li class='toclevel-1'><a href="Emailing_Setup.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Review the <a href="Mail_Failed_Scheduler_Jobs.html" title="Mail Failed Scheduler Jobs">Mail Failed Scheduler Jobs</a> process and update the stored scheduler jobs to send the reports to the right people in your business.<br />
+Go to the <a href="Email_Setup.html" title="Email Setup">Email Setup</a> page to see all the system emails that are available for you to use.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=2" title="Edit section: Mail Method">edit</a>]</div><a name="Mail_Method"></a><h4>Mail Method</h4>
+<p>Choose which emailing protocol you want to use<br /> 
+</p>
+<ol><li> <a href="AWS_SES_Setup.html" title="AWS SES Setup">Amazon Simple Email Service (SES)</a> (our recommended service)
+</li><li> <a href="SMTP_Setup.html" title="SMTP Setup">Simple Mail Transfer Protocol (SMTP)</a> (can also be used, and is the original service we provided)
+</li></ol>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"> Setup / Reference Data &rarr; <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Default Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Mail Method
+</td></tr>
+<tr>
+<td>gb</td><td>mail_smtp_parameters</td><td>host = smtp.sendgrid.net (an example)<br />
+<p>port = 25<br />
+auth = TRUE (will appear as 1 in the UI)<br />
+user = apikey<br />
+pass = client provided key<br />
+</p>
+</td><td>This control can be used to set alternate settings to SMTP. Alternative settings will not as an example allow Catch-e to manage and report bounce backs.
+</td></tr>
+<tr>
+<td>gb</td><td>mail_transmission_provider</td><td>Choose which emailing protocol you want to use to send emails. You can either use<br />
+<p>1. 'ses' - <a href="AWS_SES_Setup.html" title="AWS SES Setup">Amazon Simple Email Service (SES)</a>. This is the recommended method. You will need to set-up a DKIM key to verify the email's domain.<br />
+2. 'smtp' - For <a href="SMTP_Setup.html" title="SMTP Setup">Simple Mail Transfer Protocol (SMTP)</a>. You will need to set-up an SPF record to verify the email's domain.<br />
+<br />
+The Catch-e System was developed to use only <a href="SMTP_Setup.html" title="SMTP Setup">SMTP</a> at first. <a href="AWS_SES_Setup.html" title="AWS SES Setup">SES</a> was introduced later and is now our recommended protocol for clients. 
+</p>
+</td><td>ses
+</td></tr>
+<tr>
+<td>gb</td><td>mail_sender_domains_enforcing_flag</td><td>The <a href="AWS_SES_Setup.html" title="AWS SES Setup">Amazon SES</a> function does not use the gb_mail_sender domain functionality, so this should be switched off by setting this control to 'no'.
+</td><td>no
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=3" title="Edit section: Email Addresses">edit</a>]</div><a name="Email_Addresses"></a><h4>Email Addresses</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"> Setup / Reference Data &rarr; <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Default Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Email Addresses
+</td></tr>
+<tr>
+<td>gb</td><td>mail_sender_address</td><td>If for some reason, you have an email that is configured without a sender, it will use this email address. Check this is correct on set-up </td><td>
+</td></tr>
+<tr>
+<td>gb</td><td>mail_to_address</td><td>Check the email address that is stored here. This address is used when a user clicks on the <a href="./Image:Email.gif.html" class="image" title="email"><img src="../../clients/help/wiki/images/6/66/Email.gif" alt="email" width="16" height="16" longdesc="/mediawiki/index.php/Image:Email.gif" /></a> icon when in the login screen. </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=4" title="Edit section: Email Attachments as URLs">edit</a>]</div><a name="Email_Attachments_as_URLs"></a><h4>Email Attachments as URLs</h4>
+<p>You can configure system settings to convert email attachments into URL links if a combined file size is exceeded. This helps reduce the size of emails being sent. This feature (if active) applies to all emails sent from the system.
+</p><p>All emails with attachments will be sent to the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> and the attachments will be displayed as an icon showing the document's format.  For example, a PDF document will have the PDF icon and clicking on it will open the document.  This includes all emails with attachments to be sent as url links. The url links will only appear once the email has been sent and received by the recipient.
+</p><p>When the URL has timed out, it cannot be accessed. If the user clicks on an expired link, an alert will appear in the browser window saying 'Token Expired'. Once timed out, re-sending the email from the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> will not work, you will have to create a new email and attachment.<br />
+</p><p>We recommend activating this feature to guard against very large emails being sent as these often do not make it to the recipient.
+</p><p>Set a reasonably high value for the conversion to occur because
+</p>
+<ol><li> Some mail clients don't present the URLs as a hyperlink (the user will need to cut-and-paste).
+</li><li> Emails with URLs are sometimes pushed to a Junk folder. Ask your users to check this if they have not received an expected email. 
+</li></ol>
+<p><br /> 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"> Setup / Reference Data &rarr; <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Default Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Email Attachments as URLs
+</td></tr>
+<tr>
+<td>gb</td><td>email_attachments_download_link_text</td><td>When <a href="Emailing_Setup.html#Email_Attachments_as_URLs" title="Emailing Setup">email attachments are converted into URLs</a>, this text is inserted at the end of the email body. The default text is shown here.
+</td><td>Due to mail size restrictions, your attachments have been automatically converted to download links for your convenience. Links will expire in 2 days.
+</td></tr>
+<tr>
+<td>gb</td><td>email_attachments_max_size_in_bytes</td><td>This control sets the maximum allowable size of email attachments.<br /> The default value is 7864320 (7.5MB) which is the maximum size that the <a href="AWS_SES_Setup.html" title="AWS SES Setup">Amazon SES</a> email method will support.<br /> If emails are sent with attachments that are larger thank this, the email will convert the <a href="Emailing_Setup.html#Email_Attachments_as_URLs" title="Emailing Setup">email attachments into URLs</a>.
+</td><td>7864320
+</td></tr>
+<tr>
+<td>gb</td><td>email_url_sent_timeout_in_seconds</td><td>This control governs how long <a href="Emailing_Setup.html#Email_Attachments_as_URLs" title="Emailing Setup">email attachments converted into URLs</a> can remain valid for. Once the expiry time is reached, the URL will not work anymore. The default value is 172800 (2 days).
+</td><td>172800
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=5" title="Edit section: HTML Email Templates">edit</a>]</div><a name="HTML_Email_Templates"></a><h4>HTML Email Templates</h4>
+<p>To configure system settings to convert email attachments into URL links for HTML Templates (for example <a href="Invoice_System_Placeholders.html" title="Invoice System Placeholders">Invoice Email Templates</a>)), please include the placeholder <b>#download_links_for_large_attachments#</b> in your HTML Template body ([gb_templates]mail_message).
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-21164) Update [gb_controls]email_attachments_max_size_in_bytes value. Live 24/08/2020
+</li><li> (DEV-21338) Add support for SMTP parameters. Live 15/03/2021
+</li><li> (PORTAL-16828) Add support for SMTP parameters. Live 15/03/2021
+</li><li> (DEV-21338) Add support for SMTP parameters. Live 15/03/2021
+</li><li> (DEV-21970) Client email token links for attachments not showing in Outlook. Live 12/03/2024
+</li><li> (DEV-22037) Client Code IC4 email without invoice attached. Live 25/03/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Emailing_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Emailing_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Emailing_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Emailing_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Emailing_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.08 secs. -->
+</body></html>

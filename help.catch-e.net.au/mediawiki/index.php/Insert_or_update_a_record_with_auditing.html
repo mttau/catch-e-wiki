@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Insert or update a record with auditing,APIs,Catch-e support,Dependent Records,Field Auditing,GetTablesAuthorisedForImport,GetTablesAuthorisedForImport(),Main Page,Manage Roles:Apis,Table Data,Application/json" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Insert or update a record with auditing - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Insert or update a record with auditing</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Insert_or_update_a_record_with_auditing.html#column-one">navigation</a>, <a href="Insert_or_update_a_record_with_auditing.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="APIs.html" title="APIs">APIs</a> → <a href="APIs.html#Import_.2F_Export" title="APIs">Import / Export</a> &rarr; <strong>Insert or update a record with auditing</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Dependent_Records"><span class="tocnumber">2</span> <span class="toctext">Dependent Records</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Permissions"><span class="tocnumber">3</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#URL_Examples"><span class="tocnumber">5</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Parameters"><span class="tocnumber">6</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Body_.28JSON_payload.29"><span class="tocnumber">7</span> <span class="toctext">Body (JSON payload)</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#API_Examples"><span class="tocnumber">8</span> <span class="toctext">API Examples</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#Response_Details"><span class="tocnumber">9</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="Insert_or_update_a_record_with_auditing.html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 3%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This service is to be used by experienced developers ONLY. Note that some referential integrity is enforced at the application level not the database level, so updating arbitrary field(s) can have unforeseen consequences.<br /> Please contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> if in any doubt.<br /><br />
+</td></tr>
+<tr>
+<td colspan="2">Upsert should <b>almost never</b> be used to create new records of any sort.<br /><br />
+</td></tr>
+<tr>
+<td colspan="2"><b>New records</b> should be created by using (in this order):</td><td>
+</td></tr>
+<tr>
+<td>1) </td><td>The Catch-e APP (safest and most robust validations),
+</td></tr>
+<tr>
+<td>2) </td><td>Import Table Data (in the UI),
+</td></tr>
+<tr>
+<td>3) </td><td>Dedicated Token Authenticated API’s. A list of available services can be found here: <a href="https://api.catch-e.com/docs/#" class='external free' title="https://api.catch-e.com/docs/#" rel="nofollow">https://api.catch-e.com/docs/#</a> <br /><br />
+</td></tr>
+<tr>
+<td colspan="2"><b>If none of that is suitable:</b>
+</td></tr>
+<tr>
+<td>4) </td><td>Submit a <a href="Catch-e_support.html#Request_forms" title="Catch-e support">Change Request</a> to ask Catch-e to undertake new API development for the record type you are wanting to create.<br /><br />
+</td></tr>
+<tr>
+<td colspan="2"><b>Only after exhausting all of these options:</b></td><td>
+</td></tr>
+<tr>
+<td>5) </td><td>Ask Catch-e for advice on whether upsert can be considered.
+</td></tr></table>
+<p><br />
+</p><p>Use this API to insert a record or update fields values for a record in a table and includes record locks and audit record creation.<br />
+This API can be run for authorised tables. Run <a href="GetTablesAuthorisedForImport().html" title="GetTablesAuthorisedForImport()">getTablesAuthorisedForImport</a> to get a list of these tables.<br />
+<a href="Field_Auditing.html" title="Field Auditing">Audit records</a> created in these updates are marked as external.<br />
+Multiple records can be updated within the JSON payload provided they belong to the same table.<br /> All records in the JSON payload are individually locked during the update.
+<br />
+Supplementary SWAGGER documentation is available here: <a href="https://api.catch-e.com/docs/#/Import%20%2F%20Export/upsert" class='external text' title="https://api.catch-e.com/docs/#/Import%20%2F%20Export/upsert" rel="nofollow">api.catch-e.com/docs/#/Import%20%2F%20Export/upsert</a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=2" title="Edit section: Dependent Records">edit</a>]</div><a name="Dependent_Records"></a><h4>Dependent Records</h4>
+<p>You can use a UUID placeholder in the import files to manage data where there are child records that have a key field dependency,<br /> E.g. <i>[fm_approvals]approval_id</i>.<br /> Visit the <a href="Dependent_Records.html" title="Dependent Records">Dependent Records</a> page for the details of how to use this feature.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=3" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>Record:Upsert</b>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=5" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<p>The table you are updating forms part of the URL path. E.g. api.staging.catch-e.com/gb/record/upsert/<b>table_name</b>
+</p>
+<pre>
+https://api.catch-e.com/gb/record/upsert/{table_name}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=6" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">Key </th><th width="5%" align="left">Format</th><th width="20%" align="left">Value </th><th width="50%" align="left"> Notes</th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Path
+</td></tr>
+<tr>
+<td> table_name </td><td> string </td><td> fm_clients  </td><td> Target table to update fields or create new records.  </td><td> Yes
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Query
+</td></tr>
+<tr>
+<td> timezone </td><td> string </td><td> </td><td>Set a timezone to parse the timestamps.  </td><td> No
+</td></tr>
+<tr>
+<td> table_name </td><td> string </td><td> </td><td> If yes, records must contains a <a href="Table_Data.html" title="Table Data">unique key</a>.  </td><td> No
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Header
+</td></tr>
+<tr>
+<td>Accept</td><td> string </td><td> 'application/problem+json' or<br /> 'application/vnd.catch-e-api.v1+json' </td><td> </td><td>Yes
+</td></tr>
+<tr>
+<td>Audit-User-Id</td><td> string </td><td> [gb_users]user_id </td><td> Pass this if you want to record this user in the <a href="Field_Auditing.html" title="Field Auditing">audit records</a> as the creator of these records.<br /> This key will only work if you add the permission <b>Audit:UserIdOverride</b> to the authenticated user's role.<br /> This permission should only be given to the 'web-services' role if required.</td><td>No
+</td></tr>
+<tr>
+<td>Content-Type</td><td> string </td><td>'application/json' or '<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Application/json&amp;action=edit" class="new" title="Application/json">application/json</a>' </td><td> </td><td>Yes
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=7" title="Edit section: Body (JSON payload)">edit</a>]</div><a name="Body_.28JSON_payload.29"></a><h4>Body (JSON payload)</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">JSON Field </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td>contract_id</td><td>Int</td><td>The unique id for the table being updated. The field here and below must all belong to the <b>table_name</b> entered in the URL.<br /> If you want to insert a new record, leave the unique id blank. </td><td>Yes
+</td></tr>
+<tr>
+<td>colour</td><td> </td><td> One or more fields can be updated here. List each field separately. </td><td>Yes
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=8" title="Edit section: API Examples">edit</a>]</div><a name="API_Examples"></a><h4>API Examples</h4>
+<p>This example is for two contracts being updated within the same request, the first has updates one field, the second updates two fields.<br />
+</p>
+<pre>
+https://api.catch-e.com/gb/record/upsert/fm_contracts
+</pre>
+<pre>
+[
+    {
+        &quot;contract_id&quot;: 100000,
+        &quot;colour&quot;: &quot;Blue&quot;
+    },
+    {
+        &quot;contract_id&quot;: 100001,
+        &quot;colour&quot;: &quot;White&quot;,
+        &quot;radio_pin&quot;: &quot;777&quot;
+    }
+]
+</pre><br />
+<p>This example is to create a new contract (insert record). It will create a new Contract and set the colour to blue. All other fields will use default values or will be blank. <br />
+</p>
+<pre>
+https://api.catch-e.com/gb/record/upsert/fm_contracts
+</pre>
+<pre>
+[
+    {
+        &quot;contract_id&quot;: &quot;&quot;,
+        &quot;colour&quot;: &quot;Blue&quot;
+    }
+]
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=9" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 15%"> Detail </th><th style="width: 35%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 204 - No Content
+</td></tr>
+<tr>
+<td> (BLANK) </td><td> (BLANK) </td><td> The request was successful request. No response is required
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 400 - Bad Request
+</td></tr>
+<tr>
+<td> "detail": "JSON decoding error: Underflow or the modes mismatch" </td><td> "title": "Bad Request", </td><td> The JSON content is mis-configured e.g. a missing right brace (curly bracket '}') will trigger this error.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 403 - Forbidden
+</td></tr>
+<tr>
+<td>  "detail": "Forbidden" </td><td> </td><td> You do not have permissions for this request.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 405 - Method Not Allowed
+</td></tr>
+<tr>
+<td> </td><td> </td><td> The POST url is mis-configured e.g. missing table_name
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td> "detail": "Failed Validation" </td><td> "records": [<br />{<br />"missingMandatoryColumns": "Missing mandatory columns: supplier_id, card_number"
+</td><td> The table used in the API uses a Unique Key. The required fields that make up the Unique Key have not all been passed. See <a href="Table_Data.html" title="Table Data">Table Data</a> for documented Unique Key tables and their required fields.<br />
+</td></tr>
+
+<tr>
+<td> "detail": "Failed Validation" </td><td> "table_name": {<br />"noRecordFound": "Table is not authorised for import or is invalid"
+</td><td> The table used in the API does not have a singularis not authorised.<br /> See <a href="GetTablesAuthorisedForImport.html" title="GetTablesAuthorisedForImport">getTablesAuthorisedForImport</a> for available tables.<br />
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 423 - Locked
+</td></tr>
+<tr>
+<td>  "detail": "Locked" </td><td> "Record already locked by user: {user_login}" </td><td> The record that the update was being run for was locked. Try again later.
+</td></tr>
+<tr>
+<td> </td><td>
+<pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Locked&quot;,
+    &quot;status&quot;: 423,
+    &quot;detail&quot;: &quot;Locked&quot;
+}
+</pre>
+</td><td> If one of the records in the JSON Body is already being edited, the entire batch will fail and show this message.
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20110) Create insert or update API. Live 22/02/2021
+</li><li> (API-20197) Upsert API fails when sending more than one record. Live 13/09/2021
+</li><li> (API-20265) Upsert API does not respect gb_audit_tables record_id configuration for audit. Live 06/06/2022
+</li><li> (API-20278) Enhance API to support HJSON. Live dd/mm/2022
+</li><li>(API-20364) Upsert exception: Table [table_name] gb_unique_ids sequence already locked. Live 16/01/2022
+</li><li> (API-20562) Warnings issued from Import Table Data with erroneous import file. Live dd/07/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Insert_or_update_a_record_with_auditing.html">https://help.catch-e.net.au/mediawiki/index.php/Insert_or_update_a_record_with_auditing</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Insert_or_update_a_record_with_auditing">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Insert_or_update_a_record_with_auditing.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_or_update_a_record_with_auditing&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.08 secs. -->
+</body></html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Gb::Queries::executeScript(),Catch-e Support,Job Scheduler,Job Scheduler:Job,Job Scheduler:Queue,Job Scheduler:Schedule,Main Page,SYSTEM,Scheduler Job Types,Stored Procedures,Transaction Safe Queries" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Gb::Queries::executeScript() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Gb::Queries::executeScript()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Gb::Queries::executeScript().html#column-one">navigation</a>, <a href="./Gb::Queries::executeScript().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr;   <a href="Scheduler_Job_Types.html#Queries" title="Scheduler Job Types">Method</a> &rarr; <strong>executeScript</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Gb::Queries::executeScript().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeScript().html#Parameters"><span class="tocnumber">2</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeScript().html#Validations_and_Alerts"><span class="tocnumber">3</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeScript().html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeScript%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Scripts are groups of queries that modify data but don't return anything. You can include as many SQL statements you like within a script.  A script can include any number of UPDATE / INSERT / SET / LOCK TABLES / UNLOCK TABLES statements. There are many possible uses for these e.g. set the status to 'expired' for all quotes older than 30 days.<br />
+Visit  <a href="User_Defined_Queries.html" title="User Defined Queries">User_Defined_Queries</a> for instructions on writing scripts for scheduler jobs.
+</p><p>Before this job can be set up, you need to save your script in the <i>[gb_queries]</i> table.
+</p><p>To protect your data, make sure you use <a href="Transaction_Safe_Queries.html" title="Transaction Safe Queries">transaction safe queries</a> in these jobs. <a href="Transaction_Safe_Queries.html" title="Transaction Safe Queries">Transaction safe queries</a> will roll back changes if if any of the query updates fail.<br />
+If the script affects records used in the billing process, use <a href="Stored_Procedures.html" title="Stored Procedures">stored procedures</a> to lock and unlock the billing tables.<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> &nbsp;&nbsp; Contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> if you want an executeScript job set-up for you.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeScript%28%29&amp;action=edit&amp;section=2" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>These are the different parameter settings that you can set up on the <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job Screen</a> screen:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 12%;"> <b>Query ID</b> </td><td> query_id for script in gb_queries to run.  Includes a search icon to search queries by Name or Description.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeScript%28%29&amp;action=edit&amp;section=3" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Run Now
+</td></tr>
+<tr>
+<td> Job &lt;nnnnn&gt; failed!<br /><br /><b>Error:</b> CATCH_E_API_EXECUTE_SCRIPT_ERROR<br /><b>Error message:</b> (see below list) </td><td> The <b>executeScript</b> job started, but could not be completed.<br />The script number  &lt;nnnnn&gt; is shown in the message.
+</td></tr>
+<tr>
+<td class="catch-e" colspan="2" style="text-align: center;"> <b>BILLING LOCK</b>
+</td></tr>
+<tr>
+<td> Failure executing query #. Message: Statement could not be executed (45000 - 1644 - Billing already locked!) </td><td> A billing lock could not be secured for one of the scripts in the query. <br />Try again later.
+</td></tr>
+<tr>
+<td class="catch-e" colspan="2" style="text-align: center;"> <b>START TRANSACTION / COMMIT</b>
+</td></tr>
+<tr>
+<td> A START TRANSACTION / COMMIT or SET autocommit=0 / COMMIT block is required. </td><td> Scripts must contain an appropriate START TRANSACTION / COMMIT block to be transaction safe.
+</td></tr>
+<tr>
+<td> No COMMIT statement </td><td> No closing COMMIT command detected.
+</td></tr>
+<tr>
+<td> &lt;command&gt; not allowed with START TRANSACTION / COMMIT block </td><td> &lt;command&gt; LOCK TABLES, UNLOCK TABLES, SET autocommit = 0<br /><br />These commands automatically commit any active transactions before attempting to lock the tables. This means that any changes made within a transaction will be committed, and the transaction will end before the tables are locked.
+</td></tr>
+<tr>
+<td> CREATE TEMPORARY TABLE ... LIKE not supported </td><td> This syntax was allowed in MySQL 5.7 but is no longer supported. Use this alternative syntax,<br /><br />CREATE TEMPORARY TABLE SELECT * FROM your_table_name LIMIT 0;<br /><br />Note: No keys or indexes will be created so add those with ALTER TABLE if required.
+</td></tr>
+<tr>
+<td> Multiple START TRANSACTIONs not allowed </td><td> Only one START TRANSACTION / COMMIT block is allowed.
+</td></tr>
+<tr>
+<td> &lt;command&gt; not allowed before START TRANSACTION </td><td> &lt;command&gt; COMMIT, INSERT, UPDATE, REPLACE, DELETE, MERGE<br /><br />This is to ensure all data manipulation commands are safely inside the START TRANSACTION / COMMIT block ensuring a clean ROLLBACK if the transaction cannot complete for any reason.<br /><br />Exceptions are INSERT INTO _sch_... or  _tmp_..., and DELETE FROM _sch_... or  _tmp_...
+</td></tr>
+<tr>
+<td> Multiple COMMITs not allowed </td><td> Only one START TRANSACTION / COMMIT block is allowed.
+</td></tr>
+<tr>
+<td> &lt;command&gt; not allowed within START TRANSACTION / COMMIT block without the TEMPORARY keyword </td><td> &lt;command&gt; CREATE TABLE, DROP TABLE<br /><br />These commands cause an implicit commit and are therefore not transaction-safe. If you want to create a permanent table, place the command outside of the START TRANSACTION / COMMIT block. To create a table within the START TRANSACTION / COMMIT block, use the transaction-safe TEMPORARY keyword. E.g. CREATE TEMPORARY TABLE...
+</td></tr>
+<tr>
+<td> &lt;command&gt; not allowed within START TRANSACTION / COMMIT block </td><td> &lt;command&gt; ALTER, RENAME, TRUNCATE, INSTALL, GRANT, REVOKE, SET PASSWORD, BEGIN, LOAD, ANALYZE, CACHE, CHECK, FLUSH, OPTIMIZE, REPAIR, RESET, START, STOP, CHANGE
+</td></tr>
+<tr>
+<td> CALL &lt;procedure&gt;() is not transaction safe so cannot be used in a START TRANSACTION / COMMIT block </td><td> &lt;procedure&gt; must exist in the gb_transaction_safe_calls table.
+</td></tr>
+<tr>
+<td> &lt;command&gt; not allowed after COMMIT </td><td> INSERT, UPDATE, REPLACE, DELETE, MERGE<br /><br />This is to ensure all data manipulation commands are safely inside the START TRANSACTION / COMMIT block ensuring a clean ROLLBACK if the transaction cannot complete for any reason.<br /><br />Exceptions are INSERT INTO _sch_... or  _tmp_..., and DELETE FROM _sch_... or  _tmp_...
+</td></tr>
+<tr>
+<td> Must use SELECT ... <b>FOR UPDATE</b> when doing UPDATE or REPLACE INTO gb_unique_ids / gl_controls. </td><td> The SELECT FOR UPDATE statement in MySQL is used to lock the rows returned by a SELECT query until the transaction is committed or rolled back. This ensures that other transactions cannot modify or lock these rows, maintaining data consistency during the transaction.
+</td></tr>
+<tr>
+<td> Must use SELECT ... <b>FOR UPDATE</b> when doing UPDATE or REPLACE INTO gb_unique_ids / gl_controls. </td><td> The SELECT FOR UPDATE statement in MySQL is used to lock the rows returned by a SELECT query until the transaction is committed or rolled back. This ensures that other transactions cannot modify or lock these rows, maintaining data consistency during the transaction.
+</td></tr>
+<tr>
+<td>Job failed...<br />Error: CATCH_E_API_EXECUTE_SCRIPT_ERROR <br />Error Message: Unable to perform theis action! Please try again. <br />If problem persists please contact your adminstrator. </td><td> The executeScript job started, but could not be completed. The error is generated if the related query is incorrectly syntax like with ';'..
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeScript%28%29&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21063) Prevent data corruption in executeScript scheduler jobs by using transactions. Live 25/05/2020
+</li><li> (API-20204) Apply process locks to specific APIs and gb_queries. Live 25/10/2021
+</li><li> (DEV-20587) executeScript - allow commented rows. Live 15/11/2021
+</li><li> (DEV-21603) Add error check following calls to stored procedures for executeScript jobs. Live 08/08/2022
+</li><li> (DEV-21787) Scheduler - create and use executeScript API. Live 10/07/2023
+</li><li> (API-20729) PDO Error on Script Execution: Empty Query Detected. Live 06/10/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Gb::Queries::executeScript().html">https://help.catch-e.net.au/mediawiki/index.php/Gb::Queries::executeScript%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Gb::Queries::executeScript()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Gb::Queries::executeScript().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeScript%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

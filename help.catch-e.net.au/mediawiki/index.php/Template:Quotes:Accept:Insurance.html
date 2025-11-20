@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Template:Quotes:Accept:Insurance,Contracts:Insurance,Contracts:Payments,Global Controls,Policy Owner,Quotes:Accept" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Template:Quotes:Accept:Insurance - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-10 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Template:Quotes:Accept:Insurance</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Template:Quotes:Accept:Insurance.html#column-one">navigation</a>, <a href="./Template:Quotes:Accept:Insurance.html#searchInput">search</a></div>			<!-- start content -->
+			<p>When a quote is <a href="./Quotes:Accept.html" title="Quotes:Accept">accepted or settled</a>, the insurance details are updated into the <b>Contracts / Insurance</b> tab as per the table below. The update will vary depending on which type of <a href="Policy_Owner.html" title="Policy Owner">Policy Owner</a> is selected in the quote.<br />
+If there is no Comprehensive Insurance Budget (INS) selected on the quote, none of the fields below will populate in the contract, except "Policy Owner". The descriptions below presume there is an active INS quote budget.<br />
+</p><p>If a Quote change the “Policy Owner” to Driver Policy or Client Policy where field is set to internal policy owner when Settle the quote, the created Contracts Insurance field “Policy Number”, “Start Date” and “Policy Due Date” will be flushed with proper Audit records.<br />
+</p><p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Quote </th><th> [table]field </th><th>  Contract </th><th> [table]field </th><th> Updates on<br /> Settle?
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> <a href="./Contracts:Insurance.html" title="Contracts:Insurance">Contract / Insurance</a>
+</td></tr>
+<tr>
+<td>Policy Owner</td><td>[qt_quotes]policy_owner_type</td><td>Policy Owner</td><td>[fm_contracts]policy_owner_type</td><td> Yes
+</td></tr>
+<tr>
+<td>Insurer</td><td>[qt_quote_insurance]supplier_id</td><td>Insurer</td><td>[fm_contracts]supplier_id_insurer</td><td> Yes
+</td></tr>
+<tr>
+<td>&nbsp;</td><td> If <i>[qt_quotes]policy_owner_type</i> = 'internal_insurer'<br />then <i>[qt_internal_insurers]insurance_policy_no</i><br />else blank </td><td> Policy Number</td><td> <i>[fm_contracts]insurance_policy_no</i> </td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp;</td><td> 1 If <i>[qt_quotes]policy_owner_type</i> = 'internal_insurer' and<br /> <i>[qt_internal_insurers]insurance_start_as_contract_start_flag</i> = 'no'<br />  2 If <i>[qt_quotes]policy_owner_type</i> = 'internal_insurer' and<br /> <i>[qt_internal_insurers]insurance_start_as_contract_start_flag</i> = 'yes'
+</td><td> Start Date
+</td><td> 1. <i>[qt_internal_insurers]insurance_start &rarr; [fm_contracts]insurance_start</i><br /> 2. <i>[fm_contracts]contract_start &rarr; [fm_contracts]insurance_start</i>
+</td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp;</td><td> If <i>[qt_quotes]policy_owner_type</i> = 'internal_insurer'<br />then <i>[qt_internal_insurers]insurance_renewal </td><td> Policy Due Date</td><td> [fm_contracts]insurance_renewal </td><td> Yes</i>
+</td></tr>
+<tr>
+<td>Billing Type</td><td>[qt_quote_insurance]billing_type</td><td>Billing Type</td><td>[fm_contracts]insurance_billing_type</td><td> Yes
+</td></tr>
+<tr>
+<td></td><td></td><td>Billing Frequency</td><td>[fm_contracts]insurance_billing_frequency </td><td> Yes
+</td></tr>
+<tr>
+<td></td><td> <i><a href="Global_Controls.html" title="Global Controls">[gb_controls]comprehensive_insurance_basis</a></i><br /><i>[qt_quotes]fbt_value</i><br /> <i>[qt_quotes]on_road_price_total</i><br /> <i>[qt_quotes]depreciable_amount</i><br /> <i>[qt_quotes]financed_amount</i> </td><td>Funded Base Cost</td><td>[fm_contracts]insurance_funded_base</td><td> No
+</td></tr>
+<tr>
+<td>Rate per Month</td><td>[qt_quotes]comprehensive_insurance</td><td>Monthly Budget</td><td>[fm_contracts]budget_insurance</td><td> Yes </td><td>
+</td></tr>
+<tr>
+<td>&nbsp;</td><td>[qt_insurance_rates]cost </td><td> Base Cost</td><td> [fm_contracts]insurance_base </td><td> Yes </td><td>
+</td></tr>
+<tr>
+<td></td><td>[qt_quote_insurance]fire_service_levy</td><td>Fire Service Levy</td><td>[fm_contracts]insurance_fire_service_levy</td><td> Yes </td><td>
+</td></tr>
+<tr>
+<td>&nbsp;</td><td> [qt_insurance_rates]broker_fee_monthly </td><td> Broker Fee </td><td> [fm_contracts]insurance_broker_fee_monthly </td><td> Yes
+</td></tr>
+<tr>
+<td>Ins Type</td><td>  <i>[qt_quote_insurance]insurance_type_id<br /> [qt_insurance_types]name  </td><td> Insurance Category </td><td> [fm_contracts]insurance_type </td><td> Yes</i>
+</td></tr></table>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/4/45/Tip.png/20px-Tip.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">If you have created a <a href="./Contracts:Payments.html" title="Contracts:Payments">Contracts / Payments</a> schedule, this will not be updated if the insurance in a quote changes and is <a href="./Quotes:Accept.html" title="Quotes:Accept">settled</a>. You will need to review and vary the payment schedule afterwards to reflect the changes.
+</td></tr></table>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a></td><td align="left">The <b>Contracts / Insurance</b> values will not be correct if a user has manually over-ridden the calculated "Annual Ins" on a quote. You may also get an incorrect insurance calculation if you modify a quote to create a lease extension.
+</td></tr></table>
+<p><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="8%" align="left">Quote Field Name </th><th width="8%" align="left">Contract Field Name </th><th width="5%" align="left">Policy Owner<br />Internal</th><th width="5%" align="left">Policy Owner<br />Driver </th><th width="5%" align="left">Policy Owner<br />Client </th><th width="5%" align="left">No INS Budget </th><th width="50%" align="left">Populate Business Rules </th><th width="7%" align="left">Update on Accept </th><th width="7%" align="left">Update on Settle
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="9"> Middle Column
+</td></tr>
+<tr>
+<td>Policy Owner</td><td>Policy Owner</td><td> Internal Policy </td><td>  Driver Policy </td><td> Client </td><td> Driver Policy </td><td><i>[qt_quotes]policy_owner_type &rarr; [fm_contracts]policy_owner_type</i>
+</td><td>Yes</td><td>Yes
+</td></tr>
+<tr>
+<td>Insurer</td><td>Insurer</td><td> <i>Populate</i> </td><td> <i>Populate</i>  </td><td> <i>Populate</i> </td><td>   </td><td><i>[qt_quotes]supplier_id_insurer &rarr; [fm_contracts]supplier_id_insurer</i>.</td><td>Yes</td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp;</td><td>Policy Number</td><td> <i>Populate</i></td><td> </td><td> </td><td> </td><td> 1. If <i>[qt_quotes]policy_owner_type</i> = 'internal_insurer'<br /> 2. then <i>[qt_internal_insurers]insurance_policy_no</i> &rarr; <i>[fm_contracts]insurance_policy_no</i><br />3. else blank </td><td>Yes</td><td>Yes
+</td></tr>
+
+
+<tr>
+<td>&nbsp;</td><td>Billing Type</td><td> Driver Reimbursement </td><td> Driver Reimbursement </td><td> Client Reimbursement </td><td>  </td><td> </td><td>Yes</td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp;</td><td>Billing Frequency</td><td> Monthly </td><td>  Annually </td><td>  Monthly  </td><td>  </td><td> </td><td>Yes</td><td>Yes
+</td></tr>
+<tr>
+<td>Claim Excess</td><td>Claim Excess</td><td> <i>Populate</i> </td><td> 0.00 </td><td> 0.00 </td><td> 0.00 </td><td><i>[qt_quote_insurance]claim_excess &rarr; [fm_contracts]insurance_claim_excess.</i></td><td>Yes</td><td>Yes
+</td></tr>
+</table>
+<div class="printfooter">
+Retrieved from "<a href="./Template:Quotes:Accept:Insurance.html">https://help.catch-e.net.au/mediawiki/index.php/Template:Quotes:Accept:Insurance</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Template:Quotes:Accept:Insurance">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Template:Quotes:Accept:Insurance.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Accept:Insurance&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

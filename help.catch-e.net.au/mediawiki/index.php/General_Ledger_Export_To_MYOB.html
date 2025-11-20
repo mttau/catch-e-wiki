@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="General Ledger Export To MYOB,ACCOUNTS,Billing Re-print,Card Transactions,Catch-e Support,Company,Create an accounting export batch,General Ledger Export To MYOB Set Up,Gl::myob::createExportBatch(),Gl::myob::createExportFile,Global Controls" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>General Ledger Export To MYOB - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">General Ledger Export To MYOB</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="General_Ledger_Export_To_MYOB.html#column-one">navigation</a>, <a href="General_Ledger_Export_To_MYOB.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> &rarr; <strong>General Ledger Export To MYOB</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="General_Ledger_Export_To_MYOB_Set_Up.html" title="General Ledger Export To MYOB Set Up">General Ledger Export To MYOB Set Up</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Scheduler_Jobs"><span class="tocnumber">2</span> <span class="toctext">Scheduler Jobs</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Process_Pages"><span class="tocnumber">3</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Filters_and_Buttons"><span class="tocnumber">4</span> <span class="toctext">Filters and Buttons</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Field_Descriptions"><span class="tocnumber">5</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Action_Buttons"><span class="tocnumber">6</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Validations_and_Alerts"><span class="tocnumber">7</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Summarisation_of_data"><span class="tocnumber">8</span> <span class="toctext">Summarisation of data</span></a>
+<ul>
+<li class='toclevel-2'><a href="General_Ledger_Export_To_MYOB.html#PL_Interface"><span class="tocnumber">8.1</span> <span class="toctext">PL Interface</span></a></li>
+<li class='toclevel-2'><a href="General_Ledger_Export_To_MYOB.html#SL_Interface"><span class="tocnumber">8.2</span> <span class="toctext">SL Interface</span></a></li>
+<li class='toclevel-2'><a href="General_Ledger_Export_To_MYOB.html#Jnl_Interface"><span class="tocnumber">8.3</span> <span class="toctext">Jnl Interface</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Procedure_to_import_into_MYOB"><span class="tocnumber">9</span> <span class="toctext">Procedure to import into MYOB</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#Troubleshooting"><span class="tocnumber">10</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_MYOB.html#System_Notes"><span class="tocnumber">11</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Create files to export sales, purchases or journal records to your accounting system. A separate file is created for each kind of record. The files contain summary data of transactions in the system.
+<br />
+</p><p>Transactions that have been exported are flagged and then excluded from subsequent export files. Transactions that have been exported cannot be edited. Exported transactions can be un-posted unless you are an 'Admin' user. 'Admin' users are warned of this before the un-posting is executed.
+<br />
+</p><p>If the multi-company feature is being used, transactions will be exported in separate files for each company. Visit the <a href="Company.html" title="Company">Company</a> page to read more about this feature.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=2" title="Edit section: Scheduler Jobs">edit</a>]</div><a name="Scheduler_Jobs"></a><h4>Scheduler Jobs</h4>
+<p>Automate this process by creating export batches in the scheduler: <a href="./Gl::myob::createExportBatch().html" title="Gl::myob::createExportBatch()">gl / myob / createExportBatch</a>.<br />
+</p><p>Then automate the creation of export files: <a href="./Gl::myob::createExportFile.html" title="Gl::myob::createExportFile">gl / myob / createExportFile</a>.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=3" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Create_an_accounting_export_batch.html" title="Create an accounting export batch">Create an accounting export batch</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:HeaderAndFields&amp;action=edit&amp;section=1" title="Template:Accounts:Export:HeaderAndFields">edit</a>]</div><a name="Filters_and_Buttons"></a><h4>Filters and Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Field </th><th width="5%" align="left"> Type </th><th width="85%" align="left"> Description
+</th></tr>
+<tr>
+<td>Export ID</td><td>Lookup</td><td>Enter or look up the export batch you want to use.
+</td></tr>
+<tr>
+<td><a href="./Image:New.gif.html" class="image" title="Image:New.gif"><img src="../../clients/help/wiki/images/e/e0/New.gif" alt="Image:New.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:New.gif" /></a></td><td>Button</td><td>Click this when you want to create a new export batch.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:HeaderAndFields&amp;action=edit&amp;section=2" title="Template:Accounts:Export:HeaderAndFields">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Section Break
+</td></tr>
+<tr>
+<td>Export ID</td><td>Num</td><td>Unique ID of the selected record.</td><td>[gb_exports]export_id
+</td></tr>
+<tr>
+<td> Company </td><td>List </td><td> Select the company you want to create the export for. This field is hidden unless you are using the multi-company export feature.</td><td> [gb_exports]company_id
+</td></tr>
+<tr>
+<td> Type </td><td>List </td><td> Select the type of export you want to create. This can be Purchases, Sales or Journals. </td><td> [gb_exports]type_code
+</td></tr>
+<tr>
+<td> Control Invoices </td><td> Num </td><td>Display field shows a count of invoices in a proposed export, or the actual total of an existing export.<br /> E.g. 2 Approvals </td><td>[gb_exports]control_invoice_count
+</td></tr>
+<tr>
+<td> Control Items </td><td> Num </td><td> Display field shows a count of items in a proposed export, or the actual total of an existing export.<br /> E.g. There are 2 Approvals, but there are 7 rows in those approvals. </td><td>[gb_exports]control_item_count
+</td></tr>
+<tr>
+<td> Control Total </td><td> Num </td><td> Display field shows the calculated total of a proposed export, or the actual total of an existing export. </td><td>[gb_exports]control_total
+</td></tr>
+<tr>
+<td> Created  </td><td> Timestamp </td><td> Display field shows the date and time the export batch was created. </td><td>[gb_exports]created
+</td></tr>
+<tr>
+<td> By </td><td> Text </td><td> Displays the "Login" of the user who created the export.  </td><td>[gb_exports]user_id
+</td></tr>
+<tr>
+<td> Status </td><td> Text </td><td> New export records are set with a status of 'pending'. You can update this to 'exported_ok' to note finalised exports.</td><td>[gb_exports]status_flag
+</td></tr>
+<tr>
+<td> Notes </td><td> Text </td><td> Enter a note. </td><td>[gb_exports]notes
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:ActionAndAlerts&amp;action=edit&amp;section=1" title="Template:Accounts:Export:ActionAndAlerts">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View
+</td></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a> </td><td> Select a <a href="Screen_Reports.html" title="Screen Reports">screen report</a> to print. The button is hidden if there are no active <a href="Screen_Reports.html" title="Screen Reports">screen reports</a> set-up in your system.
+</td></tr>
+<tr>
+<td><a href="./Image:Export.gif.html" class="image" title="Image:Export.gif"><img src="../../clients/help/wiki/images/8/8d/Export.gif" alt="Image:Export.gif" width="45" height="20" longdesc="/mediawiki/index.php/Image:Export.gif" /></a></td><td>Click to generate an export file for the selected batch.
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Click to edit the "Status" of the selected record, or to add "Notes".
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> New
+</td></tr>
+<tr>
+<td><a href="./Image:Create.gif.html" class="image" title="Image:Create.gif"><img src="../../clients/help/wiki/images/b/bd/Create.gif" alt="Image:Create.gif" width="46" height="20" longdesc="/mediawiki/index.php/Image:Create.gif" /></a></td><td>Review the proposed export counts and total and then click to create the export batch.
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td>Cancel if you don't want to create an export batch at this time.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:ActionAndAlerts&amp;action=edit&amp;section=2" title="Template:Accounts:Export:ActionAndAlerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Export
+</td></tr>
+<tr>
+<td>Interface requires setup!, support has been notified!</td><td>Either <i><a href="Global_Controls.html" title="Global Controls">[gb_controls]dmz_path</a></i> is not set correctly for your business or the dmz_subfolder_path is not set in the server.<br /> Check the control setting and call or email <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> for assistance.
+</td></tr>
+<tr>
+<td> Nothing to export </td><td> This alert is shown if the sales export has a "Control Total" of 0.00.<br /> This can arise if you have exported an invoice batch and then unposted it in the <a href="Billing_Re-print.html#Action_Buttons" title="Billing Re-print">Billing Re-print</a> screen. I.e., the matching sales export batch is updated and becomes 0.
+</td></tr>
+<tr>
+<td> Error in the controls!, support has been notified!  </td><td> This alert is shown if there is a mis-match between the export's "Control Total" amount and the value of the underlying transactions.<br /> This can arise if you have exported sales invoices and then unposted them from the <a href="Billing_Re-print.html#Action_Buttons" title="Billing Re-print">Billing Re-print</a> screen.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=4" title="Edit section: Summarisation of data">edit</a>]</div><a name="Summarisation_of_data"></a><h4>Summarisation of data</h4>
+<p>Data is summarised by default as follows:
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=5" title="Edit section: PL Interface">edit</a>]</div><a name="PL_Interface"></a><h5>PL Interface</h5>
+<p>Transactions are grouped by Company number and usually with a detail row per transaction.<br />
+</p><p><a href="Card_Transactions.html" title="Card Transactions">Card Services transactions</a> may be summarised to any fm_contracts field (e.g. contract_id, company_id by updating <a href="General_Ledger_Export_To_MYOB_Set_Up.html" title="General Ledger Export To MYOB Set Up"><i>[gb_controls]card_services_posting_group_by</i></a>.  This control became available 30/4/2009 prior to which Card transactions were summarised by Supplier code, invoice number and gl_code.<br />
+</p><p>The sort order is supplier id, invoice number and gl code. Thus a single fuel supplier may result in a PL record of only one or a few rows. The client code and name is stored in the transaction description to assist with reconciliation within the accounting system.  The MYOB field "Comment" contains the Catch-e gl_transactions batch number and item number to also assist with reconciling. 
+The Order Number used is the Catch-e Approval id OR the External order number if available (i.e. 1link generated authorisations).<br />
+</p><p>The driver’s surname can be included in the MYOB Purchase Ledger export file by setting <a href="General_Ledger_Export_To_MYOB_Set_Up.html" title="General Ledger Export To MYOB Set Up"><i>[gb_controls]myob_export_pl_include_surname_in_description_flag</i></a> as 'yes'.<br />
+</p><p>The PL export file ‘Date’ and ‘Shipping Date’ fields are populated with the stored <i>[gl_transactions]date</i>. If you want to use <i>[gl_transactions]posted_date</i> to populate ‘Date’ and ‘Shipping Date’ instead, change <a href="General_Ledger_Export_To_MYOB_Set_Up.html" title="General Ledger Export To MYOB Set Up"><i>[gb_controls]myob_export_pl_transaction_date</i></a> to be ‘posted_date’ instead of 'invoice_date'. This control applies to records that come from both approvals and payments.<br />
+</p><p>Each transaction in the system is exported separately, but it can be grouped by supplier and gl_code. Set the by updating <a href="General_Ledger_Export_To_MYOB_Set_Up.html" title="General Ledger Export To MYOB Set Up"><i>[gb_controls]myob_export_summarise_data</i></a> to 'yes'.<br /> 
+</p><p>Below is an example of how the line content of the export file will appear based on the setting. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">MYOB Export file header </th><th width="25%" align="left">[gb_control]myob_export_summarise_data = 'no' </th><th width="25%" align="left">[gb_control]myob_export_summarise_data = 'yes' </th><th width="30%" align="left"> Comments
+</th></tr>
+<tr>
+<td>Co./Last Name </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>First Name </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Addr 1 - Line 1 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - Line 2 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - Line 3 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - Line 4 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Inclusive </td><td> I </td><td> I </td><td>
+</td></tr>
+<tr>
+<td>Purchase Order# </td><td> 123456 </td><td> </td><td> When set to 'yes' this field will be blank as this setting groups only by 'gl_code' and multiple Purchase Order numbers cannot be grouped. <br />
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a> <i>When set to 'no', this field is currently returning a blank value.  Please contact Support if this is an issue.</i> 
+</p>
+</td></tr>
+<tr>
+<td>Date </td><td> 11/02/2021 </td><td> 11/02/2021</td><td>
+</td></tr>
+<tr>
+<td>Supplier Invoice # </td><td> 123456 </td><td> </td><td> When set to 'yes' this field will be blank as this setting groups only by 'gl_code' and multiple Supplier Invoice numbers cannot be grouped
+</td></tr>
+<tr>
+<td>Ship Via </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Already Printed </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Description </td><td> Export ID 100150 Batch No 123456 maintenance </td><td> Export ID 123456 </td><td> When set to 'yes', only the Export ID will be displayed as the multiple Batch IDs and posting classes within the export file cannot be grouped. <br />
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a> <i>When set to 'no', this field is currently returning a blank value.  Please contact Support if this is an issue.</i>
+</p>
+</td></tr>
+<tr>
+<td>Account # </td><td> 12345 </td><td> 12345 </td><td>
+</td></tr>
+<tr>
+<td>Amount </td><td> 708.91 </td><td> 708.91 </td><td>
+</td></tr>
+<tr>
+<td>Inc-Tax Amount </td><td> 779.80 </td><td> 779.80 </td><td>
+</td></tr>
+<tr>
+<td>Job </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Comment </td><td> maintenance </td><td>finance </td><td> When set to 'yes' and multiple posting classes are linked to the one gl_code, they will be itemised separately as shown
+</td></tr>
+<tr>
+<td>Journal Memo </td><td> 123456-1 </td><td> </td><td> Will be blank when flag set to 'yes'
+</td></tr>
+<tr>
+<td>Shipping Date </td><td> 11/02/2021 </td><td> </td><td> Will be blank when flag set to 'yes'
+</td></tr>
+<tr>
+<td>Tax Code </td><td> GST </td><td> GST </td><td>
+</td></tr>
+<tr>
+<td>Non-GST amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>GST amount </td><td> 70.89 </td><td> 70.89 </td><td>
+</td></tr>
+<tr>
+<td>Import Duty Amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Freight Amount </td><td> GST </td><td> GST </td><td>
+</td></tr>
+<tr>
+<td>Inc-Tax Freight Amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Freight Tax Code </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Freight Non-GST Amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Freight GST Amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Freight Import Duty Amount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Purchase Status </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Currency Code </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Exchange Rate </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Terms - Payment is Due </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - Discount Days: </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - Balance Due Days: </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> - % Discount </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Amount Paid </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Category </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Card ID </td><td> REIMBURSE </td><td> </td><td> Will be blank when flag set to 'yes'.  Note: 'Reimburse' is just one example of many possibilities.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=6" title="Edit section: SL Interface">edit</a>]</div><a name="SL_Interface"></a><h5>SL Interface</h5>
+<p>Class 'F' (fuel transactions) are summarised by contract id where the Billing menu option Recharge-Fuel or Combined is used. Thus each vehicle will have a single row of summarised data for the batch imported.  Recharge-Standard does not summarise the fuel transactions per contract and they are passed across in individual rows. 
+<br />
+Sales Invoices can be split by contract using the <a href="Global_Controls.html" title="Global Controls">global control</a>: gl.myob_export_break_by_item_flag. If set to "yes" a new invoice break is performed in the export file to MYOB.  This allows payments of sales invoices to be applied per contract if required.<br /><br />
+The MYOB "Job" field for SL and PL exports can be populated with a field from the fm_contracts table in Catch-e to allow transactions to be posted to jobs in MYOB.  This is controlled by the gb_control myob_export_job.  Fields which can be used for populating the job field are:
+</p>
+<ul><li>contract_id
+</li><li>finance_ref
+</li><li>supplier_reference
+</li><li>asset_id<br />
+</li></ul>
+<p>The MYOB "Customer PO" field can be populated with the following data from Catch-e (a typical example is driver "surname") to allow for easier searching of invoices within MYOB:<br />
+</p>
+<ul><li>none (i.e. do not populate)
+</li><li>surname (from fm_drivers, note the driver_id is allocated at the time of billing)
+</li><li>contract_id (from fm_contracts)
+</li><li>reg_no (from fm_contracts)
+</li><li>client_order_no (from fm_contracts)<br />
+</li></ul>
+<p>The <a href="Global_Controls.html" title="Global Controls">Global Control</a> gl.myob_sl_export_customer_po contains the field to use.  Note that the global control gl.myob_export_break_by_item_flag must be to 'yes' for SL because in MYOB there can only be one purchase order number per invoice - so the invoice needs to break on contract id etc when exporting.<br />
+</p><p>Sales Invoices can be set to nominate the contract id OR the client code as the Card ID in MYOB.  This allows SL invoices to be posted to individual contracts (setup as customers) in MYOB which can facilitate managing cash received per contract.  This is controlled by the <a href="Global_Controls.html" title="Global Controls">global control</a>: myob_sl_export_card_id (settings can be either "client_code" or "contract_id".  "client_code" is the default).
+</p><p>The <a href="Global_Controls.html" title="Global Controls">Global Control</a> gl.myob_export_summarise_data, by default, is set to 'no' to enable the Sales export files to have individual transaction lines.  If set to 'yes' the Sales export file will be created with a summary of all transactions in one line.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=7" title="Edit section: Jnl Interface">edit</a>]</div><a name="Jnl_Interface"></a><h5>Jnl Interface</h5>
+<p>The Grouping rules for creating journal entries in gl_transactions (and thus in the export files) are:<br />
+</p><p>1. When multi_company_export_flag = No<br />
+</p><p>For Debit entries - Group by Debit code<br />
+For Credit entries - Group by Credit code, Debit code<br />
+</p><p>2. When multi_company_export_flag = Yes<br />
+</p><p>For Debit = Group by Company ID, Debit code<br />
+For Credit = Group by Company ID, Credit code, Debit code<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=8" title="Edit section: Procedure to import into MYOB">edit</a>]</div><a name="Procedure_to_import_into_MYOB"></a><h4>Procedure to import into MYOB</h4>
+<p>This example is for Sales Invoices
+</p>
+<ol><li>Choose MYOB menu option <i>File/Import Data/Sales/Service Sales</i>
+</li><li>Import File Format: Comma-separated
+</li><li>First Record is: Header Record
+</li><li>Duplicate Records: Add Them (otherwise fails due to duplicate order numbers)
+</li><li>Identify Customers By: Co./Last Name (OR Card ID - refer note below)
+</li><li>Continue, browse for saved Catch-e file
+</li><li>Match All (untick Co Last name if not matching on name)
+</li><li>Import
+</li><li>Check the MYOB log file: MYOBPLOG.TXT for errors and warning.<br /><br />
+</li></ol>
+<table class="catch-e" style="border-collapse: collapse; width: 30%;">
+
+<tr>
+<td width="30px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> To import a Purchases Journal, choose MYOB menu option <i>File/Import Data/Purchases/Service Purchases</i>. <br /> To import a General Journal, choose MYOB menu option <i>File/Import Data/General Journal Entries.</i>
+</td></tr></table>
+<p><br />
+</p><p><i>Note:</i>
+If your Card ID’s in MYOB DO NOT match the Catch-e Client code (or contract id if applicable)or Supplier code you need to un- tick the matched field “Card ID” during the import process to prevent the import failing – this is regardless of whether you choose the option to match by Card ID or not.  If both company name and card id remain as matched fields then MYOB will require both data fields to match.
+</p><p>The company name can be set to blank for both the SL and PL export files if desired using the 
+<a href="Global_Controls.html" title="Global Controls">global control</a>: gl.myob_export_co_last_name_flag.
+</p><p><br /> 
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=9" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<p>Below are some common reasons you may get errors in MYOB;
+</p>
+<ol><li> GL Code not matching.
+</li><li> Customer name or Card ID not matching (also applies to Suppliers).  Note the MYOB Card ID uses the client or supplier code in Catch-e.
+</li><li> Tax Account not linked in MYOB.  Catch-e supplies GST codes of either "GST" or "N-T".  These codes need to be linked in MYOB to the GL Codes used for collecting and paying GST. In MYOB you need to link these Tax Codes to a GL code using the menu option "Lists/Tax Codes". Choose "GST" and select the linked GST account codes. Then do the same for "N-T".
+</li><li> Error -29: Invalid tax amount when importing journals.  Deselect fields not required if you have used the "Match All" feature, e.g. deselect any fields remaining after "Tax Code"
+</li></ol>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 14367:Do not populate Co Name and job id for MYOB SL and PL Export Files. Live 20/09/2016
+</li><li> 14619: MYOB Export summarise data. Live 14/11/2017
+</li><li> (DEV-20655) MYOB Export update header text to match MYOB new standard. Live 20/05/2019
+</li><li> (DEV-20801) Allow MYOB Purchases Export (PL) to report by Item Posted date Live 07/10/2019
+</li><li> (DEV-21310) Update MYOB PL export file output grouping logic. Live dd/03/2021
+</li><li>(DEV-21123) Create Un-Post function for Invoices. Live 23/05/2022
+</li><li>(DEV-21697) Billing Re-Print Un-Post function - modify export_id updates. Live 26/09/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="General_Ledger_Export_To_MYOB.html">https://help.catch-e.net.au/mediawiki/index.php/General_Ledger_Export_To_MYOB</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=General_Ledger_Export_To_MYOB">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/General_Ledger_Export_To_MYOB.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_MYOB&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.15 secs. -->
+</body></html>

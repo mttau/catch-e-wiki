@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="System Configuration,2 Factor Authentication Setup,APIs,AWS SES Setup,Bespoke Fields,Billing Setup,Billing Templates,Certificate of Currency,Channel,Contracts:Claim Set Up,Credit Notes" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>System Configuration - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">System Configuration</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Implementation&amp;redirect=no" title="System Implementation">System Implementation</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="System_Implementation.html#column-one">navigation</a>, <a href="System_Implementation.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <strong>System Configuration</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="System_Implementation.html#Geo-blocking"><span class="tocnumber">1</span> <span class="toctext">Geo-blocking</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#General"><span class="tocnumber">2</span> <span class="toctext">General</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Access"><span class="tocnumber">3</span> <span class="toctext">Access</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Email"><span class="tocnumber">4</span> <span class="toctext">Email</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Quotes"><span class="tocnumber">5</span> <span class="toctext">Quotes</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Contracts"><span class="tocnumber">6</span> <span class="toctext">Contracts</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Billing"><span class="tocnumber">7</span> <span class="toctext">Billing</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#Channel"><span class="tocnumber">8</span> <span class="toctext">Channel</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#APIs"><span class="tocnumber">9</span> <span class="toctext">APIs</span></a></li>
+<li class='toclevel-1'><a href="System_Implementation.html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=1" title="Edit section: Geo-blocking">edit</a>]</div><a name="Geo-blocking"></a><h2>Geo-blocking</h2>
+<p>IP Addresses from all countries except for AUS, NZ, UK and USA are geo-blocked by the system as a standard security precaution.<br /><br />
+</p><p>If you travel to countries other than AUS, NZ, UK and USA, you will not be able to access the Catch-e system.<br /> If you need access to the Catch-e system, the <a href="Driver_Portal.html" title="Driver Portal">Driver Portal</a> or <a href="APIs.html" title="APIs">APIs</a> while travelling, set-up a VPN service and run it from an Australian or New Zealand IP address.<br />
+</p><p>Visit <a href="https://www.telstra.com.au/business-enterprise/solutions/network-services/connectivity/vpn-service/internet-vpn#overview" class='external text' title="https://www.telstra.com.au/business-enterprise/solutions/network-services/connectivity/vpn-service/internet-vpn#overview" rel="nofollow">Telstra VPN</a> for a sample VPN service.<br /> The link above is an example only, it is your responsibility to choose an appropriate VPN provider and to consider their quality and security when doing so.<br /><br />
+</p><p>If you have staff who are working permanently from a geo-blocked country, we recommend using a business VPN to enable Catch-e system access.<br /> If you want to access Catch-e without a VPN, you will need an <a href="Whitelist_an_IP_address.html" title="Whitelist an IP address">IP address whitelisted</a> to allow access. <br />
+</p><p><b>Only whitelist static IP addresses can be whitelisted.</b> <br /> 
+</p><p>Please allow about 2 weeks lead time to <a href="Whitelist_an_IP_address.html" title="Whitelist an IP address">whitelist an IP address</a>, as this must go through the standard development and <a href="Live_Deployment_Schedule.html" title="Live Deployment Schedule">deployment</a> processes.<br /><br />
+</p><p><b>Annual audit:</b> You will need to confirm the IP Addresses whitelisted on your behalf each year back to Catch-e.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=2" title="Edit section: General">edit</a>]</div><a name="General"></a><h2>General</h2>
+<p><a href="System_Menu.html" title="System Menu">System Menu</a> - The System Menus available at the top of the screen can be customized by <a href="Roles.html" title="Roles">Role</a>. <br />
+<a href="Global_Controls.html" title="Global Controls">Global Controls</a> - a variety of setting can be adjusted for your business. Review these settings with your Account Manager.<br /> 
+<a href="Field_Names.html" title="Field Names">Field Names</a> - some screen field names can be customised.<br />
+<a href="Bespoke_Fields.html" title="Bespoke Fields">Bespoke Fields</a> - custom screens and fields can be created in the Clients, Quotes and Contracts modules.<br />
+<a href="New_Zealand.html" title="New Zealand">New Zealand</a> - details particular settings to check if you are a New Zealand customer.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=3" title="Edit section: Access">edit</a>]</div><a name="Access"></a><h2>Access</h2>
+<p><a href="2_Factor_Authentication_Setup.html" title="2 Factor Authentication Setup">2 Factor Authentication</a> can be set-up as required to improve login security.<br />
+</p><p>When external users (Drivers and Fleet Managers) log into the system, they see the <a href="https://help.catch-e.net.au/clients/help/wiki/images/0/05/UserGuide.pdf" class='internal' title="UserGuide.pdf">UserGuide.pdf</a> when they click on the <a href="Help_wiki.html" title="Help wiki">Help wiki</a>. You can create or edit your guide and upload it in the <a href="Import_Or_Export_Files.html" title="Import Or Export Files">Setup / Import/Export Files</a> screen. Here is a <b>sample</b> to start with.<br />
+</p><p>Drivers can be directed to use the <a href="Driver_Portal.html" title="Driver Portal">Driver Portal</a> instead of restricted system screens. This portal has been developed with driver claims and reports as it's focus.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=4" title="Edit section: Email">edit</a>]</div><a name="Email"></a><h2>Email</h2>
+<p><a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Emailing_Setup.html" title="Emailing Setup">Email Configuration</a> | <a href="Mail_Failed_Scheduler_Jobs.html" title="Mail Failed Scheduler Jobs">Mail Failed Scheduler Jobs</a> &rarr; <a href="AWS_SES_Setup.html" title="AWS SES Setup">SES</a> | <a href="SMTP_Setup.html" title="SMTP Setup">SMTP</a> &rarr; <a href="Email_Setup.html" title="Email Setup">Email Setup</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=5" title="Edit section: Quotes">edit</a>]</div><a name="Quotes"></a><h2>Quotes</h2>
+<p><i>The pages below provide system set-up details and context to help you during a system implementation.</i><br />
+</p><p><a href="Quote_Template.html" title="Quote Template">Quote Template</a> - how to set-up a quote template
+</p><p><a href="Dealer_Quote_Request.html" title="Dealer Quote Request">Dealer Quote Request</a>
+</p><p><a href="Quote_Event_Email.html" title="Quote Event Email">Quote Event Email</a> - set up Quote Event Emails for an email to be created  with a Quote Event.
+</p><p><a href="Registration.html" title="Registration">Registration</a> - how registration costs are calculated.
+</p><p><a href="Quote_Profiles.html" title="Quote Profiles">Quote Profiles</a> - how quote profiles are set-up and sample templates to get you started.
+</p><p><b>Roadside Assistance</b> - Roadside assistance plans can be stored in the system using the table <i>qt_roadside_assistance_plans</i>.  This allows the supplier and premium to be selected with the system then calculating the monthly budget. The contract type must have a budget class code of "RSA" for the Roadside Assistance profile to be available.  The <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">Global Control</a> qt roadside_assistance_plan_code can be used to set a default plan.
+</p><p><a href="REVS.html" title="REVS">REVS</a> - how REVS are set-up to calculate in a Quote.
+</p><p><a href="Swann_Interface.html" title="Swann Interface">Swann Interface</a> - find out how the Swann interface works to automate data transfers for Tyre and Rim Insurance and Extended Warranties
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=6" title="Edit section: Contracts">edit</a>]</div><a name="Contracts"></a><h2>Contracts</h2>
+<p><a href="Forms.html" title="Forms">Forms</a> - how to create various <a href="Forms.html" title="Forms">templates</a> for printing spreadsheets or documents for your records.
+</p><p><a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a> - how to create custom reports for your records.
+</p><p><a href="Certificate_of_Currency.html" title="Certificate of Currency">Certificate of Currency</a> - a Contract Event can be configured to issue your driver with a Certificate of Currency or Insurance information document.
+</p><p><a href="./Contracts:Claim_Set_Up.html" title="Contracts:Claim Set Up">Claims Setup</a> - how to set-up the Claims screen
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=7" title="Edit section: Billing">edit</a>]</div><a name="Billing"></a><h2>Billing</h2>
+<p><a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Billing_Setup.html" title="Billing Setup">Billing Setup</a> &rarr; <a href="Billing_Templates.html" title="Billing Templates">Invoice Templates</a> | <a href="Invoice_Placeholders.html" title="Invoice Placeholders">Invoice Placeholders</a> | <a href="Invoice_Header.html" title="Invoice Header">Invoice Header</a> | <a href="Invoice_Footer.html" title="Invoice Footer">Invoice Footer</a> | <a href="Invoice_System_Placeholders.html" title="Invoice System Placeholders">Invoice System Placeholders</a> | <a href="Credit_Notes.html" title="Credit Notes">Credit Notes</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=8" title="Edit section: Channel">edit</a>]</div><a name="Channel"></a><h2>Channel</h2>
+<p><a href="Channel.html" title="Channel">Channel</a> - configure Channels.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=9" title="Edit section: APIs">edit</a>]</div><a name="APIs"></a><h2>APIs</h2>
+<p><a href="APIs.html" title="APIs">APIs</a> - use the listed APIs for your integrations.<br />
+</p>
+<dl><dd> <a href="Third_Party_Developers.html" title="Third Party Developers">Third Party Developers</a> - notes on setting up access for third party developers.
+</dd></dl>
+<p><a href="Salesforce.html" title="Salesforce">Salesforce</a> - use the <b>apex</b> method to configure an integration.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h2>System Notes</h2>
+<p><small>
+</p>
+<ul><li> 13681: Sender Policy Framework (SPF)::Back-end features for domain enrolment and validation. Live 18/06/2016
+</li><li> 14073: Add New Channel Logo. Live 19/08/2016
+</li><li> (DEV-15734) Filter state lists based on country_code. Live 04/06/2018
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1767-0!1!0!0!!en!2 and timestamp 20251120231134 -->
+<div class="printfooter">
+Retrieved from "<a href="System_Configuration.html">https://help.catch-e.net.au/mediawiki/index.php/System_Configuration</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=System_Configuration">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/System_Configuration.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=System_Configuration&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.03 secs. -->
+</body></html>

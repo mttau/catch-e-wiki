@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Xero Setup,ACCOUNTS,Company,Contracts:Payments:Setup,Finance - Principal and Interest,General Ledger Export To MYOB,General Ledger Export To Xero,Global Controls,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Xero Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Xero Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Xero_Setup.html#column-one">navigation</a>, <a href="Xero_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> &rarr; <a href="General_Ledger_Export_To_Xero.html" title="General Ledger Export To Xero">General Ledger Export To Xero</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>Xero Setup</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Xero_Setup&amp;action=edit&amp;section=1" title="Edit section: Set-up Notes">edit</a>]</div><a name="Set-up_Notes"></a><h4>Set-up Notes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"><b>Setup / Reference Data &rarr;</b> <a href="Global_Controls.html#General_Ledger_.28GL.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="55%" align="left">Comment</th><th width="20%" align="left">Default Value
+</th></tr>
+<tr>
+<td>gb</td><td>dmz_path</td><td>This is usually set-up for you during the implementation process. If you are unable to export batches, check this is set correctly.</td><td>/var/interface/CLIENT
+</td></tr>
+<tr>
+<td>gl</td><td>multi_company_export_flag</td><td>This is set as 'no' by default. You only need to change this if you are accounting for multiple companies.<br /> If this is updated to 'yes', accounting exports will be created and stored separately for each company that is in use.<br /> Also visit the <a href="Company.html" title="Company">Company</a> page for more details about using and setting up multiple companies.</td><td>no
+</td></tr>
+<tr>
+<td>gl</td><td>sl_export_exclude_pay_run_invoices_flag</td><td>This is set as 'yes' by default. You only need to change this if you are creating Sales accounting records.<br /> If this is updated to 'no', accounting Sales exports will be created for Pay Run invoices</td><td>yes
+</td></tr>
+<tr>
+<td>gl</td><td>jnl_export_exclude_pay_run_invoices_flag </td><td>This is set as 'yes' by default. You only need to change this if you are creating sales Journal accounting records.<br /> If this is updated to 'no', accounting Journal exports will be created for Pay Run invoices</td><td>yes
+</td></tr>
+<tr>
+<td>gl</td><td>pl_export_finance_reporting_flag</td><td> This control is only applicable when
+<ol><li> you are <a href="General_Ledger_Export_To_Xero.html" title="General Ledger Export To Xero">exporting transactions to Xero</a> 
+</li><li> you are using the "Payment Type" <a href="./Contracts:Payments:Setup.html" title="Contracts:Payments:Setup">'Finance - Principal and Interest'</a>.<br /> 
+</li></ol>
+<p>When the flag is set to ‘no’
+</p>
+<ol><li> The export file will itemise the classes ‘PRI' (Principal) and 'INT’ (Interest). The class 'FIN' (Finance) is ignored.  
+</li><li> Contract Types / Payments "G" must be set to 'N' for INT, PRI and FIN for the "Type" 'Finance - Principal And Interest'
+</li><li> Contracts /Payments - when a 'Finance - Principal And Interest' payment is saved, the GST setting is checked. If the 'FIN' class GST is populated, the record cannot be saved. You will see a <a href="Finance_-_Principal_and_Interest.html#Validations_and_Alerts" title="Finance - Principal and Interest">validation message</a>.<br /> 
+</li></ol>
+<p>Where the flag is set to ‘yes’
+</p>
+<ol><li> The export file will only include the ‘FIN’ class and if configured, will include GST.
+</li></ol>
+</td><td> no
+</td></tr>
+
+<tr>
+<td> gl </td><td> xero_export_sl_invoice_date_for_pay_run </td><td> Use this control to change the date that is used in sales ledger exports using <a href="General_Ledger_Export_To_MYOB.html" title="General Ledger Export To MYOB">MYOB Purchases</a> and <strong>Xero Purchases</strong> export files.<br /> This control only applies to pay run invoice transactions.<br />
+<p><b>invoice_date</b> - the export file will use <i>[gl_transactions]date</i> to show as InvoiceDate (this is the same date as <i>[fm_billing]invoice_date</i>)<br />
+</p><p><b>posted_date</b> - the export file will use <i>[gl_transactions]posted_date</i> to show as InvoiceDate (this is the same date as <i>[fm_billing]posted_date</i>)
+</p>
+</td><td> invoice_date
+</td></tr>
+<tr>
+<td> gl </td><td> xero_export_sl_tax_type </td><td> Allows for the 'Tax Type' description in the <strong>Xero Sales</strong> export file to be modified if required.
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Gst Non Zero</b></td><td width="70%" align="left">GST on Income
+</td></tr>
+<tr>
+<td><b>Gst Zero</b></td><td>GST Free Income
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td> gl </td><td> xero_export_summarise_data </td><td> Update the Pl to 'yes' to summarise export data.<br /> Visit the <a href="General_Ledger_Export_To_Xero.html#PL_Interface" title="General Ledger Export To Xero">General Ledger Export To Xero</a> page for more details.<br /> The "Sl" setting is not functional.
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Sl</b></td><td width="70%" align="left">no
+</td></tr>
+<tr>
+<td><b>Pl</b></td><td>no
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td> gl </td><td>xero_pl_export_invoice_date_for_reimbursement</td><td> Use this control to change the date that is used in <strong>Xero Purchases</strong> export files.<br /> This control only applies to claim reimbursements. I.e. where <b>Contracts / Claim</b> "Reimbursement" is checked.<br /> Using 'posted_date' can be helpful if you close out accounting periods in Xero and older claims have been recently processed.<br />
+<p><b>invoice_date</b> - the export file will use <i>[fm_maintenance]invoice_date</i> as the InvoiceDate<br />
+</p><p><b>posted_date</b> - the export file will use <i>[gl_transactions]posted_date</i> as the InvoiceDate
+</p>
+</td><td> invoice_date
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Xero_Setup&amp;action=edit&amp;section=2" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 8499: Xero Accounting Package Interface. Live 05/05/2014
+</li><li> 10255: Amendment to Xero Accounting Package Interface. Live xx/xx/2015
+</li><li> 13269: Amendment to Xero Export files. Live xx/02/2016
+</li><li> 16272: Are MYOB related gb_controls inherited by the Xero Exports for PL, SL and Journal. Live xx/08/2017
+</li><li> (DEV-21074) Create default file path when dmz_subfolder_path is not set for Accounting export. Live 20/07/2020
+</li><li> (DEV-21283) Update Xero PL Export for P&amp;I Payments. Live 14/03/2022
+</li><li> (DEV-21682) Issue with Europcar invoices - Xero PL Export. Live 11/07/2022
+</li><li> (DEV-21744) Cannot print a Xero SL export file for Pay Run Invoice. Live dd/09/2022
+</li><li> (DEV-21697) Billing Re-Print Un-Post function - modify export_id updates. Live dd/mm/2022
+</li><li> (DEV-21839) Xero / General Ledger - enable Screen Reports. Live 15/05/2023
+</li><li> (DEV-21909) Enable Xero SL TaxType field text to be customised. Live 14/08/2023
+</li><li> (DEV-22054) Xero Purchases - InvoiceDate - create control so posted_date can be used for reimbursements. Live 06/05/2024
+</li><li> (DEV-22284) Xero: Summarise PL data. Live 10/06/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Xero_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Xero_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Xero_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Xero_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Xero_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.06 secs. -->
+</body></html>

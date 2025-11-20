@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Job Scheduler:Job,Job Scheduler:Job,Add or remove email recipients,Add or remove report queue recipients,Catch-e Support,Create an executeQuery job,Derived Fields,Encrypted Fields,Find a job,Gb::Queries::executeQueries(),Gb::Queries::executeScript()" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Job Scheduler:Job - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Job Scheduler:Job</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Job_Scheduler:Job.html#column-one">navigation</a>, <a href="./Job_Scheduler:Job.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <strong>Job</strong> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr; <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Method</a> | <a href="Message.html" title="Message">Message</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Scheduler_Setup.html" title="Scheduler Setup">Scheduler Setup</a> &rarr; <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> | <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a> | <a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted Fields</a> | <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) Format</a> | <a href="Office(xlsx).html" title="Office(xlsx)"> Office(xlsx) Format</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Field_Descriptions"><span class="tocnumber">3</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Action_Buttons"><span class="tocnumber">4</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Validations_and_Alerts"><span class="tocnumber">5</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#Troubleshooting"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Job_Scheduler:Job.html#My_job_is_inactive"><span class="tocnumber">6.1</span> <span class="toctext">My job is inactive</span></a></li>
+<li class='toclevel-2'><a href="./Job_Scheduler:Job.html#My_job_is_active_but_does_not_run"><span class="tocnumber">6.2</span> <span class="toctext">My job is active but does not run</span></a></li>
+<li class='toclevel-2'><a href="./Job_Scheduler:Job.html#My_job_has_failed"><span class="tocnumber">6.3</span> <span class="toctext">My job has failed</span></a></li>
+<li class='toclevel-2'><a href="./Job_Scheduler:Job.html#My_Attachment_Formatting_did_not_work"><span class="tocnumber">6.4</span> <span class="toctext">My Attachment Formatting did not work</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Job_Scheduler:Job.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This is where you create and edit scheduled jobs.  There are many different <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Job Types</a> that you are able to run.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Find_a_job.html" title="Find a job">Find a job</a>
+</dd><dd><a href="Run_a_job.html" title="Run a job">Run a job</a>
+</dd><dd><a href="Create_an_executeQuery_job.html" title="Create an executeQuery job">Create an executeQuery job</a>
+</dd><dd><a href="Make_a_job_active.html" title="Make a job active">Make a job active</a>
+</dd><dd><a href="Make_a_job_inactive.html" title="Make a job inactive">Make a job inactive</a>
+</dd><dd><a href="Update_a_job_run_time.html" title="Update a job run time">Update a job run time</a>
+</dd><dd><a href="Update_the_output_format_of_a_query.html" title="Update the output format of a query">Update the output format of a query</a>
+</dd><dd><a href="UAT_an_executeQuery_job.html" title="UAT an executeQuery job">UAT an executeQuery job</a>
+</dd></dl>
+<p>Report Queue
+</p>
+<dl><dd><a href="Update_a_job_to_deliver_reports_to_the_report_queue.html" title="Update a job to deliver reports to the report queue">Update a job to deliver reports to the report queue</a>
+</dd><dd><a href="Add_or_remove_report_queue_recipients.html" title="Add or remove report queue recipients">Add or remove report queue recipients</a>
+</dd></dl>
+<p>Email
+</p>
+<dl><dd><a href="Update_a_job_to_deliver_reports_via_email.html" title="Update a job to deliver reports via email">Update a job to deliver reports via email</a>
+</dd><dd><a href="Add_or_remove_email_recipients.html" title="Add or remove email recipients">Add or remove email recipients</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=3" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Field Name</th><th>Type</th><th>Description</th><th>[table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Service
+</td></tr>
+<tr>
+<td>Status</td><td>Drop List</td><td>New jobs default to 'active' by default and will run automatically when a stored Run Time is reached.<br /> Set jobs to 'inactive' if you don't want to run them anymore, or if you want to run the job on an 'ad-hoc' basis using the <b>Run Now</b> button.<br /> When you update a job to become 'inactive', check to see if there are any child jobs. When a parent job is made 'inactive', child jobs are made 'inactive' at the same time. Making a parent job active again will not update any children. They must be made 'active' again individually. </td><td>[gb_scheduler_jobs]status_flag
+</td></tr>
+<tr>
+<td><a href="./Job_Scheduler:Parent_Job.html" title="Job Scheduler:Parent Job">Parent Job ID</a></td><td> Num </td><td> Enter or lookup a job that you want to add as the parent. Visit the <a href="./Job_Scheduler:Parent_Job.html" title="Job Scheduler:Parent Job">Parent Job ID</a> page for all the details feature details.</td><td>[gb_scheduler_jobs]scheduler_job_id
+</td></tr>
+<tr>
+<td>Module</td><td>List</td><td>Select the relevant module.</td><td>[gb_scheduler_types]module
+</td></tr>
+<tr>
+<td>Class</td><td>List</td><td>Class category from gb_scheduler_types</td><td>[gb_scheduler_types]class
+</td></tr>
+<tr>
+<td><a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Method</a></td><td>List</td><td>Select the method that should be used in the job. </td><td>[gb_scheduler_types]method
+</td></tr>
+<tr>
+<td>Description</td><td>Text</td><td>Enter a description of the job.</td><td>
+</td></tr>
+<tr>
+<td><u>Parameters</u></td><td>Heading</td><td>Different fields will display in the <u>Parameters</u> section depending on which "Method" you have chosen. Visit the <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Method</a> page to find and read about the requirements for your chosen "Method". </td><td>
+</td></tr>
+<tr>
+<td>Attachment Format</td><td> List box </td><td>Choose the required format for the attachment file from '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>', <a href="Office(xls)_Format.html" title="Office(xls) Format">'Office(xls)'</a>, 'Text (csv)', 'Text (txt)'  or 'XML'. '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>' is the default value.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Mail
+</td></tr>
+<tr>
+<td>Send Mail</td><td>Check Box</td><td>Check this on if you want to send an email when the job runs. Each scheduler method has a default setting for this check box. See the <a href="Scheduler_Setup.html" title="Scheduler Setup">set-up</a> page fore more details. For some methods, it is disabled when emailing is not applicable.<br />
+<p>If the job's method is <a href="./Gb::Queries::executeQueries().html" title="Gb::Queries::executeQueries()">executeQuery</a>, the email is sent to the stored recipients and they receive the executed query as an attachment in the email.<br /> 
+</p><p>For other methods, the purpose of "Send Mail" is to email the recipients to confirm that the job has run. 
+This includes <a href="Mail_Query.html" title="Mail Query">mailQuery</a> jobs. Use "Send Mail" if you want to receive a confirmation that the <a href="Mail_Query.html" title="Mail Query">mailQuery</a> job ran, the <a href="Mail_Query.html" title="Mail Query">mailQuery</a> email content itself is not visible on this screen.<br />
+</p><p>If this field is checked, the job won't save unless;
+</p>
+<ol><li> a "Sender" is recorded
+</li><li> the job status is 'Active'
+</li><li> there is at least one "Recipient" entered
+</li></ol>
+<p>If this field is un-checked,
+</p>
+<ol><li> The "Subject" field is disabled
+</li><li> The "Sender" record is removed
+</li></ol>
+</td><td>
+</td></tr>
+<tr>
+<td>Subject</td><td>Text</td><td>Enter the Subject line to display in sent emails. <br /><b>NOTE: the placeholder #SERVER_NAME# can used and will be replaced by the value from the environment variable SERVER_NAME at run time</b> </td><td>
+</td></tr>
+<tr>
+<td>Body</td><td>Text</td><td>Enter the text to display in the body of sent emails when the "Send Mail" field is checked. When it's unchecked, this field can be used to store comments</td><td>
+</td></tr>
+<tr>
+<td>Use Standard Footer</td><td>Checkbox</td><td>Tick the Checkbox ON to incorporate the mail footor stored in [gb_controls]mail_footer.</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Errors
+</td></tr>
+<tr>
+<td>Type, Name, Address, Receipt Flag</td><td> </td><td>Enter the details of where error messages should be sent</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Run Times
+</td></tr>
+<tr>
+<td colspan="4">Minute, hour, day, month and weekday are multi-select boxes, hold down the Ctrl key to select multiple values.
+<p>The schedule times take some getting used to. The combination allows the scheduling of re-occurring execution for any minute of any day of the year.
+For example, to execute a job at the end of the financial year, you would select 0 minute, 12am hour, 1st day, Jul month and All weekdays. 
+New jobs do not have any run times set by default and must be set before saving. Jobs should generally not be set up to run every minute where possible. Users will be alerted with a pop up message if they have selected the run times to every minute.
+</p><p>If a Parent Job ID entered, Run Times cannot be edited and will use the Parent Job Run Time parameters.
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td>  Whilst it is possible to set run times to run a job every minute it is not recommended.<br /> Doing so may impair the system response times and slow down users work.<br /> It is recommended that if a job is run on a frequent basis, set as a minimum time to run on 15 minutes intervals and limit to possibly working days as an example.
+</td></tr></table>
+<p><br />
+</p>
+</td></tr>
+<tr>
+<td>Minute</td><td>Checkbox, List</td><td>Minute(s) of the hour to schedule this job</td><td>
+</td></tr>
+<tr>
+<td>Hour</td><td>Checkbox, List</td><td>Hour(s) of the day to schedule this job</td><td>
+</td></tr>
+<tr>
+<td>Day</td><td>Checkbox, List</td><td>Day(s) of the month to schedule this job. Choose 'EOM' if you would like the job to run on the last day of each month.</td><td>
+</td></tr>
+<tr>
+<td>Month</td><td>Checkbox, List</td><td>Month(s) of the year to schedule this job</td><td>
+</td></tr>
+<tr>
+<td>Weekday</td><td>Checkbox, List</td><td>Weekday(s) of the week to schedule this job</td><td>
+</td></tr>
+<tr>
+<td>Sender</td><td>Lookup</td><td>If an email is going to be sent when the job is run, select the user to show as the email sender.<br />
+<p>If you use the  <b>Run Now</b> button, you will be shown as the email sender, and not the stored "Sender".<br /> 
+</p><p>If you are running <a href="Mail_Query.html" title="Mail Query">mailQuery</a> jobs, the sender is defined in the query, those emails do not use the stored "Sender".<br /> 
+</p><p>We recommend using (or creating then using) a user called 'Scheduler' for all jobs (except those that need the "Sender" to be a particular person from your business). This means that your staff will know that the email came from a scheduler job, not an actual person.
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td>Linked To</td><td>		</td><td>Attach job results to this type of catch-e object</td><td>
+</td></tr>
+<tr>
+<td>Record ID</td><td> </td><td>Attach job results to the catch-e object identified by this id</td><td>
+</td></tr>
+<tr>
+<td><a href="./Job_Scheduler:Report_Queue.html" title="Job Scheduler:Report Queue">Report Queue</a></td><td> </td><td> Check this to store the generated reports in the <a href="Report_Queue.html" title="Report Queue">Report Queue</a>. Recipients can be advised of the report, but will not receive it in the email. This is only available when the selected "Method" is <a href="./Gb::Queries::executeQueries().html" title="Gb::Queries::executeQueries()">executeQuery</a>. The check box is disabled for all other methods.</td><td> [gb_scheduler_jobs]report_queue_flag
+</td></tr>
+<tr>
+<td>Recipients</td><td> </td><td>gb_scheduler_job_recipients to receive job results. A recipient must be added where the status is 'Active' and the 'Send Mail' check box is ON</td><td>
+</td></tr>
+<tr>
+<td>Attachment Required</td><td> </td><td> When checked, recipients will only receive an email if running the job generated an email attachment. If no file generates when the job runs, the email is not sent. This is checked by default for new jobs and can be un-checked.</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Queue
+</td></tr>
+<tr>
+<td> Next Due </td><td> Timestamp </td><td> Displays the date and time of the next scheduled run for this job.<br /> If you edit the job, this will show as <i>unavailable</i> for a couple of minutes until the job queue is refreshed with the new next run record. </td><td> [gb_scheduler_queue]scheduled_start<br /> <i>where</i><br /> [gb_scheduler_queue]status_flag = 'pending'
+</td></tr>
+<tr>
+<td>Recycling</td><td>Check box </td><td>If this check box is un-checked, all past job records are retained and can be viewed on the <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Scheduler / Queue</a> tab.<br />
+<p>If checked, past records that are completed correctly are discarded and are no longer visible on the <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Scheduler / Queue</a> tab except for the following;
+</p>
+<ol><li> Any job queue records linked to a Mail Batch
+</li><li> The last 10 successful job queue records where no email has been sent
+</li><li> Any job queue records that failed
+</li><li> Any job queue records that aborted
+</li><li> Any job queue records where the service asked the scheduler not to recycle the queue item in its response (e.g. an interface service found and imported a file, item is to be kept for reporting purposes e.g. SLA)
+</li></ol>
+</td><td> [gb_scheduler_jobs]recycling_flag
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=4" title="Edit section: Action Buttons">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Button </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Top Buttons
+</td></tr>
+<tr>
+<td><a href="./Image:Copy.gif.html" class="image" title="Image:Copy.gif"><img src="../../clients/help/wiki/images/3/36/Copy.gif" alt="Image:Copy.gif" width="41" height="21" longdesc="/mediawiki/index.php/Image:Copy.gif" /></a></td><td>Create a new job based on the current job
+</td></tr>
+<tr>
+<td><a href="./Image:New.gif.html" class="image" title="Image:New.gif"><img src="../../clients/help/wiki/images/e/e0/New.gif" alt="Image:New.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:New.gif" /></a></td><td>Create a new job
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Bottom Buttons
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Edit an existing job
+</td></tr>
+<tr>
+<td><a href="./Image:Run_Now.gif.html" class="image" title="Image:Run Now.gif"><img src="../../clients/help/wiki/images/5/54/Run_Now.gif" alt="Image:Run Now.gif" width="59" height="22" longdesc="/mediawiki/index.php/Image:Run_Now.gif" /></a> </td><td> Click to run the job manually. Run Now is available for selected job methods only and requires an entry in gb_service_process_types.<br /> Refer to the <a href="./Job_Scheduler:Job.html#Validations_and_Alerts" title="Job Scheduler:Job">Validations and Alerts</a> <b>Run Now</b> section for issues you may see here.<br />
+<p>Run Now can run a chain of parent-child jobs, or you can opt to run just the selected job from within the chain.<br /> Refer to the <a href="./Job_Scheduler:Job.html#Validations_and_Alerts" title="Job Scheduler:Job">Validations and Alerts</a> <b>Run Now - Job Chain</b> section for the various selections.
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Edit Buttons
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td>When editing, click to cancel any changes you have made.
+</td></tr>
+<tr>
+<td><a href="./Image:Save.gif.html" class="image" title="Image:Save.gif"><img src="../../clients/help/wiki/images/9/96/Save.gif" alt="Image:Save.gif" width="38" height="20" longdesc="/mediawiki/index.php/Image:Save.gif" /></a></td><td>When editing, click to save changes you have made to the current job.
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=5" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Field Entry
+</td></tr>
+<tr>
+<td>Selecting "Send Mail" will disabled "Report Queue" and remove all linked<br /> recipients. Do you want to continue?<br />
+<p>OK  Cancel
+</p>
+</td><td>A confirmation alert that is displayed when "Send Mail" is checked and "<a href="./Job_Scheduler:Report_Queue.html" title="Job Scheduler:Report Queue">Report Queue</a>" had been checked. Only one of these check boxes can be selected.
+</td></tr>
+<tr>
+<td>Unselecting "Report Queue" will remove all linked recipients.<br />Do you want to continue?<br />OK Cancel
+</td><td>A confirmation alert that is displayed when "<a href="./Job_Scheduler:Report_Queue.html" title="Job Scheduler:Report Queue">Report Queue</a>" is un-checked.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save
+</td></tr>
+<tr>
+<td> Address is invalid.<br />OK  Cancel</td><td> There is no populated <b>Recipients:</b> "Address". Enter an email address.
+</td></tr>
+<tr>
+<td> Child jobs are active:<br /> {job_id}<br /> These will be made inactive. Continue saving?<br />
+<p>OK  Cancel 
+</p>
+</td><td> If you want the child jobs to become inactive also, continue to save. Otherwise, cancel the editing you are doing and update each child job and separate them from the parent if they should continue to run.<br />
+<p>Visit the <a href="./Job_Scheduler:Parent_Job.html" title="Job Scheduler:Parent Job">Parent Job ID</a> page for all the details feature details.
+</p>
+</td></tr>
+<tr>
+<td> Mail sender is required.<br />OK  Cancel</td><td> Select a  "Sender" for this email.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Run Now
+</td></tr>
+<tr>
+<td>Failed to run!<br />
+<p>Error: this process is still running!
+</p>
+</td><td> The job is taking a long time to run. It will continue to run in the background until completion.
+</td></tr>
+<tr>
+<td>Failed to run!<br />
+<p>Error: A recipient is required.
+</p>
+</td><td>If you have clicked on Run Now and "Send Mail" is checked, you must have a valid recipient recorded in the job.
+</td></tr>
+<tr>
+<td>Job failed!<br /><br />
+<p>Error: CATCH-E ERROR DUPLICATE COLUMN NAMES <br />
+Error message: Duplicate column names
+</p>
+</td><td> The query has a duplicate column. Ask <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to review and correct the query. The duplicate column will need to be removed or re-named.
+</td></tr>
+<tr>
+<td>Job failed!<br /><br />
+<p>Error: CATCH-E BAD QUERY<br />
+</p>
+</td><td> The query is mal-formed in some way. Ask <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to review and correct the query.
+</td></tr>
+<tr>
+<td>Job failed!<br />
+<p>Error: CATCH_E_API_EXECUTE_SCRIPT_ERROR<br />
+Error <a href="Message.html" title="Message">message</a>: Failure executing query #. Message: Statement could<br /> not be executed (45000 - 1644 - Billing already locked!)
+</p>
+</td><td> The <a href="./Gb::Queries::executeScript().html" title="Gb::Queries::executeScript()">executeScript</a> job started, but could not be completed.<br /> A billing lock could not be secured for one of the scripts in the query.<br /> The script number is shown in the message.<br /> Try again later.
+</td></tr>
+
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Run Now - Job Chain
+</td></tr>
+<tr>
+<td> Job has active children. Run child jobs also? </td><td> The job is a parent, or is part of a chain of parent-child jobs.<br />
+<p>Click <b>OK</b> to run the job and it's children.<br />
+To run just the selected job, click <b>Cancel</b> &rarr; 'Just run this job?' Click <b>OK</b>.<br />
+Click <b>Cancel</b> to exit the process without running any jobs.
+</p>
+</td></tr>
+<tr>
+<td> Failed to run!<br /><br /> Cannot run this job because child job '{job_id}' must have at lease<br />one recipient. </td><td> Go to the named job and add a recipient to it.
+</td></tr>
+<tr>
+<td> Failed to run!<br /><br /> Cannot run this job because child job '{job_id}' is aborted. </td><td> You are trying to run a chain of jobs, but there is a job with an 'Aborted' status in the chain.<br /> Go to the Schedule tab and review the job chain.<br /> Review and fix any children that are 'Aborted' or 'Inactive'.
+</td></tr>
+<tr>
+<td> Failed to run!<br /><br /> Cannot run this job because it is within a chain and is inactive. Either remove it from the chain or make it active. </td><td> Go to the Schedule tab and review the job chain and update the jobs as required to either make them active, or separate them from the chain.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=6" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html#Scheduler" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_is_inactive"></a><h5>My job is inactive</h5>
+<p>If a job is inactive, and there is no audit record of this, check to see if the job is attached to a parent job.<br />
+If a a parent job is made inactive, the child jobs are also made inactive.<br />
+</p><p>Handy hint: If you need to update a chain of jobs to make them active again, do the following
+</p>
+<ol><li> Find the Parent Job on the <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Scheduler / Schedule</a> tab
+</li><li> <b>	Show all Children</b> check this on
+</li><li> <b>Job ID</b> - find and hyperlink to the <u>last job</u> in the chain
+<ol><li> Edit this job 
+</li><li> <b>Parent Job ID</b> - select and hyperlink to the parent
+</li></ol>
+</li><li> Continue until you are back and the original job 
+</li><li> Recheck all jobs in the chain again to confirm
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_is_active_but_does_not_run"></a><h5>My job is active but does not run</h5>
+<p>If a job is active, and is not a child job, the <b>Run Times</b> settings may be counteracting each other.
+</p>
+<ol><li> If a job should run on a certain day of the week, e.g. every Wednesday
+<ol><li> <b>Days:</b> should be checked ON.
+</li><li> <b>Months:</b> should be checked ON.
+</li><li> <b>Weekdays:</b> should be un-checked and should contain selections. E.g. Wed
+</li></ol>
+</li><li> If a job should run on a certain date/s in the month, e.g. 15th of each month
+<ol><li> <b>Days:</b> should be un-checked and should contain selection. E.g. 15ths 
+</li><li> <b>Months:</b> should be checked ON.
+</li><li> <b>Weekdays:</b> should be checked ON.
+</li></ol>
+</li><li> If a job should run on a certain date in a month or selected months. E.g. 1st July each year
+<ol><li> <b>Days:</b> should be un-checked and should contain selections. E.g. 1st
+</li><li> <b>Months:</b> should be un-checked and should contain selections. E.g. July
+</li><li> <b>Weekdays:</b> should be checked ON.
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_has_failed"></a><h5>My job has failed</h5>
+<p>Find and review the failed job on the <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Scheduler / Schedule</a> tab. The "Last Message" often contains a message about the failure.<br />
+Visit the <a href="Message.html" title="Message">Message</a> page for a list of these messages and explanatory comments that may help you diagnose the problem.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Job:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Job Scheduler:Job:Troubleshooting">edit</a>]</div><a name="My_Attachment_Formatting_did_not_work"></a><h5>My Attachment Formatting did not work</h5>
+<p>If your scheduler job is using '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>' as the "Mail Attachment", you cannot use a <a href="Office(xls)_Format.html#Customised_Spreadsheet_Formats" title="Office(xls) Format">customised</a> format.<br /> Go to the <strong>Scheduler / Job</strong> and change the output format to be <a href="Office(xls)_Format.html" title="Office(xls) Format">'Office(xls)'</a> if you want to create and use a <a href="Office(xls)_Format.html#Customised_Spreadsheet_Formats" title="Office(xls) Format">customised</a> format.<br />
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7906::Scheduler job flag to prevent recycling. Live 21/10/2013
+</li><li> 7042::Scheduler Job Type having 'executeQuery' method should not run if it has no recipients. Live 19/04/2014
+</li><li> (DEV-20220) mailQuery job type - enable 'Pending' status emails. Live 27/05/2019
+</li><li> (DEV-20879) Scheduler Jobs - retain the last 10 job queue records when recycling. Live 13/01/2020
+</li><li> (DEV-20985) Backout DEV-20879. Live 17/02/2020
+</li><li> (DEV-20992) Scheduler create EOM scenario. Live 10/03/2020
+</li><li> (DEV-21032) Enabling "Send mail" fails the interfaceQuery job. Live 27/04/2020
+</li><li> (DEV-21072) Stop Scheduler Queue from running the same job twice at the same time. Live 15/06/2020
+</li><li> (DEV-21092) Scheduler / Job - enable Office(xlsx) as an Attachment Format. 23/07/2020
+</li><li> (DEV-21180) Scheduled jobs - time reset. dd/08/2020
+</li><li>(DEV-21295) Error generated by Scheduler 'Run Now' missing 'Job Type' details. Live dd/mm/2021
+</li><li>(DEV-21312) 'Attachment required' flag not working for queries with 'having_clause' returning 0 records . Live 08/02/2021
+</li><li>(DEV-21293) Fix Next Due scheduler date when EOM selected. Live 08/03/2021
+</li><li>(DEV-21285) Add the feature 'Report Queue' to the Method executeQuery.  Live 18/10/2021
+</li><li>(DEV-21260) Billing job failing when zero value invoices exist.  Live 07/03/2021
+</li><li> (DEV-21675) Duplicate users shown when setting up Recipient in Scheduler for Report Queue. Live 11/07/2022 
+</li><li>(DEV-21701) Scheduler job set to inactive with Enter key.Live dd/mm/2022
+</li><li>(DEV-21803) Error scheduler job saving attachments. Live dd/mm/2023
+</li><li> (DEV-21967) Report Queue Email - Placeholders not populated. Live 08/11/2023
+</li><li> (DEV-21829) Scheduler / Job Run Now - enable child jobs to run also. Live 18/03/2024
+</li><li> (DEV-22188) Driver Portal - Create two scheduler jobs for EV Charging process. Live dd/mm/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Job_Scheduler:Job.html">https://help.catch-e.net.au/mediawiki/index.php/Job_Scheduler:Job</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Job_Scheduler:Job">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Job_Scheduler:Job.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Job_Scheduler:Job&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.19 secs. -->
+</body></html>

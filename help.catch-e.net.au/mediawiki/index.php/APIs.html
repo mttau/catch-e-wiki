@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="APIs,API - deidentifyDriverData,API Restrictions,AcceptQuote,Adjust a lease period billing,Authenticate with the API,AutocompleteGeocodededNationalAddress,BillingReprintWebService,CancelTableImport,ChangeContractCostCentre,ChangeContractDriver" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>APIs - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">APIs</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="APIs.html#column-one">navigation</a>, <a href="APIs.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Configuration.html#APIs" title="System Configuration">IT Set-up</a> &rarr; <strong>APIs</strong> &rarr; <a href="Response_Details.html" title="Response Details">Response Details</a> | <a href="API_Restrictions.html" title="API Restrictions">API Restrictions</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="APIs.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Access"><span class="tocnumber">3</span> <span class="toctext">Access</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Authentication"><span class="tocnumber">4</span> <span class="toctext">Authentication</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Attachments"><span class="tocnumber">5</span> <span class="toctext">Attachments</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Cards"><span class="tocnumber">6</span> <span class="toctext">Cards</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Clients"><span class="tocnumber">7</span> <span class="toctext">Clients</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Client_Groups"><span class="tocnumber">8</span> <span class="toctext">Client Groups</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Contracts"><span class="tocnumber">9</span> <span class="toctext">Contracts</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Contract_.2F_Billing"><span class="tocnumber">10</span> <span class="toctext">Contract / Billing</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Contract_.2F_Budgets"><span class="tocnumber">11</span> <span class="toctext">Contract / Budgets</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Contract_.2F_Events"><span class="tocnumber">12</span> <span class="toctext">Contract / Events</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Drivers"><span class="tocnumber">13</span> <span class="toctext">Drivers</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Drivers_.2F_Assets_and_Liabilities"><span class="tocnumber">14</span> <span class="toctext">Drivers / Assets and Liabilities</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Drivers_.2F_Bank_Accounts"><span class="tocnumber">15</span> <span class="toctext">Drivers / Bank Accounts</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Driver_.2F_Events"><span class="tocnumber">16</span> <span class="toctext">Driver / Events</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Events"><span class="tocnumber">17</span> <span class="toctext">Events</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Event_.2F_Jobs"><span class="tocnumber">18</span> <span class="toctext">Event / Jobs</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#G-NAF"><span class="tocnumber">19</span> <span class="toctext">G-NAF</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Import_.2F_Export"><span class="tocnumber">20</span> <span class="toctext">Import / Export</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Interfaces_.2F_Salesforce_.28Legacy.29"><span class="tocnumber">21</span> <span class="toctext">Interfaces / Salesforce (Legacy)</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Mail"><span class="tocnumber">22</span> <span class="toctext">Mail</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Originators"><span class="tocnumber">23</span> <span class="toctext">Originators</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Other"><span class="tocnumber">24</span> <span class="toctext">Other</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Pay_Cycles"><span class="tocnumber">25</span> <span class="toctext">Pay Cycles</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Quotes"><span class="tocnumber">26</span> <span class="toctext">Quotes</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Quote_.2F_Events"><span class="tocnumber">27</span> <span class="toctext">Quote / Events</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Quote_.2F_Variants"><span class="tocnumber">28</span> <span class="toctext">Quote / Variants</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Queries"><span class="tocnumber">29</span> <span class="toctext">Queries</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Report_Queries"><span class="tocnumber">30</span> <span class="toctext">Report Queries</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Suppliers"><span class="tocnumber">31</span> <span class="toctext">Suppliers</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Web_Services"><span class="tocnumber">32</span> <span class="toctext">Web Services</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#Legend"><span class="tocnumber">33</span> <span class="toctext">Legend</span></a></li>
+<li class='toclevel-1'><a href="APIs.html#System_Notes"><span class="tocnumber">34</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>APIs documented on this page are available for you to build processes and integrations between Catch-e and your other systems.<br />
+</p><p>IP Addresses from all countries except for AUS, NZ, UK and USA are geo-blocked by the system as a standard security precaution.<br /> If you want to run APIs from other countries, you will need to <a href="Whitelist_an_IP_address.html" title="Whitelist an IP address">whitelist IP addresses</a> to do so.
+</p><p>Use HJSON to mark-up API JSON payloads with comments. This is useful when you are testing. Use HJSON to mark-up API JSON payloads with comments.<br /> Visit <a href="https://hjson.github.io" class='external text' title="https://hjson.github.io" rel="nofollow">hjson.github.io</a> for details of this mark-up.<br />
+</p><p>A PHP SDK can be provided by Catch-e to interface with the APIs. Please contact support if you would like further details.
+</p><p>Supplementary swagger documentation is available here: <a href="https://api.catch-e.com/docs/#/" class='external free' title="https://api.catch-e.com/docs/#/" rel="nofollow">https://api.catch-e.com/docs/#/</a>
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> The linked swagger documentation lists all of the APIs that are used in the system.<br /> Most of the APIs listed on this page are available for external use.<br /> Contact your Account Manager to discuss API access or development.<br />
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h3>Process Pages</h3>
+<dl><dd><a href="Whitelist_an_IP_address.html" title="Whitelist an IP address">Whitelist an IP address</a>
+</dd><dd><a href="Create_a_user_to_access_APIs.html" title="Create a user to access APIs">Create a user to access APIs</a> - see also the <a href="Third_Party_Developers.html" title="Third Party Developers">Third Party Developers</a> page.
+</dd><dd><a href="Edit_API_permissions.html" title="Edit API permissions">Edit API permissions</a>
+</dd></dl>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a></td><td align="left">To optimise security, only enable permissions for the individual <strong>APIs</strong> that you need.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=3" title="Edit section: Access">edit</a>]</div><a name="Access"></a><h3>Access</h3>
+<p>Run the <a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate API</a> first to to generate the <i>access_token</i> you need to pass on all the other APIs. No other API will run without an <i>access_token</i>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=4" title="Edit section: Authentication">edit</a>]</div><a name="Authentication"></a><h3>Authentication</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td>  <a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate with the API</a></td><td>Request an API token for use with secured methods.
+</td></tr>
+<tr>
+<td>  <a href="Generate_a_signon_token.html" title="Generate a signon token">Generate a signon token</a> </td><td>Request a signon token to enable single signon for a user.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=5" title="Edit section: Attachments">edit</a>]</div><a name="Attachments"></a><h3>Attachments</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="Delete_an_attachment.html" title="Delete an attachment">Delete an attachment</a> </td><td>Delete an existing attachment.
+</td></tr>
+<tr>
+<td> <a href="Get_an_attachment_by_attachment_id.html" title="Get an attachment by attachment id">Get an attachment by attachment id</a> </td><td>Get an existing attachment.
+</td></tr>
+<tr>
+<td> <a href="Get_an_attachment_resource_pre-signed_URL.html" title="Get an attachment resource pre-signed URL">Get an attachment resource pre-signed URL</a> </td><td>Get an attachment resource pre-signed URL
+</td></tr>
+<tr>
+<td> <a href="Save_an_attachment.html" title="Save an attachment">Save an attachment</a> </td><td>Save an attachment.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=6" title="Edit section: Cards">edit</a>]</div><a name="Cards"></a><h3>Cards</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6">   <a href="Create_cards.html" title="Create cards">Create cards</a> </td><td style="background:#e6e6e6"> Create cards.</td><td style="background:#e6e6e6"> Cards:Create
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">   <a href="Get_a_list_of_cards.html" title="Get a list of cards">Get a list of cards</a> </td><td style="background:#e6e6e6"> Get a list of cards.</td><td style="background:#e6e6e6"> Cards:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="Update_a_list_of_cards.html" title="Update a list of cards">Update a list of cards</a> </td><td style="background:#e6e6e6"> Update a list of cards.</td><td style="background:#e6e6e6"> Cards:Update
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">   <a href="Get_a_card_by_card_id.html" title="Get a card by card id">Get a card by card id</a> </td><td style="background:#e6e6e6"> Get a card by card id.</td><td style="background:#e6e6e6"> Cards:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">   <a href="Update_card.html" title="Update card">Update card</a> </td><td style="background:#e6e6e6"> Update card.</td><td style="background:#e6e6e6">  Cards:Update
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=7" title="Edit section: Clients">edit</a>]</div><a name="Clients"></a><h3>Clients</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="CreateClients.html" title="CreateClients">createClients</a></td><td style="background:#e6e6e6">Allows you to create new clients. </td><td style="background:#e6e6e6"> Clients:Create
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="CopyClient.html" title="CopyClient">copyClient</a> </td><td style="background:#e6e6e6"> Allows you to copy a client record. </td><td style="background:#e6e6e6"> Clients:Create
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="PatchClient.html" title="PatchClient">patchClient</a> </td><td style="background:#e6e6e6"> Allows you to edit clients. </td><td style="background:#e6e6e6"> Clients:Update
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Supporting APIs
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetClient.html" title="GetClient">getClient</a> </td><td style="background:#e6e6e6"> Allows you to retrieve a list of client fields. </td><td style="background:#e6e6e6"> Clients:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetClientDivisions.html" title="GetClientDivisions">getClientDivisions</a> </td><td style="background:#e6e6e6"> Allows you to retrieve a list of <a href="./Clients:Divisions.html" title="Clients:Divisions">client divisions</a>. </td><td style="background:#e6e6e6"> ClientDivisions:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetClientIndustries.html" title="GetClientIndustries">getClientIndustries</a> </td><td style="background:#e6e6e6"> Allows you to retrieve a list of client industries. </td><td style="background:#e6e6e6"> ClientIndustries:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetClientCostCentres.html" title="GetClientCostCentres">getClientCostCentres</a> </td><td style="background:#e6e6e6"> Allows you to retrieve a list of client cost centres. </td><td style="background:#e6e6e6"> ClientCostCentres:Get
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=8" title="Edit section: Client Groups">edit</a>]</div><a name="Client_Groups"></a><h3>Client Groups</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetClientGroups.html" title="GetClientGroups">getClientGroups</a></td><td> Get a list of Client Group/s
+</td></tr>
+<tr>
+<td>  <a href="CreateClientGroup.html" title="CreateClientGroup">createClientGroup</a></td><td>Create new Client Group record
+</td></tr>
+<tr>
+<td>  <a href="PatchClientGroup.html" title="PatchClientGroup">patchClientGroup</a></td><td> Update a Client Group
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=9" title="Edit section: Contracts">edit</a>]</div><a name="Contracts"></a><h3>Contracts</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="Perform_a_contract_funds_check.html" title="Perform a contract funds check">Perform a contract funds check</a></td><td>This method returns the values displayed on the Funds Check pop-up screen.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=10" title="Edit section: Contract / Billing">edit</a>]</div><a name="Contract_.2F_Billing"></a><h3>Contract / Billing</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="Edit_budgets_for_a_contract_that_has_not_yet_billed.html" title="Edit budgets for a contract that has not yet billed">Edit budgets for a contract that has not yet billed</a> </td><td> Edit budgets for a contract that has not yet billed. </td><td> ContractBilling:Edit
+</td></tr>
+<tr>
+<td>  <a href="VaryContractBilling.html" title="VaryContractBilling">varyContractBilling</a> </td><td> Modify future billings for a contract that has started billing. </td><td> ContractBilling:Vary
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=11" title="Edit section: Contract / Budgets">edit</a>]</div><a name="Contract_.2F_Budgets"></a><h3>Contract / Budgets</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetContractBudgets().html" title="GetContractBudgets()">Get contract budgets for the specified search criteria </a></td><td> getContractBudgets </td><td> ContractBudgets:Get
+</td></tr>
+<tr>
+<td>  <a href="Update_contract_budgets.html" title="Update contract budgets">Update contract budgets</a></td><td> updateContractBudgets: update either all remaining contract budget periods or a single period. </td><td> ContractBudgets:Update
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="Insert_new_contract_budgets.html" title="Insert new contract budgets">Insert new contract budgets</a></td><td> Insert new contract budgets. This API replicates the system process to <a href="Adjust_a_lease_period_billing.html" title="Adjust a lease period billing">adjust a lease period billing</a>. </td><td> ContractBudgets:Insert
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=12" title="Edit section: Contract / Events">edit</a>]</div><a name="Contract_.2F_Events"></a><h3>Contract / Events</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetContractEventActions.html" title="GetContractEventActions">getContractEventActions</a></td><td style="background:#e6e6e6"> Get contract event actions. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEventActions:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"><a href="GetContractEventDescriptions.html" title="GetContractEventDescriptions">getContractEventDescriptions</a></td><td style="background:#e6e6e6"> Get contract event descriptions. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEventDescriptions:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetContractEventValues.html" title="GetContractEventValues">getContractEventValues</a></td><td style="background:#e6e6e6"> Get contract event values. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEventValues:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="CreateContractEvents.html" title="CreateContractEvents">createContractEvents</a></td><td style="background:#e6e6e6"> Create contract events. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEvents:Create</a>
+</td></tr>
+<tr>
+<td> <a href="ChangeContractDriver.html" title="ChangeContractDriver">changeContractDriver</a></td><td> Change driver by creating a driver change event. </td><td>  <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEvents:ChangeDriver</a>
+</td></tr>
+<tr>
+<td> <a href="ChangeContractCostCentre.html" title="ChangeContractCostCentre">changeContractCostCentre</a></td><td> Change cost centre by creating a client cost centre change event. </td><td>  <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">ContractEvents:changeContractCostCentre</a>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=13" title="Edit section: Drivers">edit</a>]</div><a name="Drivers"></a><h3>Drivers</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="CreateDrivers.html" title="CreateDrivers">createDrivers</a></td><td>Create new Driver records
+</td></tr>
+<tr>
+<td>  <a href="GetDrivers.html" title="GetDrivers">getDrivers</a></td><td> Get a list of Drivers
+</td></tr>
+<tr>
+<td>  <a href="UpdateDriversList.html" title="UpdateDriversList">updateDriversList</a></td><td> Update a list of Drivers
+</td></tr>
+<tr>
+<td>  <a href="GetDriver.html" title="GetDriver">getDriver</a></td><td> Get details for a Driver
+</td></tr>
+<tr>
+<td> <a href="UpdateDriver.html" title="UpdateDriver">updateDriver</a></td><td>Update a Driver's details
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="API_-_deidentifyDriverData.html" title="API - deidentifyDriverData">deidentifyDriverData</a></td><td style="background:#e6e6e6"> Deidentify a Driver's personal details via a <a href="DeidentifyDriverData.html" title="DeidentifyDriverData">Scheduler Job</a>. </td><td style="background:#e6e6e6"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/c/cb/Warning.png/15px-Warning.png" alt="" width="15" height="15" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> Restricted
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=14" title="Edit section: Drivers / Assets and Liabilities">edit</a>]</div><a name="Drivers_.2F_Assets_and_Liabilities"></a><h3>Drivers / Assets and Liabilities</h3>
+<p>These services allow you to update <b>Assets</b> details on the <a href="./Drivers:Assets_&amp;_Liabilities.html" title="Drivers:Assets &amp; Liabilities">Drivers / Assets &amp; Liabilities</a> tab.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetFinanceAssetTypes.html" title="GetFinanceAssetTypes">Get finance asset types </a></td><td> Allows you to retrieve a Financiers Asset Types for use in the <a href="CreateDriverAssets.html" title="CreateDriverAssets">createDriverAssets</a> and <a href="UpdateDriverAssets.html" title="UpdateDriverAssets">updateDriverAssets</a> APIs.
+</td></tr>
+<tr>
+<td>  <a href="GetDriverAssets.html" title="GetDriverAssets">Get assets for a driver</a> </td><td> Allows you to retrieve a Drivers' Assets for use in the <a href="UpdateDriverAssets.html" title="UpdateDriverAssets">updateDriverAssets</a> APIs.
+</td></tr>
+<tr>
+<td>  <a href="CreateDriverAssets.html" title="CreateDriverAssets">Create asset for a driver </a></td><td> Allows you to add new Drivers' Asset/s.
+</td></tr>
+<tr>
+<td>  <a href="UpdateDriverAssets.html" title="UpdateDriverAssets">Update asset for a driver </a></td><td> Allows you to update Drivers' Asset/s.
+</td></tr>
+<tr>
+<td> <a href="DeleteDriverAssets.html" title="DeleteDriverAssets">Delete asset for a driver </a></td><td> Allows you to Delete a Driver Asset.
+</td></tr>
+<tr>
+<td> <a href="GetFinanceLiabilityTypes.html" title="GetFinanceLiabilityTypes">Get finance liability types </a></td><td> Allows you to retrieve a Financiers Liability Types for use in the <a href="CreateDriverLiabilities.html" title="CreateDriverLiabilities">createDriverLiabilities</a> and <a href="UpdateDriverLiabilities.html" title="UpdateDriverLiabilities">updateDriverLiabilities</a> APIs.
+</td></tr>
+<tr>
+<td>  <a href="GetFinanceLiabilityFinanciers.html" title="GetFinanceLiabilityFinanciers">Get finance liability financiers </a></td><td> Allows you to retrieve a list of Finance Liability Financiers for use in the <a href="CreateDriverLiabilities.html" title="CreateDriverLiabilities">createDriverLiabilities</a> and <a href="UpdateDriverLiabilities.html" title="UpdateDriverLiabilities">updateDriverLiabilities</a> APIs.
+</td></tr>
+<tr>
+<td>  <a href="GetDriverLiabilities.html" title="GetDriverLiabilities">Get liabilities for a driver</a></td><td> Allows you to retrieve a Drivers' Liabilities for use in the <a href="UpdateDriverLiabilities.html" title="UpdateDriverLiabilities">updateDriverLiabilities</a> APIs.
+</td></tr>
+<tr>
+<td> <a href="CreateDriverLiabilities.html" title="CreateDriverLiabilities">Create liability for a driver</a></td><td> Allows you to add new Drivers' Liabilities.
+</td></tr>
+<tr>
+<td>  <a href="UpdateDriverLiabilities.html" title="UpdateDriverLiabilities">Update liability for a driver</a> </td><td> Allows you to update Drivers' Liabilities.
+</td></tr>
+<tr>
+<td>  <a href="DeleteDriverLiabilities.html" title="DeleteDriverLiabilities">Delete liability for a driver </a></td><td> Allows you to Delete a Driver Liability.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=15" title="Edit section: Drivers / Bank Accounts">edit</a>]</div><a name="Drivers_.2F_Bank_Accounts"></a><h3> Drivers / Bank Accounts </h3>
+<p>These services allow you to update <b>Bank Account</b> details on the <a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> tab.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="CreateDriverBankAccounts.html" title="CreateDriverBankAccounts">Create bank accounts for drivers</a> </td><td style="background:#e6e6e6"> Allows you to create bank account for drivers</td><td style="background:#e6e6e6"> DriverBankAccounts:Create
+</td></tr>
+
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverBankAccounts.html" title="GetDriverBankAccounts">Get driver bank accounts</a> </td><td style="background:#e6e6e6"> Allows you to retrieve list of Driver Bank accounts.</td><td style="background:#e6e6e6"> DriverBankAccounts:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="UpdateDriverBankAccountsList.html" title="UpdateDriverBankAccountsList">Update a list of driver bank accounts</a></td><td style="background:#e6e6e6"> Allows you to update a list of driver bank accounts.</td><td style="background:#e6e6e6"> DriverBankAccounts:Update
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverBankAccount.html" title="GetDriverBankAccount">Get driver bank account </a> </td><td style="background:#e6e6e6"> Allows you to get a driver bank account.</td><td style="background:#e6e6e6"> DriverBankAccounts:Get
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="UpdateDriverBankAccount.html" title="UpdateDriverBankAccount">Update driver bank account</a> </td><td style="background:#e6e6e6"> Allows you to update a driver bank account.</td><td style="background:#e6e6e6"> DriverBankAccounts:Update
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=16" title="Edit section: Driver / Events">edit</a>]</div><a name="Driver_.2F_Events"></a><h3>Driver / Events</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverEventActions.html" title="GetDriverEventActions">getDriverEventActions</a></td><td style="background:#e6e6e6"> Get driver event actions. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEventActions:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"><a href="GetDriverEventDescriptions.html" title="GetDriverEventDescriptions">getDriverEventDescriptions</a></td><td style="background:#e6e6e6"> Get driver event descriptions. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEventDescriptions:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverEventValues.html" title="GetDriverEventValues">getDriverEventValues</a></td><td style="background:#e6e6e6"> Get driver event values. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEventValues:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverEventCodes.html" title="GetDriverEventCodes">getDriverEventCodes</a></td><td style="background:#e6e6e6"> Get driver event codes. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEventCodes:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="CreateDriverEvents.html" title="CreateDriverEvents">createDriverEvents</a></td><td style="background:#e6e6e6"> Create driver events. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEvents:Create</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverEvent.html" title="GetDriverEvent">getDriverEvent</a></td><td style="background:#e6e6e6"> Get driver event details for a given driver_event_id.  </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEvent:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDriverEvents.html" title="GetDriverEvents">getDriverEvents</a></td><td style="background:#e6e6e6"> Get driver event details for a list of driver events.  </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEvents:Get</a>
+</td></tr>
+<tr>
+<td> <a href="PatchDriverEvent.html" title="PatchDriverEvent">patchDriverEvent</a></td><td> Update a given driver event.</td><td>  <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEvents:patchDriverEvent</a>
+</td></tr>
+<tr>
+<td> <a href="PatchDriverEvents.html" title="PatchDriverEvents">patchDriverEvents</a></td><td> Update a given list of driver events.  </td><td>  <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">DriverEvents:patchDriverEvents</a>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=17" title="Edit section: Events">edit</a>]</div><a name="Events"></a><h3>Events</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="EmitEvent.html" title="EmitEvent">emitEvent</a></td><td style="background:#e6e6e6"> Emit an event. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:Emit</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="CreateEventSubscription.html" title="CreateEventSubscription">createEventSubscription</a></td><td style="background:#e6e6e6"> Subscribe to events. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:Subscribe</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="DeleteEventSubscription.html" title="DeleteEventSubscription">deleteEventSubscription</a></td><td style="background:#e6e6e6"> Delete an event subscription. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:Subscribe</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="ReconcileEventSubscriptions.html" title="ReconcileEventSubscriptions">reconcileEventSubscriptions</a></td><td style="background:#e6e6e6"> Reconcile event subscriptions. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:ReconcileSubscriptions</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetEventTypes.html" title="GetEventTypes">getEventTypes</a></td><td style="background:#e6e6e6"> Get supported event types. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:GetTypes</a>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=18" title="Edit section: Event / Jobs">edit</a>]</div><a name="Event_.2F_Jobs"></a><h3>Event / Jobs</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="SpApprovalsAutoBuildClaimsEventJob.html" title="SpApprovalsAutoBuildClaimsEventJob">spApprovalsAutoBuildClaimsEventJob</a></td><td style="background:#e6e6e6"> Auto Build Claims Event Job. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:ExecuteJob</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="SpApprovalsAutoPostClaimsEventJob.html" title="SpApprovalsAutoPostClaimsEventJob">spApprovalsAutoPostClaimsEventJob</a></td><td style="background:#e6e6e6"> Auto Post Claims Event Job. </td><td style="background:#e6e6e6"> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Events:ExecuteJob</a>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=19" title="Edit section: G-NAF">edit</a>]</div><a name="G-NAF"></a><h3>G-NAF</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetGeocodedNationalAddressRecord.html" title="GetGeocodedNationalAddressRecord">getGeocodedNationalAddressRecord</a></td><td style="background:#e6e6e6">Allows you to get address detail records from the Geoscape Geocoded National Address File (G-NAF). </td><td style="background:#e6e6e6"> GNAF:GetAddressRecord
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="AutocompleteGeocodededNationalAddress.html" title="AutocompleteGeocodededNationalAddress">autocompleteGeocodededNationalAddress</a> </td><td style="background:#e6e6e6"> Autocomplete (lookup) address detail records from the Geoscape Geocoded National Address File (G-NAF). </td><td style="background:#e6e6e6"> GNAF:AutocompleteAddressRecord
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=20" title="Edit section: Import / Export">edit</a>]</div><a name="Import_.2F_Export"></a><h3>Import / Export</h3>
+<p>These services allow you to Import / Export data from the system.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="width: 20%"> <a href="GetTablesAuthorisedForImport.html" title="GetTablesAuthorisedForImport">Request a list of tables authorised for data import</a></td><td> Allows you to retrieve a list of tables authorised for data import in the <a href="RequestTableImport.html" title="RequestTableImport">requestTableImport</a> APIs.</td><td> ImportTable
+</td></tr>
+<tr>
+<td>  <a href="RequestTableImport.html" title="RequestTableImport">Request a table data import</a></td><td> Allows you to import data in the system for validation before the records are updated.</td><td> ImportTable
+</td></tr>
+<tr>
+<td> <a href="ImportPublicHolidays.html" title="ImportPublicHolidays">Import public holiday data</a></td><td>This method allows to import public holidays data into [gb_public_holidays] table.</td><td> ImportPublicHolidays
+</td></tr>
+<tr>
+<td>  <a href="GetTableImport.html" title="GetTableImport">Get table data import status</a></td><td> This method is used to get the status of the data import job. To check if the job has finished validating data and it is ready to import.</td><td> ImportTable
+</td></tr>
+<tr>
+<td>  <a href="TriggerTableImportProcedure.html" title="TriggerTableImportProcedure">Trigger table data import procedure </a></td><td> Once the data is validated, this method is used to start the import process (updating the records).</td><td> ImportTable
+</td></tr>
+<tr>
+<td>  <a href="CancelTableImport.html" title="CancelTableImport">Cancel a table data import </a></td><td> Allows you to cancel data import started using <a href="RequestTableImport.html" title="RequestTableImport">requestTableImport</a> API.</td><td> ImportTable
+</td></tr>
+<tr>
+<td>  <a href="GetTablesAuthorisedForExport.html" title="GetTablesAuthorisedForExport">Request a list of tables authorised for data export</a></td><td> Allows you to retrieve a list of tables authorised for data export in the <a href="Request_a_table_data_export.html" title="Request a table data export">Request a table data export</a> API.</td><td> ExportTable
+</td></tr>
+<tr>
+<td>  <a href="Request_a_table_data_export.html" title="Request a table data export">Request a table data export</a></td><td> This method allow you request data export.</td><td>ExportTable
+</td></tr>
+<tr>
+<td>  <a href="ExportTable.html" title="ExportTable">Download data for an existing table data export request</a></td><td> This method allow you to get export data.</td><td> ExportTable
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="Read_single_record.html" title="Read single record">readRecord</a> </td><td style="background:#e6e6e6"> Allows to you to <a href="Read_single_record.html" title="Read single record"><b>read a single record</b></a> using the key field names and values.</td><td style="background:#e6e6e6"> Record:Get
+</td></tr>
+<tr>
+<td>  <a href="Insert_or_update_a_record_with_auditing.html" title="Insert or update a record with auditing">upsert</a> </td><td> <a href="Insert_or_update_a_record_with_auditing.html" title="Insert or update a record with auditing">Insert or update a record with auditing</a> - use this API to insert or update values for a record. The process includes lock checks and auditing.</td><td> Record:Upsert
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=21" title="Edit section: Interfaces / Salesforce (Legacy)">edit</a>]</div><a name="Interfaces_.2F_Salesforce_.28Legacy.29"></a><h3>Interfaces / Salesforce (Legacy)</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="Sync_quote_with_Salesforce_(legacy)_interface.html" title="Sync quote with Salesforce (legacy) interface">Sync quote with Salesforce (legacy) interface</a></td><td>Sync quote with Salesforce (legacy) interface.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=22" title="Edit section: Mail">edit</a>]</div><a name="Mail"></a><h3>Mail</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>   <a href="DeleteSuppressedDestination.html" title="DeleteSuppressedDestination">deleteSuppressedDestination</a></td><td> Removes an email address from the suppression list. </td><td>  Mail:SuppressedDestinationDelete
+</td></tr>
+<tr>
+<td>   <a href="GetSuppressedDestination.html" title="GetSuppressedDestination">getSuppressedDestination</a> </td><td> Check if a specified email address is a suppressed destination. </td><td>   Mail:SuppressedDestinationGet
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=23" title="Edit section: Originators">edit</a>]</div><a name="Originators"></a><h3>Originators</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="GetOriginators.html" title="GetOriginators">getOriginators</a></td><td style="background:#e6e6e6"> Allows you to retrieve a list of originator records. </td><td style="background:#e6e6e6">Originators:Get
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=24" title="Edit section: Other">edit</a>]</div><a name="Other"></a><h3>Other</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="Ping.html" title="Ping">Ping</a></td><td> Ping the API
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=25" title="Edit section: Pay Cycles">edit</a>]</div><a name="Pay_Cycles"></a><h3>Pay Cycles</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="GetPayCycles.html" title="GetPayCycles">getPayCycles</a></td><td> Get a list of Pay Cycle ID's
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=26" title="Edit section: Quotes">edit</a>]</div><a name="Quotes"></a><h3>Quotes</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="CreateQuotes.html" title="CreateQuotes">createQuotes</a> </td><td style="background:#e6e6e6"> Create a Quote </td><td style="background:#e6e6e6"> Quotes:Create
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="PatchQuote.html" title="PatchQuote">patchQuote</a></td><td style="background:#e6e6e6"> Edit a Quote. </td><td style="background:#e6e6e6"> Quotes:Update
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="AcceptQuote.html" title="AcceptQuote">acceptQuote</a></td><td style="background:#e6e6e6"> Accept a quote. </td><td style="background:#e6e6e6"> Quotes:Accept
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="CopyQuote.html" title="CopyQuote">copyQuote</a></td><td style="background:#e6e6e6"> Copy a Quote. </td><td style="background:#e6e6e6"> Quotes:Copy
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetDealerOrder.html" title="GetDealerOrder">getDealerOrder</a></td><td style="background:#e6e6e6"> Create a Dealer Order form</td><td style="background:#e6e6e6"> Quotes:RenderPDF
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="GetChildQuotes.html" title="GetChildQuotes">getChildQuotes</a></td><td style="background:#e6e6e6"> Get a list of child quotes including grand-child, great-grand-child, great-great-grand-child (and so on). </td><td style="background:#e6e6e6"> Quotes:GetChildQuotes
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="Render_Quote_PDF.html" title="Render Quote PDF">render Quote PDF</a></td><td style="background:#e6e6e6"> Render a Quote PDF using Browserless</td><td style="background:#e6e6e6"> Quotes:RenderPDF
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="Render_Quote_PDF_with_Template.html" title="Render Quote PDF with Template">render Quote PDF with Template</a></td><td style="background:#e6e6e6"> Render a Quote PDF using Browserless using a template archive</td><td style="background:#e6e6e6"> Quotes:RenderPDF, Quotes:TemplateDeveloper
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Supporting APIs
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> <a href="PatchQuote_Supporting_APIs.html" title="PatchQuote Supporting APIs">patchQuote Supporting APIs</a></td><td style="background:#e6e6e6"> PatchQuote Supporting APIs can be found here</td><td style="background:#e6e6e6"> Follow link for details
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=27" title="Edit section: Quote / Events">edit</a>]</div><a name="Quote_.2F_Events"></a><h3>Quote / Events</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td><a href="GetQuoteEvent.html" title="GetQuoteEvent">getQuoteEvent</a></td><td> Get details for a single quote event. </td><td> QuoteEvents:Get
+</td></tr>
+<tr>
+<td><a href="GetQuoteEvents.html" title="GetQuoteEvents">getQuoteEvents</a></td><td> Get a list of quote events. </td><td> QuoteEvents:Get
+</td></tr>
+<tr>
+<td><a href="GetQuoteEventCodes.html" title="GetQuoteEventCodes">getQuoteEventCodes</a></td><td> Get a list of quote event codes. </td><td> QuoteEvents:Get
+</td></tr>
+<tr>
+<td><a href="GetQuoteEventActions.html" title="GetQuoteEventActions">getQuoteEventActions</a></td><td> Get a list of quote event actions. </td><td> QuoteEvents:Get
+</td></tr>
+<tr>
+<td><a href="CreateQuoteEvents.html" title="CreateQuoteEvents">createQuoteEvents</a></td><td> Create quote event/s. </td><td> QuoteEvents:Create
+</td></tr>
+<tr>
+<td><a href="PatchQuoteEvents.html" title="PatchQuoteEvents">patchQuoteEvents</a></td><td> Edit a single quote event. </td><td> QuoteEvents:Update
+</td></tr>
+<tr>
+<td><a href="PatchQuoteEventList.html" title="PatchQuoteEventList">patchQuoteEventList</a></td><td> Edit multiple quote events. </td><td> QuoteEvents:Update
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=28" title="Edit section: Quote / Variants">edit</a>]</div><a name="Quote_.2F_Variants"></a><h3>Quote / Variants</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Sources
+</td></tr>
+<tr>
+<td> <a href="Get_a_list_of_variant_data_sources.html" title="Get a list of variant data sources">Get a list of variant data sources</a></td><td> This method will list details of all variant data sources. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Makes
+</td></tr>
+<tr>
+<td> <a href="Get_a_list_of_variant_makes.html" title="Get a list of variant makes">Get a list of variant makes</a></td><td> This method will list the makes and its detail. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_a_make_by_make_id.html" title="Get a make by make id">Get a make by make id</a></td><td> This method will return requested make details. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Models
+</td></tr>
+<tr>
+<td> <a href="Get_a_list_of_variant_models.html" title="Get a list of variant models">Get a list of variant models</a></td><td> This method will list the models and its detail. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_an_array_of_model_years_for_a_given_vehicle_model.html" title="Get an array of model years for a given vehicle model">Get an array of model years for a given vehicle model</a></td><td> This method will list all the years for selected model. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_a_model_by_model_id.html" title="Get a model by model id">Get a model by model id</a></td><td> This method will return requested model details. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Body Types
+</td></tr>
+<tr>
+<td> <a href="Get_a_list_of_variant_body_types.html" title="Get a list of variant body types">Get a list of variant body types</a></td><td> This method will list the variant body types and its detail.  </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_a_body_type_by_body_type_id.html" title="Get a body type by body type id">Get a body type by body type id</a></td><td> This method will return requested body type details </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Variants
+</td></tr>
+<tr>
+<td> <a href="Get_a_list_of_variants.html" title="Get a list of variants">Get a list of variants</a></td><td> This method will list requested variants and its detail. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_a_variant_by_variant_id.html" title="Get a variant by variant id">Get a variant by variant id</a> </td><td> This method will return requested variant details. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_variant_standard_equipment_by_variant_id.html" title="Get variant standard equipment by variant id">Get variant standard equipment by variant id</a></td><td> This method will list all standard equipment for selected variant. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_variant_optional_equipment_by_variant_id.html" title="Get variant optional equipment by variant id">Get variant optional equipment by variant id</a></td><td> This method will list all optional equipment for selected variant. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td> <a href="Get_photos_for_a_specific_variant.html" title="Get photos for a specific variant">Get photos for a specific variant</a></td><td> This method will return photo URI of selected variants. </td><td> <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">QuotesVariants:Get</a>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="CreateVariants.html" title="CreateVariants">createVariants</a> </td><td style="background:#e6e6e6">  Create a variant </td><td style="background:#e6e6e6"> QuoteVariants:Create
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="PatchVariant.html" title="PatchVariant">patchVariant</a> </td><td style="background:#e6e6e6"> Edit a variant profile. </td><td style="background:#e6e6e6">  QuoteVariants:Update
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Variant Profiles
+</td></tr>
+<tr>
+<td> <a href="GetVariantProfiles.html" title="GetVariantProfiles">getVariantProfiles</a></td><td> This method will list requested variant profiles and their details.
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  <a href="PatchVariantProfile.html" title="PatchVariantProfile">patchVariantProfile</a></td><td style="background:#e6e6e6"> Patch a variant profile - this is an embedded section of the <a href="PatchVariant.html" title="PatchVariant">patchVariant</a> API.  </td><td style="background:#e6e6e6"> QuoteVariants:Update
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=29" title="Edit section: Queries">edit</a>]</div><a name="Queries"></a><h3>Queries</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="CreateQuery.html" title="CreateQuery">createQuery</a> </td><td> Create a new Query. </td><td> Queries:Create
+</td></tr>
+<tr>
+<td> <a href="GetQueries.html" title="GetQueries">getQueries</a> </td><td> Get a list of Queries. </td><td> Queries:Get
+</td></tr>
+<tr>
+<td> <a href="DeleteQuery.html" title="DeleteQuery">deleteQuery</a> </td><td> Delete a Query. </td><td> Queries:Delete
+</td></tr>
+<tr>
+<td> <a href="GetQuery.html" title="GetQuery">getQuery</a> </td><td> Get query by Query ID. </td><td> Queries:Get
+</td></tr>
+<tr>
+<td> <a href="UpdateQuery.html" title="UpdateQuery">updateQuery</a> </td><td> Update an existing Query. </td><td> Queries:Update
+</td></tr>
+<tr>
+<td> <a href="GetArchiveQueries.html" title="GetArchiveQueries">getArchiveQueries</a> </td><td> Get archived Query by Query ID. </td><td> Queries:Get
+</td></tr>
+<tr>
+<td> <a href="PrintQuery.html" title="PrintQuery">printQuery</a> </td><td> Execute a Query. </td><td> Queries:Print
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=30" title="Edit section: Report Queries">edit</a>]</div><a name="Report_Queries"></a><h3>Report Queries</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="Print_a_report_query.html" title="Print a report query">Print a report query</a></td><td> Print a report query stored in the <i>[gb_report_queries]</i> table. </td><td>ReportQueries:Print
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=31" title="Edit section: Suppliers">edit</a>]</div><a name="Suppliers"></a><h3>Suppliers</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Method</th><th>Comments
+</th></tr>
+<tr>
+<td style="width: 20%"> <a href="Get_a_supplier_by_supplier_id.html" title="Get a supplier by supplier id">Get a supplier by supplier id</a></td><td>This method returns the supplier details.
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="Get_a_list_of_configured_suppliers.html" title="Get a list of configured suppliers">Get a list of configured suppliers</a></td><td>This method returns the list of configured suppliers.
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="Update_supplier.html" title="Update supplier">Update supplier</a></td><td>This method allows to update the details of supplier
+</td></tr>
+</table>
+<p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=32" title="Edit section: Web Services">edit</a>]</div><a name="Web_Services"></a><h3>Web Services</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td> <a href="BillingReprintWebService.html" title="BillingReprintWebService">billingReprintWebService</a> </td><td> Re-print an invoice </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="ExecuteReportWebService.html" title="ExecuteReportWebService">executeReportWebService</a> </td><td> Execute a System Report </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="CreateQuoteWebService.html" title="CreateQuoteWebService">createQuoteWebService</a></td><td> Create a new quote. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="GetQuickQuoteWebService.html" title="GetQuickQuoteWebService">getQuickQuoteWebService</a></td><td> Performs a full Quote calculation for a salary packaged novated vehicle lease with ecm, and returns individually requested fields or all fields if none are requested. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="GetQuoteFieldsWebService.html" title="GetQuoteFieldsWebService">getQuoteFieldsWebService</a></td><td> Returns quote template placeholders for a saved quote. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="GetQuotePdfWebService.html" title="GetQuotePdfWebService">getQuotePdfWebService</a> </td><td> Returns quote pdf for a saved quote. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="ReserveInterfaceBatchNosWebService.html" title="ReserveInterfaceBatchNosWebService">reserveInterfaceBatchNosWebService</a> </td><td> Reserve a sequence of interface batch nos. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="ReserveBatchNosWebService.html" title="ReserveBatchNosWebService">reserveBatchNosWebService</a> </td><td> Reserve a sequence of batch nos. </td><td> WebServices
+</td></tr>
+<tr>
+<td> <a href="ReservePaymentNosWebService.html" title="ReservePaymentNosWebService">reservePaymentNosWebService</a> </td><td> Reserve a sequence of payment nos. </td><td> WebServices
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=33" title="Edit section: Legend">edit</a>]</div><a name="Legend"></a><h3>Legend</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Field </th><th width="80" align="left">Description
+</th></tr>
+<tr>
+<td> Method </td><td> The API is available by default.
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">  Method </td><td style="background:#e6e6e6"> This API is not configured for external use by default. If you want to use this API, contact your Account Manager to discuss access.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;action=edit&amp;section=34" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (CAT-17782) Publish a PHP based SDK for Catch-e APIs
+</li><li> (API-20008) Create new API to allow data to be pushed into fm_contract_budgets. Live 14/03/2019
+</li><li> (API-20012) Create API for adding &amp; editing Driver Assets &amp; Liabilities. Live 20/05/2019
+</li><li> (API-20013) Create Funds Check API.  Live 25/03/2019
+</li><li> (CAT-17212) Investigate and enable API documentation to be available in IE. Live 27/03/2019
+</li><li> (API-20064) Checking record locks. Live 22/06/2020
+</li><li> (API-20045) Remove beta tag from Contract Budget &amp; Contract Billing API features. Live 27/07/2020
+</li><li> (API-20095) Create APIs for vehicle variant lookups. Live 26/10/2020
+</li><li> (API-20117) Generated Token should be disabled for suspended users. Live 08/02/2021
+</li><li> (API-20182) Create new API to trigger pushing Quote data to Salesforce. Live 20/09/2021
+</li><li> (API-20204) Apply process locks to specific APIs and gb_queries.Live 27/10/2021
+</li><li> (API-20226) API getChildQuotes. Live 06/12/2021
+</li><li> (API-20229) API patchQuote. Live 01/12/2021
+</li><li> (API-20243) Refactor patchQuote for Inclusions. Live 25/02/2022
+</li><li> (API-20255) Refactor patchQuote for RSA. Live 11/03/2022
+</li><li> (API-20256) Refactor patchQuote for FUEL. Live 05/04/2022
+</li><li> (API-20280) Give printReportQuery additional memory. Live 06/06/2022
+</li><li> (API-20278) Enhance API to support HJSON. Live 22/08/2022
+</li><li> (API-20207) Wrapper API for Billing Reprint. Live 05/09/2022
+</li><li> (API-20305) API createDriver returning 500 error with certain payloads. Live 08/08/2022
+</li><li> (API-20284) Drivers / Contact - create new field 'Licence Card Number'. Live 08/08/2022
+</li><li> (API-20278) Enhance API to support HJSON. Live 22/08/2022
+</li><li> (API-20294) Enable Scheduled Maintenance banner. Live 12/09/2022
+</li><li> (API-20323) API can generate lock file read warning in rare circumstances. Live 19/09/2022
+</li><li> (API-20327) Object of class LaminasDbResultSetResultSet could not be converted to int. Live 26/09/2022
+</li><li> (API-20330) Attachments API error: TypeError rawurlencode(): Argument #1 ($string) must be of type string, int given . Live 26/09/2022
+</li><li> (API-20333) Call to a member function getPaymentMethod() on null. Live 10/10/2022
+</li><li> (API-20334) Fatal exception thrown when Vary Employee Package Item API is called and Contract Payment Structure is 'inactive'. Live 10/10/2022
+</li><li> (API-20339) Unable to create quote with term set to 2. Live 07/11/2022
+</li><li> (API-20345) APIs for Quote Events. Live 14/11/2022
+</li><li> (API-20329) Clients / Packaging Defaults - add separate Packaging Bank Account.Live 05/12/2022
+</li><li> (API-20364) Upsert exception: Table [table_name] gb_unique_ids sequence already locked.Live 16/01/2023
+</li><li> (API-20322) Employees / Item tab - Contracts / Lease 'Periodic' date can duplicate on Vary. Live 16/01/2023
+</li><li> (API-20396) Add rate limiting to Catch-e API. 12/06/2023
+</li><li> (API-20350) Client Groups API (new, edit, get). Live 24/04/2023
+</li><li> (API-20366) Variants API (new, edit). Live 24/04/2023
+</li><li> (API-20421) API to allow changing of encryption keys used in gb_dmz_upload_file_destinations configurations.  Live 27/04/2023
+</li><li> (API-20416) API copyQuote - replace legacy copyQuote. Live dd/07/2023
+</li><li> (API-20373) Create getClientCostCentres API. Live 24/07/2023
+</li><li> (API-20376) Create getOriginators API. Live 24/07/2023
+</li><li> (API-20347) Clients API (new, edit, copy). Live 09/10/2023
+</li><li> (API-20524) Allow print report query to accept array arguments. Live 18/03/2024
+</li><li> (API-20053) Query APIs (Create-Edit-Delete-Print-Get-Execute). Live dd/03/2024
+</li><li> (API-20374) Create getClientDivisions API. Live dd/mm/2024
+</li><li> (API-20415) Refactor patchQuote for remaining Vehicle tab fields. Live 18/03/2024
+</li><li> (API-20375) Create getFinanceTypes API. Live dd/03/2024
+</li><li> (API-20343) Refactor patchQuote for LTI. Live dd/04/2024
+</li><li> (API-20463) Extend Inclusions feature. Live dd/04/2024
+</li><li> (API-20530) patchQuote BUG - insurer_location_postcode. Live dd/04/2024
+</li><li> (API-20358) Create getQuoteStatuses and getQuoteSubStatuses APIs. Live dd/04/2024
+</li><li> (API-20491) Driver Event APIs. Live dd/mm/2024
+</li><li> (API-20563) Patch client throws exception when payload is updating client defaults and qt_client_defaults row does not exist. Live dd/mm/yyyy
+</li><li> (API-20554) Clients / Packaging Defaults - create Pay Cycle Active checkbox. Live dd/mm/2024
+</li><li> (API-20561) Employees / Item tab - Package Item field - disable on Vary. Live dd/mm/2024
+</li><li> (API-20588) Issue with Import Table API in STAGING environment. Live dd/mm/2024
+</li><li> (API-20502) Salary Packaging - Pay Runs / Pay Run - enable Pay Run Reports to email. Live 14/10/2024 
+</li><li> (API-20600) Undefined array key issue with Dates passed to ImportExport API.Live 28/10/2024 
+</li><li> (API-20622) Fix bug revealed by introduction of new getPostingMaps API. Live 12/11/2024
+</li><li> (API-20613) Create executeReport API with 4 report variations. Live 28/01/2024
+</li><li> (API-20636) Cards API database error - and associated upsert error. Live 09/12/2024
+</li><li> (API-20637) Resolve 500 Error: 'Column Name is Ambiguous' and Other bugs in getClients API Query. Live 09/12/2024
+</li><li> (API-20617) Glass Interface - Allow more than 20 characters for Transmission &amp; other bug fixes. Live 09/12/2024
+</li><li> (API-20639) Bug fix to resolve error LaminasDbAdapterExceptionInvalidQueryException POST /sp/approvals/auto-build-claims. Live 10/12/2024
+</li><li> (API-20641) Card API errors. Live 16/12/2024
+</li><li> (API-20645) Fixes for various Bugsnag issues. Live 20/01/2025
+</li><li> (API-20633) Create GNAF Addresses for Clients and add Driver's Previous Employer ABN Live 10/02/2025
+</li><li> (API-20654) Refactor patchQuote for selected Finance tab fields. Live 17/03/2025
+</li><li> (API-20665) Weekly glass import fails due to break in expected file sequence on remote Glass server. Live 07/04/2025
+</li><li> (API-20675) Driver Deidentification - Update standard script across all clients. Live 22/04/2025
+</li><li> (API-20700) Patch REST library HTTP header malformation issue. Live 02/06/2025
+</li><li> (API-20701) Move billing lock outside of transaction in autoBuildClaims. Add missing table indexes. Live 10/06/2025
+</li><li> (API-20703) Fix CVEs in third party libraries reported by composer audit. Live 23/06/2025
+</li><li> (API-20705) Create Events API.  Live 28/07/2025
+</li><li> (DEV-21931)/ API-20463) Extend Inclusions feature. Live 08/09/2025
+</li><li> (API-20730) Bugsnag Error: - PHP Fatal Error GET /sp/employee/105737/end-dates Maximum execution time of 600 seconds exceeded. Live 08/09/2025
+</li><li> (API-20670) PHP Warning - 'Trying to Access Array Offset on Value of Type Null' in patchQuote API. Live dd/mm/2025
+</li><li> (API-20736) Sanitise quote and coc zip files on import. Live 22/09/2025.
+</li><li> (API-20767) Patches MySQL exceptions during latest Glass import. Live dd/10/2025.
+</li><li> (API-20764) Fixes for various issues with readRecord, importTableData and web-services wrapper. Live 06/10/2025
+</li><li> (API-20771) Class 'InterfaceApiExceptionGlassConnectionDetailsInvalidException' not found. Live dd/10/2025
+</li><li> (API-20495) createQuotes and patchQuote - auto populate ECM and ECMC budgets into quotes. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:2716-0!1!0!0!!en!2 and timestamp 20251120004733 -->
+<div class="printfooter">
+Retrieved from "<a href="APIs.html">https://help.catch-e.net.au/mediawiki/index.php/APIs</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=APIs">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/APIs.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=APIs&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.04 secs. -->
+</body></html>

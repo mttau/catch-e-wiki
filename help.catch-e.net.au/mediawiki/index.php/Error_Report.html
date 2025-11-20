@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Error Report,Data File,Dependent Records,ExecuteImportTableData,Import Table Data,Main Page,SETUP,Table Data" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Error Report - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Error Report</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Error_Report.html#column-one">navigation</a>, <a href="Error_Report.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SETUP.html" title="SETUP">Setup</a> / <a href="Import_Table_Data.html" title="Import Table Data">Import Table Data</a> &rarr; <a href="Data_File.html" title="Data File">Data File</a> | <a href="Table_Data.html" title="Table Data">Table Data</a> | <strong>Error Report</strong> | <a href="Dependent_Records.html" title="Dependent Records">Dependent Records</a>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Error_Report&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The Error Report identifies the items that caused the upload to fail. The file is exported in .csv format.<br />
+Below is a list of possible errors you may see in the validation file. Correct these issues and <b>Re-Upload</b> the file.<br />
+The file may refer to a header records or a row number. The row number is for the record that is affected. Each affected row will have it's own validation message.<br />
+If there is more than one issue with a row, you will see a validation message for each row issue.<br />
+</p><p>If you are using <a href="ExecuteImportTableData.html" title="ExecuteImportTableData">executeImportTableData</a>, the <strong>Error Report</strong> will be emailed to you if running the job generates it.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Error_Report&amp;action=edit&amp;section=2" title="Edit section: Errors">edit</a>]</div><a name="Errors"></a><h4>Errors</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>row</th><th>sql_state</th><th>sql_error_code</th><th>column</th><th>error </th><th>Comments
+</th></tr>
+<tr>
+<td> header </td><td> - </td><td> - </td><td> - </td><td> File contains duplicate headers: , </td><td> Three reasons why you might see this error are as follows;
+<ol><li> The header row is missing from the upload file. Add the required header row.
+</li><li> The upload file is not in *.csv format. Save into *.csv.
+</li><li> You have blank columns saved in the file. See below for two methods for finding and deleting the blanks.
+</li></ol>
+<p>Method 1
+</p>
+<ol><li> From the cell A1
+</li><li> Click on Ctrl+End
+</li><li> Highlight the blank columns
+</li><li> Hover over the columns and click on Delete from the keyboard or the mouse
+</li><li> Re-save the file
+</li></ol>
+<p>Method 2
+</p>
+<ol><li> From the Home tab, click Find &amp; Select button in the Editing section.
+</li><li> Select Go To Special.
+</li><li> Click the radio button for Blanks and click OK.
+</li><li> The blank cells are now highlighted, find the Cells section of the Home tab and click the Delete arrow to select the Delete options
+</li><li> Select Delete Sheet Columns
+</li><li> Also check and if needed Delete Sheet Rows
+</li></ol>
+</td></tr>
+<tr>
+<td> header </td><td> - </td><td> - </td><td> A </td><td>Missing or incorrect header row - should contain  <i> 'field' </i></td><td> Two reasons why you might see this error are as follows;
+<ol><li> The header row is missing from the upload file
+</li><li> The upload file is not in *.csv formal
+</li></ol>
+</td></tr>
+<tr>
+<td> header </td><td> - </td><td> - </td><td> A </td><td>Missing or incorrect header row - should contain <i> 'field' </i></td><td>The uploaded file does not match the selected table.<br />
+<p>E.g. A file containing <i>[fm_work_codes]</i> is being uploaded, but table that was selected is <i>[fm_vmrs_codes]</i>.
+</p>
+<dl><dd> Missing or incorrect header row - should contain 'vmrs_code_id'
+</dd></dl>
+</td></tr>
+<tr>
+<td> header </td><td> - </td><td> - </td><td> A </td><td>Incorrect header row - Missing additional mandatory column(s)  <i> 'field_1' </i>, <i> 'field_2' </i> </td><td>The table you are importing contains a unique key. All fields that are part of the unique key must be present in the import file.<br />
+<p>E.g. The table <i>[fm_work_codes]</i> contains the fields <i>work_code_id, work_code, description</i>. The field <i>work_code</i> is a unique key.<br />
+A file for <i>[fm_work_codes]</i> is being uploaded, and the file contains only the fields <i>work_code_id,description</i>.<br />
+</p>
+<dl><dd> Incorrect header row - Missing additional mandatory column(s) 'work_code'
+</dd></dl>
+</td></tr>
+<tr>
+<td>  </td><td> -1 </td><td> -1 </td><td>   </td><td>Unsupported scientific notation </td><td>It's likely that you've edited the upload file in Excel and the data has become corrupted.<br /> Excel converts numbers over 15 digits into scientific notation (eg 5.4265E+12) and the data is changed when the file is re-saved.<br /> Re-build your file and import the column into Excel as Text, not Number. This will prevent Excel from modifying the cell.
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>-1 </td><td> -1 </td><td>   </td><td>(23000 - 1048 - Column <i> 'field' </i> cannot be null)</td><td>The cell for the listed row and field has an entry of 'null' or 'NULL'. Change the cell value to be blank.<br />
+<p>E.g. an <i>[fm_drivers]</i> upload contains a record with the field <i>middle_name</i> populated as 'null'.
+</p>
+<dl><dd> (23000 - 1048 - Column 'middle_name' cannot be null)
+</dd></dl>
+</td></tr>
+<tr>
+<td> <i>row number</i> </td><td> -1 </td><td> -1 </td><td> </td><td> (42S22 - 1054 - Unknown column <i> in 'field list') </td><td> There are empty trailing columns in the file.<br /></i>
+<ol><li> Open the file
+</li><li> Click on &lt;Ctrl&gt; &lt;End&gt; <br />
+</li><li> Delete the extra columns
+</li><li> Re-save the file
+</li></ol>
+</td></tr>
+
+<tr>
+<td> <i>row_number</i> </td><td>-1</td><td>-1</td><td> </td><td>
+<p>(23000 - 1062 - Duplicate entry <i> 'cell_value-cell_value' </i> for key 'column')
+</p>
+</td><td> This error appears when unique key constraint is violated. <br /> For E.g. fm_cards tables cannot have duplicate card_number and supplier_id combination. Passing duplicate values will trigger this error.<br /> (23000 - 1062 - Duplicate entry <i> 'supplier_id cell_value-card_number cell_value' </i> for key <i> 'supplier_id' </i>)
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>-1</td><td>-1</td><td> <i> 'field' </i> </td><td> Record does not exist
+</td><td> The unique id of the record has been populated in the data file but does not exist in the database.<br /><br /> This can happen if you are uploading a data file to a different environment where the data is not the same.<br /> Check the existing data in the table you are uploading to.<br /> E.g. if uploading to <b>Staging</b>, download the existing file from <b>Staging</b>.<br /><br /> 1. For existing records, you can update the records by importing records with an existing unique id<br /> E.g. You are importing a record into <i>[fm_drivers]</i>. The field <i>[fm_drivers]driver_id</i> is populated and already exists in the database.<br /> See more detailed illustrations in the <b>Data File</b> page in the <a href="Data_File.html#Update_existing_records" title="Data File">Update existing records</a> section.<br /><br /> 2. For new records, leave the unique id field blank. The system will allocate the unique ids on import.<br /> E.g. You are importing a record into <i>[fm_drivers]</i>. The field <i>[fm_drivers]driver_id</i> should be blank.<br /> See more detailed illustrations in the <b>Data File</b> page in the <a href="Data_File.html#Create_new_records" title="Data File">Create new records</a> section.
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>23000</td><td>1452</td><td> <i> 'field' </i> </td><td>
+<p>(Cannot add or update a child row: a foreign key constraint fails)
+</p>
+</td><td> There is a field in the file that is has a foreign key constraint on it. The file contains a record that does not match any of the records in the key field.<br /> E.g. You are importing a record into <i>[gb_report_query_files]</i>. The field <i>[gb_report_query_files]file_id</i> must already exist as <i>[gb_files]file_id</i>.
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>1000</td><td>1265</td><td> <i> 'field' </i> </td><td>Data truncated</td><td>Means the data has been chopped at maximum database length or the data does not match the database field requirement e.g. like adding in a status that doesn’t exist, or using a value of say 20 characters where a maximum of 15 is allowed.
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>22007</td><td>1292</td><td> <i> 'field' </i>  </td><td> Incorrect date value: <i> 'cell_value' </i><br />
+<p>Incorrect date value: ' <i> '<br /></i>
+</p>
+</td><td>You are trying to import a record an incorrect date or the field is blank or the field has a blank space.
+<p>E.g. The file contains a record with a populate date of 31/31/2000
+</p>
+<dl><dd> Incorrect date value: '31/31/2000' 
+</dd></dl>
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>42S22</td><td>1054</td><td> <i> 'field' </i>  </td><td>Unknown column</td><td>The file contains a column with a header name that does not match any fields contained in the table. Check the columns for incorrect spelling.<br />
+<p>E.g. an <i>[fm_drivers]</i> upload contains a column called <i>midle_name</i>
+</p>
+<dl><dd> column: midle_name
+</dd></dl>
+</td></tr>
+<tr>
+<td> <i>row_number</i> </td><td>HY000</td><td>1366</td><td> <i> 'field' </i>  </td><td>Incorrect integer value:' <i> '<br /></i>
+<p>Incorrect integer value: <i> 'cell_value' </i><br />
+Incorrect integer value: <i> '^&amp;*(*&amp;^*' </i><br />
+Incorrect decimal value: 
+</p>
+</td><td> The system is expecting 'null' to be populated in this field.<br />
+<p>The field contains a blank space.<br />
+The field contains characters that are not recognised by the system.<br />
+The field contains a blank space in a column that requires a number.<br />
+</p>
+</td></tr>
+<tr>
+<td> <i>last_row_number</i> </td><td> -1 </td><td> -1 </td><td>   </td><td>(23000 - 1062 - Duplicate entry <i> 'cell_content' </i> for key <i> 'field' </i>)</td><td>1. The file contains two records that contain the value for the primary key field, or unique key field, or<br />
+<p>2. There is a record in the file that will create or update a record in the table to contain a value that already exists in another table record.<br />
+<br />
+E.g. a <i>[qt_client_defaults]</i> upload contains two records with the same <i>client_id</i> value.
+</p>
+<dl><dd> (23000 - 1062 - Duplicate entry '100030' for key 'client_id') 
+</dd></dl>
+<p><b>Solution:</b> When importing existing records into the <i>[qt_client_defaults]</i> table, the two fields <i>client_default_id</i> and <i>client_id</i> must both be in the upload file and there can only be one row in the file that contains this combination.<br />
+<br />
+E.g. The table <i>[fm_cards]</i> contains a primary key (<i>card_id</i>) and a unique key (<i>supplier_id,card_number</i>).<br />
+Search the file and then the existing table records for the reported value and update the file as required.<br />
+An <i>[fm_cards]</i> upload file contains two records with the same <i>supplier_id</i> and <i>card_number</i> values.<br />
+</p>
+<dl><dd> (23000 - 1062 - Duplicate entry '100459-12326389' for key 'supplier_id')<br />
+</dd></dl>
+<p><b>Solution:</b> When importing existing records into the <i>[fm_cards]</i> table, the three fields <i>card_id</i>, <i>supplier_id</i> and <i>card_number</i> must all be in the upload file and there can only be one row in the file that contains this combination.<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td>  <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> The system will only validate and report the first error of this kind that is found, so re-check your file carefully to remove any other errors like this or you will get a validation report for each one as it is found!
+</td></tr></table>
+</td></tr>
+</table>
+<p><br />
+</p><div class="printfooter">
+Retrieved from "<a href="Error_Report.html">https://help.catch-e.net.au/mediawiki/index.php/Error_Report</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Error_Report">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Error_Report.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Error_Report&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

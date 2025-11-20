@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Print a report query,Print a report query,APIs,Account Manager,Authenticate with the API,Catch-e support,Derived Fields,Derived Fields emissions,Derived Fields odometer,Derived Fields vehicle photos,Derived fields fbt statutory" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Print a report query - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Print a report query</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Print_a_report_query.html#column-one">navigation</a>, <a href="Print_a_report_query.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Configuration.html#APIs" title="System Configuration">IT Set-up</a> &rarr; <a href="APIs.html" title="APIs">APIs</a> → <a href="APIs.html#Report_Queries" title="APIs">Report Queries</a> → <strong>Print a report query</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Creating_Queries"><span class="tocnumber">2</span> <span class="toctext">Creating Queries</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Permissions"><span class="tocnumber">3</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Input_Fields_.28Header.29"><span class="tocnumber">5</span> <span class="toctext">Input Fields (Header)</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Parameters"><span class="tocnumber">6</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Body_.28JSON.29"><span class="tocnumber">7</span> <span class="toctext">Body (JSON)</span></a>
+<ul>
+<li class='toclevel-2'><a href="Print_a_report_query.html#Wildcard_.28.2A.29"><span class="tocnumber">7.1</span> <span class="toctext">Wildcard (*)</span></a></li>
+<li class='toclevel-2'><a href="Print_a_report_query.html#LIMIT_and_OFFSET"><span class="tocnumber">7.2</span> <span class="toctext">LIMIT and OFFSET</span></a></li>
+<li class='toclevel-2'><a href="Print_a_report_query.html#Build_in_placeholder_-_.23authenticated_user_id.23"><span class="tocnumber">7.3</span> <span class="toctext">Build in placeholder - #authenticated_user_id#</span></a></li>
+<li class='toclevel-2'><a href="Print_a_report_query.html#Role_Restrict"><span class="tocnumber">7.4</span> <span class="toctext">Role Restrict</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#URL_Examples"><span class="tocnumber">8</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#.28Successful.29_Output_Example"><span class="tocnumber">9</span> <span class="toctext">(Successful) Output Example</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#HTTP_Accept_header_.3D_text.2Fcsv"><span class="tocnumber">10</span> <span class="toctext">HTTP Accept header = text/csv</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#HTTP_Accept_header_.3D_text.2Fxml"><span class="tocnumber">11</span> <span class="toctext">HTTP Accept header = text/xml</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#HTTP_Accept_header_.3D_application.2Fjson"><span class="tocnumber">12</span> <span class="toctext">HTTP Accept header = application/json</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#Response_Details"><span class="tocnumber">13</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="Print_a_report_query.html#System_Notes"><span class="tocnumber">14</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Allows you to run a query that is saved in the <i>[gb_report_queries]</i> table using the identified <i>report_query_id</i>.<br />
+To get a report set-up or modified, fill in a <a href="https://help.catch-e.net.au/clients/help/wiki/images/a/a5/Report_Query_Request.xlsx" class='internal' title="Report Query Request.xlsx">Report Query Request</a> and send it to your <a href="Catch-e_support.html#Account_Manager" title="Catch-e support">Account Manager</a>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=2" title="Edit section: Creating Queries">edit</a>]</div><a name="Creating_Queries"></a><h4>Creating Queries</h4>
+<p>For large datasets use LIMIT placeholders. See the <a href="Print_a_report_query.html#LIMIT_and_OFFSET" title="Print a report query">LIMIT and OFFSET</a> section for an example.
+</p><p>Visit the pages below for details of general query features that apply here
+</p>
+<dl><dd> <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> 
+</dd><dd> <a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted Fields</a>
+</dd><dd> <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a> - only the libraries listed below will run in this API.
+<dl><dd> <a href="Derived_Fields_emissions.html" title="Derived Fields emissions">emissions</a>
+</dd><dd> <a href="Derived_fields_fbt_statutory.html" title="Derived fields fbt statutory">fbt_statutory</a>
+</dd><dd> <a href="Derived_Fields_odometer.html" title="Derived Fields odometer">odometer</a>
+</dd><dd> <a href="Derived_Fields_vehicle_photos.html" title="Derived Fields vehicle photos">vehicle_photos</a>
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=3" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>ReportQueries:Print</b>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=5" title="Edit section: Input Fields (Header)">edit</a>]</div><a name="Input_Fields_.28Header.29"></a><h4> Input Fields (Header) </h4>
+<p>The representational output format of the report query is controlled by HTTP Accept header. Three content types are presently supported:
+</p>
+<ul><li>text/csv
+</li><li>text/xml
+</li><li>application/vnd.ms-excel
+</li><li>application/json (default)
+</li></ul>
+<p><b>Queries that run exceed the [gb_queries]max_execution_time will return an HTTP 422 (Unprocessable Content) response from the API.</b>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=6" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Name</th><th>Format</th><th>Notes</th><th>Mandatory
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Query
+</td></tr>
+<tr>
+<td> stringify_result_fields_flag </td><td> string </td><td> This parameter is set to 'yes' by default. When yes, number fields are returned as strings in the response.<br /> Set to 'No' to return number fields in a numeric format. </td><td> No
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Path
+</td></tr>
+<tr>
+<td>report_query_id </td><td> string </td><td> Report Query ID of report to run </td><td> Yes
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=7" title="Edit section: Body (JSON)">edit</a>]</div><a name="Body_.28JSON.29"></a><h4>Body (JSON)</h4>
+<p>Query parameters are optional.<br /> If a specific parameter is required by the selected report query but not included in the request,
+a 422 Unprocessable Entity response will result.<br /> The required parameter will be documented within the HTTP 422 response payload.
+</p>
+<pre>
+{
+  &quot;key&quot;: &quot;value&quot;,
+  &quot;anotherkey&quot;: 123456
+}
+</pre>
+<p>For example:
+<br />
+Let say you are running Report query below:
+</p>
+<pre>
+select driver_id, supplier_id from fm_driver_bank_accounts t1 where driver_id = '#t1.driver_id#' and t1.supplier_id = '#t1.supplier_id#' limit 10;
+</pre>
+<p>This query has two placeholders required to run the query&nbsp;: #t1.driver_id# and #t1.supplier_id#
+<br />
+Body will have below JSON structure:
+</p>
+<pre>
+{
+    &quot;t1.driver_id&quot;: &quot;100003&quot;,
+    &quot;t1.supplier_Id&quot;: &quot;100124&quot;
+}
+</pre>
+<p>Here's another example:
+<br />
+Let say you are running Report query below:
+</p>
+<pre>
+SELECT q.quote_id AS 'quotes' FROM qt_quotes q WHERE q.client_id IN ('#client_id#') ORDER BY q.quote_id DESC;
+</pre>
+<p>This query has one placeholder required to run the query. However, the placeholder is an array of client_id(s) like this: 100001, 100002, 100003
+<br />
+In this case the Body will have below JSON structure:
+</p>
+<pre>
+{
+    &quot;client_id&quot;: [
+        &quot;100001&quot;,
+        &quot;100002&quot;,
+        &quot;100003&quot;,
+    ]
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=8" title="Edit section: Wildcard (*)">edit</a>]</div><a name="Wildcard_.28.2A.29"></a><h5>Wildcard (*)</h5>
+<p>Wildcard queries can be used here. We don't recommend them for procedural use.<br /> Your processes may be affected if table changes are made. Catch-e updates tables from time to time.<br />
+Query stored in <i>[gb_report_queries]</i>:
+</p>
+<pre>
+SELECT *
+FROM fm_contracts 
+WHERE contract_id = #contract_id#
+</pre>
+<p>printReportQuery request Body:
+</p>
+<pre>
+{
+    &quot;contract_id&quot;: &quot;103456&quot;
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=9" title="Edit section: LIMIT and OFFSET">edit</a>]</div><a name="LIMIT_and_OFFSET"></a><h5>LIMIT and OFFSET</h5>
+<p>Query stored in <i>[gb_report_queries]</i>:
+</p>
+<pre>
+SELECT contract_id, reg_no 
+FROM fm_contracts 
+LIMIT #offset#, #limit#
+</pre>
+<p>printReportQuery request Body:
+</p>
+<pre>
+{
+    &quot;offset&quot;: &quot;5000&quot;,
+    &quot;limit&quot;: &quot;1000&quot;
+}
+</pre>
+<p>The SQL query above says "return only 1000 (#limit#) records, start on record 5000 (#offset#)"
+</p>
+<pre>
+SELECT contract_id, reg_no 
+FROM fm_contracts 
+LIMIT 5000, 1000
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=10" title="Edit section: Build in placeholder - #authenticated_user_id#">edit</a>]</div><a name="Build_in_placeholder_-_.23authenticated_user_id.23"></a><h5>Build in placeholder - #authenticated_user_id#</h5>
+<p>A system placeholder, called #authenticated_user_id#, holds the user_id of the authenticated user calling the query. This can be used to restrict the extracted data. Unlike other query parameters, system placeholders don't need to be passed in the body as <a href="Print_a_report_query.html#Input_Fields_.28Body.29" title="Print a report query">input fields</a>.
+</p>
+<pre>
+ SELECT cl.*
+ FROM gb_users AS u
+	INNER JOIN gb_roles AS r ON r.role_id = u.role_id
+	LEFT JOIN gb_user_roles AS ur ON ur.user_id = u.user_id
+	INNER JOIN fm_clients AS cl ON 
+		If(r.restrict_table = 'fm_clients'
+			, cl.client_id = ur.restrict_key_value
+			, cl.client_group_id = ur.restrict_key_value)
+ WHERE u.user_id = '#authenticated_user_id#';
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=11" title="Edit section: Role Restrict">edit</a>]</div><a name="Role_Restrict"></a><h5>Role Restrict</h5>
+<p>Add a role restriction to limit access to only the required reports.<br />
+This works well with the #authenticated_user_id# placeholder to provide reports to external roles such as 'Fleet Manager'.
+</p>
+<pre>
+select r.name, rar.*
+from gb_role_api_restrictions as rar
+inner join gb_roles as r on r.role_id = rar.role_id
+WHERE table_name = 'gb_report_queries';
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=12" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.catch-e.com/gb/report/queries/print/{report_query_id}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=13" title="Edit section: (Successful) Output Example">edit</a>]</div><a name=".28Successful.29_Output_Example"></a><h4> (Successful) Output Example</h4>
+<p>Queries that run successfully but result in 0 rows will return an HTTP 204 (No content) response from the API.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=14" title="Edit section: HTTP Accept header = text/csv">edit</a>]</div><a name="HTTP_Accept_header_.3D_text.2Fcsv"></a><h4>HTTP Accept header = text/csv</h4>
+<pre>
+driver_id,supplier_id,bank_bsb,bank_account_number
+100003,100471,546-321,654789
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=15" title="Edit section: HTTP Accept header = text/xml">edit</a>]</div><a name="HTTP_Accept_header_.3D_text.2Fxml"></a><h4>HTTP Accept header = text/xml</h4>
+<p>&lt;?xml version="1.0"?&gt;
+&lt;response&gt;
+</p>
+<pre>   &lt;item key="0"&gt;
+       &lt;driver_id&gt;100003&lt;/driver_id&gt;
+       &lt;supplier_id&gt;100471&lt;/supplier_id&gt;
+       &lt;bank_bsb&gt;546-321&lt;/bank_bsb&gt;
+       &lt;bank_account_number&gt;654789&lt;/bank_account_number&gt;
+   &lt;/item&gt;
+</pre>
+<p>&lt;/response&gt;
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=16" title="Edit section: HTTP Accept header = application/json">edit</a>]</div><a name="HTTP_Accept_header_.3D_application.2Fjson"></a><h4>HTTP Accept header = application/json</h4>
+<pre>
+[
+    {
+        &quot;driver_id&quot;: &quot;100003&quot;,
+        &quot;supplier_id&quot;: &quot;100471&quot;,
+        &quot;bank_bsb&quot;: &quot;546-321&quot;,
+        &quot;bank_account_number&quot;: &quot;654789&quot;
+    }
+]
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=17" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 204 No Content
+</td></tr>
+<tr>
+<td>  </td><td> The request was successful request. No response is required
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 401 - Unauthorized
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unauthorized&quot;,
+    &quot;status&quot;: 401,
+    &quot;detail&quot;: &quot;Unauthorized&quot;
+}
+</pre>
+</td><td>
+<ol><li> You have not <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticated</a> before running this API or
+</li><li> The token_timeout of the current session has passed. You need to <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticate</a> again.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 403 - Forbidden
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Forbidden&quot;,
+    &quot;status&quot;: 403,
+    &quot;detail&quot;: &quot;Forbidden&quot;
+}
+</pre>
+</td><td> You do not have permissions for this request.<br />
+<ol><li> Go to <b>System Roles</b> and enter 'web_services'
+</li><li> Navigate to the <a href="./Roles:Apis.html" title="Roles:Apis"> Roles / APIs</a> tab to make sure the permission you need to run this API is checked.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 404 - Not Found
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Forbidden&quot;,
+    &quot;status&quot;: 404,
+    &quot;detail&quot;: &quot;Report query not found&quot;
+}
+</pre>
+</td><td> Your role has a restriction on which reports can be run. The report_query_id passed is not in the list of allowed reports.<br />
+<p>Contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> to update the list of allowed reports.
+</p>
+<pre>
+select * from gb_role_api_restrictions WHERE table_name = 'gb_report_queries';
+</pre>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;report_query_id&quot;: {
+            &quot;InvalidQueryType&quot;: &quot;Only SELECT statements supported&quot;
+</pre> </td><td>  Only SELECT statements are allowed to be run using this API. If a query has any statements except SELECT, this error is thrown.
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;report_query_id&quot;: {
+            &quot;InvalidQuery&quot;: &quot;SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax;
+                check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS
+                `undefined1`\nFROM\n  ......       &quot;
+</pre> </td><td>  Using a wildcard (*) in your select statement will return this error. Select statements must contain named columns.
+</td></tr>
+
+<tr>
+<td> <pre>
+        &quot;report_query_id&quot;: {
+            &quot;missingParameter&quot;: {
+                &quot;message&quot;: &quot;Report query is missing required parameter&quot;,
+                &quot;parameter&quot;: &quot;t1.driver_id&quot;
+</pre> </td><td>   If a parameter is missing which is required in the report query, this error is thrown.
+</td></tr>
+<tr>
+<td>   <pre>
+        &quot;report_query_id&quot;: {
+            &quot;multipleStatementsNotSupported&quot;: &quot;Report query contains multiple statements&quot;
+</pre> </td><td>  If a report query includes multiple SELECT statements, this error is thrown. Check your query for duplicate fields or joins.
+</td></tr>
+<tr>
+<td>   <pre>
+        &quot;report_query_id&quot;: {
+            &quot;reportQueryNotActive&quot;: &quot;Report query status_flag is inactive&quot;
+</pre> </td><td>  Stored queries cannot be run if <i>[gb_report_queries]status_flag</i> is ínactive'. Update the query status.
+</td></tr>
+<tr>
+<td>   <pre>
+        &quot;query_id&quot;: {
+            &quot;invalidQuery&quot;: &quot;Query execution was interrupted, maximum statement execution time exceeded.&quot;
+        }
+</pre> </td><td>  Stored queries exceeded the <i>[gb_report_queries]max_execution_time</i> '.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity - <a href="Derived_Fields_odometer.html" title="Derived Fields odometer">Odometer Library</a>
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;date_filter&quot;: {
+            &quot;invalidFormat&quot;: &quot;Invalid date format specified&quot;
+</pre> </td><td>  The date being passed is malformed, use either dd/mm/yyyy or yyyy-mm-dd.<br /> This validation also applies to the field odometer_cutoff_date.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 429 - Too Many Requests
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;title&quot;: &quot;To Many Requests&quot;
+</pre> </td><td>  The rate limit of your system has been exceeded and the response contains the number of seconds you should wait until trying again.<br /> Your rates limit includes all legacy web services and current token-based APIs.<br /> Whitelisted IP Addresses are excluded, the whitelist includes the localhost IP so that internal APIs are excluded from rate limiting counts.<br />
+<p>Catch-e's rate limiting uses the sliding window concept. See the following discussion piece about this: <a href="https://blog.cloudflare.com/counting-things-a-lot-of-different-things/" class='external free' title="https://blog.cloudflare.com/counting-things-a-lot-of-different-things/" rel="nofollow">https://blog.cloudflare.com/counting-things-a-lot-of-different-things/</a>
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 500 - Unexpected error
+</td></tr>
+<tr>
+<td>   <pre>
+{
+    &quot;status&quot;: 500,
+    &quot;title&quot;: &quot;Unexpected error&quot;,
+    &quot;describedBy&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;detail&quot;: &quot;JSON encoding error occurred: Malformed UTF-8 characters, possibly incorrectly encoded&quot;,
+}
+</pre>
+</td><td> If a query has encrypted fields which are not decrypted using aes_decrypt() in JSON response, below error is thrown. Please decrypt the fields in query before adding the query in <i>[gb_report_queries]</i> table.
+</td></tr>
+<tr>
+<td>   <pre>
+{
+    &quot;title&quot;: &quot;Internal Server Error&quot;,
+    &quot;status&quot;: 500,
+    &quot;detail&quot;: &quot;Statement could not be executed 
+(42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds 
+to your MySQL server version for the right syntax to use near ') 
+AS `o` ON o.quote_id = c.quote_id LEFT JOIN( SELECT contract_i' at line 252)&quot;
+}
+</pre>
+</td><td> This API is sensitive to lines that are commented out in the target query. Such a query may run in other environments such as Workbench, but will fail here. Review and remove commented lines from the query. Update the <i>[gb_report_queries]</i> table and re-test the query using the API.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;action=edit&amp;section=18" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20074) Create API called printReportQuery. Live 12/10/2020
+</li><li> (API-20103) Add xls output in API. Live 22/02/2021
+</li><li> (API-20222) Add error validation message to API Print a report query. Live 06/12/2021
+</li><li> (API-20262) Create placeholders to restrict results from printReportQuery API.  Live 09/05/2022
+</li><li> (API-20280) Give printReportQuery additional memory. Live 06/06/2022
+</li><li> (API-20288) Modify printReportQuery to be piped to the client as stream resources. Live 08/05/2023
+</li><li> (API-20452) printReportQuery API - enable odometer library to be invoked. Live 25/09/2023
+</li><li> (API-20505) Duplicate printReportQuery results. Live 06/02/2024
+</li><li> (API-20524) Allow print report query to accept array arguments. Live 18/03/2024
+</li><li> (API-20676) SELECT * (all) query generates linter error in printReportQuery API. Live 05/05/2025
+</li><li> (API-20689) Multiple Bugsnag errors found in printReportQuery API. Live 16/06/2025
+</li><li> (API-20690) printReportQuery API - enable fbt_statutory library to be invoked. Live 07/07/2025
+</li><li> (API-20668) Ensure printQuery and requestGbQueriesTableImport respect the gb_queries.max_execution_time setting. Live 28/07/2025
+</li><li> (API-20717) printReportQuery - add Library vehicle_photos. Live 11/08/2025
+</li><li> (API-20763) printReportQuery Export to XML. Live 22/09/2025
+</li><li> (API-20729) PDO Error on Script Execution: Empty Query Detected. Live 06/10/2025
+</li><li> (API-20759) FMP: printReportQuery API - enable fbt_operating and service libraries to be invoked. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Print_a_report_query.html">https://help.catch-e.net.au/mediawiki/index.php/Print_a_report_query</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Print_a_report_query">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Print_a_report_query.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Print_a_report_query&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.09 secs. -->
+</body></html>

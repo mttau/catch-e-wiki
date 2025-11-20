@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="255 Finance,Administration,Clients:Contact,Clients:Financiers,Contracts:Events,Contracts:Finance,Contracts:Vehicle,Export255FinanceData,FLEET,Main Page,Posting Classes" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>255 Finance - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">255 Finance</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="255_Finance.html#column-one">navigation</a>, <a href="255_Finance.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Suppliers.html" title="Suppliers">Suppliers</a> &rarr; <a href="./Suppliers:Account.html" title="Suppliers:Account">Account</a> &rarr; <strong>255 Finance</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="255_Finance.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="255_Finance.html#Contract_Selection_Criteria"><span class="tocnumber">2</span> <span class="toctext">Contract Selection Criteria</span></a></li>
+<li class='toclevel-1'><a href="255_Finance.html#Set-up_Steps"><span class="tocnumber">3</span> <span class="toctext">Set-up Steps</span></a></li>
+<li class='toclevel-1'><a href="255_Finance.html#XML_details"><span class="tocnumber">4</span> <span class="toctext">XML details</span></a></li>
+<li class='toclevel-1'><a href="255_Finance.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The scheduler job <a href="Export255FinanceData.html" title="Export255FinanceData">export255FinanceData</a> generates contract settlement data for multiple contracts in an xml format. This is transferred by sftp to 255 Finance.<br />
+Contracts are selected into the file based on the criteria below;
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;action=edit&amp;section=2" title="Edit section: Contract Selection Criteria">edit</a>]</div><a name="Contract_Selection_Criteria"></a><h4>Contract Selection Criteria</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<th>#</th><th>Description
+</th></tr>
+<tr>
+<td>1</td><td> The <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> "Supplier" must be populated.
+</td></tr>
+<tr>
+<td>2</td><td> The Contract must be linked to a <a href="./Quotes:Contract.html" title="Quotes:Contract">Quote</a>.
+</td></tr>
+<tr>
+<td>3</td><td> The <a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts / Finance</a> "Financier" must have their <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> "Interface Type" field set to '255Finance'.
+</td></tr>
+<tr>
+<td>4</td><td> A <a href="./Contracts:Events.html" title="Contracts:Events">Contract Event</a> created on the Contract with the "Completed" check box un-checked. The Event "Type" must match the "Event Code" on the <a href="Export255FinanceData.html" title="Export255FinanceData">
+scheduler job</a>. 
+</td></tr>
+<tr>
+<td>5</td><td> The <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> - <a href="./Suppliers:Account.html" title="Suppliers:Account">"Supplier"</a> ABN, BSB Number, Bank Account Number, Address, Area, State / Postcode are all mandatory fields.
+</td></tr>
+<tr>
+<td>6</td><td> If the Quote contains 'Aftermarket' <a href="./Quotes:Contract.html" title="Quotes:Contract">Options</a>, the corresponding <a href="Qt_variant_optional_equipment.html" title="Qt variant optional equipment">Aftermarket</a> - <a href="./Suppliers:Account.html" title="Suppliers:Account">"Supplier"</a> ABN, BSB Number, Bank Account Number, Address, Area, State / Postcode are all mandatory fields.
+</td></tr>
+<tr>
+<td>7</td><td> The <a href="./Clients:Contact.html" title="Clients:Contact">Clients</a> ABN is mandatory.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;action=edit&amp;section=3" title="Edit section: Set-up Steps">edit</a>]</div><a name="Set-up_Steps"></a><h4>Set-up Steps</h4>
+<p>1. For the nominated Financier, set the <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> "Interface Type" field to be '255finance'.<br />
+2. Go to the <a href="Posting_Classes.html" title="Posting Classes">Posting Classes / Details</a> tab and check or create a record for this process. 
+</p>
+<dl><dd><dl><dd> A suggested "Class Code" and "Name" for this record are '255' and '255 Finance Data Complete'. 
+</dd><dd> Make sure "Event Completed" is left un-checked, so that when new events are created, the "Completed" field is also un-checked.
+</dd></dl>
+</dd></dl>
+<p>3. Create an active Scheduler / Job where the "Method" is <a href="Export255FinanceData.html" title="Export255FinanceData">export255FinanceData</a>. 
+</p>
+<dl><dd><dl><dd> Populate "Event Code" with the one created here. 
+</dd><dd> Visit the <a href="Export255FinanceData.html" title="Export255FinanceData">export255FinanceData</a> page for the full set-up details for the job.
+</dd></dl>
+</dd></dl>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;action=edit&amp;section=4" title="Edit section: XML details">edit</a>]</div><a name="XML_details"></a><h4>XML details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>255Finance Reference</th><th>Catch-e Screen</th><th>Catch-e Field Name</th><th>[table]field
+</th></tr>
+<tr>
+<td width="10%" align="left"> &lt;Deals Partner="tba"&gt;	 </td><td width="15%" align="left"> Scheduler parameter	 </td><td width="35%" align="left"> Deals Partner Code	 </td><td width="40%" align="left"> [gb_scheduler_jobs]parameter
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Deal&gt;
+</td></tr>
+<tr>
+<td>&lt;Reference&gt;	 </td><td> 	Contracts Header	 </td><td> 	Contract ID	 </td><td> 	[fm_contracts]contract_id
+</td></tr>
+<tr>
+<td>&lt;BaseRate&gt;	 </td><td> 	Contracts / Contract &amp; <a href="./Clients:Financiers.html" title="Clients:Financiers">Clients / Financier</a>	 </td><td> 	Cost of Funds &amp; <a href="./Clients:Financiers.html" title="Clients:Financiers">Financier Margin</a>	 </td><td> 	[fm_contracts]cost_of_funds less [qt_client_financier_margins]financier_margin
+</td></tr>
+<tr>
+<td>&lt;Margin&gt;	 </td><td> 	<a href="./Clients:Financiers.html" title="Clients:Financiers">Clients / Financier</a>	 </td><td> 	Financier Margin	 </td><td> 	[qt_client_financier_margins]financier_margin
+</td></tr>
+<tr>
+<td>&lt;FinancedAmt&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Amount Financed	 </td><td> 	[fm_contracts]amount_financed
+</td></tr>
+<tr>
+<td>&lt;Brokerage&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Total Brokerage	 </td><td> 	[fm_contracts]total_brokerage
+</td></tr>
+<tr>
+<td>&lt;ResidualValue&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Residual Value	 </td><td> 	[fm_contracts]budget_residual
+</td></tr>
+<tr>
+<td>&lt;ConfidentialRebate&gt;	 </td><td> 	Quotes / Vehicle	 </td><td> 	Confidential Rebate	 </td><td> 	[fm_contracts]rebate_net
+</td></tr>
+<tr>
+<td>&lt;Installment&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Regular Payment	 </td><td> 	[fm_contracts]finance_pmt_regular
+</td></tr>
+<tr>
+<td>&lt;Term&gt;	 </td><td> 	Contracts / Billing	 </td><td> 	Lease Term	 </td><td> 	[fm_contracts]term
+</td></tr>
+<tr>
+<td>&lt;Frequency&gt;	 </td><td> 	Contracts / Billing	 </td><td> 	Periodic Interval	 </td><td> 	[gb_pay_cycles]pay_cycle_code
+</td></tr>
+<tr>
+<td>&lt;InstallmentTiming&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Advance / Arrears	 </td><td> 	[fm_contracts]finance_advance_arrears
+</td></tr>
+<tr>
+<td>&lt;StartDate&gt;	 </td><td> 	Contracts / Events	 </td><td> 	Date	 </td><td> 	[fm_contract_events]event_date
+</td></tr>
+<tr>
+<td>&lt;FirstInstallmentDate&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	Finance Start	 </td><td> 	[fm_contracts]finance_start
+</td></tr>
+<tr>
+<td>&lt;ActualContractStartDate&gt;	 </td><td> 	Contracts / Billing	 </td><td> 	Contract Start	 </td><td> 	[fm_contracts]contract_start
+</td></tr>
+<tr>
+<td>&lt;OriginatingState&gt;	 </td><td> 	Contracts / Contract	 </td><td> 	State	 </td><td> 	[fm_contracts]state
+</td></tr>
+<tr>
+<td>&lt;Product&gt;	 </td><td> 	Contract Type	 </td><td> 	Contract Type	 </td><td> IF(([gb_posting_maps]name LIKE '%hire purchase%' OR [gb_posting_maps]name LIKE '%CHP%'), 'Hire Purchase', IF([gb_posting_maps]posting_map_group&nbsp;!= 'novated', 'Operating Lease', 'Finance Lease'))
+</td></tr>
+<tr>
+<td>&lt;PaymentMethod&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Suppliers&gt;	 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Supplier&gt;			 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>&lt;TotalSupplierPayment&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	On Road Cost less all Aftermarket Option amounts </td><td> 	[fm_contracts]on_road_cost plus (rebate_net + rebate_gst) less all Aftermarket Option amounts
+</td></tr>
+<tr>
+<td>&lt;SupplierCost&gt;	 </td><td> 	Quotes / Vehicle	 </td><td> 	Total On Road Price less all Aftermarket Option amounts	 </td><td> 	[fm_contracts]on_road_price_net + rebate_net - (purchase_stamp_duty + premium_plates_net + reg_initial_net + luxury_car_tax + IF(ctp_initial_gst = 0,ctp_initial_net,0))
+</td></tr>
+<tr>
+<td>&lt;GSTFreeItems&gt;	 </td><td> 	Quotes / Vehicle	 </td><td> 	Luxury Car Tax, Initial Registration, Premium Plate, Purc. Stamt Duty &amp; Initial CTP (if Initial CTP GST&nbsp;!= 0.00)	 </td><td> 	[fm_contracts]purchase_stamp_duty + premium_plates_net + reg_initial_net + luxury_car_tax + IF(ctp_initial_gst = 0,ctp_initial_net,0)
+</td></tr>
+<tr>
+<td>&lt;AssetDescription255&gt;	 </td><td> 		 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;Class&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Classification	 </td><td> 	[fm_contracts]classification
+</td></tr>
+<tr>
+<td>&lt;Segment&gt;	 </td><td> 		 </td><td> 		 </td><td> 	[qt_variants]vfacts_segment
+</td></tr>
+<tr>
+<td>&lt;Manufacturer&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Manufacturer Code	 </td><td> 	[qt_makes]name
+</td></tr>
+<tr>
+<td>&lt;Description&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Description	 </td><td> 	[fm_contracts]description
+</td></tr>
+<tr>
+<td>&lt;CompliancePlate&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Compliance Plate	 </td><td> 	[fm_contracts]compliance_date
+</td></tr>
+<tr>
+<td>&lt;RegoNumber&gt;	 </td><td> 	Contracts / Contract	 </td><td> 	Reg Number	 </td><td> 	[fm_contracts]reg_no
+</td></tr>
+<tr>
+<td>&lt;VIN&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	VIN	 </td><td> 	[fm_contracts]vin
+</td></tr>
+<tr>
+<td>&lt;EngineNo&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Engine No	 </td><td> 	[fm_contracts]engine_number
+</td></tr>
+<tr>
+<td>&lt;PPSRRegistrationNo&gt;	 </td><td> 	Contracts / Finance	 </td><td> 	REVS / PPSR Number	 </td><td> 	[fm_contracts]revs_number
+</td></tr>
+<tr>
+<td>&lt;PPSRTokenNo&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;ABN&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	ABN	 </td><td> 	[fm_suppliers]abn
+</td></tr>
+<tr>
+<td>&lt;Name&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Name	 </td><td> 	[fm_suppliers]name
+</td></tr>
+<tr>
+<td>&lt;TradingAs&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Name	 </td><td> 	[fm_suppliers]name
+</td></tr>
+<tr>
+<td>&lt;Phone&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Phone	 </td><td> 	[fm_suppliers]phone
+</td></tr>
+<tr>
+<td>&lt;Industry&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;InvoiceNo&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Supplier Ref	 </td><td> 	[fm_contracts]supplier_reference
+</td></tr>
+<tr>
+<td>&lt;Bank&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;BSB&gt;	 </td><td> 	Suppliers / Account	 </td><td> 	BSB Number	 </td><td> 	[fm_suppliers]bank_bsb
+</td></tr>
+<tr>
+<td>&lt;AccountNo&gt;	 </td><td> 	Suppliers / Account	 </td><td> 	Bank Account Number	 </td><td> 	[fm_suppliers]bank_account_number
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Address&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>&lt;State&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	State	 </td><td> 	[fm_suppliers]state
+</td></tr>
+<tr>
+<td>&lt;Street&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Address	 </td><td> 	[fm_suppliers]address1
+</td></tr>
+<tr>
+<td>&lt;Postcode&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Post Code	 </td><td> 	[fm_suppliers]postcode
+</td></tr>
+<tr>
+<td>&lt;Suburb&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Area	 </td><td> 	[fm_suppliers]city
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Address&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Supplier&gt;	 	 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Supplier&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>&lt;TotalSupplierPayment&gt;	 </td><td> 	Quotes / Options	 </td><td> 	Discounted Price	 </td><td> 	[fm_contract_optional_equipment]SUM(list_price_net + list_price_gst)
+</td></tr>
+<tr>
+<td>&lt;SupplierCost&gt;	 </td><td> 	Quotes / Options	 </td><td> 	List Price	 </td><td> 	[fm_contract_optional_equipment]list_price_net
+</td></tr>
+<tr>
+<td>&lt;GSTFreeItems&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;AssetDescription255&gt;	 </td><td> 		 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;Class&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Classification	 </td><td> 	[fm_contracts]classification
+</td></tr>
+<tr>
+<td>&lt;Segment&gt;	 </td><td> 		 </td><td> 		 </td><td> 	[qt_variants]vfacts_segment
+</td></tr>
+<tr>
+<td>&lt;Manufacturer&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;Description&gt;	 </td><td> 	Quotes / Options	 </td><td> 	Description	 </td><td> 	[fm_contract_optional_equipment]description
+</td></tr>
+<tr>
+<td>&lt;CompliancePlate&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;RegoNumber&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;VIN&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;EngineNo&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;PPSRRegistrationNo&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;PPSRTokenNo&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;ABN&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	ABN	 </td><td> 	[fm_suppliers]abn
+</td></tr>
+<tr>
+<td>&lt;Name&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Name	 </td><td> 	[fm_suppliers]name
+</td></tr>
+<tr>
+<td>&lt;TradingAs&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Name	 </td><td> 	[fm_suppliers]name
+</td></tr>
+<tr>
+<td>&lt;Phone&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Phone	 </td><td> 	[fm_suppliers]phone
+</td></tr>
+<tr>
+<td>&lt;Industry&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;InvoiceNo&gt;	 </td><td> 	Contracts / Vehicle	 </td><td> 	Supplier Ref	 </td><td> 	[fm_contracts]contract_id
+</td></tr>
+<tr>
+<td>&lt;Bank&gt;	 </td><td> 	Left blank on purpose	 </td><td> 		 </td><td>
+</td></tr>
+<tr>
+<td>&lt;BSB&gt;	 </td><td> 	Suppliers / Account	 </td><td> 	BSB Number	 </td><td> 	[fm_suppliers]bank_bsb
+</td></tr>
+<tr>
+<td>&lt;AccountNo&gt;	 </td><td> 	Suppliers / Account	 </td><td> 	Bank Account Number	 </td><td> 	[fm_suppliers]bank_account_number
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Address&gt;	 	 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>&lt;State&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	State	 </td><td> 	[fm_suppliers]state
+</td></tr>
+<tr>
+<td>&lt;Street&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Address	 </td><td> 	[fm_suppliers]address1
+</td></tr>
+<tr>
+<td>&lt;Postcode&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Post Code	 </td><td> 	[fm_suppliers]postcode
+</td></tr>
+<tr>
+<td>&lt;Suburb&gt;	 </td><td> 	Suppliers / Detail	 </td><td> 	Area	 </td><td> 	[fm_suppliers]city
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Address&gt;			 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Supplier&gt;			 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">Last &lt;Supplier&gt; section repeated for multiple aftermarket suppliers.	</td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Suppliers&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;Customer&gt;			 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>&lt;ABN&gt;	 </td><td> 	Clients / Contact	 </td><td> 	ABN	 </td><td> 	[fm_clients]abn
+</td></tr>
+<tr>
+<td>&lt;Name&gt;	 </td><td> 	Clients / Contact	 </td><td> 	Name	 </td><td> 	[fm_clients]name
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Customer&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Deal&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" style="border-collapse: collapse; width: 100%;" colspan="2">&lt;/Deals&gt;		 </td><td> </td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20696) Create 255 Finance Interface. Live 10/08/2020
+</li><li> (API-20090) 255 Finance remap start date. Live 05/10/2020
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="255_Finance.html">https://help.catch-e.net.au/mediawiki/index.php/255_Finance</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=255_Finance">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/255_Finance.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=255_Finance&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

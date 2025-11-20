@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Contracts:Import,Administration,Contracts,FLEET,Import,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Contracts:Import - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Contracts:Import</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Contracts:Import.html#column-one">navigation</a>, <a href="./Contracts:Import.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <strong>Import</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Contracts:Import.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Import.html#Notes_about_the_csv_file"><span class="tocnumber">2</span> <span class="toctext">Notes about the csv file</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Import.html#Attaching_Files"><span class="tocnumber">3</span> <span class="toctext">Attaching Files</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Import.html#Import_Process"><span class="tocnumber">4</span> <span class="toctext">Import Process</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Import.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Use the <a href="Import.html" title="Import">Import</a> feature if you want to set-up and configure contracts and their budgets off-line. I.e. bypass the quote/accept process where budgets are normally built.<br />
+</p><p>A contract may be updated by importing a compatible .csv file. <a href="https://help.catch-e.net.au/clients/help/wiki/images/d/dd/Contract_Import_Sample.csv" class='internal' title="Contract Import Sample.csv">Sample CSV File</a><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;action=edit&amp;section=2" title="Edit section: Notes about the csv file">edit</a>]</div><a name="Notes_about_the_csv_file"></a><h4>Notes about the csv file</h4>
+<ul><li> The file header names are specific to this routine and should not be changed.
+</li><li> Date fields must be formatted as follows YYYY-MM-DD or DD/MM/YYYY.
+</li><li> Numeric fields cannot be greater than 2 decimal points e.g.: 56.325 will fail, 56.33 will import successfully.
+</li><li> Zero values can be entered as '0'.
+</li><li> "fm_con_fuel_consumption_lower_limit" cannot exceed "fm_con_fuel_consumption_upper_limit"
+</li><li> The repeating columns, "fm_conb_posting_class_code" and "fm_conb_amount_net" can be inserted or deleted as required. They should reflect the budgets used in the contract.
+</li><li> Only one Redbook or Glasses code can imported at a time.  If both fields are populated, the import will fail.
+</li></ul>
+<p>Contact Catch-e to get detailed support for this feature.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;action=edit&amp;section=3" title="Edit section: Attaching Files">edit</a>]</div><a name="Attaching_Files"></a><h4>Attaching Files</h4>
+<p>This screen will only accept one file at a time for this process.<br />
+Click on <a href="Import.html" title="Import">Import</a> to get more details about how to import a file
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;action=edit&amp;section=4" title="Edit section: Import Process">edit</a>]</div><a name="Import_Process"></a><h4>Import Process</h4>
+<ol><li> When your csv file is ready, go to the relevant contract record in the Contracts screen
+</li><li> Click on the <a href="Import.html" title="Import">Import</a> button
+</li><li> Browse to find the relevant file (the naming is not important)
+</li><li> <b>Upload</b> - the system will check that the contract id in the import file is the same as the system contract id. The system will display a screen of proposed changes which the user can accept or cancel. Registration changes are included in the import function and create the appropriate RC contract event when importing.
+</li><li> If there are validation errors, close down the page and fix the errors. Once the validations have all passed "Save"<br /><br />
+</li></ol>
+<p><a href="./Image:Fleet_Admin_Contracts_Import.gif.html" class="image" title="Image:Fleet_Admin_Contracts_Import.gif"><img src="../../clients/help/wiki/images/e/e7/Fleet_Admin_Contracts_Import.gif" alt="Image:Fleet_Admin_Contracts_Import.gif" width="1047" height="719" longdesc="/mediawiki/index.php/Image:Fleet_Admin_Contracts_Import.gif" /></a>
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20456) Contract Import additional fields. 19/11/2018
+</li><li> (DEV-20946) Attachment Drag and Drop function. Live 06/04/2020
+</li><li> (DEV-21781) Update Upper &amp; Lower Fuel Consumption Limits in fm_contracts. Live 05/12/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Contracts:Import.html">https://help.catch-e.net.au/mediawiki/index.php/Contracts:Import</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Contracts:Import">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Contracts:Import.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Import&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

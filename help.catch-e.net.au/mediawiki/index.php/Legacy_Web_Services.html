@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Legacy Web Services,APIs,Account Manager,Consume Web Service Rest,CopyQuote,CreateQuoteWebService,Gb::Attachments::deleteAttachment(),Gb::Attachments::loadAttachment(),Gb::Attachments::saveAttachment(),Gb::Drivers::signon(),Gb::Record::readRecord()" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Legacy Web Services - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Legacy Web Services</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Legacy_Web_Services.html#column-one">navigation</a>, <a href="Legacy_Web_Services.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; IT Set-up  &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> | <a href="APIs.html" title="APIs">APIs</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Legacy_Web_Services.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Legacy_Web_Services.html#Password_Authenticated"><span class="tocnumber">2</span> <span class="toctext">Password Authenticated</span></a>
+<ul>
+<li class='toclevel-2'><a href="Legacy_Web_Services.html#General_Ledger_.28gl.29"><span class="tocnumber">2.1</span> <span class="toctext">General Ledger (gl)</span></a></li>
+<li class='toclevel-2'><a href="Legacy_Web_Services.html#Global_.28gb.29"><span class="tocnumber">2.2</span> <span class="toctext">Global (gb)</span></a></li>
+<li class='toclevel-2'><a href="Legacy_Web_Services.html#Fleet_Management_.28fm.29"><span class="tocnumber">2.3</span> <span class="toctext">Fleet Management (fm)</span></a></li>
+<li class='toclevel-2'><a href="Legacy_Web_Services.html#Quick_Quotes_.28qq.29"><span class="tocnumber">2.4</span> <span class="toctext">Quick Quotes (qq)</span></a></li>
+<li class='toclevel-2'><a href="Legacy_Web_Services.html#Quotes_.28qt.29"><span class="tocnumber">2.5</span> <span class="toctext">Quotes (qt)</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Legacy_Web_Services.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h2>Overview</h2>
+<p>This page documents our legacy web services that are <a href="Consume_Web_Service_Rest.html" title="Consume Web Service Rest">password</a> based.<br /> Visit the <a href="APIs.html" title="APIs">APIs</a> page for details about our current token based APIs.<br /><br /> Legacy Web Services are being progressively deprecated and the planned end date is 31/12/2024.<br /> Access is managed by Catch-e staff using the control <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">'web_services_access_flag'</a>.<br />
+When these services have been deprecated, your HTML quote will need an update to continue work.<br /> Visit the <a href="Quote_Template_Setup.html#Update_existing_quotes_to_work_without_Legacy_Web_Services" title="Quote Template Setup">Quote Template Setup</a> page for the update details.<br />
+<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 12%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> <br />Our <a href="Consume_Web_Service_Rest.html" title="Consume Web Service Rest">password</a> based legacy web services are <u>no longer supported</u> by Catch-e.<br /> You <u>must</u> use the token based <a href="APIs.html" title="APIs">APIs</a> instead.<br /> New use of legacy web services is <u>not authorised</u> by Catch-e.<br />
+<p>If you have any APIs you want to use that are not available in the token based suite of <a href="APIs.html" title="APIs">APIs</a> contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> to discuss.
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=2" title="Edit section: Password Authenticated">edit</a>]</div><a name="Password_Authenticated"></a><h2>Password Authenticated</h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=3" title="Edit section: General Ledger (gl)">edit</a>]</div><a name="General_Ledger_.28gl.29"></a><h3> General Ledger (gl) </h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: system</b><br />The 'system' family of web services provides administrative calls for maintenance of the general ledger sub-system.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> reserveBatchNos() </td><td> reserveBatchNos() has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="ReserveBatchNosWebService.html" title="ReserveBatchNosWebService">ReserveBatchNosWebService</a> instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> reserveInvoiceNos() </td><td> reserveInvoiceNos() has been deprecated and is no longer supported by Catch-e. It is not being replaced with a Token API.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> reservePaymentNos() </td><td> reservePaymentNos() has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the <a href="ReservePaymentNosWebService.html" title="ReservePaymentNosWebService">ReservePaymentNosWebService</a> API instead.
+</td></tr></table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=4" title="Edit section: Global (gb)">edit</a>]</div><a name="Global_.28gb.29"></a><h3> Global (gb)</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: queries</b><br />The 'queries' family of web services provides access to the entire database within Catch-e via pre-defined queries stored in the <i>gb_queries</i> table.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> executeScript </td><td> executeScript has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the  [<a href="https://api.test.catch-e.com/docs/#/Queries/executeScript" class='external text' title="https://api.test.catch-e.com/docs/#/Queries/executeScript" rel="nofollow">executeScript</a>] API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="./Web_service_Gb::Queries::exportQuery().html" title="Web service Gb::Queries::exportQuery()">exportQuery()</a> </td><td> Executes a SELECT type query, stored in <i>gb_queries</i>, returning the output directly in an XML format.  This service is typically used by external systems as an export interface.
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> query() </td><td> <a href="./Web_service_Gb::Queries::query().html" title="Web service Gb::Queries::query()">query()</a>  has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the  <a href="Print_a_report_query.html" title="Print a report query">Print a report query</a> API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: record</b><br />The 'record' family of web services provides access to the database for CRUD operations.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> upsert() </td><td> <a href="./Gb::Record::upsert().html" title="Gb::Record::upsert()">upsert()</a> has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the <a href="Insert_or_update_a_record_with_auditing.html" title="Insert or update a record with auditing">Insert or update a record with auditing</a> API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Gb::Record::readRecord().html" title="Gb::Record::readRecord()">readRecord()</a> </td><td> This web service is in the process of being deprecated and is no longer supported by Catch-e. Allows you to read values for a single record
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> lockRecord() </td><td> lockRecord() has been deprecated and is no longer supported by Catch-e. It is not being replaced with a token API.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> unlockRecord() </td><td> unlockRecord() has been deprecated and is no longer supported by Catch-e. It is not being replaced with a token API.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> deleteLock() </td><td> deleteLock() has been deprecated and is no longer supported by Catch-e. <br /> You <u>must</u> use the [<a href="https://api.test.catch-e.com/docs/#/Other/deleteLocks" class='external text' title="https://api.test.catch-e.com/docs/#/Other/deleteLocks" rel="nofollow">deleteLocks</a>] API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: attachments</b><br />The 'attachments' family of web services provides attachment handling operations.
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> The 'attachments' family of web services has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Attachments" title="APIs">Attachments</a> to develop attachment API functions.
+</td></tr></table>
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Gb::Attachments::saveAttachment().html" title="Gb::Attachments::saveAttachment()">saveAttachment()</a> </td><td> Allows you to save an attachment via a web service rather than using the regular web-based attachment upload function.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Gb::Attachments::loadAttachment().html" title="Gb::Attachments::loadAttachment()">loadAttachment()</a> </td><td> Allows you to load attachment source details via a web service.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Gb::Attachments::deleteAttachment().html" title="Gb::Attachments::deleteAttachment()">deleteAttachment()</a> </td><td> Allows you to delete an attachment via a web service.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: system</b><br />The 'system' family of web services provides system access operations.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td style="width: 20%"> <a href="./Gb::System::getToken().html" title="Gb::System::getToken()">getToken()</a> </td><td> Allows you to access a web service via a token rather than using a login and password.  This allows you to securely to call a web service directly from your web page.
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="./Gb::System::useToken().html" title="Gb::System::useToken()">useToken()</a> </td><td> Consume a web service using a token issued by getToken().
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> signon() </td><td> <a href="./Gb::System::signon().html" title="Gb::System::signon()">signon()</a> has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the <a href="Generate_a_signon_token.html" title="Generate a signon token">Generate a signon token</a> API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> reserveMailBatchNos() </td><td> reserveMailBatchNos() has been deprecated and can no longer be run.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> reserveInterfaceBatchNos() </td><td> reserveInterfaceBatchNos() has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the <a href="ReserveInterfaceBatchNosWebService.html" title="ReserveInterfaceBatchNosWebService">ReserveInterfaceBatchNosWebService</a> API instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: system_maintenance</b><br />The 'system_maintenance' family of web services provides access to maintenance processes at the system level.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td style="width: 20%"> <a href="./Gb::system_maintenance::rebuildCostCentreAllocations().html" title="Gb::system maintenance::rebuildCostCentreAllocations()">rebuildCostCentreAllocations()</a> </td><td> Allows you to rebuild the fm_contract_cost_centre_allocations table.  This can be useful after you have imported some 'CC' type contract events, and want to run certain reports straight away, e.g. the Accidents report.  The scheduler typically runs this at 10pm daily.
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="./Gb::system_maintenance::rebuildDivisionAllocations().html" title="Gb::system maintenance::rebuildDivisionAllocations()">rebuildDivisionAllocations()</a> </td><td> Allows you to rebuild the fm_contract_division_allocations table.  This can be useful after you have imported some 'DIV' type contract events, and want to run certain reports straight away, e.g. the Accidents report.  The scheduler typically runs this at 10pm daily.
+</td></tr>
+<tr>
+<td style="width: 20%"> <a href="./Gb::system_maintenance::rebuildDriverAllocations().html" title="Gb::system maintenance::rebuildDriverAllocations()">rebuildDriverAllocations()</a> </td><td> Allows you to rebuild the fm_contract_driver_allocations table.  This can be useful after you have imported some 'DRIVER' type contract events, and want to run certain reports straight away, e.g. the Accidents report.  The scheduler typically runs this at 10pm daily.
+</td></tr></table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=5" title="Edit section: Fleet Management (fm)">edit</a>]</div><a name="Fleet_Management_.28fm.29"></a><h3> Fleet Management (fm)</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: drivers</b><br />The 'drivers' web service provides support for single signon entry for external users, typically with a 'driver' role.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td style="width: 10%"> <a href="./Gb::Drivers::signon().html" title="Gb::Drivers::signon()">signon()</a> </td><td> Issues a single signon session id that can by-pass the login screen once only.  This service is normally used from a secure web page, e.g. from an intranet page that itself is password protected, so the user doesn't have to log into both systems.
+</td></tr></table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=6" title="Edit section: Quick Quotes (qq)">edit</a>]</div><a name="Quick_Quotes_.28qq.29"></a><h3> Quick Quotes (qq)</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: vehicle_lookup</b><br />The 'vehicle_lookup' family of web services provides access to the vehicle database within Catch-e. These services are useful for e.g. populating list boxes for vehicle selection in an external Calculator.
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> The <b>vehicle_lookup</b> family has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="Quotes_/_Variants.html" title="Quotes / Variants">Quotes / Variants</a> APIs instead.
+</td></tr></table>
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Qq::Vehicle_lookup::getMakes().html" title="Qq::Vehicle lookup::getMakes()">getMakes()</a> </td><td> Get a list of vehicle makes as make_id / name pairs. Suitable for use in a list box.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getModels().html" title="Qq::Vehicle lookup::getModels()">getModels()</a> </td><td> Get a list of models for a given vehicle make as model_id / name pairs.  Suitable for use in a list box.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getModelYears().html" title="Qq::Vehicle lookup::getModelYears()">getModelYears()</a> </td><td> Get a list of model years for a given vehicle model.  Suitable for use in a list box, using as both the option and value properties.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getBodyTypes().html" title="Qq::Vehicle lookup::getBodyTypes()">getBodyTypes()</a> </td><td> Get a list of body_type_id / body_type pairs for a given vehicle model and model year.  Suitable for use in a list box.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getVariants().html" title="Qq::Vehicle lookup::getVariants()">getVariants()</a> </td><td> Get a list of variant_id / description pairs for a given vehicle model, model year, and body type. Suitable for use in a list box.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getVariant().html" title="Qq::Vehicle lookup::getVariant()">getVariant()</a> </td><td> Get field values for a given vehicle variant returning individually requested fields or all fields if none are requested. These values can be used with other services in the lease web services family, e.g. getQuote.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getVariantPhotos().html" title="Qq::Vehicle lookup::getVariantPhotos()">getVariantPhotos()</a> </td><td> Get list of photo codes and corresponding types for a given vehicle variant.  Photo codes are provided by the vehicle data supplier, and are typically used as the file name for each image. Types describe the orientation of the photo e.g. 'front'.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getOptionalEquipment().html" title="Qq::Vehicle lookup::getOptionalEquipment()">getOptionalEquipment()</a> </td><td> Get list of optional equipment and price for a given vehicle variant. The value returned is in a Description and List Price (Gross) pair identified by a unique id.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td> <a href="./Qq::Vehicle_lookup::getStandardEquipment().html" title="Qq::Vehicle lookup::getStandardEquipment()">getStandardEquipment()</a> </td><td> Get list of standard equipment for a given vehicle variant. The value returned is the Description identified by a unique id.
+</td></tr></table>
+</td></tr>
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: lease</b><br />The 'lease' family of web services provides access to the novated lease calculation engine in the Catch-e Quotes module.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> getQuote() </td><td> <a href="./Qq::Lease::getQuote().html" title="Qq::Lease::getQuote()">getQuote()</a> has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="GetQuickQuoteWebService.html" title="GetQuickQuoteWebService">getQuickQuoteWebService</a> instead.
+</td></tr></table>
+</td></tr>
+</table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=7" title="Edit section: Quotes (qt)">edit</a>]</div><a name="Quotes_.28qt.29"></a><h3> Quotes (qt)</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: <a href="Salesforce.html" title="Salesforce">salesforce</a></b><br />The 'salesforce' family of web services provides access to sales related functionality within Catch-e. eg. generating quotes, creating drivers, printing quote PDF's.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> createQuote() </td><td> <a href="./Qt::Salesforce::createQuote().html" title="Qt::Salesforce::createQuote()">createQuote()</a> has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use the <a href="CreateQuoteWebService.html" title="CreateQuoteWebService">createQuoteWebService</a> API instead.
+</td></tr></table>
+</td></tr>
+</table>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="background:#FFFF99" colspan="2" width="100%"> <b>Class: quotes</b><br />The 'quotes' family of web services provides access to quote related functionality from Catch-e.
+</td></tr>
+<tr>
+<th> Method: </th><th> Synopsis
+</th></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"><a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a>  copyQuote()</td><td> copyQuote() has been deprecated and can no longer be run.<br /> Use the <a href="CopyQuote.html" title="CopyQuote">copyQuote</a> API instead.
+</td></tr></table>
+</td></tr>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> getQuote() </td><td> <a href="./Qt::Quotes::getQuote().html" title="Qt::Quotes::getQuote()">getQuote()</a> is no longer supported by Catch-e.<br /> You <b><u>must</u></b> use the <a href="GetQuoteFieldsWebService.html" title="GetQuoteFieldsWebService">getQuoteFieldsWebService</a> or <a href="Render_Quote_PDF.html" title="Render Quote PDF">Render Quote PDF</a> API instead.
+</td></tr></table>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Qt::Quotes::getDealerOrder().html" title="Qt::Quotes::getDealerOrder()">getDealerOrder()</a> </td><td> This web service is in the process of being deprecated and is no longer supported by Catch-e. Generates dealer order (default format is Excel) based on an existing Catch-e quote.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> getAftermarketOrder() </td><td> getAftermarketOrder() has been deprecated and can no longer be run.
+</td></tr></table>
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a>  recalculateQuote() </td><td> <a href="./Qt::Quotes::recalculateQuote().html" title="Qt::Quotes::recalculateQuote()">recalculateQuote()</a> has been deprecated and is no longer supported by Catch-e.<br /> Use the <a href="PatchQuote.html" title="PatchQuote">patchQuote</a> API instead.
+</td></tr>
+<tr>
+<td colspan="2" width="100%">
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 20%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> updateQuotePricing() </td><td> <a href="./Qt::Quotes::updateQuotePricing().html" title="Qt::Quotes::updateQuotePricing()">updateQuotePricing()</a> is no longer supported by Catch-e.<br /> You <b><u>must</u></b> use the <a href="PatchQuote.html" title="PatchQuote">patchQuote</a> API instead.
+</td></tr></table>
+</td></tr></table>
+<p><br />
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h2>System Notes</h2>
+<p><small>
+</p>
+<ul><li> 14333: Copy Quote Web Service. Live 20/09/2016
+</li><li> 14438: Make createQuote() web service available to all clients. Live 14/11/2016
+</li><li> 13281: T53 Log all authentication attempts, especially failures. Live 14/03/2017
+</li><li> (DEV-21304) Fix security vulnerability in legacy web services by improving input filtering. Live 29/12/2020
+</li><li> (DEV-21337) Fix security vulnerability in ALL legacy web services by improving input filtering. Live 07/04/2021
+</li><li> (DEV-21403) Fix security vulnerability in ALL legacy web services by improving input filtering. Live 17/05/2021
+</li><li> (DEV-21754) getQuote web service is not channel aware. Live 17/10/2022
+</li><li> (API-20416) API copyQuote - replace legacy copyQuote. Live 24/06/2023
+</li><li> (DEV-21917) Deprecate legacy web service updateQuotePricing. Live 21/08/2023
+</li><li> (DEV-21921) Enable legacy web services to be disabled. Live 25/03/2024
+</li><li> (DEV-22049) Scheduler locked for multiple clients. Live 08/04/2024
+</li><li> (API-20651) API reserveInterfaceBatchNos - wrapper for legacy reserveInterfaceBatchNos(). Live dd/02/2025
+</li><li> (API-20650) API reservePaymentNos - wrapper for legacy reservePaymentNos(). Live dd/02/2025
+</li><li> (DEV-22217) Deprecate usage of legacy copyQuote web service. Live 17/02/2025
+</li><li> (DEV-22218) Deprecate usage of legacy getAftermarketOrder web service. Live 17/02/2025
+</li><li> (DEV-22219) Deprecate usage of legacy reserveMailBatchNos web service. Live 17/02/2025
+</li></ul>
+<p></small>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div class="printfooter">
+Retrieved from "<a href="Legacy_Web_Services.html">https://help.catch-e.net.au/mediawiki/index.php/Legacy_Web_Services</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Legacy_Web_Services">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Legacy_Web_Services.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Legacy_Web_Services&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.23 secs. -->
+</body></html>

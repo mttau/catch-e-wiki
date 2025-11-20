@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Qt::Quotes::getQuote(),Eric Interface,GetQuoteFieldsWebService,Global Controls,Main Page,Quote Form,Quote Template Placeholders,Render Quote PDF,Web Services" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Qt::Quotes::getQuote() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Qt::Quotes::getQuote()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Qt::Quotes::getQuote().html#column-one">navigation</a>, <a href="./Qt::Quotes::getQuote().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <b>getQuote()</b> &rarr; <a href="Quote_Template_Placeholders.html" title="Quote Template Placeholders">Quote Template Placeholders</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#Input_Fields"><span class="tocnumber">2</span> <span class="toctext">Input Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qt::Quotes::getQuote().html#Input_URL_Examples.3D"><span class="tocnumber">2.1</span> <span class="toctext">Input URL Examples=</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#Output_Fields"><span class="tocnumber">3</span> <span class="toctext">Output Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qt::Quotes::getQuote().html#Output_Example_.5Boutput_mode_.3D_.27fields.27.5D"><span class="tocnumber">3.1</span> <span class="toctext">Output Example [output_mode = 'fields']</span></a></li>
+<li class='toclevel-2'><a href="./Qt::Quotes::getQuote().html#Output_Example_.5Boutput_mode_.3D_.27PDF.27.5D"><span class="tocnumber">3.2</span> <span class="toctext">Output Example [output_mode = 'PDF']</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#Error_Codes"><span class="tocnumber">4</span> <span class="toctext">Error Codes</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qt::Quotes::getQuote().html#Error_Output_Example"><span class="tocnumber">4.1</span> <span class="toctext">Error Output Example</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#Field_Names"><span class="tocnumber">5</span> <span class="toctext">Field Names</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Quotes::getQuote().html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This service returns <a href="Quote_Template_Placeholders.html" title="Quote Template Placeholders">quote template placeholders</a> or a <a href="Quote_Form.html" title="Quote Form">quote PDF</a>.<br /> The default return value is the binary quote document. This can be written to a file and opened using a PDF viewer.<br /> Alternatively the return value can be changed to a list of field value pairs in XML format.<br />
+</p><p>The <a href="https://help.catch-e.net.au/clients/help/wiki/images/6/65/GetQuote.xlsx" class='internal' title="GetQuote.xlsx">getQuote spreadsheet</a> contains a list of the placeholders that are available if you are using the recommended 'quote' library.<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td style="width: 5%"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> <strong>getQuote()</strong> is no longer supported by Catch-e.<br /> You <b><u>must</u></b> use the <a href="GetQuoteFieldsWebService.html" title="GetQuoteFieldsWebService">getQuoteFieldsWebService</a> or <a href="Render_Quote_PDF.html" title="Render Quote PDF">Render Quote PDF</a> API instead.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=2" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h4>Input Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Query string key </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> quote_id </td><td style="width: 9%"> <div class="center">int</center> </td><td style="width: 65%"> Catch-e quote id </td><td style="width: 8%"> <center>yes</div>
+</td></tr>
+<tr>
+<td> 2 </td><td> output_mode </td><td> <div class="center">string</center> </td><td> The type of content to return to the caller. 'PDF' or 'fields', default is 'PDF'.</td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 3 </td><td> return_[field_name]* </td><td> <div class="center">mixed</center> </td><td> [output_mode = '<b>fields</b>'] As many of the Field Name(s) as required prefixed with 'return_'.  If no fields are requested then all fields are returned.  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 4 </td><td> encode </td><td> <div class="center">string</center> </td><td> [output_mode = '<b>PDF</b>'] Format to encode return data. base64 is the only alternate supported encoding format. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 5 </td><td> http_header_content_type </td><td> <div class="center">string</center> </td><td> [output_mode = '<b>PDF</b>'] Send an HTTP header for 'Content-type:' e.g. application/pdf.  Used when outputting direct to the browser. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 6 </td><td> http_header_content_disposition </td><td> <div class="center">string</center> </td><td> [output_mode = '<b>PDF</b>'] Send an HTTP header for Content-Disposition:' e.g. attachment;filename="test.pdf".  Used when outputting direct to the browser. </td><td> <center>no</div>
+</td></tr></table>
+<p>* Contact Catch-e if you need help matching the returned values to the values on Quote PDF
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=3" title="Edit section: Input URL Examples=">edit</a>]</div><a name="Input_URL_Examples.3D"></a><h5>Input URL Examples=</h5>
+<pre>
+All fields:
+
+https://yourname.catch-e.net.au/services/qt/quotes/getQuote?quote_id=100000&amp;output_mode=fields 
+
+Example returning selected fields only:
+
+https://yourname.test.catch-e.net.au/services/qt/quotes/getQuote?quote_id=100000&amp;output_mode=fields&amp;return_packageing_benefit 
+
+Example returning PDF binary data:
+
+https://yourname.catch-e.net.au/services/qt/quotes/getQuote?quote_id=100000&amp;output_mode=PDF
+
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=4" title="Edit section: Output Fields">edit</a>]</div><a name="Output_Fields"></a><h4>Output Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> XML element </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> *n/a </td><td style="width: 9%"> <div class="center">binary</center> </td><td style="width: 65%"> binary content of the PDF </td><td style="width: 8%"> <center>no</div>
+</td></tr>
+<tr>
+<td style="width: 3%"> 2 </td><td style="width: 15%"> quote </td><td style="width: 9%"> <div class="center">string</center> </td><td style="width: 65%"> XML field / value pairs from the target quote </td><td style="width: 8%"> <center>no</div>
+</td></tr></table>
+<p>* Binary data is returned, see output example below
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=5" title="Edit section: Output Example [output_mode = 'fields']">edit</a>]</div><a name="Output_Example_.5Boutput_mode_.3D_.27fields.27.5D"></a><h5>Output Example [output_mode = 'fields']</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;quote&gt;
+</dd></dl>
+<dl><dd><dl><dd>&lt;packageing_benefit&gt;4000&lt;/packageing_benefit&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd>&lt;/quote&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=6" title="Edit section: Output Example [output_mode = 'PDF']">edit</a>]</div><a name="Output_Example_.5Boutput_mode_.3D_.27PDF.27.5D"></a><h5>Output Example [output_mode = 'PDF']</h5>
+<p>%PDF-1.3<br />
+3 0 obj<br />
+&lt;&lt;/Filter /FlateDecode /Length 4481&gt;&gt;<br />
+stream<br />
+….............<br />
+&lt;&lt;<br />
+/Size 14<br />
+/Root 13 0 R<br />
+/Info 12 0 R<br />
+&gt;&gt;<br />
+startxref<br />
+73516<br />
+%%EOF<br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=7" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h4>Error Codes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_MISSING_FIELD_QUOTE_ID </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_BLANK_QUOTE_ID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_UNKNOWN_QUOTE_ID </td><td> Input field invalid record not found
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_SYSTEM_ERROR </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 5 </td><td> CATCH_E_ERROR_UNKNOWN_OUTPUT_MODE </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 6 </td><td> CATCH_E_ERROR_PRINT_TEMPLATE_NOT_FOUND </td><td> Quote template not found
+</td></tr>
+<tr>
+<td> 7 </td><td> CATCH_E_ERROR_ACCOUNT_MANAGER_EMPTY </td><td> Quote Client A/C Manager field invalid
+</td></tr>
+<tr>
+<td> 8 </td><td> CATCH_E_ERROR_TOO_MANY_REQUESTS </td><td> Rest call requests exceeded the limit set in <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]rest_rate_limit</i></a>.
+</td></tr>
+<tr>
+<td> 9 </td><td> CATCH_E_ERROR_ERIC_QUOTE_EXPIRED </td><td> An <a href="Eric_Interface.html#Printing_a_Quote_Template_with_a_failed_validation" title="Eric Interface">Eric Interface</a> quote is either expired or did not complete successfully.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=8" title="Edit section: Error Output Example">edit</a>]</div><a name="Error_Output_Example"></a><h5>Error Output Example</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_MISSING_FIELD_QUOTE_ID&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=9" title="Edit section: Field Names">edit</a>]</div><a name="Field_Names"></a><h4>Field Names</h4>
+<p>Binary quote data is returned.
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7221: Catch-e web services getQuote reading quote data. Live 29/04/2013
+</li><li> 7140: Quote PDF Form replaced by API. Live 03/06/2013
+</li><li> 8048: Add FBT Method to getQuote webservice. Live 14/08/2013
+</li><li> 8545: Luxury Charge Calculation HTML Quote Library. Live 28/10/2013
+</li><li> 8626: Quote Template - Placeholders. Live 04/11/2013
+</li><li> 8808: qt getQuote() web service not channel aware. Live 04/11/2013
+</li><li> 8955: Quote Module Add placeholders to quote library. Live 13/12/2013
+</li><li> 9629: Deal Type - New Placeholder required. Live 08/05/2014
+</li><li> 9866: Quote Created by placeholder required. Live 20/06/2014
+</li><li> 10669: Setup quote PDF Form. Live 19/01/2015
+</li><li> 12098: Setup quote PDF Forms - Novated Lease. Live 02/05/2016
+</li><li> 15949: pdf_report report template is missing: ../core/fleet/administration/quotes/templates/pdf_.phpo. Live 19/05/2017
+</li><li> (DEV-20484) webservices - issue retrieving quote. Live 07/11/2018
+</li><li> (DEV-20460) Add rate limiting to Catch-e web-services. Live 13/01/2020
+</li><li> (DEV-21062) getQuote breaks if output_mode=pdf and html quote uses .zip template. Live 18/05/2020
+</li><li> (DEV-21056) Eric Insurance API Interface 2020. Live 27/07/2020
+</li><li> (DEV-21225) New getQuote() placeholders. Live 05/10/2020
+</li><li> (DEV-21582) Add driver_id to response for (QT) getQuote() web service. Live 10/01/2022
+</li><li> (DEV-21591) Add parent_quote_id to response for (QT) getQuote() web service. Live dd/02/2022
+</li><li> (DEV-21754) getQuote web service is not channel aware. Live 17/10/2022
+</li><li> (DEV-21764) Quote Email does not round package_net_salary_per_pay_cycle. Live 20/10/2022
+</li><li> (DEV-22280) patchQuote - Maintenance Bug &amp; (qt)getQuote Paycycle Bug. Live 26/05/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Qt::Quotes::getQuote().html">https://help.catch-e.net.au/mediawiki/index.php/Qt::Quotes::getQuote%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Qt::Quotes::getQuote()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Qt::Quotes::getQuote().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Quotes::getQuote%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.06 secs. -->
+</body></html>

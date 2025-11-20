@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Contracts:Payout,Contracts:Payout,Administration,Attach,Attachments,Catch-e support,Contracts,Contracts:Finance,Contracts:Header,Contracts:Payout Email Placeholders,Contracts:Payout Set Up" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Contracts:Payout - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Contracts:Payout</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Contracts:Payout.html#column-one">navigation</a>, <a href="./Contracts:Payout.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <strong>Payout</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="./Contracts:Payout_Set_Up.html" title="Contracts:Payout Set Up">Payout Set Up</a> | <a href="./Contracts:Payout_Email_Placeholders.html" title="Contracts:Payout Email Placeholders">Payout Email Placeholders</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Header_Fields"><span class="tocnumber">1</span> <span class="toctext">Header Fields</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Header_Buttons"><span class="tocnumber">2</span> <span class="toctext">Header Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Overview"><span class="tocnumber">3</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Contracts:Payout.html#Role_Access"><span class="tocnumber">3.1</span> <span class="toctext">Role Access</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Field_Descriptions"><span class="tocnumber">4</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Status_Workflow"><span class="tocnumber">5</span> <span class="toctext">Status Workflow</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Action_buttons"><span class="tocnumber">6</span> <span class="toctext">Action buttons</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Output_Options"><span class="tocnumber">7</span> <span class="toctext">Output Options</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#Validations_and_Alerts"><span class="tocnumber">8</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Payout.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=1" title="Edit section: Header Fields">edit</a>]</div><a name="Header_Fields"></a><h4><a href="./Contracts:Header.html#Field_Descriptions" title="Contracts:Header">Header Fields</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=2" title="Edit section: Header Buttons">edit</a>]</div><a name="Header_Buttons"></a><h4><a href="./Contracts:Header.html#Buttons" title="Contracts:Header">Header Buttons</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=3" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The Payout tab is designed to enable users to:
+<br />
+</p>
+<ul><li> Create payout request records which can have a calculated payout value (open the <a href="https://help.catch-e.net.au/clients/help/wiki/images/a/a7/Payout.xlsx" class='internal' title="Payout.xlsx">Payout Calculation spreadsheet</a> for details of the calculation). 
+</li><li> Enable an event to be created when a payout record has been created
+</li><li> Enable emails to be sent that support the payout process
+</li><li> Record various types of payout amounts: a financiers payout, price to purchase the car, early term the car or record a total loss amount.
+</li></ul>
+<ul><li> Visit <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> <a href="./Contracts:Payout_Set_Up.html" title="Contracts:Payout Set Up">Payout Set up</a> for details of how to set this feature up.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=4" title="Edit section: Role Access">edit</a>]</div><a name="Role_Access"></a><h5>Role Access</h5>
+<p>The following roles have been configured to provide payout information and have <a href="./Contracts:Payout.html#Role_Access" title="Contracts:Payout">full access</a> to this screen: 
+Admin, Accounts, Disposals, Senior Manager and Manager.<br />
+</p><p>All other roles are been configured to request payout information. 
+The following fields are hidden from these users and they have a limited ability to update record statuses:
+</p>
+<ul><li> Remaining
+</li><li> Calculated Value
+</li><li> Financier Value
+</li><li> Valid until
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=5" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Screen Name</th><th>Type</th><th>Description</th><th>[table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Payout Header
+</td></tr>
+<tr>
+<td><a href="./Image:Audit.gif.html" class="image" title="Image:Audit.gif"><img src="../../clients/help/wiki/images/d/d7/Audit.gif" alt="Image:Audit.gif" width="13" height="14" longdesc="/mediawiki/index.php/Image:Audit.gif" /></a></td><td>Icon</td><td><a href="Field_Auditing.html" title="Field Auditing">View Edit History</a> is a pop-up screen that lists all the field changes in the selected record. You must select a particular record to view by checking on the #.</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Payout Fields
+</td></tr>
+<tr>
+<td> # </td><td>Check Box </td><td>Check this on to identify the record for printing,editing, deleting or when opening the <a href="Field_Auditing.html" title="Field Auditing">View Edit History</a> screen.</td><td>
+</td></tr>
+<tr>
+<td>Date</td><td> Date </td><td>When a new record is created, the creation date of the record is recorded. If you want to do anther payout, a new record is required. This is a read only field.</td><td>[fm_contract_payouts]created
+</td></tr>
+<tr>
+<td>Payout Date </td><td> Date </td><td>Enter the payout date that's required for the record, i.e. the date the client expects to make the payment. A check is done to make sure the date isn't on a weekend day. The date can be a past, present or future date. </td><td>[fm_contract_payouts]payout_date
+</td></tr>
+<tr>
+<td>P2P </td><td>Check Box </td><td>"P2P" is an abbreviation of 'Price to Purchase'. Check this on if you want a "Price to Purchase". You need to check on at least one of the P2P, ETF and TL check boxes. All three may be checked at once.</td><td>[fm_contract_payouts]price_to_purchase_flag
+</td></tr>
+<tr>
+<td>ETF </td><td>Check Box </td><td>"ETF" is an abbreviation of 'Early Termination Fee'. Check this on if you want an "Early Termination" payout.</td><td>[fm_contract_payouts]early_termination_fee_flag
+</td></tr>
+<tr>
+<td>TL </td><td>Check Box </td><td>"TL" is an abbreviation of 'Total Loss'. Check this on if you want a "Total Loss" payout.</td><td>[fm_contract_payouts]total_loss_flag
+</td></tr>
+<tr>
+<td>Remaining </td><td>Number </td><td>This field shows the remaining 'pending' budgets periods for the contract in months. If it displays as '0', all budgets have been invoiced. <br /> The calculation for this field is: <br /> <i>(YEAR(IF([fm_contracts]residual_due_date = '0000-00-00', [fm_contracts]contract_end, [fm_contracts]residual_due_date)) - YEAR([fm_contract_budgets]payout_date)) * 12 + MONTH(IF([fm_contracts]residual_due_date = '0000-00-00', [fm_contracts]contract_end, [fm_contracts]residual_due_date)) - MONTH([fm_contract_budgets]payout_date)</i> <br /> If this calculation returns a negative number of periods, this field will be set to '0'. and “Calculated Value” = $0.00  </td><td>[fm_contract_payouts]remaining_billings
+</td></tr>
+<tr>
+<td>Calculated Value </td><td>Number </td><td>This field displays the ‘present-value’ calculation that was generated when the record was created. A value of zero can occur when all budgets have been invoiced. Open the <a href="https://help.catch-e.net.au/clients/help/wiki/images/a/a7/Payout.xlsx" class='internal' title="Payout.xlsx">payout calculation spreadsheet</a> to see how the calculation is done.</td><td>[fm_contract_payouts]calculated_value_net
+</td></tr>
+<tr>
+<td>Financier Value </td><td>Number </td><td>Enter the payout amount provided to you by the Financier. There is a check done against the "Calculated Value" when the "Financier Value" is not 0.00. If you are an 'Admin' user, you can ignore the warning alert by clicking OK or Cancel to re-enter the Financier Value</td><td>[fm_contract_payouts]financier_value
+</td></tr>
+<tr>
+<td>Valid Until </td><td>Date </td><td>Enter the date that the "Financier Value" is valid until. A Financier Value must be populated before this field can be updated. </td><td>[fm_contract_payouts]valid_until
+</td></tr>
+<tr>
+<td>Price to Purchase </td><td>Number </td><td>Enter a "Price to Purchase" amount. This amount can be used in a <a href="Screen_Reports.html" title="Screen Reports">custom report</a> or form to provide an advice document to the client or driver. </td><td>[fm_contract_payouts]price_to_purchase_net
+</td></tr>
+<tr>
+<td>Early Termination Fee </td><td>Number </td><td>Enter a "Early Termination Fee" amount. This amount can be used in a <a href="Screen_Reports.html" title="Screen Reports">custom report</a> or form to provide an advice document to the client or driver. </td><td>[fm_contract_payouts]early_termination_fee_net
+</td></tr>
+<tr>
+<td>Total Loss </td><td>Number </td><td>Enter a "Total Loss" amount. This amount can be used in a <a href="Screen_Reports.html" title="Screen Reports">custom report</a> or form to provide an advice document to the client or driver.</td><td>[fm_contract_payouts]total_loss_net
+</td></tr>
+<tr>
+<td><a href="./Image:Clip.gif.html" class="image" title="Image:Clip.gif"><img src="../../clients/help/wiki/images/3/3b/Clip.gif" alt="Image:Clip.gif" width="8" height="11" longdesc="/mediawiki/index.php/Image:Clip.gif" /></a> </td><td> </td><td>May be used to <a href="Attachments.html" title="Attachments">attach</a> correspondence.</td><td>attachment_id
+</td></tr>
+<tr>
+<td>Status </td><td>Listbox </td><td>New records default to a status of 'Pending'. Change to 'Requested', 'Financier', 'Review', 'Open', 'Sent', 'Accepted' and 'Invoice Sent' to support your workflows. 'Invoice Sent' is only available to users with <a href="./Contracts:Payout.html#Role_Access" title="Contracts:Payout">full access</a>.<br />
+<p>'Expired' is not available to users - it is used to expire records in a scheduler job which runs daily at 11:00pm. It updates records to 'Expired' if the status is not 'Accepted', 'Invoice Sent' or 'Deleted' AND the "Payout Date" is older than 30 days, or if the "Valid Until" is older than 30 days.
+</p>
+</td><td>[fm_contract_payouts]contract_payout_status_id linked to [fm_contract_payout_statuses]
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=6" title="Edit section: Status Workflow">edit</a>]</div><a name="Status_Workflow"></a><h4>Status Workflow</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Status</th><th>Notes</th><th>What happens on Save
+</th></tr>
+<tr>
+<td>Pending</td><td>Default status when creating a record.</td><td>Record saved, no further actions are performed.<br />
+</td></tr>
+<tr>
+<td>Requested</td><td>Use this status when you are ready to request a Payout value from your Finance department. </td><td>When the Payout Status has been set to "Requested", if <a href="Global_Controls.html" title="Global Controls"><i>[gb_control]payout_notifications</i></a> has been set up, an <a href="./Contracts:Payout_Set_Up.html#Email_messages" title="Contracts:Payout Set Up">email</a> will be sent to the recipient/s stored in [gb_template_recipients] where linked [gb_template]name = 'pdf_payout_requested'. The <a href="./Contracts:Finance.html" title="Contracts:Finance">Financier</a> will be copied if the <a href="Global_Controls.html" title="Global Controls">Payout Notification Requested CC Financier</a> field is configured. <br />
+</td></tr>
+<tr>
+<td>Financier</td><td> If any of these conditions are met, a Financier Value is mandatory: <br />
+<ul><li> <a href="./Suppliers:Financier.html" title="Suppliers:Financier">Financier Value Mandatory</a> flag = yes, 
+</li><li> Contract is within 12 months of <a href="./Contracts:Finance.html" title="Contracts:Finance">Finance Start</a> Date, 
+</li><li> "Calculated Value" &gt; $40,000 <br /> If a Financier Value is not available, save the record at this status.<br />  
+</li></ul>
+</td><td> Validation is performed for these conditions. If any fail validation, you will be warned and will be left in Edit mode to update the Financier Value &amp; Valid to date, or update Status to 'Financier'.
+</td></tr>
+<tr>
+<td>Review</td><td> Optional Status to allow another user to review the payout record content. </td><td> Record saved, no further actions are performed.
+</td></tr>
+<tr>
+<td>Open</td><td>Your Finance department will use this status when the Payout value has been saved and is ready to be sent to your Client.</td><td>When the Payout Status has been set to "Open", if <a href="Global_Controls.html" title="Global Controls"><i>[gb_control]payout_notifications</i></a> has been set up, an <a href="./Contracts:Payout_Set_Up.html#Email_messages" title="Contracts:Payout Set Up">email</a> will be sent to the Payout record creator when the <a href="Global_Controls.html" title="Global Controls">Payout Notification Open</a> field is set to yes.<br />
+</td></tr>
+<tr>
+<td>Sent</td><td>Use this status to show that you've sent the Payout quote to the Client.</td><td>Record saved, no further actions are performed.<br />
+</td></tr>
+<tr>
+<td>Accepted</td><td>Use this status when your Client has accepted a Payout quote. </td><td>When the Payout Status has been set to "Accepted", if <a href="Global_Controls.html" title="Global Controls"><i>[gb_control]payout_notifications</i></a> has been set up, an <a href="./Contracts:Payout_Set_Up.html#Email_messages" title="Contracts:Payout Set Up">email</a> will be sent to the recipient/s stored in [gb_template_recipients] where linked [gb_template]name = 'pdf_payout_accepted'.<br />
+</td></tr>
+<tr>
+<td>Invoice Sent</td><td>Users with <a href="./Contracts:Payout.html#Role_Access" title="Contracts:Payout">full access</a> can update to this status to record that an invoice has been sent to the Client</td><td>Record saved, no further actions are performed.<br />
+</td></tr>
+<tr>
+<td>Expired</td><td>No users can update this status. A Scheduler job will update the status to Expired when the Valid Until date has passed except where the status is Accepted, Invoice Sent or Deleted.</td><td>Not Applicable<br />
+</td></tr>
+<tr>
+<td>Cancelled</td><td>Use this status to show a cancelled Payout request.</td><td>Record saved, no further actions are performed.<br />
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=7" title="Edit section: Action buttons">edit</a>]</div><a name="Action_buttons"></a><h4>Action buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Field</th><th> Description
+</th></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a></td><td>
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Edit is enabled once you checks one # column checkbox. Only one record at a time can be edited. Once a record is in 'Accepted' status, only an Admin or Senior Manager role users can edit the record.
+<p>All users without <a href="./Contracts:Payout.html#Role_Access" title="Contracts:Payout">full access</a> can edit records at 'Pending', 'Open' and 'Sent' status, but the editable fields are limited to "P2P", "ETF", "TL" and "Status".
+</p>
+</td></tr>
+<tr>
+<td><a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a></td><td>Only Admin or Senior Manager role users can use the Delete button.
+</td></tr>
+<tr>
+<td><a href="./Image:Attach.gif.html" class="image" title="Image:Attach.gif"><img src="../../clients/help/wiki/images/f/f9/Attach.gif" alt="Image:Attach.gif" width="49" height="21" longdesc="/mediawiki/index.php/Image:Attach.gif" /></a></td><td>
+</td></tr>
+<tr>
+<td><a href="./Image:New.gif.html" class="image" title="Image:New.gif"><img src="../../clients/help/wiki/images/e/e0/New.gif" alt="Image:New.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:New.gif" /></a></td><td>Create a new record. The record had the "Date" populated and you can enter the other details as required.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=8" title="Edit section: Output Options">edit</a>]</div><a name="Output_Options"></a><h4>Output Options</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Form Name</th><th>Description
+</th></tr>
+<tr>
+<td>Payout Report</td><td>A default <a href="Screen_Reports.html" title="Screen Reports">customised report</a> is available for use. The Payout Report will only work if the # checkbox is checked to identify the record that is to be printed.<br />
+<p>From this, you can create a <a href="Forms.html" title="Forms">form</a> that suits your processes. For example, you can advise your client or driver of the payout details. For this reason the report cannot be generated when the record is at 'Pending' or 'Requested' status because the data is not complete.<br /> 
+</p>
+</td></tr>
+<tr>
+<td><a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a></td><td>You can set up more <a href="Screen_Reports.html" title="Screen Reports">customised reports</a> and <a href="Forms.html" title="Forms">forms</a> as required. Contact your <a href="Catch-e_support.html" title="Catch-e support">Account Manager</a> if you want to set up a form or additional reports.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=9" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<p>Below are alerts you may see during this process and the reasons why they have happened. In most cases, you should be able to identify a data error and once corrected, re-upload the file.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Alert</th><th>Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validations on Audit Records
+</td></tr>
+<tr>
+<td>You must select a Payout record first! </td><td>Click on the # checkbox of the record you want to view the Audit History for.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validations on Create
+</td></tr>
+<tr>
+<td>Payout request cannot be created due to missing Contract Start date </td><td> The "Contract Start" is blank. (Validation not working).
+</td></tr>
+<tr>
+<td>Validations failed: 1. Event Posting Class - Posting class code <i> does not exist </td><td> The Global Controls are set to create an event for the payout, but the posting class to use is not recorded. Review and update your controls.</i>
+</td></tr>
+<tr>
+<td>Validations failed: 1. Payout Date - The specified date is invalid </td><td> Enter the "Payout Date"
+</td></tr>
+<tr>
+<td>Payout Date falls on a weekend! Please select a weekday.</td><td> Payouts must be calculated on weekdays. Local public holidays are not taken into account here.
+</td></tr>
+<tr>
+<td>Validations failed: 1. Payout Type - At least one Payout Type is required </td><td> Check on at least one of "P2P", "ETF" or "TL".
+</td></tr>
+<tr>
+<td>Validations failed: 1. Contract Id - Contract is within 12 months of Contract Start Date</td><td>"Financier Value" is mandatory and will be blank if you receive this message. Either enter a "Financier Value", or update the Status to 'Financier' (and obtain Financier Value from Financier).
+</td></tr>
+<tr>
+<td>Financier Value Mandatory flag checked. </td><td>"Financier Value" is mandatory and will be blank if you receive this message. Either enter a "Financier Value", or update the Status to 'Financier' (and obtain Financier Value from Financier).
+</td></tr>
+<tr>
+<td>Calculated Value &gt; $40,000 </td><td>"Financier Value" is mandatory and will be blank if you receive this message. Either enter a "Financier Value", or update the Status to 'Financier' (and obtain Financier Value from Financier).
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validations when changing "Status" from 'Pending'
+</td></tr>
+<tr>
+<td>Warning messages: 1. Financier Value - Calculated Value does not match Financier Value<br />
+<p>OK to ignore warning and create Payout?
+</p>
+</td><td>If the "Calculated Value" and the "Financier Value" do not match, you will see this alert.
+</td></tr>
+<tr>
+<td>Validation failed: 1. Valid Until - Valid Until date is before Payout Date</td><td>Populate or update "Valid Until" date so it is after the "Payout Date"
+</td></tr>
+<tr>
+<td>Validation failed: 1. Price to Purchase Net - Value is required</td><td>As "P2P" is checked on, you must enter a "Price to Purchase" amount to save a record at 'Open' status.
+</td></tr>
+<tr>
+<td>Validation failed: 1. Early Termination Fee Net - Value is required</td><td>As "ETF" is checked on, you must enter a "Early Termination Fee" amount to save a record at 'Open' status.
+</td></tr>
+<tr>
+<td>Validation failed: 1. Total Loss Net - Value is required</td><td>As "TL" is checked on, you must enter a "Total Loss" amount to save a record at 'Open' status.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validations when changing "Status" to 'Accepted'
+</td></tr>
+<tr>
+<td>Warning messages: 1. Financier Value - Value not specified<br />
+<p>OK to ignore warnings and update Payout?
+</p>
+</td><td>If the "Financier Value" is '0', but the required payout is for "Total Loss" it can be updated without a "Financier Value".
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validations when printing
+</td></tr>
+<tr>
+<td>Cannot print at this stage! <br />
+<p>"Status" must not be 'Pending' or 'Requested' and  one of "Price to Purchase", "Early Termination Fee" or "Total Loss" checked on and Payout value &gt; 0.00
+</p>
+</td><td>As per the message.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Other validations
+</td></tr>
+<tr>
+<td>Payout is due to Total Loss</td><td>Click OK to ignore warning (only available if "Financier Value" populated), or Cancel to re-enter data.
+</td></tr>
+<tr>
+<td>Financier Value - Payout is due to Total Loss</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Attach
+</td></tr>
+<tr>
+<td>File has already been uploaded. </td><td> This file is already attached, no need to upload.
+</td></tr>
+<tr>
+<td>Selected files exceed maximum allowable attachment size</td><td>A five megabyte total size limit applies to all of the files attached to a record. The size of the file or files you are to attaching exceeds this.
+<p>1. Review and reduce the size of the files being <a href="Attach.html" title="Attach">attached</a> to the record<br />
+2. If the size of all the files being attached is reasonable<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ask your System Administrator to review the set limit in <a href="Global_Controls.html#Quote_.28QT.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "attach_max_file_size"
+</p>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20308) Payout Value Calculator UI. Live 07/01/2019
+</li><li> (DEV-20574) Payout Value Calculator - Role restrictions update. Live 15/04/2019
+</li><li> (DEV-21642) Payout Event Date incorrect. Live 06/06/2022
+</li><li> (DEV-21695) gb_audit_fields sets data type of bigint unsigned fields to int, causing audit update issues in API. Live 13/07/2022
+</li><li> (API-20405) Add 'cancelled' state to Contract Payouts process. Live dd/03/2023
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Contracts:Payout.html">https://help.catch-e.net.au/mediawiki/index.php/Contracts:Payout</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Contracts:Payout">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Contracts:Payout.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.13 secs. -->
+</body></html>

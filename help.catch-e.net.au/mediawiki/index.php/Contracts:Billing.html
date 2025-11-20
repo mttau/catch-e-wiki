@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Contracts:Billing,APIs,Administration,Billing Schedule,Catch-e support,Change a contract type,Clients:Contract defaults,Contract Type,Contracts,Contracts:Approvals,Contracts:Claim" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Contracts:Billing - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Contracts:Billing</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Contracts:Billing.html#column-one">navigation</a>, <a href="./Contracts:Billing.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <a href="./Contracts:Search.html" title="Contracts:Search">Search</a> | <a href="./Contracts:Contract.html" title="Contracts:Contract">Contract</a> | <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Vehicle</a> | <a href="./Contracts:Options.html" title="Contracts:Options">Options</a> | <a href="./Contracts:Order.html" title="Contracts:Order">Order</a> | <a href="./Contracts:Finance.html" title="Contracts:Finance">Finance</a> | <a href="./Contracts:Insurance.html" title="Contracts:Insurance">Insurance</a> | 
+<a href="./Contracts:Payments.html" title="Contracts:Payments">Payments</a> | <strong>Billing</strong> | <a href="./Contracts:Lease.html" title="Contracts:Lease">Lease</a> | <a href="./Contracts:Terminate.html" title="Contracts:Terminate">Terminate</a> | <a href="./Contracts:Payout.html" title="Contracts:Payout">Payout</a> | <a href="./Contracts:Events.html" title="Contracts:Events">Events</a> | <a href="./Contracts:Fbt.html" title="Contracts:Fbt">FBT</a> | <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Maintenance</a> | <a href="./Contracts:Approvals.html" title="Contracts:Approvals">Approvals</a> | <a href="./Contracts:Declaration.html" title="Contracts:Declaration">Declaration</a> | <a href="./Contracts:Claim.html" title="Contracts:Claim">Claim</a> | <a href="./Contracts:Other.html" title="Contracts:Other">Other</a>
+</p>
+<hr />
+<p><br />
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Header_Fields"><span class="tocnumber">1</span> <span class="toctext">Header Fields</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Header_Buttons"><span class="tocnumber">2</span> <span class="toctext">Header Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Overview"><span class="tocnumber">3</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Field_Descriptions"><span class="tocnumber">4</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Action_buttons"><span class="tocnumber">5</span> <span class="toctext">Action buttons</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Checklist_to_ensure_the_correct_Billing_Setup_of_a_contract"><span class="tocnumber">6</span> <span class="toctext">Checklist to ensure the correct Billing Setup of a contract</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Lease_Variations"><span class="tocnumber">7</span> <span class="toctext">Lease Variations</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#Validations_and_Alerts"><span class="tocnumber">8</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Contracts:Billing.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=1" title="Edit section: Header Fields">edit</a>]</div><a name="Header_Fields"></a><h4><a href="./Contracts:Header.html#Field_Descriptions" title="Contracts:Header">Header Fields</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=2" title="Edit section: Header Buttons">edit</a>]</div><a name="Header_Buttons"></a><h4><a href="./Contracts:Header.html#Buttons" title="Contracts:Header">Header Buttons</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=3" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The editable fields are in the left column of the screen, all other fields are for display purposes only. As the system stores each period (e.g. Month) separately, Life totals, invoiced to date and amounts to be invoiced are displayed. These totals should be used to check that contracts are set-up correctly at commencement and whenever lease variations are performed (e.g. change to a Fuel Budget).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=4" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Lease Structure
+</td></tr>
+<tr>
+<td>Lease Term</td><td>Num</td><td>The number of months the contract runs from, based on Start/End. This should match the term on the Quotation if applicable. This field must be filled in to allow Lease budgets to be entered. The maximum field value is 9999</td><td>[fm_contracts]term
+</td></tr>
+<tr>
+<td>Contract Start</td><td>Date</td><td>The start date of the contract. This may be a historical date for Fleet Managed vehicles (if so refer notes on Periodic Charges and Periodic Start Date below).
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a>The Contract Start date is not mandatory to enable Lease Budgets to be entered, however the period one date will show as zeros if the "Contract Start" and "Start Periodic" are not entered.
+</p>
+</td><td>[fm_contracts]contract_start
+</td></tr>
+<tr>
+<td>Contract End</td><td>Date</td><td>The completion date of the contract. This will default to the Contract Start plus Lease Term minus one day. This date can be overridden if required but it is recommended that the date be within one month of the default.</td><td>[fm_contracts]contract_end
+</td></tr>
+<tr>
+<td>Contract Type </td><td> Display only </td><td> This field is displayed on the <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> tab and is editable on the <strong>Contracts / Billing</strong> tab.<br />
+<p>It is populated when a quote has been <a href="./Quotes:Accept.html" title="Quotes:Accept">accepted</a>.<br /> If you create a contract, you can enter or <a href="Lookup.html" title="Lookup">lookup</a> a contract type directly.<br /> Go to the <a href="Contract_Type.html" title="Contract Type">Contract Type</a> page for more details and for information you <u>need to know</u> before <a href="Change_a_contract_type.html" title="Change a contract type">changing a contract type</a>. 
+</p>
+</td><td>[fm_contracts]posting_map_id
+</td></tr>
+<tr>
+<td>Inertia</td><td>Check box</td><td> If checked on, the vehicle will be included in FBT Reports and <a href="Service_Due_Report.html" title="Service Due Report">Service Due Reports</a> even after the "Contract End" date has passed. The <a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contracts / FBT</a> "Days Available" value and subsequent FBT calculations are modified. Refer to the <a href="https://help.catch-e.net.au/clients/help/wiki/images/f/f6/FBT_days_calculation_model.xlsx" class='internal' title="FBT days calculation model.xlsx">FBT Days Available</a> model to see how this changes.
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a>This check box has no effect on the billing process, only created, stored billing periods will be billed.
+</p>
+</td><td>[fm_contracts]inertia_flag
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Billing Structure
+</td></tr>
+<tr>
+<td><a href="Pay_Cycle_Setup.html" title="Pay Cycle Setup">Periodic Interval</a> </td><td> List </td><td> This field defaults to 'Monthly' when a contract is accepted or created.<br /> If <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Contract Pay Cycle From Quote" is checked, the Quotes / Contract "Pay Cycle" will be used to calculate and populate the budget amounts.<br /> This field can be edited or varied to use a different pay cycle.<br />
+<p>If the "Periodic Interval" is <b>edited</b> (billing has not started), the the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> budget amounts will be re-calculated to match.<br /> 
+</p><p>If you want to <b>vary</b> the "Periodic Interval" (billing has started), you will need to also go to the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab and update the budget amounts manually.<br /> If there are any pending adjustment records on the contract, post these before you vary the "Periodic Interval" here, as pending adjustments are flushed when a contract is varied.<br />
+</p><p>When the contract is in the <a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a> group, this field is disabled when using the 'Edit' and ‘Vary’ functions.
+</p><p>Visit the <a href="Pay_Cycle_Setup.html" title="Pay Cycle Setup">Pay Cycle Setup</a> and <a href="Pay_Cycle_Billing.html" title="Pay Cycle Billing">Pay Cycle Billing</a> pages for set-up and calculation details.
+</p>
+</td><td>[fm_contracts]pay_cycle_id, [gb_pay_cycles]billing_flag
+</td></tr>
+<tr>
+<td>Billing Deferred</td><td>Num</td><td>If the contract has months deferred, enter this here. If the contract was created from a quote, the value of <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes/Finance "Months Deferred"</a> is copied into this field. If the "Months Deferred" is changed and billing has not commenced, the budgets will be re-calculated. Refer to <a href="Workflow_Deferred_Payments.html" title="Workflow Deferred Payments">Deferred Payments</a> for discussion about this.<br />
+<p>"Billing Deferred" will reduce "Total Billings" of the contract. I.e. if monthly, Term - Billing Deferred = Total Billings.<br /> 
+</p>
+</td><td>[fm_contracts]billing_deferred
+</td></tr>
+<tr>
+<td>Total Billings</td><td>Num</td><td>This is a calculated field. For leases billing monthly, it should equal the "Term" minus "Months Deferred". It will be different for contracts using <a href="Pay_Cycle_Billing.html" title="Pay Cycle Billing">Pay Cycle Billing</a> or Fleet Managed contracts with an historic start date.<br />
+<p>The calculation where the "Periodic Interval" is Monthly is as follows:<br />
+If the contract budgets have been set-up, "Total Billings displays the number of billing periods in the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> screen.<br /> 
+If this has not been set-up, then "Lease Term" - "Periods Deferred" is displayed if there is a deferral.<br />
+If there is no deferral, "Total Billings displays "Initial Billings" + "Lease Term" - "Start Period" + 1.<br />
+Total billing for a contract is always equal or higher than the billing period of the highest posted invoice.<br />
+</p>
+</td><td>[fm_contracts]billing_periods
+</td></tr>
+<tr>
+<td>Initial Billings</td><td>Num</td><td>This field is only shown if the contract has a <a href="Start_Periodic.html#Monthly" title="Start Periodic">Monthly</a> billing set-up. If the contract has a <a href="Start_Periodic.html#Pay_Cycle" title="Start Periodic">Pay Cycle</a> billing set-up, then this field is hidden.<br /> Visit <a href="Billing_Schedule.html" title="Billing Schedule">Billing Schedule</a> for examples of this field in use.<br />
+<p>This field shows the number of periods included in the Initial charge. The date of the Initial invoice will typically be the Contract Start date but does not need to be. A scenario whereby there is no Initial charge may be when a client is billed on a common due date for all periods including the first charge.<br />
+</p>
+</td><td>[fm_contracts]initial_billings
+</td></tr>
+<tr>
+<td>Periodic Billings</td><td>Num</td><td>The number of regular billings to be processed as Periodic or Combined invoices. This can be expressed as Periodic Billings equals Total Billings less Initial Billings.
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a> If you delete the value of Periodic Billings before billing has started, the billing records will be removed. To re-insert them, update the Periodic Billings field to contain a value. This is a calculated field but can be overwritten.
+</p>
+</td><td>[fm_contracts]periodic_billings
+</td></tr>
+<tr>
+<td>Start Period</td><td>Num</td><td>This field is only shown if the contract has a <a href="Start_Periodic.html#Monthly" title="Start Periodic">Monthly</a> billing set-up. If the contract has a <a href="Start_Periodic.html#Pay_Cycle" title="Start Periodic">Pay Cycle</a> billing set-up, then this field is hidden.<br /> Visit <a href="Billing_Schedule.html" title="Billing Schedule">Billing Schedule</a> for examples of this field in use.<br />
+<p>The period number in which the regular, common date charges commence. This is typically period ‘2’ whereby the Initial Charge is raised in period ‘1’. Alternatives can be achieved using different combinations of Periods Deferred, Initials and Periodic. Visit <a href="Billing_Schedule.html" title="Billing Schedule">Billing Schedule</a> for full details.The initial value of this field defaults from <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Start Period" but can be edited.<br />
+If "Periodic Interval" is other than Monthly, this field is removed from the screen as it is not utilised in selecting pay cycle billing dates.
+</p>
+</td></tr>
+<tr>
+<td>Common Day</td><td>List </td><td>This field is only shown if the contract has a <a href="Start_Periodic.html#Monthly" title="Start Periodic">Monthly</a> billing set-up. If the contract has a <a href="Start_Periodic.html#Pay_Cycle" title="Start Periodic">Pay Cycle</a> billing set-up, then this field is hidden. Visit <a href="Billing_Schedule.html" title="Billing Schedule">Billing Schedule</a> for examples of this field in use.<br />
+<p>On <a href="./Quotes:Accept.html" title="Quotes:Accept">acceptance</a> or creation of a contract, the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Client / Contract Defaults</a> "Common Day" value populates here as the default entry. You can edit this field and choose a DAY from '1' to '31', and also 'EOM'.<br /> 
+</p><p>When the contract's billing records are created, "Common Day" is used as the DAY in the billing dates. Often this is the 1st, but can be any day of the month.<br />
+</p><p>If a contract is <a href="./Quotes:Accept.html" title="Quotes:Accept">settled</a>, the contract's "Common Day" and the billing dates are updated to match the stored <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">client's</a> "Common Day".<br /> 
+</p><p>If a contract is varied and the "Common Day" is changed, the DAY of the stored billing dates are also updated, but the DAY of the "Next Periodic" date is not. If you need to change this, update the date in that field at the same time.<br /> 
+</p>
+</td><td>[fm_contracts]billing_common_day
+</td></tr>
+<tr>
+<td><a href="Start_Periodic.html" title="Start Periodic">Start Periodic</a></td><td>Date</td><td>Once the contracts's "Contract Start" and "Periodic Interval" fields have been entered, a "Start Periodic" date may be calculated and populated for you. If the "Start Periodic" cannot be calculated, you will need to enter the required date.<br /> Visit the <a href="Start_Periodic.html" title="Start Periodic">Start Periodic</a> page for full details.<br />
+<p>Once a contract is saved with a "Start Periodic" date, the periodic billing records will be created and the billing can begin. The billing records are available on the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab.<br />
+</p><p>This field can be <a href="Screen_Aliases.html" title="Screen Aliases">renamed</a>.
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td>Next Periodic</td><td>Date</td><td>This field is only presented to you if there are billed lease budgets (i.e. the contract is in progress) and you are varying the billing (in edit mode). It displays the date of the next budget period to bill - you can change this. This will shift the entire pending billing schedule forwards or backwards. The "Next Periodic" can be dated before previous billing periods, but cannot be dated before the "Contract Start".</td><td>
+</td></tr>
+<tr>
+<td>Next Period</td><td>Num</td><td>Displays the next period to be billed.</td><td>calculation
+</td></tr>
+<tr>
+<td>Remaining</td><td>Num</td><td>As invoices are raised, the periods remaining will reduce. Once all invoices for a contract have been billed, no further invoices will be raised, unless the billing is extended by the user increasing the "Periodic Billings" field (Lease Term does not necessarily need to be increased).</td><td>calculation
+</td></tr>
+<tr>
+<td>Payment Method</td><td>List</td><td>On <a href="./Quotes:Accept.html" title="Quotes:Accept">acceptance</a> of a quote, the value in <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Client / Contract Defaults</a> "Payment Method" is stored in the billing record and is also displayed here.<br /> If edited, the change will update all pending lease periods.<br />
+<p>If edited in the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab, the period being edited, and all later periods will be updated.<br />
+If a contract is <a href="./Quotes:Accept.html" title="Quotes:Accept">settled</a>, the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Client / Contract Defaults</a> "Payment Method" is re-applied to all pending billing records.
+</p>
+</td><td>[fm_contract_budgets]payment_method
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Rental Billing Summary
+</td></tr>
+<tr>
+<td> Previous </td><td> </td><td> Summarizes the Date, Period (#), Invoice Number and Net, GST and total of the most recent invoice. If an invoice exists, the number displays as a <u>hyperlink</u>. Click on this to generate a pdf copy of the invoice.
+</td></tr>
+<tr>
+<td> Next </td><td> </td><td> Summarizes the Date, Period (#), Invoice Number and Net, GST and total of the next scheduled billing. If a contract has ended, the penultimate invoice number will be displayed here.
+</td></tr>
+<tr>
+<td> Final </td><td> </td><td> Summarizes the Date, Period (#), Invoice Number and Net, GST and total of the last scheduled billing. If a contract has ended, the final invoice number will be displayed here.
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=5" title="Edit section: Action buttons">edit</a>]</div><a name="Action_buttons"></a><h4>Action buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Field</th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>When a contract has not yet billed, use the Edit button to set-up your billing details on this screen.
+</td></tr>
+<tr>
+<td><a href="./Image:Vary.gif.html" class="image" title="Image:Vary.gif"><img src="../../clients/help/wiki/images/6/65/Vary.gif" alt="Image:Vary.gif" width="41" height="20" longdesc="/mediawiki/index.php/Image:Vary.gif" /></a></td><td>When a contract has started billing, the available button is now called "Vary".<br /> Use this to modify your future billings to change the term, periodic interval, remaining billings and  the invoice date of these records.<br />
+<p>To correct billings that have already been invoiced, go to the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab and add an adjustment billing to the posted period.<br />
+</p><p>The "Vary" button is disabled in the following circumstances 
+</p>
+<ol><li> the contract has been suspended
+</li><li> the contract has pending <a href="FLEET_BILLING.html#Credit_and_Inertia_Rentals" title="FLEET BILLING">Credit or Inertia</a> records.
+</li></ol>
+</td></tr>
+</table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=6" title="Edit section: Checklist to ensure the correct Billing Setup of a contract">edit</a>]</div><a name="Checklist_to_ensure_the_correct_Billing_Setup_of_a_contract"></a><h4>Checklist to ensure the correct Billing Setup of a contract</h4>
+<ol><li>Lease Term in months matches Quote/Internal Sheet 
+</li><li>Contract Start and Contract End dates are correct 
+</li><li>Contract Type is correct as per Quote/Internal Sheet 
+</li><li>Periodic Interval is set to months (defaults from client screen) 
+</li><li>Total Charges equals Lease Term in Months (this defaults) 
+</li><li>Initials is 1 (unless an initial charge is not needed) 
+</li><li>Periodics is 1 number less than the total, e.g. 35 in a 36 month lease 
+</li><li>Start date is the 1st of the following month - i.e. the date regular billing starts assuming initial is done 
+</li><li>Life Date Totals inc. GST should equal the Quote rental multiplied by the Lease Term <br /><br />
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=7" title="Edit section: Lease Variations">edit</a>]</div><a name="Lease_Variations"></a><h4>Lease Variations</h4>
+<p>Leases can be varied by editing the billing screen and lease screen. Periods can be added or removed and budgets can be edited in any period which has not already been billed. Adjustment entries can be inserted at the next period date. For example to insert an adjustment after the initial rental has been done the following steps can be followed (assuming a 60 month contract with initial rental of 6/4/2004).
+</p>
+<ol><li>On the Billing Screen, Vary the contract. Add one to the number of Periodic Billings so that it is 60 instead of 59. Also change the 'Next Periodic' from 01/05/2004 to 06/04/2004. Save this. This will create an extra billing record for 6/4/2004. 
+</li><li>Go to the lease screen and edit the 2- 06/04/2004 period. Change the budgets so that it is the adjustment only, e.g. -10.66 for finance, -0.08 for CSD and 10.74 for Admin Fee. Save this. Note the total for this period is zero as we are only entering the adjustment amounts however an adjustment plus or minus could be done if desired. 
+</li><li>Go to the Fleet / Billing / Periodic Screen, change the date to 06/04/2004, and enter the reg no as required. It should bring up a record for zero dollars. Invoice and Post this, which will generate the journal entry required. It will generate an invoice for zero value which you do not need to print or keep. 
+</li><li>Go back to the Billing Screen, hit use Vary button again and change the 'Next Periodic' from 06/05/2004 to 01/05/2004. Save. This will change the dates for the remaining billing periods back to the 1st of every month. 
+</li><li>Go to the Lease Screen. The default period should be 3 - 01/05/2004. Edit the budgets to match the 'new' amounts as desired and save it. <br /><br />
+</li></ol>
+<p><i>Note:</i>If you change the contract start date after billing has commenced make sure the next Periodic Date is correct as the system will re-calculate it based on the new entered date.<br /><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=8" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<p>Below are alerts that you may receive if a record cannot be saved. Many reports rely on billing records being dated on or after the "Contract Start".
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Insert, Edit or Vary
+</td></tr>
+<tr>
+<td>Billing process is locked by user '{user_login}'<br /> Changes here may be lost on save.<br /><br />
+<p>Click OK to edit.<br />
+Click Cancel to try again later.
+</p>
+</td><td> <a href="./Image:Okk.gif.html" class="image" title="Image:Okk.gif"><img src="../../clients/help/wiki/images/f/f1/Okk.gif" alt="Image:Okk.gif" width="52" height="16" longdesc="/mediawiki/index.php/Image:Okk.gif" /></a> - will allow you to go into edit mode and make the changes you want.<br /> If the record is still locked when you come to save, you will lose your changes unless you stay in edit mode.<br /> You may still ultimately lose your changes if the locking process changes the contract budgets.<br /><br />
+<p><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a> - return to view mode and try to Insert, Edit or Vary later.
+</p>
+</td></tr>
+
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save
+</td></tr>
+<tr>
+<td>Billing process is locked by user '{user_login}'<br /> Changes here may be lost on save.<br /><br />
+<p>Click OK to remain in edit mode.<br />Click Cancel to lose changes.
+</p>
+</td><td><a href="./Image:Okk.gif.html" class="image" title="Image:Okk.gif"><img src="../../clients/help/wiki/images/f/f1/Okk.gif" alt="Image:Okk.gif" width="52" height="16" longdesc="/mediawiki/index.php/Image:Okk.gif" /></a>  - remain in edit mode to keep your changes. Try to Save later.<br /> You may still ultimately lose your changes if the locking process changes the contract budgets.<br /><br /> <a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a>- the billing is still locked. Lose changes,return to view mode and try to Insert, Edit or Vary later.
+</td></tr>
+<tr>
+<td>Contract Start cannot be later than the first billing! First billing is dated [dd/mm/yyyy] </td><td> The Contracts / Billing records must always be dated on or after the "Contract Start". As the first billing has already been invoiced, you can either update the "Contract Start" or contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> to change the dates of the invoiced billing record.
+</td></tr>
+<tr>
+<td>Contract Start is required.</td><td>You cannot enter a "Start Periodic" date if the "Contract Start" date is blank.<br />
+<p>You cannot blank out the "Contract Start" date if you have dated records in the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab.
+</p>
+</td></tr>
+<tr>
+<td>Start Periodic is blank. No billing records have been created. Are you sure?</td><td> You are warned if you are going to save a contract with a "Start Date" without entering the "Start Periodic". You can proceed, but there are no billing records at this point.
+</td></tr>
+<tr>
+<td>Start Periodic cannot be earlier than Contract Start!</td><td> The Contracts / Billing records must always be dated on or after the "Contract Start". Edit either the "Contract Start" or the "Start Periodic" to correct this.
+</td></tr>
+<tr>
+<td>Total Billing cannot be updated to ###! A posted invoice exists for period ###</td><td>The "Total Billings" field cannot be updated to be less than the billing period of a posted billing record.
+<p>"Total Billings" must be updated to be greater than or equal to the posted billing record with the highest period. 
+</p>
+</td></tr>
+<tr>
+<td>Unable to Save. Another process has updated the contract budgets while you were editing.</td><td>This message will be triggered if another process has locked this contract record. This can happen when <a href="FLEET_BILLING.html" title="FLEET BILLING">Billing</a>, <a href="./Importdata:whole_Table.html" title="Importdata:whole Table">Whole table import</a> or <a href="APIs.html" title="APIs">APIs</a> run a process. You will need to try and make your edit later.
+</td></tr>
+<tr>
+<td>Unposted Initial billing with Posted Periodic(s) exists. Initial billing must be posted before any changes can be made</td><td>This message is triggered when unposted Initial billing with posted <a href="./Contracts:Lease.html" title="Contracts:Lease">periodic(s)</a> exists. It prevents a user from saving billing changes.
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li>  5233: Inertia and credit billing types. Live 24/05/2012
+</li><li>  5863: Remove contract billing Vary button rules. Live 06/06/2012
+</li><li>  6176: Pay Cycle::Contracts/Billing "Periodic Interval" - expand enum. Live 03/09/2012
+</li><li>  9495: 4 weekly billing cycle does not save Start Periodic date. Live 21/03/2014
+</li><li>  9594: Billing should not include 00/00/0000 dates. Live 29/05/2014
+</li><li> 16412: Update alert message to be more informative. Live 23/10/2017
+</li><li> 20127: Contract term Cant be extended past 255 months. Live 05/02/2018
+</li><li> (DEV-16429) Add new validations to Contract / Billings tab. 16/07/2018
+</li><li> (DEV-20195) Client Defaults not respected when 'Settling' a Quote. 14/09/2018
+</li><li> (DEV-20255) Months Deferred improvements. Live 07/11/2018
+</li><li> (DEV-13586) FBT Days Available Calculation for Inertia Contracts. Live 15/04/2019
+</li><li> (DEV-21015) Contracts / Billing Vary does not respect Common Day if client is set as 'EOM'. Live 27/07/2020
+</li><li> (DEV-20248) Prevent users from deleting billing periods where a later posted period exists. Live dd/11/2018
+</li><li> (DEV-21064) Next Pay Cycle Date. Live 14/12/2020
+</li><li> (DEV-20475) Improve Contract / Billing tab behaviour when Initial billing exists. 07/09/2020
+</li><li> (DEV-21381) Invoice hyperlink missing on Contracts / Billing tab. Live 22/03/2021.
+</li><li> (API-20093) Contract/billing API enhancements.  Live 19/07/2021
+</li><li> (API-20172) Reverse lock_token refactoring from Eric interface API.  Live 20/07/2021
+</li><li> (DEV-21498) Check for billing locks on Vary and Edit. Live dd/12/2021
+</li><li> (DEV-20669) Edit Contract Billing (Total &amp; Initial Billings). Live dd/mm/2021
+</li><li> (API-20324) Contracts /  Billing 'Common Day' - enable '29th','30th' or '31st' to be chosen. Live 05/12/2022
+</li><li> (DEV-21741) Contracts /  Billing 'Common Day' - enable '29th','30th' or '31st' to be chosen. Live 05/12/2022
+</li><li> (API-20355) CatchEDateCalc::dateFromString(): Argument #1 ($date) must be of type string, null given, called in /var/app/current/module/catch-e-api/ContractApi/src/Resource/V1/ContractBillingEditResource.php on line 183 .Live 12/12/2022
+</li><li> (DEV-21737) Employees / Item tab - Contracts / Lease 'Periodic' date can duplicate on Vary. Live dd/08/2023
+</li><li> (DEV-21987) Enable vehicle contracts with a direct item link to be edited. Live 05/08/2024
+</li><li> (DEV-22281) periodic_billings - stop creation of duplicate audit record. Live 09/06/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Contracts:Billing.html">https://help.catch-e.net.au/mediawiki/index.php/Contracts:Billing</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Contracts:Billing">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Contracts:Billing.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Billing&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.14 secs. -->
+</body></html>

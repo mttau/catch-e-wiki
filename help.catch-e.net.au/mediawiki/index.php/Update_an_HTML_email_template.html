@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Update an HTML email template,Data File,Error Report,Export Table Data,Export data from a table,Import,Import Table Data,Import data to a table,Main Page,System Administration,Workflow" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Update an HTML email template - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Update an HTML email template</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Update_an_HTML_email_template.html#column-one">navigation</a>, <a href="Update_an_HTML_email_template.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a> &rarr; <a href="System_Administration.html" title="System Administration">System Administration</a> &rarr;  <b>Data Updates</b> &rarr; <strong>Update an HTML email template</strong>
+</p>
+<hr />
+<a name="Qualifiers"></a><h4>Qualifiers</h4>
+<ol><li> You are updating an existing HTML email template
+</li><li> You know the template_id of the email you want to update
+</li><li> We recommend first testing your import file in the Staging or Support environment
+</li></ol>
+<hr />
+<p><br />
+</p>
+<a name="Create_an_Import_file"></a><h4>Create an Import file</h4>
+<ol><li> Create your updated HTML markup
+</li><li> Use a generated report from the scheduler to get the template details you need.
+</li><li> The file must be saved as <b>csv file</b>.
+</li><li> The file must contain the fields below. 
+</li><li> Only the data in the 'mail_message' field should be updated
+</li></ol>
+<p>A  template_id<br />
+B  channel_id<br />
+C  name<br />
+D  sub_name<br />
+E  mail_message<br />
+<br /> 
+</p>
+<a name="Add_HTML_data_to_the_Import_file"></a><h4>Add HTML data to the Import file</h4>
+<ol><li> Place your cursor in the cell E2 (the 'mail_message' field)
+</li><li> Copy your HTML text
+</li><li> Place you cursor in the Formula cell above the spreadsheet data
+</li><li> Ctrl P or Paste
+</li><li> The data will have been placed entirely tin cell E2
+</li></ol>
+<p>There are many instruction videos about how to do this online.<br /> 
+Search for 'how to copy and paste large text into one excel cell'
+<br /> <br /> 
+</p>
+<a name="Import_data_to_a_table"></a><h4>Import data to a table</h4>
+<ol><li> Go to <a href="Import_Table_Data.html" title="Import Table Data">Setup / Import Table Data</a>
+</li><li> <b>Module</b> - select 'gb | Global'
+</li><li> <b>Table</b> - select 'gb_templates'
+</li><li> Drop or browse to <a href="Import.html" title="Import">import</a> the data file
+</li><li> Click on <b>Upload</b>
+</li><li> The uploaded file content will be validated. 
+<ol><li> If there are problems, the <b>Error Report</b> button will be enabled. 
+</li><li> Download the <a href="Error_Report.html" title="Error Report">Error Report</a>, review, fix your file 
+</li><li> <b>Re-Upload</b>
+</li></ol>
+</li><li> A file validation message is displayed
+</li><li> Click on <a href="./Image:Import.png.html" class="image" title="Image:Import.png"><img src="../../clients/help/wiki/images/e/ee/Import.png" alt="Image:Import.png" width="37" height="19" longdesc="/mediawiki/index.php/Image:Import.png" /></a>
+</li><li> Navigate to the system and generate the updated email to check the data you have imported
+</li></ol>
+<p><br /><br />
+</p>
+<hr />
+<p><small>
+</p>
+<a name="Related_Pages"></a><h4>Related Pages</h4>
+<dl><dd> <a href="Import_Table_Data.html" title="Import Table Data">Setup / Import Table Data</a>
+</dd><dd> <a href="Import_Table_Data.html" title="Import Table Data">Setup / Import Table Data</a> &rarr; <a href="Data_File.html" title="Data File">Data File</a>
+<dl><dd> <a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a> 
+</dd><dd> <strong>Update an HTML email template</strong>
+</dd></dl>
+</dd></dl>
+<p><br />
+</p>
+<dl><dd> <a href="Export_Table_Data.html" title="Export Table Data">Setup / Export Table Data</a>
+<dl><dd> <a href="Export_data_from_a_table.html" title="Export data from a table">Export data from a table</a></small>
+</dd></dl>
+</dd></dl>
+<div class="printfooter">
+Retrieved from "<a href="Update_an_HTML_email_template.html">https://help.catch-e.net.au/mediawiki/index.php/Update_an_HTML_email_template</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Update_an_HTML_email_template">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Update_an_HTML_email_template.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Update_an_HTML_email_template&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

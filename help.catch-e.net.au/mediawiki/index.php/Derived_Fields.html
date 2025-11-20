@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Derived Fields,Commitments,Derived Fields budgets settlement,Derived Fields emissions,Derived Fields fbt operating,Derived Fields financials,Derived Fields fuel performance,Derived Fields funds check,Derived Fields lease budgets,Derived Fields odometer,Derived Fields payroll advice" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Derived Fields - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Derived Fields</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Derived_Fields.html#column-one">navigation</a>, <a href="Derived_Fields.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr; <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Method</a> | <a href="Message.html" title="Message">Message</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Scheduler_Setup.html" title="Scheduler Setup">Scheduler Setup</a> &rarr; <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> | <strong>Derived Fields</strong> | <a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted Fields</a> | <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) Format</a> | <a href="Office(xlsx).html" title="Office(xlsx)"> Office(xlsx) Format</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Derived_Fields.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Derived_Fields.html#Derived_Field_Libraries"><span class="tocnumber">2</span> <span class="toctext">Derived Field Libraries</span></a></li>
+<li class='toclevel-1'><a href="Derived_Fields.html#Required_Mark-up"><span class="tocnumber">3</span> <span class="toctext">Required Mark-up</span></a></li>
+<li class='toclevel-1'><a href="Derived_Fields.html#Example_Mark-up"><span class="tocnumber">4</span> <span class="toctext">Example Mark-up</span></a></li>
+<li class='toclevel-1'><a href="Derived_Fields.html#Alternative_syntax_for_Derived_Field_Mark-up"><span class="tocnumber">5</span> <span class="toctext">Alternative syntax for Derived Field Mark-up</span></a></li>
+<li class='toclevel-1'><a href="Derived_Fields.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Using special mark-up in your query, you can access derived fields.<br /> These are fields generated internally by the system that would be too hard to define in standard SQL.<br /> By using derived fields you are guaranteed to get the same values output on many of Catch-e's standard reports, e.g. Estimated Odometer on the Inventory report.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=2" title="Edit section: Derived Field Libraries">edit</a>]</div><a name="Derived_Field_Libraries"></a><h4>Derived Field Libraries</h4>
+<p>The following list gives many of the 'standard' libraries, to get a listing of the 'bespoke' libraries please consult your internal Wiki.  To get a list of derived fields click on the Library name.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Library Path </th><th> Library Name </th><th> Reports that use this library
+</th></tr>
+<tr>
+<td width="25%" align="left">/lib/PDF</td><td width="15%" align="left"> <a href="Commitments.html" title="Commitments">commitments</a> </td><td width="60%" align="left"> Lease Commitments
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td>company</td><td>Periodic Payments
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_emissions.html" title="Derived Fields emissions">emissions</a></td><td>Carbon Emissions
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_fbt_operating.html" title="Derived Fields fbt operating">fbt_operating</a></td><td>Driver FBT Operating, FBT Operating, Novated Driver Budgeted Operating, Novated Driver Operating
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_fields_fbt_optimal.html" title="Derived fields fbt optimal">fbt_optimal</a></td><td> FBT Optimal
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_fields_fbt_statutory.html" title="Derived fields fbt statutory">fbt_statutory</a></td><td> FBT Statutory
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_financials.html" title="Derived Fields financials">financial</a></td><td> Financial calculations e.g. NPV()
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_fuel_performance.html" title="Derived Fields fuel performance">fuel_performance</a></td><td> Fuel Performance
+</td></tr>
+<tr>
+<td>lib/PDF</td><td><a href="Derived_Fields_funds_check.html" title="Derived Fields funds check">funds_check</a></td><td>
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_lease_budgets.html" title="Derived Fields lease budgets">lease_budgets</a></td><td> GST Overridden flag on the Contract / Lease screen
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_odometer.html" title="Derived Fields odometer">odometer</a></td><td>Due of Management, Additions, Due Off, Inventory, and Km Variance
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td>orders</td><td> Orders
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td>performance_no</td><td> Novated Driver, Novated Driver Operating
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_performance_nofb.html" title="Derived Fields performance nofb">performance_nofb</a></td><td> Novated Driver Budgeted, Novated Driver Budgeted Operating
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td>quotes</td><td> Quotes
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td>quotes_packaging_all</td><td> Quotes
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_rentals.html" title="Derived Fields rentals">rentals</a></td><td> Additions, Inventory
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_service.html" title="Derived Fields service">service</a></td><td>Service Due, Service Overdue
+</td></tr>
+<tr>
+<td>/fleet/administration/contracts/templates</td><td><a href="Derived_Fields_payroll_advice.html" title="Derived Fields payroll advice">payroll_advice</a></td><td> Payroll Advice
+</td></tr>
+<tr>
+<td>/fleet/administration/contracts/templates</td><td><a href="Derived_Fields_budgets_settlement.html" title="Derived Fields budgets settlement">budgets_settlement</a></td><td>
+</td></tr>
+<tr>
+<td>/lib/PDF</td><td><a href="Derived_Fields_vehicle_photos.html" title="Derived Fields vehicle photos">vehicle_photos</a></td><td>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=3" title="Edit section: Required Mark-up">edit</a>]</div><a name="Required_Mark-up"></a><h4>Required Mark-up</h4>
+<p>The special markup has the following general form, '<b>{type}:{path}/{library}-&gt;{field}' AS 'field alias'</b>, where:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Parameter </th><th> Description
+</th></tr>
+<tr>
+<td width="15%" align="left">{type}</td><td width="85%" align="left"> Either 'bespoke' to get derived fields from your client specific libraries, or 'standard' for derived fields from the standard system.
+</td></tr>
+<tr>
+<td>{path}</td><td> Directory where the {library} is located.
+</td></tr>
+<tr>
+<td>{library}</td><td> Name of the library containing the required derived field. For some libraries, an additional parameter must be included for a country code.  The general form then looks like this {country_code&#x7c;library} e.g. NZ&#x7c;fbt_employee_quarterly
+</td></tr>
+<tr>
+<td>{field}</td><td> Name of the derived field.
+</td></tr>
+<tr>
+<td>'field alias'</td><td> Name you want to give the field in the final output. Note: this must be unique.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=4" title="Edit section: Example Mark-up">edit</a>]</div><a name="Example_Mark-up"></a><h4>Example Mark-up</h4>
+<p>The following SQL shows the derived field markup required to output the Estimated Odometer value that appears on the Inventory report:
+</p>
+<pre>
+SELECT 'standard:/lib/PDF/odometer-&gt;odo_est_current' AS 'Estimated Odometer', t1.contract_id AS contract_id
+FROM fm_contracts AS t1
+WHERE contract_start &gt; '2009-01-01'
+
+If you ran this in the Query Browser, the output would look something like this:
+
+'standard:/lib/PDF/odometer-&gt;odo_est_current', 100101
+'standard:/lib/PDF/odometer-&gt;odo_est_current', 100121
+'standard:/lib/PDF/odometer-&gt;odo_est_current', 103810
+...
+</pre>
+<p>You can add as many derived fields as required, and they can come from multiple libraries.  The markup is formatted in such a way that the SQL can be run normally, i.e. from within an SQL client such as the Query Browser.  That way you can develop the SQL with the derived field markup in place, and it will run properly albeit with the derived field markup output literally.
+<br />
+One important limitation of Derived Fields to note, is that they cannot be used in formulae or calculations themselves.  They can only be output as is.  If there is a Derived Field you think is missing from a library, please contact Catch-e, and we will likely add it in.<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"><b>Important:</b> Derived field libraries often require values from other fields before they will work.  These fields must appear somewhere the SELECT statement of your query.  E.g. the 'standard:/lib/PDF/odometer' library requires the contract_id field.  <br />You MUST NOT rename the field using an alias, e.g. t1.contract_id as 'Contract ID' will fail, in this example you must use t1.contract_id AS contract_id
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=5" title="Edit section: Alternative syntax for Derived Field Mark-up">edit</a>]</div><a name="Alternative_syntax_for_Derived_Field_Mark-up"></a><h4>Alternative syntax for Derived Field Mark-up</h4>
+<p>There is an alternative syntax that gives you a more concise way of defining derived field markup.  You start by including some special comments in your query as follows:
+</p>
+<pre>
+# library_type bespoke
+# library_path /fleet/reports
+# library_name odometer
+</pre>
+<p>These comments are best placed at the top, before the SQL begins, but can be placed anywhere. Now you can use the following syntax for a derived field, '<b>-&gt;{field}' AS 'field alias'</b>
+</p><p><b>Examples</b>
+</p><p>The following SQL shows the previous example but using this alternative syntax:
+</p>
+<pre>
+# library_type standard
+# library_path /lib/PDF
+# library_name odometer
+
+SELECT '-&gt;odo_est_current' AS 'Estimated Odometer', t1.contract_id AS contract_id
+FROM fm_contracts AS t1
+WHERE contract_start &gt; '2009-01-01'
+</pre>
+<p>Here is another example excluding the special comment '# library_name':
+</p>
+<pre>
+# library_type standard
+# library_path /lib/PDF
+
+SELECT 'odometer-&gt;odo_est_current' AS 'Estimated Odometer', t1.contract_id AS contract_id
+FROM fm_contracts AS t1
+WHERE contract_start &gt; '2009-01-01'
+</pre>
+<p>Note, that the library name now needs to be defined within the derived field markup itself i.e. the {library} part.
+</p><p>You can think of these special comments as a way of setting global values for {type}, {path} and {library}, so they don't have to be repeated for each derived field.
+</p><p>One limitation of this approach, is that you can only define one set of these global values. If you require derived fields from more than one library, you will need to use the more verbose syntax for some of the derived fields, e.g.
+</p>
+<pre>
+# library_type standard
+# library_path /lib/PDF
+# library_name odometer
+
+SELECT '-&gt;odo_est_current' AS 'Estimated Odometer', t1.contract_id AS contract_id, 'bespoke:/fleet/reports/costing-&gt;rounding_
+adjustment_flag' AS 'Rounding Adjustment Flag'
+FROM fm_contracts AS t1
+WHERE contract_start &gt; '2009-01-01'
+</pre>
+<p><b>Including derived fields in WHERE or HAVING clause</b>
+</p><p>Derived fields can't be included in the WHERE or HAVING statements of the SQL. To overcome this, you can include a special comment 'having_clause' followed by the required logic. E.g.
+</p>
+<pre>
+# having_clause $row['service_overdue'] == 'yes'
+
+or
+
+# having_clause $row['service_overdue'] == 'yes' &amp;&amp; $row['service_overdue_days'] &gt; 10
+</pre>
+<p>Note, PHP code is used in the above, so 'is equal to' operator is == not =
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21443) Create derived field library for Payroll Advice. Live 08/04/2022
+</li><li> (API-20717) printReportQuery - add Library vehicle_photos. Live 11/08/2025
+</li><li> (API-20759) FMP: printReportQuery API - enable fbt_operating and service libraries to be invoked. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Derived_Fields.html">https://help.catch-e.net.au/mediawiki/index.php/Derived_Fields</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Derived_Fields">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Derived_Fields.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_Fields&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.06 secs. -->
+</body></html>

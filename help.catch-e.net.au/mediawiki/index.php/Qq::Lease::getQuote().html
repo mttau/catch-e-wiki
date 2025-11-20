@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Qq::Lease::getQuote(),Channel,GetQuickQuoteWebService,Global Controls,Main Page,Qq::Lease::getQuote()::Setup,Quotes:Options,Quotes:Vehicle,Reference Data,Registration,Web Services" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Qq::Lease::getQuote() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Qq::Lease::getQuote()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Qq::Lease::getQuote().html#column-one">navigation</a>, <a href="./Qq::Lease::getQuote().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <strong>getQuote()</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="./Qq::Lease::getQuote()::Setup.html" title="Qq::Lease::getQuote()::Setup">getQuote() Setup</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#How_it_works"><span class="tocnumber">2</span> <span class="toctext">How it works</span></a></li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#Input_Fields"><span class="tocnumber">3</span> <span class="toctext">Input Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qq::Lease::getQuote().html#Input_URL_Example"><span class="tocnumber">3.1</span> <span class="toctext">Input URL Example</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#Output_Fields"><span class="tocnumber">4</span> <span class="toctext">Output Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qq::Lease::getQuote().html#Output_Example"><span class="tocnumber">4.1</span> <span class="toctext">Output Example</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#Error_Codes"><span class="tocnumber">5</span> <span class="toctext">Error Codes</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qq::Lease::getQuote().html#Error_Output_Example"><span class="tocnumber">5.1</span> <span class="toctext">Error Output Example</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#Sample_Field_Names"><span class="tocnumber">6</span> <span class="toctext">Sample Field Names</span></a></li>
+<li class='toclevel-1'><a href="./Qq::Lease::getQuote().html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td>  <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This web service has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="GetQuickQuoteWebService.html" title="GetQuickQuoteWebService">getQuickQuoteWebService</a> instead.
+</td></tr></table>
+<p><br />
+Does a full quote calculation for a salary packaged novated vehicle lease with ecm, and returns individually requested fields or all fields if none are requested.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=2" title="Edit section: How it works">edit</a>]</div><a name="How_it_works"></a><h4>How it works</h4>
+<p>The <a href="Global_Controls.html#Quick_Quotes_.28QQ.29" title="Global Controls">gb_control</a> <i>qq.client_code_default</i> stores the default Client Code used when calculating the quote if a specific client code is not sent. The generated quote is stored in qt_quotes with a status of 'external',  The same quote id is used repeatedly for storing the results unless the quote is locked by an existing calculation request.
+</p><p>Where the Client selected has a <a href="Channel.html" title="Channel">'Channel'</a>, and that channel has a separate Quote template, the calculations used will be based on the Channel quote template.
+</p><p>Only variants with an active status in qt_variants and qt_variant_profiles are allowed to be selected.
+</p><p>Comprehensive insurance is calculated using the given postcode (or a state specific default postcode) and target rates specific to the vehicle value and default insurer. Where accurate rates are not available, a default monthly rate of 2.5% of the vehicle value is used. Contact Catch-e support to customize your comprehensive insurance settings.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=3" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h4>Input Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Query string key </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> variant_code / <br />variant_id </td><td> <div class="center">string / integer</center> </td><td> Use a variant_code if you are storing the variant details in your system.<br />Use a variant_id if you are using the vehicle_lookup::getVariants() web service. </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 2 </td><td> approximate_price </td><td> <div class="center">decimal</center> </td><td> Gross List Price obtained from web service vehicle_lookup::getVariantPrice() OR input by user. <b>Note, this cannot be set if approximate_on_road_price is set.</b> </td><td> <center>no**</div>
+</td></tr>
+<tr>
+<td> 3 </td><td> approximate_on_road_price </td><td> <div class="center">decimal</center> </td><td> Gross On Road Cost for the vehicle, including discounts, first year registration, luxury car tax (where applicable), purchase stamp duty and optional equipment.  The component costs are deduced to an accuracy of +/- $0.10. <b>Note, this cannot be set if approximate_price is set.</b> </td><td> <center>no**</div>
+</td></tr>
+<tr>
+<td> 4 </td><td> state_registered </td><td> <div class="center">string</center> </td><td> State codes, VIC, NSW, ACT, NT, TAS, WA, SA, QLD.  This value is used to get the 'Insurance Location' via the <a href="Global_Controls.html" title="Global Controls">gb_control</a> <i>postcode_by_state_default</i> </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 5 </td><td> annual_kilometres </td><td> <div class="center">integer</center> </td><td> Non zero number </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 6 </td><td> lease_period </td><td> <div class="center">integer</center> </td><td> 1 - 60 </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 7 </td><td> annual_salary </td><td> <div class="center">decimal</center> </td><td> Annual gross salary </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 8 </td><td> postcode </td><td> <div class="center">integer</center> </td><td> Valid for given state_registered, if not provided a default value will be used </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 9 </td><td> roadside_assistance_plan_code </td><td> <div class="center">string</center> </td><td> A valid Roadside Assistance Plan Code to turn on the RSA profile and using the Code </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 10 </td><td> monthly_finance_gross </td><td> <div class="center">decimal</center> </td><td> Gross monthly finance payment </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 11 </td><td> client_code </td><td> <div class="center">string</center> </td><td> Client code to use for insurance and financier details </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 12 </td><td> pay_cycle_code </td><td> <div class="center">string</center> </td><td> Pay cycle code to use for the quote output e.g. weekly, fortnightly, monthly  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 13 </td><td> data_source </td><td> <div class="center">string</center> </td><td> Vehicle data source eg. redbook, glass, user-defined.  If not set all data sources are used.  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 14 </td><td> new_used </td><td> <div class="center">string</center> </td><td> Record if vehicle is 'new', 'used' or 'demonstrator'. If this key is not passed, the vehicle is assumed to be 'new'.  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 15 </td><td> odometer </td><td> <div class="center">integer</center> </td><td> Starting odometer reading. Required for used and demonstrator vehicles  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 16 </td><td> contract_type </td><td> <div class="center">string</center> </td><td> For selecting contract type for the quote. If not used then a quote is created using default contract type from <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">gb_control</a> "default_posting_map_id"  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 17 </td><td> fbt_benefit_type </td><td> <div class="center">string</center> </td><td> For selecting 'Fbt Type' for the quote, one of statutory, operating or exempt. If not specified the default statutory is used </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 18 </td><td> fbt_business_use </td><td> <div class="center">string</center> </td><td> For entering 'Bus Use%' for the quote. If not specified the default 0% is used </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 19 </td><td> return_[field_name]* </td><td> <div class="center">mixed</center> </td><td> As many of the Field Name(s) as required prefixed with 'return_' </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 20 </td><td> maintenance_service_flag </td><td> <div class="center">string</center> </td><td> Maintenance/Service can be excluded from the quote by setting this flag to 'no'. Leaving this key out of the URL is the same as setting the value to 'yes'. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 21 </td><td> insurance_flag </td><td> <div class="center">string</center> </td><td> Comprehensive Insurance can be excluded from the quote by setting this flag to 'no'. Leaving this key out of the URL is the same as setting the value to 'yes'. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 22 </td><td> reg_ctp_flag </td><td> <div class="center">string</center> </td><td> If this key is not passed, or is set as 'yes', then the <a href="Registration.html" title="Registration">Registration</a> business logic is used to calculate the quote's Reg and CTP. Set this as 'no' to exclude registration renewals from the quote. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 23 </td><td> tyres_flag </td><td> <div class="center">string</center> </td><td> Tyres can be excluded from the quote by setting this flag to 'no'. Leaving this key out of the URL is the same as setting the value to 'yes'. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 24 </td><td> fuel_flag </td><td> <div class="center">string</center> </td><td> Fuel can be excluded from the quote by setting this flag to 'no'. Leaving this key out of the URL is the same as setting the value to 'yes'. </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 25 </td><td> dealer_delivery_net </td><td> <div class="center">string</center> </td><td> Dealer Delivery Fee amount can be passed in URL. Leaving this out of the URL will see the default Dealer Delivery Fee amount used (comes from <a href="Reference_Data.html#qt_variant_profiles" title="Reference Data">qt_variant_profiles</a>). '<b>Please note:'</b> This input field can be used with either 'approximate_on_road_price' or 'approximate_price' however it is really only effective for use in conjunction with the 'approximate_price' input field.  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 26 </td><td> optional_equipment_deselect_flag </td><td> <div class="center">string</center> </td><td> Will remove all <a href="./Quotes:Options.html" title="Quotes:Options">Options</a> entries for the quote. Leaving this key out of the URL is the same as setting the value to 'no'. '<b>Please note:'</b> This input field can be used with either 'approximate_on_road_price' or 'approximate_price' however it is really only effective for use in conjunction with the 'approximate_price' input field. </td><td> <center>no</div>
+</td></tr></table>
+<p>* See Field Names below<br />
+</p><p><b> ** approximate_price vs. approximate_on_road_price</b>
+</p><p> Either approximate_price or approximate_on_road_price is required<br />
+When using approximate_price you are effectively setting the <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">'List Price'</a> (gross) and building the vehicles pricing from the 'ground up'. <br />
+When using approximate_on_road_price you are effectively setting the <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">'Total On Road Price'</a> (gross) aka Drive Away price. The 'List Price' is then calculated using all known price parameters such as discounts, first year registration, luxury car tax (where applicable), purchase stamp duty and optional equipment. <br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=4" title="Edit section: Input URL Example">edit</a>]</div><a name="Input_URL_Example"></a><h5>Input URL Example</h5>
+<p>Example returns all fields;
+</p>
+<pre>
+https://yourname.catch-e.net.au/services/qq/lease/getQuote/?login=######&amp;password=######&amp;variant_id=115637
+&amp;approximate_price=36355&amp;state_registered=VIC&amp;annual_kilometres=20000&amp;lease_period=36&amp;annual_salary=70000
+</pre>
+<p>Example returning selected fields;
+</p>
+<pre>
+https://yourname.catch-e.net.au/services/qq/lease/getQuote/?login=######&amp;password=######&amp;variant_id=115637
+&amp;approximate_price=8000&amp;state_registered=VIC&amp;annual_kilometres=20000&amp;lease_period=70&amp;annual_salary=700000&amp;return_ecm_gross_per_year&amp;return_salary_gross_per_year&amp;return_packaged_tax_payable
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=5" title="Edit section: Output Fields">edit</a>]</div><a name="Output_Fields"></a><h4>Output Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> XML element </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> [field_name]* </td><td style="width: 9%"> <div class="center">mixed</center> </td><td style="width: 65%"> Field names and values </td><td style="width: 8%"> <center>no</div>
+</td></tr></table>
+<p>* See Field Names below
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=6" title="Edit section: Output Example">edit</a>]</div><a name="Output_Example"></a><h5>Output Example</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;quote&gt;
+</dd></dl>
+<dl><dd><dl><dd>&lt;salary_gross_per_year&gt;700000.000000000000000&lt;/salary_gross_per_year&gt;
+</dd><dd>&lt;ecm_gross_per_year&gt;1732.000000&lt;/ecm_gross_per_year&gt;
+</dd><dd>&lt;packaged_tax_payable&gt;295732.99&lt;/packaged_tax_payable&gt;
+</dd></dl>
+</dd></dl>
+<p><br />
+</p>
+<dl><dd>&lt;/quote&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=7" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h4>Error Codes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_MISSING_FIELD_VARIANT_ID </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_MISSING_FIELD_APPROXIMATE_PRICE </td><td> Input field missing, either approximate_price or approximate_on_road_price needs to be provided
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_APPROXIMATE_PRICE_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_APPROXIMATE_ON_ROAD_PRICE_INVALID </td><td> Input field evaluates to zero
+</td></tr>
+<tr>
+<td> 5 </td><td> CATCH_E_ERROR_ONLY_ONE_APPROXIMATE_PRICE_ALLOWED </td><td> You have provided values for both approximate_price, and approximate_on_road_price, only one at a time is allowed
+</td></tr>
+<tr>
+<td> 6 </td><td> CATCH_E_ERROR_MISSING_FIELD_STATE_REGISTERED </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 7 </td><td> CATCH_E_ERROR_MISSING_FIELD_ANNUAL_KILOMETRES </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 8 </td><td> CATCH_E_ERROR_MISSING_FIELD_LEASE_PERIOD </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 9 </td><td> CATCH_E_ERROR_MISSING_FIELD_ANNUAL_GROSS_SALARY </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 10 </td><td> CATCH_E_ERROR_VARIANT_ID_NOT_FOUND </td><td> Input field invalid record not found
+</td></tr>
+<tr>
+<td> 11 </td><td> CATCH_E_ERROR_VARIANT_ID_NOT_ACTIVE </td><td> The variant <i>[qt_variants]status_flag</i> should be 'active' and a <i>qt_variant_profiles</i> record populated.
+</td></tr>
+<tr>
+<td> 12 </td><td> CATCH_E_ERROR_STATE_REGISTERED_INVALID </td><td> Input field invalid not recognised
+</td></tr>
+<tr>
+<td> 13 </td><td> CATCH_E_ERROR_ANNUAL_KILOMETRES_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 14 </td><td> CATCH_E_ERROR_LEASE_PERIOD_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 15 </td><td> CATCH_E_ERROR_ANNUAL_GROSS_SALARY_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 16 </td><td> CATCH_E_ERROR_ROADSIDE_ASSISTANCE_PLAN_INVALID </td><td> Roadside Assistance Plan Code not found in qt_roadside_assistance_plans
+</td></tr>
+<tr>
+<td> 17 </td><td> CATCH_E_ERROR_BAD_CLIENT_CODE_DEFAULT </td><td> Data set up issue. (Check Global Controls 'client_code_default' &amp; 'postcode_by_state_default').
+</td></tr>
+<tr>
+<td> 18 </td><td> CATCH_E_ERROR_BAD_QUOTE_TEMPLATE </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 19 </td><td> CATCH_E_ERROR_BAD_CONTRACT_TYPE_DEFAULT </td><td> Data set up issue. (Check gb_controls.default_posting_map_id)
+</td></tr>
+<tr>
+<td> 20 </td><td> CATCH_E_ERROR_VARIANT_CODE_NOT_FOUND </td><td> Input field invalid. Vehicle code not recognised
+</td></tr>
+<tr>
+<td> 21 </td><td> CATCH_E_ERROR_MONTHLY_FINANCE_GROSS_INVALID </td><td> Input field invalid unrecognised as a monetary value
+</td></tr>
+<tr>
+<td> 22 </td><td> CATCH_E_ERROR_CLIENT_CODE_INVALID </td><td> Input field invalid unrecognised client
+</td></tr>
+<tr>
+<td> 23 </td><td> CATCH_E_ERROR_VARIANT_ID_CODE_MISMATCH </td><td> Input fields refer to different vehicles
+</td></tr>
+<tr>
+<td> 24 </td><td> CATCH_E_ERROR_PAY_CYCLE_CODE_INVALID </td><td> Input field invalid. Pay cycle not recognised
+</td></tr>
+<tr>
+<td> 25 </td><td> CATCH_E_ERROR_MULTIPLE_PRICES </td><td> Input field invalid. Only one vehicle price should be provided
+</td></tr>
+<tr>
+<td> 26 </td><td> CATCH_E_ERROR_QUOTE_VALIDATION_FAILED </td><td> There is a data set up issue. This error returns an additional details of the error (see example below).
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td> &lt;?xml version="1.0" encoding="UTF-8"?&gt; <br />
+<p>&lt;response&gt; <br />
+&lt;error&gt;CATCH_E_ERROR_QUOTE_VALIDATION_FAILED&lt;/error&gt; <br />
+&lt;/response&gt; <br />
+&lt;error_message&gt;Validation failed due to the following error(s): <br />
+1. Contract Term(Months) must be between 1 and 60. <br />
+2. A valid Insurance Postcode is required! <br />
+&lt;/error_message&gt; <br />
+</p>
+</td></tr></table>
+<p><br />
+<b>Hint:</b> If the error returned is <b>1. Insurance Location is required!</b> - check that the <i>qt_insurer_locations_by_postcode</i> table has the required postcode or state based entries for the default insurer.
+</p>
+</td></tr>
+<tr>
+<td> 27 </td><td> CATCH_E_ERROR_MISSING_FIELD_POSTCODE </td><td> Input field missing and <a href="Global_Controls.html" title="Global Controls">gb_control</a> <i>postcode_by_state_default</i> not setup
+</td></tr>
+<tr>
+<td> 28 </td><td> CATCH_E_ERROR_NEW_USED_INVALID </td><td> Input field invalid. Must be one of new, used or demonstrator
+</td></tr>
+<tr>
+<td> 29 </td><td> CATCH_E_ERROR_ODOMETER_INVALID </td><td> Input field invalid. Must be a numeric value
+</td></tr>
+<tr>
+<td> 30 </td><td> CATCH_E_ERROR_CONTRACT_TYPE_NOT_FOUND </td><td> Input field invalid. Must be a valid contract type
+</td></tr>
+<tr>
+<td> 31 </td><td> CATCH_E_ERROR_FBT_BENEFIT_TYPE_INVALID </td><td> Input field invalid. Must be one of statutory, operating or exempt
+</td></tr>
+<tr>
+<td> 32 </td><td> CATCH_E_ERROR_FBT_BUSINESS_USE_INVALID </td><td> Input field invalid. Must be a decimal value
+</td></tr>
+<tr>
+<td> 33 </td><td> CATCH_E_ERROR_FUEL_FLAG_INVALID </td><td> Input field invalid. Expected input values are either 'yes' or 'no'.
+</td></tr>
+<tr>
+<td> 34 </td><td> CATCH_E_ERROR_TYRES_FLAG_INVALID </td><td> Input field invalid. Expected input values are either 'yes' or 'no'.
+</td></tr>
+<tr>
+<td> 35 </td><td> CATCH_E_ERROR_MAINTENANCE_SERVICE_FLAG_INVALID </td><td> Input field invalid. Expected input values are either 'yes' or 'no'.
+</td></tr>
+<tr>
+<td> 36 </td><td> CATCH_E_ERROR_REG_CTP_FLAG_INVALID </td><td> Input field invalid. Expected input values are either 'yes' or 'no'.
+</td></tr>
+<tr>
+<td> 37 </td><td> CATCH_E_ERROR_INSURANCE_FLAG_INVALID </td><td> Input field invalid. Expected input values are either 'yes' or 'no'.
+</td></tr>
+<tr>
+<td> 38 </td><td> CATCH_E_ERROR_TOO_MANY_REQUESTS </td><td> Rest call requests exceeded the limit set in <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]rest_rate_limit</i></a>.
+</td></tr>
+<tr>
+<td>   </td><td> BLANK SCREEN </td><td> A blank screen will be returned if [qt_quote_maintenance_service] included_flag='no' and [qt_variants]fuel_type_translation_id = 0.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=8" title="Edit section: Error Output Example">edit</a>]</div><a name="Error_Output_Example"></a><h5>Error Output Example</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_MISSING_FIELD_POSTCODE&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+<br /><br />
+</p>
+<pre><b>Use this query to find vehicles that contain missing parameters that may cause a 'CATCH_E_ERROR_QUOTE_VALIDATION_FAILED' error. </b> <br />
+SELECT t2.variant_profile_id, t2.variant_id, t2.maintenance_service_profile_id, t2.tyre_id, t2.tyres_per_set, t2.tyre_km_interval
+, t2.vehicle_type_id, t2.date, t2.delivery_metro, t2.delivery_country, t2.residual_adjustment_rate, t2.insurance_type_id, t2.relief_vehicle
+FROM qt_variants AS t1 INNER JOIN qt_variant_profiles AS t2 ON t2.variant_id = t1.variant_id
+WHERE (t2.maintenance_service_profile_id = '' OR t2.tyre_id = '' OR t2.tyre_km_interval = '' OR t2.vehicle_type_id = '' OR t2.insurance_type_id = '')
+AND t1.status_flag = 'active';
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=9" title="Edit section: Sample Field Names">edit</a>]</div><a name="Sample_Field_Names"></a><h4>Sample Field Names</h4>
+<p>Note these fields are examples only and may not match those used in your Quote calculations.  To see a full list of your available fields run the Input URL without the "return_" parameter and view the xml results.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> # </th><th> Field Name </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 20%"> salary_gross_per_year </td><td style="width: 77%">
+</td></tr>
+<tr>
+<td> 2 </td><td> not_packaged_tax_payable </td><td>
+</td></tr>
+<tr>
+<td> 3 </td><td> not_packaged_medicare_levi </td><td>
+</td></tr>
+<tr>
+<td> 4 </td><td> not_packaged_total_net_income </td><td>
+</td></tr>
+<tr>
+<td> 5 </td><td> not_packaged_vehicle_cost_per_year </td><td>
+</td></tr>
+<tr>
+<td> 6 </td><td> not_packaged_net_salary_per_year </td><td>
+</td></tr>
+<tr>
+<td> 7 </td><td> lease_per_year </td><td>
+</td></tr>
+<tr>
+<td> 8 </td><td> packaged_taxable_salary_gross </td><td>
+</td></tr>
+<tr>
+<td> 9 </td><td> packaged_tax_payable </td><td>
+</td></tr>
+<tr>
+<td> 10 </td><td> packaged_medicare_levi </td><td>
+</td></tr>
+<tr>
+<td> 11 </td><td> packaged_total_net_income </td><td>
+</td></tr>
+<tr>
+<td> 12 </td><td> ecm_gross_per_year </td><td>
+</td></tr>
+<tr>
+<td> 13 </td><td> packaged_net_salary_per_year </td><td>
+</td></tr>
+<tr>
+<td> 14 </td><td> packageing_benefit </td><td>
+</td></tr>
+<tr>
+<td> 15 </td><td> luxury_charge_per_year </td><td>
+</td></tr>
+<tr>
+<td> 16 </td><td> ecm_gst_per_year </td><td>
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 6290: Additional fields in Web Services Quick Quotes (qq). Live 29/08/2012
+</li><li> 6914: Modify web services Quick Quotes. Live 19/12/2013
+</li><li> 7110: Allow 'contract type' in web calculator. Live 17/04/2013
+</li><li> 8048: Add FBT Method to getQuote webservice. Live 14/08/2013
+</li><li> 7011: Add quote validation to save to ensure that quote budgets are consistent. Live 02/08/2013
+</li><li> 11161: New profile flags for QQ - getQuote() web service. Live 16/04/2015
+</li><li> 11513: getQuote() modification. Live 25/05/2015
+</li><li> (DEV-20460) Add rate limiting to Catch-e web-services. Live 13/01/2020
+</li><li> (DEV-21620) QQ quickQuote web service reg_ctp_flag=yes returns error. Live 28/03/2022
+</li><li> (DEV-21955) Benign bug in qq::lease::getQuote caused by DEV-21948 creating lots of Bugsnag errors. Live 10/10/2023
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Qq::Lease::getQuote().html">https://help.catch-e.net.au/mediawiki/index.php/Qq::Lease::getQuote%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Qq::Lease::getQuote()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Qq::Lease::getQuote().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qq::Lease::getQuote%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.09 secs. -->
+</body></html>

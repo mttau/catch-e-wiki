@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Glass Data(FTP Only),FLEET,Global Controls,IMPORT DATA,Import Glass Data,Main Page,Qt:glasses:importVehicleData" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Glass Data(FTP Only) - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Glass Data(FTP Only)</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Glass_Data(FTP_Only).html#column-one">navigation</a>, <a href="Glass_Data(FTP_Only).html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> &rarr; <a href="IMPORT_DATA.html" title="IMPORT DATA">Import Data</a> &rarr; <strong>Glass Data(FTP Only)</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Protected_fields_in_.5Bqt_variants.5D"><span class="tocnumber">2</span> <span class="toctext">Protected fields in [qt_variants]</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Preserve_data_in_.5Bqt_variants.5D"><span class="tocnumber">3</span> <span class="toctext">Preserve data in [qt_variants]</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Audit_Records"><span class="tocnumber">4</span> <span class="toctext">Audit Records</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Validation"><span class="tocnumber">5</span> <span class="toctext">Validation</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Required_files_in_Glass_archive"><span class="tocnumber">6</span> <span class="toctext">Required files in Glass archive</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Import_File_Access"><span class="tocnumber">7</span> <span class="toctext">Import File Access</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Set_Up"><span class="tocnumber">8</span> <span class="toctext">Set Up</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#Useful_Queries"><span class="tocnumber">9</span> <span class="toctext">Useful Queries</span></a></li>
+<li class='toclevel-1'><a href="Glass_Data(FTP_Only).html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Import Glasses data to create new variants and update existing variants where required.<br /> The process looks for files with a date in the next month first, and then if not present, files with a date in the current month are used. E.g. if today is 25/02/2021, the process will look for the Mar21 files first, if they are not available then it will look for the Feb21 files.
+</p><p>The standard process is to set up a scheduler job for <a href="./Qt:glasses:importVehicleData.html" title="Qt:glasses:importVehicleData">qt / glasses / importVehicleData</a>.<br /> This job polls your Glasses FTP folder and picks up new files for processing.
+<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="5%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> Import Glasses data is a legacy function that uses an FTP connection. This function was deprecated in September 2024.<br /> Use the <a href="Import_Glass_Data.html" title="Import Glass Data">Import Glass Data</a> function instead. It uses an SFTP connection and is more secure.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Glass_Data&amp;action=edit&amp;section=1" title="Template:Import Glass Data">edit</a>]</div><a name="Protected_fields_in_.5Bqt_variants.5D"></a><h4>Protected fields in [qt_variants]</h4>
+<p>When a new file would update existing fields that are populated in a record back to zero or blank, those updates are skipped to leave the fields populated.<br /> Fields that are protected in this way are listed below:
+</p>
+<ul><li>weight 
+</li><li>payload 
+</li><li>towing_capacity 
+</li><li>kerb_weight 
+</li><li>fuel_metro 
+</li><li>fuel_country 
+</li><li>fuel_combined 
+</li><li>warranty_years 
+</li><li>warranty_kms 
+</li><li>service_kms 
+</li><li>service_mths 
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Glass_Data&amp;action=edit&amp;section=2" title="Template:Import Glass Data">edit</a>]</div><a name="Preserve_data_in_.5Bqt_variants.5D"></a><h4>Preserve data in [qt_variants]</h4>
+<p>You can nominate specific fields where where data should be preserved and changes that would be made from an import file will be ignored. I.e. data would only be populated into your records if the target fields are currently stored as zero or blank.<br />  Use this to keep specific data and ignore the values imported by Glasses.<br />  Contact Catch-e if you want to nominate any fields to apply this business rule to.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Glass_Data&amp;action=edit&amp;section=3" title="Template:Import Glass Data">edit</a>]</div><a name="Audit_Records"></a><h4>Audit Records</h4>
+<p>The records that are created or changed by this process are recorded in the [gb_audit_import] table. Reports and queries can be run over this file using the timestamp of each import to identify new records created and existing records updated. Contact Catch-e for the sample queries named:
+<br />
+</p>
+<ul><li>Variants created and updated
+</li><li>Variant residuals updated
+</li><li>Other tables updated
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Glass_Data&amp;action=edit&amp;section=4" title="Template:Import Glass Data">edit</a>]</div><a name="Validation"></a><h4>Validation</h4>
+<p>The import process will validate the 'NVIC' code for each row in each file. NVIC codes must be 6 characters. If any of the NVIC code fields are not 6 characters long the file will fail. No vehicles will be imported in this instance. Catch-e support will be notified.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Glass_Data&amp;action=edit&amp;section=5" title="Template:Import Glass Data">edit</a>]</div><a name="Required_files_in_Glass_archive"></a><h4> Required files in Glass archive </h4>
+<p>Key:
+</p><p><b>CVG</b> = Commercial Vehicles up to 10 years old includes 4WDs and vans with a load carrying capacity of less than 3510kg.
+</p><p><b>PVG</b> = Passenger Vehicles up to 10 years old inclusive
+</p><p><b>HCV</b> = Heavy / Commercial Vehicles.
+</p><p><b>N12</b> = Contains only new vehicles and prices released in the current year with NVIC and contains no alphanumeric prices. 
+</p><p><b>U12</b> = Contains all vehicles with second hand prices with no alphanumeric prices and contains NVIC.
+</p><p><b>Same rules apply to PVG, HCV and CVG files. OCG AND OLC prefixes are NOT used.</b>
+</p><p>In some circumstances a client's Glass's ftp site may contain both Service 11 and Service 14 data files.<br /> Service 11 files with the file extension .U12 contain used vehicle values.<br /> Service 14 files with the file extension .U12 do not contain used vehicle values.<br /> Where both files are present the Catch-e default is to import Service 11 .U12 data.<br />
+</p><p>Below is a list of each Filename and a description about it's function.<br /> Only the files prefixed with 'CVG' a shown, but the same suite of files is required for PVG and HCV vehicles if that data is included in your data feed.<br /> E.g. if you subscribe to all three datasets (CVG, PVG &amp; HCV), you will need CVG11xxx.N12, PVG11xxx.N12 &amp; HCV11xxx.N12 and so on.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left"> Filename </th><th width="200" align="left"> Inclusion </th><th> Notes
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Required files
+</td></tr>
+<tr>
+<td>CVG11xxx.N12</td><td>Required (if neither CVG14xxx.N12 or CVG14xxx.U12 included)</td><td>Required if client wants new vehicles and pricing
+</td></tr>
+<tr>
+<td>CVG14xxx.N12</td><td>Required (if neither CVG11xxx.N12 or CVG14xxx.U12 included)</td><td>Required if client wants new vehicles and no pricing
+</td></tr>
+<tr>
+<td>CVG14xxx.U12</td><td>Required (if neither CVG14xxx.N12 or CVG11xxx.N12 included)</td><td>Required if client wants all vehicles and no pricing
+</td></tr>
+<tr>
+<td>CVG73xxx.GRN</td><td>Required</td><td>CO2 Emission Data Pack.<br /> Glasses advise that this file is not available for Heavy Commercials (HCV73xxx.GRN) as they are not provided with CO2 data for these by any OEM.<br /> In this case, the values of these fields will be set to 0.
+</td></tr>
+<tr>
+<td>CVG78xxx.FUE</td><td>Required</td><td>Fuel code long description
+</td></tr>
+<tr>
+<td>CVG78xxx.STR</td><td>Required</td><td>Steering code long description
+</td></tr>
+<tr>
+<td>CVG83xxx.OCD</td><td>Required</td><td>Optional equipment
+</td></tr>
+<tr>
+<td>CVG86xxx.SPE</td><td>Required</td><td>Vehicle Specifications e.g. RELEASE, DISCON, DRV, TORQUE, KW etc
+</td></tr>
+<tr>
+<td>CVG87xxx.SPE</td><td>Required</td><td>Vehicle Specifications e.g. VEHICLE SEGMENT, COUNTRY OF, ORIGIN, FUEL H/WAY, FUEL CITY etc
+</td></tr>
+<tr>
+<td>CVG89xxx.OPT</td><td>Required</td><td>Standard equipment
+</td></tr>
+<tr>
+<td>CVG93xxx.SUS</td><td>Required</td><td>Suspension
+</td></tr>
+<tr>
+<td>CVG99xxx.BDY</td><td>Required</td><td>Body code long description
+</td></tr>
+<tr>
+<td>CVG99xxx.MAK</td><td>Required</td><td>qt_makes
+</td></tr>
+<tr>
+<td>CVG11xxx.U12</td><td><b>Optional</b></td><td>Optional - all vehicles and second-hand pricing
+</td></tr>
+<tr>
+<td>CVG75xxx.SPE</td><td><b>Optional</b></td><td>Vehicle Specifications e.g. KW_RPM, NM_RPM, No. OF DOORS, GRD CLEARANCE etc
+</td></tr>
+<tr>
+<td>CVG78xxx.SUS</td><td><b>Optional</b></td><td> not currently imported
+</td></tr></table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;action=edit&amp;section=2" title="Edit section: Import File Access">edit</a>]</div><a name="Import_File_Access"></a><h4>Import File Access</h4>
+<p>To access import files directly, set-up software such as FileZilla and use the login provided by Glasses to access their hosted FTP folder.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;action=edit&amp;section=3" title="Edit section: Set Up">edit</a>]</div><a name="Set_Up"></a><h4>Set Up </h4>
+<p>Populate the following <a href="Global_Controls.html" title="Global Controls">gb_controls</a>:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">module</th><th width="20%" align="left">name </th><th> Value
+</th></tr>
+<tr>
+<td>qt</td><td>glass_ftp_connection</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="20%" align="left"><b>Host</b></td><td width="70%" align="left">as advised by Glasses
+</td></tr>
+<tr>
+<td><b>Port</b></td><td>as advised by Glasses
+</td></tr>
+<tr>
+<td><b>Username</b></td><td>as advised by Glasses
+</td></tr>
+<tr>
+<td><b>Password</b></td><td>as advised by Glasses
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td>gb</td><td>data_source_default</td><td> glass
+</td></tr>
+<tr>
+<td>gb</td><td>quotes_data_source_override</td><td>glass
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;action=edit&amp;section=4" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h4>Useful Queries</h4>
+<pre>
+select af.table_name, af.field_name, ai.record_id, ai.timestamp, ai.value_before,  ai.value_after
+from gb_audit_import as ai
+inner join gb_audit_fields as af on af.audit_field_id = ai.audit_field_id
+limit 10
+;
+</pre>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 5569: Convert Redbook labelled data to Glasses. Live 20/09/2013
+</li><li> 8429: Make some mandatory files optional in Glasses Import. Live 29/08/2013
+</li><li> 9147: Modify Glass's import for CVG11xxx.U12 files. Live 12/02/2014
+</li><li> 9382: Overwrite Glass's data import. Live xx/02/2014
+</li><li> 9691: Audit mandatory and optional file requirements Live 30/04/2014
+</li><li> 8500: Duplicate Redbook vehicles imported. Live xx/07/2014
+</li><li> (DEV-21217) Glasses Guide Images no longer showing on some client Quotes. Live 09/11/2020
+</li><li> (DEV-21717) Glass import error - invalid NVIC code. Live 05/09/2022
+</li><li> (DEV-21366) Port  Glasses code to the API.  Live 05/09/2022
+</li></ul>
+<p><small></small>
+</small>
+</p><div class="printfooter">
+Retrieved from "<a href="Glass_Data(FTP_Only).html">https://help.catch-e.net.au/mediawiki/index.php/Glass_Data%28FTP_Only%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Glass_Data(FTP_Only)">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Glass_Data(FTP_Only).html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Glass_Data%28FTP_Only%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

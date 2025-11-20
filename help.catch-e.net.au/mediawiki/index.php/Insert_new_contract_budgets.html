@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Insert new contract budgets,APIs,Adjust a lease period billing,Contracts,FLEET BILLING,Field Auditing,Main Page,System Configuration" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Insert new contract budgets - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Insert new contract budgets</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Insert_new_contract_budgets.html#column-one">navigation</a>, <a href="Insert_new_contract_budgets.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Configuration.html#APIs" title="System Configuration">IT Set-up</a> &rarr; <a href="APIs.html" title="APIs">APIs</a> → <a href="APIs.html#Contract_.2F_Budgets" title="APIs">Contract / Budgets</a> &rarr; <strong>Insert new contract budgets</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#HTTP_Method"><span class="tocnumber">3</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Input_Fields_.28Header.29"><span class="tocnumber">4</span> <span class="toctext">Input Fields (Header)</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Input_Fields_.28Body.29"><span class="tocnumber">5</span> <span class="toctext">Input Fields (Body)</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#JSON_Example"><span class="tocnumber">6</span> <span class="toctext">JSON Example</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#.28Successful.29_Output_Example"><span class="tocnumber">7</span> <span class="toctext">(Successful) Output Example</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Error_Codes"><span class="tocnumber">8</span> <span class="toctext">Error Codes</span></a></li>
+<li class='toclevel-1'><a href="Insert_new_contract_budgets.html#Error_Code_Details"><span class="tocnumber">9</span> <span class="toctext">Error Code Details</span></a>
+<ul>
+<li class='toclevel-2'><a href="Insert_new_contract_budgets.html#System_Notes"><span class="tocnumber">9.1</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p><span style="color:#A72125"><i><b>Beta function</b></i></span>
+</p><p>Allows you to insert a new contract budget period for a contract.<br />
+</p><p>This API replicates the system process to <a href="Adjust_a_lease_period_billing.html" title="Adjust a lease period billing">adjust a lease period billing</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>The permission for this api is stored in <i>[gb_api_permissions]permission</i> as '<b>ContractBudgets:Insert'</b>.<br />
+Only roles with a stored link to this permission in <i>[gb_role_api_permissions]</i> can run this api.<br /> 
+API access to this function is provided to the role 'web-services' as the default.<br />
+</p>
+<pre>
+SELECT r.name,rap.permission
+FROM gb_role_api_permissions AS rap
+LEFT JOIN gb_roles AS r ON r.role_id = rap.role_id
+WHERE rap.permission = 'SignonToken:Create'
+ORDER BY r.name;
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=3" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<pre>
+https://api.catch-e.com/fm/contract/budgets/insert
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=4" title="Edit section: Input Fields (Header)">edit</a>]</div><a name="Input_Fields_.28Header.29"></a><h4> Input Fields (Header) </h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Key </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td>Authorization</td><td> string </td><td> authentication token </td><td>Yes
+</td></tr>
+<tr>
+<td>Audit-User-Id</td><td> string </td><td> Value = <i>[gb_users]user_id</i>. Pass this if you want to record this user in the <a href="Field_Auditing.html" title="Field Auditing">audit records</a> as the creator of these records.<br /> This key will only work if you add the permission <b>Audit:UserIdOverride</b> to the authenticated user's role.<br /> This permission should only be given to the 'web-services' role if required.</td><td>No
+</td></tr>
+<tr>
+<td>Content-Type</td><td> string </td><td>Value = 'application/json' or 'application/hjson'</td><td>Yes
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=5" title="Edit section: Input Fields (Body)">edit</a>]</div><a name="Input_Fields_.28Body.29"></a><h4>Input Fields (Body)</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">JSON Field </th><th width="5%" align="left">Format </th><th width="70%" align="left">Notes </th><th width="15%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td>contract_id</td><td>Int</td><td>Contract ID</td><td>Yes
+</td></tr>
+<tr>
+<td>billing_period</td><td>string</td><td>Optional. Must be specified if update_single_period is set to 'yes'. <br /> Mandatory if Contract has not yet commenced Billing.<br /></td><td>Yes
+</td></tr>
+<tr>
+<td>payment_method</td><td>string</td><td>Update the Payment Method preference for budgets. Choose from direct-debit, cheque, cash, other, credit-card, eft.  If this is not passed, the method recorded in item 1 will be used.</td><td>No
+</td></tr>
+<tr>
+<td>billing_date</td><td>string</td><td>Enter the billing date. If this is not passed, the date recorded in item 1 will be used.  </td><td>No
+</td></tr>
+<tr>
+<td>budgets</td><td>string</td><td>Enter one or more budgets to insert values for. The "Class code" is used here.<br /> If a "Class code" passed that is not stored in <b>Contract Types / Accruals</b>, the contract budget item will be created and will have a 0 value.</td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp; amount_net</td><td>string </td><td>Enter the amount, this can be 0. </td><td>Yes
+</td></tr>
+<tr>
+<td>&nbsp; amount_gst</td><td>string </td><td>Enter the gst amount.<br /> If the gst amount is not passed, the value for <i>amount_gst</i> will be added as 0 and the "Overidden?" checkbox will be checked.<br /> If the gst amount does not match the expected calculated value, the "Overidden?" checkbox will be checked.</td><td>No
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=6" title="Edit section: JSON Example">edit</a>]</div><a name="JSON_Example"></a><h4>JSON Example</h4>
+<pre>
+https://api.test.catch-e.com/beta//fm/contract/budgets/insert
+[
+  {
+    &quot;contract_id&quot;: 101066,
+    &quot;billing_period&quot;: 3,
+    &quot;payment_method&quot;: &quot;direct-debit&quot;,
+    &quot;billing_date&quot;: &quot;2014-11-08&quot;,
+    &quot;budgets&quot;: {
+      &quot;MFEE&quot;: {
+        &quot;amount_net&quot;: 200,
+        &quot;amount_gst&quot;: 20
+      }
+    }
+  }
+ 
+  
+]
+      </pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=7" title="Edit section: (Successful) Output Example">edit</a>]</div><a name=".28Successful.29_Output_Example"></a><h4> (Successful) Output Example </h4>
+<pre>
+{
+    &quot;affected_records&quot;: 2
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=8" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h4> Error Codes </h4>
+<p>Example error output
+</p>
+<pre>
+{
+    &quot;validation_messages&quot;: [
+        {
+            &quot;billing_period&quot;: {
+                &quot;notInt&quot;: &quot;Contract ID '100008' - Invalid billing_period '3.1'. Must be whole number only.&quot;
+            }
+        }
+ ],
+
+{
+    &quot;validation_messages&quot;: [
+        {
+            &quot;contract_id&quot;: {
+                &quot;ContractSuspended&quot;: &quot;Contract ID '100007' is suspended, cannot insert billing record.&quot;
+            }
+        }
+    ],}
+
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Locked&quot;,
+    &quot;status&quot;: 423,
+    &quot;detail&quot;: &quot;Locked&quot;
+}
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=9" title="Edit section: Error Code Details">edit</a>]</div><a name="Error_Code_Details"></a><h3>Error Code Details</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 3%"># </th><th> Detail </th><th> Validation Messages </th><th>  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  1 </td><td>Failed Validation</td><td>contract_id<br /> ContractSuspended<br /> Contract ID '######' is suspended, cannot insert billing record
+</td><td>  Contract is suspended.
+</td></tr>
+<tr>
+<td>  2 </td><td>Failed Validation</td><td>contract_id<br /> ContractStartDateMissing<br /> Unable to Save. Contract Start date is missing
+</td><td>  Contract is suspended.
+</td></tr>
+<tr>
+<td>  3 </td><td>Failed Validation</td><td>billing_date<br /> billingDateInvalid<br /> Contract ID ######. Billing date YYYY-MM-DD cannot be earlier then Contract start date
+</td><td>  Billing date is before Contract Start date.
+</td></tr>
+<tr>
+<td>  4 </td><td>Failed Validation</td><td>budgets<br /> isEmpty<br /> Value is required and can't be empty
+</td><td>  At least one budget must be passed in the call.
+</td></tr>
+<tr>
+<td>  5 </td><td>Failed Validation</td><td>budgets<br /> XXX<br /> amount_net<br />isEmpty<br /> Value is required and can't be empty
+</td><td>  amount_net must be passed, set this to 0 if there is no value.
+</td></tr>
+<tr>
+<td>  6 </td><td>Failed Validation</td><td>budgets<br /> XXX<br /> invalidBudgetCode<br /> Invalid budget code XXX
+</td><td>  The Class code must exist in the system.
+</td></tr>
+<tr>
+<td>  7 </td><td>Failed Validation</td><td>billing_period<br /> notInt<br /> Contract ID '######' - Invalid billing_period '3.1'. Must be whole number only.
+</td><td>  Billing period must be a whole number
+</td></tr>
+<tr>
+<td>  8 </td><td>Failed Validation</td><td>billing_period<br /> billingPeriodInvalid<br /> Contract ID ######. Specified billing period must be an existing record.
+</td><td>  Billing period must be a whole number
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 423 - Locked
+</td></tr>
+<tr>
+<td> 1 </td><td> "detail": "Locked" </td><td> </td><td> Either the <a href="Contracts.html" title="Contracts">Contract</a> is being edited or <a href="FLEET_BILLING.html" title="FLEET BILLING">Billing</a> is being processed. Try again once the Contract is no longer in use or the Billing process has completed.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 403 - Forbidden
+</td></tr>
+<tr>
+<td> 1 </td><td> "detail": "Forbidden" </td><td> </td><td> You do not have permissions for this request.
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20065) Add INSERT API for Contract Budgets. Live 18/08/2020
+</li><li> (API-20278) Enhance API to support HJSON. Live dd/mm/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Insert_new_contract_budgets.html">https://help.catch-e.net.au/mediawiki/index.php/Insert_new_contract_budgets</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Insert_new_contract_budgets">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Insert_new_contract_budgets.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insert_new_contract_budgets&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

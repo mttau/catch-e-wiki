@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Gb::Queries::executeQueries(),Add or remove report queue recipients,Catch-e support,Channel,Download a report from the report queue,Email Setup,Job Scheduler,Job Scheduler:Job,Job Scheduler:Queue,Job Scheduler:Schedule,Lookup" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Gb::Queries::executeQueries() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Gb::Queries::executeQueries()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Gb::Queries::executeQueries().html#column-one">navigation</a>, <a href="./Gb::Queries::executeQueries().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr;   <a href="Scheduler_Job_Types.html#Queries" title="Scheduler Job Types">Method</a> &rarr; <strong>executeQuery</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#Field_Descriptions"><span class="tocnumber">3</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#Channel_Logo.27s_in_reports"><span class="tocnumber">4</span> <span class="toctext">Channel Logo's in reports</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#Funds_Check_values"><span class="tocnumber">5</span> <span class="toctext">Funds Check values</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Queries::executeQueries().html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This job type allows you to run a report in the form of an SQL query, and send the output as an email attachment.  It is useful for sending regular reports both internally and externally. Using the <i>Attachment Required</i> checkbox, exception reports can be generated where an email is sent only if the report finds anything.<br />
+</p><p>Visit the <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> page for instructions on writing queries for the scheduler.<br />
+</p><p>Email attachments will be <a href="Email_Setup.html#Email_Attachments_as_URLs" title="Email Setup">converted to URLs</a> if they exceed your set size limit.
+<br />
+</p><p>A few jobs have been set-up to email <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> directly. These <a href="Scheduler_Exception_Queries.html" title="Scheduler Exception Queries">Scheduler Exception Queries</a> are to monitor possible data issues for you.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd> <a href="Update_the_output_format_of_a_query.html" title="Update the output format of a query">Update the output format of a query</a>
+</dd><dd> <a href="Add_or_remove_report_queue_recipients.html" title="Add or remove report queue recipients">Add or remove report queue recipients</a>
+</dd><dd> <a href="Download_a_report_from_the_report_queue.html" title="Download a report from the report queue">Download a report from the report queue</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=3" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Parameters
+</td></tr>
+<tr>
+<td> Query ID </td><td> Number </td><td>  Enter or <a href="Lookup.html" title="Lookup">lookup</a> the query_id to fuse in this job.
+</td></tr>
+<tr>
+<td> Attachment Format </td><td> Drop List </td><td> Choose the required format for the attachment file from '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>', 'Office(xls)', 'Text (csv)',  'Text (txt) or 'XML'.<br /> '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>' is the default value and saves with an xlsx suffix. Further parameter variables are hidden if this format is chosen.<br />  <a href="Office(xls)_Format.html" title="Office(xls) Format">'Office(xls)'</a> enables you to <a href="Office(xls)_Format.html" title="Office(xls) Format">customise</a> the presentation of the generated files. Further parameter variables are hidden if this format is chosen.<br /> 'Text (csv)' generates a text delimited file and uses the CSV, Comma Separated Variable, format.
+<p>'Text (txt)' generates a text delimited file and uses the Text (Tab Delimited) format.
+'XML' generates an XML based file.<br />
+</p>
+</td></tr>
+<tr>
+<td> Column Headings? </td><td> Check Box </td><td>  Check to have the column headings included in the file as the first row. This only applies to the 'Text' Attachment Format.
+</td></tr>
+<tr>
+<td> Separated By </td><td> Drop List</td><td>' will create a pipe separated file. This only applies to the 'Text' Attachment Format. In the special case where {tab} is being used for the separator, all tabs in the data will be replaced with white spaces to conform to the IANA standard for TSV files.
+</td></tr>
+<tr>
+<td> Text Delimited By </td><td> Drop List </td><td>  Set the character used to delimit columns / fields in the output if they contain special characters.  Special characters include double quotes, newlines, and this delimiter character itself.  The 'none' option will add no delimiters and is useful when the query itself adds the delimiters e.g. creating a custom interface file to specification. This only applies to the 'Text' Attachment Format.
+</td></tr>
+<tr>
+<td> Omit Final Line Break? </td><td> Check Box</td><td>  Select so that the final line of output will not end in a line break.  This is required by some third party software for import purposes. This is un-checked by default. This only applies to the 'Text' Attachment Format.
+</td></tr>
+<tr>
+<td> Singleton Tags? </td><td> Check Box</td><td>  if you tick this, tags with empty values will use the singleton style format e.g. &lt;Name /&gt; as opposed to &lt;Name&gt;&lt;/Name&gt;.  This only applies to the 'XML' Attachment Format.
+</td></tr>
+<tr>
+<td> Indent Size </td><td> </td><td> Input, this sets the indentation (whitespaces) used, this must be an integer between 0 and 9. The default is 2.  This only applies to the 'XML' Attachment Format.
+</td></tr>
+<tr>
+<td> Newlines? </td><td> Check Box </td><td>  if you tick this, all lines will end in a newline character. This improves readability when viewing or printing the XML from non-specialized text editors. This only applies to the 'XML' Attachment Format.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Run Times
+</td></tr>
+<tr>
+<td>Report Queue </td><td> </td><td> Check this to send reports to the <a href="Report_Queue.html" title="Report Queue">Report Queue</a>.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Queue
+</td></tr>
+<tr>
+<td>Recycling </td><td> Check Box </td><td> Check to recycle the job when it completes successfully.<br /><br /> If you are recycling a report and sending it to the <a href="Report_Queue.html" title="Report Queue">Report Queue</a>, the "Started" and "Completed" timestamp details on the <a href="Report_Queue.html" title="Report Queue">Report Queue</a> screen will be lost each the job is recycled. The reports will, however, still display in the correct run order.<br />
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=4" title="Edit section: Channel Logo's in reports">edit</a>]</div><a name="Channel_Logo.27s_in_reports"></a><h4>Channel Logo's in reports</h4>
+<p>Where an executeQuery is written to include a <a href="Channel.html" title="Channel">Channel</a> the resulting Office(xls) generated report can contain a channel specific logo, an example query can be seen below:
+</p>
+<pre>
+# Contracts active the beginning of this month
+#channel_id added to SELECT statement
+
+SELECT t1.contract_id,t1.asset_id,t1.contract_start,t1.contract_end,t1.suspend_date,t1.reg_no,t1.description,t2.client_code,t3.surname,t3.given_name, t4.posting_map_code, t2.channel_id
+
+FROM fm_contracts AS t1
+LEFT JOIN fm_clients AS t2 ON t1.client_id = t2.client_id
+LEFT JOIN fm_drivers AS t3 ON t1.driver_id = t3.driver_id
+LEFT JOIN gl_posting_maps AS t4 ON t1.posting_map_id = t4.posting_map_id
+WHERE (t1.suspend_date &gt; DATE_FORMAT(ADDDATE(curdate(), INTERVAL 0 MONTH), '%Y-%m-01')
+OR t1.suspend_date = '0000-00-00')
+AND t1.contract_start &lt;= DATE_FORMAT(SUBDATE(curdate(), INTERVAL 0 MONTH), '%Y-%m-01')
+AND t1.contract_start&nbsp;!= '0000-00-00'
+AND t1.contract_end&nbsp;!= '0000-00-00'
+AND t1. reg_no&nbsp;!= 'ORDER'
+
+#channel_id added as a condition
+
+AND t2.channel_id = 100000
+ORDER BY t1.contract_id;
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=5" title="Edit section: Funds Check values">edit</a>]</div><a name="Funds_Check_values"></a><h4>Funds Check values</h4>
+<p>You can use Funds Check values in queries. See the sample query below:
+</p>
+<pre>
+# library_type standard
+# library_path /lib/PDF
+# library_name funds_check
+SELECT rm.description,
+pmr.type,
+pm.posting_map_code,
+c.contract_id,c.reg_no,c.contract_start,c.contract_end,c.suspend_date,c.terminated_date,
+'-&gt;funds_finance_budget' AS funds_finance_budget,
+'-&gt;funds_finance_actual' AS funds_finance_actual,
+'-&gt;funds_finance_variance' AS funds_finance_variance,
+'-&gt;funds_finance_available' AS funds_finance_available,
+'-&gt;funds_finance_posting_class_codes' AS funds_finance_posting_class_codes
+,'-&gt;funds_finance_report_budget_as_actual' AS funds_finance_report_budget_as_actual
+,'-&gt;funds_finance_available_to_claim' AS funds_finance_available_to_claim
+,'-&gt;funds_unmapped_budget' AS funds_unmapped_budget
+,'-&gt;funds_unmapped_actual' AS funds_unmapped_actual
+,'-&gt;funds_unmapped_variance' AS funds_unmapped_variance
+,'-&gt;funds_unmapped_available' AS funds_unmapped_available
+,'-&gt;funds_unmapped_posting_class_codes' AS funds_unmapped_posting_class_codes
+,'-&gt;funds_total_budget' AS funds_total_budget
+,'-&gt;funds_total_actual' AS funds_total_actual
+,'-&gt;funds_total_variance' AS funds_total_variance
+,'-&gt;funds_total_available' AS funds_total_available
+,'-&gt;funds_received' AS funds_received
+,'-&gt;funds_variance' AS funds_variance
+,'-&gt;funds_available_balance' AS funds_available_balance
+,'-&gt;funds_actual_balance' AS funds_actual_balance
+from fm_contracts AS c
+INNER JOIN gl_posting_maps AS pm ON pm.posting_map_id = c.posting_map_id
+LEFT JOIN gl_posting_map_reporting AS pmr ON pmr.posting_map_id = c.posting_map_id AND pmr.type = 'funds_check'
+LEFT JOIN gl_reporting_maps AS rm ON rm.reporting_map_id = pmr.reporting_map_id
+where  contract_id = 102940
+group by  c.contract_id
+ORDER BY c.contract_id
+
+</pre>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7042: Scheduler Job Type having 'executeQuery' method should not run if it has no recipients. Live 15/08/2014
+</li><li>(DEV-14080) Make changes to Bespoke Driver Reports channel aware Live 12/12/2016
+</li><li>(DEV-20889) Create Funds Check library for use in the scheduler. Live 09/12/2019
+</li><li>(DEV-21092) Set up Scheduler to send excel attachments as .xlsx. Live 28/07/2020
+</li><li>(DEV-21303) Attachments with 'xls' format max row limit 65536. Live 21/06/2021
+</li><li>(DEV-21477) MailQuery - Create provision for 'Attachment Format' to allow for '.txt' output. Live 20/09/2021
+</li><li> (DEV-21518) Scheduler Text(csv) reports not treating 'Text Delimited By' correctly if double quote. Live 21/09/2021
+</li><li> (DEV-21569) Able to change the Sender on the scheduler  when 'Report Queue'  checked on . Live 23/05/2022
+</li><li> (DEV-22292) Missing Column Headings in Generated Reports from Catch-e. Live 11/06/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Gb::Queries::executeQueries().html">https://help.catch-e.net.au/mediawiki/index.php/Gb::Queries::executeQueries%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Gb::Queries::executeQueries()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Gb::Queries::executeQueries().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Queries::executeQueries%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.06 secs. -->
+</body></html>

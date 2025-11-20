@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="PatchQuote Supporting APIs,APIs,GetCompetitorMargins,GetCompetitors,GetDealTypes,GetDiscountTypes,GetFinanceTypes,GetFuelTypeTranslations,GetFuelTypes,GetInclusion,GetInclusionPlan" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>PatchQuote Supporting APIs - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">PatchQuote Supporting APIs</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="PatchQuote_Supporting_APIs.html#column-one">navigation</a>, <a href="PatchQuote_Supporting_APIs.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <b>IT Set-up</b>  &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Quotes" title="APIs">Quotes</a> → <a href="PatchQuote.html" title="PatchQuote">patchQuote</a> → <a href="PatchQuote_-_Contract_tab.html" title="PatchQuote - Contract tab">Contract</a> | <a href="PatchQuote_-_Vehicle_tab.html" title="PatchQuote - Vehicle tab">Vehicle</a> | <a href="PatchQuote_-_Options_tab.html" title="PatchQuote - Options tab">Options</a> | <a href="PatchQuote_-_Finance_tab.html" title="PatchQuote - Finance tab">Finance</a> | <a href="PatchQuote_-_Lease_tab.html" title="PatchQuote - Lease tab">Lease</a> | <a href="PatchQuote_-_Events_tab.html" title="PatchQuote - Events tab">Events</a> | <a href="PatchQuote_-_Other_tab.html" title="PatchQuote - Other tab">Bespoke Fields</a> → <strong>Various Lookups</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Status_.26_Sub_Status"><span class="tocnumber">2</span> <span class="toctext">Quote / Status &amp; Sub Status</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Competitors"><span class="tocnumber">3</span> <span class="toctext">Quote / Competitors</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Deal_Types"><span class="tocnumber">4</span> <span class="toctext">Quote / Deal Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_.28Contract.29_Type_Code"><span class="tocnumber">5</span> <span class="toctext">Quote / (Contract) Type Code</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Discount_Types"><span class="tocnumber">6</span> <span class="toctext">Quote / Discount Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Finance_Types"><span class="tocnumber">7</span> <span class="toctext">Quote / Finance Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Fuel_Types"><span class="tocnumber">8</span> <span class="toctext">Quote / Fuel Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Inclusions"><span class="tocnumber">9</span> <span class="toctext">Quote / Inclusions</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Insurance"><span class="tocnumber">10</span> <span class="toctext">Quote / Insurance</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Loan_Termination_Insurance"><span class="tocnumber">11</span> <span class="toctext">Quote / Loan Termination Insurance</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Location_Rego"><span class="tocnumber">12</span> <span class="toctext">Quote / Location Rego</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Maintenance_and_Service"><span class="tocnumber">13</span> <span class="toctext">Quote / Maintenance and Service</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Opportunity_Stages"><span class="tocnumber">14</span> <span class="toctext">Quote / Opportunity Stages</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Power_Plant_Types"><span class="tocnumber">15</span> <span class="toctext">Quote / Power Plant Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Roadside_Assistance"><span class="tocnumber">16</span> <span class="toctext">Quote / Roadside Assistance</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Tyre_Rim_Insurance"><span class="tocnumber">17</span> <span class="toctext">Quote / Tyre Rim Insurance</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Tyres"><span class="tocnumber">18</span> <span class="toctext">Quote / Tyres</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Variants"><span class="tocnumber">19</span> <span class="toctext">Quote / Variants</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Vehicle_Types"><span class="tocnumber">20</span> <span class="toctext">Quote / Vehicle Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Vehicle_Usage_Types"><span class="tocnumber">21</span> <span class="toctext">Quote / Vehicle Usage Types</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Quote_.2F_Walkaway"><span class="tocnumber">22</span> <span class="toctext">Quote / Walkaway</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#Legend"><span class="tocnumber">23</span> <span class="toctext">Legend</span></a></li>
+<li class='toclevel-1'><a href="PatchQuote_Supporting_APIs.html#System_Notes"><span class="tocnumber">24</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The APIs shown below offer ways of obtaining data required for patchQuote. For example, patchQuote expects pay_cycle_id. Use getPayCycles to get the pay_cycle_id for your chosen Pay Cycle.<br />
+</p><p>Supplementary SWAGGER documentation is available here: <a href="https://api.catch-e.com/docs/#/Quotes/patchQuote" class='external text' title="https://api.catch-e.com/docs/#/Quotes/patchQuote" rel="nofollow">api.catch-e.com/docs/#/Quotes/patchQuote</a>
+<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> These APIs are not configured for external use but may be made available on request.<br /> Contact your Account Manager to discuss.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=2" title="Edit section: Quote / Status &amp; Sub Status">edit</a>]</div><a name="Quote_.2F_Status_.26_Sub_Status"></a><h3>Quote / Status &amp; Sub Status</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetQuoteStatuses.html" title="GetQuoteStatuses">getQuoteStatuses</a></td><td style="background:#e6e6e6"> Get a list of Quote Statuses.
+</td></tr>
+<tr>
+<td> <a href="GetQuoteSubStatuses.html" title="GetQuoteSubStatuses">getQuoteSubStatuses</a></td><td style="background:#e6e6e6"> Get a list of Quote Sub Statuses.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=3" title="Edit section: Quote / Competitors">edit</a>]</div><a name="Quote_.2F_Competitors"></a><h3>Quote / Competitors</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetCompetitors.html" title="GetCompetitors">getCompetitors</a></td><td style="background:#e6e6e6"> Get a list of Competitors
+</td></tr>
+<tr>
+<td> <a href="GetCompetitorMargins.html" title="GetCompetitorMargins">getCompetitorMargins</a></td><td style="background:#e6e6e6"> Get a list of Competitor Margins
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=4" title="Edit section: Quote / Deal Types">edit</a>]</div><a name="Quote_.2F_Deal_Types"></a><h3>Quote / Deal Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetDealTypes.html" title="GetDealTypes">getDealTypes</a></td><td style="background:#e6e6e6"> Allows you to retrieve a list of Deal Types. </td><td style="background:#e6e6e6"> DealTypes:Get
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=5" title="Edit section: Quote / (Contract) Type Code">edit</a>]</div><a name="Quote_.2F_.28Contract.29_Type_Code"></a><h3>Quote / (Contract) Type Code </h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetPostingMaps.html" title="GetPostingMaps">getPostingMaps</a></td><td style="background:#e6e6e6"> Allows you to retrieve a list of Contract Types (Posting Maps). </td><td style="background:#e6e6e6"> PostingMaps:Get
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=6" title="Edit section: Quote / Discount Types">edit</a>]</div><a name="Quote_.2F_Discount_Types"></a><h3>Quote / Discount Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetDiscountTypes.html" title="GetDiscountTypes">getDiscountTypes</a></td><td style="background:#e6e6e6">  Get a list of Discount Types
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=7" title="Edit section: Quote / Finance Types">edit</a>]</div><a name="Quote_.2F_Finance_Types"></a><h3>Quote / Finance Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetFinanceTypes.html" title="GetFinanceTypes">getFinanceTypes</a></td><td style="background:#e6e6e6"> Get a list of Finance Types
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=8" title="Edit section: Quote / Fuel Types">edit</a>]</div><a name="Quote_.2F_Fuel_Types"></a><h3>Quote / Fuel Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetFuelTypes.html" title="GetFuelTypes">getFuelTypes</a></td><td style="background:#e6e6e6"> Get a list of Fuel Types
+</td></tr>
+<tr>
+<td> <a href="GetFuelTypeTranslations.html" title="GetFuelTypeTranslations">getFuelTypeTranslations</a></td><td style="background:#e6e6e6">  Get a list of Fuel Type Translations
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=9" title="Edit section: Quote / Inclusions">edit</a>]</div><a name="Quote_.2F_Inclusions"></a><h3>Quote / Inclusions</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetInclusion.html" title="GetInclusion">getInclusion</a></td><td style="background:#e6e6e6"> Get the details of a single inclusion
+</td></tr>
+<tr>
+<td> <a href="GetInclusions.html" title="GetInclusions">getInclusions</a></td><td style="background:#e6e6e6"> Get a list of inclusions
+</td></tr>
+<tr>
+<td><a href="GetInclusionPlan.html" title="GetInclusionPlan">getInclusionPlan</a></td><td style="background:#e6e6e6"> Get the details of a single inclusion plan
+</td></tr>
+<tr>
+<td> <a href="GetInclusionPlans.html" title="GetInclusionPlans">getInclusionPlans</a></td><td style="background:#e6e6e6"> Get a list of inclusion plans
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=10" title="Edit section: Quote / Insurance">edit</a>]</div><a name="Quote_.2F_Insurance"></a><h3>Quote / Insurance</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Method</th><th>Comments
+</th></tr>
+<tr>
+<td style="width: 20%"> <a href="GetInsuranceLoadingTypes.html" title="GetInsuranceLoadingTypes">getInsuranceLoadingTypes</a></td><td style="background:#e6e6e6"> Get a list of insurance loading types
+</td></tr>
+<tr>
+<td><a href="GetInsuranceLoadingType.html" title="GetInsuranceLoadingType">getInsuranceLoadingType</a></td><td style="background:#e6e6e6"> Get the details of a single insurance loading type
+</td></tr>
+<tr>
+<td> <a href="GetInsuranceTypes.html" title="GetInsuranceTypes">getInsuranceTypes</a></td><td style="background:#e6e6e6"> Get a list of insurance types
+</td></tr>
+<tr>
+<td><a href="GetInsuranceType.html" title="GetInsuranceType">getInsuranceType</a></td><td style="background:#e6e6e6"> Get the details of a single insurance type
+</td></tr>
+<tr>
+<td> <a href="GetInsurerLocations.html" title="GetInsurerLocations">getInsurerLocations</a></td><td style="background:#e6e6e6"> Get a list of insurance locations
+</td></tr>
+<tr>
+<td><a href="GetInsurerLocation.html" title="GetInsurerLocation">getInsurerLocation</a></td><td style="background:#e6e6e6"> Get the details of a single insurance location
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=11" title="Edit section: Quote / Loan Termination Insurance">edit</a>]</div><a name="Quote_.2F_Loan_Termination_Insurance"></a><h3>Quote / Loan Termination Insurance</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetLtiPlans.html" title="GetLtiPlans">getLtiPlans</a></td><td style="background:#e6e6e6"> Get a list of LTI Plans.
+</td></tr>
+<tr>
+<td> <a href="GetLtiTopUpBenefits.html" title="GetLtiTopUpBenefits">getLtiTopUpBenefits</a></td><td style="background:#e6e6e6"> Get a list of LTI Top Up Benefits.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=12" title="Edit section: Quote / Location Rego">edit</a>]</div><a name="Quote_.2F_Location_Rego"></a><h3>Quote / Location Rego</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetLocations.html" title="GetLocations">getLocations</a></td><td style="background:#e6e6e6"> Get a list of "Location Rego" ID values (Metro, Semi Metro, Country)
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=13" title="Edit section: Quote / Maintenance and Service">edit</a>]</div><a name="Quote_.2F_Maintenance_and_Service"></a><h3>Quote / Maintenance and Service</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetMaintenanceServiceProfiles.html" title="GetMaintenanceServiceProfiles">getMaintenanceServiceProfiles</a></td><td style="background:#e6e6e6"> Get a list of Maintenance Profiles
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=14" title="Edit section: Quote / Opportunity Stages">edit</a>]</div><a name="Quote_.2F_Opportunity_Stages"></a><h3>Quote / Opportunity Stages</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetOpportunityStages.html" title="GetOpportunityStages">getOpportunityStages</a></td><td style="background:#e6e6e6"> Get a list of details of Opportunity Stage IDs used by the <a href="Salesforce.html" title="Salesforce">Salesforce</a> CRM system. </td><td style="background:#e6e6e6"> OpportunityStages:Get
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=15" title="Edit section: Quote / Power Plant Types">edit</a>]</div><a name="Quote_.2F_Power_Plant_Types"></a><h3>Quote / Power Plant Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetPowerPlantTypes.html" title="GetPowerPlantTypes">getPowerPlantTypes</a></td><td style="background:#e6e6e6">  Get a list of Power Plant Types
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=16" title="Edit section: Quote / Roadside Assistance">edit</a>]</div><a name="Quote_.2F_Roadside_Assistance"></a><h3>Quote / Roadside Assistance</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetRoadsideAssistancePlans.html" title="GetRoadsideAssistancePlans">getRoadsideAssistancePlans</a></td><td style="background:#e6e6e6"> Get a list of Roadside Assistance Plan ID's
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=17" title="Edit section: Quote / Tyre Rim Insurance">edit</a>]</div><a name="Quote_.2F_Tyre_Rim_Insurance"></a><h3>Quote / Tyre Rim Insurance</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetTyreRimInsurancePlans.html" title="GetTyreRimInsurancePlans">getTyreRimInsurancePlans</a></td><td style="background:#e6e6e6">  Get a list of Tyre Rim Insurance Plan ID's
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=18" title="Edit section: Quote / Tyres">edit</a>]</div><a name="Quote_.2F_Tyres"></a><h3>Quote / Tyres</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td> <a href="GetTyres.html" title="GetTyres">getTyres</a></td><td style="background:#e6e6e6"> Get a list of Tyres
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=19" title="Edit section: Quote / Variants">edit</a>]</div><a name="Quote_.2F_Variants"></a><h3>Quote / Variants</h3>
+<p>Details can be found <a href="APIs.html#Quote_.2F_Variants" class='external text' title="https://help.catch-e.net.au/mediawiki/index.php/APIs#Quote_.2F_Variants" rel="nofollow">here</a>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=20" title="Edit section: Quote / Vehicle Types">edit</a>]</div><a name="Quote_.2F_Vehicle_Types"></a><h3>Quote / Vehicle Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetVehicleTypes.html" title="GetVehicleTypes">getVehicleTypes</a> </td><td style="background:#e6e6e6">  Get a list of vehicle types. </td><td style="background:#e6e6e6"> VehicleTypes:Get
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=21" title="Edit section: Quote / Vehicle Usage Types">edit</a>]</div><a name="Quote_.2F_Vehicle_Usage_Types"></a><h3>Quote / Vehicle Usage Types</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Method</th><th style="width: 60%">Comments</th><th style="width: 20%">Permission
+</th></tr>
+<tr>
+<td>  <a href="GetVehicleUsageTypes.html" title="GetVehicleUsageTypes">getVehicleUsageTypes</a> </td><td style="background:#e6e6e6">  Get a list of "Usage Types". </td><td style="background:#e6e6e6"> VehicleUsageTypes:Get
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=22" title="Edit section: Quote / Walkaway">edit</a>]</div><a name="Quote_.2F_Walkaway"></a><h3>Quote / Walkaway</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%"> Method</th><th style="width: 80%">Comments
+</th></tr>
+<tr>
+<td>   <a href="GetWalkawayPlans.html" title="GetWalkawayPlans">getWalkawayPlans</a></td><td style="background:#e6e6e6">  Get a list of Walkaway Plan ID's
+</td></tr>
+</table>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=23" title="Edit section: Legend">edit</a>]</div><a name="Legend"></a><h3>Legend</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 20%">Field </th><th width="80" align="left">Description
+</th></tr>
+<tr>
+<td> Method </td><td> The API is available by default.
+</td></tr>
+<tr>
+<td>  Method </td><td style="background:#e6e6e6"> This API is not configured for external use by default. If you want to use this API, contact your Account Manager to discuss access.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;action=edit&amp;section=24" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (API-20283) Include legacy updateQuotePricing (WS) functionality into patchQuote (API). Live 05/10/2022
+</li><li> (API-20366) Variants API (new, edit). Live 24/04/2023
+</li><li> (API-20369) Create getDealTypes API. Live 24/07/2023
+</li><li> (API-20370) Create getOpportunityStages API. Live 24/07/2023
+</li><li> (API-20372) Create getCompetitorMargins API. Live 12/03/2024
+</li><li> (API-20375) Create getFinanceTypes API. Live 12/03/2024
+</li><li> (API-20343) Refactor patchQuote for LTI. Live 05/04/2024
+</li><li> (API-20358) Create getQuoteStatuses and getQuoteSubStatuses APIs. Live 08/04/2024
+</li><li> (API-20530) patchQuote BUG - insurer_location_postcode. Live 15/04/2024
+</li><li> (API-20532) Refactor patchQuote for remaining Contract tab fields. Live 11/11/2024
+</li><li> (DEV-21931 / API-20463) Extend Inclusions feature. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="PatchQuote_Supporting_APIs.html">https://help.catch-e.net.au/mediawiki/index.php/PatchQuote_Supporting_APIs</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=PatchQuote_Supporting_APIs">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/PatchQuote_Supporting_APIs.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=PatchQuote_Supporting_APIs&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.09 secs. -->
+</body></html>

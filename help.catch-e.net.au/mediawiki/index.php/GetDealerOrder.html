@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="GetDealerOrder,APIs,Authenticate with the API,Catch-e Support,Dealer Order,Global Controls,Main Page,Manage Roles:Apis,Roles:Apis" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>GetDealerOrder - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">GetDealerOrder</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="GetDealerOrder.html#column-one">navigation</a>, <a href="GetDealerOrder.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <b>IT Set-up</b>  &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Quotes" title="APIs">Quotes</a> → <strong>getDealerOrder</strong> &rarr; <a href="Dealer_Order.html" title="Dealer Order">Dealer Order</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Authentication"><span class="tocnumber">3</span> <span class="toctext">Authentication</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#URL_Examples"><span class="tocnumber">5</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Parameters_-_Path"><span class="tocnumber">6</span> <span class="toctext">Parameters - Path</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Parameters_-_Headers"><span class="tocnumber">7</span> <span class="toctext">Parameters - Headers</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#Response_Details"><span class="tocnumber">8</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="GetDealerOrder.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This API replicates the system function of printing a <a href="Dealer_Order.html" title="Dealer Order">Dealer Order</a> form.<br />
+</p><p>This form can be created in xml, xlsx and csv format, dependant on your system set up.<br />
+You can discuss this requirement with your Account Manager.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>WebServices</b> and <b>Quotes:getDealerOrder</b>. <br />
+</p><p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left">  This API is not configured for external use but can be made available on request.<br /> Contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to request this update.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=3" title="Edit section: Authentication">edit</a>]</div><a name="Authentication"></a><h4>Authentication</h4>
+<p><a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate with the API</a> before running this API.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'GET' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=5" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.test.catch-e.com/qt/quotes/{quote_id}/dealer-order
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=6" title="Edit section: Parameters - Path">edit</a>]</div><a name="Parameters_-_Path"></a><h4>Parameters - Path</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Key </th><th width="5%" align="left">Format</th><th width="60%" align="left"> Notes</th><th width="10%" align="left"> Default Value </th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> quote_id </td><td> string </td><td> Quote ID dealer order is to be generated for. </td><td>  </td><td> Yes
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=7" title="Edit section: Parameters - Headers">edit</a>]</div><a name="Parameters_-_Headers"></a><h4>Parameters - Headers</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Key </th><th width="5%" align="left">Format</th><th width="60%" align="left"> Notes</th><th width="10%" align="left"> Default Value </th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> Time-Zone </td><td> string </td><td> Enter the time zone name for your time-zone. e.g. Australia/Melbourne </td><td>  </td><td> No
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=8" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 201 Success
+</td></tr>
+<tr>
+<td>
+</td><td> The request was successful. Dealer Order will be created.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 401 - Unauthorized
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unauthorized&quot;,
+    &quot;status&quot;: 401,
+    &quot;detail&quot;: &quot;Unauthorized&quot;
+}
+</pre>
+</td><td>
+<ol><li> You have not <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticated</a> before running this API or
+</li><li> The token_timeout of the current session has passed. You need to <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticate</a> again.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 403 - Forbidden
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Forbidden&quot;,
+    &quot;status&quot;: 403,
+    &quot;detail&quot;: &quot;Forbidden&quot;
+}
+</pre>
+</td><td> You do not have permissions for this request.<br />
+<ol><li> Go to <b>System Roles</b> and enter 'web_services'
+</li><li> Navigate to the <a href="./Roles:Apis.html" title="Roles:Apis"> Roles / APIs</a> tab to make sure the permission you need to run this API is checked.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 406 - Cannot honor Accept type specified
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Not Acceptable&quot;,
+    &quot;status&quot;: 406,
+    &quot;detail&quot;: &quot;Cannot honor Accept type specified&quot;
+}
+</pre>
+</td><td> You have passed an unsupported or invalid Accept header <br />
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;validationMessages&quot;: {
+       &quot;quote_id&quot;: {
+         &quot;Required field is not provided&quot;
+}
+</pre>
+</td><td> Quote ID is missing.  This is a mandatory field and must be provided.
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;validationMessages&quot;: {
+       &quot;quote_id&quot;: {
+         &quot;errorIdentifyingContract&quot;: &quot;Error identifying a valid contract from the supplied quote id&quot;
+}
+</pre>
+</td><td> The Quote ID entered is linked to multiple contracts or not valid.  This form cannot be created where the Quote ID is linked to more than one Contract ID.
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;validationMessages&quot;: {
+       &quot;quote_id&quot;: {
+         &quot;requiredPermission&quot;: &quot;The user associated with the gb::html2pdf_service_login credential is missing the WebServices API permission&quot;
+}
+</pre>
+</td><td>  Your role as the authenticated user must have the <b>WebServices</b> and <b>Quotes:getDealerOrder</b> permissions enabled, but additionally the <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]html2pdf_service_login</a></i> user must also have those permissions enabled.<br />
+<p>Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / APIs</a> and enable the required permissions.
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20635) Create getDealerOrder API.  Live 22/04/2025
+</li><li> (API-20681) getDealerOrder API throws an exception when an invalid Accept header is supplied. Live 12/05/20205
+</li><li> (API-20684) Client Code Display Issue in Contract Search Report (Alphanumeric Codes Showing as '0'). Live 19/05/2025
+</li><li> (API-20691) Undefined array key <i> in getDealerOrder API. Live 19/05/2025</i>
+</li><li> (API-20769) Dealer Order API timestamp-format mis-match. Live 06/10/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="GetDealerOrder.html">https://help.catch-e.net.au/mediawiki/index.php/GetDealerOrder</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=GetDealerOrder">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/GetDealerOrder.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetDealerOrder&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.24 secs. -->
+</body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Gb::Attachments::saveAttachment(),APIs,Gb::Attachments::deleteAttachment(),Gb::Attachments::loadAttachment(),Global Controls,Main Page,Web Services" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Gb::Attachments::saveAttachment() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Gb::Attachments::saveAttachment()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Gb::Attachments::saveAttachment().html#column-one">navigation</a>, <a href="./Gb::Attachments::saveAttachment().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <strong>saveAttachment()</strong> | <a href="./Gb::Attachments::loadAttachment().html" title="Gb::Attachments::loadAttachment()">loadAttachment()</a> | <a href="./Gb::Attachments::deleteAttachment().html" title="Gb::Attachments::deleteAttachment()">deleteAttachment()</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Gb::Attachments::saveAttachment().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Gb::Attachments::saveAttachment().html#Input_Fields"><span class="tocnumber">2</span> <span class="toctext">Input Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Gb::Attachments::saveAttachment().html#Input_URL_Examples"><span class="tocnumber">2.1</span> <span class="toctext">Input URL Examples</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Gb::Attachments::saveAttachment().html#Output_Fields"><span class="tocnumber">3</span> <span class="toctext">Output Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Gb::Attachments::saveAttachment().html#Output_Example"><span class="tocnumber">3.1</span> <span class="toctext">Output Example</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Gb::Attachments::saveAttachment().html#Error_Codes"><span class="tocnumber">4</span> <span class="toctext">Error Codes</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Gb::Attachments::saveAttachment().html#Error_Output"><span class="tocnumber">4.1</span> <span class="toctext">Error Output</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Gb::Attachments::saveAttachment().html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td>  <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This web service has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Attachments" title="APIs">Attachments</a> to develop attachment API functions.
+</td></tr></table>
+<p><br />
+</p><p>This web-service allows you to save an attachment via a web service rather than using the regular web-based attachment upload function.<br />
+Please note, the files you want to save as attachments <b>must</b> be placed in your DMZ folder in the "attachments" directory <b>before</b> running the saveAttachment() service.<br />
+When this service has been run, the system checked the file has been loaded and then removes the original file from the DMZ folder. 
+<br />
+If you are unsure of your DMZ access details, please contact Catch-e Support for further assistance.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=2" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h4>Input Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Query string key </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> target_table</td><td style="width: 9%"> <div class="center">string</center> </td><td style="width: 65%"> Name of target table e.g. fm_contract_events. Supported tables include:<br /><br />fm_contract_events<br />fm_driver_events<br />fm_client_events<br />fm_approvals<br />fm_maintenance<br />bk_booking_events<br /><br />Please contact Catch-e support if your target table is not in this list. </td><td style="width: 8%"> <center>yes</div>
+</td></tr>
+<tr>
+<td> 2 </td><td> target_key </td><td> <div class="center">string</center> </td><td> The field that holds the unique id that will be used to identify the target record (see below). This would normally be the id field. E.g <i>contract_event_id</i> </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 3 </td><td> target_record </td><td> <div class="center">string</center> </td><td> The unique id of the record in the target table the attachment is to be associated with. </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 4 </td><td> filename </td><td> <div class="center">string</center> </td><td> The filename of the attachment to be stored. E.g. testfile1.doc </td><td> <center>yes</div>
+</td></tr>
+<tr>
+<td> 5 </td><td> notes </td><td> <div class="center">string</center> </td><td> Optional notes to be stored with the attachment. </td><td> <center>no</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=3" title="Edit section: Input URL Examples">edit</a>]</div><a name="Input_URL_Examples"></a><h5>Input URL Examples</h5>
+<pre>
+https://yourname.catch-e.net.au/services/gb/attachments/saveAttachment?login=######&amp;password=######&amp;target_table=fm_contract_events&amp;target_key=contract_event_id&amp;target_record=116714&amp;filename=testfile1.doc
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=4" title="Edit section: Output Fields">edit</a>]</div><a name="Output_Fields"></a><h4>Output Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> XML element </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> return_status </td><td style="width: 9%"> <div class="center">bool</center> </td><td style="width: 65%"> TRUE on success </td><td style="width: 8%"> <center>yes</div>
+</td></tr>
+<tr>
+<td style="width: 3%"> 2 </td><td style="width: 15%"> attachment </td><td style="width: 9%"> <div class="center">array</center> </td><td style="width: 65%"> The stored attachment data structure. Only shown on success (see below) </td><td style="width: 8%"> <center>yes</div>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=5" title="Edit section: Output Example">edit</a>]</div><a name="Output_Example"></a><h5>Output Example</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;return_status&gt;true&lt;/return_status&gt;
+</dd><dd>&lt;attachment&gt;
+<dl><dd>&lt;attachment_id&gt;100040&lt;/attachment_id&gt;
+</dd><dd>&lt;filename&gt;testfile&lt;/filename&gt;
+</dd><dd>&lt;extension&gt;txt&lt;/extension&gt;
+</dd><dd>&lt;uri&gt;testfile.txt&lt;/uri&gt;
+</dd><dd>&lt;mime_type_id&gt;100540&lt;/mime_type_id&gt;
+</dd><dd>&lt;md5&gt;2a75008348358778dd637bf3a533478a&lt;/md5&gt;
+</dd><dd>&lt;location&gt;local&lt;/location&gt;
+</dd><dd>&lt;notes&gt;&lt;/notes&gt;
+</dd><dd>&lt;user_id&gt;10000&lt;/user_id&gt;
+</dd><dd>&lt;created&gt;[NULL]&lt;/created&gt;
+</dd><dd>&lt;status_flag&gt;active&lt;/status_flag&gt;
+</dd></dl>
+</dd><dd>&lt;/attachment&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=6" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h4>Error Codes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Mode </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_PERMISSION_DENIED </td><td> All </td><td> Your login credentials don't belong to the 'web_services' role.
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_TARGET_TABLE_MISSING </td><td> All </td><td> The mandatory Input Field <i>target_table</i> is missing.
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_TARGET_TABLE_EMPTY </td><td> All </td><td> The mandatory Input Field <i>target_table</i> is empty.
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_TARGET_KEY_MISSING </td><td> All </td><td> The mandatory Input Field <i>target_key</i> is missing.
+</td></tr>
+<tr>
+<td> 5 </td><td> CATCH_E_ERROR_TARGET_KEY_EMPTY </td><td> All </td><td> The mandatory Input Field <i>target_key</i> is empty.
+</td></tr>
+<tr>
+<td> 6 </td><td> CATCH_E_ERROR_TARGET_RECORD_MISSING </td><td> All </td><td> The mandatory Input Field <i>target_record</i> is missing.
+</td></tr>
+<tr>
+<td> 7 </td><td> CATCH_E_ERROR_TARGET_RECORD_EMPTY </td><td> All </td><td> The mandatory Input Field <i>target_record</i> is empty.
+</td></tr>
+<tr>
+<td> 8 </td><td> CATCH_E_ERROR_FILENAME_MISSING </td><td> All </td><td> The mandatory Input Field <i>filename</i> is missing.
+</td></tr>
+<tr>
+<td> 9 </td><td> CATCH_E_ERROR_FILENAME_EMPTY </td><td> All </td><td> The mandatory Input Field <i>filename</i> is empty.
+</td></tr>
+<tr>
+<td> 10 </td><td> CATCH_E_ERROR_ATTACHMENT_DOES_NOT_EXIST </td><td> All </td><td> The named attachment could not be found in the FTP folder.
+</td></tr>
+<tr>
+<td> 11 </td><td> ATTACHMENTS_ERROR_FILE_SIZE_EXCEEDED </td><td> All </td><td> The maximum filesize supported by Catch-e has been exceeded (5MB). Contact Catch-e Support for further assistance.
+</td></tr>
+<tr>
+<td> 12 </td><td> ATTACHMENTS_ERROR_MIME_EXTENSION </td><td> All </td><td> A mime type id could not be resolved for the supplied attachment. Contact Catch-e Support for further assistance.
+</td></tr>
+<tr>
+<td> 13 </td><td> ATTACHMENTS_ERROR_PARENT_RECORD </td><td> All </td><td> The record determined by the target_table, target_key and target_record could not be resolved.
+</td></tr>
+<tr>
+<td> 14 </td><td> ATTACHMENTS_ERROR_RENAME_FAILED </td><td> All </td><td> Contact Catch-e Support for further assistance.
+</td></tr>
+<tr>
+<td> 15 </td><td> ATTACHMENTS_ERROR_IDENTICAL_FILE </td><td> All </td><td> The same file has already been uploaded.
+</td></tr>
+<tr>
+<td> 16 </td><td> CATCH_E_ERROR_TOO_MANY_REQUESTS </td><td> All </td><td> Rest call requests exceeded the limit set in <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]rest_rate_limit</i></a>.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=7" title="Edit section: Error Output">edit</a>]</div><a name="Error_Output"></a><h5>Error Output</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_ATTACHMENT_DOES_NOT_EXIST&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 9386: Modify saveAttachments() web service. Live 24/02/2014
+</li><li> (DEV-20460) Add rate limiting to Catch-e web-services. Live dd/12/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Gb::Attachments::saveAttachment().html">https://help.catch-e.net.au/mediawiki/index.php/Gb::Attachments::saveAttachment%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Gb::Attachments::saveAttachment()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Gb::Attachments::saveAttachment().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Gb::Attachments::saveAttachment%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

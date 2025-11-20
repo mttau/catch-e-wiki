@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Approvals:Vehicle,Administration,Approvals,Approvals:Approval,Approvals:Contract,Approvals:Events,Approvals:Header,Approvals:Maintenance,Approvals:Search,Approvals Setup,CO2 Emissions" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Approvals:Vehicle - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Approvals:Vehicle</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Approvals:Vehicle.html#column-one">navigation</a>, <a href="./Approvals:Vehicle.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Approvals.html" title="Approvals">Approvals</a> &rarr; 
+<a href="./Approvals:Header.html" title="Approvals:Header">Header</a> &rarr; <a href="./Approvals:Search.html" title="Approvals:Search">Search</a> |
+<a href="./Approvals:Approval.html" title="Approvals:Approval">Approval</a> | <a href="./Approvals:Contract.html" title="Approvals:Contract">Contract</a> | <a href="./Approvals:Maintenance.html" title="Approvals:Maintenance">Maintenance</a> | <strong>Vehicle</strong> | <a href="./Approvals:Events.html" title="Approvals:Events">Events</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Approvals_Setup.html" title="Approvals Setup">Approvals Setup</a>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Vehicle&amp;action=edit&amp;section=1" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Screen Name</th><th>Description</th><th>Type</th><th>[table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Column One Fields
+</td></tr>
+<tr>
+<td>Supplier</td><td>Search</td><td>User selects supplier from the search screen or by entering supplier code directly
+</td></tr>
+<tr>
+<td>Description</td><td>Text (40)</td><td>Vehicle description.  Includes a Search icon in edit mode to select a variant from the <a href="Reference_Data.html" title="Reference Data">Setup/Reference Data - Variants</a> data.  Search fields include Make, Model, Model Year, Body Type and Variant.  When Saved the selected variant populates the screen with the standard variant data.  The variant_id is populated in fm_contracts for us in functionality such as Approvals.
+</td></tr>
+<tr>
+<td>Model Code</td><td>Text </td><td>Model code identifier
+</td></tr>
+<tr>
+<td>Classification</td><td>Text </td><td>Asset classification. this field is included on the Text(CSV) version of the inventory report
+</td></tr>
+<tr>
+<td>Colour</td><td>Text </td><td>Vehicle exterior colour
+</td></tr>
+<tr>
+<td>Reg Managed/Expiry</td><td>Tick /Date</td><td>Reg Managed tick box indicates the contract will appear on reg renewal reports.  Registration renewal date is the first date entered by the user, subsequent dates are updated via Reg/CTP Batch entry.<br /> The registration date of HO (History Only) vehicles can be edited by external fleet managers.  Refer notes below*.
+</td></tr>
+<tr>
+<td>Rego State</td><td>List</td><td>The state which the vehicle is registered in.  This field is used on the Registration Renewals Report.  The state field on the Contract screen is used to identify the state location of the vehicle
+</td></tr>
+<tr>
+<td>Description</td><td>Text (40)</td><td>Vehicle description
+</td></tr>
+<tr>
+<td>New/Used</td><td>Text </td><td>Single character reference, e.g. N = New, U = Used
+</td></tr>
+<tr>
+<td>On Road Cost</td><td>Num</td><td>Total vehicle cost including GST, Registration, Purchase Duty
+</td></tr>
+<tr>
+<td>List Price</td><td>Num</td><td>Manufacturer's list price
+</td></tr>
+<tr>
+<td>FBT Value</td><td>Num</td><td>On Road Cost less reg/CTP/purchase duty
+</td></tr>
+<tr>
+<td>Start Odometer</td><td>Num</td><td>Odometer reading at delivery. If zero is required enter ".1" as "0" is ignored by FBT reports.
+</td></tr>
+<tr>
+<td>Start Odometer Date</td><td>Date</td><td>Effective date of odometer reading.  Refer note in approvals section for full explanation of use in calculating estimated kilometres
+</td></tr>
+<tr>
+<td>Warranty Klms</td><td>Num</td><td>User enters warranty kilometre limit Can be numeric or alpha.  Note the import function accepts only numeric or the text 'unlimited'
+</td></tr>
+<tr>
+<td>Warranty Mths</td><td>Num</td><td>User enters warranty months limit
+</td></tr>
+<tr>
+<td>Warranty Expiry</td><td>Num</td><td>User enters warranty expiry date
+</td></tr>
+<tr>
+<td>LCT Exempt?</td><td>Checkbox</td><td>
+</td></tr>
+<tr>
+<td>1link Export Flag</td><td>Checkbox</td><td>Indicates that this contract will be exported to 1Link. Defaults to 'yes' when a new contract is created. This field is only editable if 1link Export Flag on the Contract Type is set to 'yes'. It is shown ticked/unticked as per its current value. But if this flag is set to 'no' on the Contract Type then it is a display only field with the checkbox showing as unticked.
+</td></tr>
+<tr>
+<td>Roadside Managed</td><td>Tick</td><td>Roadside Managed tick box indicates the contract will appear on  <a href="./Standard_Reports:Roadside_Assistance.html" title="Standard Reports:Roadside Assistance">Roadside Assistance</a> reports.
+</td></tr>
+<tr>
+<td>Roadside Supplier</td><td>Lookup</td><td>Enter or lookup the Supplier code for the roadside asswith the istance provider for this contract. If using quotes, this field will be updated with the provider used in the <a href="./Quotes:Lease.html" title="Quotes:Lease">linked quote</a>.
+</td></tr>
+<tr>
+<td>Term</td><td>Num</td><td>Enter the agreed term in months for roadside assistance.
+</td></tr>
+<tr>
+<td>Start Date</td><td>Date</td><td>Enter the start date of the roadside assistance provision.
+</td></tr>
+<tr>
+<td>End Date</td><td>Date</td><td>Enter the end date of the roadside assistance provision.
+</td></tr>
+<tr>
+<td>Approval Limit</td><td>Num</td><td>Enter the maximum amount allowed for Maintenance Approvals to be accepted, prior to client authorisation required.  Maximum number accepted is 9,999.99 and this is the default when an unsupported number is entered</td><td>[fm_contracts]approval_limit
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Column Two Fields
+</td></tr>
+<tr>
+<td>Supplier Ref</td><td>Text (10)</td><td>Reference number such as supplier's invoice number
+</td></tr>
+<tr>
+<td>Build Date</td><td>Text (7)</td><td>Build Date of vehicle in YYYY-MM format
+</td></tr>
+<tr>
+<td>Compliance Date</td><td>Text (7)</td><td>Compliance date of vehicle in YYYY-MM format
+</td></tr>
+<tr>
+<td>Key No</td><td>Text (20)</td><td>Ignition key number
+</td></tr>
+<tr>
+<td>VIN</td><td>Text (20)</td><td>Vehicle Identification Number (17 characters typically but not for certain equipment and vehicles pre 1980).  The user is warned if the VIN is not 17 characters long but the record can still be saved.
+</td></tr>
+<tr>
+<td>Engine</td><td>Text (20)</td><td>Vehicle Engine Number
+</td></tr>
+<tr>
+<td>Man. Model Code</td><td>Text (15)</td><td>Manufacturer code number - supplied by manufacturer
+</td></tr>
+<tr>
+<td>Radio Pin</td><td>Text (10)</td><td>Radio PIN code
+</td></tr>
+<tr>
+<td>Fuel Type</td><td>List</td><td>Drop down list of fuel types, e.g. ULP, Diesel, PULP, etc.
+</td></tr>
+<tr>
+<td><a href="CO2_Emissions.html" title="CO2 Emissions">CO2 Emissions</a></td><td>mediumint(8) </td><td> Carbon-dioxide emission value in g/km.
+</td></tr>
+<tr>
+<td>Fuel Capacity</td><td>Num (10)</td><td> Fuel tank capacity (litres). If using quotes, the "Tank Capacity" of the selected "Variant" is copied into accepted contracts, but this can be edited. The Variant's tank capacity can be viewed in the Specifications section of the <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes/Vehicle</a> screen.</td><td>[fm_contracts]fuel_capacity
+</td></tr>
+<tr>
+<td> Fuel Consumption Upper Limit </td><td> decimal(9,2) </td><td> The field is auto-populated when <a href="Quotes.html" title="Quotes">Quotes</a> is accepted  with its vehicle "Fuel Metro" value. It is used for comparing expected L/100 consumption with actual L/100 consumption in <a href="./Standard_Reports:Operating_Cost.html" title="Standard Reports:Operating Cost">Operating Cost</a> and <a href="./Standard_Reports:Fuel_Service.html" title="Standard Reports:Fuel Service"> Fuel Service</a> reports.
+</td></tr>
+<tr>
+<td> Fuel Consumption Lower Limit </td><td> decimal(9,2) </td><td> The field is auto-populated when <a href="Quotes.html" title="Quotes">Quotes</a> is accepted  with its vehicle "Fuel Country" value. It is used for comparing expected L/100 consumption with actual L/100 consumption in <a href="./Standard_Reports:Operating_Cost.html" title="Standard Reports:Operating Cost">Operating Cost</a> and <a href="./Standard_Reports:Fuel_Service.html" title="Standard Reports:Fuel Service"> Fuel Service</a> reports.
+</td></tr>
+<tr>
+<td>Fuel Card PIN </td><td>Text (8)</td><td>Fuel card PIN number, if known
+</td></tr>
+<tr>
+<td>Service Interval (Kms)</td><td>Num</td><td>Manufacturer intervals between services.  Use in service due report
+</td></tr>
+<tr>
+<td>Service Interval  (Mths)</td><td>Num</td><td>Manufacturer intervals between services.  Use in service due report
+</td></tr>
+<tr>
+<td>$/1000 kms </td><td> decimal(9,2) </td><td> It is used for comparing expected cost per 1000 kms with the actual in <a href="./Standard_Reports:Operating_Cost.html" title="Standard Reports:Operating Cost">Operating Cost</a> report.
+</td></tr>
+<tr>
+<td>Vehicle Type</td><td>List</td><td>Drop down list of vehicle types, e.g. sedan, wagon etc.
+</td></tr>
+<tr>
+<td>Body Configuration</td><td>List</td><td>Drop down list of body configurations, e.g. Dual Cab, Hi Roof, Low Roof etc.
+</td></tr>
+<tr>
+<td>Transmission</td><td>Text</td><td>Transmission type, e.g. Automatic, Manual etc.
+</td></tr>
+<tr>
+<td>Drive Type</td><td>List</td><td>Drop down list of drive types, e.g. 4WD, Front, Rear etc. When included against the variant_id, this field is automatically updated on contract creation from the quote.</td><td>[fm_contracts]drive_type
+</td></tr>
+<tr>
+<td>ANCAP Rating</td><td>Num</td><td>Ancap Star Rating - 0-5</td><td>[fm_contracts]ancap_rating
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Column Three Fields
+</td></tr>
+<tr>
+<td>Manufacturer Code</td><td>Text (4)</td><td>Short Manufacturer code, e.g. 'HOLD'
+</td></tr>
+<tr>
+<td>Manufacturer Name</td><td>Text (40)</td><td>Long Name, e.g. 'Holden"
+</td></tr>
+<tr>
+<td>Model Name</td><td>Text (30)</td><td>Model or Family name, e.g. 'Commodore'
+</td></tr>
+<tr>
+<td>Variant Name</td><td>Text (20)</td><td>Variant Name, E.g. 'Executive'
+</td></tr>
+<tr>
+<td>Red Book Code</td><td>Text (10)</td><td>Red Book Reference number
+</td></tr>
+<tr>
+<td>NVIC Code</td><td>Text (10)</td><td>If the Swann interface is enabled, "NVIC Code" will be an editable field with a lookup icon. If the Swann Insurance product "Extended Warranty" is included in the contract, you will need to fill this field in. Refer to <a href="Swann_Interface.html#Extended_Warranty" title="Swann Interface">Swann Interface - Extended Warranty</a> for full details.
+</td></tr>
+<tr>
+<td>Engine Capacity</td><td>Text (10)</td><td>E.g. 3.0 Litre
+</td></tr>
+<tr>
+<td>Cylinders</td><td>Num (3)</td><td>E.g. 4
+</td></tr>
+<tr>
+<td>Tyre Code</td><td>Text (15)</td><td>Reference to tyre code (user defined)
+</td></tr>
+<tr>
+<td>Tyre Name</td><td>Text (20)</td><td>Common tyre name
+</td></tr>
+<tr>
+<td>Tyre Spec</td><td>Text (15)</td><td>E.g. 20570R16 V80
+</td></tr>
+<tr>
+<td>Tyres Per Set</td><td>Num (3)</td><td>E.g. 4
+</td></tr>
+<tr>
+<td>Total Options</td><td>Num </td><td>Value of options fitted to the vehicle
+</td></tr>
+<tr>
+<td>Interior Colour</td><td>Text (20)</td><td>Vehicle's interior colour
+</td></tr>
+<tr>
+<td>Doors</td><td>List</td><td>Drop down list 0-5
+</td></tr>
+<tr>
+<td>Pink Slip Required</td><td>Tick Box</td><td>indicates that this contract will require a pinkslip
+</td></tr>
+<tr>
+<td>Pink Slip Received</td><td>Tick Box</td><td>indicates that this contract has received a pinkslip, this becomes unticked when a registration payment is processed for this contract
+</td></tr>
+<tr>
+<td>Rego Papers Received</td><td>Tick Box</td><td>indicates that this contract has recieved a registration label, this becomes unticked when a registration payment is processed for this contract
+</td></tr>
+<tr>
+<td>CTP Number</td><td>Text</td><td>Compulsory Third Party Insurance Policy Number.</td><td>[fm_contracts]ctp_number]
+</td></tr>
+<tr>
+<td>CTP Expiry Date</td><td>Date</td><td>Enter the date the CTP Insurance Policy is due.</td><td>[fm_contracts]ctp_expiry_date
+</td></tr>
+<tr>
+<td>Reg Account Number</td><td>Text</td><td>Enter the Registration Account Number the client is listed under, with the relevant State Authority.</td><td>[fm_contracts]state_authority_account_number
+</td></tr>
+<tr>
+<td>Reg Vehicle Reference</td><td>Text</td><td>Enter the Vehicle Reference number allocated by the issuing State Authority, if applicable.</td><td>[fm_contracts]state_authority_vehicle_ref_number
+</td></tr>
+</table>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Vehicle&amp;action=edit&amp;section=2" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7058: Approvals mirror screens not fully operational. Live dd/06/2013
+</li><li> 7936: Client approval restrictions by supplier and class. Live xx/05/2016
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Approvals:Vehicle.html">https://help.catch-e.net.au/mediawiki/index.php/Approvals:Vehicle</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Approvals:Vehicle">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Approvals:Vehicle.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Vehicle&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

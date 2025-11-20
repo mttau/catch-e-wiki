@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Deidentify Driver Data Query,Catch-e Support,DeIdentify Driver Data Field List,Deidentify Driver Data,Main Page,System Administration,Workflow" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Deidentify Driver Data Query - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Deidentify Driver Data Query</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Deidentify_Driver_Data_Query.html#column-one">navigation</a>, <a href="Deidentify_Driver_Data_Query.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a> &rarr; <a href="System_Administration.html" title="System Administration">System Administration</a> &rarr; <b>System Maintenance</b> &rarr; <a href="Deidentify_Driver_Data.html" title="Deidentify Driver Data">Deidentify Driver Data</a> &rarr; <a href="DeIdentify_Driver_Data_Field_List.html" title="DeIdentify Driver Data Field List">DeIdentify Driver Data Field List</a> | <strong>Deidentify Driver Data Query</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Deidentify_Driver_Data_Query.html#Query"><span class="tocnumber">1</span> <span class="toctext">Query</span></a></li>
+<li class='toclevel-1'><a href="Deidentify_Driver_Data_Query.html#Logic"><span class="tocnumber">2</span> <span class="toctext">Logic</span></a></li>
+<li class='toclevel-1'><a href="Deidentify_Driver_Data_Query.html#Standard_Query"><span class="tocnumber">3</span> <span class="toctext">Standard Query</span></a></li>
+<li class='toclevel-1'><a href="Deidentify_Driver_Data_Query.html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Deidentify_Driver_Data_Query&amp;action=edit&amp;section=1" title="Edit section: Query">edit</a>]</div><a name="Query"></a><h4>Query</h4>
+<p>A query has been written for use in a scheduler deidentify job and is available in the <i>[gb_queries]</i> table.
+</p>
+<dl><dd>  <b>Name:</b> Driver deidentification query <br />
+</dd><dd>  <b>Description:</b> Query to identify drivers that qualify for deidentification
+</dd></dl>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Deidentify_Driver_Data_Query&amp;action=edit&amp;section=2" title="Edit section: Logic">edit</a>]</div><a name="Logic"></a><h4>Logic</h4>
+<p>The logic of the deidentify query is detailed below.<br />
+It is based on the driver having been inactive for two years. This time frame can easily be updated to suit your needs.<br />
+</p>
+<ol><li> Drivers are excluded if
+<ol><li> They have any contracts where the "Suspend Date" is blank OR
+</li><li> They have any items where the "Status" is 'Active'
+</li></ol>
+</li><li> Drivers are included if
+<ol><li> The driver record has not been edited in the last <u>two</u> years AND
+</li><li> Linked quotes, contracts and items have not been edited in the last <u>two</u> years
+</li></ol>
+</li></ol>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Deidentify_Driver_Data_Query&amp;action=edit&amp;section=3" title="Edit section: Standard Query">edit</a>]</div><a name="Standard_Query"></a><h4>Standard Query</h4>
+<p>The standard query is shown below.<br />
+</p>
+<ul><li> A 'field alias' for 'driver_id' is required in the query, else the query cannot be allocated to the scheduler job.<br /> 
+</li><li> In the query below the 'field alias' is seen as "<i>SELECT</i> <b>d.driver_id as driver_id</b>, <i>d.created,</i>..." 
+</li></ul>
+<p>If you want to change the query to suit your business, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to raise a task for your requested changes.
+</p>
+<pre> 
+# Query Record 
+
+select * from gb_queries where name = 'Driver deidentification query'
+;
+
+# Query
+
+SELECT d.driver_id as driver_id, d.created, d.last_edit,
+	date_format(if(d.last_edit = '0000-00-00', d.created, d.last_edit),'%Y-%m-%d') as driver_date,
+    COUNT(c.contract_id) AS contracts,
+    COUNT(epi.employee_package_item_id) AS items,
+    DATE_FORMAT(MAX(st1.last_edit), '%Y-%m-%d') AS last_edit_records
+
+FROM fm_drivers AS d
+	LEFT JOIN fm_contracts AS c ON c.driver_id = d.driver_id AND c.suspend_date = '0000-00-00'
+    LEFT JOIN sp_employee_package_items AS epi ON epi.driver_id = d.driver_id AND epi.status_flag IN ('active')
+   
+   LEFT JOIN
+    (SELECT q.driver_id, 'quotes' AS origin,  MAX(q.last_edit) AS last_edit
+    FROM qt_quotes AS q
+    GROUP BY q.driver_id
+    UNION 
+    SELECT c.driver_id, 'contracts' AS origin, MAX(c.last_edit) AS last_edit
+    FROM fm_contracts AS c
+    GROUP BY c.driver_id 
+    UNION 
+    SELECT epi.driver_id, 'items' AS origin,  MAX(a.timestamp) AS last_edit
+    FROM sp_employee_package_items AS epi
+    INNER JOIN gb_audit AS a ON a.record_id = epi.employee_package_item_id
+    INNER JOIN gb_audit_fields AS af ON af.audit_field_id = a.audit_field_id
+        AND af.table_name = 'sp_employee_package_items'
+    GROUP BY epi.driver_id) AS st1 ON st1.driver_id = d.driver_id
+
+WHERE c.driver_id IS NULL AND epi.driver_id IS NULL
+GROUP BY d.driver_id
+HAVING driver_date &lt;= DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND last_edit_records &lt;= DATE_SUB(CURDATE(), INTERVAL 2 YEAR)
+    OR driver_date &lt;= DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND last_edit_records IS NULL
+;
+</pre>
+<p><br />
+</p>
+<hr />
+<p><small>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Deidentify_Driver_Data_Query&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<ul><li> (DEV-21993) (API-20501) Privacy Principles De-identify Drivers personal data. Live 20/08/2024
+</li><li> (API-20675) Driver Deidentification - Update standard script across all clients. Live 22/04/2025</small>
+</li></ul>
+<div class="printfooter">
+Retrieved from "<a href="Deidentify_Driver_Data_Query.html">https://help.catch-e.net.au/mediawiki/index.php/Deidentify_Driver_Data_Query</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Deidentify_Driver_Data_Query">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Deidentify_Driver_Data_Query.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Deidentify_Driver_Data_Query&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.05 secs. -->
+</body></html>

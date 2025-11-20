@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Generate a signon token,APIs,Authenticate with the API,Environments,Main Page,Operating System and Browser settings,Roles:Details" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Generate a signon token - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Generate a signon token</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Generate_a_signon_token.html#column-one">navigation</a>, <a href="Generate_a_signon_token.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Authentication" title="APIs">Authentication</a> → <strong>Generate a signon token</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Permission"><span class="tocnumber">2</span> <span class="toctext">Permission</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#HTTP_Method"><span class="tocnumber">3</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#API"><span class="tocnumber">4</span> <span class="toctext">API</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Signon"><span class="tocnumber">5</span> <span class="toctext">Signon</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Headers"><span class="tocnumber">6</span> <span class="toctext">Headers</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Body"><span class="tocnumber">7</span> <span class="toctext">Body</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Body_example"><span class="tocnumber">8</span> <span class="toctext">Body example</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Output_example"><span class="tocnumber">9</span> <span class="toctext">Output example</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Response_Details"><span class="tocnumber">10</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#Error_Code_example"><span class="tocnumber">11</span> <span class="toctext">Error Code example</span></a></li>
+<li class='toclevel-1'><a href="Generate_a_signon_token.html#System_Notes"><span class="tocnumber">12</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Get a signon token for a user to bypass the login process to gain entry to the system. The token can only be used once. The default screen resolution is 1024 * 768.<br /> 
+The <a href="./Roles:Details.html" title="Roles:Details">Roles / Details </a> "Single Signon" field can be used in conjunction with this service to prevent users from logging into the system directly when single signon is in use and another access method is required.<br />
+</p><p>There are some minor differences in screen behaviour between external and internal users to be aware of, but these differences are also present if users log in directly.<br />
+</p><p>If the user's System / Role "Access Type" is 'external', the screens are different in the following ways;
+</p>
+<dl><dd><ul><li> The Terms of Use and Privacy Policy links for your business are displayed in the screen footers. 
+</li><li> The Audit Icon is not shown
+</li><li> Quote notes are not displayed in Red in the header area of the Quotes module.
+</li><li> Credit Application output files are not selectable in the Quotes / Finance tab.
+</li></ul>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=2" title="Edit section: Permission">edit</a>]</div><a name="Permission"></a><h4>Permission</h4>
+<p>The permission for this api is stored in <i>[gb_api_permissions]permission</i> as '<b>SignonToken:Create'</b>.<br />
+Only roles with a stored link to this permission in <i>[gb_role_api_permissions]</i> can run this api. By default 'admin' and 'web-services' have already been stored.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=3" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' to consume this API. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=4" title="Edit section: API">edit</a>]</div><a name="API"></a><h4>API</h4>
+<pre>
+https://api.catch-e.com/gb/signon
+</pre>
+<pre>
+https://api.{{environment}}.catch-e.com/gb/signon
+</pre>
+<ul><li> <a href="Environments.html" title="Environments">environment</a> - replace or use a placeholder to run this api in Support, Staging or Test.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=5" title="Edit section: Signon">edit</a>]</div><a name="Signon"></a><h4>Signon</h4>
+<pre>
+https://{{client}}.catch-e.net.au/core/signon.phpo?signon={{signon_token}}
+</pre>
+<pre>
+https://{{client}}.{{environment}}.catch-e.net.au/core/signon.phpo?signon={{signon_token}}
+</pre>
+<ul><li> client - add your own client prefix
+</li><li> <a href="Environments.html" title="Environments">environment</a> - replace or use a placeholder to run this api in Support, Staging or Test.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=6" title="Edit section: Headers">edit</a>]</div><a name="Headers"></a><h4>Headers</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Key</th><th>Value
+</th></tr>
+<tr>
+<td style="width: 20%"> Content-Type</td><td>application/json or application/hjson
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=7" title="Edit section: Body">edit</a>]</div><a name="Body"></a><h4>Body</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Field</th><th>Format</th><th>Notes</th><th>Mandatory
+</th></tr>
+<tr>
+<td>user_login</td><td>string</td><td>"Username" -This is the user requiring a single signon token. The user's account must exist, and not be suspended or locked.   </td><td>Yes
+</td></tr>
+<tr>
+<td>token_timeout</td><td>integer</td><td>Sets a timeout for the token (in seconds). If not set, the timeout will default from the user's role. </td><td>No
+</td></tr>
+<tr>
+<td>screen_width</td><td>integer</td><td>Set the screen width in pixels by entering a valid screen resolution width. Visit <a href="Operating_System_and_Browser_settings.html#Supported_Screen_Resolutions" title="Operating System and Browser settings">Supported Screen Resolutions</a> to see a list of supported widths and heights you can choose from.<br />
+<p>A width and height must both be specified or the default resolution (1024 * 768) will be applied. If a resolution is specified, the signon will launch a new window, even if the specified resolution is the default (1024 * 768).<br />
+If no resolution is specified, the signon will remain within the existing window.
+</p>
+</td><td>No
+</td></tr>
+<tr>
+<td>screen_height</td><td>integer</td><td>Set the screen height in pixels by entering a valid screen resolution height. See the notes on screen_width also.
+</td><td>No
+</td></tr>
+<tr>
+<td>single_signon_role_flag </td><td>string</td><td>Prevents a non-single signon user from getting a token if set to 'yes'. If set to 'no' or not set at all, any user can get a token. A single signon user is one that has a role where the Single Signon checkbox on the System / Roles / Details screen is turned off.</td><td>No
+</td></tr>
+<tr>
+<td>create_gb_user_with_this_role </td><td>string</td><td>Pass this parameter in order to give access to a new user on fly. This flag can have value 'driver' or 'package employee'.If the user is 'suspended' or 'locked' request will fail. If the user already have access this flag will be ignored.</td><td>No
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=8" title="Edit section: Body example">edit</a>]</div><a name="Body_example"></a><h4>Body example</h4>
+<pre>
+{
+  &quot;user_login&quot;: &quot;admin&quot;,
+  &quot;token_timeout&quot;: 3600,
+  &quot;single_signon_role_flag&quot;: &quot;yes&quot;,
+  &quot;screen_width&quot;: 1024,
+  &quot;screen_height&quot;: 1080
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=9" title="Edit section: Output example">edit</a>]</div><a name="Output_example"></a><h4>Output example</h4>
+<pre>
+{
+    &quot;signon_token&quot;: &quot;c63d258e074e29fb5f54954dbbc350513f072f7f&quot;,
+    &quot;expires_in&quot;: 3600
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=10" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 15%"> Detail </th><th style="width: 35%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 401 - Unauthorized
+</td></tr>
+<tr>
+<td>  "detail": "Unauthorized" </td><td> </td><td>
+<ol><li> You have not <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticated</a> before running this API or
+</li><li> The token_timeout of the current session has passed. You need to <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticate</a> again.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  "detail": "Failed Validation" </td><td> "single_signon_role_flag": {"userRoleNotSingleSignon": "Specified users role is not single signon"} </td><td>  User is not enabled for single signon and the api requires this.
+<p>To enable, remove "single_signon_role_flag": "yes", from your api statement or set it to "no".
+</p>
+</td></tr>
+<tr>
+<td>  "detail": "Failed Validation" </td><td> "user_login": { "noRecordFound": "Specified user login is not authorised for signon, locked or is invalid"} </td><td>The user is not known, the user's "Status" is 'locked' or 'suspended' or the user login is '_fbt_dec_'.
+</td></tr>
+<tr>
+<td>  "detail": "Failed Validation" </td><td>"user_login": {"isEmpty": "Value is required and can't be empty"} </td><td> The user_login field is missing or is empty
+</td></tr>
+<tr>
+<td>  "detail": "Failed Validation" </td><td> "user_login": {"unsupportedRole": "A signon token cannot be generated for the specified user"} </td><td>  User has a 'web_services' or 'fbt_declaration' role.
+</td></tr>
+<tr>
+<td>   "detail": "Failed Validation" </td><td> "user_login": { "inArray": "Specified user is not allowed"}</td><td>  User login is for 'admin' (a reserved user).
+</td></tr>
+<tr>
+<td>  "detail": "Failed Validation" </td><td>"screen_width": { "notInArray": "Specified value is not a supported screen width" }, "screen_height": { "notInArray": "Specified value is not a supported screen height"}</td><td>  You have entered an unsupported width and/or height.
+</td></tr>
+<tr>
+<td>"detail": "Failed Validation"</td><td>"create_gb_user_with_this_role": {"userInvalidStatus": "A signon token cannot be generated for the specified user"}</td><td>User is suspended or locked.
+</td></tr>
+<tr>
+<td>"detail": "Failed Validation"</td><td>"create_gb_user_with_this_role": {"userRoleMismatch": "A signon token cannot be generated for the specified user"}</td><td>User is not known or does not have an fm_driver record.
+</td></tr>
+<tr>
+<td>"detail": "Failed Validation"</td><td> "create_gb_user_with_this_role": {"noLinkedContract": "The specified user does not have an active linked contract"}</td><td>User does not have an active linked contract. An active contract has a populated "Contract Start" date, is not suspended and "Reg Number" is not 'ORDER'.
+</td></tr>
+<tr>
+<td>"detail": "Failed Validation"</td><td>"create_gb_user_with_this_role": {"userInvalidEmail": "The specified user does not have a valid email address"}</td><td>User's email address is blank. Enter an email address.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=11" title="Edit section: Error Code example">edit</a>]</div><a name="Error_Code_example"></a><h4> Error Code example </h4>
+<pre>
+{
+    &quot;validation_messages&quot;: {
+        &quot;single_signon_role_flag&quot;: {
+            &quot;userRoleNotSingleSignon&quot;: &quot;Specified users role is not single signon&quot;
+        }
+    },
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unprocessable Entity&quot;,
+    &quot;status&quot;: 422,
+    &quot;detail&quot;: &quot;Failed Validation&quot;
+}
+</pre>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;action=edit&amp;section=12" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20022) Single Sign On Screen Resolution. Live 01/07/2019
+</li><li> (API-20031) Enhance current API signon functionality to optionally auto generate user records. Live 21/10/2019
+</li><li> (API-20278) Enhance API to support HJSON. Live dd/mm/2022
+</li><li>(PORTAL-16888) Malformed sign-on token causes odd collation exception. Live dd/mm/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Generate_a_signon_token.html">https://help.catch-e.net.au/mediawiki/index.php/Generate_a_signon_token</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Generate_a_signon_token">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Generate_a_signon_token.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Generate_a_signon_token&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

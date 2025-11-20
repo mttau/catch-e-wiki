@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Angle:JSON,Angle:JSON,Administration,Angle:financialCircumstances,Angle Finance Interface,Angle Interface,Angle Interface Setup,Angle Interface Validation Errors,Angle Mapping,Drivers:Assets Liabilities,FLEET" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Angle:JSON - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Angle:JSON</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Angle:JSON.html#column-one">navigation</a>, <a href="./Angle:JSON.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> &rarr; <a href="./Quotes:Finance.html" title="Quotes:Finance">Finance</a> &rarr; <a href="Angle_Interface.html" title="Angle Interface">Angle Interface</a> &rarr; <strong>Application JSON</strong> | <a href="Angle_Interface_Validation_Errors.html" title="Angle Interface Validation Errors">Validations and Alerts</a> &rarr;<a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Angle_Interface_Setup.html" title="Angle Interface Setup">Angle Interface Setup</a> &rarr; <a href="Angle_Mapping.html" title="Angle Mapping">Angle Mapping</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Angle:JSON.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#Topnotes"><span class="tocnumber">2</span> <span class="toctext">Topnotes</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#externalSystemReference.2C_contractAttributes.2C_campaignDetails"><span class="tocnumber">3</span> <span class="toctext">externalSystemReference, contractAttributes, campaignDetails</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#client_Details"><span class="tocnumber">4</span> <span class="toctext">client Details</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#applicantDetails"><span class="tocnumber">5</span> <span class="toctext">applicantDetails</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Angle:JSON.html#individualDetails"><span class="tocnumber">5.1</span> <span class="toctext">individualDetails</span></a>
+<ul>
+<li class='toclevel-3'><a href="./Angle:JSON.html#employmentDetails"><span class="tocnumber">5.1.1</span> <span class="toctext">employmentDetails</span></a></li>
+<li class='toclevel-3'><a href="./Angle:JSON.html#contactDetails"><span class="tocnumber">5.1.2</span> <span class="toctext">contactDetails</span></a></li>
+<li class='toclevel-3'><a href="./Angle:JSON.html#addresses"><span class="tocnumber">5.1.3</span> <span class="toctext">addresses</span></a>
+<ul>
+<li class='toclevel-4'><a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29"><span class="tocnumber">5.1.3.1</span> <span class="toctext">employmentType (Previous Employment)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="./Angle:JSON.html#paymentInstructions"><span class="tocnumber">5.2</span> <span class="toctext">paymentInstructions</span></a></li>
+<li class='toclevel-2'><a href="./Angle:JSON.html#consent"><span class="tocnumber">5.3</span> <span class="toctext">consent</span></a></li>
+<li class='toclevel-2'><a href="./Angle:JSON.html#financialCircumstances"><span class="tocnumber">5.4</span> <span class="toctext">financialCircumstances</span></a></li>
+<li class='toclevel-2'><a href="./Angle:JSON.html#contactDetails_2"><span class="tocnumber">5.5</span> <span class="toctext">contactDetails</span></a></li>
+<li class='toclevel-2'><a href="./Angle:JSON.html#addresses_2"><span class="tocnumber">5.6</span> <span class="toctext">addresses</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#applicationDetails"><span class="tocnumber">6</span> <span class="toctext">applicationDetails</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#stateChangeNotification"><span class="tocnumber">7</span> <span class="toctext">stateChangeNotification</span></a></li>
+<li class='toclevel-1'><a href="./Angle:JSON.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>The details of the application JSON are shown below with added details of system fields being used.<br />
+When an <a href="Angle_Finance_Interface.html#Angle_Application_Event_and_PDF" title="Angle Finance Interface">Angle Application</a> event is created, this information is stored in the attached PDF in the Response section.<br />
+Use this to help diagnose issues when an application fails.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=2" title="Edit section: Topnotes">edit</a>]</div><a name="Topnotes"></a><h3>Topnotes</h3>
+<p>[1] Mapping - the field is delivered from a mapping. Visit <a href="Angle_Mapping.html" title="Angle Mapping">Angle Mapping</a>.<br />
+[2] individualDetails - <a href="./Angle:JSON.html#addresses" title="Angle:JSON">addresses</a> - previous address shown if populated. Otherwise this section is not passed.<br />
+[3] individualDetails - addresses - <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">employmentType</a> - an optional section that is added when previous employment details are required.<br />
+[4] <a href="./Angle:JSON.html#consent" title="Angle:JSON">additionalDetails</a> - answers to these questions are hard-coded. Check that your process matches the information being sent here.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=3" title="Edit section: externalSystemReference, contractAttributes, campaignDetails">edit</a>]</div><a name="externalSystemReference.2C_contractAttributes.2C_campaignDetails"></a><h3>externalSystemReference, contractAttributes, campaignDetails</h3>
+<pre>
+{
+ &quot;externalSystemReference&quot;: &quot;&quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;&quot;,
+ &quot;contractAttributes&quot;: {
+ &quot;signatureDate&quot;: &quot;2024-04-08&quot;,
+ &quot;contractStartDate&quot;: &quot;2024-04-08&quot;,
+ &quot;advance&quot;: &quot;Advanced [qt_quotes]advance_arrears &quot;,
+ &quot;installmentDeferredMonths&quot;: 1 [qt_quotes]periods_deferred
+ },
+ &quot;campaignDetails&quot;: {
+ &quot;productCode&quot;: &quot;NOVLEASE&quot;
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=4" title="Edit section: client Details">edit</a>]</div><a name="client_Details"></a><h3>client Details</h3>
+<pre>
+ &quot;clientDetails&quot;: {
+ &quot;clientNumber&quot;: [gb_originators]originator_code,
+ &quot;owner&quot;: [gb_originators]originator_code,
+ &quot;clientApplication&quot;: &quot;[gb_originators]user_code&quot;,
+ &quot;legalName&quot;: &quot;[gb_originators]user_code&quot;,
+ &quot;groupName&quot;: &quot;[gb_originators]user_code&quot;,
+ &quot;taxRegion&quot;: &quot;VIC [qt_quotes]state&quot;
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=5" title="Edit section: applicantDetails">edit</a>]</div><a name="applicantDetails"></a><h3>applicantDetails</h3>
+<pre>
+ &quot;applicantDetails&quot;: {
+ &quot;primaryApplicant&quot;: {
+ &quot;applicantType&quot;: &quot;PRIMEB&quot;,
+ &quot;businessDetails&quot;: {
+ &quot;industry&quot;: &quot;[fm_client_industries]client_industry_code&quot;
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=6" title="Edit section: individualDetails">edit</a>]</div><a name="individualDetails"></a><h4>individualDetails</h4>
+<pre>
+ &quot;individualDetails&quot;: {
+ &quot;firstName&quot;: &quot;[fm_drivers]given_name&quot;,
+ &quot;lastName&quot;: &quot;[fm_drivers]surname&quot;,
+ &quot;otherNamesExist&quot;: &quot;N&quot;,
+ &quot;title&quot;: &quot;Mr&quot;, [1] Mapping
+ &quot;dateOfBirth&quot;: &quot;1988-08-12 [fm_drivers]date_of_birth&quot;,
+ &quot;gender&quot;: &quot;Male&quot;,  [1] Mapping
+ &quot;relationshipStatus&quot;: &quot;Married&quot;, [1] Mapping
+ &quot;visaStatus&quot;: &quot;Citizen&quot;, [1] Mapping
+ &quot;residentialStatus&quot;: &quot;RentingEmployerProvided&quot;,  [1] Mapping
+ &quot;countryOfResidence&quot;: &quot;AU&quot;,
+ &quot;numberOfDependents&quot;: 0,
+ &quot;externalSystemReference&quot;: &quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;,
+ &quot;anzsicCode&quot;: &quot;A011500 [fm_client_industries]client_industry_code&quot;,
+ &quot;driversLicenseDetails&quot;: {
+ &quot;number&quot;: &quot;5245124 [fm_drivers]driver_licence&quot;,
+ &quot;state&quot;: &quot;NSW [fm_drivers]driver_lic_state&quot;,
+ &quot;expiryDate&quot;: &quot;2026-02-16 [fm_drivers]driver_exp&quot;,
+ &quot;cardNumber&quot;: &quot;BA555500 [fm_drivers]driver_licence_card_number&quot;
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=7" title="Edit section: employmentDetails">edit</a>]</div><a name="employmentDetails"></a><h5>employmentDetails</h5>
+<pre>
+&quot;employmentDetails&quot;: [
+ {
+ &quot;employmentType&quot;: &quot;FullTimeEmployed&quot;,   [1] Mapping
+ &quot;occupationType&quot;: &quot;Other&quot;,   [1] Mapping
+ &quot;startDate&quot;: &quot;2023-01-03 [fm_drivers]employee_start&quot;,
+ &quot;employerName&quot;: &quot;MKT Taxation Advisors [fm_clients]name&quot;,
+ &quot;entityType&quot;: &quot;Other&quot;,   [1] Mapping
+ &quot;companyRegistrationNumber&quot;: &quot;51 094 591 438 [fm_clients]abn, else [fm_clients]acn&quot;,
+ &quot;externalSystemReference&quot;: &quot;&quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;&quot;,
+ &quot;anzsicCode&quot;: &quot;AB33990 [fm_client_industries]client_industry_code&quot;,
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=8" title="Edit section: contactDetails">edit</a>]</div><a name="contactDetails"></a><h5>contactDetails</h5>
+<pre>
+&quot;contact Details&quot;: {
+ &quot;emails&quot;: [
+ {
+ &quot;type&quot;: &quot;WK&quot;,
+ &quot;value&quot;: &quot; [gb_controls]name = 'angle_api_contact_details' &quot;Email Address&quot; &quot;,
+ &quot;defaultDelivery&quot;: &quot;EmailBusiness&quot;
+ },
+ {
+ &quot;type&quot;: &quot;HM&quot;,
+ &quot;value&quot;: &quot;[fm_drivers]home_email&quot;,
+ &quot;defaultDelivery&quot;: &quot;EmailHome&quot;
+ }
+ ],
+ &quot;phones&quot;: [
+ {
+ &quot;type&quot;: &quot;HM&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;areaCode&quot;: &quot;02&quot;,
+ &quot;number&quot;: &quot;[fm_drivers]home_phone&quot;
+ },
+ {
+ &quot;type&quot;: &quot;WK&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;areaCode&quot;: &quot;08&quot;,
+ &quot;number&quot;: &quot; [gb_controls]name = 'angle_api_contact_details' &quot;Phone&quot; &quot;
+ }
+ ],
+ &quot;mobiles&quot;: [
+ {
+ &quot;type&quot;: &quot;MB&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;number&quot;: &quot;[fm_drivers]mobile&quot;
+ }
+ ]
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=9" title="Edit section: addresses">edit</a>]</div><a name="addresses"></a><h5>addresses</h5>
+<p>Driver's addresses can only be used in this JSON if they have been stored using the autocomplete addressprocess, I.e. there is an <i>address_detail_pid</i>.<br /> If a postal address is stored, it is not passed in the JSON.<br /> When driver has been at current home address for less than 3 years, their previous home address is required. <br /> 
+[2] individualDetails - <a href="./Angle:JSON.html#addresses" title="Angle:JSON">addresses</a> - previous address shown if populated. Otherwise this section is not passed.<br />
+</p>
+<pre>
+ &quot;addresses&quot;: [
+ {
+ &quot;externalSystemReference&quot;: &quot;&quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;&quot;,
+ &quot;addressType&quot;: &quot;Street [gb_adddresses] where table_key = 'address_id_home' &quot;,
+ &quot;unitNumber&quot;: &quot;&quot;,
+ &quot;streetNumber&quot;: &quot;65 &quot;,
+ &quot;streetName&quot;: &quot;SAMPSON ST&quot;,
+ &quot;suburb&quot;: &quot;ORANGE&quot;,
+ &quot;state&quot;: &quot;NSW&quot;,
+ &quot;postalCode&quot;: &quot;2800&quot;,
+ &quot;country&quot;: &quot;AU&quot;,
+ &quot;effectiveDateFrom&quot;: &quot;2022-07-03 [fm_drivers]employee_start&quot;
+ },
+{
+ &quot;externalSystemReference&quot;: &quot;&quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;&quot;, 
+ 
+ &quot;addressType&quot;: &quot;Street' &quot;, - Use where [fm_drivers]previous_address_detail_pid is populated
+ &quot;unitNumber&quot;: &quot;&quot;, 
+ &quot;streetNumber&quot;: &quot;25&quot;, 
+ &quot;streetName&quot;: &quot;JULIA ST&quot;, 
+ &quot;suburb&quot;: &quot;PORTLAND&quot;, 
+ &quot;state&quot;: &quot;VIC&quot;, 
+ &quot;postalCode&quot;: &quot;3305&quot;, 
+ &quot;country&quot;: &quot;AU&quot;,
+ &quot;effectiveDateFrom&quot;: &quot;2017-07-03&quot; - Use [fm_drivers]previous_address_years_at_address to derive a date.  In this example, 5 years is used.
+ &quot;effectiveDateTo&quot;: &quot;2022-07-02&quot; - Will be one day less than current address &quot;effectiveDateFrom&quot;
+ },
+ {
+ &quot;externalSystemReference&quot;: &quot;CODE_179519&quot;,
+ &quot;addressType&quot;: &quot;Mailing [gb_adddresses] where table_key = 'address_id_post'&quot;,
+ &quot;unitNumber&quot;: &quot;&quot;,
+ &quot;streetNumber&quot;: &quot;65 &quot;,
+ &quot;streetName&quot;: &quot;SAMPSON ST&quot;,
+ &quot;suburb&quot;: &quot;ORANGE&quot;,
+ &quot;state&quot;: &quot;NSW&quot;,
+ &quot;postalCode&quot;: &quot;2800&quot;,
+ &quot;country&quot;: &quot;AU&quot;,
+ &quot;effectiveDateFrom&quot;: &quot;2023-01-03 [fm_drivers]employee_start&quot;
+ }
+ ]
+ }, 
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=10" title="Edit section: employmentType (Previous Employment)">edit</a>]</div><a name="employmentType_.28Previous_Employment.29"></a><h6>employmentType (Previous Employment)</h6>
+<p>[3] individualDetails - addresses - <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">employmentType</a> - an optional section that is added when previous employment details are required.<br />
+</p>
+<pre>
+{
+ &quot;employmentType&quot;: &quot;Unknown&quot;, [3] Hard coded.
+ &quot;occupationType&quot;: &quot;Other&quot;,   [3] Hard coded
+ &quot;startDate&quot;: &quot;2016-09-02&quot;,   [3] [fm_drivers]employee_start  - 1 day - ( [fm_drivers]previous_years_employed * 365)
+ &quot;endDate&quot;: &quot;2023-01-02&quot;,     [3] [fm_drivers]employee_start - 1 day
+ &quot;employerName&quot;: &quot;Taxation Consultants R Us&quot;,  [fm_drivers]previous_employer_name
+ &quot;entityType&quot;: &quot;Other&quot;,       [3] Hard coded
+ &quot;companyRegistrationNumber&quot;: [3] [fm_drivers]previous_employer_abn
+ &quot;externalSystemReference&quot;: &quot;&quot;CODE_179519 [gb_originators]user_code_[qt_quotes]quote_id&quot;&quot;,
+ &quot;anzsicCode&quot;: &quot;T999999&quot;,  [3] Hard coded - [fm_client_industries]client_industry_code
+ }
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=11" title="Edit section: paymentInstructions">edit</a>]</div><a name="paymentInstructions"></a><h4>paymentInstructions</h4>
+<pre>
+&quot;paymentInstructions&quot;: {
+ &quot;payment&quot;: {
+ &quot;paymentMethod&quot;: &quot;CBA Direct Credit&quot;
+ }
+},
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=12" title="Edit section: consent">edit</a>]</div><a name="consent"></a><h4>consent</h4>
+<pre>
+&quot;additionalDetails&quot;: {
+ &quot;isCreditCheckAuthorised&quot;: &quot;Y&quot;, [fm_drivers]credit_check_authorised_flag
+ &quot;isIdentificationVerified&quot;: &quot;N&quot;, [4] hardcoded
+ &quot;isIdentificationVerifiedByAnotherSystem&quot;: &quot;Y&quot; [fm_drivers]kyc_verified_flag
+ },
+ 
+ &quot;consent&quot;: {
+ &quot;isPrivacyConsentGiven&quot;: &quot;Y&quot;, [fm_drivers]privacy_consent_validation_flag
+ &quot;isDvsConsentGiven&quot;: &quot;Y&quot; [fm_drivers]dvs_verified_flag
+ },
+</pre>
+<p>[4] isIdentificationVerified - answer to this question is hard-coded. Check that your process matches the information being sent here.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=13" title="Edit section: financialCircumstances">edit</a>]</div><a name="financialCircumstances"></a><h4>financialCircumstances</h4>
+<p><b>capacityAssessment</b> - The five "capacityAssessment" questions have hard-coded answers.<br /> You will need to review your credit application process to make sure these answers are correct for the driver before submitting an application.<br />
+</p><p><br />
+Income and Expense records come from specific fields in the <b>Drivers / Finances</b> tab. See full details here <a href="./Angle:financialCircumstances.html" title="Angle:financialCircumstances">financialCircumstances</a><br />
+</p><p>Asset and Liability records come from the <a href="./Drivers:Assets_Liabilities.html" title="Drivers:Assets Liabilities">Drivers / Assets &amp; Liabilities</a> tab.<br />
+Note - when a liability is passed for 'Credit Card Limit' "Balance" and "Monthly Payment", Angle's system will re-calculate the "Monthly Payment" based on their own criteria. This means the Response PDF will contain a different amount for this field.
+</p>
+<pre>
+&quot;financialCircumstances&quot;: {
+ &quot;capacityAssessment&quot;: {
+ &quot;isAssessmentQuestionsAsked&quot;: &quot;Y&quot;,
+ &quot;isSelfDeclaration&quot;: &quot;N&quot;,
+ &quot;isReductionClaimed&quot;: &quot;Y&quot;,
+ &quot;areAnyChangesExpected&quot;: &quot;N&quot;
+ },
+ &quot;assets&quot;: [
+ {
+ &quot;amount&quot;: 750000 [fm_driver_assets]amount ,
+ &quot;type&quot;: &quot;Other [fm_driver_assets]description &quot;
+ },
+ {
+ &quot;amount&quot;: 25000,
+ &quot;type&quot;: &quot;Car&quot;
+ }
+ ],
+ &quot;liabilities&quot;: [
+ {
+ &quot;amount&quot;: 11000 [fm_driver_liabilities]amount,
+ &quot;description&quot;: &quot;Motor Vehicle Loan [fm_driver_liabilities]description &quot;,
+ &quot;type&quot;: &quot;Automotive Loan [fm_finance_liability_types]name &quot;
+ },
+{
+ &quot;amount&quot;: 25000, [fm_driver_liabilites]liability_limit)amount
+ &quot;description&quot;: &quot;Credit Card Limit&quot;,
+ &quot;type&quot;: &quot;Credit Card&quot;,
+ &quot;expense&quot;: {
+ &quot;amount&quot;: 1201, [fm_driver_liabilities]monthly_payment_amount
+ &quot;frequency&quot;: &quot;Monthly&quot;
+ },
+ &quot;financierName&quot;: &quot;Commonwealth Bank of Australia&quot; [fm_driver_liabiities]finance_liability_financier_id
+
+ ],
+ &quot;incomes&quot;: [
+ {
+ &quot;amount&quot;: 1200 [fm_drivers]income_spouse_net,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Monthly Spouse Net Income&quot;,
+ &quot;type&quot;: &quot;Spousal Income&quot;
+ },
+ {
+ &quot;amount&quot;: 1630 [fm_drivers]income_rental_net,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Monthly Rental Income&quot;,
+ &quot;type&quot;: &quot;Rental Income&quot;
+ },
+ {
+ &quot;amount&quot;: 3200 [fm_drivers]investment_income,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Monthly Investment Income&quot;,
+ &quot;type&quot;: &quot;Investment Income&quot;
+ }
+ ],
+ &quot;expenses&quot;: [
+ {
+ &quot;amount&quot;: 3250 [fm_drivers]expense_mortgage,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Mortgage&quot;,
+ &quot;type&quot;: &quot;Rent or Board Expense&quot;
+ },
+ {
+ &quot;amount&quot;: 1200 [fm_drivers]expense_rent,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Rent&quot;,
+ &quot;type&quot;: &quot;Rent or Board Expense&quot;
+ },
+ {
+ &quot;amount&quot;: 1500 [fm_drivers]expense_household,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Household&quot;,
+ &quot;type&quot;: &quot;Basic Living Expense&quot;
+ },
+ {
+ &quot;amount&quot;: 250  [fm_drivers]expense_credit_card,
+&quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Credit Cards&quot;,
+ &quot;type&quot;: &quot;Basic Living Expense&quot;
+ },
+ {
+ &quot;amount&quot;: 2500 [fm_drivers]expense_vehicle,
+ &quot;frequency&quot;: &quot;Monthly&quot;,
+ &quot;description&quot;: &quot;Vehicle&quot;,
+ &quot;type&quot;: &quot;Car and Transport&quot;
+ }
+]
+},
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=14" title="Edit section: contactDetails">edit</a>]</div><a name="contactDetails_2"></a><h4>contactDetails</h4>
+<pre>
+&quot;contactDetails&quot;: {
+ &quot;emails&quot;: [
+ {
+ &quot;type&quot;: &quot;WK&quot;,
+ &quot;value&quot;: &quot; [gb_controls]name = 'angle_api_contact_details' &quot;Email Address&quot; &quot;,
+ &quot;defaultDelivery&quot;: &quot;EmailBusiness&quot;
+ },
+ {
+ &quot;type&quot;: &quot;HM&quot;,
+ &quot;value&quot;: &quot; [fm_drivers]home_phone &quot;,
+ &quot;defaultDelivery&quot;: &quot;EmailHome&quot;
+ }
+ ],
+ &quot;phones&quot;: [
+ {
+ &quot;type&quot;: &quot;HM&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;areaCode&quot;: &quot;02&quot;,
+ &quot;number&quot;: &quot;54676655&quot;
+ },
+ {
+ &quot;type&quot;: &quot;WK&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;areaCode&quot;: &quot;08&quot;,
+ &quot;number&quot;: &quot;62053575&quot;
+ }
+ ],
+ &quot;mobiles&quot;: [
+ {
+ &quot;type&quot;: &quot;MB&quot;,
+ &quot;countryCode&quot;: &quot;61&quot;,
+ &quot;number&quot;: &quot;0428563998&quot;
+ }
+ ]
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=15" title="Edit section: addresses">edit</a>]</div><a name="addresses_2"></a><h4>addresses</h4>
+<pre>
+ &quot;addresses&quot;: [
+ {
+ &quot;externalSystemReference&quot;: &quot;CODE_179519&quot;,
+ &quot;addressType&quot;: &quot;Street&quot;,
+ &quot;unitNumber&quot;: &quot;&quot;,
+ &quot;streetNumber&quot;: &quot;65 &quot;,
+ &quot;streetName&quot;: &quot;SAMPSON ST&quot;,
+ &quot;suburb&quot;: &quot;ORANGE&quot;,
+ &quot;state&quot;: &quot;NSW&quot;,
+ &quot;postalCode&quot;: &quot;2800&quot;,
+ &quot;country&quot;: &quot;AU&quot;,
+ &quot;effectiveDateFrom&quot;: &quot;2023-01-03&quot;
+ },
+ {
+ &quot;externalSystemReference&quot;: &quot;CODE_179519&quot;,
+ &quot;addressType&quot;: &quot;Mailing&quot;,
+ &quot;unitNumber&quot;: &quot;&quot;,
+ &quot;streetNumber&quot;: &quot;65 &quot;,
+ &quot;streetName&quot;: &quot;SAMPSON ST&quot;,
+ &quot;suburb&quot;: &quot;ORANGE&quot;,
+ &quot;state&quot;: &quot;NSW&quot;,
+ &quot;postalCode&quot;: &quot;2800&quot;,
+&quot;country&quot;: &quot;AU&quot;,
+ &quot;effectiveDateFrom&quot;: &quot;2023-01-03&quot;
+ }
+ ]
+ }
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=16" title="Edit section: applicationDetails">edit</a>]</div><a name="applicationDetails"></a><h3>applicationDetails</h3>
+<pre>
+&quot;applicationDetails&quot;: {
+ &quot;term&quot;: 60,
+ &quot;termType&quot;: &quot;Monthly&quot;,
+ &quot;interestRate&quot;: 0.04,
+ &quot;purchaseMoneySecurityInterest&quot;: &quot;N&quot;,
+ &quot;instalmentFrequency&quot;: &quot;Monthly&quot;,
+ &quot;applicationPurpose&quot;: &quot;Non-Business&quot;,
+ &quot;assets&quot;: [
+ {
+ &quot;classification&quot;: &quot;MV&quot;,
+ &quot;condition&quot;: &quot;New&quot;,
+ &quot;make&quot;: &quot;VOLVO&quot;,
+ &quot;annualKms&quot;: 15000,
+ &quot;externalSystemReference&quot;: &quot;CODE_179519&quot;,
+ &quot;model&quot;: &quot;XC60&quot;,
+ &quot;subModel&quot;: &quot;ULTIMATE B5 BRIGHT MHEV&quot;,
+ &quot;taxRegion&quot;: &quot;VIC&quot;,
+ &quot;transmissionType&quot;: &quot;8 SP AUTOMATIC&quot;,
+ &quot;fuelType&quot;: &quot;PREMIUM UNLEADED PETROL&quot;,
+ &quot;odometer&quot;: 0,
+ &quot;numberOfDoors&quot;: 4,
+ &quot;buildDate&quot;: &quot;2024-01-01&quot;,
+ &quot;purchasePrice&quot;: 87665.2,
+                   -[qt_quotes]on_road_price_net+[qt_quotes]on_road_price_gst
+                   -[qt_quotes]ctp_initial_net-[qt_quotes]ctp_initial_gst
+                   -[qt_quotes]reg_initial_net
+                   -[qt_quotes]premium_plates_net
+                   -[qt_quotes]purchase_stamp_duty
+ &quot;luxuryCarTax&quot;: 1262.31,
+ &quot;nvic&quot;: &quot;0DP324&quot;,
+ &quot;possessionDate&quot;: &quot;2024-04-08&quot;,
+ &quot;recommendedRetailPriceCost&quot;: 80057.69,
+ &quot;engineCapacity&quot;: 2,
+ &quot;residualValue&quot;: 13226.36,
+ &quot;insurances&quot;: [
+ {
+ &quot;insuranceType&quot;: &quot;Comprehensive Insurance&quot;,
+ &quot;insurerName&quot;: &quot;Other&quot;,
+ &quot;premium&quot;: 2867.88,
+ &quot;sumInsured&quot;: 87665.2,
+ &quot;commencementDate&quot;: &quot;2024-04-08&quot;,
+ &quot;insuranceTerm&quot;: {
+ &quot;value&quot;: 60,
+ &quot;frequency&quot;: &quot;M&quot;
+ }
+ }
+ ],
+ &quot;fees&quot;: [
+ {
+ &quot;code&quot;: &quot;AKFN&quot;,
+ &quot;amount&quot;: 20, 
+                    -[qt_quotes]finance_administration_fee_net
+                    -[qt_quotes]finance_administration_fee_gst
+ &quot;description&quot;: &quot;Acc keeping fees&quot;
+ },
+{
+ &quot;code&quot;: &quot;BKGE&quot;,
+ &quot;amount&quot;: 3250.23 [qt_quotes]broker_fee
+ },
+ {
+ &quot;code&quot;: &quot;BKGE2&quot;,
+ &quot;amount&quot;: 0 [qt_quotes]commission
+ },
+ {
+ &quot;code&quot;: &quot;ESTFEENL&quot;,
+ &quot;amount&quot;: 920 [qt_quotes]establishment_fee
+ },
+ {
+ &quot;code&quot;: &quot;ORIGFEE&quot;,
+ &quot;amount&quot;: 440 [qt_quotes]originator_fee
+ },
+ {
+ &quot;code&quot;: &quot;PPSRFEE&quot;,
+&quot;amount&quot;: 0 [qt_quotes]revs_fee
+ },
+ {
+ &quot;code&quot;: &quot;DDF&quot;,
+ &quot;amount&quot;: 0 [qt_quotes]delivery_fee
+ },
+ {
+ &quot;code&quot;: &quot;ETFEE&quot;,
+ &quot;amount&quot;: 0 [qt_quotes]early_termination_fee
+ },
+ {
+ &quot;code&quot;: &quot;REGO&quot;,
+ &quot;amount&quot;: 925
+                   -[qt_quotes]ctp_initial_net-[qt_quotes]ctp_initial_gst
+                   -[qt_quotes]reg_initial_net
+                   -[qt_quotes]premium_plates_net
+ },
+ {
+ &quot;code&quot;: &quot;SD&quot;,
+ &quot;amount&quot;: 2500.1 [qt_quotes]purchase_stamp_duty
+ }
+ ]
+ }
+ ]
+ },
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=17" title="Edit section: stateChangeNotification">edit</a>]</div><a name="stateChangeNotification"></a><h3>stateChangeNotification</h3>
+<pre>
+ &quot;stateChangeNotification&quot;: {
+ &quot;loanConsultantEmail&quot;: &quot; [gb_controls]name = 'angle_api_contact_details' &quot;Email Address&quot; &quot;
+ }
+}
+</pre>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;action=edit&amp;section=18" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-22017) / (API-20511) Angle Interface APIs.  Live 22/04/2024
+</li><li> (API-20556) Angle Interface - add Previous Address, requestId stored and other fixes. Live 08/07/2024
+</li><li> (API-20584) Angle Interface - updates for 'numberOfDoors' and 'interestRate' when populating JSON. Live 05/08/2024
+</li><li> (API-20589) / (DEV-22135) Angle Interface - Apply and JSON updates. Live 26/08/2024
+</li><li> (API-20594) / (DEV-22150) Angle Finance Interface - enable Resubmit button. Live 22/10/2024
+</li><li> (API-20642) Angle Interface - update employmentDetails and liabilities for type 'Credit Card'. Live 17/02/2025
+</li><li> (DEV-22225) Angle Auto Finance Interface - Resubmit button not working as expected. Live 11/03/2025
+</li><li> (API-20699) Angle Auto Interface - Add 'AKFN' Fee and make externalSystemReference unique. Live 23/06/2025
+</li><li> (API-20728) Angle API failing due to crossover of clientIds in token header.  Live 21/07/2025
+</li><li> (API-20743) Angle Interface API update required - Privacy Consent change: DVS (Document Verification Service). Live 06/10/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Angle:JSON.html">https://help.catch-e.net.au/mediawiki/index.php/Angle:JSON</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Angle:JSON">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Angle:JSON.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle:JSON&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.06 secs. -->
+</body></html>

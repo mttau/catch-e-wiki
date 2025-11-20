@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Template:Breadcrumb:Transactions,Account Manager,Create a pay run,Pay Runs,Salary Packaging Scheduler Jobs,Standard Reports:Packaging Transactions,Troubleshooting" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Template:Breadcrumb:Transactions - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-10 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Template:Breadcrumb:Transactions</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Template:Breadcrumb:Transactions.html#column-one">navigation</a>, <a href="./Template:Breadcrumb:Transactions.html#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Filters"><span class="tocnumber">3</span> <span class="toctext">Filters</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Columns"><span class="tocnumber">4</span> <span class="toctext">Columns</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Output_Format"><span class="tocnumber">5</span> <span class="toctext">Output Format</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Action_Buttons"><span class="tocnumber">6</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Legend"><span class="tocnumber">7</span> <span class="toctext">Legend</span></a></li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#Troubleshooting"><span class="tocnumber">8</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Template:Breadcrumb:Transactions.html#Transactions_are_missing"><span class="tocnumber">8.1</span> <span class="toctext">Transactions are missing</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Template:Breadcrumb:Transactions.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>When a pay run is posted in the <a href="Pay_Runs.html" title="Pay Runs">Packaging / Pay Runs</a> screen, 'Payroll Deduction' records are created here and set at 'Pending' status.<br /> When a pay run is receipted into the bank account, they are updated to 'Posted' status.<br />
+</p><p>'Disbursement' records are created using a scheduler job.<br /> Visit the <a href="Salary_Packaging_Scheduler_Jobs.html#Employees_.2F_Transactions" title="Salary Packaging Scheduler Jobs">Salary Packaging Scheduler Jobs</a> page for more details.<br />
+</p><p>The reports and email available here for one employee can be reported fin bulk from the <b>Reports / Standard Reports</b> screen.<br /> Visit the <a href="./Standard_Reports:Packaging_Transactions.html" title="Standard Reports:Packaging Transactions">Packaging Transactions</a> page for more details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd> <a href="Create_a_pay_run.html" title="Create a pay run">Create a pay run</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=3" title="Edit section: Filters">edit</a>]</div><a name="Filters"></a><h4>Filters</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Filter </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Type </td><td> Drop List  </td><td> Defaults to '--All--'. Select the transaction type you want to filter on. Choose from 'Payroll Deduction' or 'Disbursement'. </td><td> [sp_transaction_types]name
+</td></tr>
+<tr>
+<td> Item </td><td>List</td><td>	Defaults to '--All--'. Check the items you want to select and click <b>Go</b> to update the sreen.<br /> The list is sorted in order of Package Name then Item ID.
+</td><td>[sp_employee_transactions] employee_package_item_id [sp_employee_package_items]description
+</td></tr>
+<tr>
+<td> FBT Year Ending </td><td> Drop List  </td><td> Defaults to '--All--'. Select the transaction type you want to filter on. </td><td>
+</td></tr>
+<tr>
+<td> Month </td><td> Drop List  </td><td> Enabled once an FBT Year has been selected. Select a month within that year to show transactions with a "Date" within in the selected month. </td><td> [sp_employee_transactions]transaction_date
+</td></tr>
+<tr>
+<td> Status </td><td>List</td><td> The default selection is '--All--'.<br />Choose a status if you want to review only items in the chosen status. </td><td> [sp_employee_transactions]status_flag
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=4" title="Edit section: Columns">edit</a>]</div><a name="Columns"></a><h4>Columns</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Date </td><td> Date </td><td> <b>Payroll Deductions</b><br /> <b>Pay Runs / Pay Run</b> "Period Date" for pending records.<br /> <b>Receipts / Batch</b> "Banking Date" for posted records<br /><br />
+<p><b>Disbursements</b><br /> <b>Contracts / Claims</b> "Date" or <b>Contracts / Payments</b> "Due Date" for pending or history-only records.<br /> <b>Export / BECS</b> or <b>Export / BPAY</b> "Transaction Date" for  posted records. 
+</p>
+</td><td> [sp_employee_transactions]transaction_date
+</td></tr>
+<tr>
+<td> Type </td><td> Text </td><td> 'Payroll Deduction' or 'Disbursement'. </td><td> [sp_employee_transactions]transaction_type_id
+</td></tr>
+<tr>
+<td> Cycle # </td><td> Text </td><td> Displays the transactions cycle number if available, otherwise this is blank. They are as follows:<br /> 1. Contracts / Lease "Period"<br /> 2. Contracts / Payments "Period"  </td><td> [sp_employee_transactions]cycle_number
+</td></tr>
+<tr>
+<td> Description </td><td> Text </td><td> Displays the <b>Employees / Item</b> "Description".<br /> If the description is greater than 40 characters, it is shortened to 40 characters.
+</td><td> [sp_employee_package_items]description
+</td></tr>
+<tr>
+<td> Supplier </td><td> Text </td><td> Displays the Supplier Name. </td><td> [sp_employee_transactions]supplier_id<br /> [fm_suppliers]name
+</td></tr>
+<tr>
+<td> Ref </td><td> Text </td><td> Shows the reference number of the related internal transaction.<br />
+<p>Payroll Deductions: Invoice No<br /> Recurring or Claims: Approval ID<br /> Payments: Payment No
+</p>
+</td><td> [sp_employee_transactions]reference.
+</td></tr>
+<tr>
+<td> Bank Ref </td><td> Text </td><td> If the record is a disbursement or reimbursement that has been paid in a system BECS or BPAY batch, the BECS ID or BPAY ID will be shown here. </td><td>[sp_employee_transactions]bpay_id<br />[sp_employee_transactions]becs_id
+</td></tr>
+<tr>
+<td> Debit </td><td> Text </td><td>  </td><td> [sp_employee_transactions]amount_net+<br />[sp_employee_transactions]amount_gst
+</td></tr>
+<tr>
+<td> Credit </td><td> Text </td><td>  </td><td> [sp_employee_transactions]amount_net+<br />[sp_employee_transactions]amount_gst
+</td></tr>
+<tr>
+<td> Balance </td><td> Text </td><td> Calculated field showing the cumulative balance of the selected records.  </td><td>
+</td></tr>
+<tr>
+<td> Entry Type </td><td> Text </td><td> Shows if the Balance is a DR (Debit) or CR (Credit) amount. </td><td> [sp_employee_transactions]entry_type
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=5" title="Edit section: Output Format">edit</a>]</div><a name="Output_Format"></a><h4>Output Format</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Format</th><th width="90%" align="left">Description
+</th></tr>
+<tr>
+<td>PDF </td><td> Reports can be printed in PDF format for the transactions available on screen.
+</td></tr>
+<tr>
+<td>Email </td><td> Reports can be sent in an Email attachment for the transactions available on screen.
+</td></tr>
+<tr>
+<td>Text(CSV) </td><td> Reports can be printed in Text CSV format for the transactions available on screen.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=6" title="Edit section: Action Buttons">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View
+</td></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a></td><td>Print the selected output. The output will contain the records that are showing on the screen. If the record have been filtered, the report will be filtered too.<br />
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=7" title="Edit section: Legend">edit</a>]</div><a name="Legend"></a><h4>Legend</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Legend </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td style="color:red"> Pending </td><td> Payroll Deductions - show as pending in this screen when they have been invoiced.<br />
+<p>Disbursement - Claims and Payment records show as pending here when they have been posted.
+</p>
+</td></tr>
+<tr>
+<td>Posted</td><td> Payroll Deductions - show as posted when receipted in full and the receipts are posted.<br />
+<p>Disbursement - Claims and Payment records show as posted here when they have been linked to a BECS or BPAY batch. Claims can also show as posted here if the record was raised in the Approvals Module.<br /> These records do not have a payment method stored and are raised when the payment was performed off system.
+</p>
+</td></tr>
+<tr>
+<td style="background:#e6e6e6"> History only </td><td> History only records are included in the item's balance.<br /> This status is used to show transactions performed off system or historical records migrated from other systems.<br /> These records do not get selected in accounting exports.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=8" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Employee_Transactions:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Employee Transactions:Troubleshooting">edit</a>]</div><a name="Transactions_are_missing"></a><h5>Transactions are missing</h5>
+<p>Records in this screen are updated by a job running in your scheduler.<br />
+See also <a href="Salary_Packaging_Scheduler_Jobs.html#Updates" title="Salary Packaging Scheduler Jobs">Salary Packaging Scheduler Jobs</a>.<br />
+The job is called <b>SP - Employees / Transactions</b><br />
+Check that this job is running correctly first, then contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> for assistance.
+<br />
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21583) Employees / Transactions tab - modify [sp_employee_transactions] table. Live 24/01/2022
+</li><li> (DEV-21617) Packaging - Employees / Transactions - add two new filters. Live 20/06/2022
+</li><li> (DEV-21706) Packaging / Pay Run - create [sp_employee_transactions] records. Live 15/08/2022
+</li><li> (API-20326) Billing Un-Post - update linked records and improve validations. Live 24/10/2022
+</li><li> (API-20662) Employees / Transactions - add fields to [sp_employee_transactions] table. Live 05/05/2025
+</li><li> (DEV-22304) Employees / Transactions - Description field. Change source. Live dd/mm/2025</small>
+</li></ul>
+<div class="printfooter">
+Retrieved from "<a href="./Template:Breadcrumb:Transactions.html">https://help.catch-e.net.au/mediawiki/index.php/Template:Breadcrumb:Transactions</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Template:Breadcrumb:Transactions">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Template:Breadcrumb:Transactions.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Breadcrumb:Transactions&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.06 secs. -->
+</body></html>

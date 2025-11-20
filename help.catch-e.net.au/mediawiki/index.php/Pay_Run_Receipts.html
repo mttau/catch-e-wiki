@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Pay Run Receipts Setup,Pay Run Receipts,AutoBuildClaims,AutoPostPayments,Contracts:Maintenance,Create a Contract Type,Disbursements Setup,GetEventTypes,Impact Statement,Main Page,Package Items" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Pay Run Receipts Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Pay Run Receipts Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts&amp;redirect=no" title="Pay Run Receipts">Pay Run Receipts</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="Pay_Run_Receipts.html#column-one">navigation</a>, <a href="Pay_Run_Receipts.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a> &rarr; <a href="Salary_Packaging.html" title="Salary Packaging">Salary Packaging</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> <a href="Salary_Packaging_Set-Up.html" title="Salary Packaging Set-Up">Salary Packaging Set-Up</a>  &rarr; <a href="Packager_Setup.html" title="Packager Setup">Packager Setup</a> | <a href="Create_a_Contract_Type.html" title="Create a Contract Type">Contract Type</a> |  <a href="Package_Items.html" title="Package Items">Package Items</a> | <a href="Impact_Statement.html" title="Impact Statement">Impact Statement</a> | <a href="Pay_Run_Setup.html" title="Pay Run Setup">Pay Runs</a> | <a href="Pay_Run_Receipts.html" title="Pay Run Receipts">Receipts</a> | <a href="Disbursements_Setup.html" title="Disbursements Setup">Disbursements</a> | <a href="Salary_Packaging_Scheduler_Jobs.html" title="Salary Packaging Scheduler Jobs">Scheduler Jobs</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#Set-up"><span class="tocnumber">1</span> <span class="toctext">Set-up</span></a></li>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#Auto_Post"><span class="tocnumber">3</span> <span class="toctext">Auto Post</span></a></li>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#Auto_Build_Claims"><span class="tocnumber">4</span> <span class="toctext">Auto Build Claims</span></a>
+<ul>
+<li class='toclevel-2'><a href="Pay_Run_Receipts.html#Scheduler_Job"><span class="tocnumber">4.1</span> <span class="toctext">Scheduler Job</span></a></li>
+<li class='toclevel-2'><a href="Pay_Run_Receipts.html#Event"><span class="tocnumber">4.2</span> <span class="toctext">Event</span></a>
+<ul>
+<li class='toclevel-3'><a href="Pay_Run_Receipts.html#.5Bgb_api_event_subscriptions.5D"><span class="tocnumber">4.2.1</span> <span class="toctext">[gb_api_event_subscriptions]</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#Useful_Queries"><span class="tocnumber">5</span> <span class="toctext">Useful Queries</span></a></li>
+<li class='toclevel-1'><a href="Pay_Run_Receipts.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=1" title="Edit section: Set-up">edit</a>]</div><a name="Set-up"></a><h3>Set-up</h3>
+<p>Visit the <a href="Receipts_Setup.html" title="Receipts Setup">Receipts Setup</a> page for general set-up steps.<br />
+Details and specific context for Salary Packaging are shown below.<br />
+Pay run invoices must be receipted before cost records (claims and payments) can be created and posted.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h3>Process Pages</h3>
+<dl><dd> <a href="Receipt_a_pay_run.html" title="Receipt a pay run">Receipt a pay run</a>
+</dd><dd> <a href="Post_a_receipted_pay_run.html" title="Post a receipted pay run">Post a receipted pay run</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=3" title="Edit section: Auto Post">edit</a>]</div><a name="Auto_Post"></a><h3>Auto Post</h3>
+<p>Schedule <a href="Salary_Packaging_Scheduler_Jobs.html#Auto_Post" title="Salary Packaging Scheduler Jobs">Auto Post</a> jobs to check and post existing payment and claim records.
+</p><p>When "Disbursement Type" = 'Claim' - <a href="Sp_/_approvals_/_autoPostClaims.html" title="Sp / approvals / autoPostClaims">autoPostClaims</a><br /> 
+When "Disbursement Type" = 'Periodic' - <a href="AutoPostPayments.html" title="AutoPostPayments">autoPostPayments</a><br />
+When "Disbursement Type" = 'Recurring' - <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> (once nightly only)
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=4" title="Edit section: Auto Build Claims">edit</a>]</div><a name="Auto_Build_Claims"></a><h3>Auto Build Claims</h3>
+<p>For items with a "Disbursement Type" of 'Recurring', claims are created and posted by running the autoBuildClaims API.<br />
+</p><p>Supplementary swagger documentation for the autoBuildClaims API is available here: <a href="https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims" class='external free' title="https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims" rel="nofollow">https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims</a>.<br />
+This API is only available for use within the Catch-e system.<br />
+</p><p>This can be run from a scheduler job by setting up an event trigger.<br />
+We recommend using both.<br />
+</p><p>Created claims can be reviewed in the <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance tab</a> or in your process reports.<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 90%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> If the posted receipt batch is unposted or the Client is removed for the receipt batch, the Claim(s) generated when it was posted <i><b>will not</b></i> be unposted or deleted. <br /> These will need to reviewed and actioned accordingly.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=5" title="Edit section: Scheduler Job">edit</a>]</div><a name="Scheduler_Job"></a><h4>Scheduler Job</h4>
+<p>Schedule an <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> job to run each weekday morning. This will
+</p>
+<ol><li> cover any unexpected situations 
+</li><li> provides you with an exceptions report
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=6" title="Edit section: Event">edit</a>]</div><a name="Event"></a><h4>Event</h4>
+<p>An event provides more efficient and targeted processing.<br />
+When a receipt batch is posted, the <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> process will run, but <u>only</u> for clients with entries in the posted receipt batch.<br /> Audit records for claims created by this process will show the the user that <u>posted</u> the receipt batch as the creator.<br />
+</p><p>Events will be set-up for you by Catch-e staff. A "Class" will need to be nominated for this process.<br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=7" title="Edit section: [gb_api_event_subscriptions]">edit</a>]</div><a name=".5Bgb_api_event_subscriptions.5D"></a><h5>[gb_api_event_subscriptions]</h5>
+<p>Below is a sample set-up for this event subscription.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 90%;">
+<tr>
+<th width="25%" align="left">Field Name </th><th width="40%" align="left">Content</th><th width="35%" align="left">Comment
+</th></tr>
+<tr>
+<td> api_event_subscription_id </td><td> UUID </td><td>
+</td></tr>
+<tr>
+<td> callback_url </td><td> https://api.test.catch-e.com/event/job/sp/approvals/auto-build-claims </td><td> Update accordingly for the targeted database i.e.: test, staging, support
+</td></tr>
+<tr>
+<td> callback_parameters </td><td> {"posting_class_id":"100125"}</td><td> Use the posting_class_id allocated to your 'Recurring' Posting Class.
+</td></tr>
+<tr>
+<td> description </td><td> Run autoBuildClaims when a receipt batch is posted </td><td> This can be changed
+</td></tr>
+<tr>
+<td> topic_arn </td><td> arn:aws:sns:ap-southeast-2:739047929734:catch-e-api-test-events </td><td> Update accordingly for the targeted database i.e.: test, staging, support
+</td></tr>
+<tr>
+<td> filter_policy </td><td> <a href="GetEventTypes.html" title="GetEventTypes">{"eventType":["sl.receipts.batch.posted"]}</a> </td><td>
+</td></tr>
+<tr>
+<td> created </td><td> system allocated timestamp </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=8" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h3>Useful Queries</h3>
+<pre>
+# Call monitoring
+select * from gb_api_event_subscription_callback_log
+;
+
+# SET-UP
+# Jobs for autoBuildClaims
+SELECT st.method,sj.scheduler_job_id,sj.description
+, sj.parameters
+, minutes, hours, days, months, weekdays
+,sj.status_flag
+FROM gb_scheduler_jobs AS sj
+inner join gb_scheduler_types AS st ON st.scheduler_type_id = sj.scheduler_type_id AND st.method IN ('autoBuildClaims')
+ORDER BY st.method,sj.scheduler_job_id
+;
+# spApprovalsAutoBuildClaimsEventJob
+select * from gb_api_event_subscriptions
+where callback_url LIKE '%.catch-e.com/event/job/sp/approvals/auto-build-claims'
+and filter_policy = '{&quot;eventType&quot;:[&quot;sl.receipts.batch.posted&quot;]}'
+;
+
+# spApprovalsAutoPostClaimsEventJob (under construction)
+select * from gb_api_event_subscriptions 
+where callback_url LIKE '%.catch-e.com/event/job/sp/approvals/auto-post-claims'
+and filter_policy = '{&quot;eventType&quot;:[&quot;sl.receipts.batch.posted&quot;]}'
+;
+</pre>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (API-20705) Create Events API. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Pay_Run_Receipts_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Pay_Run_Receipts_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Pay_Run_Receipts_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Pay_Run_Receipts_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Pay_Run_Receipts_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.09 secs. -->
+</body></html>

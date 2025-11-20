@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Template:Transactions:Batches,Allow Duplicate Reference,Catch-e Support,Contracts:Maintenance,Estimated Odometer Calculation,Global Controls,Import,Import a card transactions file,Interface To Card Services,Link a supplier to a card interface,Maintenance:Transactions" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Template:Transactions:Batches - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-10 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Template:Transactions:Batches</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Template:Transactions:Batches.html#column-one">navigation</a>, <a href="./Template:Transactions:Batches.html#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Filters"><span class="tocnumber">3</span> <span class="toctext">Filters</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Top_Buttons"><span class="tocnumber">4</span> <span class="toctext">Top Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Import_Field_Descriptions"><span class="tocnumber">5</span> <span class="toctext">Import Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Batch_Column_Descriptions"><span class="tocnumber">6</span> <span class="toctext">Batch Column Descriptions</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Pagebar"><span class="tocnumber">7</span> <span class="toctext">Pagebar</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Screen_Legend"><span class="tocnumber">8</span> <span class="toctext">Screen Legend</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Action_Buttons"><span class="tocnumber">9</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#Validations_and_Alerts"><span class="tocnumber">10</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="./Template:Transactions:Batches.html#System_Notes"><span class="tocnumber">11</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This screen enables you to import, process, post and review card transactions created from files provided by you card services provider.<br /> Visit <a href="Interface_To_Card_Services.html#Card_Interfaces" title="Interface To Card Services">Card Interfaces</a> for a directory of the available interfaces with a link to detail page for each one.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Card_Services:Process_Pages&amp;action=edit&amp;section=1" title="Template:Card Services:Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd> <a href="Import_a_card_transactions_file.html" title="Import a card transactions file">Import a card transactions file</a><br />
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=2" title="Edit section: Filters">edit</a>]</div><a name="Filters"></a><h4>Filters</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Field </th><th> Description
+</th></tr>
+<tr>
+<td>Supplier Code</td><td>The supplier code related to the imported data
+</td></tr>
+<tr>
+<td>Batch No</td><td>The unique batch number allocated per import file by the system
+</td></tr>
+<tr>
+<td>Card Number</td><td>The card number allocated to each transaction
+</td></tr>
+<tr>
+<td>Group Code</td><td>The client's group code if relevant
+</td></tr>
+<tr>
+<td>Client Code (R)</td><td>The client code. Note that this code is the #Recharge Client code allocated by the card record, which may be different to the client code associated to the vehicle's contract id (the same relationship is relevant to Client Group above.
+</td></tr>
+<tr>
+<td>From</td><td>The transaction date which can be used if searching for transactions in a particular date range
+</td></tr>
+<tr>
+<td>Contract ID</td><td>The contract id allocated by the card record
+</td></tr>
+<tr>
+<td>Reg No </td><td>The registration number associated with the contract id. #Note that this may be different to the registration number contained in the imported transaction file
+</td></tr>
+<tr>
+<td>To</td><td>The ending transaction date if searching in a date range.
+</td></tr>
+<tr>
+<td> <a href="Validation.html" title="Validation">Validation</a> </td><td> Pending batches can contain incomplete records. Visit the <a href="Validation.html" title="Validation">Validation</a> page for details of each type of issue and steps to take to fix them.
+</td></tr>
+<tr>
+<td>Recharges / HO</td><td>These filters allow the users to include or exclude recharge and history only status transactions.
+</td></tr>
+<tr>
+<td>Status</td><td>
+<ol><li> '--All--'. All statuses will be displayed. 
+</li><li> Deleted. A transaction may be deleted by the user or by the card record (i.e. a card set to 'Do not post'. Deleted transactions cannot be posted. 
+</li><li> Pending. The transaction has been imported and saved, but it has not yet been posted or deleted. 
+<ol><li> This is the 'work in progress' status for the user and is set as the default when the user arrives at this screen. 
+</li><li> Pending transactions are displayed on the <b>Contracts / Maintenance</b> tab as pending transactions. These records are updated to match  changes made here.
+</li></ol>
+</li><li> Posted. The transaction has been posted to the maintenance file.
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=3" title="Edit section: Top Buttons">edit</a>]</div><a name="Top_Buttons"></a><h4>Top Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td><a href="./Image:Gobutton.gif.html" class="image" title="Image:Gobutton.gif"><img src="../../clients/help/wiki/images/7/70/Gobutton.gif" alt="Image:Gobutton.gif" width="24" height="22" longdesc="/mediawiki/index.php/Image:Gobutton.gif" /></a></td><td>Click to execute your chosen filtering.<br /> If the button is disabled, then the current filtering has been executed.
+</td></tr>
+<tr>
+<td><a href="./Image:Import.gif.html" class="image" title="Image:Import.gif"><img src="../../clients/help/wiki/images/3/3b/Import.gif" alt="Image:Import.gif" width="44" height="22" longdesc="/mediawiki/index.php/Image:Import.gif" /></a> </td><td> Click to import a card services file.<br />
+</td></tr>
+<tr>
+<td> <a href="./Image:Purge.gif.html" class="image" title="Image:Purge.gif"><img src="../../clients/help/wiki/images/a/a3/Purge.gif" alt="Image:Purge.gif" width="44" height="20" longdesc="/mediawiki/index.php/Image:Purge.gif" /></a> </td><td> Click to purge unwanted data in a <u>pending</u> batch that you do not want to process. <br /> Records will be deleted from the <a href="./Maintenance:Transactions.html" title="Maintenance:Transactions">Maintenance / Transactions</a> screen and the <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> tab.<br />
+<p>The purge button is enabled if<br />
+</p>
+<ol><li> "Batch No" is populated
+</li><li> "Status" is 'Pending' 
+</li><li> the linked <b>Contracts / Maintenance</b> records are either 'Pending' or 'Deleted'
+</li></ol>
+<p>Purge is disabled if<br />
+</p>
+<ol><li> "Status" is 'Posted' 
+</li><li> the linked <b>Contracts / Maintenance</b> records are 'Posted', 'History Only' or 'Recharge'
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=4" title="Edit section: Import Field Descriptions">edit</a>]</div><a name="Import_Field_Descriptions"></a><h4>Import Field Descriptions</h4>
+<p>The fields below are shown when the <a href="./Image:Import.gif.html" class="image" title="Image:Import.gif"><img src="../../clients/help/wiki/images/3/3b/Import.gif" alt="Image:Import.gif" width="44" height="22" longdesc="/mediawiki/index.php/Image:Import.gif" /></a> button has been clicked. .
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Card Interface </td><td> Text </td><td> Enter or lookup the card interface you want to use. </td><td>
+</td></tr>
+<tr>
+<td> Supplier </td><td> Display </td><td> Displays the Supplier Code and Name once a card interface has been selected. </td><td>
+</td></tr>
+<tr>
+<td> Import File </td><td> <a href="Import.html" title="Import">Import</a> </td><td> <a href="./Image:Draganddrop75.png.html" class="image" title="Image:draganddrop75.png"><img src="../../clients/help/wiki/images/7/74/Draganddrop75.png" alt="Image:draganddrop75.png" width="337" height="41" longdesc="/mediawiki/index.php/Image:Draganddrop75.png" /></a><br />
+<p>Imported file types may be for example: .csv, .txt, .zip, .gz, or .tgz <br />
+<i>Note</i>, zipped files are recommended for large files. <br />
+</p>
+</td></tr>
+<tr>
+<td><a href="./Image:Upload.gif.html" class="image" title="Image:Upload.gif"><img src="../../clients/help/wiki/images/1/12/Upload.gif" alt="Image:Upload.gif" width="50" height="20" longdesc="/mediawiki/index.php/Image:Upload.gif" /></a></td><td> Button </td><td> The upload button is enabled when a file has been added. </td><td>
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td> Button </td><td> Cancel if you don't want to finish the import. </td><td>
+</td></tr>
+<tr>
+<td><a href="./Image:Save.gif.html" class="image" title="Image:Save.gif"><img src="../../clients/help/wiki/images/9/96/Save.gif" alt="Image:Save.gif" width="38" height="20" longdesc="/mediawiki/index.php/Image:Save.gif" /></a></td><td> Button </td><td> Save the imported file. You will now see the saved transactions. </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=5" title="Edit section: Batch Column Descriptions">edit</a>]</div><a name="Batch_Column_Descriptions"></a><h4>Batch Column Descriptions</h4>
+<p>When an import is completed or a data selection is returned, the columns below are shown.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Batch-Item </td><td> </td><td>The unique batch and item number allocated by the system.<br /> Use the <u>hyperlink</u> to navigate to the <b>Transaction</b> tab to review all of the item details.
+</td></tr>
+<tr>
+<td> Supplier </td><td> </td><td> The supplier code related to the imported data
+</td></tr>
+<tr>
+<td>Group </td><td> </td><td> The client's group code if relevant
+</td></tr>
+<tr>
+<td>Client (R) </td><td>  </td><td> The client code. Note that this code is the #Recharge Client code allocated by the card record, which may be different to the client code associated to the vehicle's contract id (the same relationship is relevant to Client Group above.
+</td></tr>
+<tr>
+<td>Contract </td><td>  </td><td> The contract id allocated by the card record.<br /> Use the <u>hyperlink</u> to navigate to the <b>Contracts / Maintenance</b> tab to review the contract's transactions.
+</td></tr>
+<tr>
+<td>Reg No </td><td> </td><td> The registration number associated with the contract id. #Note that this may be different to the registration number contained in the imported transaction file
+</td></tr>
+<tr>
+<td>Card Number</td><td> </td><td> The card number allocated to each transaction.<br />  Use the <u>hyperlink</u> to open the <b>Display/Edit Card</b> screen to update card details.
+</td></tr>
+<tr>
+<td> Odo </td><td>  </td><td> The ending transaction date if searching in a date range.
+</td></tr>
+<tr>
+<td> Odo </td><td> Check box </td><td> When imported or checked, Odometer values are validated in order to keep bad readings from being used for reporting.<br /> <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]odometer_valid_tolerance</i></a> stores a percentage tolerance, e.g. 20% for use in this validation.<br /> This is used in conjunction with the <a href="Estimated_Odometer_Calculation.html" title="Estimated Odometer Calculation">Estimated Odometer Calculation</a> to determine if the odo reading should be treated as valid or not. </td><td>
+</td></tr>
+<tr>
+<td> <a href="Validation.html" title="Validation">Validation</a> </td><td> </td><td> Use the <a href="Validate_a_card_transactions_batch.html" title="Validate a card transactions batch">Validate a card transactions batch</a> process to review validation warnings and fix validation failures showing in your batches.
+</td></tr>
+<tr>
+<td> Date </td><td> </td><td>  The transaction date which can be used if searching for transactions in a particular date range
+</td></tr>
+<tr>
+<td> R? </td><td> </td><td>  Y or N
+</td></tr>
+<tr>
+<td> Qty </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> Net </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> GST </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> Amount </td><td> </td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=6" title="Edit section: Pagebar">edit</a>]</div><a name="Pagebar"></a><h4>Pagebar</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td> Page </td><td> Number </td><td> Use the arrows to navigate to the First Page, Previous Page, Next Page or Last Page <a href="./Image:Last_page_icon.png.html" class="image" title="Image:Last_page_icon.png"><img src="../../clients/help/wiki/images/a/ac/Last_page_icon.png" alt="Image:Last_page_icon.png" width="23" height="21" longdesc="/mediawiki/index.php/Image:Last_page_icon.png" /></a>.<br /> You can skip to any page within the range by typing the page number into this field. Hit 'Enter' to refresh the screen.
+</td></tr>
+<tr>
+<td> Page x of x </td><td> Number </td><td> Displays the page you are on and the total number of available pages.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=7" title="Edit section: Screen Legend">edit</a>]</div><a name="Screen_Legend"></a><h4>Screen Legend</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Field</th><th> Description
+</th></tr>
+<tr>
+<td style="background:pink"> Failed </td><td> Transactions have a pink background. The transaction can't be processed.<br /> Go to the <a href="Validate_a_card_transactions_batch.html" title="Validate a card transactions batch">Validate a card transactions batch</a> process page for more details.
+</td></tr>
+<tr>
+<td style="background:#feffa3"> Warning </td><td> Transactions have a yellow background. The transaction can be processed, but there is a card setting you should review.<br /> Go to the <a href="Validate_a_card_transactions_batch.html" title="Validate a card transactions batch">Validate a card transactions batch</a> process page for more details.
+</td></tr>
+<tr>
+<td style="color:red">Pending</td><td> Transactions with red text are pending. These records are also shown in the <b>Contracts / Maintenance</b> tab as <span style="color:red">Pending</span>.
+</td></tr>
+<tr>
+<td> Posted </td><td> Transactions with black text are posted. These records are also shown in the <b>Contracts / Maintenance</b> tab as Posted or <span style="color:blue">Recharge</span>.
+</td></tr>
+<tr>
+<td style="color:gray"> Deleted </td><td> Transactions with grey text are deleted. These records are <u>not displayed</u> in the <b>Contracts / Maintenance</b> tab.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=8" title="Edit section: Action Buttons">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a></td><td> Prints the selected transactions into a PDF or csv file. Note that the csv file contains additional transaction details not necessarily displayed on the batch screen.
+</td></tr>
+<tr>
+<td><a href="./Image:Check.gif.html" class="image" title="Image:Check.gif"><img src="../../clients/help/wiki/images/0/04/Check.gif" alt="Image:Check.gif" width="54" height="24" longdesc="/mediawiki/index.php/Image:Check.gif" /></a></td><td> Click to check each transaction. The results of the checks are shown in the the "Validation" column. Click to re-run the check process. This will refresh the details in the "Validation" column.<br /> The check process also validates the odometer readings against valid odometer readings stored in the maintenance table. All pending transactions (including card service transactions) in the maintenance table are included in the odometer validation. If the odometer reading is not zero and is not one of the error values (e.g. 777) and the validation method selected is the "3) Contract Km Method" (refer to <a href="Estimated_Odometer_Calculation.html" title="Estimated Odometer Calculation">Estimated Odometer Calculation</a>) but fm_contract-&gt;contract_kms are set to 0, the odometer reading will be treated as valid.
+</td></tr>
+<tr>
+<td><a href="./Image:Post.gif.html" class="image" title="Image:Post.gif"><img src="../../clients/help/wiki/images/d/dc/Post.gif" alt="Image:Post.gif" width="45" height="21" longdesc="/mediawiki/index.php/Image:Post.gif" /></a></td><td> You can post once the selection contain no failed, deleted or posted transactions. The Post button will permanently update the maintenance file and allow relevant transactions to be recharged via recharge billing. Transactions are changed from a status of 'pending' to 'posted' and cannot be re-posted.
+</td></tr>
+<tr>
+<td><a href="./Image:Delete.gif.html" class="image" title="Image:Delete.gif"><img src="../../clients/help/wiki/images/8/82/Delete.gif" alt="Image:Delete.gif" width="54" height="22" longdesc="/mediawiki/index.php/Image:Delete.gif" /></a></td><td> A transaction can be deleted if you use the check box to select it and then click on the Delete button.<br /> Deleted records are no longer visible in this screen, but remain in the records with a 'deleted' status.<br /> To permanently delete transactions, use the 'Purge' feature.
+</td></tr>
+</table>
+<p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;action=edit&amp;section=9" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<p>Below are alerts that you may receive if a file cannot be imported or saved.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Import
+</td></tr>
+<tr>
+<td>Supplier is missing </td><td> Alert is shown if upload is clicked without an available supplier.<br /> Process page: <a href="Link_a_supplier_to_a_card_interface.html" title="Link a supplier to a card interface">Link a supplier to a card interface</a>
+</td></tr>
+<tr>
+<td>Please specify a valid card interface code</td><td> Alert is shown if an invalid interface code is entered/selected.
+</td></tr>
+<tr>
+<td> Already imported in batch'{interface_batch_no}'!<br />
+<p>OK to Re-import else Cancel?<br />
+[OK]  [Cancel]
+</p>
+</td><td>  A batch has already been created with a file that is an exact match for the file being imported.<br />Cancel this import.<br />
+<p>Sometimes you may need to re-import a file if you have previously purged an imported file before it was posted. This is an unusual situation. <br /> You <u>should not</u> import the file unless you are sure the records have not already been imported and posted.<br />
+</p><p>Before proceeding:<br /> 
+1. Check recent batches stored in <b>Card Services / Transactions</b> to see if you can identify the existing batch.<br />
+2. If you cannot find the existing batch, open the import file in notepad and compare some of the transactions with posted maintenance records for the contracts to see if the imported records are present.<br />
+3. If the prior batch has definitely been purged before being posted, you can re-import the batch.
+</p>
+</td></tr>
+<tr>
+<td> Please enter a valid 'Invoice Date'. </td><td> To save a card import, the "Invoice Date" and "Invoice No" to be used for the records must be entered.
+</td></tr>
+<tr>
+<td>The format of the Import File does not match the selected Card Interface!<br /> Please check your selections and try again </td><td> Possible reasons for this alert are as follows:
+<ul><li> You are trying to import a fuel import file with a format that does not match the <b>Card Interface</b> you have chosen.
+</li></ul>
+<ol><li> Once the <b>Card Interface</b> has been selected during the import process, the file format is often shown.
+</li><li> If this is not shown, go to the <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Services</a> page and click through to your provider's <b>Card Interface</b> page to see which file format is required.
+</li><li> If you think the provider has changed the format of the import file, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to confirm the current format.
+</li></ol>
+<ul><li> You are importing a csv file and this is the correct format
+</li></ul>
+<dl><dd>
+</dd></dl>
+<ol><li> You have saved the file using an incompatible CSV file type (there are many files with a *.csv format that are subtly different), E.g. 'CSV UTF-8 (Comma delimited)(*csv)
+</li><li> Save again in excel using <b>Save as <u>t</u>ype:</b> CSV (Comma delimited) (*.csv)
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Save
+</td></tr>
+<tr>
+<td> Cannot post as some or all of the transactions<br /> have been deleted and, or failed. </td><td> If you are re-enabling deleted transactions, you may see this alert message. Click OK then click Abort. The deleted transactions will have been refreshed and the required "Validation" message will be shown.
+</td></tr>
+<tr>
+<td> '{reference/invoice_no}' already exists on another transaction for supplier '{supplier_code}'.<br /> '{supplier_code}' does not allow duplicate reference or invoice number entries.
+</td><td> This supplier has <b>Suppliers / Account</b> "<a href="Allow_Duplicate_Reference.html" title="Allow Duplicate Reference">Allow Duplicate Reference</a>" un-checked.<br /> 1. You must use a unique reference number for this recordor,<br /> 2. Edit the supplier record and check on "<a href="Allow_Duplicate_Reference.html" title="Allow Duplicate Reference">Allow Duplicate Reference</a>".
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Card_Services:System_Notes&amp;action=edit&amp;section=1" title="Template:Card Services:System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 10709: Modify Card Txn Import Rules for "Failed Card". Live 18/11/2014 
+</li><li> (DEV-20560) Card Services Import failed due to size - improve error message.  Live 14/01/2019
+</li><li> (DEV-20824) Fuel Transaction import validations run in wrong sequence. Live 06/11/2019
+</li><li> (DEV-20946) Attachment Drag &amp; Drop function (phase 2) Live 06/04/2020
+</li><li> (DEV-21126) Card Services Import Error - allow zip files. 09/10/2020
+</li><li> (DEV-20547) Add foreign key constraints for batch_no, invoice_no and payment_no. Live 18/01/2021 
+</li><li> (DEV-21481) Maintenance records corrupted by the card services Check process. Live dd/08/2021
+</li><li> (DEV-21632) Prevent corruption of unique_ids in Fuel imports - add checking code. Live 18/07/2022
+</li><li> (DEV-21606) Prevent duplicate invoice numbers. Live 08/08/2022
+</li><li> (DEV-21947) Unable to upload Chargefox Transaction File. Live 02/10/2023
+</li><li> (DEV-22223) Card Services - modify logic used in Purge process. Live 24/02/2025
+</li><li> (DEV-22269) Card Services - FLEETCORD - able to import transactions when Supplier ID is missing. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Template:Transactions:Batches.html">https://help.catch-e.net.au/mediawiki/index.php/Template:Transactions:Batches</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Template:Transactions:Batches">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Template:Transactions:Batches.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Transactions:Batches&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.15 secs. -->
+</body></html>

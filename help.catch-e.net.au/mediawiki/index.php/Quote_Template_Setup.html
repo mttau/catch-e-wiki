@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Quote Template Setup,Channel,Email Setup,GetQuoteFieldsWebService,Global Controls,Main Page,Qt::Quotes::getQuote(),Quote Template,Quote Template Development,Quote Template Placeholders,Quotes:Contract" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Quote Template Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Quote Template Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Quote_Template_Setup.html#column-one">navigation</a>, <a href="Quote_Template_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Implementation.html" title="System Implementation">System Configuration</a> &rarr; <a href="Quote_Template.html" title="Quote Template">Quote Template</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>Quote Template Setup</strong> | <a href="Quote_Template_Development.html" title="Quote Template Development">Quote Template Development</a> | <a href="Quote_Template_Placeholders.html" title="Quote Template Placeholders">Quote Template Placeholders</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Set-up_quote_records"><span class="tocnumber">2</span> <span class="toctext">Set-up quote records</span></a>
+<ul>
+<li class='toclevel-2'><a href="Quote_Template_Setup.html#Create_a_gb_files_record"><span class="tocnumber">2.1</span> <span class="toctext">Create a gb_files record</span></a></li>
+<li class='toclevel-2'><a href="Quote_Template_Setup.html#Create_a_gb_templates_record"><span class="tocnumber">2.2</span> <span class="toctext">Create a gb_templates record</span></a></li>
+<li class='toclevel-2'><a href="Quote_Template_Setup.html#Update_Contract_Types_.2F_Details_.22Quote_Template.22"><span class="tocnumber">2.3</span> <span class="toctext">Update Contract Types / Details "Quote Template"</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Create_a_new_quote_template"><span class="tocnumber">3</span> <span class="toctext">Create a new quote template</span></a>
+<ul>
+<li class='toclevel-2'><a href="Quote_Template_Setup.html#Create_a_quote.zip_file"><span class="tocnumber">3.1</span> <span class="toctext">Create a quote.zip file</span></a>
+<ul>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#Images_folder"><span class="tocnumber">3.1.1</span> <span class="toctext">Images folder</span></a></li>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#.2A._html"><span class="tocnumber">3.1.2</span> <span class="toctext">*. html</span></a></li>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#.2A._json"><span class="tocnumber">3.1.3</span> <span class="toctext">*. json</span></a></li>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#tempo_render_token_api.js"><span class="tocnumber">3.1.4</span> <span class="toctext">tempo_render_token_api.js</span></a></li>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#phantomjs-regression-patch.js_.28if_active_hyperlinks_used_in_pdf.29"><span class="tocnumber">3.1.5</span> <span class="toctext">phantomjs-regression-patch.js (if active hyperlinks used in pdf)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Channel_Quotes_-_extra_steps"><span class="tocnumber">4</span> <span class="toctext">Channel Quotes - extra steps</span></a></li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Switching_existing_quotes_to_HTML"><span class="tocnumber">5</span> <span class="toctext">Switching existing quotes to HTML</span></a></li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#Update_existing_quotes_to_work_without_Legacy_Web_Services"><span class="tocnumber">6</span> <span class="toctext">Update existing quotes to work without Legacy Web Services</span></a>
+<ul>
+<li class='toclevel-2'><a href="Quote_Template_Setup.html#Update_the_quote.zip_file"><span class="tocnumber">6.1</span> <span class="toctext">Update the quote.zip file</span></a>
+<ul>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#.2A._html_2"><span class="tocnumber">6.1.1</span> <span class="toctext">*. html</span></a></li>
+<li class='toclevel-3'><a href="Quote_Template_Setup.html#tempo_render_token_api.js_2"><span class="tocnumber">6.1.2</span> <span class="toctext">tempo_render_token_api.js</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Quote_Template_Setup.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>The information below details the steps required to set-up a quote template using our recommended method and settings.
+</p>
+<ol><li> Create a record in the <i>gb_files</i> table
+</li><li> Edit Contract Type/Details "Quote Template" field to link to the new quote template
+</li><li> Upload zip folder for the quote template.
+</li><li> Add a <i>gb_templates</i> entry to enable emailing
+</li></ol>
+<p><br />
+Use the following APIs to aid development of quote templates: 
+</p>
+<ol><li> <a href="GetQuoteFieldsWebService.html" title="GetQuoteFieldsWebService">getQuoteFieldsWebService</a> - to return available quote placeholders.
+</li><li> <a href="Render_Quote_PDF_with_Template.html" title="Render Quote PDF with Template">Render Quote PDF with Template</a>
+</li><li> <a href="Render_Quote_PDF.html" title="Render Quote PDF">Render Quote PDF</a>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=2" title="Edit section: Set-up quote records">edit</a>]</div><a name="Set-up_quote_records"></a><h3>Set-up quote records</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=3" title="Edit section: Create a gb_files record">edit</a>]</div><a name="Create_a_gb_files_record"></a><h4>Create a <i>gb_files</i> record</h4>
+<p>Create a record in the <i>gb_files</i> table that is linked to quote templates. The name of the file should be descriptive of the quote, but it can be called anything you like that describes the template, as an example quote_novated.zip. It needs to be a zip file.<br />
+</p>
+<div class="thumb tnone"><div style="width:556px;"><a href="./Image:Gb_files.jpg.html" class="internal" title=""><img src="../../clients/help/wiki/images/9/90/Gb_files.jpg" alt="" width="554" height="67" longdesc="/mediawiki/index.php/Image:Gb_files.jpg" /></a>  <div class="thumbcaption" ><div class="magnify" style="float:right"><a href="./Image:Gb_files.jpg.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="Enlarge" /></a></div></div></div></div>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=4" title="Edit section: Create a gb_templates record">edit</a>]</div><a name="Create_a_gb_templates_record"></a><h4>Create a <i>gb_templates</i> record</h4>
+<p>Create a record in the <i>gb_templates</i> table. This creates the email content that is used when quotes are emailed from the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes/Contact</a> tab.
+Standard <a href="Email_Setup.html" title="Email Setup">email set-up</a> details apply, except for the following specific settings;
+<br />
+</p>
+<ul><li> The field <i>name</i> should be 'pdf_html_quote'
+</li><li> The field <i>sub_name</i> should be the name of the zip file e.g. quote_novated.zip<br />
+</li></ul>
+<div class="thumb tnone"><div style="width:759px;"><a href="./Image:Gb_templates.jpg.html" class="internal" title=""><img src="../../clients/help/wiki/images/8/86/Gb_templates.jpg" alt="" width="757" height="77" longdesc="/mediawiki/index.php/Image:Gb_templates.jpg" /></a>  <div class="thumbcaption" ><div class="magnify" style="float:right"><a href="./Image:Gb_templates.jpg.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="Enlarge" /></a></div></div></div></div>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=5" title="Edit section: Update Contract Types / Details &quot;Quote Template&quot;">edit</a>]</div><a name="Update_Contract_Types_.2F_Details_.22Quote_Template.22"></a><h4>Update Contract Types / Details "Quote Template"</h4>
+<p>Edit the Contract Type and update the "Quote Template" field to link to the new quote template.<br /> Once this is in place, you can use the <a href="./Qt::Quotes::getQuote().html" title="Qt::Quotes::getQuote()">getQuote()</a> web-service to review placeholders outputs.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=6" title="Edit section: Create a new quote template">edit</a>]</div><a name="Create_a_new_quote_template"></a><h3>Create a new quote template</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=7" title="Edit section: Create a quote.zip file">edit</a>]</div><a name="Create_a_quote.zip_file"></a><h4>Create a quote.zip file</h4>
+<p>Create a zip file that contains the following elements
+</p>
+<ol><li> images folder
+</li><li> *. html
+</li><li> *.json
+</li><li> *.css
+</li><li> tempo_render_token_api.js
+</li><li> phantomjs-regression-patch.js - <i>(optional file, required if active hyperlinks will be embedded)</i>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=8" title="Edit section: Images folder">edit</a>]</div><a name="Images_folder"></a><h5>Images folder</h5>
+<p>The images folder should contain any images used in the template, for consistency name this folder 'images'.<br /> Note: you can keep the image files in the main folder, but an 'image' sub-folder helps keep the files organised.<br />
+</p><p>Be careful not to nest folders inside your zip files. Visit the <a href="Troubleshooting.html#Quote_zips" title="Troubleshooting">Troubleshooting</a> page for more details about this issue.<br />
+</p>
+<div class="thumb tnone"><div style="width:533px;"><a href="./Image:Zip_file.jpg.html" class="internal" title=""><img src="../../clients/help/wiki/images/8/81/Zip_file.jpg" alt="" width="531" height="139" longdesc="/mediawiki/index.php/Image:Zip_file.jpg" /></a>  <div class="thumbcaption" ><div class="magnify" style="float:right"><a href="./Image:Zip_file.jpg.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="Enlarge" /></a></div></div></div></div>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=9" title="Edit section: *. html">edit</a>]</div><a name=".2A._html"></a><h5>*. html</h5>
+<p>The *.html document must reference the <i>tempo_render_token_api.js</i> file as shown below: <br /> This file is required so that your quotes continue to work properly after the <b>Legacy Web Services</b> have been deprecated.<br />
+</p>
+<pre>
+...
+  &lt;/div&gt;
+  &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/tempo_render_token_api.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/quote_novated.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/phantomjs-regression-patch.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>If you are including active hyperlinks into the rendered pdf document, the html file must reference the <i>phantomjs-regression-patch.js</i> file.<br /> This is done by finding &lt;script src="quote_novated.js"&gt;&lt;/script&gt; in the html code and adding the following below it:<br />
+&lt;script src="phantomjs-regression-patch.js"&gt;&lt;/script&gt;
+<br />
+</p>
+<pre>
+&lt;script src=&quot;quote_novated.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;phantomjs-regression-patch.js&quot;&gt;&lt;/script&gt;</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=10" title="Edit section: *. json">edit</a>]</div><a name=".2A._json"></a><h5>*. json</h5>
+<p>A *.json file is created and held in the zip folder for local development and testing, E.g. testing in VS Code. It and is not referenced in Staging or Production environments.
+<br /> When run from the system, quote credentials are passed dynamically at render time, and are used in preference to the JSON file content.<br /> The quote credentials are sourced from records in the [gb_controls] table.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=11" title="Edit section: tempo_render_token_api.js">edit</a>]</div><a name="tempo_render_token_api.js"></a><h5>tempo_render_token_api.js</h5>
+<p>Include a file named 'tempo_render_token_api.js' within the zip folder.<br /> This file is required so that your quotes continue to work properly after <b>Legacy Web Services</b> have been deprecated.<br />
+Contents of the file can be <a href="https://help.catch-e.net.au/clients/help/wiki/images/1/1a/Tempo_render_token_api.txt" class='internal' title="Tempo render token api.txt">found here</a>.<br /> 
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=12" title="Edit section: phantomjs-regression-patch.js (if active hyperlinks used in pdf)">edit</a>]</div><a name="phantomjs-regression-patch.js_.28if_active_hyperlinks_used_in_pdf.29"></a><h5>phantomjs-regression-patch.js (if active hyperlinks used in pdf)</h5>
+<p>To include active hyperlinks into the rendered pdf document, <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]html2pdf_phantomjs_path</i></a> should be set to '/usr/local/phantomjs-2.1.1-linux-x86_64/bin/phantomjs'.<br /> This control invokes the use of Phantom JS 2.1.1 which is used in the quote rendering process to activate hyperlinks embedded in the code.<br /> An additional file is needed and should be called 'phantomjs-regression-patch.js'.<br /> The content of the phantomjs-regression-patch.js file is this:
+</p>
+<pre>
+// Workaround for page scaling, zoomfactor regression
+var css = 'body { transform-origin: 0 0; -webkit-transform-origin: 0 0; transform: scale(0.75); -webkit-transform: scale(0.75); }';
+var head = document.head || document.getElementsByTagName('head')[0];
+var style = document.createElement('style');
+style.type = 'text/css';
+if (style.styleSheet){
+	style.styleSheet.cssText = css;
+} else {
+	style.appendChild(document.createTextNode(css));
+}
+head.appendChild(style);
+
+// Workaround for blank page bug
+var $html = $(document.getElementsByTagName('html')[0]);
+$html.height(0);
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=13" title="Edit section: Channel Quotes - extra steps">edit</a>]</div><a name="Channel_Quotes_-_extra_steps"></a><h3><a href="Channel.html#Quote_Templates" title="Channel">Channel Quotes - extra steps</a></h3>
+<p>The information below details the steps required to set-up a <a href="Channel.html#Quote_Templates" title="Channel">channel</a> quote template using our recommended method and settings.
+</p><p>1. Create a new record in the <i>gb_file_types</i> table. This identifies the folder that the channel template should be stored in. You'll see that it's in the quote folder under a new sub-folder called 'channels'.<br /> 
+Note that one folder is called 'channel1' - this must match <i>[fm_channels]channel_code</i> and in the directory field, the full path must all be in lowercase.
+</p>
+<div class="floatnone"><span><a href="./Image:Quote_Template_Channel_gb_file_types.png.html" class="image" title=""><img src="../../clients/help/wiki/images/5/53/Quote_Template_Channel_gb_file_types.png" alt="" width="701" height="263" longdesc="/mediawiki/index.php/Image:Quote_Template_Channel_gb_file_types.png" /></a></span></div>
+<p>2. Create a record in the <i>gb_files</i> table that is linked to the channel quote templates record you just created.<br />
+If you are using an existing Contract Type to generate channel quote, the channel-level quote must be the same name as the existing template.<br /> 
+In this example it is quote_novated.zip. It needs to be a zip file.<br /><br />
+</p>
+<div class="floatnone"><span><a href="./Image:Quote_Template_Channel_gb_files.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/49/Quote_Template_Channel_gb_files.png" alt="" width="582" height="163" longdesc="/mediawiki/index.php/Image:Quote_Template_Channel_gb_files.png" /></a></span></div>
+<p>If you want to set up a Contract Type that is only used by a channel or channels, create a general gb_files record, but don't upload the zip file.<br />
+In this case, the quote will only print for linked channel clients.
+</p><p>3. Upload the required zip file (see general instructions).<br />
+</p><p>4. <b>Optional step:</b> Link the template to a Contract Type (if required). This is only required if a Contract Type is only intended for use with one channel only. 
+</p><p>5. <b>Optional step:</b> Create a record in the <i>gb_templates</i> table. This creates the email content that is used when quotes are emailed from the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes/Contact</a> tab.<br /> 
+If you don't set-up a channel-specific email, the quote email will use the generic email content.<br /> 
+Standard <a href="Email_Setup.html" title="Email Setup">email set-up</a> details apply, except for the following specific settings;
+<br />
+</p>
+<ul><li> The field <i>channel_id</i> should match the selected channel
+</li><li> The field <i>name</i> should be 'pdf_html_quote'
+</li><li> The field <i>sub_name</i> should be the name of the zip file e.g. quote_novated.zip
+</li></ul>
+<p><br />
+</p>
+<div class="floatnone"><span><a href="./Image:Quote_Template_Channel_gb_templates.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cc/Quote_Template_Channel_gb_templates.png" alt="" width="1380" height="185" longdesc="/mediawiki/index.php/Image:Quote_Template_Channel_gb_templates.png" /></a></span></div>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=14" title="Edit section: Switching existing quotes to HTML">edit</a>]</div><a name="Switching_existing_quotes_to_HTML"></a><h3>Switching existing quotes to HTML</h3>
+<p>Current clients can develop an html quote and continue to use the placeholder library that's currently in use, rather than switching to the new one.<br />
+This is a good approach if you are happy with the current values you are using, but just want to rejuvenate the quote.<br /><br />
+</p><p>When setting up the html quote above, add the parameter "parent_report" into the JSON file under the "page_format" parameter as per this example JSON file;
+</p>
+<pre>
+{
+	&quot;login&quot;: &quot;web_quote&quot;,
+	&quot;password&quot;: &quot;ADD_YOUR_PASSWORD_HERE&quot;,
+	&quot;service&quot;: {
+		&quot;host&quot;: &quot;https://your_name.staging.catch-e.net.au&quot;,
+		&quot;method&quot;: &quot;qt/quotes/getQuote&quot;,
+		&quot;arguments&quot;: {
+			&quot;output_mode&quot;: &quot;fields&quot;,
+			&quot;parent_report&quot;: &quot;pdf_quote_nofb_lease&quot;
+			
+		}
+	},
+	&quot;template_element&quot;: &quot;quote&quot;,
+	&quot;page_format&quot;: &quot;A4&quot;,
+	&quot;page_orientation&quot;: &quot;portrait&quot;,
+	&quot;page_margin&quot;: &quot;0cm&quot;,
+	&quot;parent_report&quot;: &quot;pdf_quote_nofb_lease&quot;
+}</pre>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> The web-service getQuote will deliver the new placeholders. For analysis and diagnostic work, you will need to switch the Contract Type "Quote Template" back to the original one. E.g for the example above, this would be 'Quote Nofb Lease'.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=15" title="Edit section: Update existing quotes to work without Legacy Web Services">edit</a>]</div><a name="Update_existing_quotes_to_work_without_Legacy_Web_Services"></a><h3>Update existing quotes to work without Legacy Web Services</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=16" title="Edit section: Update the quote.zip file">edit</a>]</div><a name="Update_the_quote.zip_file"></a><h4>Update the quote.zip file</h4>
+<p>Your zip file should contain the following elements
+</p>
+<ol><li> images folder
+</li><li> *. html - <i>update this file</i>
+</li><li> *.json
+</li><li> *.css
+</li><li> tempo_render_token_api.js - <i>update this file</i>
+</li><li> phantomjs-regression-patch.js - <i>optional file, required if active hyperlinks will be embedded</i>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=17" title="Edit section: *. html">edit</a>]</div><a name=".2A._html_2"></a><h5>*. html</h5>
+<p>The *.html document must reference the <i>tempo_render_token_api.js</i> file as shown below: <br /> This file is required so that your quotes continue to work properly after the <b>Legacy Web Services</b> have been deprecated.<br />
+</p>
+<pre>
+...
+  &lt;/div&gt;
+  &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/tempo_render_token_api.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/quote_novated.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/phantomjs-regression-patch.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=18" title="Edit section: tempo_render_token_api.js">edit</a>]</div><a name="tempo_render_token_api.js_2"></a><h5>tempo_render_token_api.js</h5>
+<p>Include a file named 'tempo_render_token_api.js' within the zip folder.<br /> This file is required so that your quotes continue to work properly after the <b>Legacy Web Services</b> have been deprecated.<br />
+Contents of the file can be <a href="https://help.catch-e.net.au/clients/help/wiki/images/1/1a/Tempo_render_token_api.txt" class='internal' title="Tempo render token api.txt">found here</a>.<br /> 
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;action=edit&amp;section=19" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 12645: Tool to auto generate quote phpo codes. Live 14/04/2016
+</li><li> 13733: Channel-level quotes. Live 03/08/2016
+</li><li> 14010: Develop channel-level quote email. Live 15/09/14
+</li><li> 9743: Upgrade Catch-e to support PhantomJS 2.1. Live 25/11/2016
+</li><li> 11233: Include Payroll Deductions on Quote Template and allow HTML templates to use and existing alternative template library. 18/12/2017
+</li><li> (DEV-21120) Prevent mobile/phone numbers being converted to numeric in JSON getQuote output (zip method. Live 25/07/2020
+</li><li> (DEV-21921) Enable legacy web services to be disabled. 26/03/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Quote_Template_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Quote_Template_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Quote_Template_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Quote_Template_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Template_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.12 secs. -->
+</body></html>

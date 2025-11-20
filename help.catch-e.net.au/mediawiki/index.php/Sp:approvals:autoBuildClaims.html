@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="AutoBuildClaims,AutoBuildClaims,Contract Types:Details,Contract Types:Expenses-Approvals,Create a Contract Type,Create a Disbursements ABA file,Disbursements (ABA) Troubleshooting,Employees:Item,Job Scheduler,Job Scheduler:Job,Job Scheduler:Queue" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>AutoBuildClaims - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">AutoBuildClaims</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=Sp:approvals:autoBuildClaims&amp;redirect=no" title="Sp:approvals:autoBuildClaims">Sp:approvals:autoBuildClaims</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="./Sp:approvals:autoBuildClaims.html#column-one">navigation</a>, <a href="./Sp:approvals:autoBuildClaims.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr;   <a href="Scheduler_Job_Types.html#Salary_Packaging_.28sp.29" title="Scheduler Job Types">Method</a> | <a href="Message.html" title="Message">Message</a> &rarr; <strong>autoBuildClaims</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Parameters"><span class="tocnumber">3</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Selection_Criteria"><span class="tocnumber">4</span> <span class="toctext">Selection Criteria</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Funds_Available_Calculation"><span class="tocnumber">5</span> <span class="toctext">Funds Available Calculation</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Job_Outcomes"><span class="tocnumber">6</span> <span class="toctext">Job Outcomes</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Next_Steps"><span class="tocnumber">7</span> <span class="toctext">Next Steps</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#Exception_report_sent_by_scheduler"><span class="tocnumber">8</span> <span class="toctext">Exception report sent by scheduler</span></a></li>
+<li class='toclevel-1'><a href="./Sp:approvals:autoBuildClaims.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Use this method to build and post approvals for Salary Packaged contracts when funds are available.<br />
+</p><p>See also the <a href="Pay_Run_Receipts_Setup.html" title="Pay Run Receipts Setup">Pay Run Receipts Setup</a> page.<br />
+</p><p>Claims are created and posted by running the autoBuildClaims API.<br /> Supplementary swagger documentation for the autoBuildClaims API is available here: <a href="https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims" class='external free' title="https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims" rel="nofollow">https://api.catch-e.com/docs/?urls.primaryName=Event+Jobs#/Employee%20%2F%20Claims/autoBuildClaims</a>.<br /> This API is only available for use within the Catch-e system.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Create_a_Disbursements_ABA_file.html" title="Create a Disbursements ABA file">Create a Disbursements ABA file</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=3" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>This job type has the following input parameters:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 12%;">Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td>  <b>Class</b> </td><td> Drop List.<br /> The list displays all classes stored in <a href="./Contract_Types:Expenses-Approvals.html" title="Contract Types:Expenses-Approvals">Contract Types - Expenses-Approvals</a> where the "Group" is ‘Salary Packaged’.<br /> Choose the one you want to use to populate the description field for the claims that are created.<br /> <a href="Create_a_Contract_Type.html" title="Create a Contract Type">Create a Contract Type</a>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=4" title="Edit section: Selection Criteria">edit</a>]</div><a name="Selection_Criteria"></a><h4>Selection Criteria</h4>
+<ol><li> <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Type / Details</a> "Group" is '<a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a>'
+</li><li> <a href="./Contract_Types:Expenses-Approvals.html" title="Contract Types:Expenses-Approvals">Contract Types - Expenses-Approvals</a> "R" (Recharge) is un-checked
+</li><li> <a href="./Employees:Item.html" title="Employees:Item">Employees / Item</a> "Disbursement Type" is 'Recurring'
+</li><li> <a href="./Employees:Item.html" title="Employees:Item">Employees / Item</a> "Payment Method" 
+<ol><li> is 'Direct Credit' and "Bank Account" is populated <u>or</u>
+</li><li> is 'Bpay' and "Reference" is populated
+</li></ol>
+</li><li> There are funds available. See the <a href="AutoBuildClaims.html#Funds_Available_Calculation" title="AutoBuildClaims"> Funds Available Calculation</a> details below.
+</li><li> If the contract has a 'SUB' event,
+<ol><li> it has an attachment
+</li><li> is marked as completed
+</li><li> has an active status
+</li><li> the amount is not blank/null and is greater than 0.00
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=5" title="Edit section: Funds Available Calculation">edit</a>]</div><a name="Funds_Available_Calculation"></a><h4>Funds Available Calculation</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th align="left"> Factor </th><th> Description
+</th></tr>
+<tr>
+<td><b>Funds Received</b> </td><td> The total of all receipts where the invoice row has been fully paid.<br /> I.e. the balance is 0, there is no under-payment or over-payment on the invoice row.<br />
+<p>Therefore, part-payments and on account balances are not included here.<br />
+</p><p><b>Funds Received</b> Net and GST are calculated from all fully paid invoice rows.
+</p>
+</td></tr>
+<tr>
+<td> less </td><td>
+</td></tr>
+<tr>
+<td> <b>Actuals</b> </td><td> The total of all claims and payments for the contract that have been posted.  This includes 'History Only' claims.<br />
+<p><b>Actuals</b> Net and GST are calculated from all posted maintenance and payment rows.
+</p>
+</td></tr>
+<tr>
+<td>equals </td><td>
+</td></tr>
+<tr>
+<td><b>Funds Available</b> </td><td> The amount available to disburse. If this amount is positive and selection criteria have been met, a claim record will be created.<br />
+<p><b>Funds Received</b> Net and GST <i>less</i> <b>Actuals</b> Net and GST <i>equals</i> <b>Funds Available</b> Net and GST 
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=6" title="Edit section: Job Outcomes">edit</a>]</div><a name="Job_Outcomes"></a><h4>Job Outcomes</h4>
+<p>A posted claim is created for each item where there is a surplus between the contract's posted receipts total and posted actual costs total (the GST inclusive Total of all posted Payments, Claims and Approvals).<br />
+</p><p>A claim record is created and posted
+</p>
+<ol><li> "Supplier", "Payee", "Payment Method", "BSB" and "Account Number" fields are populated with the value stored in the linked Employees / Item record.
+</li><li> "Reference" populates with 
+<ol><li> Employees / Item "Reference" (if populated, otherwise)
+</li><li> Contracts / Claim "Approval"
+</li></ol>
+</li><li> "Reimbursement" check box is 
+<ol><li> Checked if the "Payee" is ‘Employee’
+</li><li> Un-checked if the "Payee" is ‘Supplier’
+</li></ol>
+</li><li> "Net" and "GST" is the difference between the posted receipt total ed budget and the existing actual amounts.
+</li><li> "R" (Recharge) is set as ‘N’.
+</li><li> "Date" and "Odometer Date" are the date of creation.
+</li><li> "Status" is 'Posted'.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=7" title="Edit section: Next Steps">edit</a>]</div><a name="Next_Steps"></a><h4>Next Steps</h4>
+<p>The posted claim will be selected in either 
+</p>
+<ol><li> the next Disbursement(ABA) batch that is created <u>or</u>
+</li><li> the next Disbursement(BPAY) batch that is created
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=8" title="Edit section: Exception report sent by scheduler">edit</a>]</div><a name="Exception_report_sent_by_scheduler"></a><h4>Exception report sent by scheduler</h4>
+<p>Report contains two columns: Contract ID, Error. See also the <a href="Disbursements_(ABA)_Troubleshooting.html" title="Disbursements (ABA) Troubleshooting">Disbursements (ABA) Troubleshooting</a> page.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Error </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td>Item has incorrect ‘Payment Method’ or missing bank details’</td><td>Linked item "Payment Method" is not ‘Direct Credit’ or bank account is missing.<br /> Fix this by<br /> 1. Updating the "Payment Method" to 'Direct Credit' or<br /> 2. Adding a Bank Account record to the item.
+</td></tr>
+<tr>
+<td>Item has missing bank details for employee </td><td> The item Payee is 'Employee' and there is no linked bank account.<br /> Fix this by adding a Bank Account record to the item.
+</td></tr>
+<tr>
+<td> Substantiation event is missing but is required </td><td>Substantiation event is missing from contract but is required<br /> Fix this by creating a suitable substantiation event.
+</td></tr>
+<tr>
+<td> Substantiation event due date is greater than current FBT year </td><td> Substantiation events exist but there is no event within or before the current FBT year.<br /> Fix this by creating a suitable substantiation event.
+</td></tr>
+<tr>
+<td> Latest substantiation event has multiple records </td><td>Multiple substantiation events exist on latest due date.<br /> If there are multiple events recorded for the same day, the system does not know which record to use for the validation process.<br /> Fix this by changing the due date of one of the events.
+</td></tr>
+
+<tr>
+<td> Substantiation event is either missing attachment or completed flag is untick </td><td>Substantiation event does not have either attachment or completed flag is untick.<br /> Fix this by<br />1. Checking the "Completed" checkbox and/or<br />2. Attaching the substantiation document.
+</td></tr>
+<tr>
+<td> Unable to create new claim due to substantiation event amount has been reached for current FBT year </td><td> Substantiation event amount is less than or equal to total posted payments + total posted maintenance in current FBT year + Available balance<br /> No further disbursements can be made in this FBT year.<br /> Review the item and the employee's other benefits and prepare suitable substantiation events for the following FBT year.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21306) Create Job Type called autoBuildClaims. Live 19/04/2021
+</li><li> (API-20150) autoBuildClaims performance optimisations. Live 07/06/2021
+</li><li> (API-20158) Modify autoBuildClaims to allow BPAY payment method. Live 21/06/2021
+</li><li> (API-20204) Apply process locks to specific APIs and gb_queries. Live 28/10/2021
+</li><li> (DEV-21529) autoBuildClaims job failed due to deadlock. Live 28/10/2021
+</li><li> (API-20208) Modify autoBuildClaims - populate Item 'Reference' into Claim 'Reference' . Live 08/11/2021
+</li><li> (API-20233) Scheduler Job for autoBuildClaims failing. Live dd/11/2021
+</li><li> (DEV-21461) autoPostClaims does not post some valid claims. Live dd/mm/2021
+</li><li> (API-20231) Packaged Item - Leading '0' not displayed on screen. Live 13/12/2021
+</li><li> (API-20273) autoBuildClaims - not creating when Item is suspended. Live 06/06/2022
+</li><li> (API-20428) autoBuildClaims - revise Available Funds Balance calculation. Live 30/05/2023
+</li><li> (API-20430) autoBuildClaims - optimise query updated in (API-20428). Live 31/05/2023
+</li><li> (DEV-21875) autoBuildClaims and autoPostClaims - enhance error messages. Live 05/06/2023
+</li><li> (API-20476) Modify autoBuildClaims - to include History Only transactions. Live 18/12/2023
+</li><li> (API-20622) Fix bug revealed by introduction of getPostingMaps API. Live 12/11/2024
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:3283-0!1!0!0!!en!2 and timestamp 20251120231250 -->
+<div class="printfooter">
+Retrieved from "<a href="AutoBuildClaims.html">https://help.catch-e.net.au/mediawiki/index.php/AutoBuildClaims</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=AutoBuildClaims">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/AutoBuildClaims.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoBuildClaims&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.04 secs. -->
+</body></html>

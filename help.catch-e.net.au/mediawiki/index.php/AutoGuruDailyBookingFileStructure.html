@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="AutoGuruDailyBookingFileStructure,AutoGuru,Fm / autoguru / importApprovals,Job Scheduler,Main Page,SYSTEM,Scheduler Job Types" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>AutoGuruDailyBookingFileStructure - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">AutoGuruDailyBookingFileStructure</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="AutoGuruDailyBookingFileStructure.html#column-one">navigation</a>, <a href="AutoGuruDailyBookingFileStructure.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> &rarr; <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="Scheduler_Job_Types.html#Fleet_Management_.28fm.29" title="Scheduler Job Types">Method</a> &rarr; <a href="Fm_/_autoguru_/_importApprovals.html" title="Fm / autoguru / importApprovals">fm / autoguru / importApprovals</a>  &rarr;   <strong>AutoGuruDailyBookingFileStructure</strong>  &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="AutoGuru.html" title="AutoGuru">AutoGuru</a> 
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoGuruDailyBookingFileStructure&amp;action=edit&amp;section=1" title="Edit section: Daily Booking File Data Structure and Mapping">edit</a>]</div><a name="Daily_Booking_File_Data_Structure_and_Mapping"></a><h5>Daily Booking File Data Structure and Mapping </h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 15%;">Description</th><th style="width: 10%;">Example</th><th style="width: 10%;">fm_maintenance field</th><th style="width: 10%;">fm_approvals field</th><th style="width: 55%;">comments
+</th></tr>
+<tr>
+<td> BookingID </td><td> 14811111 </td><td> ignored </td><td> external_order_number<br />
+</td></tr>
+<tr>
+<td> BookingTicketID
+</td><td> 16212345
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> TransactionDate
+</td><td> 2024-03-03T22:22:57.261Z
+</td><td> invoice_date
+<p>odometer_date
+</p>
+</td><td> invoice_date
+<p>odometer_date	
+</p>
+</td></tr>
+<tr>
+<td> ContractId
+</td><td> 115667
+</td><td> contract_id
+</td><td> contract_id
+</td></tr>
+<tr>
+<td> PlateNumber
+</td><td> ABC123
+</td><td> ignore
+</td><td> ignore
+</td></tr>
+<tr>
+<td> PlateStateShortName
+</td><td> VIC
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> FMOMerchantAccountId
+</td><td>
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> AGAccountId
+</td><td> 15238
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> AGAccountName
+</td><td> Paul's Mechanical
+</td><td> ignored
+</td><td> franchise_notes
+</td></tr>
+<tr>
+<td> AGMerchantStoreId
+</td><td> 17899
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> AGMerchantName
+</td><td> Paul's Mechanical
+</td><td> description
+</td><td> franchise_notes
+</td></tr>
+<tr>
+<td> InvoiceNumber
+</td><td> L123456
+</td><td> invoice_no
+</td><td> invoice_no
+</td></tr>
+<tr>
+<td> Odometer
+</td><td> 156256
+</td><td> odometer
+</td><td> odometer
+</td></tr>
+<tr>
+<td> BookingDetails
+</td><td> Logbook Service 160,000km
+</td><td> description
+</td><td> ignored
+</td></tr>
+<tr>
+<td> BookingValueIncTax
+</td><td> 1100
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> BookingValueExTax
+</td><td> 1000
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> BookingValueTax
+</td><td> 100
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> Payer
+</td><td> AutoGuru
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> BookingPaymentToAGIncTax
+</td><td> 1100
+</td><td>
+</td><td>
+</td><td> If OnChargeIncTax is greater than 0, BookingPaymentToAGIncTax must be the same amount
+</td></tr>
+<tr>
+<td> BookingPaymentToAGExTax
+</td><td> 1000
+</td><td> parts_cost
+<p>total_cost
+</p>
+</td><td> ignored
+</td></tr>
+<tr>
+<td> BookingPaymentToAGTax
+</td><td> 100
+</td><td> gst_cost
+</td><td> ignored
+</td></tr>
+<tr>
+<td> PaymentDue
+</td><td> 03/05/2024 00:00:00+10:00
+</td><td> ignored
+</td><td> ignored
+</td></tr>
+<tr>
+<td> RctiIUrl
+</td><td> <a href="https://preprod.autoguru" class='external free' title="https://preprod.autoguru" rel="nofollow">https://preprod.autoguru</a> .com.au /booking/1207794 /rcti /3780581? token=4d325c26- 0382-4f5f-915a- e308619ad6bf
+</td><td> ignored
+</td><td> attachment_id
+</td></tr>
+<tr>
+<td> CatcheProductCode
+</td><td> T
+</td><td> posting_class_id
+</td><td> ignored
+</td><td> S,M or T only
+</td></tr>
+<tr>
+<td> Quantity
+</td><td> 3.0000
+</td><td> quantity
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td>
+</td><td>
+</td><td> vmrs_code_id
+</td><td>
+</td><td> When CatcheProductCode is T, the matching Tyre VMRS Code is added to the record e.g. T1 (1), T2 (2), etc.
+</td></tr>
+<tr>
+<td> OnChargeIncTax
+</td><td> 1100.0000
+</td><td> recharge_flag
+<p>status_flag
+</p>
+</td><td>
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 40%;">Contract Group</th><th style="width: 30%;"> Expenses-Approvals "R"</th><th style="width: 30%;">Import Result
+</th></tr>
+<tr>
+<td> Novated </td><td> ignored </td><td> recharge_flag = N<br /> status_flag = Posted
+</td></tr>
+<tr>
+<td> Lease or Fleet Managed<br />  when BookingPaymentToAGIncTax = 0 </td><td> Y </td><td> recharge_flag = Y<br /> status_flag = Posted
+</td></tr>
+<tr>
+<td> Lease or Fleet Managed<br />  when BookingPaymentToAGIncTax &gt; 0 </td><td> Y </td><td> recharge_flag = Y<br /> status_flag = Recharge
+</td></tr>
+<tr>
+<td> Lease or Fleet Managed<br /> when OnChargeIncTax = 0 </td><td> N </td><td> recharge_flag = N<br /> status_flag = Posted
+</td></tr>
+<tr>
+<td> Lease or Fleet Managed<br /> when OnChargeIncTax &gt; 0<br /> (and matches BookingPaymentToAGIncTax) </td><td> N </td><td> recharge_flag = Y<br /> status_flag = Recharge
+</td></tr>
+</table>
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="printfooter">
+Retrieved from "<a href="AutoGuruDailyBookingFileStructure.html">https://help.catch-e.net.au/mediawiki/index.php/AutoGuruDailyBookingFileStructure</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=AutoGuruDailyBookingFileStructure">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/AutoGuruDailyBookingFileStructure.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=AutoGuruDailyBookingFileStructure&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.06 secs. -->
+</body></html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Fm / autoguru / importApprovals,Account Manager,AutoGuru,AutoGuruDailyBookingFileStructure,Global Controls,Job Scheduler,Job Scheduler:Queue,Job Scheduler:Schedule,Main Page,SYSTEM,Scheduler Job Types" />
+<link rel="shortcut icon" href="../../../../favicon.ico" />
+		<title>Fm / autoguru / importApprovals - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../../../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../../../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../../../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../../../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../../../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../../../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../../../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Fm / autoguru / importApprovals</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="_importApprovals.html#column-one">navigation</a>, <a href="_importApprovals.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="../../Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="../../SYSTEM.html" title="SYSTEM">System</a> &rarr; <a href="../../Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="../../Scheduler_Job_Types.html#Fleet_Management_.28fm.29" title="Scheduler Job Types">Method</a> &rarr; <strong>fm / autoguru / importApprovals</strong>  &rarr;   <a href="../../AutoGuruDailyBookingFileStructure.html" title="AutoGuruDailyBookingFileStructure">AutoGuruDailyBookingFileStructure</a>  &rarr; <a href="../../Image:Check.png.html" class="image" title="Image:check.png"><img src="../../../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="../../AutoGuru.html" title="AutoGuru">AutoGuru</a> 
+</p>
+<hr />
+<p><br />
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="_importApprovals.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#Parameters"><span class="tocnumber">2</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#How_this_job_processes_files_on_AutoGuru_SFTP_server"><span class="tocnumber">3</span> <span class="toctext">How this job processes files on AutoGuru SFTP server</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#Validations_and_Alerts"><span class="tocnumber">4</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#Scheduler_Messages"><span class="tocnumber">5</span> <span class="toctext">Scheduler Messages</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#Run_Now_Alerts"><span class="tocnumber">6</span> <span class="toctext">Run Now Alerts</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#Set-up"><span class="tocnumber">7</span> <span class="toctext">Set-up</span></a></li>
+<li class='toclevel-1'><a href="_importApprovals.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This job automates the import of AutoGuru approvals from the AutoGuru SFTP server.<br />
+Go to the <a href="../../AutoGuru.html" title="AutoGuru">AutoGuru</a> page for details about all of the jobs, the process and for set-up steps.<br />
+Contact your <a href="../../Account_Manager.html" title="Account Manager">Account Manager</a> for help to set up this job.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=2" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>These are the parameter settings that are used in this job method.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 12%;"> <b>Supplier Code</b> </td><td> Choose or lookup the supplier code that the AutoGuru approvals should be created for.
+</td></tr>
+<tr>
+<td style="width: 12%;"> <b>Path</b> </td><td> Add the SFTP path the files should be picked up from.<br /> The job seeks out the required files matching pattern specified in Filename pattern.<br />Expected path is&nbsp;: <b>outbox</b>
+</td></tr>
+<tr>
+<td style="width: 12%;"> <b>Filename pattern</b> </td><td> A pattern is only required here if your Catch-e database name contains multiple words, otherwise it can be left blank.<br />
+<p>If your name is a single word, E.g. 'Fleetcompany', then the system will seek files in the standard AutoGuru pattern. I.e. 'catche_fleetcompany_YYYYMMDD'.<br />  
+If your name has multiple woreds, E.g. 'Fleet Company', the different pattern needs to be recorded so that the files to seek are found. I.e. 'catche_fleet-company_YYYYMMDD'.<br /> 
+</p><p>Enter a pattern like this: <b>/^catche_{CLIENT}_\d{6,8}\.csv$/i</b>.<br /> This pattern uses a PERL regular expression pattern. Replace {CLIENT} with the required Catch-e client name used in AutoGuru's files.<br /> AutoGuru will advise on this also.<br /> E.g. <b>/^catche_fleet-company_\d{6,8}\.csv$/i</b>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=3" title="Edit section: How this job processes files on AutoGuru SFTP server">edit</a>]</div><a name="How_this_job_processes_files_on_AutoGuru_SFTP_server"></a><h4>How this job processes files on AutoGuru SFTP server</h4>
+<ol><li> If there are multiple files to import, it will import all files dated after the last imported file date up to today's date. 
+</li><li> Files are processed in date order, from oldest to newest.
+</li><li> Once the import process is complete for a file, it is deleted from the nominated <b>Path</b> folder. A copy of the file is kept in active/<b>Path</b> folder by AutoGuru.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=4" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> New or Edit
+</td></tr>
+<tr>
+<td> Supplier code cannot be blank! </td><td> Enter the "Supplier Code"
+</td></tr>
+<tr>
+<td> Remote file path cannot be blank! </td><td> Enter the "Path".
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=5" title="Edit section: Scheduler Messages">edit</a>]</div><a name="Scheduler_Messages"></a><h4>Scheduler Messages</h4>
+<p>The messages below are shown on <a href="../../Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Scheduler / Schedule</a> as "Last Message" and also on <a href="../../Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Scheduler / Queue</a> as "Message". 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Message </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Completed
+</td></tr>
+<tr>
+<td> # records imported. </td><td> Shows the number of records imported. This will match the total record count in the imported booking data file.
+</td></tr>
+<tr>
+<td> Nothing imported! </td><td> Shows if no file was found and no records were imported.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Failed
+</td></tr>
+<tr>
+<td> Import has failed.<br /> Validation error(s):<br /> AutoGuru connection details not configured
+</td><td> The scheduler job method <strong>fm / autoguru / importApprovals</strong> will return this message if SFTP connection details for Autoguru has not been set up.<br /> Follow this up with your AutoGuru Account Manager.
+</td></tr>
+<tr>
+<td> Error invoking /gb/interface/autoguru/import-approvals API service
+</td><td> A locking issue was found when the job was run.<br /> Try scheduling the job to run again.
+</td></tr>
+<tr>
+<td> Validation error(s):<br />
+<p>1. Data - Expense-approval posting class map missing for posting<br /> class code M
+</p>
+</td><td> Product Codes S, M and T must be checked for 'Autoguru Import'.
+</td></tr>
+<tr>
+<td> File 'catche_companyname_ yyyymmdd.csv' does not exist. </td><td> This message is shown if there is no data file matching the '{filename}_yyyymmdd.csv' pattern available in the AutoGuru SFTP folder.<br /> Follow this up with your AutoGuru Account Manager.
+</td></tr>
+<tr>
+<td> invalidContractId: The booking data contains an invalid Contract Id xxx on row x</td><td> The Contract ID does not exist in Catch-e.
+</td></tr>
+<tr>
+<td> An existing import (xxx) already exists with the same import checksum </td><td>Duplicate booking data file. Same file has already been imported. Advise your AutoGuru Account Manager to delete this file from the SFTP outbox.
+</td></tr>
+<tr>
+<td> invalidProductCode: The booking data contains an invalid/unimplemented product code G </td><td> Product Code must be S, M or T
+</td></tr>
+<tr>
+<td> invalidTransactionDate: The booking data contains an invalid Transaction Date xxx on row x. Reason(s): The parsed date was invalid </td><td> Date must be in ISO 8601 format YYYY-MM-DDTHH:MM:SS.sssZ e.g. 2024-07-04T00:27:14.126Z
+</td></tr>
+<tr>
+<td> invalidBookingUrl: The booking data contains an invalid booking url for Booking Id xxx on row x </td><td>
+</td></tr>
+<tr>
+<td> vmrsCodeNotMapped: VMRS code is missing for tyre_count quantity of xx on row x </td><td>Create a VMRS code on Fleet/Controls/Maintenance/VMRS codes screen where VMRS Code = T{quantity}, Action Code = tyre_count and Quantity = {quantity}
+</td></tr>
+<tr>
+<td> invalidRecharge: OnChargeIncTax amount does not match BookingPaymentToAGIncTax amount on row x</td><td> This will happen for non Novated contracts when the Posting Class is <u>not checked for recharge</u> on Contract Types/Expenses-Approvals screen and OnChargeIncTax amount does not match BookingPaymentToAGIncTax in AutoGuru booking data file
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=6" title="Edit section: Run Now Alerts">edit</a>]</div><a name="Run_Now_Alerts"></a><h4>Run Now Alerts</h4>
+<p>The alerts below are shown when the job is run using the <b>Run Now</b> button. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Message </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Completed
+</td></tr>
+<tr>
+<td>  </td><td> Job completed.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Job failed
+</td></tr>
+<tr>
+<td> CATCH_E_API_ERROR<br /> Data - An existing import (######) already exists with the same<br /> import checksum. Duplicate filename:<br />{filename}_yyyymmdd.csv
+</td><td> Duplicate booking data file. Same file has already been imported.<br /> Advise your AutoGuru Account Manager to delete this file from the SFTP outbox.
+</td></tr>
+<tr>
+<td> CATCH_E_API_ERROR<br /> Data - The booking data contains an invalid Contract Id<br /> ###### on row #
+</td><td> The Contract ID does not exist in Catch-e.
+</td></tr>
+<tr>
+<td> CATCH_E_API_ERROR<br /> Data - File {filename}_yyyymmdd.csv does not exist.
+</td><td> This message is shown if there is no data file matching the '{filename}_yyyymmdd.csv' pattern available in the AutoGuru SFTP folder.<br /> Follow this up with your AutoGuru Account Manager.
+</td></tr>
+<tr>
+<td> CATCH_E_API_ERROR<br /> Error message: Error invoking /gb/interface/autoguru/import-approvals API service
+</td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=7" title="Edit section: Set-up">edit</a>]</div><a name="Set-up"></a><h4>Set-up</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th colspan="4"> <b>Setup / Reference Data</b> &rarr; <a href="../../Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">gb_controls</a>
+</th></tr>
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="55%" align="left">Comment</th><th width="20%" align="left">Default Value
+</th></tr>
+<tr>
+<td> fm </td><td> <a href="../../AutoGuru.html" title="AutoGuru">autoguru_sftp_connection</a> </td><td> Store the SFTP connection details for <a href="../../AutoGuru.html" title="AutoGuru">AutoGuru</a> here.<br /> These credentials are used when running the <strong>importApprovals</strong> job to collect AutoGuru's Daily Booking file.<br /> Contact your <a href="../../Account_Manager.html" title="Account Manager">Catch-e Account Manager</a> to set this up initially.
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Host</b></td><td width="70%" align="left"> sftp.autoguru.io
+</td></tr>
+<tr>
+<td><b>Port</b></td><td>22
+</td></tr>
+<tr>
+<td><b>Username</b></td><td> as provided by AutoGuru
+</td></tr>
+<tr>
+<td> <b>Key</b> </td><td> Private key
+</td></tr>
+</table>
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20555) Autoguru importApprovals. Live 08/07/2024
+</li><li> (API-20625) Autoguru interface - fix for zero dollar approval posting error and erroneous non-numeric amount fields. Live 18/11/2024
+</li><li> (DEV-22187)/ (API-20631) Add filename_pattern parameter to AutoGuru importApprovals job type. Live 09/12/2024.
+</li><li> (API-20628) AutoGuru importApprovals - update method logic. Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="_importApprovals.html">https://help.catch-e.net.au/mediawiki/index.php/Fm_/_autoguru_/_importApprovals</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Fm_/_autoguru_/_importApprovals">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../../../clients/help/wiki/common/images/logo.gif);" href="../../Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="../../Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="../../Special:Whatlinkshere/Fm_/_autoguru_/_importApprovals.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Fm_/_autoguru_/_importApprovals&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../../../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="../../Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="../../Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.11 secs. -->
+</body></html>

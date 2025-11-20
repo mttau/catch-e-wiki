@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="User Defined Queries,Derived Fields,Encrypted Fields,Gb::Queries::executeScript(),Job Scheduler,Job Scheduler:Job,Job Scheduler:Queue,Job Scheduler:Schedule,Main Page,Message,Office(xls) Format" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>User Defined Queries - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">User Defined Queries</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="User_Defined_Queries.html#column-one">navigation</a>, <a href="User_Defined_Queries.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr; <a href="Scheduler_Job_Types.html" title="Scheduler Job Types">Method</a> | <a href="Message.html" title="Message">Message</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Scheduler_Setup.html" title="Scheduler Setup">Scheduler Setup</a> &rarr; <strong>User Defined Queries</strong> | <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a> | <a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted Fields</a> | <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) Format</a> | <a href="Office(xlsx).html" title="Office(xlsx)"> Office(xlsx) Format</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Office.28xls.29_Format"><span class="tocnumber">2</span> <span class="toctext">Office(xls) Format</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Office.28xlsx.29_Format"><span class="tocnumber">3</span> <span class="toctext">Office(xlsx) Format</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Derived_Fields"><span class="tocnumber">4</span> <span class="toctext">Derived Fields</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Encrypted_Fields"><span class="tocnumber">5</span> <span class="toctext">Encrypted Fields</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#UUID_SHORT.28.29_Fields"><span class="tocnumber">6</span> <span class="toctext">UUID_SHORT() Fields</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#Billing_Locks"><span class="tocnumber">7</span> <span class="toctext">Billing Locks</span></a></li>
+<li class='toclevel-1'><a href="User_Defined_Queries.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Catch-e uses a relational database management systems (RDBMS) to store your data.<br />  
+SQL (Structured Query Language) is the database computer language used for managing data in the database.<br />  
+It's scope includes data query and update, table creation and modification, and data access control. In this context, you are only interested in the data query and update functions.<br />
+</p><p>Queries used in the <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> are stored in the <i>[gb_queries]</i> table.<br />
+Queries used in <a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a> are stored in the <i>[gb_report_queries]</i> table.
+</p><p>The details below are to assist you in creating reports for use in the <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> and in <a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a>.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=2" title="Edit section: Office(xls) Format">edit</a>]</div><a name="Office.28xls.29_Format"></a><h4>Office(xls) Format</h4>
+<p>If you have nominated '<a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls)</a>' as the output option for your scheduler job or screen report, you can customise the resulting spreadsheet in several ways, such as:
+</p>
+<ul><li> Adding a report header including a logo, title, and run time details
+</li><li> Customising the cell formatting, for example fonts, colours, column widths
+</li><li> Embedding Excel formulae in your data
+</li></ul>
+<p>See <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) Format</a> for further details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=3" title="Edit section: Office(xlsx) Format">edit</a>]</div><a name="Office.28xlsx.29_Format"></a><h4>Office(xlsx) Format</h4>
+<p>Formatting <a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a> reports is not available at this time.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=4" title="Edit section: Derived Fields">edit</a>]</div><a name="Derived_Fields"></a><h4>Derived Fields</h4>
+<p>There are some values you want for reports that require complex calculations and are difficult to do with an SQL query. By adding special markup to your query, you can access the <a href="Derived_Fields.html" title="Derived Fields">derived fields</a> libraries.<br /> 
+The <a href="Derived_Fields.html" title="Derived Fields">derived fields</a> libraries contain many values used in Catch-e's standard reports that can be useful for custom reports, e.g. Estimated Odometer on the Inventory report.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=5" title="Edit section: Encrypted Fields">edit</a>]</div><a name="Encrypted_Fields"></a><h4>Encrypted Fields</h4>
+<p><a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted fields</a> can be accessed using special syntax.
+</p><p><b>Example</b>
+</p><p>To decrypt and report on the [fm_drivers]income_gross field you can use this:
+</p>
+<pre>
+
+SELECT AES_DECRYPT(income_gross, 'AES_CRYPT_CIPHER_KEY') AS income_gross
+FROM fm_drivers
+WHERE driver_id = '100000';
+
+</pre>
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a> This will only work when the query is run by the Scheduler or via a Web Service call. If you try and run this in Query Browser / Workbench it will return a 'null' value.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=6" title="Edit section: UUID_SHORT() Fields">edit</a>]</div><a name="UUID_SHORT.28.29_Fields"></a><h4>UUID_SHORT() Fields</h4>
+<p>UUID_SHORT fields are identified as those that have a field type of 'bigint(20) unsigned'.
+</p><p>To add a row in a table using this unique identifier, the UUID_SHORT() function must be included in an 'INSERT INTO' script, instead of the numbering sequence using gb_unique_ids.  Example below;
+</p>
+<pre>
+
+INSERT INTO fm_finance_asset_types (finance_asset_type_id, name, ownership_required_flag)
+VALUES (uuid_short(),'sample','no');
+
+</pre>
+<p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/20px-Info.png" alt="" width="20" height="20" longdesc="/mediawiki/index.php/Image:Info.png" /></a> The value 'uuid_short()' is entered without the characters ' ', as it needs to be identified as an incremental value not a string value. 
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=7" title="Edit section: Billing Locks">edit</a>]</div><a name="Billing_Locks"></a><h4>Billing Locks</h4>
+<p>When creating <a href="./Gb::Queries::executeScript().html" title="Gb::Queries::executeScript()">executeScript</a> scheduler jobs, you can invoke <a href="Stored_Procedures.html" title="Stored Procedures">Stored Procedures</a> to create and release billing locks.<br />
+</p>
+<pre>
+CALL applyBillingLock();
+CALL releaseBillingLock();
+</pre>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 15694::Catch-e::ISO 27001 Issue Register::AES CRYPT CIPHER KEY can be easily exposed using existing web-service/query functionality. Live 19/04/2017
+</li><li> (DEV-20462) Fleet / Import Data / Whole Table fails on import for fm_drivers. Live 26/11/2018
+</li><li> (DEV-20910) Use AES_CRYPT_CIPHER_KEY when using Decrypt Key in web-service query functions. 16/12/2019
+</li><li> (DEV-21092) Scheduler / Job - enable Office(xlsx) as an Attachment Format. dd/07/2020
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="User_Defined_Queries.html">https://help.catch-e.net.au/mediawiki/index.php/User_Defined_Queries</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=User_Defined_Queries">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/User_Defined_Queries.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=User_Defined_Queries&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.10 secs. -->
+</body></html>

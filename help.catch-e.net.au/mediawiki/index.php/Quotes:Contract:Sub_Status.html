@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Quotes:Contract:Sub Status,Administration,FLEET,Main Page,Quotes,Quotes:Contract,Quotes:Contract:Quote Status" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Quotes:Contract:Sub Status - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Quotes:Contract:Sub Status</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Quotes:Contract:Sub_Status.html#column-one">navigation</a>, <a href="./Quotes:Contract:Sub_Status.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> / <a href="./Quotes:Contract.html" title="Quotes:Contract">Contract</a> &rarr; <strong>Sub Status</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quotes:Contract:Sub_Status&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>A Sub Status can be used to extend information about the <a href="./Quotes:Contract:Quote_Status.html" title="Quotes:Contract:Quote Status">"Quote Status"</a>. <br />
+It can be a sub-set of a <a href="./Quotes:Contract:Quote_Status.html" title="Quotes:Contract:Quote Status">"Quote Status"</a> field, or can be selected any time, depending on your configuration.<br /><br />
+<a href="./Image:Quote_contract_screen.PNG.html" class="image" title="Image:quote_contract_screen.PNG"><img src="../../clients/help/wiki/images/3/38/Quote_contract_screen.PNG" alt="Image:quote_contract_screen.PNG" width="536" height="307" longdesc="/mediawiki/index.php/Image:Quote_contract_screen.PNG" /></a>
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quotes:Contract:Sub_Status&amp;action=edit&amp;section=2" title="Edit section: Set-up Notes">edit</a>]</div><a name="Set-up_Notes"></a><h4>Set-up Notes</h4>
+<p>The list box is stored in the table <i>qt_quote_sub_statuses</i>.<br /><br />
+Populate <i>[qt_quote_sub_status]parent_status_description</i> with the value stored in <i>[qt_quote_statuses]description</i> to link this sub status to display only for the nominated "Quote Status".<br />
+If you leave <i>[qt_quote_sub_status]parent_status_description</i> blank, the record will only be selectable if the quote's "Quote Status" is not linked to any other records.<br /><br />
+Change <i>[qt_quote_sub_status]status_flag</i> to 'inactive' if you want to halt use of the records. The record will no longer be available in the "Sub Status" list box.<br /> 
+Quotes that exist where the sub status has been changed to 'inactive' will not be altered unless edited. If edited, the sub status record will be removed and cannot be re-selected.<br />
+</p><p><a href="./Image:Qt_quote_sub_statuses.PNG.html" class="image" title="Image:Qt_quote_sub_statuses.PNG"><img src="../../clients/help/wiki/images/1/14/Qt_quote_sub_statuses.PNG" alt="Image:Qt_quote_sub_statuses.PNG" width="420" height="189" longdesc="/mediawiki/index.php/Image:Qt_quote_sub_statuses.PNG" /></a>
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quotes:Contract:Sub_Status&amp;action=edit&amp;section=3" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 1077: Quote Sub Status field. Live 29/03/2007
+</li><li> 4089: New workflow for cancelling a quote. Live 21/07/2011
+</li><li> 9746: Mandatory fields in Quotes area. Live 29/08/2014
+</li><li> 11909: Update statuses and sub statuses. Live 16/10/2015
+</li><li> 14411: Make qt_quote_sub_statuses parent status aware. Live xx/08/2017
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Quotes:Contract:Sub_Status.html">https://help.catch-e.net.au/mediawiki/index.php/Quotes:Contract:Sub_Status</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Quotes:Contract:Sub_Status">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Quotes:Contract:Sub_Status.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quotes:Contract:Sub_Status&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

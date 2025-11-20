@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Cost Centre Change,Administration,ChangeContractCostCentre,Clients:Cost centres,Contracts,Contracts:Events,Contracts Events,FLEET,Good to know,Main Page,Quotes:Accept" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Cost Centre Change - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Cost Centre Change</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Cost_Centre_Change.html#column-one">navigation</a>, <a href="Cost_Centre_Change.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <a href="./Contracts:Events.html" title="Contracts:Events">Events</a> &rarr; <a href="Contracts_Events.html" title="Contracts Events">Coded Events</a> &rarr; <strong>Cost Centre Change</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Cost_Centre_Change&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p><a href="./Clients:Cost_centres.html" title="Clients:Cost centres">Cost Centres</a> are used in many invoices and reports and how they are entered can affect those reports.<br />
+If a quote has a <a href="./Quotes:Contract:Cost_Centre.html" title="Quotes:Contract:Cost Centre">recorded cost centre</a>, this will be populated into the contract when it is <a href="./Quotes:Accept.html#Contract_Events_created_on_Accept" title="Quotes:Accept">accepted</a>. The "Date" field is not populated in these opening events.<br /><br />
+Cost centres can be entered either a <i>single</i> item, or <i>multiples</i> can be created to allocate a percentage of costs to different cost centres.<br />
+</p><p>Cost centre changes can also be created using the API <a href="ChangeContractCostCentre.html" title="ChangeContractCostCentre">changeContractCostCentre</a>.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Cost_Centre_Change&amp;action=edit&amp;section=2" title="Edit section: Create a Cost Centre Change event">edit</a>]</div><a name="Create_a_Cost_Centre_Change_event"></a><h4>Create a Cost Centre Change event</h4>
+<p>When a vehicle is assigned to a new cost centre, create an new event to record this.<br /> Only active <a href="./Clients:Cost_centres.html" title="Clients:Cost centres">Clients / Cost Centres</a> records can be entered or selected.<br /> Use the <a href="Good_to_know.html#.3FSearch" title="Good to know">?Search</a> function to find and select available cost centres.<br /> 
+</p><p>Record the "Date" when the vehicle changed to the new cost centre in the event. This date is used to select the correct cost centre in date-driven reports.<br /> The "Allocation(%)" field will default to '100.00'. Leave this at '100.00' unless you are using the multiple cost centre feature.<br />  
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Cost_Centre_Change&amp;action=edit&amp;section=3" title="Edit section: Multiples">edit</a>]</div><a name="Multiples"></a><h4>Multiples</h4>
+<p><i>Multiple</i> cost centres would be created if percentage cost allocation is desired for that contract and only affect the <a href="./Standard_Reports:Costing_Detail.html" title="Standard Reports:Costing Detail">Cost Report</a>.<br />
+The <a href="./Standard_Reports:Costing_Detail.html" title="Standard Reports:Costing Detail">Cost Report</a> uses cost centre information stored in a table called <i>fm_contract_cost_centre_allocations</i> to drive its calculations.<br /><br />
+All other reports use the cost centre that is displayed on the Contracts/Contract screen.<br /> If more than one cost centre entry exists for a contract - the entry with the <b>most recent date</b> will be displayed on the Contracts/Contract screen.<br />
+If <i>multiple</i> cost centre entries have been entered - the <b>last</b> entry made with <b>most recent date</b> will be displayed on the Contracts/Contract screen.<br /><br />
+</p><p><b>Enter Date</b><br />
+When a cost centre is entered without a date on Contract creation, it will be treated as covering the whole life of the contract.<br />
+If a new cost centre(s) is entered, the previous cost centre(s) records will be updated with an end date of the previous day. E.g. a new cost centre that is entered with a date of 05/08/2019 will then update 04/08/2019 as the end date of the previous cost centre in the fm_contract_cost_centre_allocations table and used accordingly in the cost report.  Where new cost centres are created without a specified date, the end date of this cost centre will be the day prior to the saved date of the new cost centre.  E.g. new cost centre is entered dated 23/03/2020, then the end date of the previous cost centre will become 22/03/2020.<br />
+The most recent cost centre(s) entered will be treated as covering the remainder of the contract until a new cost centre(s) entry changes this.<br /><br />
+</p><p><b>Multiple Cost Centres</b><br />
+Each Cost Centre of a reporting set needs to be entered with the same date, then a percentage allocation (up to 2 decimal places) is entered.<br />
+If the percentages entered do not total 100%, an unallocated entry for the difference will appear on the <a href="./Standard_Reports:Costing_Detail.html" title="Standard Reports:Costing Detail">Cost Report</a>. These entries will need to be edited to equal 100% to correct the report. This will apply in both under-allocation and over-allocation scenarios, E.g. allocation of 90% would yield an auto-entry of 10% and an allocation of 120% would yield an auto-entry of -20%. <br /><br />
+</p><div class="printfooter">
+Retrieved from "<a href="Cost_Centre_Change.html">https://help.catch-e.net.au/mediawiki/index.php/Cost_Centre_Change</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Cost_Centre_Change">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Cost_Centre_Change.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Cost_Centre_Change&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.05 secs. -->
+</body></html>

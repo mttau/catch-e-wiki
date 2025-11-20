@@ -1,0 +1,1173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Troubleshooting,Account Manager,AutoBuildClaims,BECS Troubleshooting,Bank Account Setup,Bookings Setup,Bookings Troubleshooting,CO2 Emissions,Carbon Emissions Offset,Card Transactions,Card Troubleshooting" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Troubleshooting - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Troubleshooting</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Troubleshooting.html#column-one">navigation</a>, <a href="Troubleshooting.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a>  &rarr; General Information &rarr;  <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> | <strong>Troubleshooting</strong>  &rarr; <a href="Session_cross-overs.html" title="Session cross-overs">Session cross-overs</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Troubleshooting.html#System_Locks"><span class="tocnumber">1</span> <span class="toctext">System Locks</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#System_Locks_2"><span class="tocnumber">1.1</span> <span class="toctext">System Locks</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Orphaned_Locks"><span class="tocnumber">1.2</span> <span class="toctext">Orphaned Locks</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Login"><span class="tocnumber">2</span> <span class="toctext">Login</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#403_Forbidden"><span class="tocnumber">2.1</span> <span class="toctext">403 Forbidden</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Invalid_token"><span class="tocnumber">2.2</span> <span class="toctext">Invalid token</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_browser_tells_me_to_change_this_password"><span class="tocnumber">2.3</span> <span class="toctext">My browser tells me to change this password</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Site_.7BClient_URL.7D_unavailable_cannot_connect_to_endpoint.21"><span class="tocnumber">2.4</span> <span class="toctext">Site {Client URL} unavailable cannot connect to endpoint!</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Sessions"><span class="tocnumber">3</span> <span class="toctext">Sessions</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Possible_session_cross-over_detected"><span class="tocnumber">3.1</span> <span class="toctext">Possible session cross-over detected</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Downloads"><span class="tocnumber">4</span> <span class="toctext">Downloads</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#I_can.27t_see_my_printed_report_or_file_download_in_Chrome"><span class="tocnumber">4.1</span> <span class="toctext">I can't see my printed report or file download in Chrome</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quote_download_error_404_in_Chrome"><span class="tocnumber">4.2</span> <span class="toctext">Quote download error 404 in Chrome</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Emails"><span class="tocnumber">5</span> <span class="toctext">Emails</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#An_email_we_sent_was_not_received"><span class="tocnumber">5.1</span> <span class="toctext">An email we sent was not received</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#mailQuery_Event_Email_-_created_without_an_email_icon"><span class="tocnumber">5.2</span> <span class="toctext">mailQuery Event Email - created without an email icon</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Quotes"><span class="tocnumber">6</span> <span class="toctext">Quotes</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quotes_.2F_Search_.22Rate.22_doesn.27t_match_the_Lease_Total"><span class="tocnumber">6.1</span> <span class="toctext">Quotes / Search "Rate" doesn't match the Lease Total</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quotes_.2F_Contract"><span class="tocnumber">6.2</span> <span class="toctext">Quotes / Contract</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Contract_.22Term.22_-_I_can.27t_enter_the_term_I_want"><span class="tocnumber">6.2.1</span> <span class="toctext">Quotes / Contract "Term" - I can't enter the term I want</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Contract_-_Quote_PDF_-_it_shows_a_negative_Pre_Tax_amount"><span class="tocnumber">6.2.2</span> <span class="toctext">Quotes / Contract - Quote PDF - it shows a negative Pre Tax amount</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Contract_-_Quote_PDF_-_404_download_error_in_Chrome"><span class="tocnumber">6.2.3</span> <span class="toctext">Quotes / Contract - Quote PDF - 404 download error in Chrome</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quotes_.2F_Vehicle"><span class="tocnumber">6.3</span> <span class="toctext">Quotes / Vehicle</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Vehicle_-_I_can.27t_find_a_variant"><span class="tocnumber">6.3.1</span> <span class="toctext">Quotes / Vehicle - I can't find a variant</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quotes_.2F_Finance"><span class="tocnumber">6.4</span> <span class="toctext">Quotes / Finance</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Finance_-_.22GST_Claimable.22_is_limited_for_an_exempt_vehicle"><span class="tocnumber">6.4.1</span> <span class="toctext">Quotes / Finance - "GST Claimable" is limited for an exempt vehicle</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Finance_-_.22GST_Claimable.22_is_not_correct"><span class="tocnumber">6.4.2</span> <span class="toctext">Quotes / Finance - "GST Claimable" is not correct</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Finance_-_.22Fee.22_does_not_match_the_financier.27s_fee"><span class="tocnumber">6.4.3</span> <span class="toctext">Quotes / Finance - "Fee" does not match the financier's fee</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quotes_.2F_Lease"><span class="tocnumber">6.5</span> <span class="toctext">Quotes / Lease</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Lease_-_Fuel_.28F.29_profile_.22Litres_per_100KM.22_is_not_right"><span class="tocnumber">6.5.1</span> <span class="toctext">Quotes / Lease - Fuel (F) profile "Litres per 100KM" is not right</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Lease_-_Carbon_Emission_Offset_.28CEO.29_does_not_calculate"><span class="tocnumber">6.5.2</span> <span class="toctext">Quotes / Lease - Carbon Emission Offset (CEO) does not calculate</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Lease_-_Redundancy_Insurance_-_does_not_default_into_new_quotes"><span class="tocnumber">6.5.3</span> <span class="toctext">Quotes / Lease - Redundancy Insurance - does not default into new quotes</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Lease_-_Tyre_and_Rim_Insurance_-_plans_don.27t_show"><span class="tocnumber">6.5.4</span> <span class="toctext">Quotes / Lease - Tyre and Rim Insurance - plans don't show</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Quotes_.2F_Lease_-_Lease_Inclusion_Plans_-_the_Inclusion_is_visible.2C_but_the_check_box_is_disabled"><span class="tocnumber">6.5.5</span> <span class="toctext">Quotes / Lease - Lease Inclusion Plans - the Inclusion is visible, but the check box is disabled</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Contracts"><span class="tocnumber">7</span> <span class="toctext">Contracts</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Contracts_.2F_Finance"><span class="tocnumber">7.1</span> <span class="toctext">Contracts / Finance</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#I_can.27t_edit_the_Financier_field"><span class="tocnumber">7.1.1</span> <span class="toctext">I can't edit the Financier field</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Contracts_.2F_Insurance"><span class="tocnumber">7.2</span> <span class="toctext">Contracts / Insurance</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Fire_Service_Levy_does_not_match_expected_value"><span class="tocnumber">7.2.1</span> <span class="toctext">Fire Service Levy does not match expected value</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Stamp_Duty_does_not_match_expected_value"><span class="tocnumber">7.2.2</span> <span class="toctext">Stamp Duty does not match expected value</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Contracts_.2F_Lease"><span class="tocnumber">7.3</span> <span class="toctext">Contracts / Lease</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#The_Finalise_button_is_disabled"><span class="tocnumber">7.3.1</span> <span class="toctext">The Finalise button is disabled</span></a>
+<ul>
+<li class='toclevel-4'><a href="Troubleshooting.html#Enable_rules"><span class="tocnumber">7.3.1.1</span> <span class="toctext">Enable rules</span></a></li>
+</ul>
+</li>
+<li class='toclevel-3'><a href="Troubleshooting.html#The_Un-Post_button_is_disabled"><span class="tocnumber">7.3.2</span> <span class="toctext">The Un-Post button is disabled</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Contracts_.2F_Events_Emails"><span class="tocnumber">7.4</span> <span class="toctext">Contracts / Events Emails</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#My_event_email_shows_an_.5C_before_the_apostrophe"><span class="tocnumber">7.4.1</span> <span class="toctext">My event email shows an \ before the apostrophe</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#7_Reasons_why_your_Certificate_of_Currency_event_email_is_not_working"><span class="tocnumber">7.4.2</span> <span class="toctext">7 Reasons why your Certificate of Currency event email is not working</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Contracts_.2F_FBT"><span class="tocnumber">7.5</span> <span class="toctext">Contracts / FBT</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Benefit_Type_is_Operating_and_FBT_Amounts_show_as_Statutory"><span class="tocnumber">7.5.1</span> <span class="toctext">Benefit Type is Operating and FBT Amounts show as Statutory</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Driver_Report_does_not_match_the_selected_month"><span class="tocnumber">7.5.2</span> <span class="toctext">Driver Report does not match the selected month</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Reports_and_Buttons_are_missing"><span class="tocnumber">7.5.3</span> <span class="toctext">Reports and Buttons are missing</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Billing"><span class="tocnumber">8</span> <span class="toctext">Billing</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Missing_a_contract_from_the_billing_process"><span class="tocnumber">8.1</span> <span class="toctext">Missing a contract from the billing process</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Suspended_contract_is_not_billing"><span class="tocnumber">8.2</span> <span class="toctext">Suspended contract is not billing</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Problem_creating_Invoices_.28Error_codes:_102.2C_103.2C_203.29"><span class="tocnumber">8.3</span> <span class="toctext">Problem creating Invoices (Error codes: 102, 103, 203)</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Problem_creating_Invoices_.28Error_code:_202.29"><span class="tocnumber">8.4</span> <span class="toctext">Problem creating Invoices (Error code: 202)</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Automated_Billing"><span class="tocnumber">9</span> <span class="toctext">Automated Billing</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Automated_billing_did_not_email"><span class="tocnumber">9.1</span> <span class="toctext">Automated billing did not email</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Reg_Or_CTP_Renewals"><span class="tocnumber">10</span> <span class="toctext">Reg Or CTP Renewals</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_import_file_fails"><span class="tocnumber">10.1</span> <span class="toctext">My import file fails</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Payments"><span class="tocnumber">11</span> <span class="toctext">Payments</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#The_Remittance_email_recipient_is_in-correct"><span class="tocnumber">11.1</span> <span class="toctext">The Remittance email recipient is in-correct</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#You_can_see_.27Pre-Post.27_status_records"><span class="tocnumber">11.2</span> <span class="toctext">You can see 'Pre-Post' status records</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#You_are_missing_payment_records"><span class="tocnumber">11.3</span> <span class="toctext">You are missing payment records</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#You_are_missing_a_Bank_Account"><span class="tocnumber">11.4</span> <span class="toctext">You are missing a Bank Account</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Changing_from_single_to_multiple_bank_accounts"><span class="tocnumber">11.5</span> <span class="toctext">Changing from single to multiple bank accounts</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#You_can.27t_unpost_a_batch"><span class="tocnumber">11.6</span> <span class="toctext">You can't unpost a batch</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Receipting"><span class="tocnumber">12</span> <span class="toctext">Receipting</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Import_file_troubleshooting"><span class="tocnumber">12.1</span> <span class="toctext">Import file troubleshooting</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#I_can.27t_locate_an_invoice_row_to_receipt"><span class="tocnumber">12.2</span> <span class="toctext">I can't locate an invoice row to receipt</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Banking_Software_shows_odd_details_in_fields._E.g._.3Ctcxspan_txchref.3D.22123..."><span class="tocnumber">12.3</span> <span class="toctext">Banking Software shows odd details in fields. E.g. &lt;tcxspan txchref="123...</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Bookings"><span class="tocnumber">13</span> <span class="toctext">Bookings</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Location_Charges_don.27t_show_up"><span class="tocnumber">13.1</span> <span class="toctext">Location Charges don't show up</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#GST_does_not_calculate"><span class="tocnumber">13.2</span> <span class="toctext">GST does not calculate</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Location_Charges_don.27t_show_up_2"><span class="tocnumber">13.3</span> <span class="toctext">Location Charges don't show up</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#GST_does_not_calculate_2"><span class="tocnumber">13.4</span> <span class="toctext">GST does not calculate</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Card_Services"><span class="tocnumber">14</span> <span class="toctext">Card Services</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Your_transaction_has_failed_and_how_to_fix_it"><span class="tocnumber">14.1</span> <span class="toctext">Your transaction has failed and how to fix it</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#On_Import_I_get_a_403_error"><span class="tocnumber">14.2</span> <span class="toctext">On Import I get a 403 error</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Card_Number_displays_incorrectly"><span class="tocnumber">14.3</span> <span class="toctext">Card Number displays incorrectly</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#File_displays_0_values_in_the_Net.2C_GST_and_Amount_columns"><span class="tocnumber">14.4</span> <span class="toctext">File displays 0 values in the Net, GST and Amount columns</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#I_have_imported_a_fuel_file_twice"><span class="tocnumber">14.5</span> <span class="toctext">I have imported a fuel file twice</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Unable_to_Import_Card_Transactions"><span class="tocnumber">14.6</span> <span class="toctext">Unable to Import Card Transactions</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Employees_.2F_Transactions"><span class="tocnumber">15</span> <span class="toctext">Employees / Transactions</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Transactions_are_missing"><span class="tocnumber">15.1</span> <span class="toctext">Transactions are missing</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Employees_.2F_Item"><span class="tocnumber">16</span> <span class="toctext">Employees / Item</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Car_Details_-_unable_to_add_quote_or_contract"><span class="tocnumber">16.1</span> <span class="toctext">Car Details - unable to add quote or contract</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Standard_Reports"><span class="tocnumber">17</span> <span class="toctext">Standard Reports</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#FBT_Employee_Quarterly"><span class="tocnumber">17.1</span> <span class="toctext">FBT Employee Quarterly</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Accounts_.2F_Export"><span class="tocnumber">18</span> <span class="toctext">Accounts / Export</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Reimbursements_.28ABA.29"><span class="tocnumber">18.1</span> <span class="toctext">Reimbursements (ABA)</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Disbursements_.28ABA.29"><span class="tocnumber">18.2</span> <span class="toctext">Disbursements (ABA)</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Claim_or_Payment_record_has_been_created_but_does_not_show_up_in_Batch_selection"><span class="tocnumber">18.2.1</span> <span class="toctext">Claim or Payment record has been created but does not show up in Batch selection</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Claim_record_has_not_been_created"><span class="tocnumber">18.2.2</span> <span class="toctext">Claim record has not been created</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Setup_.2F_Import_or_Export_Files"><span class="tocnumber">19</span> <span class="toctext">Setup / Import or Export Files</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#I_can.27t_see_the_file_I_need"><span class="tocnumber">19.1</span> <span class="toctext">I can't see the file I need</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Scheduler"><span class="tocnumber">20</span> <span class="toctext">Scheduler</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_job_is_inactive"><span class="tocnumber">20.1</span> <span class="toctext">My job is inactive</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_job_is_active_but_does_not_run"><span class="tocnumber">20.2</span> <span class="toctext">My job is active but does not run</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_job_has_failed"><span class="tocnumber">20.3</span> <span class="toctext">My job has failed</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_Attachment_Formatting_did_not_work"><span class="tocnumber">20.4</span> <span class="toctext">My Attachment Formatting did not work</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#mailQuery_Event_Email_-_created_without_an_email_icon_2"><span class="tocnumber">20.5</span> <span class="toctext">mailQuery Event Email - created without an email icon</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Forms"><span class="tocnumber">21</span> <span class="toctext">Forms</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#My_dates_present_as_.27YYYY-MM-DD.27"><span class="tocnumber">21.1</span> <span class="toctext">My dates present as 'YYYY-MM-DD'</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#I_uploaded_a_form_but_it_has_not_updated_in_the_system"><span class="tocnumber">21.2</span> <span class="toctext">I uploaded a form but it has not updated in the system</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Docx_files"><span class="tocnumber">21.3</span> <span class="toctext">Docx files</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Quote_zips"><span class="tocnumber">21.4</span> <span class="toctext">Quote zips</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#I_get_a_validation_alert_on_the_Quotes_.2F_Contract_tab_when_I_try_to_print_my_html.zip_quote"><span class="tocnumber">21.4.1</span> <span class="toctext">I get a validation alert on the Quotes / Contract tab when I try to print my html.zip quote</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#My_html.zip_quote_will_not_print_and_there_is_no_error_message"><span class="tocnumber">21.4.2</span> <span class="toctext">My html.zip quote will not print and there is no error message</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#I_want_to_add_a_second_page_to_my_html.zip_quote"><span class="tocnumber">21.4.3</span> <span class="toctext">I want to add a second page to my html.zip quote</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Web_Services"><span class="tocnumber">22</span> <span class="toctext">Web Services</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#CATCH_E_ERROR_TOO_MANY_REQUESTS_error"><span class="tocnumber">22.1</span> <span class="toctext">CATCH_E_ERROR_TOO_MANY_REQUESTS error</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#exportQuery_403_Error"><span class="tocnumber">22.2</span> <span class="toctext">exportQuery 403 Error</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#CATCH_E_ERROR_QUOTE_VALIDATION_FAILED_error"><span class="tocnumber">22.3</span> <span class="toctext">CATCH_E_ERROR_QUOTE_VALIDATION_FAILED error</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#VPN_Connection"><span class="tocnumber">23</span> <span class="toctext">VPN Connection</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Self_Service_Troubleshooting_Guide_for_users_running_Twingate_client"><span class="tocnumber">23.1</span> <span class="toctext">Self Service Troubleshooting Guide for users running Twingate client</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Windows_Checking_Network_Interfaces_for_Twingate"><span class="tocnumber">23.2</span> <span class="toctext">Windows Checking Network Interfaces for Twingate</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#API_Services"><span class="tocnumber">24</span> <span class="toctext">API Services</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#HTTP_401_Unauthorised"><span class="tocnumber">24.1</span> <span class="toctext">HTTP 401 Unauthorised</span></a></li>
+<li class='toclevel-2'><a href="Troubleshooting.html#HTTP_429_Too_many_requests"><span class="tocnumber">24.2</span> <span class="toctext">HTTP 429 Too many requests</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Troubleshooting.html#Driver_or_Employee_Portal"><span class="tocnumber">25</span> <span class="toctext">Driver or Employee Portal</span></a>
+<ul>
+<li class='toclevel-2'><a href="Troubleshooting.html#Login_2"><span class="tocnumber">25.1</span> <span class="toctext">Login</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Authentication_Failed_-_Invalid_Sign-on_Token"><span class="tocnumber">25.1.1</span> <span class="toctext">Authentication Failed - Invalid Sign-on Token</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#403_Forbidden_2"><span class="tocnumber">25.1.2</span> <span class="toctext">403 Forbidden</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#404_Page_not_found"><span class="tocnumber">25.1.3</span> <span class="toctext">404 Page not found</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Portal_2FA_Problems"><span class="tocnumber">25.2</span> <span class="toctext">Portal 2FA Problems</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Unenroll_a_driver"><span class="tocnumber">25.2.1</span> <span class="toctext">Unenroll a driver</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Driver_is_locked_out"><span class="tocnumber">25.2.2</span> <span class="toctext">Driver is locked out</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Unlock_a_driver"><span class="tocnumber">25.2.3</span> <span class="toctext">Unlock a driver</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Troubleshooting.html#Raise_a_vehicle_claim"><span class="tocnumber">25.3</span> <span class="toctext">Raise a vehicle claim</span></a>
+<ul>
+<li class='toclevel-3'><a href="Troubleshooting.html#Driver_can_log_in_but_gets_an_error_when_they_click_on_Raise_a_Claim_button"><span class="tocnumber">25.3.1</span> <span class="toctext">Driver can log in but gets an error when they click on Raise a Claim button</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Submit_Claim_Error"><span class="tocnumber">25.3.2</span> <span class="toctext">Submit Claim Error</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Attach_Receipt_Error"><span class="tocnumber">25.3.3</span> <span class="toctext">Attach Receipt Error</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Unable_to_load_receipts"><span class="tocnumber">25.3.4</span> <span class="toctext">Unable to load receipts</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Unable_to_select_photo_on_iPhone"><span class="tocnumber">25.3.5</span> <span class="toctext">Unable to select photo on iPhone</span></a></li>
+<li class='toclevel-3'><a href="Troubleshooting.html#Connection_Error"><span class="tocnumber">25.3.6</span> <span class="toctext">Connection Error</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=1" title="Edit section: System Locks">edit</a>]</div><a name="System_Locks"></a><h3>System Locks</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:System_Locks&amp;action=edit&amp;section=1" title="Template:System Locks">edit</a>]</div><a name="System_Locks_2"></a><h4>System Locks</h4>
+<p>Records are locked by the system if a user is editing the record or running a process that updates the record (E.g. Billings, Payments, Receipts)<br />
+If you try to access a record that is locked, you will alerted and prevented from using the locked record.<br /> 
+The alert shows the login of the user who has locked the record.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Edit
+</td></tr>
+
+<tr>
+<td>Table {table_name} already locked by user: {user_login} </td><td> The table cannot be edited while another user is editing it. Wait and try again later. Visit <a href="System_Locks.html" title="System Locks">System Locks</a> for more details.
+</td></tr>
+</table>
+<p><br />
+<b>Suggested steps:</b>
+</p>
+<ol><li> Wait a short time for the user to finish their editing process.
+</li><li> Contact the named user and ask them to finish the work they are doing and/or exit the record they have open. 
+</li><li> If the user is editing or processing a different record and you still get the lock message, they have probably orphaned that lock.<br />
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:System_Locks&amp;action=edit&amp;section=2" title="Template:System Locks">edit</a>]</div><a name="Orphaned_Locks"></a><h4>Orphaned Locks</h4>
+<p>Records can be orphaned if they are locked, but the user is no longer editing that record.<br />
+</p><p>Orphaned locks happen for two main reasons:
+</p>
+<ol><li> A record was in edit mode and the user closed down their browser window instead of logging out of the system. <b>Please DO NOT do this.</b>
+</li><li> The user's internet connection dropped out. Even a lost connection which lasts only an instant may mean the system is unable to find related locks related to the session concerned.<br />
+</li></ol>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a></td><td align="left"> Users - do not shut down your browser screen when you are in the middle of a process or have a records open in edit mode. This causes orphaned locks.
+</td></tr></table>
+<p><br />
+<b>To fix orphaned locks:</b>
+</p>
+<ol><li> The user should logout of the system correctly and then log back in again. This should remove the orphaned lock/s.<br />
+</li><li> Logout by clicking on the <a href="Logout.html" title="Logout">Logout</a> <a href="./Image:Logout.gif.html" class="image" title="Image:logout.gif"><img src="../../clients/help/wiki/images/b/bd/Logout.gif" alt="Image:logout.gif" width="18" height="18" longdesc="/mediawiki/index.php/Image:Logout.gif" /></a> icon. This creates a logout record and closes out the users current session.
+</li><li> If the user is running two session, they will need to repeat this process for both of their sessions.<br />
+</li><li> Orphaned locks on contracts and quotes are usually tidied up by the system, by a process which runs every 5 minutes.
+</li><li> If you have tried to remove the locks by logging back in and you have waited 10 minutes and the lock has not be removed, please escalate to your System Administrator. 
+</li><li> You System Administrator may email <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> if required to check and remove the locks for you.
+</li></ol>
+<p><br /> 
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=2" title="Edit section: Login">edit</a>]</div><a name="Login"></a><h3><a href="Login.html" title="Login">Login</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Login:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Login:Troubleshooting">edit</a>]</div><a name="403_Forbidden"></a><h5>403 Forbidden</h5>
+<p>If you get a '403 Forbidden' message when you are logging in, you are trying to log in from a Geo-blocked location.<br />
+To login, you will need to either 
+</p>
+<ol><li> Run a VPN connection from an unblocked location (like Australia)
+</li><li> Arrange for the IP addressg to be whitelisted. This can only be done if you are running a static IP address. Go to the process page <a href="Whitelist_an_IP_address.html" title="Whitelist an IP address">Whitelist an IP address</a> for the steps to do this.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Login:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Login:Troubleshooting">edit</a>]</div><a name="Invalid_token"></a><h5>Invalid token</h5>
+<p>If a user clicks on the URL link sent by the <u><a href="Resetting_Passwords.html" title="Resetting Passwords">Forgot Password?</a></u> feature and gets this error, it means either
+</p>
+<ol><li> They have clicked on the link previously (it will only work once) or
+</li><li> Their email system has triggered the URL while running security tests for phishing (thus using up the one-time link)
+</li></ol>
+<p>In both cases, the easiest way to manage this is to go to <a href="./Users:Password.html" title="Users:Password">Users / Password</a> and <a href="Issue_a_temporary_password.html" title="Issue a temporary password">Issue a temporary password</a> to the user.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Login:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Login:Troubleshooting">edit</a>]</div><a name="My_browser_tells_me_to_change_this_password"></a><h5>My browser tells me to change this password</h5>
+<p>Your browser has a monitoring tool enabled that checks the passwords you enter against databases that store known stolen credentials.<br />
+</p><p>If your browser alerts you about this, it means your login password is no longer secure.<br />
+You can confirm this by using a site like <a href="https://haveibeenpwned.com/Passwords" class='external text' title="https://haveibeenpwned.com/Passwords" rel="nofollow">haveibeenpwned.com/Passwords</a> to check this.<br /><br /> 
+</p><p>Below are our recommendations if you get this message:
+</p>
+<ol><li> Change your password immediately
+</li><li> Use a good password manager to help you generate and maintain strong, unique passwords for each different system or website you use.
+</li><li> Maintain a unique password for your Catch-e login. 
+</li><li> Do not use your Catch-e login password on any other system or website.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Login:Troubleshooting&amp;action=edit&amp;section=4" title="Template:Login:Troubleshooting">edit</a>]</div><a name="Site_.7BClient_URL.7D_unavailable_cannot_connect_to_endpoint.21"></a><h5>Site {Client URL} unavailable cannot connect to endpoint!</h5>
+<p>Phone Catch-e Support to investigate this issue for you.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=3" title="Edit section: Sessions">edit</a>]</div><a name="Sessions"></a><h3>Sessions</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Session_cross-overs:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Session cross-overs:Troubleshooting">edit</a>]</div><a name="Possible_session_cross-over_detected"></a><h5><a href="Session_cross-overs.html" title="Session cross-overs">Possible session cross-over detected</a></h5>
+<p>If the system detects two windows using the same session, one window will return this error
+message and the other will be returned to the login screen.<br /> 
+It is intended to stop users from opening and using a second Catch-e session from the same login. In
+rare situations, this can cause data issues.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=4" title="Edit section: Downloads">edit</a>]</div><a name="Downloads"></a><h3>Downloads</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Downloads:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Downloads:Troubleshooting">edit</a>]</div><a name="I_can.27t_see_my_printed_report_or_file_download_in_Chrome"></a><h5>I can't see my printed report or file <a href="Download.html" title="Download">download</a> in Chrome</h5>
+<p>The "Enable download bubble" flag was removed in Chrome version 119.<br /> If you are using this version (or a later one) you will not see that your report or file has downloaded.<br />
+</p><p>To access your file from your download folder<br /> 
+</p>
+<ol><li> Click on <b>Ctrl + J</b> to open a download folder tab in Chrome or 
+</li><li> Keep Windows Explorer open in the background and check the Download folder for your file
+</li></ol>
+<p>Visit the <a href="Operating_System_and_Browser_settings.html#Chrome" title="Operating System and Browser settings">Operating System and Browser settings</a> page to check and update your download settings for Chrome.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Downloads:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Downloads:Troubleshooting">edit</a>]</div><a name="Quote_download_error_404_in_Chrome"></a><h5> Quote download error 404 in Chrome </h5>
+<ol><li> If you are seeing a 404 error when clicking 'Open' to preview a quote, and you're using Google Chrome as the default viewer, this is likely due to Chrome's PDF handling settings <br />
+</li></ol>
+<p>To fix this issue, follow the steps below:
+</p>
+<pre>1. Open Chrome settings.
+2. Navigate to the 'Privacy and security' section.
+3. Click on 'Site Settings'.
+4. Scroll down and click on 'PDF documents'.
+5. Enable the option: "Open PDFs in Chrome" instead of downloading them.
+</pre>
+<p><br />
+<a href="./Image:Chrome_settings.png.html" class="image" title="Image:Chrome settings.png"><img src="../../clients/help/wiki/images/e/ed/Chrome_settings.png" alt="Image:Chrome settings.png" width="1031" height="275" longdesc="/mediawiki/index.php/Image:Chrome_settings.png" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=5" title="Edit section: Emails">edit</a>]</div><a name="Emails"></a><h3>Emails</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=6" title="Edit section: An email we sent was not received">edit</a>]</div><a name="An_email_we_sent_was_not_received"></a><h5>An email we sent was not received</h5>
+<p>Visit the <a href="Mail_Failed.html" title="Mail Failed">Mail Failed</a> page for details about how emails can fail and the process you can follow to monitor bounced emails.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:MailQuery:Troubleshooting&amp;action=edit&amp;section=1" title="Template:MailQuery:Troubleshooting">edit</a>]</div><a name="mailQuery_Event_Email_-_created_without_an_email_icon"></a><h5><a href="Mail_Query.html" title="Mail Query">mailQuery Event Email</a> - created without an email icon</h5>
+<p>An event email can be created without a corresponding Mail Queue record in the following circumstances
+</p>
+<ol><li> It was created from a mailQuery scheduler job
+</li><li> The recipient_1_to_address in the query is blank.
+</li></ol>
+<p>An email record cannot be created in this situation, because you can't re-send a mailQuery email from an Event tab.<br />
+</p><p>To fix this, check where the required email address comes from and update the source record. (E.g. Client contact, Driver, etc).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=7" title="Edit section: Quotes">edit</a>]</div><a name="Quotes"></a><h3><a href="./Quotes:Troubleshooting.html" title="Quotes:Troubleshooting">Quotes</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Quotes:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Search_.22Rate.22_doesn.27t_match_the_Lease_Total"></a><h4>Quotes / Search "Rate" doesn't match the Lease Total</h4>
+<p>If a quote has a budget that is no longer also stored in the linked <a href="./Contract_Types:Accruals.html" title="Contract Types:Accruals">Contract Types / Accruals</a> tab, it will form part of the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> Totals, but it <u>will not</u> be part of the calculated <a href="./Quotes:Search.html" title="Quotes:Search">Quotes / Search</a> screen "Rate" amount.<br />
+To fix this, go to the quote, <b>Edit</b> and then <b>Save</b> it. This will cause the links on the quote to be checked and restored.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=8" title="Edit section: Quotes / Contract">edit</a>]</div><a name="Quotes_.2F_Contract"></a><h4>Quotes / Contract</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Contract:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Quotes:Contract:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Contract_.22Term.22_-_I_can.27t_enter_the_term_I_want"></a><h5>Quotes / Contract "Term" - I can't enter the term I want</h5>
+<p>There is a maximum value you can enter into the "Term" field, but it can be changed.<br /> 
+To update this, go to <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "maximum_term" and edit the stored value.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Contract:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Quotes:Contract:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Contract_-_Quote_PDF_-_it_shows_a_negative_Pre_Tax_amount"></a><h5>Quotes / Contract - Quote PDF - it shows a negative Pre Tax amount</h5>
+<p>This situation can arise if you are quoting the FBT using Operating Cost Method, but the "FBT Value" has been locked after being calculated with the Statutory Method. In this situation, the calculated FBT value is too high.<br /> Uncheck the lock and let the system re-calculate the FBT value with Operating Cost Method.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Contract:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Quotes:Contract:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Contract_-_Quote_PDF_-_404_download_error_in_Chrome"></a><h5>Quotes / Contract - Quote PDF - 404 download error in Chrome</h5>
+<ol><li> If you are seeing a 404 error when clicking 'Open' to preview a quote, and you're using Google Chrome as the default viewer, this is likely due to Chrome's PDF handling settings <br />
+</li></ol>
+<p>To fix this issue, follow the steps below:
+</p>
+<pre>1. Open Chrome settings.
+2. Navigate to the 'Privacy and security' section.
+3. Click on 'Site Settings'.
+4. Scroll down and click on 'PDF documents'.
+5. Enable the option: "Open PDFs in Chrome" instead of downloading them.
+</pre>
+<p><br />
+<a href="./Image:Chrome_settings.png.html" class="image" title="Image:Chrome settings.png"><img src="../../clients/help/wiki/images/e/ed/Chrome_settings.png" alt="Image:Chrome settings.png" width="1031" height="275" longdesc="/mediawiki/index.php/Image:Chrome_settings.png" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=9" title="Edit section: Quotes / Vehicle">edit</a>]</div><a name="Quotes_.2F_Vehicle"></a><h4>Quotes / Vehicle</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Vehicles:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Quotes:Vehicles:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Vehicle_-_I_can.27t_find_a_variant"></a><h5><a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> - I can't find a variant</h5>
+<p>If you can't select a new vehicle model, it's likely that the data hasn't been added to your database yet by your provider.<br />
+Check that your scheduler job is running OK. This will be either
+</p>
+<ol><li>  System / Scheduler &rarr; Method &rarr; <a href="./Qt:glass:importVehicleData.html" title="Qt:glass:importVehicleData">qt / glass / importVehicleData</a>
+</li><li>  System / Scheduler &rarr; Method &rarr; <a href="./Qt::Red_book::importVehicleData().html" title="Qt::Red book::importVehicleData()">qt / red_book / importVehicleData</a>
+</li></ol>
+<p>If the job is running OK, contact your data provider to find out when the records are expected to be added.<br />
+Sometimes there is a delay between seeing variants on the RedBook or Glass's website and your data feed.<br />
+</p><p>If your data provider has confirmed the variant has been added to your feed, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> and provide a RedBook Code or an NIVC code for investigation.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=10" title="Edit section: Quotes / Finance">edit</a>]</div><a name="Quotes_.2F_Finance"></a><h4>Quotes / Finance</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Claimable_GST:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Claimable GST:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Finance_-_.22GST_Claimable.22_is_limited_for_an_exempt_vehicle"></a><h5><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> - "GST Claimable" is limited for an exempt vehicle</h5>
+<p>If you are quoting a variant that is LCT exempt and the "GST Claimable" amount is being limited, you can change the variant's "<a href="Vehicle_Type.html" title="Vehicle Type">Vehicle Type</a>" so this does not happen.<br /> To do this, go to the <a href="./Quotes:Finance:GST_Claimable.html" title="Quotes:Finance:GST Claimable">GST Claimable</a> page and follow the update steps listed there.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Claimable_GST:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Claimable GST:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Finance_-_.22GST_Claimable.22_is_not_correct"></a><h5><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> - "GST Claimable" is not correct</h5>
+<p>If you are quoting a variant that has GST that is more than can be claimed, then the "GST Claimable" amount is reduced to the allowable amount.<br /> 
+This amount populates into the Quotes / Finance "GST Claimable field by default from the control <i>[gb_controls]maximum_gst_claimable</i>.<br /> 
+If this default is not correct, <a href="Update_a_global_control.html" title="Update a global control">update the global control</a>. Go to '<b>Setup / Reference Data → gb_controls</b> and update the control 'maximum_gst_claimable'.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quotes:Finance:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Quotes:Finance:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Finance_-_.22Fee.22_does_not_match_the_financier.27s_fee"></a><h5><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> - "Fee" does not match the financier's fee</h5>
+<p>This field displays the monthly administration fee charged by your financier. This will be added to the finance amount calculation and updates the 'FIN' budget also.<br /> 
+If the financier is Macquarie Leasing, the amount entered must be GST exclusive. This will ensure that a successful application is made via the Maclease Partner Interface.<br />
+To update the amount that defaults in, go to <a href="./Reference_Data:qt_financier_posting_map_defaults.html" title="Reference Data:qt financier posting map defaults">Setup / Reference Data &rarr; qt_financier_posting_map_defaults</a> and select the required "Financier" and "Contract Type". Edit the "Fee" amount.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=11" title="Edit section: Quotes / Lease">edit</a>]</div><a name="Quotes_.2F_Lease"></a><h4>Quotes / Lease</h4>
+<p>If your quote budgets are calculating with a <a href="Periods_Deferred.html" title="Periods Deferred">deferral</a>, but you want the budgets to calculate over the term, check the following
+</p>
+<ol><li> <b>Setup / Reference Data</b> 'qt_financier_posting_map_defaults' “Finance Budget Term Deferred” is either 'any' or 'no'.
+</li><li> <b>Clients / Contract Defaults</b> "Finance Budget Term Deferred" is un-checked
+</li></ol>
+<p>Go to the <a href="Periods_Deferred.html" title="Periods Deferred">Months Deferred</a> page for more set-up details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Fuel:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Fuel:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Fuel_.28F.29_profile_.22Litres_per_100KM.22_is_not_right"></a><h5>Quotes / Lease - <a href="Fuel.html" title="Fuel">Fuel (F) profile</a> "Litres per 100KM" is not right</h5>
+<p>The values stored for each variant's fuel usage come from data imports provide by either Glasses or RedBook. These values are not normally altered by Catch-e.<br /> Glasses or RedBook are the original source of this data, so refer to them directly to ask about set values,
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Carbon_Emissions_Offset:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Carbon Emissions Offset:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Carbon_Emission_Offset_.28CEO.29_does_not_calculate"></a><h5>Quotes / Lease - <a href="Carbon_Emissions_Offset.html" title="Carbon Emissions Offset">Carbon Emission Offset (CEO)</a> does not calculate</h5>
+<p>Your Carbon Emissions Offset (CEO) budget will not calculate if: 
+</p>
+<ol><li> the amount stored in the variant's "<a href="CO2_Emissions.html" title="CO2 Emissions">CO2 Emissions</a>" field is blank.<br />
+</li><li> you are using the <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls] carbon_emissions_offset_per_tonne</i></a> calculation method. 
+</li></ol>
+<p>If this is the case: 
+</p>
+<ol><li> Ask your data provider (RedBook or Glasses) to advise you of the amount.
+</li><li> Go to the <a href="Reference_Data.html#qt_variants" title="Reference Data">Setup / Reference Data → qt_variants</a> "CO2 Emissions" field and add this in.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Redundancy_Insurance:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Redundancy Insurance:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Redundancy_Insurance_-_does_not_default_into_new_quotes"></a><h5>Quotes / Lease - <a href="Redundancy_Insurance.html" title="Redundancy Insurance">Redundancy Insurance</a> - does not default into new quotes </h5>
+<p>If <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Types / Details</a> "Quote Redundancy Insurance" is checked and "Redundancy Insurance" does not calculate, there are three reasons this can happen.
+</p>
+<ol><li> There are no records stored in the <i>[qt_redundancy_insurance_rates]</i> table. If the rates are missing, "Redundancy Insurance" will not default on, as it cannot be 0.
+</li><li> You have stopped using "Redundancy Insurance" and the <i>[qt_redundancy_insurance_rates]</i> table are set to 0 to prevent rates from calculating. If the rates are 0, "Redundancy Insurance" will not default on, as it cannot be 0.
+</li><li> The chosen vehicle has a value that is higher than the <i>[qt_redundancy_insurance_rates]upper_limit</i> value of the available records. In this case, no records are considered a match and no value will be applied.
+</li></ol>
+<p>To investigate and check your set-up, <a href="Export_data_from_a_table.html" title="Export data from a table">exporting data from the table</a> <i>[qt_redundancy_insurance_rates]</i> and review the current values in this table.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Tyre_and_Rim_Insurance:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Tyre and Rim Insurance:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Tyre_and_Rim_Insurance_-_plans_don.27t_show"></a><h5>Quotes / Lease - <a href="Tyre_and_Rim_Insurance.html" title="Tyre and Rim Insurance">Tyre and Rim Insurance</a> - plans don't show</h5>
+<p>If existing Tyre and Rim plans do not show in the <a href="./Quotes:Lease.html#Tyre_and_Rim_Insurance" title="Quotes:Lease">Quotes / Lease</a> "Tyre and Rim" selection list, your plan records may have recently been updated.<br /> 
+If the field [qt_tyre_rim_insurance_plans]state is NULL, create an upload file where the [qt_tyre_rim_insurance_plans]state field empty (i.e. do not include the text 'NULL') <br />
+Use <a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a> to upload the file to correct the data.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Lease_Inclusion_Plans:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Lease Inclusion Plans:Troubleshooting">edit</a>]</div><a name="Quotes_.2F_Lease_-_Lease_Inclusion_Plans_-_the_Inclusion_is_visible.2C_but_the_check_box_is_disabled"></a><h5>Quotes / Lease - <a href="Lease_Inclusion_Plans.html" title="Lease Inclusion Plans">Lease Inclusion Plans</a> - the Inclusion is visible, but the check box is disabled</h5>
+<p>The quote's "Effective Date" must be on or after the date stored in <i>[qt_inclusion_plans]effective_date</i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=12" title="Edit section: Contracts">edit</a>]</div><a name="Contracts"></a><h3>Contracts</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=13" title="Edit section: Contracts / Finance">edit</a>]</div><a name="Contracts_.2F_Finance"></a><h4>Contracts / Finance</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Finance:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Contracts:Finance:Troubleshooting">edit</a>]</div><a name="I_can.27t_edit_the_Financier_field"></a><h5>I can't edit the Financier field</h5>
+<p><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts / Finance</a> "Financier" becomes a read only field when an active payment schedule is in place.<br />
+If you have created a payment schedule for the wrong financier, delete the payment schedule and then update the "Financier".<br />
+Process page: <a href="Delete_a_payment_schedule.html" title="Delete a payment schedule">Delete a payment schedule</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=14" title="Edit section: Contracts / Insurance">edit</a>]</div><a name="Contracts_.2F_Insurance"></a><h4>Contracts / Insurance</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Comprehensive_Insurance:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Contracts:Comprehensive Insurance:Troubleshooting">edit</a>]</div><a name="Fire_Service_Levy_does_not_match_expected_value"></a><h5>Fire Service Levy does not match expected value</h5>
+<p><a href="./Contracts:Insurance.html" title="Contracts:Insurance">Contracts / Insurance</a> "Fire Service Levy" is populated from quotes when comprehensive insurance is calculated.<br />
+Check that <b>Quotes / Contract</b> "Delivery State" and the "Insurance Loc." state are the same.<br />
+Fire Service Levy is calculated using <i>[qt_quotes]state</i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Comprehensive_Insurance:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Contracts:Comprehensive Insurance:Troubleshooting">edit</a>]</div><a name="Stamp_Duty_does_not_match_expected_value"></a><h5>Stamp Duty does not match expected value</h5>
+<p><a href="./Contracts:Insurance.html" title="Contracts:Insurance">Contracts / Insurance</a> "Stamp Duty" is populated from quotes when comprehensive insurance is calculated.<br />
+Check that the values in <i>[qt_insurance_rates]base_rate</i> and <i>[qt_insurance_rates]cost</i> are the same.<br />
+<i>[qt_insurance_rates]base_rate</i> is used to calculate stamp duty and <i>[qt_insurance_rates]cost</i> is used in other parts of the calculation.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=15" title="Edit section: Contracts / Lease">edit</a>]</div><a name="Contracts_.2F_Lease"></a><h4>Contracts / Lease</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Lease:Finalise&amp;action=edit&amp;section=1" title="Template:Contracts:Lease:Finalise">edit</a>]</div><a name="The_Finalise_button_is_disabled"></a><h5>The <a href="Finalise.html" title="Finalise">Finalise</a> button is disabled</h5>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Lease:Finalise&amp;action=edit&amp;section=2" title="Template:Contracts:Lease:Finalise">edit</a>]</div><a name="Enable_rules"></a><h6>Enable rules</h6>
+<ol><li> The contract belongs to the 'Novated' group.
+</li><li> A "<a href="Suspend_Date.html" title="Suspend Date">Suspend Date</a>" has been entered on the contract.
+</li><li> There are no transactions in 'Pending' or 'On Hold' status in the Payments and Maintenance tabs.
+</li><li> At least one period has been billed.
+</li></ol>
+<p>Even if all the conditions for using the Finalise button have been met, sometimes required data is missing if the contract has been migrated into the Catch-e System.<br />
+In these situations, the <a href="Finalise.html" title="Finalise">Finalise</a> feature cannot be used and you will need to finalise the contract manually.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Lease:Unpost&amp;action=edit&amp;section=1" title="Template:Contracts:Lease:Unpost">edit</a>]</div><a name="The_Un-Post_button_is_disabled"></a><h5>The Un-Post button is disabled</h5>
+<ol><li> The selected period is pending
+</li><li> The selected period contains adjustment records. These must be uposted in reverse sequence, and the records must then be deleted to then enable the previous record to be unposted.
+</li></ol>
+<dl><dd><dl><dd> E.g. Unpost Period 4.3, then delete it.
+</dd><dd> Unpost Period 4.2, then delete it. 
+</dd><dd> Period 4 can then be unposted.
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=16" title="Edit section: Contracts / Events Emails">edit</a>]</div><a name="Contracts_.2F_Events_Emails"></a><h4>Contracts / Events Emails</h4>
+<p>Go to <a href="./Contracts:Events.html#Validations_and_Alerts" title="Contracts:Events">Contracts / Events</a> for the general alert messages when event emails wont send.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Events:Emails:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Events:Emails:Troubleshooting">edit</a>]</div><a name="My_event_email_shows_an_.5C_before_the_apostrophe"></a><h5>My event email shows an \ before the apostrophe</h5>
+<p>If you look at an event email in the <a href="./Contracts:Events.html" title="Contracts:Events">Contracts / Events</a> pop-up, a '\' may be displayed before the apostrophe.<br />
+This is a function of the code behaviour of this pop-up. The '\' is not stored in the email and does not display in the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> or the recipient's email.<br />
+To check this, find the email in the <a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> and review it there.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Certificate_of_Currency:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Certificate of Currency:Troubleshooting">edit</a>]</div><a name="7_Reasons_why_your_Certificate_of_Currency_event_email_is_not_working"></a><h5>7 Reasons why your <a href="Certificate_of_Currency.html" title="Certificate of Currency">Certificate of Currency</a> event email is not working</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 70%;">
+<tr>
+<th>Alert message</th><th>Problem area
+</th></tr>
+<tr>
+<td>Supplier not set!</td><td>The contract does not has an "Insurer" recorded on the Contracts / Insurance screen
+</td></tr>
+<tr>
+<td>COC Template not set for (supplier_code) name</td><td>The "Insurer" does not have a valid "COC Template<br /> You need to <a href="Certificate_of_Currency_Setup.html#Link_the_Certificate_of_Currency_email_template_to_the_Insurance_supplier_record" title="Certificate of Currency Setup">link the Certificate of Currency email template to the Insurance supplier record</a>
+</td></tr>
+<tr>
+<td>Report template missing for event type 'COC'!<br />
+<p>Please contact your system administrator
+</p>
+</td><td>The template is missing or set to inactive for the insurer
+</td></tr>
+<tr>
+<td>Error adding mail, support has been notified!</td><td> The contract does not have a linked driver
+</td></tr>
+<tr>
+<td>Mail not created!</td><td>The contract does not have a linked financier
+</td></tr>
+<tr>
+<td>Mail not created!</td><td>The contract is not linked to a variant.<br />
+<p>Go to <a href="./Contracts:Vehicle.html#Field_Descriptions" title="Contracts:Vehicle">Contracts / Vehicle</a> and use the "Description" lookup window to open the Advanced Vehicle Search to select and save the variant.  
+</p>
+</td></tr>
+<tr>
+<td>Mail not created!</td><td>The driver does not have an email address
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=17" title="Edit section: Contracts / FBT">edit</a>]</div><a name="Contracts_.2F_FBT"></a><h4><a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contracts / FBT</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Fbt:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Contracts:Fbt:Troubleshooting">edit</a>]</div><a name="Benefit_Type_is_Operating_and_FBT_Amounts_show_as_Statutory"></a><h5>Benefit Type is Operating and FBT Amounts show as Statutory</h5>
+<p>Operating Method FBT is not calculated and returned on this screen as a range of transaction data is required to do this.<br /> To check the FBT calculations for Operating Method contracts, go to <b>Fleet / Administration / Reports</b> and run the <a href="FBT_Operating_Report.html" title="FBT Operating Report">FBT Operating</a> report.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Fbt:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Contracts:Fbt:Troubleshooting">edit</a>]</div><a name="Driver_Report_does_not_match_the_selected_month"></a><h5>Driver Report does not match the selected month</h5>
+<p>If a user (internal or external) does not have there browser caching setting set correctly, the Driver Report PDF output may not match the selected month.
+In Internet Explorer, ask the user to check their settings. They should be:<br />
+</p><p><b>Tools/General/Settings</b>
+</p>
+<ul><li> Check for newer versions of stored pages &rarr; Select "Every time I visit the webpage"
+</li></ul>
+<p><i>This is to prevent generated reports from being cached.</i><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Contracts:Fbt:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Contracts:Fbt:Troubleshooting">edit</a>]</div><a name="Reports_and_Buttons_are_missing"></a><h5>Reports and Buttons are missing</h5>
+<p>Reports and buttons will be missing from this screen if the required report templates are not defined for the Contract Type.<br />
+Fix this by going to the <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Types / Details</a> tab and updating the two following fields
+</p>
+<ol><li> "FBT Statutory Template"
+</li><li> "FBT Operating Template"
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=18" title="Edit section: Billing">edit</a>]</div><a name="Billing"></a><h3><a href="FLEET_BILLING.html#Troubleshooting" title="FLEET BILLING">Billing</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Billing:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Billing:Troubleshooting">edit</a>]</div><a name="Missing_a_contract_from_the_billing_process"></a><h5>Missing a contract from the billing process</h5>
+<p>If you cannot see a contract you are expecting in a billing selection, check the following;
+</p>
+<ol><li> The contract must have a <a href="./Contracts:Billing.html" title="Contracts:Billing">Contracts / Billing</a> "Start Periodic" date
+</li><li> The contract must have a "Registration Number" that is not 'ORDER'.
+</li><li> Packaged Contracts (contracts that are linked to an item) can only be viewed and invoiced from the <a href="Periodic_Billing.html" title="Periodic Billing">Billing / Periodic</a> screen if you are logged in as a <a href="Channel_Accounts.html" title="Channel Accounts">Channel Accounts</a> role.<br />
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Billing:Suspend_Date:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Billing:Suspend Date:Troubleshooting">edit</a>]</div><a name="Suspended_contract_is_not_billing"></a><h5>Suspended contract is not billing</h5>
+<p>Contracts being billed on or after the "<a href="Suspend_Date.html" title="Suspend Date">Suspend Date</a>" are not selected for billing. To invoice a suspended contract, do one of the following
+</p>
+<ol><li> Enter a billing selection date that is before the "Suspend Date". E.g. If the "Suspend Date" is '24/09/2021', then the billing selection date must be on or before '23/09/2021'
+</li><li> Use the Contracts / Lease <u>Invoice Now</u> hyperlink to invoice the selected period (this will only work if the period date is before the "Suspend Date".
+</li><li> Remove the contract's "Suspend Date", run the billing and then re-enter the "Suspend Date".
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Billing:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Billing:Troubleshooting">edit</a>]</div><a name="Problem_creating_Invoices_.28Error_codes:_102.2C_103.2C_203.29"></a><h5>Problem creating Invoices (Error codes: 102, 103, 203)</h5>
+<p>When the "Invoice" button is clicked, the billing process locks relevant tables.  If the session is interrupted or terminated (e.g. by closing the window) without using the "Abort" button the locks will remain in place, resulting in subsequent errors advising that billing is locked by the relevant user.
+</p><p>If the user locks are cleared a subsequent error such as:<br />
+<i>Problem creating Invoices!Combined-&gt;createCombined:2</i> 
+may result - if so log out of Catch-e entirely and log back in to process billing.  Contact support if further problems are encountered.
+</p><p>If you encounter one of these&nbsp;:<br />
+<i>Problem creating Invoices/Combined-&gt;createCombined:103</i><br />
+<i>Problem creating Invoices/Combined-&gt;createCombined:102</i><br />
+<i>Problem creating Invoices/Combined-&gt;createCombined:203</i><br />
+</p><p>"Abort" the process and re-try.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Billing:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Billing:Troubleshooting">edit</a>]</div><a name="Problem_creating_Invoices_.28Error_code:_202.29"></a><h5>Problem creating Invoices (Error code: 202)</h5>
+<p>When trying to create an invoice and you see an error with the code '202' in it, this can happen if records in the table <i>[fm_contract_budgets]</i> have been incorrectly or incompletely updated by a web service or a script update from outside the user billing screens. E.g. <i>[fm_contract_budgets]billing_id</i> is populated, but the record is still in 'pending' status.
+</p><p>If you encounter an error like this&nbsp;:<br />
+<i>Problem creating Invoices/Periodic-&gt;createPeriodic:202</i><br />
+</p><p>"Abort" the process and contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> for assistance.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=19" title="Edit section: Automated Billing">edit</a>]</div><a name="Automated_Billing"></a><h3>Automated Billing</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Automated_Billing:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Automated Billing:Troubleshooting">edit</a>]</div><a name="Automated_billing_did_not_email"></a><h5>Automated billing did not email</h5>
+<p>Automated billing is done by <a href="./Fm::billings.html" title="Fm::billings">scheduler jobs</a>, and a likely cause of issues is that the job did not run<br />
+</p>
+<ol><li> Go to the <b> System / Scheduler</b> screen and select "Module' - 'fm', "Class" - 'billings' and click on <b>Go</b> to find your billing jobs.
+</li><li> Check the "Last Message" column for a recorded issue. E.g. 'Periodic billing locked by: {user_login}
+</li><li> Use the Run Now button to run the job immediately.
+</li></ol>
+<p>Billing jobs will not run if user are editing records in the system. <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e</a> recommend billing jobs be set to run out of working hours. 5am works well.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=20" title="Edit section: Reg Or CTP Renewals">edit</a>]</div><a name="Reg_Or_CTP_Renewals"></a><h3><a href="./Reg_Or_Ctp_Renewals:items.html" title="Reg Or Ctp Renewals:items">Reg Or CTP Renewals</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Reg_or_CTP_Renewals_Troubleshooting&amp;action=edit&amp;section=1" title="Template:Reg or CTP Renewals Troubleshooting">edit</a>]</div><a name="My_import_file_fails"></a><h4>My import file fails</h4>
+<p>When I try to import a Reg or CTP Renewal file, it says 'Validation failed, bad date in column G!'<br />
+</p>
+<ol><li> You have saved the file using an incompatible CSV file type (there are many files with a *.csv format that are subtly different), E.g. 'CSV UTF-8 (Comma delimited)(*csv)
+</li><li> Save again in excel using <b>Save as <u>t</u>ype:</b> CSV (Comma delimited) (*.csv)
+</li></ol>
+<p>or<br />
+</p>
+<ol><li> You have incorrect header names in the file
+</li><li> Download <a href="https://help.catch-e.net.au/clients/help/wiki/images/d/d0/REG_CTP_Import.csv" class='internal' title="REG CTP Import.csv">REG_CTP_Import.csv</a> and refresh your file with the correct headers.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=21" title="Edit section: Payments">edit</a>]</div><a name="Payments"></a><h3><a href="Payments_Troubleshooting.html" title="Payments Troubleshooting">Payments</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=1" title="Template:Payments Troubleshooting">edit</a>]</div><a name="The_Remittance_email_recipient_is_in-correct"></a><h4>The Remittance email recipient is in-correct</h4>
+<p>There are two different contacts stored on your supplier's record and the remittance advice can be set-up to use either of these.<br /> Go to <a href="./Contracts:Payments:Setup.html#Payment_Advice_Email" title="Contracts:Payments:Setup">Payment Advice Email set-up</a> for details and compare with the supplier's contact details, your templates may be using the other contact.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=2" title="Template:Payments Troubleshooting">edit</a>]</div><a name="You_can_see_.27Pre-Post.27_status_records"></a><h4>You can see 'Pre-Post' status records</h4>
+<p>'Pending' records can get stuck at 'Pre-Post' status if you initiate a payment that fails part-way through. Your browser has either been closed or disconnected from the internet before the payment transaction was posted or aborted.<br />
+</p><p>To return these records to 'Pending' status, go to <a href="Periodic_Payments.html" title="Periodic Payments">Fleet / Payments / Periodic</a> and click on the Go button, all 'Pre-Post' records will be re-set to 'Pending' status.<br />
+</p><p>If this is unsuccessful, please contact Catch-e Support, who will delete a lock on table 'pl_payables'.<br />
+</p><p>You should then be able to click on the Go button, as previously described, to re-set all 'Pre-Post' records to 'Pending' status.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=3" title="Template:Payments Troubleshooting">edit</a>]</div><a name="You_are_missing_payment_records"></a><h4>You are missing payment records</h4>
+<p>Check the following possible reasons;<br />
+</p>
+<ul><li> The Payment Schedule has not been created 
+</li><li> The Payment Schedule has been created, but a supplier not entered
+</li><li> The Payment Schedule has reached it's end and no outstanding (pending) payments remain
+</li><li> "Stop Payment" has been put on the contract - all future payments are stopped
+</li><li> The Contract has been suspended / terminated
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=4" title="Template:Payments Troubleshooting">edit</a>]</div><a name="You_are_missing_a_Bank_Account"></a><h4>You are missing a Bank Account</h4>
+<p>If using multiple bank accounts - check your set-up by following the steps below;
+</p>
+<ol><li> Process all payments for all listed bank accounts.
+</li><li> Select the following filters and execute; "Status" = 'Pending', "Bank Account" = '--All--'.
+</li><li> Any remaining 'Pending' payment records will be displayed.  
+</li><li> Click on the "Contract Id" hyperlink of a remaining record to navigate to the contract and from there go to the <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> tab to see what's in the "Company" field.
+</li><li> If the "Company" record is missing, it should be populated.
+</li><li> If there is a stored "Company" record, it is likely the company has not been <a href="Bank_Account_Setup.html" title="Bank Account Setup"> set-up</a> with a bank account.
+</li><li> Once a valid bank account is set up against that company, payment can be made.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=5" title="Template:Payments Troubleshooting">edit</a>]</div><a name="Changing_from_single_to_multiple_bank_accounts"></a><h4>Changing from single to multiple bank accounts</h4>
+<p>If you have executed a filter where a "Bank Account" has been selected and no payments appear on screen (and you are expecting them), contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> to investigate.<br /> 
+It's likely to be a set-up issue where there is a record in <i>[gl_bank_account_maps]</i> where <i>gl_bank_account_aba_mappings]company_id</i> = '0' or <i>gl_bank_account_aba_mappings]process_type</i> is not 'payables'. This is only used when a single bank account is being used for all payments.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Payments_Troubleshooting&amp;action=edit&amp;section=6" title="Template:Payments Troubleshooting">edit</a>]</div><a name="You_can.27t_unpost_a_batch"></a><h4>You can't unpost a batch</h4>
+<p>If you're having trouble unposting a batch, go to the <a href="Unpost_a_payments_batch.html" title="Unpost a payments batch">Unpost a payments batch</a> page and follow the steps exactly.<br /> A common trap is that the field "Payment Type" must be left at the '--All--' setting.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=22" title="Edit section: Receipting">edit</a>]</div><a name="Receipting"></a><h3><a href="./Receipts:Allocate.html" title="Receipts:Allocate">Receipting</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=23" title="Edit section: Import file troubleshooting">edit</a>]</div><a name="Import_file_troubleshooting"></a><h5><a href="./Receipts:Allocate:Import.html#File_Validation_and_Troubleshooting" title="Receipts:Allocate:Import">Import file troubleshooting</a></h5>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Receipts:Allocate:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Receipts:Allocate:Troubleshooting">edit</a>]</div><a name="I_can.27t_locate_an_invoice_row_to_receipt"></a><h5>I can't locate an invoice row to receipt</h5>
+<p>Invoice rows can become hidden in the receipt screens when
+</p>
+<ol><li> The <b>Allocate / Item</b> '"Reg No" field is populated
+</li><li> The target contract has had a registration change
+</li></ol>
+<p>In this situation, invoice rows have been filtered out because the "Reg No" stored on the invoice does not match the receipt filter.<br />
+In this case, filter by "Client" or "Driver" to see all the available records.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Receipts:ABA:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Receipts:ABA:Troubleshooting">edit</a>]</div><a name="Banking_Software_shows_odd_details_in_fields._E.g._.3Ctcxspan_txchref.3D.22123..."></a><h5>Banking Software shows odd details in fields. E.g. &lt;tcxspan txchref="123...</h5>
+<p>Check your browser extensions.<br /> If you are using PABX extensions for phone dialling from your computer, it can treat some fields as though they should be phone numbers and corrupt the details in the fields.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=24" title="Edit section: Bookings">edit</a>]</div><a name="Bookings"></a><h3><a href="Bookings_Troubleshooting.html" title="Bookings Troubleshooting">Bookings</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Bookings:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Bookings:Troubleshooting">edit</a>]</div><a name="Location_Charges_don.27t_show_up"></a><h5>Location Charges don't show up</h5>
+<p>Check the posting class maps of the replacing/order vehicle have been set-up. See <a href="Bookings_Setup.html#Contract_Types" title="Bookings Setup">Bookings Setup - Contract Types</a> for more details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Bookings:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Bookings:Troubleshooting">edit</a>]</div><a name="GST_does_not_calculate"></a><h5>GST does not calculate</h5>
+<p>Check that the "G" column in the Contract Type "BOOK" or the Contract Type for the replacing/order vehicle in the booking is "Y".
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Bookings:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Bookings:Troubleshooting">edit</a>]</div><a name="Location_Charges_don.27t_show_up_2"></a><h5>Location Charges don't show up</h5>
+<p>Check the posting class maps of the replacing/order vehicle have been set-up. See <a href="Bookings_Setup.html#Contract_Types" title="Bookings Setup">Bookings Setup - Contract Types</a> for more details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Bookings:Troubleshooting&amp;action=edit&amp;section=4" title="Template:Bookings:Troubleshooting">edit</a>]</div><a name="GST_does_not_calculate_2"></a><h5>GST does not calculate</h5>
+<p>Check that the "G" column in the Contract Type "BOOK" or the Contract Type for the replacing/order vehicle in the booking is "Y".
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=25" title="Edit section: Card Services">edit</a>]</div><a name="Card_Services"></a><h3><a href="Card_Troubleshooting.html" title="Card Troubleshooting">Card Services</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=26" title="Edit section: Your transaction has failed and how to fix it">edit</a>]</div><a name="Your_transaction_has_failed_and_how_to_fix_it"></a><h5>Your transaction has failed and how to fix it</h5>
+<p>If your transaction import contains records that have failed, review the <a href="Card_Transactions.html#Validation" title="Card Transactions">Validation</a> section of the <a href="Card_Transactions.html#Validation" title="Card Transactions">Transactions</a> page. This describes each status and how to fix what has happened.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Cards:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Cards:Troubleshooting">edit</a>]</div><a name="On_Import_I_get_a_403_error"></a><h5> On Import I get a 403 error </h5>
+<p>Catch-e runs a web application firewall (WAF) that can prevent processes like this from completing if something triggers an alert.<br /> You may find it will work when you try again. If it doesn't work, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to investigate the cause of this alert.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Cards:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Cards:Troubleshooting">edit</a>]</div><a name="Card_Number_displays_incorrectly"></a><h5> Card Number displays incorrectly </h5>
+<p>If a .csv file is opened in excel, the program may convert the last digit of the card number to a zero due to the field length (this renders the field unreadable).<br />
+When you recieve a .csv file, do not preview or open the file in excel - just "Save As" to the desired location and then import to Catch-e.<br />
+If you want to view the file - use Notepad or Wordpad. Alternatively, save as a txt file and use the excel import wizard to bring the data into excel correctly. 
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Cards:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Cards:Troubleshooting">edit</a>]</div><a name="File_displays_0_values_in_the_Net.2C_GST_and_Amount_columns"></a><h5> File displays 0 values in the Net, GST and Amount columns </h5>
+<p>The .csv file has been saved with an incorrect format for the value columns. Change the format to "General".
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Cards:Troubleshooting&amp;action=edit&amp;section=4" title="Template:Cards:Troubleshooting">edit</a>]</div><a name="I_have_imported_a_fuel_file_twice"></a><h5> I have imported a fuel file twice </h5>
+<p>If you have imported and posted a file twice, it can be difficult to un-wind those records if they have been invoiced (recharged), exported or receipted.<br />
+The easiest way to correct this is to create a modified version of the import file and update the amounts to be negative.<br />
+Import this matching file. This will create a record that reverses the duplicate entries and corrects each contract's balances.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Cards:Troubleshooting&amp;action=edit&amp;section=5" title="Template:Cards:Troubleshooting">edit</a>]</div><a name="Unable_to_Import_Card_Transactions"></a><h5>Unable to Import Card Transactions</h5>
+<p>While importing a file into card transactions, if you receive the following error message: 
+</p><p><b>"Unknown Interface 'CHARGECARD'! Please check your setup!"</b>
+</p><p>This error above is an example of having an unknown interface named 'CHARGECARD'. In this case the correct interface should be 'CHARGEFOX'.
+</p>
+<ol><li> Navigate to <b>Fleet / Controls / Interfaces / Card Services</b> and change the name of the card interface you are trying to import.
+</li><li> Refer to <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Interfaces</a> for the list of supported interfaces.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=27" title="Edit section: Employees / Transactions">edit</a>]</div><a name="Employees_.2F_Transactions"></a><h3><a href="./Employees:Transactions.html" title="Employees:Transactions">Employees / Transactions</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Employee_Transactions:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Employee Transactions:Troubleshooting">edit</a>]</div><a name="Transactions_are_missing"></a><h5>Transactions are missing</h5>
+<p>Records in this screen are updated by a job running in your scheduler.<br />
+See also <a href="Salary_Packaging_Scheduler_Jobs.html#Updates" title="Salary Packaging Scheduler Jobs">Salary Packaging Scheduler Jobs</a>.<br />
+The job is called <b>SP - Employees / Transactions</b><br />
+Check that this job is running correctly first, then contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> for assistance.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=28" title="Edit section: Employees / Item">edit</a>]</div><a name="Employees_.2F_Item"></a><h3><a href="./Employees:Item.html" title="Employees:Item">Employees / Item</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Car_Details:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Car Details:Troubleshooting">edit</a>]</div><a name="Car_Details_-_unable_to_add_quote_or_contract"></a><h5>Car Details - unable to add quote or contract</h5>
+<p>A quote and/or contract record cannot be added to an item if it is already linked to another item.<br />
+Follow the process steps here: <a href="Move_linked_car_details.html" title="Move linked car details">Move linked car details</a> to firstly un-link the contract then link to the new contract.<br />
+</p><p>As a last resort, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> and note the Contract ID that needs to be unlinked and they will do this.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=29" title="Edit section: Standard Reports">edit</a>]</div><a name="Standard_Reports"></a><h3>Standard Reports</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=30" title="Edit section: FBT Employee Quarterly">edit</a>]</div><a name="FBT_Employee_Quarterly"></a><h4><a href="./Standard_Reports:FBT_Employee_Quarterly.html#Troubleshooting" title="Standard Reports:FBT Employee Quarterly">FBT Employee Quarterly</a></h4>
+<p>The Driver's "Position Start" and the "Position End" form part of the calculation of days in the FBT Employee Quarterly report.<br /> If your report shows unusual values for the <b>Days this Quarter</b> column, review the driver's position dates carefully to make sure they are correct and work logically with the contract's dates.<br /> E.g. if the driver has a "Position Start" recorded that is after the report's quarter, the driver will <u>not</u> appear on the report and the <b>Driver Surname</b> will show as 'Unknown'.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=31" title="Edit section: Accounts / Export">edit</a>]</div><a name="Accounts_.2F_Export"></a><h3>Accounts / Export</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=32" title="Edit section: Reimbursements (ABA)">edit</a>]</div><a name="Reimbursements_.28ABA.29"></a><h4><a href="BECS_Troubleshooting.html" title="BECS Troubleshooting">Reimbursements (ABA)</a></h4>
+<p>If you have received one of the following <a href="General_Ledger_Export_To_BECS.html#Validations_and_Alerts" title="General Ledger Export To BECS">Validations or Alerts</a>
+</p>
+<dl><dd> Banking details require set up!
+</dd><dd> Nothing to reimburse! (and you are expecting to see them)
+</dd><dd> Problem creating BES export - Unexpected transactions!
+</dd></dl>
+<p>This points to a set-up issue. Contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> to run checks over the banking setup for you.<br /> 
+Possible set-up issues include
+</p>
+<ol><li> A <i>[gl_bank_account_aba_mappings]</i> record has been set-up with <i>company_id</i> = '0'.
+<ol><li> Update <i>company_id</i> to be NULL. (Only use this solution if you do not use the Disbursements (ABA)).
+</li></ol>
+</li><li> A <i>[gl_bank_account_aba_mappings]</i> record has been updated from NULL to record an <i>company_id</i>
+<ol><li> Check that <i>[gb_companies]</i> has a default company set.
+</li><li> Check the links in the following fields <i>[gl_transactions]company_id</i> and <i>[fm_contracts]company_id</i>.
+</li></ol>
+</li><li> There is no <i>[gl_bank_account_aba_mappings]</i> record where process_type<i> = 'becs'. </i>
+<ol><li> Add the required <i>[gl_bank_account_aba_mappings]</i> record
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=33" title="Edit section: Disbursements (ABA)">edit</a>]</div><a name="Disbursements_.28ABA.29"></a><h4><a href="Disbursements_(ABA)_Troubleshooting.html" title="Disbursements (ABA) Troubleshooting">Disbursements (ABA)</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Disbursements_%28ABA%29:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Disbursements (ABA):Troubleshooting">edit</a>]</div><a name="Claim_or_Payment_record_has_been_created_but_does_not_show_up_in_Batch_selection"></a><h5>Claim or Payment record has been created but does not show up in Batch selection</h5>
+<p>1) <b>Clients / Packaging Defaults</b> "Client Bank Account" is checked, but disbursement should be paid by a Company Bank Account
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Disbursements_%28ABA%29:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Disbursements (ABA):Troubleshooting">edit</a>]</div><a name="Claim_record_has_not_been_created"></a><h5>Claim record has not been created</h5>
+<p>1) Employees / Item "Disbursement Type" is set as 'Claim' but should be 'Recurring'
+</p>
+<ol><li> Edit item to update "Disbursement Type" to 'Recurring' 
+</li><li> Re-process records either
+<ol><li> Manually run the scheduler job for 'autoBuildClaims' or
+</li><li> Un-post and then re-post the client's Receipt Batch
+</li><li> If fixed, a claim will have been created
+</li></ol>
+</li></ol>
+<p><br />
+2) Employees / Item "Disbursement Type" is set as 'Recurring'
+</p>
+<ol><li> Review the <b>Contracts / Events</b> "SUB - Substantiation" event and update (autoBuildClaims will not process if the SUB event has been created but does not have an attachment, or is unchecked.)
+</li><li> Manually run the scheduler job for 'autoBuildClaims'
+<ol><li> Review the <a href="AutoBuildClaims.html#Exception_report_sent_by_scheduler" title="AutoBuildClaims"> autoBuildClaims exception report sent by scheduler</a> for more possible substantiation issues.<br />
+</li><li> If fixed, a claim will have been created
+</li></ol>
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=34" title="Edit section: Setup / Import or Export Files">edit</a>]</div><a name="Setup_.2F_Import_or_Export_Files"></a><h3><a href="Import_Or_Export_Files.html" title="Import Or Export Files">Setup / Import or Export Files</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Import_Or_Export_Files:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Import Or Export Files:Troubleshooting">edit</a>]</div><a name="I_can.27t_see_the_file_I_need"></a><h5>I can't see the file I need</h5>
+<p>Some <a href="Import_Or_Export_Files.html#Troubleshooting" title="Import Or Export Files">import or export files</a> are marked as only editable by Catch-e staff.<br />
+If you cannot see the file you want to edit, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to update the access settings for the file.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=35" title="Edit section: Scheduler">edit</a>]</div><a name="Scheduler"></a><h3><a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_is_inactive"></a><h5>My job is inactive</h5>
+<p>If a job is inactive, and there is no audit record of this, check to see if the job is attached to a parent job.<br />
+If a a parent job is made inactive, the child jobs are also made inactive.<br />
+</p><p>Handy hint: If you need to update a chain of jobs to make them active again, do the following
+</p>
+<ol><li> Find the Parent Job on the <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Scheduler / Schedule</a> tab
+</li><li> <b>	Show all Children</b> check this on
+</li><li> <b>Job ID</b> - find and hyperlink to the <u>last job</u> in the chain
+<ol><li> Edit this job 
+</li><li> <b>Parent Job ID</b> - select and hyperlink to the parent
+</li></ol>
+</li><li> Continue until you are back and the original job 
+</li><li> Recheck all jobs in the chain again to confirm
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_is_active_but_does_not_run"></a><h5>My job is active but does not run</h5>
+<p>If a job is active, and is not a child job, the <b>Run Times</b> settings may be counteracting each other.
+</p>
+<ol><li> If a job should run on a certain day of the week, e.g. every Wednesday
+<ol><li> <b>Days:</b> should be checked ON.
+</li><li> <b>Months:</b> should be checked ON.
+</li><li> <b>Weekdays:</b> should be un-checked and should contain selections. E.g. Wed
+</li></ol>
+</li><li> If a job should run on a certain date/s in the month, e.g. 15th of each month
+<ol><li> <b>Days:</b> should be un-checked and should contain selection. E.g. 15ths 
+</li><li> <b>Months:</b> should be checked ON.
+</li><li> <b>Weekdays:</b> should be checked ON.
+</li></ol>
+</li><li> If a job should run on a certain date in a month or selected months. E.g. 1st July each year
+<ol><li> <b>Days:</b> should be un-checked and should contain selections. E.g. 1st
+</li><li> <b>Months:</b> should be un-checked and should contain selections. E.g. July
+</li><li> <b>Weekdays:</b> should be checked ON.
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Schedule:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Job Scheduler:Schedule:Troubleshooting">edit</a>]</div><a name="My_job_has_failed"></a><h5>My job has failed</h5>
+<p>Find and review the failed job on the <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Scheduler / Schedule</a> tab. The "Last Message" often contains a message about the failure.<br />
+Visit the <a href="Message.html" title="Message">Message</a> page for a list of these messages and explanatory comments that may help you diagnose the problem.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Job_Scheduler:Job:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Job Scheduler:Job:Troubleshooting">edit</a>]</div><a name="My_Attachment_Formatting_did_not_work"></a><h5>My Attachment Formatting did not work</h5>
+<p>If your scheduler job is using '<a href="Office(xlsx).html" title="Office(xlsx)">Office(xlsx)</a>' as the "Mail Attachment", you cannot use a <a href="Office(xls)_Format.html#Customised_Spreadsheet_Formats" title="Office(xls) Format">customised</a> format.<br /> Go to the <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Scheduler / Job</a> and change the output format to be <a href="Office(xls)_Format.html" title="Office(xls) Format">'Office(xls)'</a> if you want to create and use a <a href="Office(xls)_Format.html#Customised_Spreadsheet_Formats" title="Office(xls) Format">customised</a> format.<br />
+<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=36" title="Edit section: mailQuery Event Email - created without an email icon">edit</a>]</div><a name="mailQuery_Event_Email_-_created_without_an_email_icon_2"></a><h5><a href="Mail_Query.html" title="Mail Query">mailQuery Event Email</a> - created without an email icon</h5>
+<p>An event email can be created without a corresponding Mail Queue record in the following circumstances
+</p>
+<ol><li> It was created from a mailQuery scheduler job
+</li><li> The recipient_1_to_address in the query is blank.
+</li></ol>
+<p>An email record cannot be created in this situation, because you can't re-send a mailQuery email from an Event tab.<br />
+</p><p>To fix this, check where the required email address comes from and update the source record. (E.g. Client contact, Driver, etc).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=37" title="Edit section: Forms">edit</a>]</div><a name="Forms"></a><h3><a href="Forms.html#Troubleshooting" title="Forms">Forms</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Forms:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Forms:Troubleshooting">edit</a>]</div><a name="My_dates_present_as_.27YYYY-MM-DD.27"></a><h5>My dates present as 'YYYY-MM-DD'</h5>
+<p>Some of our older forms show dates in the database format.<br />
+If you want to present dates as 'DD/MM/YYYY' in excel, you can set-up a cell reference to do this.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 50%;">
+<tr>
+<th width="33%" align="left">A1 </th><th width="33%" align="left">B1 </th><th width="33%" align="left"> C1
+</th></tr>
+<tr>
+<td>{start_date}</td><td>=VALUE(A1)</td><td>=B1
+</td></tr>
+<tr>
+<td> 2021-06-01</td><td>44348</td><td>01/07/2021
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Forms:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Forms:Troubleshooting">edit</a>]</div><a name="I_uploaded_a_form_but_it_has_not_updated_in_the_system"></a><h5>I uploaded a form but it has not updated in the system</h5>
+<p>The Catch-e system is hosted on multiple servers.<br /> It can take time for forms you have imported in <b>Setup / Import or Export Files</b> to populate through to all the servers.<br />
+If you have tried to use the form and still get the old version, please wait an hour and check again. If it is still not working, please contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Forms:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Forms:Troubleshooting">edit</a>]</div><a name="Docx_files"></a><h5>Docx files</h5>
+<p>{placeholders} sometimes don't work in a docx file if it has been marked by the spellchecker. Review and 'ignore' or 'add' the word, then save before uploading.<br />
+</p><p>Alternatively, go to File &rarr; Options &rarr; Proofing and un-check the last two checkboxes for Spelling and Grammar error checks.
+<br /><br />
+</p><p>If this does not work, you may find that extensive formatting in word has disrupted the placeholders that have been added. This can be fixed, but requires a few steps;<br />
+</p><p>1. Let's call the form <b>sample.docx</b> for this example<br />
+2. Save the file down and rename it to <b>sample.zip</b> by direct-editing the suffix<br />
+3. Open the <b>sample.zip</b> folder and go to the word folder within<br />
+4. Find the file <b>document.xml</b> and save it somewhere else<br />
+5. Open <b>document.xml</b> in say, notepad and search for placeholders that don't work. Search on part of the placeholder only. E.g. for {driver_name}, search to find 'driver'<br />
+</p>
+<pre>&lt;w:t&gt;{&lt;/w:t&gt;&lt;/w:r&gt;&lt;w:r w:rsidR=&quot;00A25BD4&quot; w:rsidRPr=&quot;00A25BD4&quot;&gt;&lt;w:rPr&gt;&lt;w:sz w:val=&quot;18&quot;/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;driver_name&lt;/w:t&gt;&lt;/w:r&gt;&lt;w:r w:rsidR=&quot;00A25BD4&quot;&gt;&lt;w:rPr&gt;&lt;w:sz w:val=&quot;18&quot;/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;}&lt;/w:t&gt;</pre>
+<p>6. You can see there is a lot of weird formatting in there. Remove this.<br />
+</p>
+<pre>&lt;w:t&gt;{driver_name}&lt;/w:t&gt;</pre>
+<p>7. Go back to <b>sample.zip</b> and delete the original document.xml file. <br />
+8. Paste in the new document.xml file that you have just edited.<br />
+9. Rename <b>sample.zip</b> back to <b>sample.docx</b><br />
+10. Open and check that <b>sample.docx</b> looks OK and then import the form.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=38" title="Edit section: Quote zips">edit</a>]</div><a name="Quote_zips"></a><h4>Quote zips</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quote_Form:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Quote Form:Troubleshooting">edit</a>]</div><a name="I_get_a_validation_alert_on_the_Quotes_.2F_Contract_tab_when_I_try_to_print_my_html.zip_quote"></a><h5>I get a validation alert on the <a href="./Quotes:Contract.html#Validations_and_Alerts" title="Quotes:Contract">Quotes / Contract</a> tab when I try to print my html.zip quote</h5>
+<p>The zip folder you have uploaded has folders <span style="color:red">nested</span> inside it. Fix and upload again.<br /> 
+<b>Correct set-up</b>
+</p>
+<dl><dd><b>novated_lease.zip</b> 
+</dd><dd>&not; images
+</dd><dd>&not; quote_novated.css
+</dd><dd>&not; quote_novated.html
+</dd><dd>&not; quote_novated.json
+</dd></dl>
+<p><br />
+<b>Zip files will create error</b>
+</p>
+<dl><dd><b>novated_lease.zip.zip</b> 
+</dd><dd>&not; <span style="color:red">novated_lease.zip</span>
+<dl><dd>&not; images
+</dd><dd>&not; quote_novated.css
+</dd><dd>&not; quote_novated.html
+</dd><dd>&not; quote_novated.json
+</dd></dl>
+</dd></dl>
+<p><br />
+</p><p>Below is an example of a how a simple quote zip should look when extracted.<br />
+Go to the <a href="Quote_Template_Setup.html" title="Quote Template Setup">Quote Template Setup</a> page to review the quote zip set-up steps.<br />
+</p>
+<div class="thumb tnone"><div style="width:533px;"><a href="./Image:Zip_file.jpg.html" class="internal" title=""><img src="../../clients/help/wiki/images/8/81/Zip_file.jpg" alt="" width="531" height="139" longdesc="/mediawiki/index.php/Image:Zip_file.jpg" /></a>  <div class="thumbcaption" ><div class="magnify" style="float:right"><a href="./Image:Zip_file.jpg.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="Enlarge" /></a></div></div></div></div>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quote_Form:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Quote Form:Troubleshooting">edit</a>]</div><a name="My_html.zip_quote_will_not_print_and_there_is_no_error_message"></a><h5>My html.zip quote will not print and there is no error message</h5>
+<p>Check that you have a User called 'web_quote'. The password for this user must be the same as the one set in the <a href="Global_Controls.html" title="Global Controls">Global Controls</a> record html2pdf_service_login.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Quote_Form:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Quote Form:Troubleshooting">edit</a>]</div><a name="I_want_to_add_a_second_page_to_my_html.zip_quote"></a><h5>I want to add a second page to my html.zip quote</h5>
+<p>Here's how the Catch-e Demo second page was created.<br /><br />
+1. Set a page instruction in the *.css for the page management<br />
+<a href="./Image:Quote_Form_Page_2_css.png.html" class="image" title="Image:Quote_Form_Page_2_css.png "><img src="../../clients/help/wiki/images/b/b3/Quote_Form_Page_2_css.png" alt="Image:Quote_Form_Page_2_css.png " width="549" height="225" longdesc="/mediawiki/index.php/Image:Quote_Form_Page_2_css.png" /></a><br /><br />
+2. Set the page 1 section<br />
+<a href="./Image:Quote_Form_Page_2_html1.png.html" class="image" title="Image:Quote Form Page 2 html1.png"><img src="../../clients/help/wiki/images/f/f7/Quote_Form_Page_2_html1.png" alt="Image:Quote Form Page 2 html1.png" width="824" height="361" longdesc="/mediawiki/index.php/Image:Quote_Form_Page_2_html1.png" /></a><br /><br />
+3. Set the page 2 section<br />
+<a href="./Image:Quote_Form_Page_2_html2.png.html" class="image" title="Image:Quote Form Page 2 html2.png"><img src="../../clients/help/wiki/images/3/3c/Quote_Form_Page_2_html2.png" alt="Image:Quote Form Page 2 html2.png" width="935" height="222" longdesc="/mediawiki/index.php/Image:Quote_Form_Page_2_html2.png" /></a><br /><br />
+4. Add an overflow section if you're listing options in detail<br />
+<a href="./Image:Quote_Form_Page_2_overflow.png.html" class="image" title="Image:Quote Form Page 2 overflow.png"><img src="../../clients/help/wiki/images/f/f9/Quote_Form_Page_2_overflow.png" alt="Image:Quote Form Page 2 overflow.png" width="912" height="308" longdesc="/mediawiki/index.php/Image:Quote_Form_Page_2_overflow.png" /></a><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=39" title="Edit section: Web Services">edit</a>]</div><a name="Web_Services"></a><h3>Web Services</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=40" title="Edit section: CATCH_E_ERROR_TOO_MANY_REQUESTS error">edit</a>]</div><a name="CATCH_E_ERROR_TOO_MANY_REQUESTS_error"></a><h5>CATCH_E_ERROR_TOO_MANY_REQUESTS error</h5>
+<p>A CATCH_E_ERROR_TOO_MANY_REQUESTS error indicates that the rate limit of your system has been exceeded.
+</p><p>Your rates limit includes all legacy web services and current token-based APIs.
+</p><p>See API HTTP 429 response below for further details.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=41" title="Edit section: exportQuery 403 Error">edit</a>]</div><a name="exportQuery_403_Error"></a><h5>exportQuery 403 Error</h5>
+<p>If you are using the <a href="./Web_service_Gb::Queries::exportQuery().html#Troubleshooting" title="Web service Gb::Queries::exportQuery()">exportQuery</a> function in your web site, Catch-e will need to whitelist the IP addresses you are using so this function is allowed.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=42" title="Edit section: CATCH_E_ERROR_QUOTE_VALIDATION_FAILED error">edit</a>]</div><a name="CATCH_E_ERROR_QUOTE_VALIDATION_FAILED_error"></a><h5>CATCH_E_ERROR_QUOTE_VALIDATION_FAILED error</h5>
+<p>"CATCH_E_ERROR_QUOTE_VALIDATION_FAILED": "Validation failed due to the following error(s):\r\n\r\n1. Insurance Location is required!" error indicates a setup issue where the qt_insurer_locations_by_postcode table is not populated with all the locations in the qt_insurer_location table.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=43" title="Edit section: VPN Connection">edit</a>]</div><a name="VPN_Connection"></a><h3><a href="VPN_Connection.html" title="VPN Connection">VPN Connection</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Troubleshooting:VPN_Connection&amp;action=edit&amp;section=1" title="Template:Troubleshooting:VPN Connection">edit</a>]</div><a name="Self_Service_Troubleshooting_Guide_for_users_running_Twingate_client"></a><h5><a href="https://help.twingate.com/hc/en-us/articles/9370365449757-Self-Serve-Troubleshooting-Guide" class='external text' title="https://help.twingate.com/hc/en-us/articles/9370365449757-Self-Serve-Troubleshooting-Guide" rel="nofollow">Self Service Troubleshooting Guide for users running Twingate client</a></h5>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Troubleshooting:VPN_Connection&amp;action=edit&amp;section=2" title="Template:Troubleshooting:VPN Connection">edit</a>]</div><a name="Windows_Checking_Network_Interfaces_for_Twingate"></a><h5><a href="https://help.twingate.com/hc/en-us/articles/9309581064605--Windows-Checking-Network-Interfaces" class='external text' title="https://help.twingate.com/hc/en-us/articles/9309581064605--Windows-Checking-Network-Interfaces" rel="nofollow">Windows Checking Network Interfaces for Twingate</a></h5>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=44" title="Edit section: API Services">edit</a>]</div><a name="API_Services"></a><h3>API Services</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=45" title="Edit section: HTTP 401 Unauthorised">edit</a>]</div><a name="HTTP_401_Unauthorised"></a><h5>HTTP 401 Unauthorised</h5>
+<p>An HTTP 401 response code indicates that your token has expired or is invalid.
+</p><p>The token expiry is set in one of two ways:
+</p><p>1) Using the optional token_timeout parameter at the point of authentication or if that is not set<br /> 
+2) The Session Timeout value on the System / Roles screen
+</p><p>Make sure you are using a non-zero timeout value.
+</p><p>You can check the validity of the token by visiting this web page <a href="https://jwt.io/" class='external free' title="https://jwt.io/" rel="nofollow">https://jwt.io/</a> and pasting your token into the box labelled 'Encoded'. Remember to remove the '{client}/' characters from the beginning of the token.
+Check that the 'exp' (expiry) claim is greater than both the 'iat'(issued at) and 'nbf' (not before) claims. If not, the token is set to expire immediately which is a symptom of setting a zero timeout.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=46" title="Edit section: HTTP 429 Too many requests">edit</a>]</div><a name="HTTP_429_Too_many_requests"></a><h5>HTTP 429 Too many requests</h5>
+<p>An HTTP 429 response code indicates that the rate limit of your system has been exceeded. The response contains the number of seconds you should wait until trying again.
+</p><p>Your rates limit includes all legacy web services and current token-based APIs.
+</p><p>Whitelisted IP Addresses are excluded, the whitelist includes the localhost IP so that internal APIs are excluded from rate limiting counts.
+</p><p>Catch-e's rate limiting uses the sliding window concept. See the following discussion piece about this: <a href="https://blog.cloudflare.com/counting-things-a-lot-of-different-things" class='external free' title="https://blog.cloudflare.com/counting-things-a-lot-of-different-things" rel="nofollow">https://blog.cloudflare.com/counting-things-a-lot-of-different-things</a>
+</p><p>Rate limits can be adjusted for you by Catch-e on application. These adjustments are made using the controls rest_rate_limit and rest_rate_limit_ip_whitelist
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=47" title="Edit section: Driver or Employee Portal">edit</a>]</div><a name="Driver_or_Employee_Portal"></a><h3><a href="Driver_Portal_Troubleshooting.html" title="Driver Portal Troubleshooting">Driver or Employee Portal</a></h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=48" title="Edit section: Login">edit</a>]</div><a name="Login_2"></a><h4>Login</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Portal_Login:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Portal Login:Troubleshooting">edit</a>]</div><a name="Authentication_Failed_-_Invalid_Sign-on_Token"></a><h5>Authentication Failed - Invalid Sign-on Token</h5>
+<p>If a user clicks on the URL link sent by the <u><a href="Forgot_Username%3F_Forgot_Password%3F.html" title="Forgot Username? Forgot Password?">Forgot Password?</a></u> feature and gets this error, it means either
+</p>
+<ol><li> They have clicked on the link previously (it will only work once) or
+</li><li> Their email system has triggered the URL while running security tests for phishing (thus using up the one-time link)
+</li></ol>
+<p>In both cases, the easiest way to manage this is to <a href="Reset_a_Driver_Login.html" title="Reset a Driver Login">reset the driver login</a> or <a href="Reset_an_employee_login.html" title="Reset an employee login">reset the employee login</a>.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Portal_Login:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Portal Login:Troubleshooting">edit</a>]</div><a name="403_Forbidden_2"></a><h5>403 Forbidden</h5>
+<p>If drivers or employees get a '403 Forbidden' message when they are logging into the portal, they are either
+</p>
+<ol><li> trying to log in from a Geo-blocked location
+</li><li> their login has triggered another blocking rule in the system
+</li></ol>
+<p>If they are trying to login from a blocked location, they will need to run a VPN connection from an unblocked location (like Australia) or wait until they have returned to Australia to access the system.<br />
+</p><p>If you find that geo-blocking is not the cause, contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to raise a task and investigate.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Portal_Login:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Portal Login:Troubleshooting">edit</a>]</div><a name="404_Page_not_found"></a><h5>404 Page not found</h5>
+<p>A driver or employee will see a '403 Page not found' message if they are trying to access the portal and a malformed single signon token has been used in the API.<br />
+Contact your IT Department about this issue.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Portal_Login:Troubleshooting&amp;action=edit&amp;section=4" title="Template:Portal Login:Troubleshooting">edit</a>]</div><a name="Portal_2FA_Problems"></a><h4>Portal 2FA Problems</h4>
+<p>Visit <a href="./Driver_Portal:2_Factor_Authentication.html" title="Driver Portal:2 Factor Authentication">Portal 2 Factor Authentication</a> for all of the set-up and process details.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Troubleshooting:Portal_2FA&amp;action=edit&amp;section=1" title="Template:Troubleshooting:Portal 2FA">edit</a>]</div><a name="Unenroll_a_driver"></a><h5>Unenroll a driver</h5>
+<p>If a driver or employee has problems with their <a href="./Driver_Portal:2_Factor_Authentication.html" title="Driver Portal:2 Factor Authentication">2FA Enrolment</a>, a System Administrator in your business can unenroll them from 2FA.<br /> The driver can then re-enrol when they next log in.
+</p>
+<ol><li> Go to <a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a>
+</li><li> <b>2FA Enrolled</b> - un-check to unenrol the driver.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Troubleshooting:Portal_2FA&amp;action=edit&amp;section=2" title="Template:Troubleshooting:Portal 2FA">edit</a>]</div><a name="Driver_is_locked_out"></a><h5>Driver is locked out</h5>
+<p>If the entered app or sms code is valid, the user will have access into the Catch-e system.<br /> If it is invalid, three attempts will be allowed before the user is locked out of the system.<br />
+When a user is locked out, their <a href="./Users:Details.html" title="Users:Details">Users / Details</a> "Status" will be 'locked'.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Troubleshooting:Portal_2FA&amp;action=edit&amp;section=3" title="Template:Troubleshooting:Portal 2FA">edit</a>]</div><a name="Unlock_a_driver"></a><h5>Unlock a driver</h5>
+<p>If a driver's login has become locked, their login will need to be reset.<br />
+Follow the <a href="Reset_a_Driver_Login.html" title="Reset a Driver Login">Reset a Driver Login</a> process to do this.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;action=edit&amp;section=49" title="Edit section: Raise a vehicle claim">edit</a>]</div><a name="Raise_a_vehicle_claim"></a><h4><a href="Raise_a_vehicle_claim.html#Troubleshooting" title="Raise a vehicle claim">Raise a vehicle claim</a></h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=1" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Driver_can_log_in_but_gets_an_error_when_they_click_on_Raise_a_Claim_button"></a><h5>Driver can log in but gets an error when they click on Raise a Claim button</h5>
+<ul><li>If your driver or employee can log into the portal, but get an error message if they click on the "Raise a claim" button, this means their access to this function has been disabled.<br />
+</li></ul>
+<p>Check that the user has a suitable contract for raising claims.
+</p>
+<ol><li> Contract Types / Details "Claims Tab" must be checked.
+</li><li> Drivers / Contact "Driver Claims" must be checked.
+</li><li> Contracts / Contract "Contract Start" - check this is populated.
+</li><li> Contracts / Contract "Contract End" - check this has not been reached.
+</li><li> Contracts / Contract "Suspend Date" - check this has not been populated.
+</li></ol>
+<p>See also the <a href="Raise_a_vehicle_claim.html#Validations_and_Alerts" title="Raise a vehicle claim">Validations and Alerts</a> that are documented for this button.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=2" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Submit_Claim_Error"></a><h5>Submit Claim Error</h5>
+<p>If an error is returned when you "Submit Claim", check that the Card Interface is configured correctly. There can only be one interface where the "Interface Type" = 'Claim' and it needs to be linked to a valid supplier.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=3" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Attach_Receipt_Error"></a><h5>Attach Receipt Error</h5>
+<p>Only files with an extension stored in <i>gb_mime_types</i> will be accepted for upload in the driver portal. i.e. if the extension is missing or does not match, the error below is returned.<br /> 
+</p>
+<dl><dd><dl><dd>"Unrecognised or unsupported attachment. Please check your file contains a valid extension and is a supported file type."<br />
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=4" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Unable_to_load_receipts"></a><h5>Unable to load receipts</h5>
+<p>If the Driver Portal is used in an iframe and the user is trying to attach a receipt whilst working via VPN, their organisations firewall may block this. Advise user to try again when they are not logged into a VPN.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=5" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Unable_to_select_photo_on_iPhone"></a><h5>Unable to select photo on iPhone</h5>
+<p>User unable to select a photo to attach - if the users phone is an iPhone with an IOS 13+, they will need to <a href="IPhone_IOS_13.html" title="IPhone IOS 13">update their settings</a> for this feature to work.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Raise_a_vehicle_claim:Troubleshooting&amp;action=edit&amp;section=6" title="Template:Raise a vehicle claim:Troubleshooting">edit</a>]</div><a name="Connection_Error"></a><h5>Connection Error</h5>
+<p>A connection error can happen at the end of the claim process if the Claim confirmation email is not completely set-up.<br />
+</p><p>The message will look like this:
+</p>
+<pre>
+A connection error has occurred while processing your request.
+Please press F5 to refresh the screen and try again.
+</pre>
+<p>One data set-up issue looks like this:
+</p>
+<ol><li> You have have set the <a href="Global_Controls.html" title="Global Controls">gb_controls</a> "approval_reimbursement_notification_flag" to be 'yes'
+</li><li> There is no Posting Class called 'PORTAL' set up.
+</li></ol>
+<p>Or 
+</p>
+<ol><li> The 'REIMBURSE' interface is not set-up
+</li><li> The 'REIMBURSE' interface supplier is not set-up
+</li></ol>
+<p>When the claim is being completed, the system needs the 'PORTAL' posting class to create the email and contract event.<br />
+<br />
+</p><div class="printfooter">
+Retrieved from "<a href="Troubleshooting.html">https://help.catch-e.net.au/mediawiki/index.php/Troubleshooting</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Troubleshooting">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Troubleshooting.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Troubleshooting&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.49 secs. -->
+</body></html>

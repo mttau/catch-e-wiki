@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Technical Information 1Link Interface,1link Data Mapping,1link Interface,Clients:Contract defaults,FLEET,IMPORT DATA,Importdata:1link Approvals,Importdata:1link Approvals:Setup,Main Page,Scheduler Job Types" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Technical Information 1Link Interface - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Technical Information 1Link Interface</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Technical_Information_1Link_Interface.html#column-one">navigation</a>, <a href="Technical_Information_1Link_Interface.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="IMPORT_DATA.html" title="IMPORT DATA">Import Data</a> &rarr; <a href="./Importdata:1link_Approvals.html" title="Importdata:1link Approvals">1Link Approvals</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="./Importdata:1link_Approvals:Setup.html" title="Importdata:1link Approvals:Setup">1Link Setup</a> &rarr; <a href="1link_Interface.html" title="1link Interface">1link Interface</a> | <a href="1link_Data_Mapping.html" title="1link Data Mapping">1link Data Mapping</a> | <strong>Technical Information 1Link Interface</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Technical_Information_1Link_Interface.html#Business_Rules_for_importing_invoice_records_from_1link_to_Catch-e"><span class="tocnumber">1</span> <span class="toctext">Business Rules for importing invoice records from 1link to Catch-e</span></a>
+<ul>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Rules_for_creating_records_in_tables_fm_onelink_approvals_and_fm_onelink_maintenance"><span class="tocnumber">1.1</span> <span class="toctext">Rules for creating records in tables fm_onelink_approvals and fm_onelink_maintenance</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Validation_Process"><span class="tocnumber">1.2</span> <span class="toctext">Validation Process</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Setting_Exceptions"><span class="tocnumber">1.3</span> <span class="toctext">Setting Exceptions</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Labour_Rows"><span class="tocnumber">1.4</span> <span class="toctext">Labour Rows</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Notes_Only_Lines"><span class="tocnumber">1.5</span> <span class="toctext">Notes Only Lines</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Posting_into_.5Bgl_transactions.5D"><span class="tocnumber">1.6</span> <span class="toctext">Posting into [gl_transactions]</span></a></li>
+<li class='toclevel-2'><a href="Technical_Information_1Link_Interface.html#Table_References"><span class="tocnumber">1.7</span> <span class="toctext">Table References</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Technical_Information_1Link_Interface.html#Business_Rules_for_exporting__records_to_1link_from_Catch-e"><span class="tocnumber">2</span> <span class="toctext">Business Rules for exporting  records to 1link from Catch-e</span></a></li>
+<li class='toclevel-1'><a href="Technical_Information_1Link_Interface.html#Business_Rules_for_exporting_Vehicle_Data_from_Catch-e"><span class="tocnumber">3</span> <span class="toctext">Business Rules for exporting Vehicle Data from Catch-e</span></a></li>
+<li class='toclevel-1'><a href="Technical_Information_1Link_Interface.html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=1" title="Edit section: Business Rules for importing invoice records from 1link to Catch-e">edit</a>]</div><a name="Business_Rules_for_importing_invoice_records_from_1link_to_Catch-e"></a><h3>Business Rules for importing invoice records from 1link to Catch-e</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=2" title="Edit section: Rules for creating records in tables fm_onelink_approvals and fm_onelink_maintenance">edit</a>]</div><a name="Rules_for_creating_records_in_tables_fm_onelink_approvals_and_fm_onelink_maintenance"></a><h4>Rules for creating records in tables fm_onelink_approvals and fm_onelink_maintenance</h4>
+<ol><li> Table fm_onelink_approvals is populated from X3 transaction lines.
+</li><li> Table fm_onelink_maintenance is populated using the following logic
+<ol><li>	Create maintenance lines for each all non-Recharge line items (X6)
+<ol><li>	If Variable Price line item (X6.line_type = 'A3') Labour Cost = X8.pre_tax_labour_cost - X8.pre_tax_discount_amount 
+</li><li>	Else Labour Cost = 0
+</li></ol>
+</li><li>	Create maintenance line for Recharges (X6.recharge_amount > 0) with description = X6.recharge_summary + X6.recharge_details and amount = X6.recharge_amount
+<ol><li>	For Full Recharge (X6.recharge_amount > 0 AND X6.recharge_percentage = 100), Labour Cost = X8.pre_tax_labour_cost - X8.pre_tax_discount_amount
+</li><li>	For Partial Recharge (X6.recharge_amount > 0 AND X6.recharge_percentage &lt; 100), Labour Cost = X6.recharge_amount
+</li></ol>
+</li><li>	Create maintenance line for non-rechargeable part of Partial Recharges (X6.recharge_amount &gt; 0 and X6.recharge_percentage &lt; 100) with description = X6.recharge_summary + X6.recharge_details and amount = X8.total_pre_tax_line_cost - X6.recharge_amount
+<ol><li>	If system recharge is set to 'Y' for this posting class, then recharge the full amount ie set recharge flag for this to 'Y' else retain 1link recharge info ie 'N'
+</li></ol>
+</li><li>	Create one line per Part record (X7)
+<ol><li>	Set parts cost and total cost to 0 for partial recharges (X6.recharge_amount &gt; 0 AND X6.recharge_percentage &lt; 100)
+</li><li>	If the fm_interface_vmrs_mappings has been set up for the given X7 parts_code then use that to set product_code, posting_class_id, vmrs_code_id.
+</li><li>	Otherwise default product_code and posting_class_id to the values from the 'parent' X6 records and set vmrs_code_id to '0'
+</li></ol>
+</li><li>	All new rows are set to ‘pending’ status. The status is updated to either ‘invalid’ ‘valid’, ‘exception’ or ‘processed’ during processing.
+</li><li>	<b>Balance Adjustments.</b>To ensure suppliers are paid the correct amount, following $ adjustments are made.
+<ol><li>	Adjust the labour cost and gst cost field to match the total pre tax line cost and gst cost in total line cost record (X8).  The gst cost is not supplied at line total level by 1Link but is calculated based on gst code. This adjustment is necessary to balance fixed price lines, Line Type = ‘A2’ in line item detail record (X6), that do not have any parts record.
+</li><li>	Adjust total_cost and gst_cost in the first maintenance line to match the transaction totals in total transaction cost record (X9).  
+</li></ol>
+</li></ol>
+</li></ol>
+<dl><dd><dl><dd><dl><dd>These adjustments are necessary as GST is calculated and the values might differ by the odd cent here and there. This will also fix any discrepancies in the totals big or small in case of 'structural' problems.
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=3" title="Edit section: Validation Process">edit</a>]</div><a name="Validation_Process"></a><h4>Validation Process</h4>
+<p>The following validations are performed on data in fm_onelink_approvals and fm_onelink_maintenance. The validation routine processes all records that have ‘pending’ or ‘invalid’ status.  During the different stages of the import process a record progresses through 'invalid', 'valid', 'exception','processed','failed-posting','deleted' status.
+</p>
+<ol><li> If the total gross transaction cost in transaction totals lines (X9) doesn’t match the total in fm_onelink_maintenance table, a fatal error is raised and the export process is aborted.
+</li><li> Odometer Validation. Set odometer_valid_flag in fm_onelink_approvals to 'invalid' if odometer = 0 or above the acceptable tolerance.
+</li><li><i>TO BE IMPLEMENTED IN PHASE 2: Split tyre fm_onelink_maintenance records into a recharge and non-recharge record if tyre budget exceeded</i><br />
+</li><li>Validate records in fm_onelink_approvals
+</li></ol>
+<dl><dd><dl><dd><dl><dd><dl><dd>	<b>An approval is invalid if</b>
+<ul><li>	Doesn't have a valid contract id
+</li></ul>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<p><br />
+If a record fails validation, it is set to ‘invalid’ status. An invalid approval IS NOT copied to fm_approvals table for further processing. Invalid records remain in fm_onelink_approvals so that they can be fixed manually.  Invalid records are reported in an exception report. Subsequent import process will process ‘invalid’ records.
+</p><p>Records that pass validation are set to ‘valid’ status and copied to fm_approvals and fm_maintenance tables for further processing.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=4" title="Edit section: Setting Exceptions">edit</a>]</div><a name="Setting_Exceptions"></a><h4>Setting Exceptions</h4>
+<p>Status flag in the semi-permanent table set to 'exception' for records that do not have enough information for posting into <i>[gl_transactions]</i>. These records are reported in an exception report requiring further attention. 
+</p>
+<ol><li>	A maintenance line item is set to 'exception' if
+<ol><li>	fm_interface_vmrs_mappings.exception_flag = 'yes' for this posting class + vmrs code
+</li><li>	System Recharge flag is set to 'N' for this posting class and 1link sets the line as Recharge
+</li></ol>
+</li><li>	An approval record is set 'exception' if any of its maintenance lines is set to 'exception'
+</li></ol>
+<p><b>Note&nbsp;:</b>  Distinction between an ‘invalid’ and ‘exception’ records&nbsp;:  ‘invalid’ records are not copied into <i>[fm_approvals]</i> and <i>[fm_maintenance]</i> whereas ‘exception’ records are copied but not posted into <i>[gl_transactions]</i>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=5" title="Edit section: Labour Rows">edit</a>]</div><a name="Labour_Rows"></a><h4>Labour Rows</h4>
+<p>Just prior to the posting process, any maintenance rows containing a labour component will be modified and copied so that labour costs can be identified separately. The steps are as follows;
+</p>
+<ol><li> If <i>labour_cost</i> is greater than '0', copy this row.
+</li><li> Update the copied row to add "Labour - " as a prefix to the original description. Change the VMRS Code to be 'LAB'. Copy the value of <i>labour_cost</i> into the <i>total_cost</i> field. Update the fields <i>unit_cost, parts_cost, fee_cost</i> and <i>retail_price</i> to be '0'.
+</li><li> Update the original row fields <i>labour_cost</i> and <i>gst_cost</i> to be '0'. Reduce <i>total_cost</i> by the value of <i>labour_cost</i>.
+</li></ol>
+<p>E.g.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 70%;">
+<tr>
+<th>Description</th><th>VMRS</th><th><i>quantity</i></th><th><i>labour_cost</i></th><th><i>gst_cost</i></th><th><i>total_cost</i>
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="6"> Before update
+</td></tr>
+<tr>
+<td>Replace Headlamp</td><td>REP</td><td>1.5</td><td>100.00</td><td>20.00</td><td>200.00
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="6"> After update
+</td></tr>
+<tr>
+<td>Replace Headlamp</td><td>REP</td><td>1.5</td><td>0.00</td><td>0.00</td><td>100.00
+</td></tr>
+<tr>
+<td>Labour - Replace Headlamp</td><td>LAB</td><td>1.5</td><td>100.00</td><td>20.00</td><td>100.00
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=6" title="Edit section: Notes Only Lines">edit</a>]</div><a name="Notes_Only_Lines"></a><h4>Notes Only Lines</h4>
+<p>If a maintenance line has a 0 value is has been created to records notes, the [fm_maintenance]batch_no is set to = 8888.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=7" title="Edit section: Posting into [gl_transactions]">edit</a>]</div><a name="Posting_into_.5Bgl_transactions.5D"></a><h4>Posting into <i>[gl_transactions]</i></h4>
+<p>All ‘valid’ maintenance lines that have a non-zero $ value of are posted into <i>[gl_transactions]</i>. At the end of posting process records have following status.
+</p><p><b>GL Posting Status</b>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" style="background:#E0E0E0; color:black">
+<tr>
+<th width="150" align="left" style="background:blue; color:white">Table
+</th><th width="150" align="left" style="background:blue; color:white">Posting OK
+</th><th width="150" align="left" style="background:blue; color:white">Posting Failure
+</th></tr>
+<tr>
+<td>fm_approvals</td><td>posted</td><td>active
+</td></tr>
+<tr>
+<td>fm_maintenance</td><td>posted/recharge</td><td>pending
+</td></tr>
+<tr>
+<td>fm_onelink_approvals</td><td>processed</td><td>failed-posting
+</td></tr>
+<tr>
+<td>fm_onelink_maintenance</td><td>processed</td><td>failed-posting
+</td></tr></table>
+<p>All ‘posted/recharge’ fm_maintenance records are assigned with a batch no.
+At the end of a successful import status flag in <i>[gb_imports]</i> is set to ‘processed’ and the nightly input file is moved to ‘archive’ folder on 1link FTP server.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=8" title="Edit section: Table References">edit</a>]</div><a name="Table_References"></a><h4>Table References</h4>
+<table border="1" cellspacing="0" cellpadding="2" style="background:#E0E0E0; color:black">
+<tr>
+<th colspan="2" width="500" align="left" style="background:blue; color:white">Invoice Import
+</th></tr>
+<tr>
+<th width="250" align="left" style="background:blue; color:white">Read
+</th><th width="250" align="left" style="background:blue; color:white">Update
+</th></tr>
+<tr>
+<td>fm_contracts</td><td>fm_approvals
+</td></tr>
+<tr>
+<td>fm_interface_vmrs_mappings</td><td>fm_maintenance
+</td></tr>
+<tr>
+<td>fm_interfaces</td><td>fm_onelink_approvals
+</td></tr>
+<tr>
+<td>fm_supplier_franchise_vehicles</td><td>fm_onelink_maintenance
+</td></tr>
+<tr>
+<td>fm_suppliers</td><td>gb_imports
+</td></tr>
+<tr>
+<td>fm_vmrs_codes</td><td>gl_transactions
+</td></tr>
+<tr>
+<td>gb_controls</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>gb_unique_ids</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>gl_posting_class_maps</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>gl_posting_classes</td><td>&nbsp;
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=9" title="Edit section: Business Rules for exporting  records to 1link from Catch-e">edit</a>]</div><a name="Business_Rules_for_exporting__records_to_1link_from_Catch-e"></a><h3>Business Rules for exporting  records to 1link from Catch-e</h3>
+<p>Records are exported via scheduled <a href="Scheduler_Job_Types.html#Onelink" title="Scheduler Job Types">Onelink</a> jobs.
+</p><p><b>The following files are exported to 1Link.</b>
+</p>
+<ol><li>.	Vehicle: Complete export<br />
+</li><li>.	Customer: Complete export<br />
+</li><li>.	Maintenance History: Incremental. Each maintenance line id exported is stored in fm_maintenance_onelink table.<br />
+</li></ol>
+<p>Note: The <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Approval Note</a> was added to the fields exported in Dec 2018.
+</p><p><b>The following contracts (and associated clients &amp; maintenance history) are excluded from export</b>
+</p>
+<ol><li>. Suspend date within 60 days from CURRENT_DATE.<br />
+</li><li>. Contracts with no contract_start or contract_end date.<br />
+</li><li>. Contracts on order (rego_no = 'ORDER')<br />
+</li><li>. If fm_contracts.1link_export_flag = 'no'<br />
+</li><li>. If fm_contracts.1link_export_flag = 'yes' AND gl_posting_maps.1link_export_flag = 'no' <br />
+</li><li>. Contracts without Make &amp; Models ie no matching Redbook Code or Make &amp; Model empty in fm_contracts<br />
+</li></ol>
+<p><b>Table References</b>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" style="background:#E0E0E0; color:black">
+<tr>
+<th width="150" align="left" style="background:blue; color:white">Vehicle Export
+</th><th width="150" align="left" style="background:blue; color:white">Customer Export
+</th><th colspan="2" width="400" align="left" style="background:blue; color:white">Maintenance History Export
+</th></tr>
+<tr>
+<th width="150" align="left" style="background:blue; color:white">Read
+</th><th width="150" align="left" style="background:blue; color:white">Read
+</th><th width="200" align="left" style="background:blue; color:white">Read
+</th><th width="200" align="left" style="background:blue; color:white">Update
+</th></tr>
+<tr>
+<td>fm_1link_schemes</td><td>fm_clients</td><td>fm_approvals</td><td>fm_maintenance_onelink
+</td></tr>
+<tr>
+<td>fm_clients</td><td>fm_contracts</td><td>fm_contracts</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>fm_contracts</td><td>gl_posting_maps</td><td>fm_maintenance</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>fm_drivers</td><td>&nbsp;</td><td>fm_maintenance_1link</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>fm_maintenance</td><td>&nbsp;</td><td>fm_suppliers</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>fm_maintenance_1link</td><td>&nbsp;</td><td>fm_vmrs_codes</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>gl_posting_classes</td><td>&nbsp;</td><td>gl_posting_classes</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>gl_posting_maps</td><td>&nbsp;</td><td>gl_posting_maps</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>qt_makes</td><td>&nbsp;</td><td>gl_transactions</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>qt_models</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
+</td></tr>
+<tr>
+<td>qt_variants</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=10" title="Edit section: Business Rules for exporting Vehicle Data from Catch-e">edit</a>]</div><a name="Business_Rules_for_exporting_Vehicle_Data_from_Catch-e"></a><h3>Business Rules for exporting Vehicle Data from Catch-e</h3>
+<p>1. Field # 39 Tyres Fitted To Date&nbsp;: Count all non-recharged tyres including ones from 1link. This should match value on Contract / Maintenance screen.
+</p><p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;action=edit&amp;section=11" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-20489) 1link Customer File Upload changes. Live 10/12/2018
+</li><li> (DEV-20704) 1link interface excluded contracts. Live 11/06/2019
+</li><li> (DEV-20519) Create separate Labour Rows during 1Link import process. Live 24/06/2019
+</li><li> (DEV-20350) Modify 1link interface to use SFTP instead of FTP. Live 26/04/2021
+</li><li> (DEV-21415) onelink_import::download No invoice files found. Live 26/07/2021
+</li><li> (DEV-21356) Fix processes that assign 0 to fm_maintenance batch_no for notes only batches. Live 09/08/2021
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1606-0!1!0!0!!en!2 and timestamp 20251120011942 -->
+<div class="printfooter">
+Retrieved from "<a href="Technical_Information_1Link_Interface.html">https://help.catch-e.net.au/mediawiki/index.php/Technical_Information_1Link_Interface</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Technical_Information_1Link_Interface">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Technical_Information_1Link_Interface.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Technical_Information_1Link_Interface&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.03 secs. -->
+</body></html>

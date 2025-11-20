@@ -1,0 +1,1106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Salary Packaging Scheduler Jobs,AutoBuildClaims,AutoPostPayments,Car Details auto updates,Change the run date of an existing payroll,Claim Checks,Clients:Contract defaults,Clients:Contract defaults:Billing Terms,Create a Contract Type,Create a pay run,Direct Link Associate Lease Managed" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Salary Packaging Scheduler Jobs - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Salary Packaging Scheduler Jobs</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Salary_Packaging_Scheduler_Jobs.html#column-one">navigation</a>, <a href="Salary_Packaging_Scheduler_Jobs.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a> &rarr; <a href="Salary_Packaging.html" title="Salary Packaging">Salary Packaging</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> <a href="Salary_Packaging_Set-Up.html" title="Salary Packaging Set-Up">Salary Packaging Set-Up</a>  &rarr; <a href="Packager_Setup.html" title="Packager Setup">Packager Setup</a> | <a href="Create_a_Contract_Type.html" title="Create a Contract Type">Contract Type</a> |  <a href="Package_Items.html" title="Package Items">Package Items</a> | <a href="Impact_Statement.html" title="Impact Statement">Impact Statement</a> | <a href="Pay_Run_Setup.html" title="Pay Run Setup">Pay Runs</a> | <a href="Pay_Run_Receipts.html" title="Pay Run Receipts">Receipts</a> | <a href="Disbursements_Setup.html" title="Disbursements Setup">Disbursements</a> | <strong>Scheduler Jobs</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Claim_Processing"><span class="tocnumber">2</span> <span class="toctext">Claim Processing</span></a></li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Pay_Run_Processing"><span class="tocnumber">3</span> <span class="toctext">Pay Run Processing</span></a></li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Receipt_Processing"><span class="tocnumber">4</span> <span class="toctext">Receipt Processing</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Auto_Build_Claims"><span class="tocnumber">4.1</span> <span class="toctext">Auto Build Claims</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Auto_Post"><span class="tocnumber">4.2</span> <span class="toctext">Auto Post</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Exceptions"><span class="tocnumber">5</span> <span class="toctext">Exceptions</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Contracts"><span class="tocnumber">5.1</span> <span class="toctext">Contracts</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Exceptions_-_Direct_Link_Car_Items"><span class="tocnumber">5.2</span> <span class="toctext">Exceptions - Direct Link Car Items</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Pay_Runs"><span class="tocnumber">5.3</span> <span class="toctext">Pay Runs</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Updates"><span class="tocnumber">6</span> <span class="toctext">Updates</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Items"><span class="tocnumber">6.1</span> <span class="toctext">Items</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Contracts_2"><span class="tocnumber">6.2</span> <span class="toctext">Contracts</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Car_Items"><span class="tocnumber">6.3</span> <span class="toctext">Car Items</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Direct_Link_Car_Items"><span class="tocnumber">6.4</span> <span class="toctext">Direct Link Car Items</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Pay_Run_updates"><span class="tocnumber">6.5</span> <span class="toctext">Pay Run updates</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Employees_.2F_Transactions"><span class="tocnumber">6.6</span> <span class="toctext">Employees / Transactions</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Associate_Lease_-_Depreciation_Report_Process"><span class="tocnumber">7</span> <span class="toctext">Associate Lease - Depreciation Report Process</span></a></li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#Annual_Tasks"><span class="tocnumber">8</span> <span class="toctext">Annual Tasks</span></a></li>
+<li class='toclevel-1'><a href="Salary_Packaging_Scheduler_Jobs.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Reports"><span class="tocnumber">9.1</span> <span class="toctext">Reports</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Exceptions_2"><span class="tocnumber">9.2</span> <span class="toctext">Exceptions</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Updates_-_Pay_Runs"><span class="tocnumber">9.3</span> <span class="toctext">Updates - Pay Runs</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Car_Profiles"><span class="tocnumber">9.4</span> <span class="toctext">Car Profiles</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Updates_-_Car_Profile_-_Item_linked_to_Car_Contract"><span class="tocnumber">9.5</span> <span class="toctext">Updates - Car Profile - Item linked to Car Contract</span></a></li>
+<li class='toclevel-2'><a href="Salary_Packaging_Scheduler_Jobs.html#Annual_Tasks_2"><span class="tocnumber">9.6</span> <span class="toctext">Annual Tasks</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The <a href="Job_Scheduler.html" title="Job Scheduler">scheduler jobs</a> below are the recommended base set for Salary Packaging clients.<br />
+The Job ID and Query ID's shown are for our Demo environment and will be different in your system.<br />
+The name of each job will be the same, unless changed.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=2" title="Edit section: Claim Processing">edit</a>]</div><a name="Claim_Processing"></a><h4>Claim Processing</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Bulk Upload
+</td></tr>
+<tr>
+<td> </td><td> </td><td> </td><td> executeScript </td><td> <b>Maintenance Transaction Upload</b><br /> Use this when you are <a href="Prepare_FIFO_Travel_Expenses.html" title="Prepare FIFO Travel Expenses">preparing FIFO Travel Expenses</a> in bulk.
+</td></tr>
+<tr>
+<td> </td><td> </td><td> </td><td> executeQuery </td><td>  <b>Maintenance Transaction Upload Confirmation</b>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Build Budgets
+</td></tr>
+<tr>
+<td> </td><td> </td><td> </td><td> executeScript </td><td>  <b>Add Budget amounts for claims</b><br /> Use this to add a budget amount for claims you have raised or edited.
+<p>Purpose<br /> 
+Update budgets to store the required amount for pending claims.<br />
+</p><p>Selection:<br />
+</p>
+<ol><li> Contracts where linked Item "Disbursement Type" is 'Claim'
+</li><li> Package Item's where <i>module</i> is 'budget' are excluded from this process
+</li></ol>
+<p>Logic<br />
+</p>
+<ol><li> Build a temporary table to store 
+<ol><li> each contract's pending billing period and date 
+</li><li> each pending approval that is in active / pending funds status
+</li><li> if the pending approval is new and unmatched - the number in the Quantity field is used to match the approval with the requested billing period. I.e. 1 - next pending, 2 = 2nd pending.
+</li></ol>
+</li><li> Update approvals to 
+<ol><li> add or update <b>external_order_number</b> field to match the required billing period
+</li><li> update the invoice date and odometer date to match the required billing period
+</li><li> if the billing period is next month, the dates are set to be the last day in the current month ( sp/approvals/autoPostClaims only selects approvals dated in the current month)
+</li></ol>
+</li><li> Update billings to 
+<ol><li> store PRETAX amount_net and amount_gst that matchs these amounts in the linked pending approvals
+</li><li> update PRETAX amount_net and amount_gst to be 0 if there are no longer any linked pending approvals
+</li></ol>
+</li></ol>
+<p><b>Note</b> - you may have to review and update pending records if they have crossed the end of the month 
+</p>
+</td></tr>
+<tr>
+<td> </td><td> </td><td> </td><td> executeQuery </td><td>  <b>Add Budget amount for claims - exceptions</b>
+<p>Purpose<br /> 
+Report where approvals cannot be added to the budgets for review and correction/
+Logic<br />
+</p>
+<ol><li> Suspend Date has been entered
+</li><li> Approval Qty has multiple values
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=3" title="Edit section: Pay Run Processing">edit</a>]</div><a name="Pay_Run_Processing"></a><h4>Pay Run Processing</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Reports
+</td></tr>
+<tr>
+<td> 100186  </td><td>  100226 </td><td>   </td><td> executeQuery </td><td> <b>SP - Pay Run Process Report</b><br />
+<p>Run Time: Weekdays 5:00am<br />
+Delivery Type: Email<br /><br />
+Attachment Required: Checked<br /><br />
+Purpose:<br /> 
+Lists clients and pay runs where action is required.<br />
+</p>
+<ol><li> Pay Run Invoice required - System Date is on or after the client's billing date and there no invoice has been generated. See also the <a href="Create_a_pay_run.html" title="Create a pay run">Create a pay run</a> process page.
+</li><li> Receipt is not fully allocated - disbursements cannot be make if billing rows are not receipted fully
+</li><li> Receipt is not allocated - no receipts have been processed for an invoiced pay run
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=4" title="Edit section: Receipt Processing">edit</a>]</div><a name="Receipt_Processing"></a><h4>Receipt Processing</h4>
+<p>Optional jobs. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Receipting
+</td></tr>
+<tr>
+<td> 100147  </td><td>  100199 </td><td>   </td><td> executeScript </td><td> <b>SP - Create Receipt batches for items</b><br />
+<p>Use this job to create pending receipt batches for client invoices.<br />
+This is only suited to a process where your client has confirmed the pay run and the expected funds normally match.<br />
+If you sometimes need to make adjustments to pay runs, do not create pending receipt batches, as this will slow down your process.
+</p>
+</td></tr>
+<tr>
+<td>   </td><td>   </td><td>   </td><td> executeScript </td><td> <b>SP - Create Direct Debit Receipt Batch</b><br />
+<p>Use this job to create pending receipt batches for direct debit client invoices.<br />
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=5" title="Edit section: Auto Build Claims">edit</a>]</div><a name="Auto_Build_Claims"></a><h5>Auto Build Claims</h5>
+<p>See also the <a href="Pay_Run_Receipts_Setup.html" title="Pay Run Receipts Setup">Pay Run Receipts Setup</a> page.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5">Auto Updates
+</td></tr>
+<tr>
+<td> 100181 </td><td>   </td><td>   </td><td> <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> </td><td> <b>Auto-build claims - with exceptions report</b><br />
+<p>Run Times: Mon-Fri 5am<br />
+Delivery Type: Email<br />
+Attachment Required: Checked<br />
+</p><p>Purpose:<br /> 
+Creates and posts claims where there are funds available.<br />
+Sends a report to the selected recipient with a report showing any contracts where autoBuildClaims cannot be completed with a message.<br />
+</p><p>Selection Criteria<br />
+</p>
+<ol><li> The item "Disbursement Type" is 'Recurring' 
+</li><li> The contract is in the <a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a> group 
+</li><li> There are funds available.
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=6" title="Edit section: Auto Post">edit</a>]</div><a name="Auto_Post"></a><h5>Auto Post</h5>
+<p>See also the <a href="Pay_Run_Receipts_Setup.html" title="Pay Run Receipts Setup">Pay Run Receipts Setup</a> page.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5">Auto Updates
+</td></tr>
+<tr>
+<td colspan="5"> The first three jobs below are usually set-up as a chain and run together.<br /> The frequency of the jobs depends on your business processes.<br />
+</td></tr>
+<tr>
+<td> 100150 </td><td>   </td><td>  </td><td> <a href="Sp_/_approvals_/_autoPostClaims.html" title="Sp / approvals / autoPostClaims">autoPostClaims</a> </td><td> <b>Auto-post claims</b><br />
+<p>Purpose:<br /> 
+Posts claims where there are funds available.
+Selection Criteria<br />
+</p>
+<ol><li> The item "Disbursement Type" is 'Claim' 
+</li><li> The contract is in the <a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a> group 
+</li><li> The claim is 'Pending Funds'
+</li><li> There are funds available.
+</li></ol>
+</td></tr>
+<tr>
+<td> 100151 </td><td>   </td><td> 100150  </td><td> autoBuildClaims </td><td> <b>Auto-build claims</b><br />
+<p>Purpose:<br /> 
+Creates and posts claims where there are funds available.
+Selection Criteria<br />
+</p>
+<ol><li> The item "Disbursement Type" is 'Recurring' 
+</li><li> The contract is in the <a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a> group 
+</li><li> There are funds available.
+</li></ol>
+</td></tr>
+<tr>
+<td> 100152 </td><td>   </td><td> 100151  </td><td> <a href="AutoPostPayments.html" title="AutoPostPayments">autoPostPayments</a> </td><td> <b>Disbursement Payments</b><br />
+<p>Purpose:<br /> 
+Posts payment schedule records where there are funds available.
+Selection Criteria<br />
+</p>
+<ol><li> The item "Disbursement Type" is 'Periodic' 
+</li><li> The contract is in the <a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a> group 
+</li><li> There are funds available.
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=7" title="Edit section: Exceptions">edit</a>]</div><a name="Exceptions"></a><h4>Exceptions</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=8" title="Edit section: Contracts">edit</a>]</div><a name="Contracts"></a><h5>Contracts</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts
+</td></tr>
+<tr>
+<td> 100182  </td><td>  100223 </td><td>   </td><td> executeQuery </td><td> <b><a href="SP_-_Contract_Balance_Checks.html" title="SP - Contract Balance Checks">SP - Contract Balance Checks</a></b><br />
+<p>Run Time: Weekdays 5:00am<br />
+Delivery Type: Email<br /><br />
+Attachment Required: Checked<br /><br />
+Purpose:<br /> 
+Lists benefit contracts where there is a balance on the contract that is not expected.<br />
+Use this report to investigate and correct any contract balance issues.<br />
+Vehicle contracts are excluded from this report and should be reviewed separately. 
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts / Billing
+</td></tr>
+<tr>
+<td> 100179  </td><td>  100221 </td><td>   </td><td> executeQuery </td><td> <b>SP - Contract Billing Date Checks</b><br />
+<p>Run Time: Weekdays 5:05am<br />
+Delivery Type: Email<br /><br />
+Purpose:<br /> 
+List packaged contracts where there are pending billing records that are not aligned with the client's stored "Payroll Date".<br />
+Use this list to update the contract billing dates as required.<br /> See also the process page <a href="Change_the_run_date_of_an_existing_payroll.html" title="Change the run date of an existing payroll">Change the run date of an existing payroll</a>.
+</p><p>Selection Criteria:<br />
+Shows Contracts if 
+</p>
+<ol><li> Contract is linked to an item
+</li><li> Contract Budgets are pending
+</li><li> Contract Billing date does not calculate to match one of the clients stored Pay Cycles and Payroll Dates
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts / Payments
+</td></tr>
+<tr>
+<td>    </td><td>    </td><td>   </td><td> executeQuery </td><td> Payment Checks
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts / Claims
+</td></tr>
+<tr>
+<td>    </td><td>    </td><td>   </td><td> executeQuery </td><td> <a href="Claim_Checks.html" title="Claim Checks">Claim Checks</a>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=9" title="Edit section: Exceptions - Direct Link Car Items">edit</a>]</div><a name="Exceptions_-_Direct_Link_Car_Items"></a><h5>Exceptions - Direct Link Car Items</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts / Billing
+</td></tr>
+<tr>
+<td> 100185  </td><td>  100225 </td><td>   </td><td> executeQuery </td><td> <b>SP - Car Contract Budget Checks</b><br />
+<p>Run Time: Weekdays 5:00am<br />
+Delivery Type: Email<br />
+Purpose:<br /> 
+List contracts where budgets are not complete for a car contract that is linked to an item.<br />
+Selection Criteria:<br /> 
+</p>
+<ol><li> Item is linked to a car profile and item "Contract ID" is the same and
+</li><li> Contracts / Billing - contains pending periodic budget records
+</li></ol>
+<p>Data Checks<br />
+</p>
+<ol><li> <b>ECM</b> - Contracts / FBT "ECM Flag" is checked and ECM budget is 0, or
+</li><li> <b>ECM GST</b> - Contracts / FBT "ECM Flag" is checked and ECM GST budget is 0, or
+</li><li> <b>FBT</b> or,
+<ol><li> Clients / Contract Defaults "Employer FBT Type" is 'Full FBT Payable' or 'Rebatable'
+</li><li> Contracts / FBT "Benefit Type" is not 'Exempt'
+</li><li> Contracts / FBT "FBT Treatment Type" is not 'EV Exempt Reportable'
+</li><li> Contracts / FBT "ECM Flag" is 'No'
+</li><li> FBT budget is 0
+</li></ol>
+</li><li> <b>FBT</b>
+<ol><li> Clients / Contract Defaults "Employer FBT Type" is 'Concessional 30000 Exempt' or 'Concessional 17000 Exempt'
+</li><li> Clients / Quote Defaults "Allow Quoting within Exempt Cap" is un-checked
+</li><li> Contracts / FBT "Benefit Type" is not 'Exempt'
+</li><li> Contracts / FBT "FBT Treatment Type" is not 'EV Exempt Reportable'
+</li><li> Contracts / FBT "ECM Flag" is 'No'
+</li><li> FBT budget is 0
+</li></ol>
+</li><li> <b>Operating Cost Method - Business Use</b> - contracts are excluded if
+<ol><li> Contracts / FBT "Benefit Type" is 'Operating' 
+</li><li> Contracts / FBT "Business Use" is 100%
+</li></ol>
+</li><li> <b>Operating Cost Method - ECMR</b> - contracts are excluded if
+<ol><li> Contracts / FBT "Benefit Type" is 'Operating'
+</li><li> Contracts / Events contains an active event for 'EmployeeContribution Required'.
+</li><li> Visit the <a href="Employee_Contribution.html" title="Employee Contribution">Employee Contribution</a> for details about this feature.
+</li></ol>
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=10" title="Edit section: Pay Runs">edit</a>]</div><a name="Pay_Runs"></a><h5>Pay Runs</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Period Dates
+</td></tr>
+<tr>
+<td> TBA  </td><td>  TBA </td><td>   </td><td> executeQuery </td><td> <b>SP - Invoice Date Checks</b><br />
+<p>Run Time: Weekdays 5:00am<br />
+Delivery Type: Report Queue<br />
+Attachment Required: Checked<br /><br />
+Purpose:<br /> 
+Lists pay run invoices that do not match with a pay run record.<br /> Only data from invoices that have a matching pay run record are used in the summary report comparison columns (Change, Previous).<br /><br />
+Fields:<br />
+Client Code, Pay Cycle Code, Payroll Date, Invoice No, Invoice Date, Data Check
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=11" title="Edit section: Updates">edit</a>]</div><a name="Updates"></a><h4>Updates</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=12" title="Edit section: Items">edit</a>]</div><a name="Items"></a><h5>Items</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Items
+</td></tr>
+<tr>
+<td> 100170 </td><td> 100212 </td><td> 100177 </td><td> executeImportTableData </td><td> <b>SP - Update Item Data</b><br />
+<p>Run Time: Daily 6:00am. See parent job.<br /> 
+Table: sp_employee_package_items<br /><br />
+Purpose: Update to match details in contracts when edits have been made.<br />
+Selection Criteria:
+</p>
+<ol><li> the linked contract has billing dates and <b>Cycles</b> do not match Last Billing Period
+</li><li> the linked contract has billing dates and <b>Start Date</b> does not match Contract First Billing Date
+</li><li> the linked contract has billing dates and <b>End Date</b> does not match Contract Last Billing Date
+</li><li> the linked contract has billing dates and <b>Deduction Per Pay</b> does not match Next Pending or Last Posted Billing Total
+</li><li> <b>Status</b> 
+<ol><li> is not 'Accepted' and Contract is order ( Suspend Date is blank and one un-dated billing record has been created or there are no billing records)
+</li><li> is not 'Active' and Contract is active ( Suspend Date is blank and billing records exist)
+</li><li> is not 'Suspended' and Contract is suspended  ( Suspend Date is populated)
+</li></ol>
+</li></ol>
+<p>Updates:<br /> 
+</p>
+<ol><li> Total Deduction
+<ol><li> if the linked contract has billing dates and Compress is 'Yes' and Inertia is 'Yes' and Cycles is less than Pay Cycles per Year - update to show Cycles X Deduction Per Pay
+</li><li> if the linked contract has billing dates and Compress is 'Yes' - update to show Cycles X Deduction Per Year
+</li><li> if the linked contract has billing dates - update to show  Cycles X Deduction Per Pay
+</li><li> otherwise, keep the stored Total Deduction
+</li></ol>
+</li><li> Cycles 
+<ol><li> if the linked contract has billing dates – update to show Last Billing Period (this can become different if billings are shortened or extended)
+</li><li> if the linked contract billing dates are blank, keep the stored Cycles
+</li><li> if the linked contract has a Suspend Date and there are no billing records, make this 0
+</li></ol>
+</li><li> Start Date
+<ol><li> if the linked contract billing dates are blank, keep the stored Start Date
+</li><li> if the linked contract has no billing records, keep the stored Start Date
+</li><li> if the linked contract has billing dates, use the First Billing Date (this can become different if the first billing is delayed)
+</li></ol>
+</li><li> End Date
+<ol><li> if the linked contract has billing dates, use the Last Billing Date (this can become different if billings are shortened or extended)
+</li><li> if the linked contract billing dates are blank, keep the stored End Date
+</li><li> if the linked contract has a Suspend Date and there are no billing records, make this date blank
+</li><li> otherwise, keep the stored End Date
+</li></ol>
+</li><li> Deduction Per Pay
+<ol><li> If there are pending deductions, show the amount of the next pending billing (item 1). Note <i>0 value billing records are excluded</i>
+</li><li> If there are no pending deductions, show the amount of the last posted billing (item 1). Note <i>0 value billing records are excluded</i>
+</li><li> otherwise, keep the stored amount
+</li></ol>
+</li><li> Status
+<ol><li> if the linked contract does not have a Suspend Date and there is an un-dated billing record - update to 'Accepted' 
+</li><li> if the linked contract does not have a Suspend Date and there are no billing records - update to 'Accepted' 
+</li><li> if the linked contract does not have a Suspend Date and there are pending billings - update to 'Active' 
+</li><li> if the linked contract has a Suspend Date - update to 'Suspended' 
+</li></ol>
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=13" title="Edit section: Contracts">edit</a>]</div><a name="Contracts_2"></a><h5>Contracts</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Contracts
+</td></tr>
+<tr>
+<td> 100183 </td><td> 100224 </td><td> 100173</td><td> executeScript  </td><td> <b>SP - Update Contract Budgets - EOL</b><br />
+<p>Run Time: Daily 6:00am. See parent job.<br /> 
+Table: fm_contract_budgets<br />
+Purpose:<br /> 
+Update Suspended Contracts to remove pending budgets that occur on or after the "Suspend Date".<br />
+These budgets do not show up in the Pay Run screen and will not be posted.<br />
+Removing these budgets improves the detail of contracts and items.<br />
+</p>
+</td></tr>
+<tr>
+<td> 100169 </td><td> 100211 </td><td> 100183 </td><td> executeImportTableData </td><td> <b>SP - Update Contract Data</b><br />
+<p>Run Time: Daily 6:00am. See parent job.<br />   
+Table: fm_contracts<br /><br />
+Purpose: Clean up details to maintain alignment with the details in the linked Item record.<br /> These can become mis-aligned over time as edits are made to the contract.<br />
+</p><p>Updates<br /> 
+</p>
+<ol><li> Contract Start – update to show first billing date.
+</li><li> Contract End – update to show last billing date.
+</li><li> Term – update to show updated term.
+</li><li> Inertia – update to show Item Inertia
+</li><li> Billing Periods – update to show highest billing period
+</li></ol>
+</td></tr>
+<tr>
+<td> 100177 </td><td> 100219 </td><td> 100169 </td><td> executeImportTableData </td><td> <b>SP - Update Contract Data - EOL</b><br />
+<p>Run Time: Daily 6:00am. See parent job.<br /> 
+Table: fm_contracts<br />
+Purpose: Update contracts to be suspended when they have reached end of life.<br /> This is done to save time for users and to show the suspended contracts clearly.<br /><br />
+Selection:
+</p>
+<ol><li> Package Item "Inertia" default is unchecked
+</li><li> Item "Inertia" is unchecked
+</li><li> Item Status is 'Active'
+</li><li> Contract Group is 'Salary Packaged' (Novated should be excluded as EOL Reconcilliation required)
+</li><li> There are posted billings
+</li><li> There are no pending billings
+</li><li> Final Billing Date is less than today
+</li></ol>
+<p>Updates:
+</p>
+<ol><li> Contract Status - 'Suspended'
+</li><li> Suspend Date - Final Billing Date + 1 day
+</li></ol>
+</td></tr>
+<tr>
+<td> 100110 </td><td> 100160 </td><td> </td><td> executeScript  </td><td> <b>`Contract Status` and `Contract Sub Status` update</b><br />
+<p>Run Times: 10:00pm Daily<br />
+Purpose:<br /> 
+Update Contract Status and Contract Sub Status if they are not congruent with the "Reg No" and contract date settings.<br /> This job needs to be updated in Salary Packaging is in use, as salary packaged contracts require different updates.<br />
+</p>
+</td></tr>
+<tr>
+<td> TBA (CAT-18024)</td><td> TBA </td><td> </td><td> executeScript  </td><td> <b>SP - Update Contract Status</b><br />
+<p>Run Times: 10:00pm Daily<br />
+Overview:<br />
+</p>
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=14" title="Edit section: Car Items">edit</a>]</div><a name="Car_Items"></a><h5>Car Items</h5>
+<p>Install and use the jobs below for Package Items configured with car profiles.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td> 100174 </td><td> 100216 </td><td> 100166 </td><td> executeImportTableData </td><td> <b>SP - Update Item from Vehicle Quote</b><br />
+<p>Run Time: See parent job.<br /> 
+Table: sp_employee_package_items<br />
+Process page: <a href="Car_Details_auto_updates.html" title="Car Details auto updates">Car Details auto updates</a>.<br />
+Purpose:<br />
+</p>
+<ol><li> This job updates item records from data in the linked vehicle quote.
+</li><li> Once a quote is added to the Item, the required fields for quoting are calculated from quote data and added into the Item record.
+</li></ol>
+<p>Selection:<br />
+</p>
+<ol><li> Employees / Item "Package Item" is linked to a car profile and the car profile <i>quote_flag</i> = 'yes'
+</li><li> Employees / Item <b>Car Details</b> "Quote ID" is populated and "Contract ID" is not populated
+</li><li> Employees / Item "Start Date" is on or after today's date less 1 month. E.g. if today is 19/05/2023 - "Start Date" must be on or after 19/04/2023
+</li><li> Employees / Item "Status" is 'Quoting' or 'Pending'
+</li><li> Employees / Item "Contract ID" field is blank
+</li><li> Quotes / Contract "Type Code" is linked to the same car profile as the Item
+</li><li> Quotes / Contract "Quote Status" is not 'Cancelled', ' Deleted' or 'Expired'.
+</li></ol>
+<p>Where:<br />
+</p>
+<ol><li> Employees / Item "Total Deduction" is not the same amount as Quotes / Lease <b>Budget Inclusive</b> "Totals" x "Term (Months)"
+</li><li> Employees / Item "Start Date" is less than one month old.
+</li></ol>
+<p><br />
+Updates:<br />
+</p>
+<ol><li> "Description" - shows the Contract Type and Variant Short Description. An 'O' is also added if the vehicle is using Operating Cost Method for FBT.
+</li><li> "Total Deduction" = Quotes / Lease <b>Budget Inclusive</b> "Totals" x "Term (Months)"
+</li><li> "Employee Contribution"
+<ol><li> If "Use ECM?" is un-checked then 0
+</li><li> Else "FBT Value" x fbt_statutory_rate (20%) 
+</li></ol>
+</li><li> "Cycles" - ROUND((Term (Months) / 12) * pay_cycles_per_year,0)
+</li><li> "End Date" - calculated from "Cycles" and "Start Date" using the employee's "Pay Cycle"
+</li><li> "Deductions Per Pay" - ROUND ("Total Deduction" / "Cycles",2)
+</li></ol>
+</td></tr>
+<tr>
+<td> 100175 </td><td> 100220 </td><td> 100174 </td><td> executeImportTableData </td><td> <b>SP - Update Item Car Profile from Vehicle Contract</b><br />
+<p>Run Time: See parent job.<br /> 
+Table: sp_employee_package_item_cars<br />
+Process page: <a href="Car_Details_auto_updates.html" title="Car Details auto updates">Car Details auto updates</a>.<br />
+Purpose:<br />
+</p>
+<ol><li> This job adds a Contract ID to the Item Car Profile when the linked quote has been accepted.
+</li><li> This job removes any stored Quote ID and Contract ID records from the Item Car Profile when the linked item has been deleted
+</li></ol>
+<p><b>Selection to add Contract ID:</b><br />
+</p>
+<ol><li> Employees / Item "Item ID" has a linked item car profile and the car profile <i>contract_flag</i> = 'yes'
+</li><li> Employees / Item <b>Car Details</b> "Quote ID" is populated
+</li><li> Employees / Item "Contract ID" field is blank
+</li><li> Contracts / Contract "Driver ID" is the same as Employees / Item "Employee ID"
+</li><li> Contracts / Contract "Client Code" is the same as Employees / Contact "Client"
+</li><li> Contracts / Contract "Pay Cycle" is the same as Employees / Contact "Pay Cycle"
+</li><li> There is no other Item Car Profile record linked to this contract
+</li></ol>
+<p>Updates:<br />
+</p>
+<ol><li> <i>[sp_employee_package_item_cars]contract_id</i> added
+</li></ol>
+<p><b>Selection to remove Quote ID and Contract ID:</b><br />
+</p>
+<ol><li> Employees / Item "Item ID" has a linked item car profile
+</li><li> Employees / Item <b>Car Details</b> "Quote ID" is populated OR "Contract ID" is populated
+</li><li> Employees / Item "Status" is 'Deleted' (you can no longer see this item on screen)
+</li></ol>
+<p>Updates:<br />
+</p>
+<ol><li> <i>[sp_employee_package_item_cars]quote_id</i> is set to null
+</li><li> <i>[sp_employee_package_item_cars]contract_id</i> is set to null
+</li></ol>
+</td></tr>
+<tr>
+<td> 100180 </td><td> 100222 </td><td> 100175 </td><td> executeImportTableData </td><td> <b>SP - Update Item from Vehicle Contract</b><br />
+<p>Run Time: See parent job.<br /> 
+Table: sp_employee_package_items<br />
+Process Page: <a href="Salary_Packaging.html#Car_Benefits" title="Salary Packaging">Car Benefits</a><br />
+Purpose:<br />
+</p>
+<ol><li> This job updates Item records from data in the linked vehicle contract.
+</li><li> Once a contract is added to the Item, the required fields for disbursement are calculated from contract data and added into the Item record.
+</li><li> Use this job when you are using a separate Benefit Contract for Salary Packaging (I.e. you have a Vehicle Contract and a corresponding Benefit Contract)
+</li></ol>
+<p>Selection:<br />
+</p>
+<ol><li> Employees / Item "Package Item" is linked to a car profile and the car profile <i>contract_flag</i> = 'yes' and <i>contract_item_flag</i> = 'no'
+</li><li> Employees / Item "Pay Cycle" is not 'REG12'
+</li><li> Employees / Item <b>Car Details</b> "Contract ID" is populated
+</li><li> Employees / Item "Status" is 'Quoting' or 'Pending'
+</li><li> Employees / Item "Contract ID" field is blank
+</li><li> Employees / Item "Disbursement Type" is 'Periodic'
+</li><li> Employees / Item "Disbursement Net" does not match Contracts / Lease "Amount Net" for Period 1 or 
+</li><li> Employees / Item "Total Deductions" does not match Contracts / Lease "Life Budget Total"
+</li><li> Contracts / Contract "Driver ID" is the same as Employees / Item "Employee ID"
+</li><li> Contracts / Contract "Client Code" is the same as Employees / Contact "Client"
+</li><li> Contracts / Contract "Periodic Interval" is the same as Employees / Contact "Pay Cycle"
+</li></ol>
+<p>Updates:<br />
+</p>
+<ol><li> "Description" - Code, (O if Operating), Variant description
+</li><li> "Total Deduction" - Contracts / Lease Life Budget Total (if billings are populated), otherwise Quote Budget Total
+</li><li> "Employee Contribution" 
+</li><li> "Cycles" - the contract's max billing period
+</li><li> "Start Date" - not changed
+</li><li> "End Date" - the contract's max billing date (if billings have been built)
+</li><li> "Deductions Per Pay" - Life Budget Total / Cycles
+</li><li> "Reference" - Contracts / Contract "Reg No" if this is not 'ORDER'
+</li><li> "Disbursement Cycle" = Contracts / Contract "Periodic Interval"
+</li><li> "Number of Disbursements" - Contracts / Billing "Total Billings" 
+</li><li> "1st Disbursement Due" - Employees / Item  "Start Date"
+</li><li> "Disbursement GST" - Contracts / Lease "Total" for Period 1
+</li><li> "Disbursement Net" - Contracts / Lease "GST" for Period 1
+</li></ol>
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=15" title="Edit section: Direct Link Car Items">edit</a>]</div><a name="Direct_Link_Car_Items"></a><h5>Direct Link Car Items</h5>
+<p>Install and use the jobs below if you are offering the following package items: direct novated leases or <a href="Direct_Link_Associate_Lease_Managed.html" title="Direct Link Associate Lease Managed">Direct Link Associate Lease Managed</a>.<br />
+See also the process page <a href="Direct_link_car_benefit_auto_updates.html" title="Direct link car benefit auto updates">Direct link car benefit auto updates</a>.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Directly Packaged Novated Lease
+</td></tr>
+<tr>
+<td> 100178 </td><td> 100217 </td><td> 100180 </td><td> executeImportTableData </td><td> <b>SP - Update Direct Link Item to link Vehicle Contract</b><br />
+<p>Table: sp_employee_package_items<br />
+Purpose:<br />
+</p>
+<ol><li> Links the item directly to the vehicle contract for the following package items 
+<ol><li> <a href="Direct_Link_Novated_Lease.html" title="Direct Link Novated Lease">Direct Link Novated Lease</a>
+</li><li> <a href="Direct_Link_Associate_Lease_Managed.html" title="Direct Link Associate Lease Managed">Direct Link Associate Lease Managed</a>
+</li></ol>
+</li></ol>
+<p>Selection:<br />
+</p>
+<ol><li> Employees / Item "Package Item" is linked to a car profile and the car profile <i>quote_flag</i> = 'yes' and <i>contract_flag</i> = 'yes'
+</li><li> Employees / Item <b>Car Details</b> "Contract ID" is populated
+<ol><li> Contracts / Contract "Contract Type" is linked to the same car profile as the item
+</li><li> Contract <i>pay_cycle_id</i> matches the Employees / Contact "Pay Cycle"
+</li></ol>
+</li><li> Employees / Item "Disbursement Type" is 'Claim'
+</li><li> Employees / Item "Contract ID" field is blank
+</li></ol>
+<p><br />
+Updates:<br />
+</p>
+<ol><li> Employees / Item "Contract ID" is populated from the <b>Car Details</b> "Contract ID"
+</li></ol>
+</td></tr>
+<tr>
+<td> 100176 </td><td> 100218 </td><td> 100178 </td><td> executeImportTableData </td><td> <b>SP - Update Direct Link Item from Vehicle Contract</b><br />
+<p>Table: sp_employee_package_items<br />
+Purpose:<br />
+</p>
+<ol><li> This job updates items to reflect updates being done in direct linked vehicle contracts.<br />
+<ol><li> <a href="Direct_Link_Novated_Lease.html" title="Direct Link Novated Lease">Direct Link Novated Lease</a>
+</li><li> <a href="Direct_Link_Associate_Lease_Managed.html" title="Direct Link Associate Lease Managed">Direct Link Associate Lease Managed</a>
+</li></ol>
+</li></ol>
+<p>Selection:<br />
+</p>
+<ol><li> Employees / Item "Package Item" is linked to a car profile and the car profile <i>quote_flag</i> = 'yes' and <i>contract_flag</i> = 'yes'
+</li><li> Employees / Item <b>Car Details</b> "Contract ID" is populated
+</li><li> Employees / Item "Contract ID" field is populated 
+</li><li> Contracts / Contract "Contract ID" matches both the item and the car details "Contract ID"
+</li></ol>
+<p>Updates:<br />
+</p>
+<ol><li> "Disbursement Type" - 'Claim'
+</li><li> "Description" - contract's "Description"
+</li><li> "Total Deduction" - "Cycles" x "Deductions Per Pay"
+</li><li> "Employee Contribution" - Pay Cycles Per Year x next pending EC or ECM Total budget (this is an annualised amount)
+</li><li> <i>fbt_payable</i> - Pay Cycles Per Year x next pending FBT Total budget (this is an annualised amount)
+</li><li> "Cycles" - the contract's max billing period
+</li><li> "Start Date" - the contract's min billing date (if billings have been built)
+</li><li> "End Date" - the contract's max billing date (if billings have been built)
+</li><li> "Deductions Per Pay" - the contract's next billing total (if there are pending billings)
+</li><li> "Status"
+<ol><li> If contract "Contract Start" is blank and "Suspend Date" is blank then 'Accepted'
+</li><li> If contract "Contract Start" is populated and "Suspend Date" is blank and "Reg No" is not 'ORDER' then 'Active'
+</li><li> If contract "Suspend Date" is populated and no pending billings exist then 'Suspended'
+</li></ol>
+</li><li> "Reference" - contract's "Reg Number"
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=16" title="Edit section: Pay Run updates">edit</a>]</div><a name="Pay_Run_updates"></a><h5>Pay Run updates</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Pay Runs
+</td></tr>
+<tr>
+<td> 100171 </td><td> 100213 </td><td>   </td><td> executeScript </td><td> <b>SP - sp_pay_runs - delete unmatched records</b><br />
+<p>Run Time: Daily 6:00am.<br /> 
+Table: sp_pay_runs<br /><br />
+Purpose: Delete pay run records when they no longer match the client's payroll dates.<br /> This can happen if one of the client's payroll dates are changed.<br />
+</p><p>Deletes pay run records if:<br />
+</p>
+<ol><li> the Client's stored Pay Cycles and Payroll Dates do not calculate to match the pay run billing date
+</li><li> the Client's Pay Run Events do not not match the pay run billing date 
+</li><li> the Contract's stored Billings do not match the pay run billing date
+</li></ol>
+</td></tr>
+<tr>
+<td> 100172 </td><td> 100214 </td><td>  100171 </td><td> executeImportTableData </td><td> <b>SP - sp_pay_runs - create records</b><br />
+<p>Run Time: Daily 6:00am<br /> 
+Table: sp_pay_runs<br /><br />
+Purpose: Create records that underpin pay run processes by creating a header record for each Client, Pay Cycle, Billing Date combination.<br /> These records are used in 
+</p>
+<ol><li> Pay Run preview reports
+</li><li> Pay Run screen reports
+</li></ol>
+<p>Updates:<br />
+A sequence of Client/ Pay Cycle / Billing Date pay run records are created for each client for the next three months<br />
+Missing records are added on each time this job runs to keep the sequence topped up
+Records are created when
+</p>
+<ol><li> An item-contracts with a pending billing that has a sequence that matches one of the client's Pay Cycle and Payroll Date records
+<ol><li> Records that do not match will be reported to you in <b>SP - Contract Billing Date Checks</b>
+</li></ol>
+</li><li> If a client has item-contracts with a pending billings, the next Client/ Pay Cycle / Billing Date record will still be added even if no billing records fall in that pay run.
+</li><li> This is required to keep reporting continuity of reporting.
+</li></ol>
+</td></tr>
+<tr>
+<td> 100173 </td><td> 100215 </td><td>  100172 </td><td> executeImportTableData </td><td> <b>SP - sp_pay_runs - add pay_run_dates</b><br />
+<p>Run Time: Daily 6:00am. See parent task.<br /> 
+Table: sp_pay_runs<br /><br />
+Purpose: Add pay run dates to existing records.
+</p><p>Updates:<br />
+If Pay Cycle is Weekly, Fortnightly or Monthly, the following dates are calculated and added.
+</p>
+<ol><li> pay_run_date - matches the billing_date.
+</li><li> pay_run_reporting_date - the date Pay Run Reports should be sent.
+</li><li> funds_due_date - can be updated and used as a <a href="Pay_run_report_email_placeholders.html" title="Pay run report email placeholders">Pay run report email placeholder</a>
+<ol><li> This date can be derived from the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "<a href="./Clients:Contract_defaults:Billing_Terms.html" title="Clients:Contract defaults:Billing Terms">Billing Terms</a>" of the client.
+</li></ol>
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=17" title="Edit section: Employees / Transactions">edit</a>]</div><a name="Employees_.2F_Transactions"></a><h5>Employees / Transactions</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td> 100166 </td><td> 100208 </td><td>   </td><td> executeImportTableData </td><td> <b>Employees / Transactions - Disbursement</b><br />
+<p>Run Time: <br /> 
+Table: sp_employee_transactions<br />
+Purpose: Create or update records that are displayed in the <a href="./Employees:Transactions.html" title="Employees:Transactions">Employees / Transactions</a> tab that are payments or claims.<br />
+</p><p>Job updates:<br /><br />
+<b> Date</b>
+</p>
+<ol><li> If record is linked to an active BECS batch or BPAY batch, then [gb_becs]transaction_date or [gb_bpay]transaction_date
+</li><li> If record is linked to an active BECS batch or BPAY batch, and transaction_date is not populated, [gb_becs]created or [gb_bpay]created
+</li><li> [fm_maintenance]invoice_date
+</li><li> [pl_payables]payment_date
+</li></ol>
+<p><b>Description</b>
+</p>
+<ol><li> If "Group" is 'Salary Packaged' then [sp_employee_package_items]description
+</li><li> If "Group" is  not 'Salary Packaged' then 
+<ol><li> [fm_maintenance]description or
+</li><li> If "Payment Type" is not 'Single Posting Class' then [fm_contract_payment_structures]payment_type_[fm_contract_payment_schedules]payment_date
+</li><li> If "Payment Type" is 'Single Posting Class' then [gl_posting_class]name_[fm_contract_payment_schedules]payment_date
+</li></ol>
+</li></ol>
+<p><b>Reference</b>
+</p>
+<ol><li> The "Reference" field will show like this: 
+<ol><li> {approval_id} - if record is pending, history-only or posted and no becs or bpay will be attached
+</li><li> {payment_no} - if record is pending, history-only or posted and no becs or bpay will be attached
+</li><li> {approval_id}:{becs_id}
+</li><li> {approval_id}:{bpay_id} 
+</li><li> {payment_no}:{becs_id}
+</li><li> {payment_no}:{bpay_id}
+</li></ol>
+</li></ol>
+<p><b>Status</b>
+</p>
+<ol><li><b>Pending</b> when records are posted and no BECS batch or BPAY batch is linked
+</li><li><b>Posted</b> when
+<ol><li> Linked to an active BECS batch or a BPAY batch or
+</li><li> No BECS batch or BPAY batch will be linked
+</li></ol>
+</li><li> <b>History Only</b> when claim has a history only status
+</li><li> <b>Deleted</b> (no longer visible) when claim or payment records has a deleted status
+</li></ol>
+<p><br />
+</p>
+</td></tr>
+<tr>
+<td> 100187 </td><td> 100228 </td><td>  100166 </td><td> executeImportTableData </td><td> <b>SP - Employees / Transactions - Payroll Deduction</b><br />
+<p>Run Time: Refer to parent job.<br />
+Table: sp_employee_transactions<br />
+Purpose: Update records that are displayed in the <a href="./Employees:Transactions.html" title="Employees:Transactions">Employees / Transactions</a> tab.<br /><br />
+System Updates: Payroll Deduction records are created and updated by the system in the following situations:<br />
+</p>
+<ol><li> When a Pay Run is invoiced - records are created here at pending status
+</li><li> When a Pay Run invoice is unposted - records are updated here to deleted status<br /><br />
+</li></ol>
+<p>Job Updates:<br /><br />
+<b>Reference</b>
+</p>
+<ol><li> {invoice_no}:{receipt_id} - when an invoice record is fully paid on a single receipt
+</li><li> {invoice_no}:Multiple - when an invoice record is fully paid on multiple receipts
+</li></ol>
+<p><b>Status</b>
+</p>
+<ol><li> <b>Posted</b> when an invoice record is fully paid
+</li><li> <b>Deleted</b> and no longer visible when
+<ol><li> When an invoice record is unposted
+</li><li> When the item's "Benefit Type" is 'Exempt' and "Disbursement Type" is 'Claim' and the invoice record has a total of 0
+</li></ol>
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=18" title="Edit section: Associate Lease - Depreciation Report Process">edit</a>]</div><a name="Associate_Lease_-_Depreciation_Report_Process"></a><h4>Associate Lease - Depreciation Report Process</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Reports
+</td></tr>
+<tr>
+<td> TBA </td><td> TBA </td><td>   </td><td> executeQuery  </td><td> <b>SP - Associate Lease Depreciation Report</b><br />
+<p>Run Time: Jan - Jul, Mon 5:30am EST<br />
+Delivery Method: Report Queue<br />
+Recipients: <br />
+</p><p>Purpose:<br />
+Use this report to review and update selected contracts towards the end of the financial year.<br />
+Only run the <b>Annual Email to Employees</b> jobs shown below in July after this report is returning completely correct data.<br />
+</p><p>Selection Criteria:<br />
+Report will generate if
+</p>
+<ol><li> Contract is linked to an Item
+</li><li> <i>[sp_package_item_profile_cars]depreciation_reporting_flag</i> is 'yes'
+</li><li> Contracts / Finance "Depreciation Start" is less than or equal to 30th June next year
+</li><li> Contracts / Finance "Depreciation Start" is not blank
+</li><li> Contracts / FBT "FBT Liability End Date" is greater or equal to 1st July this year
+</li></ol>
+<p>Calculations:<br />
+Calculations include data from previous contracts if the linked item has a parent record.
+</p>
+</td></tr>
+<tr>
+<td> TBA </td><td> TBA </td><td>   </td><td> executeQuery  </td><td> <b>SP - Associate Lease Exception Report</b><br />
+<p>Run Time: Mon 5:30am EST<br />
+Delivery Method: Report Queue<br />
+Recipients: <br />
+</p><p>Purpose:<br />
+Use this report to review and update selected contracts if Depreciation information is not populated.<br />
+</p><p>Selection Criteria:<br />
+Report will generate if
+</p>
+<ol><li> Contract is linked to an Item
+</li><li> <i>[sp_package_item_profile_cars]depreciation_reporting_flag</i> is 'yes'
+</li><li> Contracts / Contract "Contract Start" is greater than 30/06/2023
+<ol><li> Contracts / Finance "Depreciation Method" is null OR
+</li><li> Contracts / Finance "Depreciation Rate" is null OR
+</li><li> Contracts / Finance "Depreciable Amount" is null OR
+</li><li> Contracts / Finance "Depreciation Start" is null OR
+</li><li> Contracts / Finance "Depreciation Start" is '0000-00-00'
+</li></ol>
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> eventQuery
+</td></tr>
+<tr>
+<td> TBA </td><td> TBA </td><td>  </td><td> eventQuery  </td><td> <b>SP - Associate Lease Depreciation</b><br />
+<p>Run Time: Annually.<br />
+Creates a Contracts / Event <b>Depreciation</b> record for the current financial year.<br />
+</p><p>Selection:<br />
+</p>
+<ol><li> Contracts / Events - there is <u>no</u> active event record for <b>Depreciation</b> in the current year<br />
+</li></ol>
+<p>Updates:<br />
+</p>
+<dl><dd> <b>Value</b> updates to show the year when the job is run. E.g. if run in 2022, then 2022
+</dd><dd> <b>Odo / Amt</b> updates with the calculated depreciation for the year when the job is run.
+</dd><dd> <b>Due Date</b> updates to the 30th June for the year when the job is run.. E.g if run in 2022, then 30/06/2022
+</dd></dl>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> mailQuery
+</td></tr>
+<tr>
+<td> TBA </td><td> TBA </td><td>  TBA </td><td> mailQuery  </td><td> <b>SP - Associate Lease Statement</b><br />
+<p>Run Time: Annually.<br />
+Creates a Drivers / Events <b>Associate Lease Statement</b> record that stores an email and report sent to the driver<br />
+</p><p>Selection:<br />
+</p>
+<ol><li> Contracts / Events - there is an active event record for <b>Depreciation </b> in the current year.
+</li><li> Employees / Events - there is <u>no</u> active event for <b>Associate Lease Statement</b> in the current year.
+</li></ol>
+<p>Updates:<br />
+</p>
+<dl><dd> <b>Value</b> updates to show the year when the job is run. E.g. if run in 2023, then 2023
+</dd><dd> <b>Due Date</b> updates to the 30th June for the year when the job is run.. E.g if run in 2023, then 30/06/2023
+</dd><dd> <b>Attachment</b> reports are attached and files are named as follows: Associate Lease Statement {YYYY} {Employee ID}
+</dd></dl>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=19" title="Edit section: Annual Tasks">edit</a>]</div><a name="Annual_Tasks"></a><h4>Annual Tasks</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 5%;">Job ID</th><th style="width: 5%;">Query ID</th><th style="width: 5%;">Parent</th><th style="width: 10%;">Type</th><th style="width: 75%;">Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Annual Tasks
+</td></tr>
+<tr>
+<td> TBA </td><td> 100192 </td><td>  TBA </td><td> mailQuery  </td><td> <b>SP - Annual Task Employee Super</b><br />
+<p>Purpose<br />
+</p>
+<ol><li> As one of your <a href="Salary_Packaging.html#Annual_Tasks" title="Salary Packaging">annual tasks</a>, use the report to review and update employee super amounts as required.<br />
+</li><li> The report is set out to show records that should be updated at the top
+</li><li> The last two fields in the report can be used to create an upload file for Import Table Data
+</li></ol>
+<p>Selection<br />
+</p>
+<ol><li> <b>Employees / Contact</b> "Employee End" is blank
+</li><li> <b>Employees / Contact</b> "Salary" is populated
+</li></ol>
+<p>Fields - <i>key fields are noted below</i><br />
+</p>
+<ol><li> Sgr Value = most recent <i>[gb_controls]superannuation_guarantee_rate</i> record where <i>[gb_controls]effective_from</i> date is less than or equal to report run date
+</li><li> Fixed Super Rate - <b>Clients / Quote Defaults</b> "Fixed Super Rate"
+</li><li> Driver Id - at end of report for quick save to use in Import Table Data
+</li><li> Employer Super - at end of report for quick save to use in Import Table Data
+</li></ol>
+<p>Sort Order<br />
+</p>
+<ol><li> Sort Order (1 = update, 0, matches so no update needed)
+</li><li> Current Rate (lowest to highest)
+</li><li> Client Code, Pay Cycle, Given Name
+</li></ol>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=20" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=21" title="Edit section: Reports">edit</a>]</div><a name="Reports"></a><h5>Reports</h5>
+<ul><li> (CAT-18343) SP - Pay Run Process Report (Job ID 100186, Query ID 100226) V0.1. Live 03/11/2023
+</li><li> (DEV-22304) Employees / Transactions - Description field. Change source. Live dd/mm/2025
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=22" title="Edit section: Exceptions">edit</a>]</div><a name="Exceptions_2"></a><h5>Exceptions</h5>
+<ul><li> (CAT-18243) SP - Contract Billing Date Checks (Job ID 100179, Query ID 100221) - V0.1. Live 07/06/2023
+</li><li> (CAT-18243) SP - Contract Billing Date Checks (Job ID 100179, Query ID 100221) - V0.2. Live 11/12/2023
+</li></ul>
+<p><br />
+</p>
+<ul><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225). V0.1 Live 06/10/2023
+</li><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225). V0.2 Live 10/10/223
+</li><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225) V0.3. Live 24/11/2023
+</li><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225) V0.4. Live 08/12/2023
+</li><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225) V0.6. Live 16/02/2024
+</li><li> (CAT-18324) SP - Car Contract Budget Checks (Job ID 100185, Query ID 100225) V0.6. Live 23/04/2024
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=23" title="Edit section: Updates - Pay Runs">edit</a>]</div><a name="Updates_-_Pay_Runs"></a><h5>Updates - Pay Runs</h5>
+<ul><li> (CAT-18132) SP - sp_pay_runs - create records (Job ID 100172, Query ID 100214) - V0.3. Live 05/07/2023
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=24" title="Edit section: Car Profiles">edit</a>]</div><a name="Car_Profiles"></a><h5>Car Profiles</h5>
+<ul><li> (CAT-18162) SP - Update Item from Vehicle Quote (Job ID 100174, Query ID 100216) V0.2. Live 03/06/2023
+</li><li> (CAT-18240) SP - Update Item Car Profile from Vehicle Contract (Job ID 100175, Query ID 100220) V0.1. Live 03/06/2023
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=25" title="Edit section: Updates - Car Profile - Item linked to Car Contract">edit</a>]</div><a name="Updates_-_Car_Profile_-_Item_linked_to_Car_Contract"></a><h5>Updates - Car Profile - Item linked to Car Contract</h5>
+<ul><li> (CAT-18152) SP - Update Item to link Novated Contract (Job ID 100178, Query ID 100217) - V0.2. Live 11/07/2023
+</li></ul>
+<p><br />
+</p>
+<ul><li> (CAT-18155) SP - Update Item from Novated Contract (Job ID 100176, Query ID 100218) - V0.1. Live 28/02/2023
+</li><li> (CAT-18155) SP - Update Item from Novated Contract (Job ID 100176, Query ID 100218) - V0.2. Live 11/07/2023
+</li><li> (CAT-18155) SP - Update Item from Novated Contract (Job ID 100176, Query ID 100218) - V0.3. Live 29/08/2023
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;action=edit&amp;section=26" title="Edit section: Annual Tasks">edit</a>]</div><a name="Annual_Tasks_2"></a><h5>Annual Tasks</h5>
+<ul><li> (CAT-18704) SP - Annual Task Employee Super (Job ID x, Query ID y)</small>
+</li></ul>
+<div class="printfooter">
+Retrieved from "<a href="Salary_Packaging_Scheduler_Jobs.html">https://help.catch-e.net.au/mediawiki/index.php/Salary_Packaging_Scheduler_Jobs</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Salary_Packaging_Scheduler_Jobs">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Salary_Packaging_Scheduler_Jobs.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salary_Packaging_Scheduler_Jobs&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.10 secs. -->
+</body></html>

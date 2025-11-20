@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Set-up Screen Reports,Contracts:Fbt,Contracts:Finance,Contracts:Lease,Contracts:Order,Contracts:Payout,Derived Fields,Derived Fields payroll advice,Disbursements (ABA),Disbursements (ABA) Preview,Disbursements (ABA) Report" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Set-up Screen Reports - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Set-up Screen Reports</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Set-up_Screen_Reports.html#column-one">navigation</a>, <a href="Set-up_Screen_Reports.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Implementation.html" title="System Implementation">System Configuration</a> &rarr; <a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> <strong>Set-up Screen Reports</strong> | <a href="Set-up_Screen_Report_Templates.html" title="Set-up Screen Report Templates">Set-up Screen Report Templates</a> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Creating_Queries"><span class="tocnumber">2</span> <span class="toctext">Creating Queries</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Default_Reports"><span class="tocnumber">3</span> <span class="toctext">Default Reports</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Sample_table_population"><span class="tocnumber">4</span> <span class="toctext">Sample table population</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Field_details"><span class="tocnumber">5</span> <span class="toctext">Field details</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#Useful_Queries"><span class="tocnumber">6</span> <span class="toctext">Useful Queries</span></a></li>
+<li class='toclevel-1'><a href="Set-up_Screen_Reports.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Screen Reports are created by <a href="User_Defined_Queries.html" title="User Defined Queries">writing and storing an sql query</a> in the <i>[gb_report_queries]</i> table. The table has location fields that control which screen the report will be available on.<br />
+</p><p>You can also use xlsx, docx and pdf outputs for your screen report.<br /> Go to the <a href="Set-up_Screen_Report_Templates.html" title="Set-up Screen Report Templates">Set-up Screen Report Templates</a> page for the steps required to create these outputs, after you have created the screen report you want.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=2" title="Edit section: Creating Queries">edit</a>]</div><a name="Creating_Queries"></a><h4>Creating Queries</h4>
+<dl><dd> <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> 
+</dd><dd> <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a>
+<dl><dd> Unfortunately most derived field libraries are not available to use in screen reports yet. 
+</dd><dd> The <a href="Derived_Fields_payroll_advice.html" title="Derived Fields payroll advice">payroll_advice</a> library is currently available.
+</dd></dl>
+</dd><dd> <a href="Encrypted_Fields.html" title="Encrypted Fields">Encrypted Fields</a> 
+</dd><dd> <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) Format</a>
+</dd><dd> <a href="Office(xlsx).html" title="Office(xlsx)"> Office(xlsx) Format</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=3" title="Edit section: Default Reports">edit</a>]</div><a name="Default_Reports"></a><h4>Default Reports</h4>
+<p>The records below are stored in <i>[gb_report_queries]</i> as standard entries.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>module</th><th>page</th><th>sub_page</th><th>name</th><th>output_filename_alias</th><th>status_flag</th><th>Location </th><th> Key
+</th></tr>
+<tr>
+<td>fm</td><td>contracts</td><td>fbt</td><td><a href="Transactions_Report_Setup.html" title="Transactions Report Setup">transactions</a></td><td> </td><td>active</td><td><a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contract / FBT</a> </td><td>
+</td></tr>
+<tr>
+<td>fm</td><td>	contracts</td><td>	fbt	</td><td>driver_portal</td><td> </td><td>active</td><td> <a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contract / FBT</a>  </td><td>
+</td></tr>
+<tr>
+<td>  </td><td>		</td><td>	</td><td>driver_portal</td><td></td><td> active</td><td> <a href="Driver_Portal.html" title="Driver Portal">Driver Portal</a>  </td><td>
+</td></tr>
+<tr>
+<td>fm</td><td>contracts</td><td>payout </td><td> payout_report </td><td> </td><td>active</td><td> <a href="./Contracts:Payout.html" title="Contracts:Payout">Contract / Payout</a>  </td><td>
+</td></tr>
+<tr>
+<td>gl</td><td>	becs</td><td>	reimbursements	</td><td><a href="Reimbursements_(ABA)_Preview.html" title="Reimbursements (ABA) Preview">preview</a></td><td>reimbursements_preview</td><td>active</td><td>  <a href="General_Ledger_Export_To_BECS.html" title="General Ledger Export To BECS">BECS / Reimbursements (ABA)</a> </td><td> #becs_id#
+</td></tr>
+<tr>
+<td>gl</td><td>	becs</td><td>	reimbursements	</td><td><a href="Reimbursements_(ABA)_Report.html" title="Reimbursements (ABA) Report">transactions</a></td><td>reimbursements_{BECS ID}</td><td>active</td><td> <a href="General_Ledger_Export_To_BECS.html" title="General Ledger Export To BECS">BECS / Reimbursements (ABA)</a> </td><td> #becs_id#
+</td></tr>
+<tr>
+<td> gl </td><td>	becs </td><td>	disbursements </td><td> <a href="Disbursements_(ABA)_Preview.html" title="Disbursements (ABA) Preview">client_preview</a> </td><td>disbursements_preview</td><td>active</td><td> <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA)</a>  </td><td> #becs_id#
+</td></tr>
+<tr>
+<td> gl </td><td>	becs </td><td>	disbursements </td><td> <a href="Disbursements_(ABA)_Preview.html" title="Disbursements (ABA) Preview">company_preview</a> </td><td>disbursements_preview</td><td> active</td><td> <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA)</a>  </td><td> #becs_id#
+</td></tr>
+<tr>
+<td> gl </td><td>	becs </td><td>	disbursements </td><td> <a href="Disbursements_(ABA)_Report.html" title="Disbursements (ABA) Report">transactions</a> </td><td>disbursements_{BECS ID} </td><td> active</td><td> <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA)</a>  </td><td> #becs_id#
+</td></tr>
+<tr>
+<td> gl </td><td>	xero </td><td>	general_ledger </td><td> &nbsp; </td><td>&nbsp; </td><td> &nbsp; </td><td> <a href="General_Ledger_Export_To_Xero.html" title="General Ledger Export To Xero">Export / Xero PL Exports</a> </td><td> #export_id#
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=4" title="Edit section: Sample table population">edit</a>]</div><a name="Sample_table_population"></a><h4>Sample table population</h4>
+<p>You can set up screen reports on each of the screens listed below. This also shows the required configuration you need&nbsp;;
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>report_query_id</th><th>module</th><th>page</th><th>sub_page</th><th>name</th><th>description</th><th>query</th><th>user_id_last_edit</th><th>last_edit</th><th>template_id</th><th>output_filename_alias</th><th>print_format</th><th>status_flag
+</th></tr>
+<tr>
+<td>100000</td><td>fm</td><td>contracts</td><td>order</td><td>file name</td><td>Select from the <a href="./Contracts:Order.html" title="Contracts:Order">Contracts / Order</a> tab</td><td>WHERE contract_id = '#t1.contract_id#' </td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100001</td><td>fm</td><td>contracts</td><td>finance</td><td>file name</td><td>Select from the <a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts / Finance</a> tab </td><td>WHERE contract_id = '#t1.contract_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100002</td><td>fm</td><td>contracts</td><td>lease</td><td>file name</td><td>Select from the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab </td><td>WHERE contract_id = '#t1.contract_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100003 </td><td>fm</td><td>contracts</td><td>lease</td><td>file name</td><td>Select from the <a href="./Contracts:Payout.html" title="Contracts:Payout">Contracts / Payout</a> tab. </td><td>
+</td></tr>
+<tr>
+<td>100004</td><td>fm</td><td>contracts</td><td>fbt</td><td>file name</td><td>Select from the <a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contracts / FBT</a> tab</td><td>WHERE contract_id = '#t1.contract_id#' </td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100005</td><td>qt</td><td>quotes</td><td>contract</td><td>file name</td><td>Select from the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> tab </td><td>WHERE quote_id = '#t1.quote_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td> active
+</td></tr>
+<tr>
+<td>100006</td><td>qt</td><td>quotes</td><td>vehicle</td><td>file name</td><td>Select from the <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> tab</td><td>WHERE quote_id = '#t1.quote_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td> native</td><td>active
+</td></tr>
+<tr>
+<td>100007</td><td>sp</td><td>employees</td><td>current_packages</td><td>file name</td><td>Select from the <a href="./Employees:Packages.html" title="Employees:Packages">Employees / Current Packages</a> tab </td><td>WHERE t1.driver_id = '#t1.driver_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100008</td><td>gl	</td><td>becs	</td><td>disbursements</td><td>file name</td><td>Select from the <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA)</a> tab.<br /> Use this key id to create a preview report for a Company. Only use one key id per query or the query will not run. </td><td>WHERE company_id = '#company_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100009</td><td>gl	</td><td>becs	</td><td>disbursements</td><td>file name</td><td>Select from the <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA)</a> tab.<br /> Use this key id to create a preview report for a Client. Only use one key id per query or the query will not run. </td><td>WHERE client_id = '#client_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+<tr>
+<td>100010</td><td>gl	</td><td>becs	</td><td>disbursements</td><td>file name</td><td>Select from the <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">BECS / Disbursements (ABA) tab</a>.<br /> Use this key id to create a report that will run when a becs batch has been selected. Only use one key id per query or the query will not run. </td><td>WHERE becs_id = '#t1.becs_id#'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>native</td><td>active
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=5" title="Edit section: Field details">edit</a>]</div><a name="Field_details"></a><h4>Field details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Field</th><th>Mandatory / Optional </th><th>Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3">gb_report_queries
+</td></tr>
+<tr>
+<td>report_query_id</td><td>Auto</td><td>System allocated unique identifier.
+</td></tr>
+<tr>
+<td>module</td><td>Optional</td><td>Enter the module that the screen report will generate from. 'qt','fm','gl' or 'sp' are currently supported. Records that are not used in system screens are added with a 'null' entry.
+</td></tr>
+<tr>
+<td>page</td><td>Optional</td><td>Enter the screen that the screen report will generate from. Refer to the <a href="Screen_Reports.html#Sample_table_population" title="Screen Reports">Sample table population</a> section for examples.<br /> Records that are not used in system screens are added with a 'null' entry.
+</td></tr>
+<tr>
+<td>sub_page</td><td>Optional</td><td>Enter the tab that the screen report will generate from. Refer to the sample data section. Records that are not used in system screens are added with a 'null' entry.
+</td></tr>
+<tr>
+<td>name</td><td>Mandatory</td><td>Enter the report name as one word in lower case. E.g. order_file<br />
+<p>This name is shown in the screen selection drop list field. The name is displayed in proper case. E.g. Order File<br />
+Each name used on a page must be unique (you cannot have two reports with the same name on the same screen).<br /> 
+The name is also used as the default file name with the key id appended. 
+E.g. If you navigate to <a href="./Contracts:Order.html" title="Contracts:Order">Contracts / Order</a> and select the 'Order File' for contract  108978, the file will be called 'order_file_108978.xls'.<br />
+You can use a different name for the file output by adding an entry into the <i>output_filename_alias</i> field.
+</p>
+</td></tr>
+<tr>
+<td>description</td><td>Optional</td><td>Enter a description of the report for reference. This is not displayed on user screens.
+</td></tr>
+<tr>
+<td>query</td><td>Mandatory</td><td>Store the sql query required to generate the report here. The query must be valid. Visit <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> for query building information and the <a href="Derived_Fields.html" title="Derived Fields">derived field libaries</a> for calculated fields you can use here.<br />
+<p>The standard query will deliver the systems regular logo and presentation. Visit <a href="Office(xls)_Format.html" title="Office(xls) Format">Office(xls) format</a> if you want to modify the look of the standard report.<br />
+To return the details for the contract that is displayed on the screen, the query must contain the following mark-up: <i>WHERE contract_id = '#t1.contract_id#'</i> (Table Alias must be t1)<br />
+You can set-up a query that delivers multiple records, but it won't be usable with a <a href="Forms.html" title="Forms">form</a>, as the placeholders will only return data for the first record of the query, and this may not be the displayed contract.<br />
+If any components are invalid and cause the report to fail, an alert 'Nothing to report!' will appear on screen. Please contact Catch-e to have the issue resolved. This message will also appear if there are no transactions for the chosen contract. <br />
+</p>
+</td></tr>
+<tr>
+<td>template_id</td><td>Optional</td><td>This field is currently non-functional
+</td></tr>
+<tr>
+<td>file_id</td><td>Optional</td><td>If this field is blank, the default screen report outputs will be available. These are 'Office(xls) as PDF','Office(xls)' and 'Text(CSV)'.<br /> If you want to create an Office(docx) or Office(xlsx) template to use with your screen report, go to the <a href="Set-up_Screen_Report_Templates.html" title="Set-up Screen Report Templates">Set-up Screen Report Templates</a> page for the steps that are required to do this. The last step of the set-up process is to add the file_id record that has been created here.<br />
+</td></tr>
+<tr>
+<td>output_filename_alias</td><td>Optional</td><td>Add an entry here if you want the output file name to be different to the stored name.<br /> You can use placeholders in the alias for any of the fields that exist in the stored query. E.g. 'order_file_#contract_id#' or 'order_file_{contract_id}' will display 'Order File 100000' in the selection list box and generate a file called 'order_file_100000.xls'.<br />
+<p>Noting some placeholders like dates using dd/mm/yyyy. A “/” would be considered a prohibited character. This feature will work if you add a placeholder that contains illegal characters such as  / \&nbsp;: *&nbsp;? " &lt; &gt; |, the prohibited characters will be replaced with underscores "_".
+</p>
+</td></tr>
+<tr>
+<td>print_format </td><td> Mandatory</td><td> Enter which print formats you want to make available to users when the report is printed from the screen.<br />
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> print_format </th><th width="70%" align="left"> available formats in drop list
+</th></tr>
+<tr>
+<td> native </td><td> Office(xls)
+</td></tr>
+<tr>
+<td> native-and-pdf </td><td> Office(xls) as PDF<br /> Office(xls)
+</td></tr>
+<tr>
+<td> pdf </td><td> Office(xls) as PDF
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td>status_flag</td><td>Mandatory</td><td>If 'active', the report is visible on the specified screen and if 'inactive', it is hidden.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=6" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h4>Useful Queries</h4>
+<pre>
+# Show current Screen Reports
+select rq.report_query_id,rq.module,rq.page,rq.sub_page
+,rq.name,rq.print_format AS print_format_xls,rq.status_flag
+from gb_report_queries AS rq
+ORDER BY module DESC, page DESC, sub_page DESC, name DESC
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21735) File name alias not working for Pay Run Invoices.. Live dd/09/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Set-up_Screen_Reports.html">https://help.catch-e.net.au/mediawiki/index.php/Set-up_Screen_Reports</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Set-up_Screen_Reports">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Set-up_Screen_Reports.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Set-up_Screen_Reports&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

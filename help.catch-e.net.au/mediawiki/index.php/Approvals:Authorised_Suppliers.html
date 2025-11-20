@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Approvals:Authorised Suppliers,Administration,Approval Email Placeholders,Approval Emails,Approvals,Approvals:Approval,Approvals:Contract,Approvals:Events,Approvals:Maintenance,Approvals:Search,Approvals:Vehicle" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Approvals:Authorised Suppliers - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Approvals:Authorised Suppliers</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Approvals:Authorised_Suppliers.html#column-one">navigation</a>, <a href="./Approvals:Authorised_Suppliers.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Approvals.html" title="Approvals">Approvals</a> &rarr; <a href="./Approvals:Search.html" title="Approvals:Search">Search</a> |
+<a href="./Approvals:Approval.html" title="Approvals:Approval">Approval</a> | <a href="./Approvals:Contract.html" title="Approvals:Contract">Contract</a> | <a href="./Approvals:Maintenance.html" title="Approvals:Maintenance">Maintenance</a> | <a href="./Approvals:Vehicle.html" title="Approvals:Vehicle">Vehicle</a> | <a href="./Approvals:Events.html" title="Approvals:Events">Events</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Approvals_Setup.html" title="Approvals Setup">Approvals Setup</a> &rarr; <strong>Authorised Suppliers</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Approvals:Authorised_Suppliers.html#Authorised_Suppliers"><span class="tocnumber">1</span> <span class="toctext">Authorised Suppliers</span></a></li>
+<li class='toclevel-1'><a href="./Approvals:Authorised_Suppliers.html#Email_Notification"><span class="tocnumber">2</span> <span class="toctext">Email Notification</span></a></li>
+<li class='toclevel-1'><a href="./Approvals:Authorised_Suppliers.html#Email_Setup"><span class="tocnumber">3</span> <span class="toctext">Email Setup</span></a></li>
+<li class='toclevel-1'><a href="./Approvals:Authorised_Suppliers.html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Authorised_Suppliers&amp;action=edit&amp;section=1" title="Edit section: Authorised Suppliers">edit</a>]</div><a name="Authorised_Suppliers"></a><h4>Authorised Suppliers</h4>
+<p>When an maintenance row is added to an Approval the combination of Posting Class and Supplier is to be validated against the Authorised Suppliers table as soon as the Posting Class is selected. 
+</p><p>If there is a match for the Class and no matching Suppliers (in fm_client_supplier_posting_classes) all users are to be presented with a pop up warning message:
+</p><p><i>Class Code "Maintenance" is not allowed for this Supplier in Client Approval Defaults. Please review.</i>
+</p><p>Click ‘OK’ to continue. At this stage this is merely a warning to the user.
+</p><p>If there is no match for the Class users can continue to enter the Approval details as usual.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Authorised_Suppliers&amp;action=edit&amp;section=2" title="Edit section: Email Notification">edit</a>]</div><a name="Email_Notification"></a><h4>Email Notification</h4>
+<p>When the ‘Save’ button is clicked for an approval (regardless of whether it’s a new approval or updating an existing one) where there is a match for the Class and no matching Suppliers (in fm_client_supplier_posting_classes) an email notification is created for Client Contact 1. (This is similar functionality to Approval Limit exceeded email notification). The users are presented with a pop up warning message:
+</p><p><i>Class Code "Maintenance" is not allowed for this Supplier in Client Approval Defaults. Click OK to send email to Client Contact. Click Cancel to review approval details.</i>
+</p><p>Clicking ‘OK’ will allow the Approval to proceed and send an email notification to Client Contact 1 email address. 
+</p><p>Clicking ‘Cancel’ will present a second warning message (<i>Click OK to save this Approval without sending an email to Client Contact. Click Cancel to review approvals details.</i>) where clicking ‘OK’ will allow the approval to be saved. Click ‘Cancel’ once more to leave the Approval in edit mode (No email sent yet). When user is ready to ‘Save’ the approval again the validation should be triggered again.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Authorised_Suppliers&amp;action=edit&amp;section=3" title="Edit section: Email Setup">edit</a>]</div><a name="Email_Setup"></a><h4>Email Setup</h4>
+<p>A Template entry named ‘approvals_authorised_supplier_class_exception_notification’ that contains the wording for the email notification to your client. 
+</p><p>The <a href="Approval_Emails.html" title="Approval Emails">email</a> notification can be set up in either plain text or html and uses applicable <a href="Approval_Email_Placeholders.html" title="Approval Email Placeholders">placeholders</a> as shown here. 
+<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Placeholder</th><th>Description</th><th>[Table]Field
+</th></tr>
+<tr>
+<td>#reg_no# </td><td> Returns the Reg No from the Contract </td><td> [fm_contracts] reg_no
+</td></tr>
+<tr>
+<td>#short_description# </td><td> Returns the Vehicles Short Description </td><td>  [qt_variants] short_description
+</td></tr>
+<tr>
+<td>#approval_id# </td><td> Returns the Approval ID </td><td>  [fm_maintenance] approval_id
+</td></tr>
+<tr>
+<td>#supplier_name# </td><td> Returns the Supplier name for the Supplier requesting the Approval </td><td>  [fm_suppliers] name
+</td></tr>
+<tr>
+<td>#approval_exceptions_approval_total# </td><td> Returns the total Approval amount (Incl GST) </td><td>  SUM( [fm_maintenance] total_cost)
+</td></tr>
+<tr>
+<td>#approval_exceptions_html# <br /> OR <br /> #approval_exceptions_text#  </td><td> Returns the Approval Job Row/s that are the subject of the exception </td><td>  [fm_maintenance] description
+</td></tr>
+<tr>
+<td>#approval_exceptions_job_summary_html# <br /> OR <br /> #approval_exceptions_job_summary_text#  </td><td> Returns the first row from each Job included in the Approval when at least 1 row is the subject of the exception  </td><td>  [fm_maintenance] description
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Authorised_Suppliers&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 7936: Client approval restrictions by supplier and class. Live xx/05/2016
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Approvals:Authorised_Suppliers.html">https://help.catch-e.net.au/mediawiki/index.php/Approvals:Authorised_Suppliers</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Approvals:Authorised_Suppliers">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Approvals:Authorised_Suppliers.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Approvals:Authorised_Suppliers&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

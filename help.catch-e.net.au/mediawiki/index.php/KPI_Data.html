@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="KPI Data,Catch-e support,Home,KPI Charts Setup,KPIs,Kpis:Inventory Split,Kpis:Multiple Fills,Kpis:Overfills,Kpis:Service Due,Kpis:Service Overdue,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>KPI Data - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">KPI Data</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="KPI_Data.html#column-one">navigation</a>, <a href="KPI_Data.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Home.html" title="Home">Home</a> &rarr; <a href="KPIs.html" title="KPIs">KPIs</a> | <strong>KPI Data</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="KPI_Charts_Setup.html" title="KPI Charts Setup">KPI Charts Setup</a> &rarr; <a href="./Roles:Kpis.html" title="Roles:Kpis">Roles</a> | <a href="./Users:Kpis.html" title="Users:Kpis">Users</a>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=KPI_Data&amp;action=edit&amp;section=1" title="Edit section: How does the data get populated?">edit</a>]</div><a name="How_does_the_data_get_populated.3F"></a><h4>How does the data get populated?</h4>
+<p>When a user opens the Dashboard Screen for the first time, an entry is added to a table named gb_cache. It contains the binary data  for the chart, placeholders (chart data) and the export data for each chart that the user has permissions for. Each subsequent visit to the Dashboard page the system will first check whether the cache has expired (gb_cache.timestamp PLUS gb_kpis.cache_expiry). If it is expired it will refresh the data and re-populate gb_cache with the new data, otherwise it will display the data from gb_cache. The default cache_expiry has been set to 900 (seconds = 15 minutes).
+</p><p><b>Restricting data by <a href="Users.html" title="Users">Users</a> or <a href="Roles.html" title="Roles">Roles</a></b><br />
+When <a href="Users.html" title="Users">Users</a> are created their <a href="Roles.html" title="Roles">Role</a> typically determines the KPI Charts they can see, however, this can be overwritten by using the <a href="./Users:Details:Restrict_Range.html" title="Users:Details:Restrict Range">Restrict Range</a> functionality. Users can also be set up to only see data from their own <a href="Workgroups.html" title="Workgroups">Workgroup</a>. The KPI Charts use the following heirachy to determine which charts/data to present to a given user: 
+</p>
+<ul><li> Rule 1: Apply restrict range if logged in user has restrict range.<br />
+</li><li> Rule 2: Apply restrict table if logged in user has restriction to either a client or client group.<br />
+</li><li> Rule 3: Apply the User and workgroup restriction from KPI screen. If there is also restriction on table 'fm_channel' or 'fm_channel_group' then apply those restriction on top of filter restriction.<br /><br />
+</li></ul>
+<p>Rule 1 will be applied first. If rule 1 is not satisfied, then rule 2 will be applied. If rule 2 is also not satisfied, then rule 3 will be applied.
+</p><p><b>Refresh</b>
+</p><p>The Refresh button at the top right of screen allows you to refresh the data for each Chart. Each chart has a cache_expiry value (defaults to 900 seconds = 15 minutes). When the Refresh button is clicked we will check if the Chart was refreshed within the past 900 seconds and if so will display the same data. This is to prevent potential system slow down if a user was to click Refresh multiple times. Selected charts have an additional flag to only refresh via an overnight scheduled job due to the number of calculations being performed. When this flag is turned on the Refresh button will not refresh these charts. 
+</p><p><i>cached_by_scheduler_flag'</i>
+</p><p>As noted above, some charts require a significant number of calculations using derived fields and only <a href="Roles.html" title="Roles">External</a> (fleet_manager, group_manager etc) users should be granted access to these charts (see <a href="KPI_Charts_Setup.html" title="KPI Charts Setup">KPI Charts Setup</a> for further details).
+</p><p>Further to this, the following charts have the <i>[gb_kpis]cached_by_scheduler_flag</i> turned on.
+</p>
+<ul><li> <a href="./Kpis:Inventory_Split.html" title="Kpis:Inventory Split">Inventory Split</a>
+</li><li> <a href="./Kpis:Overfills.html" title="Kpis:Overfills">Overfills</a>
+</li><li> <a href="./Kpis:Multiple_Fills.html" title="Kpis:Multiple Fills">Multiple Fills</a>
+</li><li> <a href="./Kpis:Service_Due.html" title="Kpis:Service Due">Service Due</a>
+</li><li> <a href="./Kpis:Service_Overdue.html" title="Kpis:Service Overdue">Service Overdue</a>
+</li></ul>
+<p>When this flag is on a scheduled job will populate gb_cache table with the data. This scheduled job is set to run overnight. 
+</p><p><i><b>This means that the overnight job will need to run prior to any data being populated in these charts after access is granted to any user.</b></i>
+</p><p>When 'cached_by_scheduler_flag' = 'yes' the 'cache_expiry' value is ignored. Data in this case will refresh via the scheduler job or when a user clicks the <a href="./Image:Page_white_excel.png.html" class="image" title="export data icon"><img src="../../clients/help/wiki/images/b/ba/Page_white_excel.png" alt="export data icon" width="16" height="16" longdesc="/mediawiki/index.php/Image:Page_white_excel.png" /></a> icon. 
+</p><p><b>cache_expiry</b>
+</p><p>When a user opens the Dashboard Screen for the first time, and entry is added to gb_cache which essentially contains the data (chart, placeholders (chart data) and export data) for each chart that the user has permissions for. Each subsequent visit to the Dashboard page the system will first check whether the cache has expired (gb_cache.timestamp PLUS gb_kpis.cache_expiry). If it is expired it will refresh the data and re-populate gb_cache with the new data, otherwise it will display the data from gb_cache. The default cache_expiry has been set to 900 (seconds = 15 minutes).
+</p><p>Note this field is ignored when 'cached_by_scheduler_flag' = 'yes'.
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> <b>Note:</b> If your charts are overlapping or don't look quite right please try Ctrl + F5 first. Also check the Internet Explorer Settings section on the <a href="Operating_System_and_Browser_settings.html" title="Operating System and Browser settings">Operating System and Browser settings</a> page. If you are still experiencing issues please contact your Catch-e Account Manager or <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> for further assistance.
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=KPI_Data&amp;action=edit&amp;section=2" title="Edit section: Customisation">edit</a>]</div><a name="Customisation"></a><h4>Customisation</h4>
+<p>Selected elements of the charts can be customised. At this point this mostly revolves around colours, however Column and Bar charts are easily interchangeable. Basically anything "inside the box" (apart from the data itself) is customisable to some degree. For further assistance with customising your charts please contact your Catch-e Account Manager or contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a>.
+</p><div class="printfooter">
+Retrieved from "<a href="KPI_Data.html">https://help.catch-e.net.au/mediawiki/index.php/KPI_Data</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=KPI_Data">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/KPI_Data.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=KPI_Data&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.06 secs. -->
+</body></html>

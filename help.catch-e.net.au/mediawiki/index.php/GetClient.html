@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="GetClient,APIs,Catch-e Support,Clients,Clients:Contract defaults,Clients:Other,Clients:Quote defaults,Main Page,Manage Roles:Apis" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>GetClient - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">GetClient</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="GetClient.html#column-one">navigation</a>, <a href="GetClient.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> → <a href="APIs.html" title="APIs">APIs</a> →  <a href="APIs.html#Clients" title="APIs">Clients</a> →  <strong>getClient</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="GetClient.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="GetClient.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="GetClient.html#HTTP_Method"><span class="tocnumber">3</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="GetClient.html#URL_Examples"><span class="tocnumber">4</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="GetClient.html#Response_Details"><span class="tocnumber">5</span> <span class="toctext">Response Details</span></a></li>
+<li class='toclevel-1'><a href="GetClient.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Enables you to get all fields for a given <a href="Clients.html" title="Clients">Client/s</a> including associated <a href="./Clients:Other.html" title="Clients:Other">Client Bespoke fields</a>, <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Quote Defaults</a> and <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Contract Defaults</a>.<br />
+</p><p>Supplementary SWAGGER documentation is available here: <a href="https://api.catch-e.com/docs/#/Clients" class='external free' title="https://api.catch-e.com/docs/#/Clients" rel="nofollow">https://api.catch-e.com/docs/#/Clients</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>Clients:Get</b>
+<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left">  This API is not configured for external use but can be made available on request.<br /> Contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to request this update.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=3" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'GET' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=4" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.catch-e.com/fm/clients/{client_id}
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=5" title="Edit section: Response Details">edit</a>]</div><a name="Response_Details"></a><h4>Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 201 Created
+</td></tr>
+<tr>
+<td>
+<pre>
+{
+    &quot;bespoke_field_values&quot;: [],
+    &quot;inclusion_client_exclusions&quot;: [],
+    &quot;client_defaults&quot;: {
+        &quot;client_default_id&quot;: &quot;100545&quot;,
+        &quot;client_group_flag&quot;: &quot;no&quot;,
+        &quot;relief_vehicle_flag&quot;: &quot;yes&quot;,
+        &quot;delivery_fee_funded_flag&quot;: &quot;no&quot;,
+        &quot;fuel_on_delivery_funded_flag&quot;: &quot;no&quot;,
+        &quot;supplier_id_financier&quot;: null,
+        &quot;policy_owner_type&quot;: &quot;driver&quot;,
+        &quot;supplier_id_insurer&quot;: null,
+        &quot;residual_margin_rate&quot;: 0,
+        &quot;residual_margin_rate_commercial&quot;: 0,
+        &quot;excess_km_rate&quot;: 0,
+        &quot;establishment_fee&quot;: 0,
+        &quot;management_fee&quot;: 0,
+        &quot;maintenance_program_fee&quot;: 0,
+        &quot;novated_commission_rate&quot;: 0,
+        &quot;insurance_broker_fee_exempt_flag&quot;: &quot;yes&quot;,
+        &quot;carbon_emission_offset_flag&quot;: &quot;yes&quot;,
+        &quot;roadside_assistance_plan_code&quot;: &quot;&quot;,
+        &quot;accident_management_fee&quot;: 0
+    },
+    &quot;client_id&quot;: &quot;100548&quot;,
+    &quot;client_id_external&quot;: &quot;0&quot;,
+    &quot;client_code&quot;: &quot;Test003&quot;,
+    &quot;client_id_parent&quot;: &quot;0&quot;,
+    &quot;name&quot;: &quot;Test API-20554&quot;,
+    &quot;channel_id&quot;: &quot;0&quot;,
+    &quot;client_type&quot;: &quot;fleet&quot;,
+    &quot;client_industry_id&quot;: &quot;0&quot;,
+    &quot;client_credit_ratings_id&quot;: null,
+    &quot;sic_code&quot;: &quot;&quot;,
+    &quot;financial_year_end&quot;: &quot;June&quot;,
+    &quot;company_tax_rate&quot;: 0,
+    &quot;user_id&quot;: &quot;11244&quot;,
+    &quot;user_id_sales&quot;: &quot;11244&quot;,
+    &quot;address1&quot;: null,
+    &quot;address2&quot;: null,
+    &quot;area&quot;: null,
+    &quot;state&quot;: null,
+    &quot;pcode&quot;: null,
+    &quot;country_id&quot;: null,
+    &quot;phone&quot;: null,
+    &quot;mobile&quot;: null,
+    &quot;fax&quot;: null,
+    &quot;abn&quot;: null,
+    &quot;acn&quot;: null,
+    &quot;arbn&quot;: null,
+    &quot;corporate_type_id&quot;: &quot;0&quot;,
+    &quot;business_start_date&quot;: &quot;0000-00-00&quot;,
+    &quot;contact1_name&quot;: null,
+    &quot;contact1_job_title&quot;: &quot;&quot;,
+    &quot;contact1_phone&quot;: null,
+    &quot;contact1_email&quot;: null,
+    &quot;contact1_note&quot;: null,
+    &quot;contact2_name&quot;: null,
+    &quot;contact2_job_title&quot;: &quot;&quot;,
+    &quot;contact3_phone&quot;: null,
+    &quot;contact2_phone&quot;: null,
+    &quot;contact3_email&quot;: null,
+    &quot;contact2_email&quot;: null,
+    &quot;contact3_note&quot;: null,
+    &quot;contact2_note&quot;: null,
+    &quot;contact3_name&quot;: null,
+    &quot;contact3_job_title&quot;: &quot;&quot;,
+    &quot;contact4_name&quot;: null,
+    &quot;contact4_job_title&quot;: &quot;&quot;,
+    &quot;contact4_phone&quot;: null,
+    &quot;contact4_email&quot;: null,
+    &quot;contact4_note&quot;: null,
+    &quot;contact5_note&quot;: &quot;&quot;,
+    &quot;contact5_email&quot;: null,
+    &quot;contact5_phone&quot;: &quot;&quot;,
+    &quot;contact5_job_title&quot;: &quot;&quot;,
+    &quot;contact5_name&quot;: &quot;&quot;,
+    &quot;guarantor1_name&quot;: &quot;&quot;,
+    &quot;guarantor1_phone&quot;: &quot;&quot;,
+    &quot;guarantor2_name&quot;: &quot;&quot;,
+    &quot;guarantor2_phone&quot;: &quot;&quot;,
+    &quot;guarantor3_name&quot;: &quot;&quot;,
+    &quot;guarantor3_phone&quot;: &quot;&quot;,
+    &quot;payroll_cut_off&quot;: &quot;&quot;,
+    &quot;potential_fleet_size&quot;: 0,
+    &quot;postal_address1&quot;: null,
+    &quot;postal_address2&quot;: null,
+    &quot;postal_area&quot;: null,
+    &quot;postal_state&quot;: null,
+    &quot;postal_pcode&quot;: null,
+    &quot;postal_country_id&quot;: null,
+    &quot;insurer&quot;: null,
+    &quot;supplier_id_insurer&quot;: null,
+    &quot;supplier_id_broker&quot;: null,
+    &quot;policy_number&quot;: &quot;&quot;,
+    &quot;due_date&quot;: null,
+    &quot;supplier_id_repairer&quot;: &quot;0&quot;,
+    &quot;client_agreement_type_id&quot;: &quot;0&quot;,
+    &quot;mla_non_standard_flag&quot;: &quot;no&quot;,
+    &quot;mla_date&quot;: null,
+    &quot;facility_type_id&quot;: null,
+    &quot;finance_accepted_date&quot;: null,
+    &quot;finance_limit&quot;: null,
+    &quot;finance_review_date&quot;: null,
+    &quot;delivery_fee&quot;: null,
+    &quot;establishment_fee&quot;: null,
+    &quot;sourcing_fee&quot;: 0,
+    &quot;document_fee&quot;: 0,
+    &quot;document_fee_budgeted&quot;: 0,
+    &quot;fuel_fee&quot;: 0,
+    &quot;novated_management_fee&quot;: 0,
+    &quot;lease_replacement_fee&quot;: 0,
+    &quot;revs_fee&quot;: 0,
+    &quot;residual_margin&quot;: null,
+    &quot;residual_fee&quot;: null,
+    &quot;interest_margin&quot;: null,
+    &quot;management_fee&quot;: null,
+    &quot;disposal_fee&quot;: 0,
+    &quot;fuel_on_delivery&quot;: null,
+    &quot;maintenance_uplift_rate&quot;: 0,
+    &quot;fuel_supplier&quot;: null,
+    &quot;fuel_managed_flag&quot;: null,
+    &quot;foc_car_policy&quot;: null,
+    &quot;early_terminations_policy&quot;: null,
+    &quot;mla_note&quot;: null,
+    &quot;client_class&quot;: null,
+    &quot;discount_holden&quot;: null,
+    &quot;discount_ford&quot;: null,
+    &quot;discount_toyota&quot;: null,
+    &quot;discount_mitsubishi&quot;: null,
+    &quot;discount_spare1&quot;: null,
+    &quot;discount_spare2&quot;: null,
+    &quot;discount_spare3&quot;: null,
+    &quot;discount_spare4&quot;: null,
+    &quot;discount_spare5&quot;: null,
+    &quot;pass_on_itcs&quot;: null,
+    &quot;contact_note&quot;: null,
+    &quot;shared_fleet_flag&quot;: &quot;no&quot;,
+    &quot;shared_fleet_note&quot;: null,
+    &quot;etags_managed_flag&quot;: &quot;no&quot;,
+    &quot;etags_managed_note&quot;: null,
+    &quot;quarterly_rates_flag&quot;: &quot;no&quot;,
+    &quot;quarterly_rates_note&quot;: null,
+    &quot;novated_leases_flag&quot;: &quot;no&quot;,
+    &quot;novated_leases_note&quot;: null,
+    &quot;visit_last_date&quot;: &quot;0000-00-00&quot;,
+    &quot;visit_next_date&quot;: &quot;0000-00-00&quot;,
+    &quot;client_group_id&quot;: &quot;0&quot;,
+    &quot;client_group_note&quot;: null,
+    &quot;billing_interval&quot;: &quot;monthly&quot;,
+    &quot;contract_pay_cycle_from_quote_flag&quot;: &quot;no&quot;,
+    &quot;periods_deferred&quot;: 0,
+    &quot;finance_budget_term_deferred_flag&quot;: &quot;no&quot;,
+    &quot;budgets_term_deferred_flag&quot;: &quot;no&quot;,
+    &quot;initial_billings&quot;: 0,
+    &quot;periodic_start&quot;: 1,
+    &quot;common_day&quot;: &quot;1&quot;,
+    &quot;report_delivery_type&quot;: &quot;email&quot;,
+    &quot;billing_type_flag&quot;: &quot;periodic&quot;,
+    &quot;billing_terms_id&quot;: &quot;100014&quot;,
+    &quot;booking_billing_type&quot;: &quot;billing&quot;,
+    &quot;billing_group_email_flag&quot;: &quot;no&quot;,
+    &quot;billing_email_attachment_type&quot;: &quot;pdf&quot;,
+    &quot;purchase_order_no&quot;: null,
+    &quot;billing_by_client_order_no_flag&quot;: &quot;no&quot;,
+    &quot;rcti_flag&quot;: &quot;no&quot;,
+    &quot;payment_method&quot;: &quot;eft&quot;,
+    &quot;contract_inertia_flag&quot;: &quot;no&quot;,
+    &quot;bank_bsb&quot;: null,
+    &quot;bank_account_number&quot;: null,
+    &quot;bank_account_suffix&quot;: null,
+    &quot;approval_note&quot;: &quot;&quot;,
+    &quot;infringement_note&quot;: null,
+    &quot;fuel_card_note&quot;: null,
+    &quot;booking_note&quot;: null,
+    &quot;reg_label_note&quot;: null,
+    &quot;send_reg_label_novated&quot;: &quot;driver&quot;,
+    &quot;send_reg_label_others&quot;: &quot;client-contact-1&quot;,
+    &quot;recall_notice_note&quot;: null,
+    &quot;quote_internal_note&quot;: null,
+    &quot;quote_client_note&quot;: null,
+    &quot;employer_fbt_type&quot;: &quot;full-fbt-payable&quot;,
+    &quot;ecm_allowed_flag&quot;: null,
+    &quot;fbt_reporting_flag&quot;: &quot;no&quot;,
+    &quot;fbt_email_novated&quot;: &quot;no&quot;,
+    &quot;fbt_email_other&quot;: &quot;no&quot;,
+    &quot;fbt_note&quot;: &quot;&quot;,
+    &quot;event_ecm_flag&quot;: &quot;no&quot;,
+    &quot;event_nuds_flag&quot;: &quot;no&quot;,
+    &quot;history_only_flag&quot;: &quot;no&quot;,
+    &quot;prospect_start&quot;: null,
+    &quot;last_contact_date&quot;: null,
+    &quot;next_contact_date&quot;: null,
+    &quot;proposal_date&quot;: null,
+    &quot;financials_date&quot;: null,
+    &quot;lead_time&quot;: null,
+    &quot;prospect_priority&quot;: null,
+    &quot;prospect_probability&quot;: null,
+    &quot;potential_operating&quot;: 0,
+    &quot;potential_novated&quot;: 0,
+    &quot;potential_finance&quot;: 0,
+    &quot;potential_fleet_managed&quot;: 0,
+    &quot;no_of_ftes&quot;: 0,
+    &quot;target_strike_rate&quot;: 0,
+    &quot;competitors&quot;: &quot;&quot;,
+    &quot;prospect_note&quot;: null,
+    &quot;gross_up_rate_type&quot;: &quot;fbt_type1_gross_up_factor&quot;,
+    &quot;fixed_statutory_rate&quot;: 0,
+    &quot;luxury_charge_applied_flag&quot;: &quot;yes&quot;,
+    &quot;luxury_charge_event_flag&quot;: &quot;no&quot;,
+    &quot;itc_passed_on_flag&quot;: &quot;yes&quot;,
+    &quot;itc_passed_on_rate&quot;: 1,
+    &quot;return_itc_via_payroll_flag&quot;: &quot;no&quot;,
+    &quot;ecm_flag&quot;: &quot;yes&quot;,
+    &quot;gst_on_ecm_flag&quot;: &quot;yes&quot;,
+    &quot;medicare_levy_flag&quot;: &quot;yes&quot;,
+    &quot;print_finance_flag&quot;: &quot;no&quot;,
+    &quot;car_allowance_impact_flag&quot;: &quot;no&quot;,
+    &quot;pay_cycle_id&quot;: &quot;100001&quot;,
+    &quot;pay_cycle_id_active_flag&quot;: &quot;no&quot;,
+    &quot;payroll_date&quot;: &quot;2024-08-01&quot;,
+    &quot;pay_cycle_id2&quot;: &quot;0&quot;,
+    &quot;pay_cycle_id2_active_flag&quot;: &quot;no&quot;,
+    &quot;payroll_date2&quot;: &quot;0000-00-00&quot;,
+    &quot;pay_cycle_id3&quot;: &quot;0&quot;,
+    &quot;pay_cycle_id3_active_flag&quot;: &quot;no&quot;,
+    &quot;payroll_date3&quot;: &quot;0000-00-00&quot;,
+    &quot;payroll_cut_off_days&quot;: 0,
+    &quot;packaging_fees_per_year&quot;: 0,
+    &quot;packaging_advice_fee&quot;: 0,
+    &quot;package_admin_fee&quot;: 0,
+    &quot;salary_type&quot;: null,
+    &quot;fixed_super_rate&quot;: 0,
+    &quot;cost_centres_mandatory_flag&quot;: &quot;no&quot;,
+    &quot;allow_operating_fbt_type_flag&quot;: &quot;yes&quot;,
+    &quot;free_km_buffer&quot;: 0,
+    &quot;wear_tear_allowance&quot;: 0,
+    &quot;advance_arrears&quot;: &quot;advance&quot;,
+    &quot;agreed_lessee_rate&quot;: 0,
+    &quot;lessee_rate_include_vmp_flag&quot;: &quot;no&quot;,
+    &quot;purchase_stamp_duty_exempt_flag&quot;: &quot;no&quot;,
+    &quot;sl_export_flag&quot;: &quot;yes&quot;,
+    &quot;reg_ctp_type&quot;: &quot;business&quot;,
+    &quot;invoice_options&quot;: &quot;detail-only&quot;,
+    &quot;allow_quoting_flag&quot;: &quot;yes&quot;,
+    &quot;allow_quoting_within_cap_flag&quot;: &quot;no&quot;,
+    &quot;interim_service_flag&quot;: &quot;yes&quot;,
+    &quot;approval_limit&quot;: 0,
+    &quot;send_approval_email_flag&quot;: &quot;yes&quot;,
+    &quot;dirty_flag&quot;: &quot;2024-07-01 05:53:14&quot;,
+    &quot;_embedded&quot;: {
+        &quot;client_packaging_defaults&quot;: {
+            &quot;aba_description&quot;: &quot;&quot;,
+            &quot;aba_self_balancing_flag&quot;: &quot;yes&quot;,
+            &quot;apca_number&quot;: &quot;&quot;,
+            &quot;bank_account_enabled_flag&quot;: &quot;yes&quot;,
+            &quot;bank_account_name&quot;: &quot;&quot;,
+            &quot;bank_account_name_short&quot;: &quot;&quot;,
+            &quot;bank_account_number&quot;: null,
+            &quot;bank_bsb&quot;: null,
+            &quot;client_id&quot;: &quot;100548&quot;,
+            &quot;client_packaging_default_id&quot;: &quot;14728602546281119857&quot;,
+            &quot;financial_institution_id&quot;: null,
+            &quot;pay_run_processing_state&quot;: null,
+            &quot;pay_run_start&quot;: 0,
+            &quot;pay_run_start2&quot;: 0,
+            &quot;pay_run_start3&quot;: 0,
+            &quot;pay_run_weekend_treatment&quot;: null,
+            &quot;payroll_fbt&quot;: null,
+            &quot;payroll_gst&quot;: null,
+            &quot;payroll_itc&quot;: null,
+            &quot;payroll_lcc&quot;: null,
+            &quot;payroll_post_tax&quot;: null,
+            &quot;payroll_pre_tax&quot;: null,
+            &quot;report_delivery_type&quot;: &quot;email&quot;,
+            &quot;report_groups&quot;: [],
+            &quot;taxable_sales&quot;: &quot;all-items&quot;,
+            &quot;_links&quot;: {
+                &quot;self&quot;: {
+                    &quot;href&quot;: &quot;https://api.test.catch-e.com/sp/client/packaging-defaults/100548&quot;
+                }
+            }
+        }
+    },
+    &quot;_links&quot;: {
+        &quot;self&quot;: {
+            &quot;href&quot;: &quot;https://api.test.catch-e.com/fm/clients/100548&quot;
+        }
+    }
+}
+</pre> 
+</td><td> A successful response returns all fields in the [fm_clients], [qt_client_defaults], [sp_client_packaging_defaults], [qt_inclusion_client_exclusions] and associated [gb_bespoke_field_values] records.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2">403 - Forbidden
+</td></tr>
+<tr>
+<td><pre>
+|&quot;detail&quot;: &quot;Forbidden&quot;
+</pre>
+</td><td>You do not have permissions for this request.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;validationMessages&quot;: {
+       &quot;page_size&quot;: {
+         &quot;notBetween&quot;: &quot;The input is not between '1' and '100', inclusively.&quot;
+}
+</pre>
+</td><td> The page limit is capped at 100 records. Update to keep the page size at or below 100 records.
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;validationMessages&quot;: {
+       &quot;fields&quot;: {
+         &quot;notInArray&quot;: &quot;Unknown field specified&quot;
+}
+</pre>
+</td><td> The syntax of the fields key is not correct.<br /> Having spaces in the list of fields is one possible reason.
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20347) Clients API (new, edit, copy, get). Live 02/10/2023
+</li><li> (API-20466) Add support to Client APIs for [fm_clients]purchase_order_no field. Live 13/11/2023
+</li><li> (API-20554) Clients / Packaging Defaults - create Pay Cycle Active checkbox. Live dd/12/2024
+</li><li> (API-20710)  PHP Fatal Error on GET /fm/clients – Memory Limit Exceeded (256MB). 14/07/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="GetClient.html">https://help.catch-e.net.au/mediawiki/index.php/GetClient</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=GetClient">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/GetClient.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetClient&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

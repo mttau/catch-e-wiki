@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Service Overdue Report,Administration,Clients:Cost centres,Contract Types:Details,Contracts:Billing,Derived Fields service,Estimated Odometer Calculation,ExecuteReportWebService:Service Overdue,FLEET,Fleet manager,Good to know" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Service Overdue Report - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Service Overdue Report</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Over_Due_Report&amp;redirect=no" title="Service Over Due Report">Service Over Due Report</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="Service_Over_Due_Report.html#column-one">navigation</a>, <a href="Service_Over_Due_Report.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Reports.html" title="Reports">Reports</a> &rarr; <a href="Service_Due_Report.html" title="Service Due Report">Service Due Report</a> | <strong>Service Overdue Report</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#Report_Selections"><span class="tocnumber">2</span> <span class="toctext">Report Selections</span></a></li>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#Report_Filters"><span class="tocnumber">3</span> <span class="toctext">Report Filters</span></a></li>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#Fields_in_PDF"><span class="tocnumber">4</span> <span class="toctext">Fields in PDF</span></a></li>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class='toclevel-1'><a href="Service_Over_Due_Report.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This report is available for all users including the following external roles: <a href="Fleet_manager.html" title="Fleet manager">Fleet Manager</a>, <a href="Fleet_manager.html" title="Fleet manager">Fleet Manager (read-only)</a> and <a href="Group_manager.html" title="Group manager">Group Manager</a>.<br />
+The Service Over Due report is the same as the <a href="Service_Due_Report.html" title="Service Due Report">Service Due Report</a> but <u>only</u> includes vehicles that are overdue for a service.<br /> 
+</p><p>Service overdue is determined by comparing time-based and km-based date calculations and selecting the nearest upcoming date. The km-based calculation uses Contract Kms.<br />
+</p><p>Following is a summary of overdue calculation logic
+</p>
+<pre>
+IF service_interval_km = 0 AND service_interval_months = 0 THEN 'No service calculations'
+IF service_interval_km = 0 and service_interval_months &gt; 0 THEN 'Time based service calculation only'
+IF contract_kms  &gt; 0 AND service_interval_km &gt; 0 and service_interval_months = 0 THEN 'Km based service calculation only'
+IF service_interval_km &gt; 0 and service_interval_months &gt; 0 THEN 'Earlier of Km or Time based service calculation'
+</pre>
+<p><br />
+Calculations used in this report come from the <a href="Derived_Fields_service.html" title="Derived Fields service">'service'</a> derived field library.<br />
+This report can be emailed to the clients in a scheduler job. More details are available on the <a href="System_Reports.html" title="System Reports">System Reports</a> page.<br />
+This report can also be run from the <b>Web Services</b> API <a href="./ExecuteReportWebService:Service_Overdue.html" title="ExecuteReportWebService:Service Overdue">executeReportWebService</a>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=2" title="Edit section: Report Selections">edit</a>]</div><a name="Report_Selections"></a><h4>Report Selections</h4>
+<p>Contracts are included in the report if
+</p>
+<ol><li> <a href="./Contract_Types:Details.html#Table_of_Fields" title="Contract Types:Details">Contract Types / Details</a> "Include in Service Due / Overdue Reports?" is checked.
+</li></ol>
+<p>Service records are used in this report when
+</p>
+<ol><li> <b>Contracts / Maintenance</b> "Odo" is populated and "Odo Valid" is checked.
+</li></ol>
+<p>Calculations for the <b>Next Service Date</b> and <b>Due Odo</b> use the following details
+</p>
+<ol><li> <b>Contracts / Vehicle</b> "Service Interval (Mths)" and "Service Interval (Kms)"
+</li><li> <b>Contracts / Maintenance</b> "Odo" 
+</li><li> The <a href="Estimated_Odometer_Calculation.html" title="Estimated Odometer Calculation">Estimated Odometer Reading</a> as at the report date
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=3" title="Edit section: Report Filters">edit</a>]</div><a name="Report_Filters"></a><h4>Report Filters</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Filter </th><th width="100" align="left">Type </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Left Column
+</td></tr>
+<tr>
+<td>As at</td><td>Date</td><td>Contracts are included in this report if they;<br />
+<p>1. Start on or before the "As at" date, they are not suspended and they end on or after the "As at" date OR<br />
+2. Start on or before the "As at" date, they are not suspended and the <a href="./Contracts:Billing.html" title="Contracts:Billing">Contracts / Billing</a> "Inertia" check box is checked.
+</p>
+</td></tr>
+<tr>
+<td> Manager </td><td> List </td><td> Select a manager to limit the report selection to the selected <b>Clients / Contact</b> A/C Manager.<br /> An Account Manger can use this field run reports for all the clients they manage.
+</td></tr>
+<tr>
+<td>Group </td><td> List </td><td> Select a group to limit the report selection to the selected "Client Group".
+</td></tr>
+
+<tr>
+<td> Client </td><td> List Box</td><td> Leave as '--All--' or select the Client or Clients you want to report on.<br /> You can select <a href="Good_to_know.html#Multiple_Selections" title="Good to know">multiple records</a> by holding down the “Ctrl” key and use your mouse to select the items.<br /> To select a range of clients, hold down “Ctrl” and “Shift” keys and use either your mouse or arrow keys to select the range.
+</td></tr>
+<tr>
+<td> Contract Type </td><td> List Box </td><td> Leave as '--All--' or select the Contract Type or Types you want to report on.<br /> You can select <a href="Good_to_know.html#Multiple_Selections" title="Good to know">multiple records</a> by holding down the “Ctrl” key and use your mouse to select the items you want.
+</td></tr>
+<tr>
+<td>Report Queue</td><td>Checkbox</td><td>Uncheckecd by default. The report will be generated for you on this screen for downloading when complete.<br />
+<p>Select this checkbox if you want to send the report to the <a href="Report_Queue.html" title="Report Queue">Report Queue</a> screen to be downloaded later.<br /> If configured, you will receive an email when the report has been processed and is ready to be downloaded.<br />
+If the report take takes a long time to run and exceeds the allowable time, then the report will be sent to the <a href="Report_Queue.html" title="Report Queue">Report Queue</a>. You will be alerted if this is going to happen.
+<br />
+</p>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Right Column
+</td></tr>
+<tr>
+<td> <a href="./Clients:Cost_centres.html" title="Clients:Cost centres">Cost Centre</a> </td><td> List </td><td> The default selection is '--All--' (returns all records).<br /> You can also blank '--Blank--' (records have no cost centre), or you can select a specific cost centre.<br /> When a "Group" or "Client" is selected, only the cost centres that belong to them are shown.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=4" title="Edit section: Fields in PDF">edit</a>]</div><a name="Fields_in_PDF"></a><h4>Fields in PDF</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Report Field</th><th>Type</th><th>Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Header
+</td></tr>
+<tr>
+<td>Group Name</td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>Client Name</td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>Client Code</td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>As at</td><td>Date</td><td>
+</td></tr>
+<tr>
+<td>Page</td><td>Num</td><td>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Body
+</td></tr>
+<tr>
+<td>ID</td><td>Num</td><td>Contract ID
+</td></tr>
+<tr>
+<td>Rego </td><td>Text</td><td>Registration Number
+</td></tr>
+<tr>
+<td>Driver Name</td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>Location </td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>Vehicle Description </td><td>Text</td><td>Vehicle Description
+</td></tr>
+<tr>
+<td>Service Km</td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Service Mth </td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Lease Type</td><td>Text</td><td>
+</td></tr>
+<tr>
+<td>Start Date </td><td>Date</td><td>
+</td></tr>
+<tr>
+<td>Term Date </td><td>Date</td><td>
+</td></tr>
+<tr>
+<td>Start Odo</td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Contract Km </td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Last Service Date</td><td>Date</td><td>
+</td></tr>
+<tr>
+<td>Last Service Odo</td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Est Odo TD</td><td>Num</td><td>Displays the estimated odometer reading calculated for the "As at" date of this report. Visit the <a href="Estimated_Odometer_Calculation.html" title="Estimated Odometer Calculation">Estimated Odometer Calculation</a> page to see how this is calculated.
+</td></tr>
+<tr>
+<td>Next Service Due Date</td><td>Date</td><td>
+</td></tr>
+<tr>
+<td>Next Service Due Odo</td><td>Num</td><td>
+</td></tr>
+<tr>
+<td>Next Due in: Days</td><td>Num</td><td>Service due in x number of days (or overdue)
+</td></tr>
+<tr>
+<td>Next Due in: Km</td><td>Num</td><td>Service due in x number of kilometres (or overdue)
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Footer
+</td></tr>
+<tr>
+<td>Date Time</td><td>Timestamp</td><td>
+</td></tr></table>
+<p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=5" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<p>A value for Contract kms should always be defined for the service overdue report to work correctly. Contracts with Contract kms = 0 only use time-based overdue calculation.
+<br />
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 3591: Process Scheduler::Convert standard reports for Mail Query service. Live 07/01/2015
+</li><li> 11219: Change Requests::Fuel only contracts included in the Service Due, &amp; Overdue reports. Live 31/03/2015
+</li><li>(DEV-20805) Include Inertia contracts on Service Due and Service Overdue Reports. Live 21/10/2019
+</li><li>(DEV-22121) Service overdue report issue - next service pre-dates the last service. Live xx/xx/2024
+</li><li> (DEV-22296) Reports are affected by Client Code Display Issue (Alphanumeric Codes Showing as '0'). Live dd/mm/2025
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1428-0!1!0!0!!en!2 and timestamp 20251120231341 -->
+<div class="printfooter">
+Retrieved from "<a href="Service_Overdue_Report.html">https://help.catch-e.net.au/mediawiki/index.php/Service_Overdue_Report</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Service_Overdue_Report">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Service_Overdue_Report.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Service_Overdue_Report&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.04 secs. -->
+</body></html>

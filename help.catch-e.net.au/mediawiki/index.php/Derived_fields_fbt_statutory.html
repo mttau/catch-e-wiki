@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Derived fields fbt statutory,Contracts:Fbt,Derived Fields,Event Query,FBT Statutory Report,Gb::Queries::executeQueries(),Job Scheduler,Mail Query,Main Page,Print a report query,SYSTEM" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Derived fields fbt statutory - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Derived fields fbt statutory</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Derived_fields_fbt_statutory.html#column-one">navigation</a>, <a href="Derived_fields_fbt_statutory.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="User_Defined_Queries.html" title="User Defined Queries">User Defined Queries</a> &rarr; <a href="Derived_Fields.html" title="Derived Fields">Derived Fields</a> &rarr; <b>fbt_statutory</b>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Derived_fields_fbt_statutory.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Derived_fields_fbt_statutory.html#Derived_fields_from_the_.2Flib.2FPDF.2Ffbt_statutory_library"><span class="tocnumber">2</span> <span class="toctext">Derived fields from the /lib/PDF/fbt_statutory library</span></a></li>
+<li class='toclevel-1'><a href="Derived_fields_fbt_statutory.html#Input_Fields"><span class="tocnumber">3</span> <span class="toctext">Input Fields</span></a></li>
+<li class='toclevel-1'><a href="Derived_fields_fbt_statutory.html#Output_Fields"><span class="tocnumber">4</span> <span class="toctext">Output Fields</span></a></li>
+<li class='toclevel-1'><a href="Derived_fields_fbt_statutory.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This library is used to calculate emission values based on existing data.<br />
+These readings are shown on screens and used in various reports, such as the <a href="FBT_Statutory_Report.html" title="FBT Statutory Report">FBT Statutory Report</a>.
+</p><p>This library can also be used with the following scheduler job methods: <a href="./Gb::Queries::executeQueries().html" title="Gb::Queries::executeQueries()">executeQuery</a>, <a href="Mail_Query.html" title="Mail Query">mailQuery</a> and <a href="Event_Query.html" title="Event Query">eventQuery</a>.<br />
+This library can also be used with the following APIs: <a href="Print_a_report_query.html" title="Print a report query">printReportQuery</a>.<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;action=edit&amp;section=2" title="Edit section: Derived fields from the /lib/PDF/fbt_statutory library">edit</a>]</div><a name="Derived_fields_from_the_.2Flib.2FPDF.2Ffbt_statutory_library"></a><h4>Derived fields from the /lib/PDF/fbt_statutory library</h4>
+<p>This library is used to calculate fbt statutory placeholders. <br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;action=edit&amp;section=3" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h4>Input Fields</h4>
+<p>The following <b>Input Fields</b> need to be added to your query:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">Field </th><th width="20%" align="left">Source </th><th width="55%" align="left"> Comments </th><th width="10%" align="centre"> Mandatory
+</th></tr>
+<tr>
+<td> contract_id</td><td>  fm_contracts &rarr; contract_id </td><td> </td><td> Yes
+</td></tr>
+<tr>
+<td> ecm_flag</td><td>  fm_contracts &rarr; ecm_flag </td><td>  </td><td> Yes
+</td></tr>
+<tr>
+<td> date_filter </td><td> Any valid date dd/mm/yyyy </td><td> If not passed, the report will use the current date.<br /> Add the field into your query or report query to use a specific date or date logic.<br />
+<p>If you are running the <a href="Print_a_report_query.html" title="Print a report query">Print a report query</a> API, you can make this field a JSON variable as 'dd/mm/yyyy' or 'yyyy-mm-dd'. 
+</p>
+</td><td> No
+</td></tr>
+<tr>
+<td> fbt_statutory_rate_date </td><td> Any valid date dd/mm/yyyy or yyyy-mm-dd </td><td> This date is used to look up the transitional statutory rate. <br /> If blank today's date will be used.<br /> Add the field into your query or report query to use a specific date or date logic.<br />
+<p>If you are running the <a href="Print_a_report_query.html" title="Print a report query">Print a report query</a> API, you can make this field a JSON variable as 'dd/mm/yyyy' or 'yyyy-mm-dd'. 
+</p>
+</td><td> No
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;action=edit&amp;section=4" title="Edit section: Output Fields">edit</a>]</div><a name="Output_Fields"></a><h4>Output Fields</h4>
+<p>The following <b>Derived Fields</b> can be added to your query or report query using the <a href="User_Defined_Queries.html" title="User Defined Queries">Derived Fields</a> syntax:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Field </th><th> Description
+</th></tr>
+<tr>
+<td width="15%" align="left">year_to_date_dates</td><td width="85%" align="left">
+</td></tr>
+<tr>
+<td width="15%" align="left">fbt_year_end</td><td width="85%" align="left">
+</td></tr>
+<tr>
+<td>budget_stat_percent</td><td>
+</td></tr>
+<tr>
+<td>gross_up_factor</td><td>
+</td></tr>
+<tr>
+<td>fbt_tax_rate</td><td>
+</td></tr>
+<tr>
+<td>budget_km_per_year</td><td>
+</td></tr>
+<tr>
+<td>budget_km_per_year_minimum</td><td>
+</td></tr>
+<tr>
+<td>budget_km_per_month</td><td>
+</td></tr>
+<tr>
+<td>budget_km_per_month_minimum</td><td>
+</td></tr>
+<tr>
+<td>actual_km_per_month</td><td>
+</td></tr>
+<tr>
+<td>variance_km_per_month</td><td>
+</td></tr>
+<tr>
+<td>budget_odo_at_date</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_at_date</td><td>
+</td></tr>
+<tr>
+<td>variance_odo_at_date</td><td>
+</td></tr>
+<tr>
+<td>budget_fbt_cost</td><td>
+</td></tr>
+<tr>
+<td>actual_fbt_cost</td><td>
+</td></tr>
+<tr>
+<td>variance_fbt_cost</td><td>
+</td></tr>
+<tr>
+<td>budget_odo_at_year_end</td><td>
+</td></tr>
+<tr>
+<td>budget_date_at_year_end</td><td>
+</td></tr>
+<tr>
+<td>at_date</td><td>
+</td></tr>
+<tr>
+<td>budget_odo_at_date</td><td>
+</td></tr>
+<tr>
+<td>actual_stat_percent</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_date_yts</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_yts</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_date_ytd</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_ytd</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_ytd_description</td><td>
+</td></tr>
+<tr>
+<td>fbt_days_ytd</td><td>
+</td></tr>
+<tr>
+<td>budget_ecm_required</td><td>
+</td></tr>
+<tr>
+<td>budget_ecm_required_gst</td><td>
+</td></tr>
+<tr>
+<td>actual_ecm_required</td><td>
+</td></tr>
+<tr>
+<td>actual_ecm_required_gst</td><td>
+</td></tr>
+<tr>
+<td>ecm_adjustment</td><td>
+</td></tr>
+<tr>
+<td>ecm_adjustment_gst</td><td>
+</td></tr>
+<tr>
+<td>stat_percentage_comment</td><td>
+</td></tr>
+<tr>
+<td>actual_km_per_year</td><td>
+</td></tr>
+<tr>
+<td>non_use_days</td><td>
+</td></tr>
+<tr>
+<td>employee_contribution</td><td>
+</td></tr>
+<tr>
+<td>employee_contribution_budgeted</td><td>
+</td></tr>
+<tr>
+<td>actual_reportable_benefit</td><td>
+</td></tr>
+<tr>
+<td>fbt_year_start</td><td>
+</td></tr>
+<tr>
+<td>contract_start</td><td>
+</td></tr>
+<tr>
+<td>fbt_days_use</td><td>
+</td></tr>
+<tr>
+<td>fbt_year_days</td><td>
+</td></tr>
+<tr>
+<td>at_other_date</td><td>
+</td></tr>
+<tr>
+<td>budget_odo_at_other_date</td><td>
+</td></tr>
+<tr>
+<td>actual_odo_at_other_date</td><td>
+</td></tr>
+<tr>
+<td>variance_odo_at_other_date</td><td>
+</td></tr>
+<tr>
+<td>contract_periods_ltd_at_other_date</td><td>MonthDiff (Date1, Date2 ) where Date1  = filter_date (Report Date) and Date2 = fm_contracts.third_party_start if present otherwise fm_contracts.contract_start. Note MonthDiff = 1 if Date1 and Date2 are in same month. E.g MonthDiff(19/06/2011, 19/06/2011) = 1 and MonthDiff(19/05/2011, 19/06/2011) = 2
+</td></tr>
+<tr>
+<td>contract_periods_ytd_at_other_date</td><td>MonthDiff (Date1, Date2 ) where Date1  = filter_date (Report Date) and Date2 = Maximum Date between FBT Year Start Date of filter_date and fm_contracts.third_party_start if present otherwise fm_contracts.contract_start. E.g MonthDiff(19/06/2011, 19/06/2011) = 1 and MonthDiff(19/05/2011, 19/06/2011) = 2
+</td></tr>
+<tr>
+<td>variance_odo_at_other_date_colour</td><td>
+</td></tr>
+<tr>
+<td>variance_fbt_cost_colour</td><td>
+</td></tr>
+<tr>
+<td>budget_odo_at_date_colour</td><td>
+</td></tr>
+<tr>
+<td>fbt_paid</td><td>
+</td></tr>
+<tr>
+<td>ecm_flag</td><td>
+</td></tr>
+<tr>
+<td>actual_fbt_cost_csv</td><td>
+</td></tr>
+<tr>
+<td>budget_fbt_cost_csv</td><td>
+</td></tr>
+<tr>
+<td>variance_fbt_cost_csv</td><td>
+</td></tr>
+<tr>
+<td>ecm_adjustment_csv</td><td>
+</td></tr>
+<tr>
+<td>ecm_adjustment_gst_csv</td><td>
+</td></tr>
+<tr>
+<td>total_fbt_benefit</td><td>
+</td></tr>
+<tr>
+<td>ecm_from_employee</td><td>
+</td></tr>
+<tr>
+<td>fbt_benefit_after_ecm</td><td>
+</td></tr>
+<tr>
+<td>gross_benefit</td><td>
+</td></tr>
+<tr>
+<td>fbt_liability</td><td>
+</td></tr>
+<tr>
+<td>fbt_tax_rate</td><td>
+</td></tr>
+<tr>
+<td>pre_tax_benefit</td><td>
+</td></tr>
+<tr>
+<td>total_ecm</td><td>
+</td></tr>
+<tr>
+<td>total_packaged_fbt_benefit</td><td>
+</td></tr>
+<tr>
+<td>actual_fbt_benefit_cost</td><td>
+</td></tr>
+<tr>
+<td>amount_owed_by_empolyee</td><td>
+</td></tr>
+<tr>
+<td>reportable_fbt_benefit</td><td>
+</td></tr>
+<tr>
+<td>budget_fringe_benefit </td><td> <a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contracts / FBT</a> <u>Budgeted</u> "Fringe Benefit"
+</td></tr>
+<tr>
+<td>actual_fringe_benefit </td><td> <a href="./Contracts:Fbt.html" title="Contracts:Fbt">Contracts / FBT</a> <u>Actual</u> "Fringe Benefit"
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20690) printReportQuery API - enable fbt_statutory library to be invoked. Live 07/07/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Derived_fields_fbt_statutory.html">https://help.catch-e.net.au/mediawiki/index.php/Derived_fields_fbt_statutory</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Derived_fields_fbt_statutory">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Derived_fields_fbt_statutory.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Derived_fields_fbt_statutory&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

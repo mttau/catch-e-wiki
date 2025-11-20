@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="GetLocations,APIs,Authenticate with the API,Main Page,Manage Roles:Apis,PatchQuote,PatchQuote Supporting APIs,Quotes:Contract" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>GetLocations - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">GetLocations</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="GetLocations.html#column-one">navigation</a>, <a href="GetLocations.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; IT Set-up  &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="PatchQuote_Supporting_APIs.html" title="PatchQuote Supporting APIs">Quote / Various Lookups</a> &rarr; <strong>GetLocations</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="GetLocations.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#Authentication"><span class="tocnumber">3</span> <span class="toctext">Authentication</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#URL_Examples"><span class="tocnumber">5</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#Parameters_.28Query_Params.29"><span class="tocnumber">6</span> <span class="toctext">Parameters (Query Params)</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#Wildcard_.25_operator_notes:"><span class="tocnumber">7</span> <span class="toctext">Wildcard % operator notes:</span></a></li>
+<li class='toclevel-1'><a href="GetLocations.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Supporting API for <a href="PatchQuote.html" title="PatchQuote">patchQuote</a>. Returns a list of Location Rego details as seen on the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes:Contract</a> tab.
+</p><p>Supplementary SWAGGER documentation is available here: <a href="https://api.test.catch-e.com/docs/#/Quote%20%2F%20Locations/getLocations" class='external free' title="https://api.test.catch-e.com/docs/#/Quote%20%2F%20Locations/getLocations" rel="nofollow">https://api.test.catch-e.com/docs/#/Quote%20%2F%20Locations/getLocations</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>Locations:Get</b>.
+<br />
+</p>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> This API is not configured for external use.<br /> Contact your Account Manager to discuss access to this API.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=3" title="Edit section: Authentication">edit</a>]</div><a name="Authentication"></a><h4>Authentication</h4>
+<p><a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate with the API</a> before running this API.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'GET' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=5" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.test.catch-e.com/qt/locations
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=6" title="Edit section: Parameters (Query Params)">edit</a>]</div><a name="Parameters_.28Query_Params.29"></a><h4>Parameters (Query Params)</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">Key </th><th width="5%" align="left">Format</th><th width="70%" align="left"> Notes</th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> location_name</td><td> string </td><td> Get location_id for the "Location Rego" field. <br /> This field supports the wildcard % operator (See Wildcard % operator notes below).  </td><td> No
+</td></tr>
+<tr>
+<td>page</td><td>number</td><td>Optional page number. Default 1 page.</td><td>no
+</td></tr>
+<tr>
+<td>page_size</td><td>number</td><td>Optional page size. Default 25 records per page.</td><td>no
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=7" title="Edit section: Wildcard % operator notes:">edit</a>]</div><a name="Wildcard_.25_operator_notes:"></a><h4>Wildcard % operator notes:</h4>
+If you are using "Postman" app, with the wildcard operator, the search string of either %ab% or %ba%, will give this response: <pre>&quot;field_name&quot;: {&quot;isEmpty&quot;: &quot;Value is required and can't be empty&quot;}.</pre> 
+<p>If you need to search either <i>%ab% or %ba%</i>, please use <i>%25ab%25 or %25ba%25</i> as required to return results as expected.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20532) Refactor patchQuote for remaining Contract tab fields. Live dd/mm/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="GetLocations.html">https://help.catch-e.net.au/mediawiki/index.php/GetLocations</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=GetLocations">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/GetLocations.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=GetLocations&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

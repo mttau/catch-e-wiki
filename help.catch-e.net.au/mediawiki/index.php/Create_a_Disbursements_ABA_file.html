@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Create a Disbursements ABA file,AutoBuildClaims,AutoPostPayments,Billing Re-print,Clients:Quote defaults,Create a Disbursement BPAY file,Create a pay run,Delete a Disbursement ABA file,Delete a Disbursement BPAY file,Disbursements,Disbursements (ABA)" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Create a Disbursements ABA file - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Create a Disbursements ABA file</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Create_a_Disbursements_ABA_file.html#column-one">navigation</a>, <a href="Create_a_Disbursements_ABA_file.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a> &rarr; <a href="Salary_Packaging.html" title="Salary Packaging">Salary Packaging</a> &rarr; <a href="Salary_Packaging.html#Disbursements" title="Salary Packaging">Disbursements</a> &rarr; <strong>Create a Disbursements ABA file</strong>
+</p>
+<hr />
+<a name="Qualifiers"></a><h4>Qualifiers</h4>
+<ol><li> The client has a <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Packaging Defaults</a> record
+</li><li> You have <a href="Receipt_a_pay_run.html" title="Receipt a pay run">receipted the pay run</a>
+</li><li> Since the receipt was posted,
+<ol><li> the scheduler job <a href="Sp_/_approvals_/_autoPostClaims.html" title="Sp / approvals / autoPostClaims">autoPostClaims</a> has run
+</li><li> the scheduler job <a href="AutoBuildClaims.html" title="AutoBuildClaims">autoBuildClaims</a> has run 
+</li><li> the scheduler job <a href="AutoPostPayments.html" title="AutoPostPayments">autoPostPayments</a> has run 
+</li></ol>
+</li></ol>
+<hr />
+<p><br />
+</p>
+<a name="Select"></a><h4>Select</h4>
+<ol><li> Navigate to <b>Accounts / Export / BECS &rarr; Disbursements (ABA)</b> 
+</li><li> <a href="./Image:New.png.html" class="image" title="Image:New.png"><img src="../../clients/help/wiki/images/1/1a/New.png" alt="Image:New.png" width="38" height="26" longdesc="/mediawiki/index.php/Image:New.png" /></a>
+</li><li> <b>ABA Type</b> 
+<ol><li> choose 'Company' if you maintain one bank account for your clients.
+</li><li> choose 'Client' if you maintain a separate bank account for the client.
+</li></ol>
+</li><li> <b>Client Code</b> 
+<ol><li> leave this field blank of you process all client disbursements together in a company bank account
+</li><li> lookup or enter the client's code, tab off this field
+</li></ol>
+</li><li> If there are no transactions, you will be alerted, click OK to exit the screen
+</li><li> The calculated total for the file is displayed
+</li></ol>
+<a name="Preview_Reports"></a><h4>Preview Reports</h4>
+<ol><li> <b>Output Name</b> - select either the 'Company Preview' or 'Client Preview' to review the transactions that will be included in the batch.
+</li><li> <a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a>
+</li><li> Customised reports can be created for you to enable detailed data checks before batches are created.
+</li></ol>
+<a name="Create_the_batch"></a><h4>Create the batch</h4>
+<ol><li> <b>Transaction Date</b> - pick or enter the bank processing date you need for this file
+</li><li> <a href="./Image:Create.png.html" class="image" title="Image:Create.png"><img src="../../clients/help/wiki/images/9/9e/Create.png" alt="Image:Create.png" width="39" height="17" longdesc="/mediawiki/index.php/Image:Create.png" /></a>
+</li><li> <a href="./Image:Export.png.html" class="image" title="Image:Export.png"><img src="../../clients/help/wiki/images/4/47/Export.png" alt="Image:Export.png" width="38" height="17" longdesc="/mediawiki/index.php/Image:Export.png" /></a>
+</li><li> Scheduler jobs can be configured to:
+<ol><li> create a client event and emails an EFT Disbursements Report report to the client
+</li></ol>
+</li></ol>
+<a name="Next_Steps"></a><h4>Next Steps</h4>
+<p><a href="Create_a_Disbursement_BPAY_file.html" title="Create a Disbursement BPAY file">Create a Disbursement BPAY file</a>
+<br />
+</p>
+<hr />
+<p><small>
+</p>
+<a name="Related_Pages"></a><h4>Related Pages</h4>
+<p>Process Pages
+</p>
+<dl><dd> <a href="Create_a_pay_run.html" title="Create a pay run">Create a pay run</a>
+</dd><dd> <a href="Invoice_a_pay_run_and_email_pay_run_reports.html" title="Invoice a pay run and email pay run reports">Invoice a pay run and email pay run reports</a>
+</dd><dd> <a href="Email_pay_run_reports.html" title="Email pay run reports">Email pay run reports</a>
+</dd><dd> <a href="Update_a_pay_run_to_add_transactions.html" title="Update a pay run to add transactions">Update a pay run to add transactions</a>
+</dd><dd> <a href="Update_a_pay_run_to_remove_transactions.html" title="Update a pay run to remove transactions">Update a pay run to remove transactions</a>
+</dd></dl>
+<dl><dd> <a href="Receipt_a_pay_run.html" title="Receipt a pay run">Receipt a pay run</a>
+</dd><dd> <strong>Create a Disbursements ABA file</strong>
+</dd><dd> <a href="Create_a_Disbursement_BPAY_file.html" title="Create a Disbursement BPAY file">Create a Disbursement BPAY file</a>
+</dd><dd> <a href="Reprint_a_Disbursement_BPAY_file.html" title="Reprint a Disbursement BPAY file">Reprint a Disbursement BPAY file</a>
+</dd></dl>
+<dl><dd> <a href="Unwind_a_pay_run.html" title="Unwind a pay run">Unwind a pay run</a>
+</dd><dd> <a href="Delete_a_Disbursement_ABA_file.html" title="Delete a Disbursement ABA file">Delete a Disbursement ABA file</a>
+</dd><dd> <a href="Delete_a_Disbursement_BPAY_file.html" title="Delete a Disbursement BPAY file">Delete a Disbursement BPAY file</a>
+</dd><dd> <a href="Unpost_a_pay_run_invoice.html" title="Unpost a pay run invoice">Unpost a pay run invoice</a>
+</dd></dl>
+<p>System Pages
+</p>
+<dl><dd> Packaging / Pay Runs &rarr; <a href="Pay_Runs.html" title="Pay Runs">Pay Run</a>
+</dd><dd> Fleet / Receivables  &rarr; <a href="./Receipts:Allocate.html" title="Receipts:Allocate">Receipts/ Allocate</a>
+</dd><dd> Accounts / Export / BECS &rarr; <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">Disbursements (ABA)</a>
+</dd><dd> Accounts / Export / BECS &rarr; <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">Disbursements (ABA)</a> &rarr; <a href="Disbursements_(ABA)_Troubleshooting.html" title="Disbursements (ABA) Troubleshooting">Disbursements (ABA) Troubleshooting</a>
+</dd><dd> Accounts / Export / BPAY &rarr; <a href="Disbursements.html" title="Disbursements">Disbursements (BPAY)</a>
+</dd><dd> Fleet / Billing &rarr; <a href="Billing_Re-print.html" title="Billing Re-print">Billing / Re-print</a> &rarr; Un-Post</small>
+</dd></dl>
+<div class="printfooter">
+Retrieved from "<a href="Create_a_Disbursements_ABA_file.html">https://help.catch-e.net.au/mediawiki/index.php/Create_a_Disbursements_ABA_file</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Create_a_Disbursements_ABA_file">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Create_a_Disbursements_ABA_file.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Create_a_Disbursements_ABA_file&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.07 secs. -->
+</body></html>

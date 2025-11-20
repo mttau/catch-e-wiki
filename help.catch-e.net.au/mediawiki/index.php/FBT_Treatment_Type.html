@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="FBT Treatment Type,Administration,Clients:Quote defaults,FLEET,Main Page,Qt variant profiles,Quotes,Quotes:Contract,Quotes:Vehicle,Update a Profile Vehicle Type,Vehicle Type" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>FBT Treatment Type - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">FBT Treatment Type</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="FBT_Treatment_Type.html#column-one">navigation</a>, <a href="FBT_Treatment_Type.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a>  &rarr; <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Vehicle</a> &rarr; <strong>FBT Treatment Type</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Vehicle_Type.html" title="Vehicle Type">Vehicle Type</a> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#ATO_Rules"><span class="tocnumber">2</span> <span class="toctext">ATO Rules</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#FBT_Treatment_Type_field_logic"><span class="tocnumber">3</span> <span class="toctext">FBT Treatment Type field logic</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#Vehicle_Type_-_fbt_payable_exempt_flag"><span class="tocnumber">4</span> <span class="toctext">Vehicle Type - fbt_payable_exempt_flag</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#Quotes_Placeholder_Logic"><span class="tocnumber">5</span> <span class="toctext">Quotes Placeholder Logic</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#FBT_Treatment_Type_-_field_population_logic_flowchart"><span class="tocnumber">6</span> <span class="toctext">FBT Treatment Type - field population logic flowchart</span></a></li>
+<li class='toclevel-1'><a href="FBT_Treatment_Type.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The "FBT Treatment Type" setting determines if a quote is exempt for FBT Payable or not.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=2" title="Edit section: ATO Rules">edit</a>]</div><a name="ATO_Rules"></a><h4>ATO Rules</h4>
+<p><a href="./Image:ATO_Eligibility.png.html" class="image" title="Image:ATO_Eligibility.png"><img src="../../clients/help/wiki/images/6/67/ATO_Eligibility.png" alt="Image:ATO_Eligibility.png" width="351" height="186" longdesc="/mediawiki/index.php/Image:ATO_Eligibility.png" /></a><br />
+<a href="./Image:ATO_Held_&amp;_Used.png.html" class="image" title="Image:ATO_Held_&amp;_Used.png"><img src="../../clients/help/wiki/images/7/77/ATO_Held_&amp;_Used.png" alt="Image:ATO_Held_&amp;_Used.png" width="351" height="166" longdesc="/mediawiki/index.php/Image:ATO_Held_%26_Used.png" /></a><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=3" title="Edit section: FBT Treatment Type field logic">edit</a>]</div><a name="FBT_Treatment_Type_field_logic"></a><h4>FBT Treatment Type field logic</h4>
+<p>The "FBT Treatment Type" field defaults to 'Standard' when a quote is first being raised.<br /> When a variant has been selected, this field will be updated to show 'EV Exempt Reportable' if;
+</p>
+<ol><li> the linked "<a href="Vehicle_Type.html" title="Vehicle Type">Vehicle Type</a>" is FBT exempt
+</li><li> the vehicle's Base Price is below the LCT threshold
+</li><li> the quote's “Luxury Car Tax” is '0.00'
+</li><li> if the vehicle is 'Used' or 'Demonstrator' then also
+<ol><li> “Date First Held” must be on or after '01/07/2022'
+</li><li> “Luxury Car Tax Paid” must be 'No'
+</li><li> if “Date First Held” and “Luxury Car Tax Paid” have not been populated, "FBT Treatment Type" will revert to 'Standard'<br />
+</li></ol>
+</li></ol>
+<p>In some cases, you can update this field directly to show 'EV Exempt - Reportable' if required.<br /> If the stored vehicle type is not exempt, <a href="./Quotes:Vehicle.html#Validations_and_Alerts" title="Quotes:Vehicle">you will see an alert</a>: <i>Vehicle Type is not FBT Payable Exempt - are you sure?</i>
+</p><p>Open the <a href="https://help.catch-e.net.au/clients/help/wiki/images/b/be/Luxury_Car_Tax_Calculations.xlsx" class='internal' title="Luxury Car Tax Calculations.xlsx">Luxury Car Tax Calculations</a> spreadsheet to see the logic used to get the quote's default "FBT Treatment Type" and to see how the Base Price is calculated.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=4" title="Edit section: Vehicle Type - fbt_payable_exempt_flag">edit</a>]</div><a name="Vehicle_Type_-_fbt_payable_exempt_flag"></a><h4>Vehicle Type - fbt_payable_exempt_flag</h4>
+<p>The linked "<a href="Vehicle_Type.html" title="Vehicle Type">Vehicle Type</a>" determines if it is classified as 'Standard' or 'EV Exempt Reportable'.<br /> If <i>[qt_vehicle_types]fbt_payable_exempt_flag</i> = 'yes', the variant is eligible to be classified as 'EV Exempt Reportable' in a quote if the other conditions listed above are met.<br />
+</p><p>If your quotes are not returning the "FBT Treatment Type" you expect, check and update the <a href="Qt_variant_profiles.html" title="Qt variant profiles">qt_quote_profiles</a> "Vehicle Type" to suit.<br /> Visit the process page <a href="Update_a_Profile_Vehicle_Type.html" title="Update a Profile Vehicle Type">Update a Profile Vehicle Type</a> for instructions.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=5" title="Edit section: Quotes Placeholder Logic">edit</a>]</div><a name="Quotes_Placeholder_Logic"></a><h4>Quotes Placeholder Logic</h4>
+<p>If the "FBT Treatment Type" is 'Standard'
+</p>
+<dl><dd> Quotes will show either an ECM Amount or an FBT Payable Amount.
+</dd></dl>
+<p>If the "FBT Treatment Type" is 'EV Exempt Reportable'
+</p>
+<dl><dd> <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> "Use ECM?" is un-checked
+</dd><dd> Quotes will show both the ECM Amount and the FBT Payable Amount as 0.
+</dd></dl>
+<p>If a variant is already selected in your quote and you update to use a 'Standard' vehicle, the "Use ECM?" field will update to match the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "ECM Flag" field.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=6" title="Edit section: FBT Treatment Type - field population logic flowchart">edit</a>]</div><a name="FBT_Treatment_Type_-_field_population_logic_flowchart"></a><h4>FBT Treatment Type - field population logic flowchart</h4>
+<p><br />
+<a href="./Image:Fbt_treatment_type_workflow.png.html" class="image" title="Image:Fbt_treatment_type_workflow.png"><img src="../../clients/help/wiki/images/9/9e/Fbt_treatment_type_workflow.png" alt="Image:Fbt_treatment_type_workflow.png" width="707" height="854" longdesc="/mediawiki/index.php/Image:Fbt_treatment_type_workflow.png" /></a>
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-21798) Quote logic - Electric Cars FBT Exemption on or after 1 July 2022. Live 14/03/2023
+</li><li> (DEV-21840) Update FBT Reports and calculations to accommodate EV Exempt.  Live 27/03/2023
+</li><li> (DEV-22130) ECM Flag not set when changing from ICE to EV. Live 19/08/2024
+</li><li> (DEV-22157 / API-20598) Used EV Cars - Add Date First Registered validation prompt. Live 28/01/2025</small>
+</li></ul>
+<div class="printfooter">
+Retrieved from "<a href="FBT_Treatment_Type.html">https://help.catch-e.net.au/mediawiki/index.php/FBT_Treatment_Type</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=FBT_Treatment_Type">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/FBT_Treatment_Type.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=FBT_Treatment_Type&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.07 secs. -->
+</body></html>

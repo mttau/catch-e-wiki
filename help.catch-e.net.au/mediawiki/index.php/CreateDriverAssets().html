@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="CreateDriverAssets,APIs,GetFinanceAssetTypes(),Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>CreateDriverAssets - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">CreateDriverAssets</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets%28%29&amp;redirect=no" title="CreateDriverAssets()">CreateDriverAssets()</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="CreateDriverAssets().html#column-one">navigation</a>, <a href="CreateDriverAssets().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="APIs.html" title="APIs">APIs</a> → <a href="APIs.html#Drivers_.2F_Assets_and_Liabilities" title="APIs">Drivers / Assets and Liabilities</a> &rarr;  <strong>createDriverAssets</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#HTTP_Method"><span class="tocnumber">2</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#Input_Fields_.28Header.29"><span class="tocnumber">3</span> <span class="toctext">Input Fields (Header)</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#Input_Fields_.28Body.29"><span class="tocnumber">4</span> <span class="toctext">Input Fields (Body)</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#JSON_Example"><span class="tocnumber">5</span> <span class="toctext">JSON Example</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#.28Successful.29_Output_Example_.28sample.29"><span class="tocnumber">6</span> <span class="toctext">(Successful) Output Example (sample)</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#Error_Codes"><span class="tocnumber">7</span> <span class="toctext">Error Codes</span></a></li>
+<li class='toclevel-1'><a href="CreateDriverAssets().html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h2>Overview</h2>
+<p>Allows you to add new Drivers' Asset/s.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=2" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h2> HTTP Method </h2>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=3" title="Edit section: Input Fields (Header)">edit</a>]</div><a name="Input_Fields_.28Header.29"></a><h2> Input Fields (Header) </h2>
+<ul><li> Header should contain the 'Content-Type' Key with the Value = 'application/json' or 'application/hjson'. <br />
+</li><li> Header should contain the 'Accept' Key with the Value = 'application/vnd.catch-e-api.v1+json, application/problem+json'
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=4" title="Edit section: Input Fields (Body)">edit</a>]</div><a name="Input_Fields_.28Body.29"></a><h2>Input Fields (Body)</h2>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>JSON Field</th><th>Format</th><th>Notes</th><th>Mandatory
+</th></tr>
+<tr>
+<td>driver_id</td><td>Int</td><td>Driver ID</td><td>Yes
+</td></tr>
+<tr>
+<td>finance_asset_type_id</td><td>string</td><td> Enter the finance_asset_type_id for the respective Asset Type. See <a href="GetFinanceAssetTypes().html" title="GetFinanceAssetTypes()">GetFinanceAssetTypes()</a></td><td>Yes
+</td></tr>
+<tr>
+<td>amount</td><td>number</td><td>Enter the Asset Value.</td><td>Yes
+</td></tr>
+<tr>
+<td>description</td><td>string</td><td>Enter the Asset Description.</td><td>No
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=5" title="Edit section: JSON Example">edit</a>]</div><a name="JSON_Example"></a><h2>JSON Example</h2>
+<pre>
+https://api.catch-e.com/fm/driver/assets/
+
+[
+    {
+        &quot;driver_id&quot;: &quot;101175&quot;,
+        &quot;finance_asset_type_id&quot;: &quot;16238640163402548256&quot;,
+        &quot;amount&quot;: &quot;77777.00&quot;,
+        &quot;description&quot;: &quot;Matt Test Asset 1&quot;
+    },
+    {
+        &quot;driver_id&quot;: &quot;101175&quot;,
+        &quot;finance_asset_type_id&quot;: &quot;16238640163402548256&quot;,
+        &quot;amount&quot;: &quot;88888.00&quot;,
+        &quot;description&quot;: &quot;Matt Test Asset 2&quot;
+    }
+]
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=6" title="Edit section: (Successful) Output Example (sample)">edit</a>]</div><a name=".28Successful.29_Output_Example_.28sample.29"></a><h2> (Successful) Output Example (sample) </h2>
+<pre>
+{
+    &quot;driver_asset_id&quot;: 3196434310060077777,
+    &quot;driver_id&quot;: 101211,
+    &quot;finance_asset_type_id&quot;: 3196195708503877777,
+    &quot;amount&quot;: 77777,
+    &quot;ownership&quot;: &quot;debt_free&quot;,
+    &quot;description&quot;: &quot;Test Asset 1&quot;,
+    &quot;finance_asset_type_name&quot;: &quot;Resident Property&quot;,
+    &quot;_links&quot;: {
+        &quot;self&quot;: {
+            &quot;href&quot;: &quot;https://api.catch-e.com/fm/driver/assets/3196434310060077777&quot;
+        }
+    }
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=7" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h2> Error Codes </h2>
+<p>Example error output
+</p>
+<pre>
+{
+    &quot;validation_messages&quot;: {
+        &quot;amount&quot;: {
+            &quot;isEmpty&quot;: &quot;Value is required and can't be empty&quot;
+        }
+    },
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unprocessable Entity&quot;,
+    &quot;status&quot;: 422,
+    &quot;detail&quot;: &quot;Failed Validation&quot;
+}
+</pre>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h2>System Notes</h2>
+<p><small>
+</p>
+<ul><li> (API-20012) Create Web Service for adding &amp; editing Driver Assets &amp; Liabilities. Live 20/05/2019
+</li><li> (API-20278) Enhance API to support HJSON. Live dd/mm/2022
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:2700-0!1!0!0!!en!2 and timestamp 20251120231317 -->
+<div class="printfooter">
+Retrieved from "<a href="CreateDriverAssets.html">https://help.catch-e.net.au/mediawiki/index.php/CreateDriverAssets</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=CreateDriverAssets">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/CreateDriverAssets.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateDriverAssets&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.03 secs. -->
+</body></html>

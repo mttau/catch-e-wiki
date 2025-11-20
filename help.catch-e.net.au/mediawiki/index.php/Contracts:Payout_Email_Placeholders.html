@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Contracts:Payout Email Placeholders,Administration,Contracts,Contracts:Payout,Contracts:Payout Set Up,FLEET,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Contracts:Payout Email Placeholders - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Contracts:Payout Email Placeholders</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Contracts:Payout_Email_Placeholders.html#column-one">navigation</a>, <a href="./Contracts:Payout_Email_Placeholders.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <a href="./Contracts:Payout.html" title="Contracts:Payout">Payout</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="./Contracts:Payout_Set_Up.html" title="Contracts:Payout Set Up">Payout Set Up</a> &rarr; <strong>Payout Email Placeholders</strong>
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout_Email_Placeholders&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The placeholders listed below are available for use in payout emails WHERE [gb_templates]name IN ('pdf_payout_open','pdf_payout_requested','pdf_payout_accepted')<br />
+</p><p>The markers ## or {} can be used to make placeholders. E.g. #contract_id# or {contract_id} are both fine.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout_Email_Placeholders&amp;action=edit&amp;section=2" title="Edit section: Placeholders">edit</a>]</div><a name="Placeholders"></a><h4>Placeholders</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Placeholder</th><th>Description (Location of data in system screens)</th><th>[table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Driver Details
+</td></tr>
+<tr>
+<td>driver_name </td><td>Drivers / Contact "Given Name" "Surname"</td><td>[fm_drivers]given_name] [fm_drivers]surname
+</td></tr>
+<tr>
+<td>driver_mobile </td><td>Drivers / Contact "Mobile"</td><td>[fm_drivers]mobile
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Client Details
+</td></tr>
+<tr>
+<td>client_code </td><td>Clients / Contact "Client Code"</td><td>[fm_clients]client_code
+</td></tr>
+<tr>
+<td>client_name </td><td>Clients / Contact "Name"</td><td>[fm_clients]name
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Contract Details
+</td></tr>
+<tr>
+<td>contract_id</td><td>Contracts Header "Contract ID"</td><td>[fm_contracts]contract_id
+</td></tr>
+<tr>
+<td>contract_start</td><td>Contracts / Contract "Contract Start"</td><td> [fm_contracts]contract_start
+</td></tr>
+<tr>
+<td>contract_end</td><td>Contracts / Contract "Contract End"</td><td> [fm_contracts]contract_end
+</td></tr>
+<tr>
+<td>contract_type</td><td>Contracts / Contract "Contract Type""</td><td> [gl_posting_maps]posting_map_code linked to [fm_contracts]posting_map_id
+</td></tr>
+<tr>
+<td>contract_type_name</td><td>Accounts / Contract Types "Name"</td><td> [gl_posting_maps]name linked to [fm_contracts]posting_map_id
+</td></tr>
+<tr>
+<td>reg_no</td><td>Contracts / Contract "Reg Number"</td><td>[fm_contracts]reg_no
+</td></tr>
+<tr>
+<td>state</td><td> Contracts / Contract "State" </td><td>[fm_contracts]state
+</td></tr>
+<tr>
+<td>contract_kms</td><td>Contracts / Contract "Contract Km"</td><td>[fm_contracts]contract_kms
+</td></tr>
+<tr>
+<td>vehicle_description</td><td>Contracts / Vehicle "Description"</td><td>[fm_contracts]description
+</td></tr>
+<tr>
+<td>colour</td><td>Contracts / Vehicle "Colour"</td><td>[fm_contracts]colour
+</td></tr>
+<tr>
+<td>reg_expiry</td><td> Contracts / Vehicle "Reg Expiry" </td><td>[fm_contracts]reg_renewal
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Contracts / Payout
+</td></tr>
+<tr>
+<td>payout_date</td><td> Contracts / Payout "Payout Date" of selected record</td><td>[fm_contract_payouts]payout_date
+</td></tr>
+<tr>
+<td>price_to_purchase_net</td><td> Contracts / Payout "Price to Purchase" of selected record</td><td>[fm_contract_payouts]price_to_purchase_net
+</td></tr>
+<tr>
+<td>price_to_purchase_gst</td><td> Contracts / Payout "Price to Purchase" of selected record</td><td>[fm_contract_payouts]price_to_purchase_gst
+</td></tr>
+<tr>
+<td>early_termination_fee_net</td><td> Contracts / Payout "Early Termination Fee" gst of selected record</td><td>[fm_contract_payouts]early_termination_fee_net
+</td></tr>
+<tr>
+<td>early_termination_fee_gst</td><td> Contracts / Payout "Early Termination Fee" of selected record</td><td>[fm_contract_payouts]early_termination_fee_gst
+</td></tr>
+<tr>
+<td>total_loss_net</td><td> Contracts / Payout "Total Loss" of selected record</td><td>[fm_contract_payouts]total_loss_net
+</td></tr>
+<tr>
+<td>total_loss_gst</td><td> Contracts / Payout "Total Loss" gst of selected record</td><td>[fm_contract_payouts]total_loss_gst
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Contracts / Maintenance
+</td></tr>
+<tr>
+<td>current_km_date</td><td> Contracts / Maintenance "Date" of selected record</td><td>[fm_maintenance]odometer_date
+</td></tr>
+<tr>
+<td>current_km</td><td>Contracts / Maintenance "Odo" of selected record (MAX(odometer) FROM fm_maintenance WHERE odometer_valid_flag = 'yes')</td><td>[fm_maintenance]odometer
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="3"> Other Details
+</td></tr>
+<tr>
+<td>account_manager_name </td><td>Clients / Contact "A/C Manager"</td><td>[gb_users]full_name
+</td></tr>
+<tr>
+<td>account_manager_phone</td><td>Users / Details "Phone" (for the A/C Manager's user details)</td><td>[gb_users]phone
+</td></tr>
+<tr>
+<td>full_name </td><td>Users / Details "Name" (full_name of user linked to <i>[fm_contract_payouts]user_id_create</i>)</td><td>[gb_users]full_name
+</td></tr>
+</table>
+<p><br />
+</p><div class="printfooter">
+Retrieved from "<a href="./Contracts:Payout_Email_Placeholders.html">https://help.catch-e.net.au/mediawiki/index.php/Contracts:Payout_Email_Placeholders</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Contracts:Payout_Email_Placeholders">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Contracts:Payout_Email_Placeholders.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Contracts:Payout_Email_Placeholders&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.05 secs. -->
+</body></html>

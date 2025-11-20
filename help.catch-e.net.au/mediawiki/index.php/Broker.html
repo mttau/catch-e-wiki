@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Broker,Administration,Clients:Quote defaults,Contract Types:Details,Export data from a table,FLEET,Financier,Global Controls,Import data to a table,Lookup,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Broker - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Broker</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Broker.html#column-one">navigation</a>, <a href="Broker.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> &rarr;  <a href="./Quotes:Search.html" title="Quotes:Search">Search</a>  &rarr; <a href="./Quotes:Header.html" title="Quotes:Header">Header</a> | <a href="./Quotes:Copy.html" title="Quotes:Copy">Copy</a> | <a href="./Quotes:Accept.html" title="Quotes:Accept">Accept and Settle</a> &rarr;  <a href="./Quotes:Finance.html" title="Quotes:Finance">Finance</a> &rarr; <strong>Broker</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Broker.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Broker.html#Quote_Logic"><span class="tocnumber">2</span> <span class="toctext">Quote Logic</span></a>
+<ul>
+<li class='toclevel-2'><a href="Broker.html#Create"><span class="tocnumber">2.1</span> <span class="toctext">Create</span></a></li>
+<li class='toclevel-2'><a href="Broker.html#Edit"><span class="tocnumber">2.2</span> <span class="toctext">Edit</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Broker.html#Calculation"><span class="tocnumber">3</span> <span class="toctext">Calculation</span></a></li>
+<li class='toclevel-1'><a href="Broker.html#Set-Up"><span class="tocnumber">4</span> <span class="toctext">Set-Up</span></a>
+<ul>
+<li class='toclevel-2'><a href="Broker.html#Set_the_calculation_basis"><span class="tocnumber">4.1</span> <span class="toctext">Set the calculation basis</span></a></li>
+<li class='toclevel-2'><a href="Broker.html#Create_a_Broker"><span class="tocnumber">4.2</span> <span class="toctext">Create a Broker</span></a></li>
+<li class='toclevel-2'><a href="Broker.html#Link_to_a_Financier"><span class="tocnumber">4.3</span> <span class="toctext">Link to a Financier</span></a></li>
+<li class='toclevel-2'><a href="Broker.html#Add_or_update_Broker_Rates"><span class="tocnumber">4.4</span> <span class="toctext">Add or update Broker Rates</span></a></li>
+<li class='toclevel-2'><a href="Broker.html#Role_Restrictions"><span class="tocnumber">4.5</span> <span class="toctext">Role Restrictions</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Broker.html#Useful_Queries"><span class="tocnumber">5</span> <span class="toctext">Useful Queries</span></a></li>
+<li class='toclevel-1'><a href="Broker.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Brokers can be linked to quotes and are stored in the <b>Quotes / Finance</b> "Broker" field.<br />
+Brokers can be set-up to be linked to a specific Financier.<br />
+Using brokers and broker rates in quotes is an optional feature.<br />
+</p><p>Brokers can be set-up to have a default rate, this goes into the <b>Quotes / Finance</b> "Broker Rate" field and the "Broker Fee" is calculated from this.<br />
+Open the <a href="https://help.catch-e.net.au/clients/help/wiki/images/0/05/Broker_Fee_Calculation_Model.xlsx" class='internal' title="Broker Fee Calculation Model.xlsx">calculation model</a> to see how the fee is calculated.<br />
+</p><p>Below is a description of the logic that is applied to default or add a broker and a broker rate into a quote:<br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=2" title="Edit section: Quote Logic">edit</a>]</div><a name="Quote_Logic"></a><h4>Quote Logic</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=3" title="Edit section: Create">edit</a>]</div><a name="Create"></a><h5>Create</h5>
+<p>When <b>creating new quotes</b>, <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> "Financier" will be populated in the following preference order
+</p>
+<ol><li> If <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Financier" is populated, use this financier. 
+</li><li> If <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Types / Details</a> "Quote Financier" is populated, use this financier.
+</li><li> <a href="Lookup.html" title="Lookup">Lookup</a> or directly enter a financier.<br />
+</li></ol>
+<p>The  "Broker" defaults in this order
+</p>
+<ol><li> Quotes / Finance "Financier" - linked <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account "Agent" (broker)</a> is added.
+</li><li> User can add
+</li></ol>
+<p>The "Broker Rate" defaults in this order
+</p>
+<ol><li> "Broker" - linked <i>[qt_broker_rates]rate</i> where <i>[qt_broker_rate]date</i> is on or before the quote's "Effective Date"
+</li><li> User can add
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=4" title="Edit section: Edit">edit</a>]</div><a name="Edit"></a><h5>Edit</h5>
+<p>The "Financier" can change in the following situations
+</p>
+<ol><li> The "Client" is changed I.e., <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Financier" 
+</li><li> The "Contract Type" is changed I.e., <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Types / Details</a> "Financier" 
+</li><li> User updates
+</li></ol>
+<p>The "Broker" can change in the following situations
+</p>
+<ol><li> The Financier is changed AND the new Financier has a linked Broker
+</li><li> User changes
+</li></ol>
+<p>The "Broker Rate" can change in the following situations
+</p>
+<ol><li> The "Broker" is changed
+</li><li> The "Effective Date" is changed I.e., <i>[qt_broker_rates]date</i> is on or before the quote's "Effective Date"
+</li><li> User changes the "Broker Rate"
+</li><li> User changes the "Broker Fee"
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=5" title="Edit section: Calculation">edit</a>]</div><a name="Calculation"></a><h4>Calculation</h4>
+<p>The basis for the Broker Fee calculation uses <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls"><i>[gb_controls]broker_rate_basis</i></a> to determine the amount used in the calculation. <br />
+It can be either 'depreciable-amount' (default) or 'on-road-price'.<br />
+Refer also to <a href="https://help.catch-e.net.au/clients/help/wiki/images/0/05/Broker_Fee_Calculation_Model.xlsx" class='internal' title="Broker Fee Calculation Model.xlsx">calculation model</a>. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=6" title="Edit section: Set-Up">edit</a>]</div><a name="Set-Up"></a><h4>Set-Up</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=7" title="Edit section: Set the calculation basis">edit</a>]</div><a name="Set_the_calculation_basis"></a><h5>Set the calculation basis</h5>
+<p>The calculation for the broker fee uses either 'depreciable-amount' (default) or 'on-road-price' as the basis for calculating the amount.<br />
+Check and update <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls"><i>[gb_controls]broker_rate_basis</i></a> with the setting you wan to us for the calculation.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=8" title="Edit section: Create a Broker">edit</a>]</div><a name="Create_a_Broker"></a><h5>Create a Broker</h5>
+<p><a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> "Supplier Type" - choose 'Broker'
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=9" title="Edit section: Link to a Financier">edit</a>]</div><a name="Link_to_a_Financier"></a><h5>Link to a Financier</h5>
+<p><a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> "Agent" - in the <a href="Financier.html" title="Financier">Financier</a> record, use the <a href="Lookup.html" title="Lookup">lookup</a> to add the required <strong>broker</strong> or enter the "Supplier Code" if you know it.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=10" title="Edit section: Add or update Broker Rates">edit</a>]</div><a name="Add_or_update_Broker_Rates"></a><h5>Add or update Broker Rates</h5>
+<p>Broker rates are stored in the table <i>[qt_broker_rates]</i>.<br />
+<a href="Export_data_from_a_table.html" title="Export data from a table">Export data from a table</a> to see the current rates.<br />
+<a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a> to update or add new rates.<br />
+</p><p>For rate changes - add a new record for the supplier with the updated <i>rate</i> and <i>date</i>.<br />
+The <i>date</i> is used in conjunction with the quote "Effective Date" field to select the correct rate for the quote.<br />
+</p><p><a href="./Image:Qt_broker_rates.png.html" class="image" title="Image:qt_broker_rates.png"><img src="../../clients/help/wiki/images/4/45/Qt_broker_rates.png" alt="Image:qt_broker_rates.png" width="312" height="72" longdesc="/mediawiki/index.php/Image:Qt_broker_rates.png" /></a>
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=11" title="Edit section: Role Restrictions">edit</a>]</div><a name="Role_Restrictions"></a><h5>Role Restrictions</h5>
+<p>The fields "Broker", "Broker Name", "Broker Rate" and "Broker Fee" can be <a href="./Role_Restrictions:Quotes.html#Broker" title="Role Restrictions:Quotes">role restricted</a>.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=12" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h4>Useful Queries</h4>
+<pre>
+# Broker and Broker Rates
+select s.supplier_code, s.name, s.supplier_type
+, sbr.rate, sbr.date
+from fm_suppliers as s 
+left join qt_broker_rates as sbr on sbr.supplier_id = s.supplier_id
+where s.supplier_type = 'broker'
+;
+# Financier, Broker and Broker Rates
+select sf.supplier_code as financier_code, sf.name as financier_name
+, sb.supplier_code as broker_code, sb.name as broker_name, sb.supplier_type
+, sbr.rates, sbr.min_rate, sbr.max_rate, sbr.min_date, sbr.max_date
+from fm_suppliers as sf
+left join fm_suppliers as sb on sb.supplier_id = sf.supplier_id_agent
+left join (
+select supplier_id, count(broker_rate_id) as rates, min(rate) as min_rate, max(rate) as max_rate, MIN(date) as min_date, MAX(date) as max_date
+from qt_broker_rates
+) as sbr on sbr.supplier_id = sb.supplier_id
+where sf.supplier_type = 'financier'
+order by sf.supplier_code
+;
+</pre>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;action=edit&amp;section=13" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-22244) Issue with populating Broker on quote. Live 01/04/2025
+</li><li> (DEV-22316) Quotes / Finance - create [gb_control]broker_fee_basis. Live 08/09/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Broker.html">https://help.catch-e.net.au/mediawiki/index.php/Broker</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Broker">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Broker.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Broker&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.09 secs. -->
+</body></html>

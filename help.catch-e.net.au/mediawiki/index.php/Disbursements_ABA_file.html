@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Disbursements ABA file,ACCOUNTS,BECS,BECS Bank Account Setup,Contracts:Claim,Disbursements (ABA),Disbursements (ABA) Preview,Disbursements (ABA) Report,Disbursements (ABA) Troubleshooting,Employees:Item,Export" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Disbursements ABA file - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Disbursements ABA file</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Disbursements_ABA_file.html#column-one">navigation</a>, <a href="Disbursements_ABA_file.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> / <a href="Export.html" title="Export">Export</a> / <a href="BECS.html" title="BECS">BECS</a> &rarr; <a href="Disbursements_(ABA).html" title="Disbursements (ABA)">Disbursements (ABA)</a>  &rarr;  <a href="Disbursements_(ABA)_Preview.html" title="Disbursements (ABA) Preview">Preview</a> | <strong>ABA file</strong> | <a href="Disbursements_(ABA)_Report.html" title="Disbursements (ABA) Report">Transactions</a> &rarr; <a href="BECS_Bank_Account_Setup.html" title="BECS Bank Account Setup">BECS Bank Account Setup</a> | <a href="Disbursements_(ABA)_Troubleshooting.html" title="Disbursements (ABA) Troubleshooting">Disbursements (ABA) Troubleshooting</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Record_Selection"><span class="tocnumber">2</span> <span class="toctext">Record Selection</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Record_Grouping"><span class="tocnumber">3</span> <span class="toctext">Record Grouping</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Export_File_Naming"><span class="tocnumber">4</span> <span class="toctext">Export File Naming</span></a>
+<ul>
+<li class='toclevel-2'><a href="Disbursements_ABA_file.html#ABA_Type_.3D_Client"><span class="tocnumber">4.1</span> <span class="toctext">ABA Type = Client</span></a></li>
+<li class='toclevel-2'><a href="Disbursements_ABA_file.html#ABA_Type_.3D_Company"><span class="tocnumber">4.2</span> <span class="toctext">ABA Type = Company</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Header_Record"><span class="tocnumber">5</span> <span class="toctext">Header Record</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Detail_Record"><span class="tocnumber">6</span> <span class="toctext">Detail Record</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Detail_Record_-_Self_Balancing"><span class="tocnumber">7</span> <span class="toctext">Detail Record - Self Balancing</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#Trailer_Record"><span class="tocnumber">8</span> <span class="toctext">Trailer Record</span></a></li>
+<li class='toclevel-1'><a href="Disbursements_ABA_file.html#System_Notes"><span class="tocnumber">9</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This page details the structure of the disbursements aba file.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=2" title="Edit section: Record Selection">edit</a>]</div><a name="Record_Selection"></a><h4>Record Selection</h4>
+<ol><li> Contracts / Contract "Company" is the same as the selected company or
+</li><li> Contracts / Contract "Client" is the same as the selected client
+</li><li> The contract is linked to an <a href="./Employees:Item.html" title="Employees:Item">Employees / Item</a> record
+</li><li> The transaction is 
+<ol><li> a <a href="./Contracts:Claim.html" title="Contracts:Claim">claim</a> or
+</li><li> a payment
+</li></ol>
+</li><li> The transaction "Payment Method" is 'Direct Credit'
+</li><li> If the "Payee" is 
+<ol><li> 'Supplier', then the suppliers "BSB Number" and "Bank Account Number" must be populated correctly
+</li><li> Otherwise, the "Payee" can be 'Employee' or 'Driver' and the transaction must contains a stored <a href="./Image:Bank.gif.html" class="image" title="Image:Bank.gif"><img src="../../clients/help/wiki/images/8/8c/Bank.gif" alt="Image:Bank.gif" width="16" height="14" longdesc="/mediawiki/index.php/Image:Bank.gif" /></a> <a href="View_Bank_Accounts.html" title="View Bank Accounts">Bank Account</a>.
+</li></ol>
+</li><li> The transaction is posted
+</li><li> The transaction has not already been paid on a previous aba file
+</li></ol>
+<p><b>Negative Transactions</b>
+</p><p>When negative Claims and/or Payments have been raised, they will be included / excluded as detailed below.
+</p>
+<ol><li> When "<b>Payee</b>" = 'Supplier' and the Supplier's "<b>ABA Format Type</b>" = 'Supplier'
+<ol><li> Include all transactions (both negative and positive) in data set
+<ol><li> If batch total is positive
+<ol><li> Create the batch
+</li><li> Group and Sum transactions by Supplier
+</li></ol>
+</li><li>If batch total is negative
+<ol><li> Exclude records, no batch is created
+</li><li> Negative transactions will remain pending until the next positive batch's total amount exceeds the total amount of the pending negative transactions.  
+</li></ol>
+</li></ol>
+</li></ol>
+</li><li> For all other set ups <br /> "<b>Payee</b>" = 'Supplier' and the Supplier's "<b>ABA Format Type</b>" = 'Payment Reference' * <br /> "<b>Payee</b>" = 'Employee' and the Supplier's "<b>ABA Format Type</b>" = 'Supplier' <br /> "<b>Payee</b>" = 'Employee' and the Supplier's "<b>ABA Format Type</b>" = 'Payment Reference' *
+<ol><li> Negative amounts will be excluded
+<ol><li> If batch total is positive
+<ol><li> Create the batch
+<ol><li> Payments will be grouped by the Payment Schedule
+</li><li> Claims will be grouped by Contract
+</li></ol>
+</li></ol>
+</li><li> If the batch total is negative
+<ol><li> Exclude records, no batch is created
+</li><li> * Negative transactions will remain pending until the next positive batch's total amount exceeds the total amount of the pending negative transactions.
+</li></ol>
+</li></ol>
+</li></ol>
+</li></ol>
+<p><b>Note:</b>
+</p>
+<ol><li> Currently, all <a href="./Employees:Item.html" title="Employees:Item">Employees / Item</a> records are linked to contracts where the Contract Type "Group" is '<a href="Salary_Packaged.html" title="Salary Packaged">Salary Packaged</a>'
+</li><li> This will be relaxed in future when all claim and payment records have populated "Payee" and "Payment Method" data.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=3" title="Edit section: Record Grouping">edit</a>]</div><a name="Record_Grouping"></a><h4>Record Grouping</h4>
+<p><a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> "ABA Format Type". 
+</p>
+<ol><li> 'Payment Reference' creates a separate ABA file row for each eligible claim and payment transaction. 
+</li><li> 'Supplier' groups claims or payments being paid to a supplier into one totalled row. This grouping will only be done when the claim or payment "Payee" is also set as 'Supplier'.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=4" title="Edit section: Export File Naming">edit</a>]</div><a name="Export_File_Naming"></a><h4>Export File Naming</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=5" title="Edit section: ABA Type = Client">edit</a>]</div><a name="ABA_Type_.3D_Client"></a><h5>ABA Type = Client</h5>
+<ul><li> When the selected "ABA Type" = 'Client', the name of the ABA file will be constructed using the Client details.
+</li></ul>
+<dl><dd><dl><dd> <i>[gb_becs]transaction_date(yyyymmdd)</i>_disbursements_<i>[gb_becs]becs_id</i>_<i>[sp_client_packaging_defaults]bank_account_name</i>.aba
+</dd></dl>
+</dd></dl>
+<ul><li> These will display on the file as follows.
+</li></ul>
+<p><a href="./Image:ABA_Type_Client.JPG.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/6/64/ABA_Type_Client.JPG/500px-ABA_Type_Client.JPG" alt="" width="500" height="41" longdesc="/mediawiki/index.php/Image:ABA_Type_Client.JPG" /></a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=6" title="Edit section: ABA Type = Company">edit</a>]</div><a name="ABA_Type_.3D_Company"></a><h5>ABA Type = Company</h5>
+<ul><li> When the selected "ABA Type" = 'Company', the name of the ABA file will be constructed using the Client details.
+</li></ul>
+<dl><dd><dl><dd> <i>[gb_becs]transaction_date(yyyymmdd)</i>_disbursements_<i>[gb_becs]becs_id</i>_<i>[gl_bank_accounts]account_name</i>.aba
+</dd></dl>
+</dd></dl>
+<ul><li> These will display on the file as follows.
+</li></ul>
+<p><a href="./Image:ABA_Type_Company.JPG.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/7/7a/ABA_Type_Company.JPG/450px-ABA_Type_Company.JPG" alt="" width="450" height="43" longdesc="/mediawiki/index.php/Image:ABA_Type_Company.JPG" /></a>
+</p><p><br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=7" title="Edit section: Header Record">edit</a>]</div><a name="Header_Record"></a><h4>Header Record</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Character Position </th><th width="5%" align="left">Field Size </th><th width="25%" align="left">Field Description </th><th width="35%" align="left"> Specification </th><th width="15%" align="left"> Company<br />[table]field</th><th width="15%" align="left"> Client<br />[table]field
+</th></tr>
+<tr>
+<td>1 </td><td> 1 </td><td> Record Type 0 </td><td> Must be '0' </td><td> </td><td>
+</td></tr>
+<tr>
+<td>2-18 </td><td> 17 </td><td> Blank </td><td> Must be blank filled.</td><td> </td><td>
+</td></tr>
+<tr>
+<td>19-20 </td><td> 2 </td><td> Reel Sequence Number </td><td> Must be numeric commencing at 01. Right justified. Zero filled  </td><td> </td><td>
+</td></tr>
+<tr>
+<td>21-23 </td><td> 3 </td><td> Name of User's Financial Institution </td><td> Must be approved Financial Institution abbreviation. Westpac's abbreviation is "WBC".
+</td><td>[gl_bank_accounts]bank </td><td> [sp_client_packaging_defaults]financial_institution_id<br /> <i>linked to</i><br /> [sp_financial_institutions]financial_institution_code
+</td></tr>
+<tr>
+<td>24-30 </td><td> 7 </td><td> Blank </td><td> Must be blank filled.</td><td>  </td><td>
+</td></tr>
+<tr>
+<td>31-56 </td><td> 26 </td><td> Name of User supplying file</td><td> Must be User Preferred Specification as advised in Application. Left justified, blank filled. All
+<p>coded character set valid. Must not be all blanks.
+</p>
+</td><td>[gl_bank_accounts]account_name </td><td> [sp_client_packaging_defaults]bank_account_name
+</td></tr>
+<tr>
+<td>57-62</td><td> 6 </td><td>Number of User supplying file</td><td>Must be User Identification Number which is allocated by APCA. Must be numeric, right
+<p>justified, zero filled.
+</p>
+</td><td>[gl_bank_account_aba_mappings]apca_number<br /> <i>where</i><br /> [gl_bank_account_aba_mappings]process_type = 'becs'</td><td> [sp_client_packaging_defaults]apca_number
+</td></tr>
+<tr>
+<td>63-74 </td><td> 12 </td><td> Description of entries on file e.g. "PAYROLL"</td><td> All coded character set valid. Must not be all blanks. Left justified, blank filled.
+</td><td>[gl_bank_account_aba_mappings]aba_description<br /> where<br /> [gl_bank_account_aba_mappings]process_type = 'becs'</td><td>[sp_client_packaging_defaults]aba_description
+</td></tr>
+<tr>
+<td>75-80 </td><td> 6 </td><td>Date to be processed(i.e. the date transactions are released to all Financial Institutions)</td><td> Must be numeric in the
+<p>format of DDMMYY. Must be a valid date. Zero filled. 
+</p>
+</td><td colspan="2" align="left"> [gb_becs]transaction_date<br /> <i>new field</i>
+</td></tr>
+<tr>
+<td>81-120 </td><td> 40 </td><td>Blank </td><td>Must be blank filled. </td><td> </td><td>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=8" title="Edit section: Detail Record">edit</a>]</div><a name="Detail_Record"></a><h4>Detail Record</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Character Position </th><th width="5%" align="left">Field Size </th><th width="25%" align="left">Field Description </th><th width="35%" align="left"> Specification </th><th width="15%" align="left"> Company<br />[table]field</th><th width="15%" align="left"> Client<br />[table]field
+</th></tr>
+<tr>
+<td>1 </td><td> 1 </td><td> Record Type 1 </td><td> Must be '1' </td><td>  </td><td>
+</td></tr>
+<tr>
+<td>2-8 </td><td>   7  </td><td>  Bank/State/Branch Number </td><td>   Must be numeric with a hyphen in character position 5. <br />
+<p>Character positions 2 and 3 must equal valid Financial Institution number. <br />
+Character position 4 must equal a valid State number (0-9).  
+</p>
+</td><td colspan="2" align="left">
+<ol><li> If "Payee" is 'Supplier' then [fm_suppliers]bank_bsb 
+</li><li> If "Payee" is 'Driver' or 'Employee' then [fm_drivers_bank_account]bsb  
+</li></ol>
+</td></tr>
+<tr>
+<td>9-17  </td><td>  9  </td><td>  Account number to be credited/debited.
+</td><td>  Numeric, hyphens and blanks only are valid.
+<p>Must not contain all blanks or zeros. <br />
+Leading zeros which are part of a valid account number must be shown, e.g. 00-1234. <br />
+Westpac recommends that (except in the above example), ALL hyphens are edited out. <br />
+Where account number exceeds nine characters, edit out hyphens. <br />
+Right justified, blank filled.   <br />
+</p>
+</td><td colspan="2" align="left">
+<ol><li> If "Payee" is 'Supplier' then [fm_supplier]bank_account_number
+</li><li> If "Payee" is 'Driver' or 'Employee' then [fm_drivers_bank_account]account_number
+</li></ol>
+</td></tr>
+<tr>
+<td>18  </td><td>  1  </td><td>
+<p>Withholding Tax Indicators
+</p>
+</td><td> Blank
+</td><td colspan="2" align="left">
+</td></tr>
+<tr>
+<td>19-20  </td><td>  2 </td><td>   Transaction Code  </td><td> Must only be valid industry standard trancodes.
+<p>Only numeric valid.  
+</p>
+</td><td colspan="2" align="left"> Use Transaction Code '50' = Externally initiated credit items
+</td></tr>
+<tr>
+<td>21-30  </td><td>  10  </td><td>  Amount  </td><td>  Only numeric valid.
+<p>Must be greater than zero. 
+Shown in cents without punctuations. 
+Right justified, zero filled. Unsigned.  
+</p>
+</td><td colspan="2" align="left">
+<p><b>Claims</b>
+</p>
+<ol><li> If "Payee" is 'Supplier' and "ABA Format Type" is 'Supplier' then SUM of "Total" of the claim records for this supplier.
+</li><li> If payment is for a Contracts / Claim, then the "Total" of the claim record.
+</li></ol>
+<p><b>Payments</b>
+</p>
+<ol><li> If "Payee" is 'Supplier' and "ABA Format Type" is 'Supplier' then SUM the "Total" of the pay records for this supplier.
+</li><li> If payment is for a Contracts / Payment, then the sum of the "Total" being paid. This is usually one row, but if there are multiple rows, add them together.
+</li></ol>
+</td></tr>
+<tr>
+<td>31-62  </td><td>  32  </td><td>  Title of Account to be credited / debited. </td><td>
+<p>All coded character set valid. 
+Must not be all blanks.  
+credited/debited  Left justified, blank filled. 
+Desirable format: - surname (period) blank - given names with blank between each name  
+</p>
+</td><td colspan="2" align="left">
+<ol><li> If the "Payee" is 'Supplier' then [fm_suppliers]name
+</li><li> If the "Payee" is 'Employee' or 'Driver' then 
+<ol><li> [fm_drivers_bank_accounts]account_name
+</li><li> If [fm_drivers_bank_accounts]account_name is blank, then [fm_drivers]given_name&lt;sp&gt;[fm_drivers]surname
+</li></ol>
+</li></ol>
+</td></tr>
+<tr>
+<td>63-80 </td><td>   18  </td><td>  Lodgement Reference </td><td>   All coded character set valid.
+<p>Reference as submitted by the User indicating details of the origin of the entry e.g. Payroll number, invoice, contract number.  <br />
+Left justified, blank filled. <br />
+Must not contain all blanks.  
+Content will be truncated when entry exceeds the 18 character limit.
+</p>
+</td><td>
+<ol><li> If "Payee" is 'Supplier' and "ABA Format Type" is 'Supplier' then [gl_bank_account_aba_mappings]aba_description
+</li></ol>
+<p>where
+[gl_bank_account_aba_mappings]process_type = 'becs'
+</p>
+<ol><li> If payment is for a Contracts / Claim then [fm_approvals]invoice_no
+</li><li> If payment is for a Contracts / Payments then [fm_contract_payment_structures]supplier_reference 
+</li></ol>
+</td><td>
+<ol><li> If "Payee" is 'Supplier' and "ABA Format Type" is 'Supplier' then [sp_client_packaging_defaults]aba_description
+</li><li> If payment is for a Contracts / Claim then [fm_approvals]invoice_no
+</li><li> If payment is for a Contracts / Payments then [fm_contract_payment_structures]supplier_reference
+</li></ol>
+</td></tr>
+<tr>
+<td>81-96 (81-87) </td><td>   16  </td><td> Trace Record (-BSB Numbering format XXX-XXX)
+</td><td> Bank(FI)/State/Branch and account number of User to enable retracing of the entry to its source if necessary.
+<p>Only numeric and hyphens valid. 
+Character positions 81 &amp; 82 must equal a valid Financial Institution number. 
+Character position 83 must equal a valid State number (0-9). 
+Character position 84 must be a hyphen. 
+</p>
+</td><td>   [gl_bank_accounts]bsb </td><td> [fm_clients]bank_bsb
+</td></tr>
+<tr>
+<td>(88-96) </td><td>   9  </td><td> (-Account Number)   </td><td> Right justified, blank filled.
+</td><td> [gl_bank_accounts]account_number </td><td> [fm_clients]bank_account_number
+</td></tr>
+<tr>
+<td>97-112  </td><td>  16  </td><td>  Name of Remitter  </td><td>  Name of originator of the entry.
+<p>This may vary from Name of the User. All coded character set valid.
+Must not contain all blanks. Left justified, blank filled.   
+</p>
+</td><td> [gl_bank_accounts]account_name_short </td><td> [sp_client_packaging_defaults]bank_account_name_short
+</td></tr>
+<tr>
+<td>113- 120  </td><td>  </td><td>  Amount of Withholding Tax</td><td>  Numeric only valid.
+<p>Show in cents without punctuation.   Right justified, zero
+filled. Unsigned.  
+</p>
+</td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=9" title="Edit section: Detail Record - Self Balancing">edit</a>]</div><a name="Detail_Record_-_Self_Balancing"></a><h4>Detail Record - Self Balancing</h4>
+<p>If the "ABA Type" is 'Company' and <i>[gl_bank_account_aba_mappings]aba_self_balancing_flag</i> is 'no', this record is not generated.<br />
+If the "ABA Type" is 'Client' and <b>Clients / Packaging Defaults</b> "ABA Self Balancing" is unchecked, this record is not generated.<br />
+</p><p><br />
+</p><p><br />
+work in progress.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Character Position </th><th width="5%" align="left">Field Size </th><th width="25%" align="left">Field Description </th><th width="35%" align="left"> Specification </th><th width="15%" align="left"> Company<br />[table]field</th><th width="15%" align="left"> Client<br />[table]field
+</th></tr>
+<tr>
+<td>1 </td><td> 1 </td><td> Record Type 1 </td><td> Must be '1' </td><td>  </td><td>
+</td></tr>
+<tr>
+<td>2-8 </td><td>   7  </td><td>  Bank/State/Branch Number </td><td>   Must be numeric with a hyphen in character position 5. <br />
+<p>Character positions 2 and 3 must equal valid Financial Institution number. <br />
+Character position 4 must equal a valid State number (0-9).  
+</p>
+</td><td>   [gl_bank_accounts]bsb </td><td> [fm_clients]bank_bsb
+</td></tr>
+<tr>
+<td>9-17  </td><td>  9  </td><td>  Account number to be credited/debited.
+</td><td>  Numeric, hyphens and blanks only are valid.
+<p>Must not contain all blanks or zeros. <br />
+Leading zeros which are part of a valid account number must be shown, e.g. 00-1234. <br />
+Westpac recommends that (except in the above example), ALL hyphens are edited out. <br />
+Where account number exceeds nine characters, edit out hyphens. <br />
+Right justified, blank filled.   <br />
+</p>
+</td><td> [gl_bank_accounts]account_number </td><td> [fm_clients]bank_account_number
+</td></tr>
+<tr>
+<td>18  </td><td>  1  </td><td>
+<p>Withholding Tax Indicators
+</p>
+</td><td> Blank
+</td><td colspan="2" align="left">
+</td></tr>
+<tr>
+<td>19-20  </td><td>  2 </td><td>   Transaction Code  </td><td> Must only be valid industry standard trancodes.
+<p>Only numeric valid.  
+</p>
+</td><td colspan="2" align="left"> Use Transaction Code '13' = Externally initiated debit items
+</td></tr>
+<tr>
+<td>21-30  </td><td>  10  </td><td>  Amount  </td><td>  Only numeric valid.
+<p>Must be greater than zero. 
+Shown in cents without punctuations. 
+Right justified, zero filled. Unsigned.  
+</p>
+</td><td colspan="2" align="left"> SUM of Credits .	<br /> If Suppliers / Account “ABA Format Type” is set as ‘Supplier’
+<p>a.	Group and sum the selected records into one ABA payment row for this supplier. 
+</p>
+</td></tr>
+<tr>
+<td>31-62  </td><td>  32  </td><td>  Title of Account to be credited / debited. </td><td>
+<p>All coded character set valid. 
+Must not be all blanks.  
+credited/debited  Left justified, blank filled. 
+Desirable format: - surname (period) blank - given names with blank between each name  
+</p>
+</td><td>[gl_bank_accounts]account_name </td><td> [sp_client_packaging_defaults]bank_account_name
+</td></tr>
+<tr>
+<td>63-80 </td><td>   18  </td><td>  Lodgement Reference </td><td>   All coded character set valid.
+<p>Reference as submitted by the User indicating details of the origin of the entry e.g. Payroll number, invoice, contract number.  
+Left justified, blank filled. 
+Must not contain all blanks.  
+</p>
+</td><td>[gl_bank_account_aba_mappings]aba_description<br /> where<br /> [gl_bank_account_aba_mappings]process_type = 'becs'</td><td>[sp_client_packaging_defaults]aba_description
+</td></tr>
+<tr>
+<td>81-96 (81-87) </td><td>   16  </td><td> Trace Record (-BSB Numbering format XXX-XXX)
+</td><td> Bank(FI)/State/Branch and account number of User to enable retracing of the entry to its source if necessary.
+<p>Only numeric and hyphens valid. 
+Character positions 81 &amp; 82 must equal a valid Financial Institution number. 
+Character position 83 must equal a valid State number (0-9). 
+Character position 84 must be a hyphen. 
+</p>
+</td><td>   [gl_bank_accounts]bsb </td><td> [fm_clients]bank_bsb
+</td></tr>
+<tr>
+<td>(88-96) </td><td>   9  </td><td> (-Account Number)   </td><td> Right justified, blank filled.
+</td><td> [gl_bank_accounts]account_number </td><td> [fm_clients]bank_account_number
+</td></tr>
+<tr>
+<td>97-112  </td><td>  16  </td><td>  Name of Remitter  </td><td>  Name of originator of the entry.
+<p>This may vary from Name of the User. All coded character set valid.
+Must not contain all blanks. Left justified, blank filled.   
+</p>
+</td><td> [gl_bank_accounts]account_name_short </td><td> [sp_client_packaging_defaults]bank_account_name_short
+</td></tr>
+<tr>
+<td>113- 120  </td><td>  </td><td>  Amount of Withholding Tax</td><td>  Numeric only valid.
+<p>Show in cents without punctuation.   Right justified, zero
+filled. Unsigned.  
+</p>
+</td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=10" title="Edit section: Trailer Record">edit</a>]</div><a name="Trailer_Record"></a><h4>Trailer Record</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Character Position </th><th width="5%" align="left">Field Size </th><th width="25%" align="left">Field Description </th><th width="35%" align="left"> Specification </th><th width="15%" align="left"> Comments
+</th></tr>
+<tr>
+<td>1 </td><td> 1 </td><td> Record Type 7 </td><td> Must be '7' </td><td>
+</td></tr>
+<tr>
+<td>2-8 </td><td> 7 </td><td> BSB Format Filler </td><td> Must be '999-999' </td><td>
+</td></tr>
+<tr>
+<td>9-20 </td><td> 12 </td><td> Blank </td><td> Must be blank filled </td><td>
+</td></tr>
+<tr>
+<td>21-30 </td><td> 10 </td><td> File (User) Net Total Amount </td><td> Numeric only valid.
+<p>Must equal the difference between File Credit and File Debit Total Amounts.
+Show in cents without punctuation
+Right justified, zero filled.
+Unsigned 
+</p>
+</td><td>  SUM of Credits less SUM of Debits
+</td></tr>
+<tr>
+<td>31-40 </td><td> 10 </td><td> File (User) Credit Total Amount </td><td>Numeric only valid.
+<p>Must equal the accumulated total of credit Detail Record amounts.
+Show in cents without puntuation.
+Right justified, zero filled.
+Unsigned
+</p>
+</td><td> SUM of Credits
+</td></tr>
+<tr>
+<td>41-50 </td><td> 10 </td><td> File (User) Debit Total Amount </td><td> Numeric only valid.
+<p>Must equal the accumulated total of debit Detail Record amounts.
+Show in cents without punctuation.
+Right justified, zero filled.
+Unsigned
+</p>
+</td><td> SUM of Debits
+</td></tr>
+
+
+<tr>
+<td>75-80 </td><td> 6 </td><td>  File (User) count of records Type 1 </td><td> Numeric only valid.
+<p>Must equal accumulated number of Record Type 1 items on the file.
+Right justified, zero filled.
+</p>
+</td><td> COUNT of Details Records
+</td></tr>
+<tr>
+<td>81-120 </td><td> 40 </td><td> Blank </td><td> Must be blank filled </td><td>
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;action=edit&amp;section=11" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20240) Update ABA file names to include Transaction Date and Banking Name. Live 24/02/2022
+</li><li> (API-20248) Disbursements ABA file not trimming supplier name. Live dd/05/2022
+</li><li> (DEV-21903) BECS / Disbursements (ABA) screen selects negative transactions. Live 06/11/2023
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:3262-0!1!0!0!!en!2 and timestamp 20251120064444 -->
+<div class="printfooter">
+Retrieved from "<a href="Disbursements_ABA_file.html">https://help.catch-e.net.au/mediawiki/index.php/Disbursements_ABA_file</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Disbursements_ABA_file">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Disbursements_ABA_file.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Disbursements_ABA_file&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.03 secs. -->
+</body></html>

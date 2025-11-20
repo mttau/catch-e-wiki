@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Standard Reports:Depreciation,Clients:Contact,Clients:Cost centres,Contracts:Contract,Contracts:Finance,Main Page,REPORTING,Sale Management:Detail,Standard Reports" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Standard Reports:Depreciation - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Standard Reports:Depreciation</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Standard_Reports:Depreciation.html#column-one">navigation</a>, <a href="./Standard_Reports:Depreciation.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="REPORTING.html" title="REPORTING">Reporting</a> / <a href="Standard_Reports.html" title="Standard Reports">Standard Reports</a> / <strong>Depreciation</strong>
+</p>
+<hr />
+<p><br />
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#Report_Filters"><span class="tocnumber">2</span> <span class="toctext">Report Filters</span></a></li>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#Data_Selection"><span class="tocnumber">3</span> <span class="toctext">Data Selection</span></a></li>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#Report_Content"><span class="tocnumber">4</span> <span class="toctext">Report Content</span></a></li>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#Outputs"><span class="tocnumber">5</span> <span class="toctext">Outputs</span></a></li>
+<li class='toclevel-1'><a href="./Standard_Reports:Depreciation.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The depreciation report calculates an assets depreciation using the diminshing value method or the prime cost method (straight line).<br />
+It is grouped by Group, Client and Cost Centre.<br />
+It is sorted by Cost Centre and Registration.<br />
+It is totalled by Cost Centre, Client, Group and Grand Total (all clients).<br />
+</p><p>Note ~ the <a href="./Clients:Cost_centres.html" title="Clients:Cost centres">Cost Centre</a> that is used for grouping is the one that is active on the contract when the report is run. I.e. the current cost centre is always used.<br /><br />
+</p><p>The report can also be generated at Contract level on the <a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts / Finance</a> page.<br />
+The calculations used in the report are shown in the attached spreadsheet (<a href="https://help.catch-e.net.au/clients/help/wiki/images/b/bc/Depreciation_Calculations.xlsx" class='internal' title="Depreciation Calculations.xlsx">click here</a>).<br /><br />
+</p><p><b>Note:<br />
+Depreciation calculations will cease when a Sold Date is entered in Contract screen or on the Detail screen for <a href="./Sale_Management:Detail.html" title="Sale Management:Detail">Sale Management</a>.</b>
+</p><p>This report is accessible by Admin and senior_manager roles only.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=2" title="Edit section: Report Filters">edit</a>]</div><a name="Report_Filters"></a><h4>Report Filters</h4>
+<ul><li> Date to - defaults to today's date. This can be edited. The report start period is one day after the clients Financial Year End from the <a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> screen
+</li><li> Client Group - the report can be limited to select only clients from a particular group.
+</li><li> Client - the report can be limited to select only a particular client.
+</li><li> Cost Centre - the report can be limted to select only a particular Cost Centre.
+</li><li> Contract Type - the report can be limted to select only a particular Contract Type or a range. Use the SHIFT key to select a range, or the CTRL key to select non-adjacent entries.
+</li></ul>
+<p>Note ~ Contracts where Depreciation Start date is greater than report date (Date to) will not appear in report.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=3" title="Edit section: Data Selection">edit</a>]</div><a name="Data_Selection"></a><h4>Data Selection</h4>
+<ul><li> All vehicles active at any point in the report date range are selected (see report filters above).
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=4" title="Edit section: Report Content">edit</a>]</div><a name="Report_Content"></a><h4>Report Content</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Report Field</th><th>Screen Field</th><th>Screen</th><th>Comments
+</th></tr>
+<tr>
+<td>Report Date (Start)</td><td>Financial Year End</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients/Contact</a></td><td>July is assumed to be the start of the Depreciation Period if "Financial Year End" is blank for the selected client. This will use the July or month after "Financial Year End" that preceeds the entered "Date To". E.g. if  30/06/2011 is entered as "Date To", the Report Date (Start) will be 01/07/2010.
+</td></tr>
+<tr>
+<td>Report Date (End)</td><td>Date To</td><td><strong>Standard Reports/Depreciation </strong></td><td>Date entered in report screen.
+</td></tr>
+<tr>
+<td>Group Name </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Client Name </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Client Code </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Contract ID </td><td> Contract ID </td><td> </td><td>
+</td></tr>
+<tr>
+<td>Rego</td><td>Reg Number</td><td><a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts/Contract</a></td><td>
+</td></tr>
+<tr>
+<td>Asset No</td><td>Asset No</td><td><a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts/Contract</a></td><td>
+</td></tr>
+<tr>
+<td>Financier</td><td>Financier</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td> Located at the top left of the screen.
+</td></tr>
+<tr>
+<td>Finance Ref</td><td>Finance Ref</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td> Located at the top left of the screen.
+</td></tr>
+<tr>
+<td>Depreciation Start</td><td>Depreciation Start</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td>If this field is blank, the report will display the "Depreciable Amount" of the contract, but no depreciation will be calculated. If the date is after the "Date To" of the report, the contract will not appear on the report.
+</td></tr>
+<tr>
+<td>Depreciable Amt</td><td> Depreciable Amount</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td> Located on the bottom left of the screen.
+</td></tr>
+<tr>
+<td>Method</td><td>Depreciation Method</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td> Located at the top right of the screen.
+</td></tr>
+<tr>
+<td>Days</td><td> </td><td> </td><td> Calculated value of depreciable days. (Later of Report Start or Depreciation Start)-(Earlier of Report End or Sold Date)+1
+</td></tr>
+<tr>
+<td>Rate</td><td>Depreciation Rate</td><td><a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts/Finance</a></td><td> Entered value located at the top right of the screen.
+</td></tr>
+<tr>
+<td>Depreciation</td><td> </td><td> </td><td> Calculation of the depreciation that falls within the report's Date Range.
+</td></tr>
+<tr>
+<td>Book Value</td><td> </td><td> </td><td> Calculated value of the Book Value for the Report End Date. (Opening WDV - Depreciation = Book Value)
+</td></tr>
+<tr>
+<td>Sold Date</td><td>Sold Date</td><td><a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts/Contract</a></td><td> If a "Sold Date" is entered, the report "Days" and "Depreciation" values are reduced accordingly.
+</td></tr>
+<tr>
+<td>Sale Price Net</td><td>(Sale Price - GST)</td><td><a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts/Contract</a></td><td> Displays the calculated net sale value of a sold vehicle.
+</td></tr>
+<tr>
+<td>Profit/Loss</td><td></td><td> </td><td> Displays the calculated Profit/Loss of a sold vehicle.(Sale Price Net - Book Value)
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=5" title="Edit section: Outputs">edit</a>]</div><a name="Outputs"></a><h4>Outputs</h4>
+<p>The report can be output as PDF, XLS or CSV.<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 5963: Depreciation Reporting. Live 13/09/2012
+</li><li> 6416: Modify Depreciation Report. Live 28/09/2012
+</li><li> 11745: Add ‘financier’ to the depreciation report. Live 23/07/2015
+</li><li> (DEV-20679) Contracts / Finance - update on screen depreciation calculations. Live 07/10/2019
+</li><li>(DEV-21412) Depreciation calculation wrong sign. Live dd/mm/2021
+</li><li> (DEV-22296) Reports are affected by Client Code Display Issue (Alphanumeric Codes Showing as '0'). Live dd/mm/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Standard_Reports:Depreciation.html">https://help.catch-e.net.au/mediawiki/index.php/Standard_Reports:Depreciation</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Standard_Reports:Depreciation">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Standard_Reports:Depreciation.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Standard_Reports:Depreciation&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.06 secs. -->
+</body></html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Estimated Odometer Calculation,Administration,Approvals:Header,Card Transactions,Contracts,Contracts:Contract,Contracts:Header,Contracts:Maintenance,Contracts:Vehicle,Derived Fields odometer,FLEET" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Estimated Odometer Calculation - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Estimated Odometer Calculation</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Estimated_Odometer_Calculation.html#column-one">navigation</a>, <a href="Estimated_Odometer_Calculation.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Contracts.html" title="Contracts">Contracts</a> &rarr; <strong>Estimated Odometer Calculation</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Estimated_Odometer_Calculation.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Estimated_Odometer_Calculation.html#Calculation_Methods"><span class="tocnumber">2</span> <span class="toctext">Calculation Methods</span></a>
+<ul>
+<li class='toclevel-2'><a href="Estimated_Odometer_Calculation.html#Optimal_method"><span class="tocnumber">2.1</span> <span class="toctext">Optimal method</span></a></li>
+<li class='toclevel-2'><a href="Estimated_Odometer_Calculation.html#Between_dates_method"><span class="tocnumber">2.2</span> <span class="toctext">Between dates method</span></a></li>
+<li class='toclevel-2'><a href="Estimated_Odometer_Calculation.html#Contract_km_method"><span class="tocnumber">2.3</span> <span class="toctext">Contract km method</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Estimated_Odometer_Calculation.html#Catch-e_date_subtracton"><span class="tocnumber">3</span> <span class="toctext">Catch-e date subtracton</span></a></li>
+<li class='toclevel-1'><a href="Estimated_Odometer_Calculation.html#Troubleshooting"><span class="tocnumber">4</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Estimated kilometres are;
+</p>
+<ul><li> Calculated and displayed on the <a href="./Contracts:Header.html" title="Contracts:Header">Contracts Header</a> and <a href="./Approvals:Header.html" title="Approvals:Header">Approvals Header</a>
+</li><li> Used to validate <a href="Card_Transactions.html" title="Card Transactions">Card Transaction</a> odometer readings, and Odometer entries. See also the validation percentage tolerance set in the <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]odometer_valid_tolerance</i></a>.<br />
+</li><li> Used and shown in various reports, such as the <a href="Service_Due_Report.html" title="Service Due Report">Service Due Report</a>, Kilometre Variance, FBT, Novated Drivers and Inventory 
+</li><li> The estimated odometer is calculated based on one of three calculations
+</li><li> The calculation used depends on what data is available for the contract 
+</li><li> The calculations are described below and and be seen in the attached <a href="https://help.catch-e.net.au/clients/help/wiki/images/6/66/Estimated_Odometer_Model.xlsx" class='internal' title="Estimated Odometer Model.xlsx">Estimated Odometer Model</a>
+</li><li> The calculations are applied in the derived fields library <a href="Derived_Fields_odometer.html" title="Derived Fields odometer">/lib/PDF/odometer library</a>
+</li></ul>
+<p><br />
+The following fields are used in this this calculation:
+</p>
+<dl><dd> <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> Contract Start
+</dd><dd> <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> Contract End
+</dd><dd> <a href="./Contracts:Contract.html" title="Contracts:Contract">Contracts / Contract</a> Contract Km
+</dd><dd> <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> Start Odometer
+</dd><dd> <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> Start Odometer Date
+</dd><dd> <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> Latest Odometer - most recent valid
+</dd><dd> <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> Latest Odometer Date
+</dd><dd> <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> Earliest Odometer - oldest valid
+</dd><dd> <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> Earliest Odometer Date
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=2" title="Edit section: Calculation Methods">edit</a>]</div><a name="Calculation_Methods"></a><h4>Calculation Methods</h4>
+<p>The Estimated Odometer is calculated by using one of the following methods listed in preference order;<br />
+</p><p>If there is more than one valid odometer reading on a relevant date then the highest valid reading on that date is used for calculations.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=3" title="Edit section: Optimal method">edit</a>]</div><a name="Optimal_method"></a><h5>Optimal method</h5>
+<p>If Start Date is non-blank and Latest Odometer exists, is on a different date, and is non-zero then use the ‘optimal’ method:
+</p>
+<pre>
+Km Per Day = (Latest Odometer - Start Odometer) / (Latest Date - Start Date)
+
+Estimated Odometer = Km Per Day * (Estimate Date - Start Date) + Start Odometer
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=4" title="Edit section: Between dates method">edit</a>]</div><a name="Between_dates_method"></a><h5>Between dates method</h5>
+<p>If method 1) cannot be used and Latest Odometer and Earliest Odometer both exist, are on different dates, and are non-zero then use the ‘between dates’ method:
+</p>
+<pre>
+Km Per Day = (Latest Odometer - Earliest Odometer) / (Latest Date – Earliest Date)
+
+Estimated Odometer = Km Per Day * (Estimate Date - Latest Date) + Latest Odometer
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=5" title="Edit section: Contract km method">edit</a>]</div><a name="Contract_km_method"></a><h5>Contract km method</h5>
+<p>If methods 1) and 2) cannot be used, then use the ‘contract km’ method:
+<br /><br />
+</p>
+<pre>
+Km Per Day = Contract Km / (Contract End - Contract Start)
+
+Estimated Odometer = Km Per Day * (Estimate Date - Contract Start) + Start Odometer
+</pre>
+<p>The resulting Estimated Odometer is rounded to the nearest whole number.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=6" title="Edit section: Catch-e date subtracton">edit</a>]</div><a name="Catch-e_date_subtracton"></a><h4>Catch-e date subtracton</h4>
+<p>In Catch-e, if a date is subtracted, a day is added back. this is different to the way dates are subtracted in spreadsheets
+</p><p>In Catch-e:
+</p>
+<pre>
+20/11/2003 – 19/11/2003 = 2
+</pre>
+<p>In Excel:
+</p>
+<pre>
+20/11/2003 – 19/11/2003 = 1
+</pre>
+<p>The difference between dates can never be 0 in Catch-e:
+</p>
+<pre>
+20/11/2003 – 19/11/2003 = 2
+20/11/2003 – 20/11/2003 = 1
+20/11/2003 – 21/11/2003 = -2
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;action=edit&amp;section=7" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<p>Sometimes the last odometer reading selected for an estimation calculation is not be correct. E.g. It was imported from <a href="Card_Transactions.html" title="Card Transactions">Card Transactions</a> and was set as 'valid'. If you are seeing a reading that looks incorrect, review the contract's readings in <a href="./Contracts:Maintenance.html" title="Contracts:Maintenance">Contracts / Maintenance</a> and un-check any invalid Odo readings you find and re-run the report.
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1446-0!1!0!0!!en!2 and timestamp 20251120052425 -->
+<div class="printfooter">
+Retrieved from "<a href="Estimated_Odometer_Calculation.html">https://help.catch-e.net.au/mediawiki/index.php/Estimated_Odometer_Calculation</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Estimated_Odometer_Calculation">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Estimated_Odometer_Calculation.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Estimated_Odometer_Calculation&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.03 secs. -->
+</body></html>

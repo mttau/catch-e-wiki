@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Domain Setup,Domain Setup,Catch-e support,Driver Portal Email,Emailing Setup,Gb::SystemMaintenance::checkSPFRecordForGbMailSenderDomains(),Global Controls,Good to know,Mail Failed,Mail Queue,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Domain Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Domain Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Domain_Setup.html#column-one">navigation</a>, <a href="Domain_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; IT Set-up  &rarr; <a href="System_Implementation.html" title="System Implementation">System Configuration</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Emailing_Setup.html" title="Emailing Setup">Emailing Setup</a> &rarr; <a href="SMTP_Setup.html" title="SMTP Setup">SMTP Setup</a> | <a href="Mail_Failed.html" title="Mail Failed">Mail Failed</a> &rarr; <strong>Domain Setup</strong> | <a href="SPF_records.html" title="SPF records">SPF records</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Domain_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Status_Checks"><span class="tocnumber">2</span> <span class="toctext">Status Checks</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Email_pop-up_behaviour"><span class="tocnumber">3</span> <span class="toctext">Email pop-up behaviour</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Mail_Queue_behaviour_for_bulk_emails"><span class="tocnumber">4</span> <span class="toctext">Mail Queue behaviour for bulk emails</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Driver_Portal_Email_behaviour"><span class="tocnumber">5</span> <span class="toctext">Driver Portal Email behaviour</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Client_Set-up"><span class="tocnumber">6</span> <span class="toctext">Client Set-up</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#Catch-e_Set-up"><span class="tocnumber">7</span> <span class="toctext">Catch-e Set-up</span></a></li>
+<li class='toclevel-1'><a href="Domain_Setup.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h2>Overview</h2>
+<p>If you've ever received an email claiming to be from your bank, PayPal, or a company you do business with, but it's really from someone else, then you've seen first-hand how easy it is to create fraudulent email. Authentication helps legitimate senders prove that their email isn't a forgery, and can help receiving servers like ISPs and corporate email servers control inbound spam.
+</p><p>If any of our clients send emails from Catch-e where there is no <a href="SPF_records.html" title="SPF records">SPF Record</a> , eventually our mail servers will be treated as spammers and get blacklisted. This means any emails you send from Catch-e may randomly not get delivered.
+</p><p>The first step to ensure the reliability in the email service from Catch-e is by registering the domains you use when sending email and creating an <a href="SPF_records.html" title="SPF records">SPF Record</a>.
+</p><p>Creation of the SPF record on your domain is by far the best option, however if you are unable arrange this we can set-up a sender email address that uses the Catch-e domain e.g. noreply@catch-e.com.au or client@catch-e.com.au. This is not ideal for you, but it will avoid the spam problem.
+</p><p>The “Reply To” address will still contain your original email address. When recipients reply to the emails, they will return to your original addresses as they do now.
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="15%" align="left"> If your domain is not registered with Catch-e and an SPF Record has not been set up you will be unable to send email from the Catch-e application.
+</td></tr></table>
+<p><br />
+</p><p>Refer to this diagram to see how the email process is treated by Catch-e. 
+<br />
+</p><p><br />
+<a href="./Image:Domain_Setup.png.html" class="image" title="Image:Domain Setup.png"><img src="../../clients/help/wiki/images/f/fe/Domain_Setup.png" alt="Image:Domain Setup.png" width="650" height="612" longdesc="/mediawiki/index.php/Image:Domain_Setup.png" /></a>
+<br /><br />
+</p>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> If the <i>fall_back</i> email is used to send an email, you will not be able to see this in the email or the mail queue. The original email Sender and Address will be shown.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=2" title="Edit section: Status Checks">edit</a>]</div><a name="Status_Checks"></a><h2>Status Checks</h2>
+<p>Continuous checks are run in the <a href="./Gb::SystemMaintenance::checkSPFRecordForGbMailSenderDomains().html" title="Gb::SystemMaintenance::checkSPFRecordForGbMailSenderDomains()">scheduler</a> to ensure the SPF records for your domains are correct.<br />
+This job checks and verifies the status of SPF records of domains stored in the <i>[gb_mail_sender_domains]</i> table if the <i>status_flag</i> of the record is '<b>enrolled'</b> or '<b>failed'</b>. All other statuses are ignored.<br />If the verification fails then the field <a href="Domain_Setup.html#Status_Checks" title="Domain Setup"><i>[gb_mail_sender_domains]status_flag</i></a> is changed to 'failed' and information on why it failed is added into the <a href="Domain_Setup.html#Status_Checks" title="Domain Setup"><i>error_data</i></a> field.<br /> 
+If the verification succeeds for a 'failed' record, the <i>status_flag</i> is updated to 'enrolled' and data in the <i>error_data</i> field is cleared..
+<br /><br />
+If the <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]mail_sender_domains_enforcing_flag</i></a> is set to 'yes' and the domain record is not 'enrolled', your emails will either not send, or use the <i>fall_back</i> email if you have one.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=3" title="Edit section: Email pop-up behaviour">edit</a>]</div><a name="Email_pop-up_behaviour"></a><h2><a href="Good_to_know.html#Email" title="Good to know">Email</a> pop-up behaviour</h2>
+<p>When an email pop-up is shown;
+</p>
+<ol><li> If your <strong>Domain</strong> is enrolled, the "From" address will display your stored sender email.
+</li><li> If your Domain is not enrolled and you have a fallback email, this will display in the "From" address and a "Reply To" address that displays your stored email will also be shown.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=4" title="Edit section: Mail Queue behaviour for bulk emails">edit</a>]</div><a name="Mail_Queue_behaviour_for_bulk_emails"></a><h2><a href="Mail_Queue.html" title="Mail Queue">Mail Queue</a> behaviour for bulk emails</h2>
+<p>When bulk emails are created, they will be stored in <i>gb_mail</i> at 'pending' status with the original sender's address recorded.<br />
+When the emails are sent by a user, the domain status is rechecked and the emails will be either
+</p>
+<ol><li> Sent without change.
+</li><li> Sent with the sender_address updated to noreply@catch-e.com.au
+</li><li> Set to 'Failed' and the user alerted
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=5" title="Edit section: Driver Portal Email behaviour">edit</a>]</div><a name="Driver_Portal_Email_behaviour"></a><h2><a href="Driver_Portal_Email.html" title="Driver Portal Email">Driver Portal Email</a> behaviour</h2>
+<p>When a driver submits a claim via the Portal, the email confirmation is not mentioned on screen, so a driver will not be aware if an SPF record failure has occurred.<br />
+The event email is still created, but the email is displayed as 'Failed' in the Mail Queue.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=6" title="Edit section: Client Set-up">edit</a>]</div><a name="Client_Set-up"></a><h2>Client Set-up</h2>
+<p>Contact your <a href="Catch-e_support.html" title="Catch-e support">Account Manager</a> to register your Domain with Catch-e in the table <i>gb_mail_sender_domains</i>. <br />
+</p><p>Read through the <a href="SPF_records.html" title="SPF records">SPF Setup</a> page. Set-up an SPF Record on your Domain.<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=7" title="Edit section: Catch-e Set-up">edit</a>]</div><a name="Catch-e_Set-up"></a><h2>Catch-e Set-up</h2>
+<p>In order for the domain checking process to be active the <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]mail_sender_domains_enforcing_flag</i></a> must be set to 'yes'
+</p><p>Below is the structure for <i>[gb_mail_sender_domains]</i>.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th width="25%">field_name</th><th width="25%">description </th><th>Comments
+</th></tr>
+<tr>
+<td>domain_name</td><td>varchar(255) </td><td>The registered client domain names used when mail is sent from Catch-e on behalf of the domain
+</td></tr>
+<tr>
+<td>domain_verification_hash</td><td>varchar(100)</td><td> reserved for future use
+</td></tr>
+<tr>
+<td>failback_address</td><td>varchar(100)</td><td> used where the status_flag is either 'pending', 'pending-spf' or 'failed'. The failback address can be noreply@catch-e.com.au or [client]@catch-e.com.au, or any other option using Catch-e.com.au as the domain name
+</td></tr>
+<tr>
+<td>created</td><td>datetime</td><td> Time stamp of when the record is created
+</td></tr>
+<tr>
+<td>error_data</td><td>blob</td><td> Used for analysis by Catch-e
+</td></tr>
+<tr>
+<td>status_flag</td><td>enum('pending','pending-spf','enrolled','blocked','failed')</td><td> statuses are: blocked, pending, pending-spf, failed and enrolled
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h2>System Notes</h2>
+<p><small>
+</p>
+<ul><li> 13681: Sender Policy Framework (SPF)::Back-end features for domain enrolment and validation. Live xx/05/2016
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Domain_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Domain_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Domain_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Domain_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Domain_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.08 secs. -->
+</body></html>

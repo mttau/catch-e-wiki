@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Quote Profiles,Main Page,Qt variant profiles,Quotes:Lease,Reference Data,System Implementation" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Quote Profiles - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Quote Profiles</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Quote_Profiles.html#column-one">navigation</a>, <a href="Quote_Profiles.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="System_Implementation.html" title="System Implementation">System Implementation</a> &rarr; <strong>Quote Profiles</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Quote_Profiles.html#What_is_a_Profile.3F"><span class="tocnumber">1</span> <span class="toctext">What is a Profile?</span></a></li>
+<li class='toclevel-1'><a href="Quote_Profiles.html#Profile_Example"><span class="tocnumber">2</span> <span class="toctext">Profile Example</span></a>
+<ul>
+<li class='toclevel-2'><a href="Quote_Profiles.html#Profile_Templates"><span class="tocnumber">2.1</span> <span class="toctext">Profile Templates</span></a></li>
+<li class='toclevel-2'><a href="Quote_Profiles.html#System_Notes"><span class="tocnumber">2.2</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Profiles&amp;action=edit&amp;section=1" title="Edit section: What is a Profile?">edit</a>]</div><a name="What_is_a_Profile.3F"></a><h4>What is a Profile?</h4>
+<p>Catch-e uses profiles to calculate budget amounts in vehicle quotes.
+<br />
+We recommend that you develop your own desired profiles based on data that is recorded for each vehicle variant in the table <a href="Reference_Data.html#qt_variants" title="Reference Data">qt_variants</a>.
+<br /><br />
+If you develop profile parameters for your business, Catch-e can allocate maintenance and service profiles to new variants for you each month (when new variance are imported from your vehicle data provider).<br /><br />  
+While it <i>is</i> possible to select maintenance or service profiles directly from the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quote / Lease</a> tab without setting up <a href="Qt_variant_profiles.html" title="Qt variant profiles">qt_variant_profiles</a>, it it much easier and faster to perform quotes if they are set-up.
+<br /><br />
+</p><p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/15px-Info.png" alt="" width="15" height="15" longdesc="/mediawiki/index.php/Image:Info.png" /></a> Catch-e needs at least one maintenance and tyre profile to be set-up to enable budgets to be calculated.
+<br />
+</p><p><a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/thumb/b/b3/Info.png/15px-Info.png" alt="" width="15" height="15" longdesc="/mediawiki/index.php/Image:Info.png" /></a> Default Profiles can be overwritten with different values during the quote process or deactivated.  When term or contract kilometres (not profile Kilometres) are adjusted on existing quotes, active profiles will re-calculate values, where relevant. Deactivated profiles will remain so.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Profiles&amp;action=edit&amp;section=2" title="Edit section: Profile Example">edit</a>]</div><a name="Profile_Example"></a><h4>Profile Example</h4>
+<p>You might use the following data to create profiles for maintenance:
+</p>
+<ol><li> Cylinders
+</li><li> Standard or Luxury (using a list price point, e.g. $45,000)
+</li><li> Drive type (2wd or 4wd)
+</li><li> Service interval (default to 6 months/10,000 kms if not supplied by RedBook).
+</li></ol>
+<p><br />
+From this, you might end up with the folling 12 profiles:
+</p>
+<ul><li> 4 Cylinder, Luxury, 2WD
+</li><li> 4 Cylinder, Luxury, 4WD
+</li><li> 4 Cylinder, Standard, 2WD
+</li><li> 4 Cylinder, Standard, 4WD
+</li><li> 6 Cylinder, Luxury, 2WD
+</li><li> 6 Cylinder, Luxury, 4WD
+</li><li> 6 Cylinder, Standard, 2WD
+</li><li> 6 Cylinder, Standard, 4WD
+</li><li> 8 Cylinder, Luxury, 2WD
+</li><li> 8 Cylinder, Luxury, 4WD
+</li><li> 8 Cylinder, Standard, 2WD
+</li><li> 8 Cylinder, Standard, 4WD<br /><br />
+</li></ul>
+<p>You can use as many, or as few variables as you like to create profiles. It really depends on how much work you want to put into developing different profiles and how specific and detailed you want your profiles to be.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Profiles&amp;action=edit&amp;section=3" title="Edit section: Profile Templates">edit</a>]</div><a name="Profile_Templates"></a><h5>Profile Templates</h5>
+<p>Below are templates for Maintenance and Tyre profiles and sample data for one vehicle variant. These will give you a starting point for creating your own profiles.
+</p><p><a href="https://help.catch-e.net.au/clients/help/wiki/images/a/a0/Maintenance_Profile_Template.xls" class='internal' title="Maintenance Profile Template.xls">Maintenance Profile Template</a> - the cost of each service for each profile is stored.
+</p><p><a href="https://help.catch-e.net.au/clients/help/wiki/images/5/52/Tyre_Profile_Template.xls" class='internal' title="Tyre Profile Template.xls">Tyre Profile Template</a> - the cost of a tyre for each profile is stored.
+</p><p><a href="https://help.catch-e.net.au/clients/help/wiki/images/8/89/Variant_Sample.xls" class='internal' title="Variant Sample.xls">Variant Sample</a> - one vehicle is shown to illustrate the variables that could be used to develop your profiles.
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Profiles&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h5>System Notes</h5>
+<p><small>
+</p>
+<ul><li> 14407: Quote profiles re-activated if Term changed.  Live dd/03/2017
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1771-0!1!0!0!!en!2 and timestamp 20251120010521 -->
+<div class="printfooter">
+Retrieved from "<a href="Quote_Profiles.html">https://help.catch-e.net.au/mediawiki/index.php/Quote_Profiles</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Quote_Profiles">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Quote_Profiles.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Quote_Profiles&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.03 secs. -->
+</body></html>

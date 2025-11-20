@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Bookings Setup,Administration,Bookings,Bookings:Availability,Bookings:Booking,Bookings:Booking:Billing Type,Bookings:Condition,Bookings:Invoice,Bookings:Invoice:Description,Bookings:Rental,Bookings:Search" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Bookings Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Bookings Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Bookings_Setup.html#column-one">navigation</a>, <a href="Bookings_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a>  &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Bookings.html" title="Bookings">Bookings</a> &rarr; <a href="./Bookings:Search.html" title="Bookings:Search">Search</a> | <a href="./Bookings:Booking.html" title="Bookings:Booking">Booking</a> | <a href="./Bookings:Condition.html" title="Bookings:Condition">Condition</a> | <a href="./Bookings:Rental.html" title="Bookings:Rental">Rental</a> | <a href="./Bookings:Invoice.html" title="Bookings:Invoice">Invoice</a>  |  <a href="./Bookings:Availability.html" title="Bookings:Availability">Availability</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>Bookings Setup</strong> &rarr; <a href="Bookings_Troubleshooting.html" title="Bookings Troubleshooting">Bookings Troubleshooting</a>
+</p>
+<hr />
+<p><br />
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Global_Controls"><span class="tocnumber">2</span> <span class="toctext">Global Controls</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Client_Setup"><span class="tocnumber">3</span> <span class="toctext">Client Setup</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Vehicle_Setup"><span class="tocnumber">4</span> <span class="toctext">Vehicle Setup</span></a>
+<ul>
+<li class='toclevel-2'><a href="Bookings_Setup.html#Scheduler_Job_Check"><span class="tocnumber">4.1</span> <span class="toctext">Scheduler Job Check</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Supplier_Setup"><span class="tocnumber">5</span> <span class="toctext">Supplier Setup</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Posting_Class_Setup"><span class="tocnumber">6</span> <span class="toctext">Posting Class Setup</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Contract_Types"><span class="tocnumber">7</span> <span class="toctext">Contract Types</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#VMRS_Codes"><span class="tocnumber">8</span> <span class="toctext">VMRS Codes</span></a></li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Booking_Request"><span class="tocnumber">9</span> <span class="toctext">Booking Request</span></a>
+<ul>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_vehicle_types"><span class="tocnumber">9.1</span> <span class="toctext">bk_vehicle_types</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_accessory_rates"><span class="tocnumber">9.2</span> <span class="toctext">bk_accessory_rates</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_booking_types"><span class="tocnumber">9.3</span> <span class="toctext">bk_booking_types</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Allocation_and_Billing"><span class="tocnumber">10</span> <span class="toctext">Allocation and Billing</span></a>
+<ul>
+<li class='toclevel-2'><a href="Bookings_Setup.html#Pricing_Rules"><span class="tocnumber">10.1</span> <span class="toctext">Pricing Rules</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_billing_types"><span class="tocnumber">10.2</span> <span class="toctext">bk_billing_types</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_internal_vehicle_rates"><span class="tocnumber">10.3</span> <span class="toctext">bk_internal_vehicle_rates</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_client_vehicle_rates"><span class="tocnumber">10.4</span> <span class="toctext">bk_client_vehicle_rates</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_vehicle_types"><span class="tocnumber">10.5</span> <span class="toctext">bk_supplier_vehicle_types</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_vehicle_classes"><span class="tocnumber">10.6</span> <span class="toctext">bk_supplier_vehicle_classes</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_locations"><span class="tocnumber">10.7</span> <span class="toctext">bk_supplier_locations</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_location_charges"><span class="tocnumber">10.8</span> <span class="toctext">bk_supplier_location_charges</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_vehicle_rates"><span class="tocnumber">10.9</span> <span class="toctext">bk_supplier_vehicle_rates</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_accessory_rates"><span class="tocnumber">10.10</span> <span class="toctext">bk_supplier_accessory_rates</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_supplier_vehicle_class_accessories"><span class="tocnumber">10.11</span> <span class="toctext">bk_supplier_vehicle_class_accessories</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#Condition"><span class="tocnumber">11</span> <span class="toctext">Condition</span></a>
+<ul>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_fuel_charges"><span class="tocnumber">11.1</span> <span class="toctext">bk_fuel_charges</span></a></li>
+<li class='toclevel-2'><a href="Bookings_Setup.html#bk_sundry_charges"><span class="tocnumber">11.2</span> <span class="toctext">bk_sundry_charges</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Bookings_Setup.html#System_Notes"><span class="tocnumber">12</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>This page summarises the various flags and tables within Catch-e that need to be setup and populated with data to enable the Bookings module to function fully. Contact <a href="mailto:support@catch-e.com.au" class='external free' title="mailto:support@catch-e.com.au" rel="nofollow">mailto:support@catch-e.com.au</a> for assistance with your Bookings setup and implementation plan.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=2" title="Edit section: Global Controls">edit</a>]</div><a name="Global_Controls"></a><h4><a href="Global_Controls.html" title="Global Controls">Global Controls</a></h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Module</th><th>Name</th><th>Comment</th><th>Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4">Bookings
+</td></tr>
+<tr>
+<td width="5%" align="left">bk</td><td width="10%" align="left">booking_billing_period_type</td><td width="70%" align="left">Default period used in the Bookings module. This can be Daily or Hourly.</td><td width="15%" align="left"> s:7:"per-day";
+</td></tr>
+<tr>
+<td>bk</td><td>booking_charge_posting_class</td><td>Default class for charges.</td><td>s:3:"BKC";
+</td></tr>
+<tr>
+<td>bk</td><td>booking_payment_posting_class</td><td>Default class for rental costs.</td><td>s:5:"BKRNT";
+</td></tr>
+<tr>
+<td>bk</td><td>mail_to_booking_request</td><td>If set, an email will be sent to this address when a booking is created, or saving an existing booking where the status changes to 'booked'. </td><td>s:19:"demo@catch-e.com.au";
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=3" title="Edit section: Client Setup">edit</a>]</div><a name="Client_Setup"></a><h4>Client Setup</h4>
+<p>Clients can be set up to default a billing preference. They can receive booking invoices as 'Billing' or 'Single'. If 'Billing' is chosen, the charges will be collated onto the client's combined invoice. If 'Single', then an invoice will be created when this transaction is posted. This defaults from a setting on the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients/Contract Defaults</a> screen, but can be changed during processing.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=4" title="Edit section: Vehicle Setup">edit</a>]</div><a name="Vehicle_Setup"></a><h4>Vehicle Setup</h4>
+<p>Any vehicle can be made available to use for Bookings by ticking on the "Booking Module?" field in the <a href="Contracts.html" title="Contracts">Contracts</a>/<a href="./Contracts:Contract.html" title="Contracts:Contract">Contract</a> screen. These vehicles will then be visible in the <a href="./Bookings:Availability.html" title="Bookings:Availability">Availability</a> screen.<br />
+</p><p>If a vehicle is temporarily unavailable for bookings, E.g. it is under repair, then another flag on the <a href="Contracts.html" title="Contracts">Contracts</a>/<a href="./Contracts:Contract.html" title="Contracts:Contract">Contract</a> screen "Under Repair?" can be ticked. This prevents the vehicle from displaying on the <a href="./Bookings:Availability.html" title="Bookings:Availability">Availability</a> screen. The "Under Repair?" flag can also be ticked on when the Return Details of a vehicles <a href="./Bookings:Condition.html" title="Bookings:Condition">Condition</a> report are being entered into Catch-e.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=5" title="Edit section: Scheduler Job Check">edit</a>]</div><a name="Scheduler_Job_Check"></a><h5>Scheduler Job Check</h5>
+<p>Contract Availability is driven by entries contained in the <i>bk_contract_booking_allocations</i> table. This table holds data about contracts and their current allocation availability. This table is populated daily by a <a href="Job_Scheduler.html" title="Job Scheduler">scheduled job</a> called rebuildBookingAllocations. This is a large job and can take a long time to finish. Because of this to maintain system availability and response times it is run after hours and not right after the Booking Module? on Contracts / Contract page is checked on.
+</p><p>When a newly flagged (Booking Module?) contract is not yet available in <i>bk_contract_booking_allocations</i>, the system allows the user to go ahead and create a booking against an invalid contract allocation. When that booking is saved the <a href="Job_Scheduler.html" title="Job Scheduler">scheduled job</a> rebuildBookingAllocations is triggered to re-populate <i>bk_contract_booking_allocations</i>. Once this table is populated the newly added contract and any other contracts flagged as Booking Module? since the last rebuildBookingAllocations scheduled job run is now available for allocation.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=6" title="Edit section: Supplier Setup">edit</a>]</div><a name="Supplier_Setup"></a><h4>Supplier Setup</h4>
+<p>Suppliers who provide rental vehicles need to be classified as Supplier Type "rental" in <a href="Suppliers.html" title="Suppliers">Suppliers</a>/<a href="./Suppliers:Account.html" title="Suppliers:Account">Account</a>. This enables the suppliers in the Allocation and Billing "Supplier" field pop-up.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=7" title="Edit section: Posting Class Setup">edit</a>]</div><a name="Posting_Class_Setup"></a><h4>Posting Class Setup</h4>
+<p>Posting classes need to be set-up for Booking transactions. These are:
+</p>
+<dl><dd><dl><dd>BKA   - Booking Accessory Charges;
+</dd><dd>BKC   - Booking Charges;
+</dd><dd>BKRNT - Booking Rental;
+</dd><dd>LOCBK - Location Change Booking (used to record vehicle location changes as Contract Events).
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=8" title="Edit section: Contract Types">edit</a>]</div><a name="Contract_Types"></a><h4>Contract Types</h4>
+<p>You need to set-up values in <a href="./Contract_Types:Booking.html" title="Contract Types:Booking">Contract Types/Booking</a> for the Contract Types of Replacing/Order vehicles, otherwise the billing process, and various table links will not work correctly. 
+</p><p>If there is no Replacing/Order vehicle on your Booking, the billing process will use the "BOOK" Contract Type.
+</p><p>You must also set-up the <a href="./Contract_Types:Rental.html" title="Contract Types:Rental">Contract Types/Rental</a> page of the Contract Type "BOOK", so that Supplier rental charges can be processed.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=9" title="Edit section: VMRS Codes">edit</a>]</div><a name="VMRS_Codes"></a><h4>VMRS Codes</h4>
+<p>Various VMRS Codes are utilised in bookings. They are:
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>VMRS Code</th><th>Description</th><th>Action Code</th><th>Quantity</th><th>Unit Cost</th><th>Invoice Type</th><th>1link Code
+</th></tr>
+<tr>
+<td>BKAC</td><td>Booking Rental Accessories Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKANV</td><td>Awaiting New Vehicle Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKDAM</td><td>Booking Vehicle Accident &amp; Damage</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKEK</td><td>Excess KM Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKF</td><td>Booking Vehicle Fuel Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKFOC</td><td>Free of Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKLC</td><td>Booking Rental Location Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKLR</td><td>Lease Replacement Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKMINI</td><td>Mini Lease Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKRNT</td><td>Booking Rental</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKRP</td><td>Booking Vehicle Repair Charges</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr>
+<tr>
+<td>BKSR</td><td>Straight Rental Charge</td><td>n/a</td><td>n/a</td><td>n/a</td><td>booking</td><td>n/a
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=10" title="Edit section: Booking Request">edit</a>]</div><a name="Booking_Request"></a><h4>Booking Request</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=11" title="Edit section: bk_vehicle_types">edit</a>]</div><a name="bk_vehicle_types"></a><h5>bk_vehicle_types</h5>
+<p>A booking request needs to detail the vehicle type that is required. This helps the booking administrator allocate an appropriate vehicle. The vehicle types are set up in <i>bk_vehicle_types</i>.
+</p><p><a href="./Image:Bk_vehicle_types.gif.html" class="image" title="Image:Bk vehicle types.gif"><img src="../../clients/help/wiki/images/7/76/Bk_vehicle_types.gif" alt="Image:Bk vehicle types.gif" width="708" height="235" longdesc="/mediawiki/index.php/Image:Bk_vehicle_types.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=12" title="Edit section: bk_accessory_rates">edit</a>]</div><a name="bk_accessory_rates"></a><h5>bk_accessory_rates</h5>
+<p>Vehicle accessories are loaded into the table <i>bk_accessory_rates</i>. The accessory code is used to match the accessories to any that are provided by suppliers.
+</p><p><a href="./Image:Bk_acessory_rates.gif.html" class="image" title="Image:Bk acessory rates.gif"><img src="../../clients/help/wiki/images/d/dc/Bk_acessory_rates.gif" alt="Image:Bk acessory rates.gif" width="999" height="251" longdesc="/mediawiki/index.php/Image:Bk_acessory_rates.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=13" title="Edit section: bk_booking_types">edit</a>]</div><a name="bk_booking_types"></a><h5>bk_booking_types</h5>
+<p>This table contains the details of the type of bookings that can being made. This is used to indicate the required billing type calculation. Refer to <b><a href="./Bookings:Booking:Billing_Type.html" title="Bookings:Booking:Billing Type">Billing Type</a></b> for more details.
+</p><p><a href="./Image:Bk_booking_types.gif.html" class="image" title="Image:Bk booking types.gif"><img src="../../clients/help/wiki/images/c/c4/Bk_booking_types.gif" alt="Image:Bk booking types.gif" width="622" height="196" longdesc="/mediawiki/index.php/Image:Bk_booking_types.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=14" title="Edit section: Allocation and Billing">edit</a>]</div><a name="Allocation_and_Billing"></a><h4>Allocation and Billing</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=15" title="Edit section: Pricing Rules">edit</a>]</div><a name="Pricing_Rules"></a><h5>Pricing Rules</h5>
+<p>The table below summarises the business rules of each billing type.<br /> An uplift rate can also be stored with a billing type.<br /> If an uplift is stored, then that percentage is added to the amount charged to the client.<br /> Pricing can be stored on a Daily and/or Hourly basis.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Billing Type </th><th> Validation </th><th> Allocation Type </th><th> Billing Calculation Source </th><th> Billing Calculation
+</th></tr>
+<tr>
+<td> Straight Rental </td><td> n\a </td><td> Internal</td><td> bk_internal_vehicle_rates (or client specific bk_client_vehicle_rates defined)</td><td> Rate Daily Net * Number of Days Used
+</td></tr>
+<tr>
+<td> Straight Rental </td><td> n\a </td><td> Hire Car </td><td> bk_supplier_vehicle_rates</td><td> Rate Daily Net * Number of Days Used
+</td></tr>
+<tr>
+<td> Straight Rental </td><td> n\a </td><td> Loan Car </td><td> bk_internal_vehicle_rates (or client specific bk_client_vehicle_rates defined)</td><td> Rate Daily Net * Number of Days Used
+</td></tr>
+<tr>
+<td> Lease Replacement </td><td> Link to 'Replacement'Contract </td><td> Any (no relief vehicle) </td><td>bk_internal_vehicle_rates (or client specific bk_client_vehicle_rates defined)</td><td>Rate Daily Net * Number of Days Used
+</td></tr>
+<tr>
+<td> Lease Replacement </td><td> Link to 'Replacement'Contract </td><td> Any (relief vehicle) </td><td>n/a   </td><td>no charge
+</td></tr>
+<tr>
+<td> Minilease </td><td> n/a </td><td> Any (no relief vehicle) </td><td>bk_internal_vehicle_rates (or client specific bk_client_vehicle_rates defined)</td><td>Rate Daily Net * Number of Days Used
+</td></tr>
+<tr>
+<td> Minilease </td><td> n/a </td><td> Any (relief vehicle) </td><td>n/a   </td><td>no charge
+</td></tr>
+
+<tr>
+<td> Awaiting New Vehicle </td><td> Link to 'On ORDER' Contract </td><td> Any </td><td> Lease rate of vehicle On ORDER </td><td> ROUND((Quote Rate Net * 12) / 365, 2)
+</td></tr>
+<tr>
+<td> Free of Charge </td><td> n/a </td><td>n/a </td><td> no charge
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=16" title="Edit section: bk_billing_types">edit</a>]</div><a name="bk_billing_types"></a><h5>bk_billing_types</h5>
+<p><a href="./Image:Bk_billing_types.gif.html" class="image" title="Image:Bk billing types.gif"><img src="../../clients/help/wiki/images/c/ca/Bk_billing_types.gif" alt="Image:Bk billing types.gif" width="807" height="193" longdesc="/mediawiki/index.php/Image:Bk_billing_types.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=17" title="Edit section: bk_internal_vehicle_rates">edit</a>]</div><a name="bk_internal_vehicle_rates"></a><h5>bk_internal_vehicle_rates</h5>
+<p>This table holds data for default billing rates as outlined in the Pricing Structure section.
+</p><p><a href="./Image:Bk_internal_vehicle_rates.gif.html" class="image" title="Image:Bk internal vehicle rates.gif"><img src="../../clients/help/wiki/images/c/ca/Bk_internal_vehicle_rates.gif" alt="Image:Bk internal vehicle rates.gif" width="769" height="306" longdesc="/mediawiki/index.php/Image:Bk_internal_vehicle_rates.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=18" title="Edit section: bk_client_vehicle_rates">edit</a>]</div><a name="bk_client_vehicle_rates"></a><h5>bk_client_vehicle_rates</h5>
+<p>This table holds data for client specific rates. This can be set on an Hourly and/or Daily basis.
+</p><p><a href="./Image:Bk_client_vehicle_rates.gif.html" class="image" title="Image:Bk client vehicle rates.gif"><img src="../../clients/help/wiki/images/a/a9/Bk_client_vehicle_rates.gif" alt="Image:Bk client vehicle rates.gif" width="800" height="135" longdesc="/mediawiki/index.php/Image:Bk_client_vehicle_rates.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=19" title="Edit section: bk_supplier_vehicle_types">edit</a>]</div><a name="bk_supplier_vehicle_types"></a><h5>bk_supplier_vehicle_types</h5>
+<p>This is a joining table to link the organisations vehicle types to suppliers vehicle classes.<br /> 
+Each supplier vehicle type is linked to bk_vehicle_types.<br /> 
+Each supplier vehicle type can be linked to one or more bk_supplier_vehicle_classes.<br /><br />
+When an External Suppliers vehicle class list is being used, it initially filters out all vehicle classes that do not link to the Vehicle Type that has been specified in the Booking Request.<br />
+</p><p><a href="./Image:Bk_supplier_vehicle_types.gif.html" class="image" title="Image:Bk supplier vehicle types.gif"><img src="../../clients/help/wiki/images/3/32/Bk_supplier_vehicle_types.gif" alt="Image:Bk supplier vehicle types.gif" width="601" height="177" longdesc="/mediawiki/index.php/Image:Bk_supplier_vehicle_types.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=20" title="Edit section: bk_supplier_vehicle_classes">edit</a>]</div><a name="bk_supplier_vehicle_classes"></a><h5>bk_supplier_vehicle_classes</h5>
+<p>Holds supplier vehicle classes. Each vehicle type can have one or more classes of vehicle. Supplier rental rates are dependent on location and vehicle class.
+</p><p><a href="./Image:Bk_supplier_vehicle_classes.gif.html" class="image" title="Image:Bk supplier vehicle classes.gif"><img src="../../clients/help/wiki/images/3/3a/Bk_supplier_vehicle_classes.gif" alt="Image:Bk supplier vehicle classes.gif" width="711" height="198" longdesc="/mediawiki/index.php/Image:Bk_supplier_vehicle_classes.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=21" title="Edit section: bk_supplier_locations">edit</a>]</div><a name="bk_supplier_locations"></a><h5>bk_supplier_locations</h5>
+<p>Supplier rental rate is dependent on location and vehicle class. Each location can have one or more charges (E.g. Airport Charges).
+</p><p><a href="./Image:Bk_supplier_locations.gif.html" class="image" title="Image:Bk supplier locations.gif"><img src="../../clients/help/wiki/images/2/2d/Bk_supplier_locations.gif" alt="Image:Bk supplier locations.gif" width="1107" height="196" longdesc="/mediawiki/index.php/Image:Bk_supplier_locations.gif" /></a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=22" title="Edit section: bk_supplier_location_charges">edit</a>]</div><a name="bk_supplier_location_charges"></a><h5>bk_supplier_location_charges</h5>
+<p>e.g Admin Charge, Premimum Location Surcharge.<br />
+Each charge must have a posting class id to enable correct gl entries.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=23" title="Edit section: bk_supplier_vehicle_rates">edit</a>]</div><a name="bk_supplier_vehicle_rates"></a><h5>bk_supplier_vehicle_rates</h5>
+<p>A vehicle rate is dependent on vehicle class and its location.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=24" title="Edit section: bk_supplier_accessory_rates">edit</a>]</div><a name="bk_supplier_accessory_rates"></a><h5>bk_supplier_accessory_rates</h5>
+<p>List of accessories available from suppliers.<br /> 
+Each accessory must map to a accessory in bk_accessory_rates table.<br />
+Each accessory must have a posting class id to enable correct gl entries.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=25" title="Edit section: bk_supplier_vehicle_class_accessories">edit</a>]</div><a name="bk_supplier_vehicle_class_accessories"></a><h5>bk_supplier_vehicle_class_accessories</h5>
+<p>List of accessories standard in a vehicle class. (E.g GPS may come standard in BMW 320i Exec)
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=26" title="Edit section: Condition">edit</a>]</div><a name="Condition"></a><h4>Condition</h4>
+<p>The Condition screen can be setup to include a client-specific Condition Report PDF.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=27" title="Edit section: bk_fuel_charges">edit</a>]</div><a name="bk_fuel_charges"></a><h5>bk_fuel_charges</h5>
+<p>Holds amount to charge when vehicle is returned with less fuel than it was taken out. The value held is for a full tank of petrol. See <a href="./Bookings:Invoice:Description.html" title="Bookings:Invoice:Description">Bookings/Invoice/Description</a> for examples.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=28" title="Edit section: bk_sundry_charges">edit</a>]</div><a name="bk_sundry_charges"></a><h5>bk_sundry_charges</h5>
+<p>Specifies posting class for various sundry charges. Currently it has only one charge 'fuel'. This enables correct gl entry.
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;action=edit&amp;section=29" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<div class="printfooter">
+Retrieved from "<a href="Bookings_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Bookings_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Bookings_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Bookings_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Bookings_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.12 secs. -->
+</body></html>

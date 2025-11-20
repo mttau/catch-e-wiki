@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Angle Interface Validation Errors,Administration,Angle:JSON,Angle:insurerName,Angle Finance Interface,Angle Finance Mapping:Corporate Type,Angle Finance Mapping:Employment Type,Angle Finance Mapping:Fuel Type,Angle Finance Mapping:Gender,Angle Finance Mapping:Marital Status,Angle Finance Mapping:Occupation Type" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Angle Interface Validation Errors - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Angle Interface Validation Errors</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Finance_Interface_Validation_Errors&amp;redirect=no" title="Angle Finance Interface Validation Errors">Angle Finance Interface Validation Errors</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="Angle_Finance_Interface_Validation_Errors.html#column-one">navigation</a>, <a href="Angle_Finance_Interface_Validation_Errors.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> &rarr; <a href="./Quotes:Finance.html" title="Quotes:Finance">Finance</a> | <a href="./Quotes:Events.html" title="Quotes:Events">Events</a> &rarr; <a href="Angle_Interface.html" title="Angle Interface">Angle Interface</a> &rarr; <a href="./Angle:JSON.html" title="Angle:JSON">Application JSON</a> | <strong>Validations and Alerts</strong> &rarr;<a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Angle_Interface_Setup.html" title="Angle Interface Setup">Angle Interface Setup</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Angle_Finance_Interface_Validation_Errors.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Angle_Finance_Interface_Validation_Errors.html#Validations_and_Alerts"><span class="tocnumber">2</span> <span class="toctext">Validations and Alerts</span></a>
+<ul>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#Catch-e_Pre_Checks"><span class="tocnumber">2.1</span> <span class="toctext">Catch-e Pre Checks</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#Missing_Data"><span class="tocnumber">2.2</span> <span class="toctext">Missing Data</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#Mapping_Errors"><span class="tocnumber">2.3</span> <span class="toctext">Mapping Errors</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#Failed"><span class="tocnumber">2.4</span> <span class="toctext">Failed</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#ValidationFailure"><span class="tocnumber">2.5</span> <span class="toctext">ValidationFailure</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#Acknowledged"><span class="tocnumber">2.6</span> <span class="toctext">Acknowledged</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Interface_Validation_Errors.html#PartiallySuccessful"><span class="tocnumber">2.7</span> <span class="toctext">PartiallySuccessful</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Angle_Finance_Interface_Validation_Errors.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The following table identifies the Angle Finance Interface validation error(s) and to how resolve them to pass a successful application.  <br />
+For Angle Finance, a successful application is defined when an 'Application Id' is returned and populated in the field <a href="./Quotes:Finance.html" title="Quotes:Finance">Finance Application</a>. <br />
+Use this number in the Angle Portal to search for the submitted application to complete any outstanding items. <br />
+Once an 'Application Id' has been issued, the 'Apply' button cannot be re-used to 'push' any further changes from Catch-e to Angle Finance.  This will trigger an error as the Angle Interface will not re-issue another 'Application Id' against a Catch-e 'Quote ID' already been submitted.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=2" title="Edit section: Validations and Alerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h3>Validations and Alerts</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=3" title="Edit section: Catch-e Pre Checks">edit</a>]</div><a name="Catch-e_Pre_Checks"></a><h4>Catch-e Pre Checks</h4>
+<p>Catch-e's configuration pre-checks must pass before the Apply button is enabled.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Pre Checks
+</td></tr>
+<tr>
+<td> "invalidInterfaceType": <br /> "The Financier Supplier interface type is not 'angle'"
+</td><td> The supplier to be used for Angle Finance does not have <b><a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a></b> "Interface Type" set to 'Angle'.
+</td></tr>
+<tr>
+<td> "userLoginInactive":<br /> "The authenticated user does not have an active user login for 'angle'"
+</td><td>  User needs a login record.<br /> Process page: <a href="Apply_button_for_Angle_Finance.html" title="Apply button for Angle Finance">Apply button for Angle Finance</a>
+</td></tr>
+<tr>
+<td>"invalidOriginator": "Originator is not selected"
+</td><td>
+<p><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> <b>Originator</b> cannot be blank.  Select one from the drop list and Save.
+</p>
+</td></tr>
+</table>
+<p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=4" title="Edit section: Missing Data">edit</a>]</div><a name="Missing_Data"></a><h4>Missing Data</h4>
+<p>The alerts below will help diagnose where system data is missing or incomplete.<br />Update the missing or incomplete data then try the application again.<br /> Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a>
+</td></tr>
+<tr>
+<td>"comprehensive_insurance_supplier_id":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> <b>Insurer</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Driver
+</td></tr>
+<tr>
+<td>"salutation":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Salutation</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"gender":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Gender</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td> mobile_phone<br />
+<p>The input does not match a phone number format
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Mobile</b> - must have 10 digits.  Spaces are allowed e.g.: 0400111222 or 0400 111 222
+</td></tr>
+<tr>
+<td>"residential_status":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Resi. Status</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"marital_status":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Marital Status</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"residency_status":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Residency Status</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"driver_employment_type_id":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Employment Type</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"driver_occupation_code_id":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Occupation</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> <a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a>
+</td></tr>
+<tr>
+<td> client_address_detail_pid<br /> Value is required and can't be empty
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>Address</b> is a mandatory field. <br /> Use the 'autocomplete' address picker to enter the desired address. This will record the 'pid' required by Angle.<br />  If you enter the address manually, the application will fail.
+</td></tr>
+<tr>
+<td>"client_industry_code":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>Industry</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td>"corporate_type_id":{"isEmpty":"Value is required and can't be empty"}
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>Corporate Type</b> is a mandatory field and cannot be empty.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> <a href="./Reference_Data:qt_variants.html" title="Reference Data:qt variants"> Reference Data / Variants</a>
+</td></tr>
+<tr>
+<td>'Fuel Type (Asset Details)' must not be empty."
+</td><td><a href="./Reference_Data:qt_variants.html" title="Reference Data:qt variants"> Reference Data / Variants</a> <b>Fuel Type</b> value is missing from your selected Variant in the Quote.  Update Variant to pass a successful application.  You may also want to follow up the missing data with your Vehicle data supplier.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=5" title="Edit section: Mapping Errors">edit</a>]</div><a name="Mapping_Errors"></a><h4>Mapping Errors</h4>
+<p>The alerts below will help diagnose which mappings are missing or incomplete.Update the missing or incomplete data then try the application again.<br />
+Mapping errors happen when the required mapping data is not set up correctly or are missing.
+See also the <a href="Angle_Finance_Setup.html#Mapping_Set_Up" title="Angle Finance Setup">Angle Finance Setup</a> page for mapping details.<br />
+Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"><a href="Mapping_Updates.html" title="Mapping Updates">Mapping</a> set up needs to be updated to resolve error.  <span style="color:red"><i>Contact Angle Finance for accepted value(s) prior to any updates.</i></span>
+</td></tr>
+<tr>
+<td>"salutation":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Salutation</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Title.html" title="Angle Finance Mapping:Title">Title</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"gender":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Gender</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Gender.html" title="Angle Finance Mapping:Gender">Gender</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"marital_status":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Marital Status</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Marital_Status.html" title="Angle Finance Mapping:Marital Status">Marital Status</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"residency_status":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Residency Status</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Residency_Status.html" title="Angle Finance Mapping:Residency Status">Residency Status</a> for the accepted values..
+</td></tr>
+<tr>
+<td>"residential_status":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Resi. Status</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Residential_Status.html" title="Angle Finance Mapping:Residential Status">Residential Status</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"driver_employment_type_id":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Employment Type</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Employment_Type.html" title="Angle Finance Mapping:Employment Type">Employment Type</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"driver_occupation_code_id":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Occupation</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Occupation_Type.html" title="Angle Finance Mapping:Occupation Type">Occupation Type</a> for the accepted values.
+</td></tr>
+<tr>
+<td>"client_industry_code":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>Industry</b> value being passed is not recognised by Angle Finance.  'Industry' refers to the Australian and New Zealand Standard Industrial Classification (ANZSIC) list. Refer <a href="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0" class='external free' title="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0" rel="nofollow">https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0</a>. <br />
+<p>Click <a href="https://help.catch-e.net.au/clients/help/wiki/images/5/54/ANZSIC_Codes.xlsx" class='internal' title="ANZSIC Codes.xlsx">here</a> to access the ANZSIC spreadsheet which allows you to search for your Clients related 'Industry' and source the required entry to enter into Catch-e to pass a valid ANZSIC code in your Angle Finance application.
+</p>
+</td></tr>
+<tr>
+<td>"comprehensive_insurance_supplier_id":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> <b>Insurer</b> is not recognised by the Angle Interface. Your insurer needs to be mapped. to an insurer in AAF's stored list.<br />  Go to the  <a href="./Angle:insurerName.html" title="Angle:insurerName">insurerName</a> page for a list of the accepted names.
+</td></tr>
+<tr>
+<td>"corporate_type_id":{"noRecordFound": "No record matching the input was found"}
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>Corporate Type</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Corporate_Type.html" title="Angle Finance Mapping:Corporate Type">Corporate Type</a> for the accepted values.
+</td></tr>
+<tr>
+<td> "Invalid 'Fuel Type (Asset Details)', the value must be one of the list of allowed values provided. Please contact IT support team."
+</td><td><a href="./Reference_Data:qt_variants.html" title="Reference Data:qt variants"> Reference Data / Variants</a> <b>Fuel Type</b> value being passed is not recognised by Angle Finance.  Refer to <a href="./Angle_Finance_Mapping:Fuel_Type.html" title="Angle Finance Mapping:Fuel Type">Fuel Type</a> for the accepted values.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=6" title="Edit section: Failed">edit</a>]</div><a name="Failed"></a><h4>Failed</h4>
+<p>If there is data required for an Angle Finance application that is missing or incomplete, you will see these alerts on screen.<br /> Update the missing data then try the application again.<br /> Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2">Pre Validations
+</td></tr>
+<tr>
+<td>
+<p>"no_of_dependents":{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> "No. of Dependents" - must have a value entered between 0 and 999.
+</td></tr>
+<tr>
+<td>
+<p>"date_of_birth":<br />{"dateFalseFormat":"The input does not fit the date format 'Y-m-d'",<br />"dateInvalidDate":"The input does not appear to be a valid date"}
+</p>
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> "Date of Birth" - is a mandatory field and cannot be blank.
+</td></tr>
+<tr>
+<td>
+<p>"driver_licence":{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a>   <b>Licence</b> "Licence No" - is a mandatory field and cannot be blank.
+</td></tr>
+<tr>
+<td>
+<p>"driver_licence_state":<br />{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a>  <b>Licence</b> "State" - is a mandatory field and cannot be blank.
+</td></tr>
+<tr>
+<td>
+<p>"driver_lic_exp":<br />{"dateInvalidDate":"The input does not appear to be a valid date"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Licence</b> "Expiry" - must be a valid date.
+</td></tr>
+<tr>
+<td>
+<p>400<br />
+[<br />
+"PLG-049: Field DrivingLicenceExpiryDate can not be back dated",<br />
+]
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Licence</b> "Expiry" - must be a date greater than today's date.
+</td></tr>
+<tr>
+<td>
+<p>finance_rate<br /> The input is not greater than or equal to '0' 
+</p>
+</td><td> <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> "Financier Rate" - field must be a positive percentage.
+</td></tr>
+<tr>
+<td>
+<p>400<br />
+[<br />
+"PLG-049: Invalid Phone-area-code.",<br />
+"Phone-area-code must be 02, 03, 07 or 08."<br />
+]
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Home Phone" - cannot be a mobile phone number.<br /> Area Code must be '02','03,'07', etc., else the application will fail.
+</td></tr>
+<tr>
+<td>
+<p>"home_phone":{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Home Phone" - is a mandatory field and cannot be blank.  <br />Area Code must be '02','03,'07', etc., else the application will fail.<br />  Do not enter a mobile phone number in this field as it will fail.
+</td></tr>
+<tr>
+<td>
+<p>"mobile_phone":{"isEmpty": "Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Mobile" - is a mandatory field and cannot be blank.
+</td></tr>
+<tr>
+<td>400<br />
+<p>[<br />
+"PLG-049: Non applicant spousal expense reduction option only<br />
+applicable when Married or Defacto'<br />
+]<br />
+</p>
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> When passing a value for "Monthly Spouse Net Income", "Marital Status" can only be 'Marital' or 'Defacto'.<br /> <i>Testing error seen on 30/08/2024</i>
+</td></tr>
+<tr>
+<td>
+<p>"home_address_detail_pid":{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Home</b> - use the 'autocomplete' home address picker to enter the desired address.<br />  This will record the 'pid' required by Angle.  If you enter the address manually, the application will fail.
+</td></tr>
+<tr>
+<td>
+<p>"post_address_detail_pid":{"isEmpty":"Value is required and can't be empty"}
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a>  <b>Post</b> - use the 'autocomplete' address picker to enter the desired postal address.<br />  This will record the 'pid' required by Angle.  If you enter the address manually, the application will fail.
+</td></tr>
+<tr>
+<td>
+<p>employee_start<br />
+The input does not fit the date format 'Y-m-d'
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Position Start" - check and enter a valid date. It must be in the date format 'dd/mm/yyyy'.
+</td></tr>
+<tr>
+<td>
+<p>employee_start<br />
+The input does not appear to be a valid date
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Position Start" - check and enter a valid date.
+</td></tr>
+<tr>
+<td>
+<p>fuel_on_delivery_fee<br />
+Fuel on Delivery is not financed by Angle Finance
+</p>
+</td><td> <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> "Fuel on Delivery" - is not a finance amount accepted by Angle Auto Finance.<br /> Remove this value to continue with the application process.
+</td></tr>
+<tr>
+<td> previous_employee_start<br />
+<p>The input does not appear to be a valid date
+</p>
+</td><td> You will see this alert if the <a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Position Start" date is invalid or missing.<br /> This field is calculated and used in the <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">employmentType (Previous Employment)</a> section of the <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">application</a> using that date.
+</td></tr>
+<tr>
+<td> previous_employee_end<br />
+<p>The input does not appear to be a valid date
+</p>
+</td><td> You will see this alert if the <a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Position Start" date is invalid or missing.<br /> This field is calculated and used in the <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">employmentType (Previous Employment)</a> section of the <a href="./Angle:JSON.html#employmentType_.28Previous_Employment.29" title="Angle:JSON">application</a> using that date.
+</td></tr>
+<tr>
+<td>Angle Finance Application failed<br /><br />
+<p>400<br />
+The specified 'Account Keeping Fee Novated' amount does not<br /> match the agreed amount. Please review the application and<br /> resubmit, or contact Novated Assist team to discuss.
+</p>
+</td><td> <b>Quotes / Finance</b> <a href="./Quotes:Finance.html#Monthly_Payments" title="Quotes:Finance">Monthly Payments</a> "Fee" does not match Angle Auto Finance's set fee.<br />
+<p>The value in this field comes from the linked Setup / Reference Data &rarr; <a href="./Reference_Data:qt_financier_posting_map_defaults.html" title="Reference Data:qt financier posting map defaults">qt_financier_posting_map_defaults</a> "Fee" field.<br />
+If the "Fee" is not correct, update this and then recalculate the quote to update the fee.<br /><br /> 
+See also the <a href="Angle_Interface_Setup.html#Financier_Posting_Map_Defaults" title="Angle Interface Setup">Angle Interface Setup</a> for complete set-up steps.<br /> If you are unsure what the required amount is, please contact your Angle Auto Finance representative.
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=7" title="Edit section: ValidationFailure">edit</a>]</div><a name="ValidationFailure"></a><h4>ValidationFailure</h4>
+<p>If your application fails, a list of Angle's validation errors are recorded.<br /> Go to <b>Quotes / Events</b> and find the latest 'Angle Application' event.<br />
+Open the stored PDF file to review and fix the recorded errors.<br />  Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2">Validations
+</td></tr>
+<tr>
+<td> Internal Server Error
+</td><td> Contact Angle Finance to confirm interface availability.
+</td></tr>
+<tr>
+<td> &nbsp; &nbsp; "code": "ApplicationAlreadyExists",<br /> &nbsp; &nbsp; "description": "Application with Client Number: 1786, ExternalSystemReference: 179647 already<br /> exists."
+</td><td> A likely issue here is that an application was previously made for this quote and the application process did not complete.<br /> The Quotes / Finance "Application Status" would previously have been 'Acknowledged'.<br /> This quote cannot be used again for an Angle application as it will return a ValidationFailure.
+</td></tr>
+<tr>
+<td>"field": "abn_acn": { <br />
+<p>"isEmpty": "Value is required and can't be empty"
+</p>
+</td><td>
+<p><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> <b>ABN</b> and <b>ACN</b> fields are not populated.  At least one of the two must have a number entered.
+</p>
+</td></tr>
+<tr>
+<td>"field": "ApplicationDetails.Assets[0].NumberOfDoors",<br />
+<p>"message": "'Number Of Doors (Asset Details)' must be between 1 and 9. You entered 0."
+</p>
+</td><td><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> - The value for <b>Doors</b> comes from the vehicle data imported into Catch-e from your provider.  You can either request the value to be included in the data feed or update the value for the selected Variant ID in the <a href="./Reference_Data:qt_variants:Detail.html" title="Reference Data:qt variants:Detail">Reference Data / Detail</a> tab.
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.IndividualDetails.AnzsicCode", <br />
+<p>"message": "Invalid 'Anzsic Code (Individual Details)', the value must be one of the list of allowed values provided. Please contact IT support team.
+</p>
+</td><td>"The list of allowed values" refers to the Australian and New Zealand Standard Industrial Classification (ANZSIC) numbering system. Refer <a href="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0" class='external free' title="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0" rel="nofollow">https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-industrial-classification-anzsic/2006-revision-2-0</a>. <br />
+<p>Click <a href="https://help.catch-e.net.au/clients/help/wiki/images/5/54/ANZSIC_Codes.xlsx" class='internal' title="ANZSIC Codes.xlsx">here</a> to access the ANZSIC Code spreadsheet which allows you to search for your Clients related 'Industry' and source the required 'SIC Code' to enter into Catch-e to pass a valid ANZSIC code in your Angle Finance application.
+</p>
+</td></tr>
+<tr>
+<td> ApplicantDetails.PrimaryApplicant.IndividualDetails.DriversLicenseDetails.Number<br />
+<p>'Number (Drivers License Details)' is not in the correct format.
+</p>
+</td><td> <a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> "Licence No" - check and update.
+</td></tr>
+<tr>
+<td> "PLG-046: Applicant's employment status has to be either Full time employed
+<p>or Part time employed"
+</p>
+</td><td>
+<p><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> - <b>Employment</b> "Employment Type" must be 'Full Time', 'Permanent Part Time' or 'Casual'
+</p>
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.FinancialCircumstances.Expenses",<br />
+<p>"message": "'Expenses (Financial Circumstances)' must not be empty." 
+</p>
+</td><td>
+<p><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> - <b>Monthly Expenses</b> "Total Monthly Expenses" must have a value.
+</p>
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.FinancialCircumstances.Incomes",<br />
+<p>"message": "'Incomes (Financial Circumstances)' must not be empty." 
+</p>
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Monthly Incomes</b><br /> "Total Monthly Net Income" or "Current Salary" must have a value.
+</td></tr>
+<tr>
+<td>field": "ApplicationDetails.Assets[0].EngineCapacity",<br />
+<p>"message": "'Engine Capacity (Asset Details)' must be greater than '0'."
+</p>
+</td><td><a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> <b>Variant ID</b><br /> Click on "Variant ID" and navigate to the Details tab.<br /> Update the field "Engine Litres". This value must be greater than zero (0).
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.FinancialCircumstances.Assets[0].Type", <br />
+<p>"message": "'Type (Asset)' is invalid, allowed values: House, Car, Other".
+</p>
+</td><td><a href="./Drivers:Assets_&amp;_Liabilities.html" title="Drivers:Assets &amp; Liabilities"> Drivers / Assets &amp; Liabilities</a> <b>Assets</b><br /> The assets have not been correctly mapped to the Angle Finance Asset definitions in the translation tables.<br />  See Angle setup on how to resolve.
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.FinancialCircumstances.Liabilities[0].Type", <br />
+<p>"message": "'Type (Liability)' is invalid, allowed values: Home Loan, Personal Loan, Credit
+Card, Automotive Loan, Overdraft, Other".
+</p>
+</td><td><a href="./Drivers:Assets_&amp;_Liabilities.html" title="Drivers:Assets &amp; Liabilities"> Drivers / Assets &amp; Liabilities</a> <b>Liabilities</b><br /> The liabilities have not been correctly mapped to match the Angle Finance Liabilities definitions in the translation tables.<br />  See Angle setup on how to resolve.
+</td></tr>
+<tr>
+<td>"field": "ApplicantDetails.PrimaryApplicant.FinancialCircumstances.Incomes[0].Frequency",<br />
+<p>"message": "'Frequency (Income)' is invalid, allowed values: Weekly, Monthly, Fortnightly"
+</p>
+</td><td>
+</td></tr>
+<tr>
+<td>"field": "ClientDetails.Owner", <br />
+<p>"message": "'Owner (Client Details)' must be between 1 and 9223372036854775807. You entered 0." 
+</p>
+</td><td><a href="./Quotes:Finance.html" title="Quotes:Finance"> Quotes / Finance</a> <b>Originator</b><br /> Originator must have a valid value entered.  Please confirm with Angle Finance to determine what this value is prior to contacting Catch-e.
+</td></tr>
+<tr>
+<td>"field": "ClientDetails.ClientNumber", <br />
+<p>"message": "'Client Number (Client Details)' must be between 1 and 9223372036854775807. You entered 0." 
+</p>
+</td><td><a href="./Quotes:Finance.html" title="Quotes:Finance"> Quotes / Finance</a> <b>Originator</b><br /> Originator must have a valid value entered.  Please confirm with Angle Finance to determine what this value is prior to contacting Catch-e.
+</td></tr>
+<tr>
+<td>"field": "ClientDetails.GroupName", <br />
+<p>"message": "'Group Name (Client Details)' must not be empty." 
+</p>
+</td><td> Set-up issue.<br /><i>[gb_originators]user_code</i> must have a valid value entered.  Please confirm with Angle Finance to determine what this value is prior to contacting Catch-e.
+</td></tr>
+<tr>
+<td>"field": "ClientDetails.LegalName", <br />
+<p>"message": "'Legal Name (Client Details)' must not be empty." 
+</p>
+</td><td>Set-up issue.<br /><i>[gb_originators]user_code</i> must have a valid value entered.<br />  Please confirm with Angle Finance to determine what this value is prior to contacting Catch-e.
+</td></tr>
+<tr>
+<td>"field": "ClientDetails.ClientApplication", <br />
+<p>"message": "'Client Application (Client Details)' must not be empty." 
+</p>
+</td><td> Set-up issue.<br /><i>[gb_originators]user_code</i> must have a valid value entered.<br />  Please confirm with Angle Finance to determine what this value is prior to contacting Catch-e.
+</td></tr>
+<tr>
+<td>"driver_licence_card_number":{"stringLengthInvalid": "Invalid type given. String expected"}
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Licence Card Number</b><br /> This is a mandatory field and cannot be empty. Must be a value greater than one character and can be alphanumeric.
+</td></tr>
+<tr>
+<td>"on_road_price": { <br />
+<p>"notGreaterThan": "The input is not greater than '0'"
+</p>
+</td><td>
+<p><a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> - the combined value of the fields 'Total on Road Price Exc GST' and 'Total on Road Price GST', cannot be zero (0.00).
+</p>
+</td></tr>
+<tr>
+<td>"comprehensive_insurance_premium": { <br />
+<p>"notGreaterThan": "The input is not greater than '0'"
+</p>
+</td><td>
+<p><a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> <b>Comprehensive Insurance</b> - must be included in the quote where the "Annual Ins" is greater than zero (0.00).
+</p>
+</td></tr>
+<tr>
+<td>400<br />
+<p>The specified 'Establishment Fee Novated' amount does not match the<br /> agreed amount. Please review the application and resubmit, or contact<br /> Novated Assist team to discuss. 
+</p>
+</td><td> The agreed Establishment Fee between you and Angle Finance must be entered else the application will fail.<br />  Please confirm your agreed Establishment Fee with Angle Finance and update Catch-e to resolve this error.
+</td></tr>
+<tr>
+<td>400<br />
+<p>The program identifier [000000####] supplied for this application does not exist.<br /> Please contact AAF support.
+</p>
+</td><td> <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> "Originator" - the selected record has not been set-up as a program by Angle Finance, or has been added with incorrect details in Catch-e.<br /> Please confirm your program details with Angle Finance and then contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> to check and update your originator table data.
+</td></tr>
+<tr>
+<td>400<br />
+<p>For vehicle type 'New'\/'Demo', production date cannot be greater than 2 years. Please update details and resubmit.
+</p>
+</td><td> <a href="./Quotes:Vehicle.html" title="Quotes:Vehicle">Quotes / Vehicle</a> "Model Year" - the variant cannot have a "Model Year" greater then 2 years from the time of submission where the field "New or Used" is 'New' or 'Demo'.  To resolve the issue, update "New or Used" to 'Used' or select a more current variant.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=8" title="Edit section: Acknowledged">edit</a>]</div><a name="Acknowledged"></a><h4>Acknowledged</h4>
+<p>If your application returns an "Application Status" of 'Acknowledged', it has failed. A PDF copy of the data submitted is stored as Quote Event. <br /> Go to <b>Quotes / Events</b> and find the latest 'Angle Application' event.<br />
+Open the stored PDF file to review and fix the recorded errors. <br /> Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses. <br /> If the response provided is the one shown below, please contact your Angle Auto Finance representative directly for assistance. 
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2">Processing errors
+</td></tr>
+<tr>
+<td>
+<p>"Response": 
+</p>
+<pre>"requestId": "6fe7db40-7ce1-4d94-b6f1-21015ce6e8bb",
+"statusCode": "Acknowledged",
+"statusDescription": "Application request acknowledged",
+"acceptedDateTime": "-0001-11-30T00:00:00+09:39"
+</pre>
+</td><td>
+<p>Please contact Angle Auto Finance directly to identify the issue causing the failure - Catch-e does not have any insight to resolve this response.
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=9" title="Edit section: PartiallySuccessful">edit</a>]</div><a name="PartiallySuccessful"></a><h4>PartiallySuccessful</h4>
+<p>If your application fails, a list of Angle's processing errors are recorded.<br /> Go to <b>Quotes / Events</b> and find the latest 'Angle Application' event.<br />
+Open the stored PDF file to review and fix the recorded errors.<br /> Go to <a href="Angle_Finance_Interface.html#Application_Outcomes_and_Troubleshooting" title="Angle Finance Interface">Application Outcomes and Troubleshooting</a> for a summary of the application statuses.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="40%" align="left"> Alert </th><th width="60%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2">Processing errors
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "The value {<i>Supplier Name</i>} does not match/exist in the Table configuration matrix".
+</p>
+</td><td>
+<p><a href="./Quotes:Lease.html" title="Quotes:Lease"><i>Supplier Name in "Insurer" field</i></a> is not recognised by Angle.  The Insurer you are trying to pass is not recognised.  Please confirm if the insurer is on Angle's approved list prior to contacting Catch-e to resolve.  If the insurer is not on Angle's list, then this Insurer cannot be used.
+</p>
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Retail Price on PurchasePrice has invalid value".
+</p>
+</td><td>The value being passed has been calculated to a number greater than 2 decimal places.  Refer issue to your Angle Finance Manager as to what the expected value should be.  The vehicle "On Road Price" should then be adjusted accordingly.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "The value (null) in InsuranceOption must not be blank".
+</p>
+</td><td>
+<p><a href="./Quotes:Lease.html" title="Quotes:Lease"><i>Supplier Name in "Insurer" field</i></a> is not recognised by Angle.  The Insurer you are trying to pass is not recognised.  Please confirm if the insurer is on Angle's approved list prior to contacting Catch-e to resolve.  If the insurer is not on Angle's list then this Insurer cannot be used.
+</p>
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Loan term cannot be less than 6 months for Novated Finance Lease."
+</p>
+</td><td><a href="./Quotes:Contract.html" title="Quotes:Contract">Term</a> cannot be less than six (6) months.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Non applicant spousal expense reduction option only applicable when Married or Defacto."
+</p>
+</td><td><a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> When passing a value for "Monthly Spouse Net Income", "Marital Status" can only be 'Marital' or 'Defacto'.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Invalid numeric range for field: Residual Value."
+</p>
+</td><td><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> Residual value must be greater than or equal to zero (0.00)
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Contract has been created with Id: 'nnnnnnnn', but it failed to set state for Credit Submission."
+</p>
+</td><td>Your finance application has been created in Angle Finance's Portal with some failed entries.  You can view what data points have failed by retrieving the latest 'Angle Application' event in the <a href="./Quotes:Events.html" title="Quotes:Events">Quotes / Events</a> tab.
+<p>Log into the Angle Finance Portal to resolve these errors using the ID as the reference.
+</p>
+</td></tr>
+<tr>
+<td>"code": "ApplicationAlreadyExists", <br />
+<p>"description": "Application with Client Number: 1786, ExternalSystemReference: <i>nnnnnn</i> already exists."
+</p>
+</td><td><i>ExternalSystemReference</i> is your Quote ID. Once an 'Application ID' has been issued and saved to the "Application Reference" field in Catch-e, you <b>cannot re-submit the application</b> from Catch-e.  If you do the 'Application ID' will silently drop out of the field but can still be viewed in the Audit History window. "Status" will remain as 'Failed' and "Application Status" will remain as 'ValidationFailure'.  Any corrections or changes must now be made via the Angle Finance Portal.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Must be 18 years or greater and less than 75 years of age".
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Date of Birth</b> calculated from day of submission must be between 18 and 75 years of age.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Amount financed must be at least 3000."
+</p>
+</td><td><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> <b>Amount Financed</b> amount must be greater than or equal to $3000.00.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Age must be at least 18."
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Date of Birth</b> calculated from day of submission must be greater than or equal to 18 years of age.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "message": "PPSR Fee cannot be adjusted."
+</p>
+</td><td><a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> <b>REVS / PPSR</b> is a mandatory field and the populated value must comply with the rate payable at the time of submission.  For more information, please visit <a href="https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr" class='external free' title="https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr" rel="nofollow">https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr</a>.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Applicant {Given Name} {Surname} - Validation Errors: Current address provided is too short. Please provide additional address for (Party {0}.
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>Position Start</b> must be less than or equal to 3 years from the date of submission. <br /> If is less than 3 years you must populate <a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Previous With</b> else the application cannot be successfully submitted.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "Applicant {Given Name} {Surname} - Validation Errors: Current employment period is too short, provide additional employment history.
+</p>
+</td><td><a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> <b>With Employer</b> must be greater than or equal to 3 years. <br /> If is less than 3 years you must populate <a href="./Drivers:Finances.html" title="Drivers:Finances">Drivers / Finances</a> <b>Years at Address</b> else the application cannot be successfully submitted.
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "[\n \"Error occurred in the plugin. Please refer to event log for more
+details.\",\n \"For Contract 10956684: PLG-035: EQ003 - d2805281-9fdb-4027-a1a9-24bc30f2257a -
+<b>Validation errors occured. Please resolve them before resubmitting again.</b>\",\n \"cvc-pattern-valid:
+Value \\u0027<b>Angle-3\\u0027 is not facet-valid with respect to pattern \\u0027[a-zA-Z][a-zA�Z\\u0027\\\\s-]{0,49}</b>\\u0027 for type \\u0027#AnonType_surnameIndividualDetails\\u0027.\",\n \"cvc�type.3.1.3: The value \\u0027<b>Angle-3\\u0027 of element \\u0027</b>surname<b>\\u0027 is not valid.\"\n]</b>"
+</p>
+</td><td>Where to resolve an error like this one can be found in the content of the error, noting the <b>bold</b> text under Processing Errors. <br />
+<ol><li> <b>Angle-3\\u0027 is not facet-valid with respect to pattern \\u0027[a-zA-Z][a-zA�Z\\u0027\\\\s-]{0,49}</b>
+<ol><li> The entered value <b>Angle-3</b> is the value triggering the failure. 
+</li><li> The reason for the failure is because the entry has alpha, numeric and character values
+</li></ol>
+</li><li> <b>Angle-3\\u0027 of element \\u0027</b>surname<b>\\u0027 is not valid.\"\n]</b>
+<ol><li> The value <i>Angle-3</i> is the <i>Surname</i>
+</li></ol>
+</li><li> To resolve the error, remove '-3' to only pass 'Angle' 
+</li></ol>
+</td></tr>
+<tr>
+<td>"code": "400", <br />
+<p>"message": "[\n \"Error occurred in the plugin. Please refer to event log for more
+details.\",\n \"For Contract 10956262: PLG-035: EQ009 - xxxxxxxx-xxxxx-xxxx-xxxx-xxxxxxxxxxxx - There was
+a unexpected error. Please retry or contact support.\"\n]"
+</p>
+</td><td>Please contact your Angle Auto Finance Account representative to resolve this error.
+</td></tr>
+</table>
+<p><br />
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-22017) / (API-20511) Angle Interface APIs.  Live 22/04/2024
+</li><li> (API-20556) Angle Interface - add Previous Address, requestId stored and other fixes. Live 08/07/2024
+</li><li> (API-20584) Angle Interface - updates for 'numberOfDoors' and 'interestRate' when populating JSON. Live 05/08/2024
+</li><li> (API-20589) / (DEV-22135) Angle Interface - Apply and JSON updates. Live 26/08/2024
+</li><li> (API-20594) / (DEV-22150) Angle Finance Interface - enable Resubmit button. Live 22/10/2024
+</li><li> (API-20642) Angle Interface - update employmentDetails and liabilities for type 'Credit Card'. Live 17/02/2025
+</li><li> (DEV-22225) Angle Auto Finance Interface - Resubmit button not working as expected. Live 11/03/2025
+</li><li> (API-20699) Angle Auto Interface - Add 'AKFN' Fee and make externalSystemReference unique. Live 23/06/2025
+</li><li> (API-20728) Angle API failing due to crossover of clientIds in token header.  Live 21/07/2025
+</li><li> (API-20743) Angle Interface API update required - Privacy Consent change: DVS (Document Verification Service). Live 06/10/2025
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:4003-0!1!0!0!!en!2 and timestamp 20251120231259 -->
+<div class="printfooter">
+Retrieved from "<a href="Angle_Interface_Validation_Errors.html">https://help.catch-e.net.au/mediawiki/index.php/Angle_Interface_Validation_Errors</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Angle_Interface_Validation_Errors">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Angle_Interface_Validation_Errors.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Validation_Errors&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.05 secs. -->
+</body></html>

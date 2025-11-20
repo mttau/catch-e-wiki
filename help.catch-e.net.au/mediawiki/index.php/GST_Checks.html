@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="GST Checks,Approvals:Approval,Bookings:Invoice,Bookings:Rental,Contract Types,Contracts:Approvals,Contracts:Claim,Driver Portal,Fm::approvals:autoPostClaims(),Global Controls,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>GST Checks - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">GST Checks</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="GST_Checks.html#column-one">navigation</a>, <a href="GST_Checks.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Global_Controls.html" title="Global Controls">Global Controls</a> &rarr; <strong>GST Checks</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="GST_Checks.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="GST_Checks.html#Check_Validation"><span class="tocnumber">2</span> <span class="toctext">Check Validation</span></a>
+<ul>
+<li class='toclevel-2'><a href="GST_Checks.html#Row_Check"><span class="tocnumber">2.1</span> <span class="toctext">Row Check</span></a></li>
+<li class='toclevel-2'><a href="GST_Checks.html#Total_Check"><span class="tocnumber">2.2</span> <span class="toctext">Total Check</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="GST_Checks.html#Save_Validation"><span class="tocnumber">3</span> <span class="toctext">Save Validation</span></a></li>
+<li class='toclevel-1'><a href="GST_Checks.html#Supporting_Screen"><span class="tocnumber">4</span> <span class="toctext">Supporting Screen</span></a></li>
+<li class='toclevel-1'><a href="GST_Checks.html#Set-up_Notes"><span class="tocnumber">5</span> <span class="toctext">Set-up Notes</span></a></li>
+<li class='toclevel-1'><a href="GST_Checks.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The purpose of GST tolerance check is to define the tolerance of GST and control 'login user' from going beyond the tolerance. The Tolerance usually occurs when 'check' process is triggered. In some cases, it occurs while clicking 'save' button for e.g. <a href="./Sale_Management:Detail.html" title="Sale Management:Detail">Sale Management/Detail</a>. The default tolerance setting is a $99 value positive or negative. 
+E.g. I.e. if the approval is for $5,500 incl GST, the GST component can be anywhere between $401 and $599 before the transaction is failed. 
+<br /><br />
+There are usually two types of GST checks:
+</p>
+<ol><li> Check Validation
+</li><li> Save Validation
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=2" title="Edit section: Check Validation">edit</a>]</div><a name="Check_Validation"></a><h4>Check Validation</h4>
+<p>The check process can be define into two parts:
+</p>
+<ol><li> Row Check
+</li><li> Total Check
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=3" title="Edit section: Row Check">edit</a>]</div><a name="Row_Check"></a><h5>Row Check</h5>
+<p>While adding any field information if GST value is changed then it will look if the GST Flag is set to 'Y' or 'N'. The GST flag is set in the <a href="Contract_Types.html" title="Contract Types">Contract Type</a> screen. In some screen, there is additional field which controls GST Flag called 'G' which can over-ride the default. For e.g. Contract/Approval screen. However, in most cases it needs to be set in <a href="Contract_Types.html" title="Contract Types">Contract Type</a> screen.
+</p>
+<ul><li> If the GST Flag is set to 'N', then the value can-not be over-written and must remain '0.00' only.
+</li><li> If the GST Flag is set to 'Y' then the over-written value must be (net_amount * 0.10) +/- the specified gst_tolerance values.
+</li></ul>
+<p>If the above condition fails, it will throw an GST error warning pop-up message.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=4" title="Edit section: Total Check">edit</a>]</div><a name="Total_Check"></a><h5>Total Check</h5>
+<p>The Total Check is necessary in order to post. The Total check performs many validation. The GST tolerance validation is most common. It looks if the GST used is correct or not. The check is similar to row check but it highlights the field which fails the check process and even perform same check validation in 'Total GST' (GST flag 'N' is excluded).
+</p><p>It highlights the 'Total GST' and Field line if not correct in lightish red colour. In addition, stack the number of errors. The error is stored in <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>gst_tolerance_error_message</i></a>.
+</p><p>The check process keeps failing unless the 'GST value' is not corrected.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=5" title="Edit section: Save Validation">edit</a>]</div><a name="Save_Validation"></a><h4>Save Validation</h4>
+<p>It is very simple process. While saving it check for all the GST value and determine if it is within tolerance or not. It throws a pop-up error message which is hard-coded in the system. Only small fraction of the system does the 'Save' check.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=6" title="Edit section: Supporting Screen">edit</a>]</div><a name="Supporting_Screen"></a><h4>Supporting Screen</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th>System screen </th><th>Validation Perform
+</th></tr>
+<tr>
+<td> <a href="./Approvals:Approval.html" title="Approvals:Approval">Approvals / Approval</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="./Contracts:Approvals.html" title="Contracts:Approvals">Contracts / Approvals</a> </td><td> Total check
+</td></tr>
+<tr>
+<td> <a href="./Contracts:Claim.html" title="Contracts:Claim">Contracts / Claim</a> </td><td>Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="Reg_Or_Ctp_Renewals.html" title="Reg Or Ctp Renewals">Maintenance / Reg or CTP Renewals</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="./Bookings:Rental.html" title="Bookings:Rental">Bookings / Rental</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="./Bookings:Invoice.html" title="Bookings:Invoice">Bookings / Invoice</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td><a href="./Sale_Management:Payout.html" title="Sale Management:Payout">Sale Management / Payout</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="./Sale_Management:Sale.html" title="Sale Management:Sale">Sale Management / Sale</a> </td><td> Row check, Total check
+</td></tr>
+<tr>
+<td> <a href="./Sale_Management:Detail.html" title="Sale Management:Detail">Sale Management / Detail</a> </td><td> Save Validation
+</td></tr>
+<tr>
+<td> <a href="./Fm::approvals:autoPostClaims().html" title="Fm::approvals:autoPostClaims()">System / Scheduler</a> </td><td> autoPostClaims() job run.
+</td></tr>
+<tr>
+<td> <a href="Driver_Portal.html#Raise_a_vehicle_claim" title="Driver Portal">Driver Portal / Raise a vehicle claim </a> </td><td> Save Validation
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=7" title="Edit section: Set-up Notes">edit</a>]</div><a name="Set-up_Notes"></a><h4>Set-up Notes  <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a></h4>
+<p>The tolerance that is applied to each row and the total is set in the global control <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>gst_tolerance</i></a>.<br /> 
+</p><p>The default setting is a $99 value positive or negative.
+E.g. I.e. if the approval is for $5,500 incl GST, the GST component can be anywhere between $401 and $599 before the transaction is failed.<br />
+</p><p>If a GST check fails to validate, an error message is generated. The text is stored in the global control <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>gst_tolerance_error_message</i></a>. This message can be customised to suit you.
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;action=edit&amp;section=8" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 5793: GST checking process - Maintenance Approvals. Live 20/06/2012
+</li><li> 5924: GST checking process - Registration Batching. Live 21/09/2012
+</li><li> 5925: GST checking process - Bookings - Rental Screen. Live 10/09/2012
+</li><li> 5926: GST checking process - Bookings - Invoice Screen. Live 10/09/2012
+</li><li> 5927: GST checking process - Sale Management - Payout Screen. Live 21/09/2012
+</li><li> 5928: GST checking process - Sale Management - Sale Screen. Live 21/09/2012
+</li><li> 5929: GST checking process - Sale Management - Detail Screen. Live 21/09/2012
+</li><li> (PORTAL-16777) Driver Portal Claims for Registration not posting with GST_flag as 'N'. Live 09/09/2019
+</li><li> (DEV-20760) Update Job Type autoPostClaims() to update Sub Status when gst check fails. Live 23/09/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="GST_Checks.html">https://help.catch-e.net.au/mediawiki/index.php/GST_Checks</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=GST_Checks">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/GST_Checks.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=GST_Checks&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.06 secs. -->
+</body></html>

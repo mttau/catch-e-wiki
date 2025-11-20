@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="FLEETCORD,Card Interface Set-up,FLEET,FLEET CONTROLS,Interface To:Interface,Interface To:Mappings,Interface To Card Services,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>FLEETCORD - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">FLEETCORD</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="FLEETCORD.html#column-one">navigation</a>, <a href="FLEETCORD.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="FLEET_CONTROLS.html" title="FLEET CONTROLS">Controls</a> / Interfaces / <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Services</a> &rarr; <a href="./Interface_To:Interface.html" title="Interface To:Interface">Interface</a> | <a href="./Interface_To:Mappings.html" title="Interface To:Mappings">Mappings</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Card_Interface_Set-up.html" title="Card Interface Set-up">Card Interface Set-up</a> &rarr; <strong>FLEETCORD</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="FLEETCORD.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#Business_Rules"><span class="tocnumber">2</span> <span class="toctext">Business Rules</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#File_Validation"><span class="tocnumber">3</span> <span class="toctext">File Validation</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#File_columns_and_mappings_to_Catch-e_fields"><span class="tocnumber">4</span> <span class="toctext">File columns and mappings to Catch-e fields</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#File_View"><span class="tocnumber">5</span> <span class="toctext">File View</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#Product_Codes"><span class="tocnumber">6</span> <span class="toctext">Product Codes</span></a></li>
+<li class='toclevel-1'><a href="FLEETCORD.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The Fleetcord interface is based on a .dat data file provided by Fleetcard.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=2" title="Edit section: Business Rules">edit</a>]</div><a name="Business_Rules"></a><h4>Business Rules</h4>
+<p>Business rules used by the interface are:
+<br />
+</p>
+<ul><li> The file must be in .dat format.
+</li><li> The file format is DAT delimited by pipes "|".
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=3" title="Edit section: File Validation">edit</a>]</div><a name="File_Validation"></a><h4>File Validation</h4>
+<p>The Validation rules on import are: <br />
+</p>
+<ul><li> The file must consist of 39 columns.<br />
+</li><li> The brackets surrounding the Card Number in the import file are ignored on import.<br />
+</li></ul>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=4" title="Edit section: File columns and mappings to Catch-e fields">edit</a>]</div><a name="File_columns_and_mappings_to_Catch-e_fields"></a><h4>File columns and mappings to Catch-e fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Fleetcord Column Name</th><th>[table]field</th><th>Notes
+</th></tr>
+<tr>
+<td>COMPANY_CD</td><td> </td><td>
+</td></tr>
+<tr>
+<td>PROCESSOR</td><td> </td><td>
+</td></tr>
+<tr>
+<td>ACCOUNT_NO</td><td> </td><td>
+</td></tr>
+<tr>
+<td>ACCOUNT_NAME</td><td> </td><td>
+</td></tr>
+<tr>
+<td>COST_CENTRE</td><td> </td><td>
+</td></tr>
+<tr>
+<td>Card No</td><td> [fm_fuel]card_number </td><td>Translated as SUBSTRING({Card No.}, 2, 17) on import, ignoring the brackets.
+</td></tr>
+<tr>
+<td>SITE_ID</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_NAME</td><td> [fm_fuel]site_location </td><td>
+</td></tr>
+<tr>
+<td>SITE_ADDR</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_CITY</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_STATE</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_ZIP</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_TAX_NO</td><td> </td><td>
+</td></tr>
+<tr>
+<td>SITE_BRAND</td><td> </td><td>
+</td></tr>
+<tr>
+<td>TXN_NO</td><td> [fm_fuel]invoice_no</td><td>
+</td></tr>
+<tr>
+<td>TXN_DATE</td><td> [fm_fuel]</td><td> CONCATENATE {Transaction Date} &amp; {Transaction Time} INTO odometer_timestamp_start
+</td></tr>
+<tr>
+<td>TXN_TIME</td><td> [fm_fuel]</td><td> CONCATENATE {Transaction Date} &amp; {Transaction Time} INTO odometer_timestamp_start
+</td></tr>
+<tr>
+<td>POST_DATE</td><td>[fm_fuel]invoice_date</td><td>
+</td></tr>
+<tr>
+<td>VOUCHER_NUMBER</td><td> [fm_fuel]docket_number</td><td>
+</td></tr>
+<tr>
+<td>PROD_TYPE</td><td> </td><td>
+</td></tr>
+<tr>
+<td>PROD_CODE</td><td> [fm_fuel]product_code</td><td>
+</td></tr>
+<tr>
+<td>PROD_DESC</td><td> [fm_fuel]description </td><td>
+</td></tr>
+<tr>
+<td>QTY</td><td> [fm_fuel]quantity</td><td>
+</td></tr>
+<tr>
+<td>UNIT_OF_MEASURE</td><td> </td><td>
+</td></tr>
+<tr>
+<td>RETAIL_PRICE/AMT </td><td> </td><td>
+</td></tr>
+<tr>
+<td>DISCOUNT</td><td> </td><td>
+</td></tr>
+<tr>
+<td>INVOICE_AMT</td><td>[fm_fuel]product_net = {Total} - product_gst </td><td>
+</td></tr>
+<tr>
+<td>Total </td><td> [fm_fuel]product_net + [fm_fuel]product_gst
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>product_net</b></td><td width="70%" align="left">{Total} - product_gst
+</td></tr>
+<tr>
+<td><b>product_gst</b></td><td>{Total} - ROUND({Total} / (1+[gb_controls]gst_rate), 2)
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td>RETAIL_UNIT_PRICE</td><td>[fm_fuel]unit_cost</td><td>
+</td></tr>
+<tr>
+<td>DISCOUNTED_UNIT_PRICE</td><td> </td><td>
+</td></tr>
+<tr>
+<td>DISCOUNT_APPLIED</td><td> </td><td>
+</td></tr>
+<tr>
+<td>ODOMETER</td><td>[fm_fuel]odometer</td><td>
+</td></tr>
+<tr>
+<td>PLASTIC_ID</td><td> </td><td>
+</td></tr>
+<tr>
+<td>PLASTIC_DESC</td><td> </td><td>
+</td></tr>
+<tr>
+<td>VEH_REG_NO</td><td>[fm_fuel]reg_no</td><td>
+</td></tr>
+<tr>
+<td>VEH_DESC</td><td> </td><td>
+</td></tr>
+<tr>
+<td>DRIVER_NAME</td><td> </td><td>
+</td></tr>
+<tr>
+<td>CARDHOLDER_NAME</td><td> </td><td>
+</td></tr>
+<tr>
+<td>CARD_REF_EXT_ID</td><td> </td><td>
+</td></tr>
+<tr>
+<td>CURRENCY</td><td> </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=5" title="Edit section: File View">edit</a>]</div><a name="File_View"></a><h4>File View</h4>
+<div class="floatnone"><span><a href="./Image:Sample_fleetcord_file_1.jpg.html" class="image" title=""><img src="../../clients/help/wiki/images/5/5b/Sample_fleetcord_file_1.jpg" alt="" width="2268" height="123" longdesc="/mediawiki/index.php/Image:Sample_fleetcord_file_1.jpg" /></a></span></div>
+<p><br />
+</p>
+<div class="floatnone"><span><a href="./Image:Sample_fleetcord_file_2.jpg.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b7/Sample_fleetcord_file_2.jpg" alt="" width="2168" height="121" longdesc="/mediawiki/index.php/Image:Sample_fleetcord_file_2.jpg" /></a></span></div>
+<p><br />
+<span class="catch-e_caption"><i><b>An image of a Fleetcord Import file</b></i></span>
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=6" title="Edit section: Product Codes">edit</a>]</div><a name="Product_Codes"></a><h4>Product Codes</h4>
+<p>Below is a list of known "Product Codes" used in the FLEETCORD interface.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 40%;">
+<tr>
+<th> Product Code </th><th> Description
+</th></tr>
+<tr>
+<td>6 </td><td> Diesel
+</td></tr>
+<tr>
+<td> 30 </td><td> Premium Diesel
+</td></tr>
+<tr>
+<td> 3 </td><td> Unleaded
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-22224) Interfaces / Card Services → FLEETCORD - create new interface for Fleetcor DAT file.  Live 11/03/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="FLEETCORD.html">https://help.catch-e.net.au/mediawiki/index.php/FLEETCORD</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=FLEETCORD">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/FLEETCORD.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=FLEETCORD&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.07 secs. -->
+</body></html>

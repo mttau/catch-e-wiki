@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Receipts:Allocate:Import,Create a receipt batch,Delete a receipt batch,FLEET,Import,Import a receipt batch,Main Page,Print a receipt batch ABA file,Receipts,Receipts:Allocate,Receipts:Search" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Receipts:Allocate:Import - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Receipts:Allocate:Import</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Receipts:Allocate:Import.html#column-one">navigation</a>, <a href="./Receipts:Allocate:Import.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Receipts.html" title="Receipts">Receivables</a> &rarr; <a href="./Receipts:Search.html" title="Receipts:Search">Search</a> | <a href="./Receipts:Allocate.html" title="Receipts:Allocate">Allocate</a> &rarr; <strong>Import</strong> | <a href="Receipts_(ABA).html" title="Receipts (ABA)">Receipts (ABA)</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Receipts_Setup.html" title="Receipts Setup">Receipts Setup</a> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Process_Pages"><span class="tocnumber">1</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Import_a_Batch"><span class="tocnumber">2</span> <span class="toctext">Import a Batch</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Creating_an_Import_file"><span class="tocnumber">3</span> <span class="toctext">Creating an Import file</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Importing_Files"><span class="tocnumber">4</span> <span class="toctext">Importing Files</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Import_Business_Rules"><span class="tocnumber">5</span> <span class="toctext">Import Business Rules</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#Amount_Allocations"><span class="tocnumber">6</span> <span class="toctext">Amount Allocations</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Receipts:Allocate:Import.html#Mixed"><span class="tocnumber">6.1</span> <span class="toctext">Mixed</span></a></li>
+<li class='toclevel-2'><a href="./Receipts:Allocate:Import.html#contract_id_and_reg_no"><span class="tocnumber">6.2</span> <span class="toctext">contract_id and reg_no</span></a></li>
+<li class='toclevel-2'><a href="./Receipts:Allocate:Import.html#invoice_no"><span class="tocnumber">6.3</span> <span class="toctext">invoice_no</span></a></li>
+<li class='toclevel-2'><a href="./Receipts:Allocate:Import.html#Negative_amounts"><span class="tocnumber">6.4</span> <span class="toctext">Negative amounts</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#File_Validation_and_Troubleshooting"><span class="tocnumber">7</span> <span class="toctext">File Validation and Troubleshooting</span></a></li>
+<li class='toclevel-1'><a href="./Receipts:Allocate:Import.html#System_Notes"><span class="tocnumber">8</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=1" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Create_a_receipt_batch.html" title="Create a receipt batch">Create a receipt batch</a>
+</dd><dd><a href="Import_a_receipt_batch.html" title="Import a receipt batch">Import a receipt batch</a>
+</dd><dd><a href="Print_a_receipt_batch_ABA_file.html" title="Print a receipt batch ABA file">Print a receipt batch ABA file</a>
+</dd><dd><a href="Unpost_a_receipt_batch.html" title="Unpost a receipt batch">Unpost a receipt batch</a>
+</dd><dd><a href="Delete_a_receipt_batch.html" title="Delete a receipt batch">Delete a receipt batch</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=2" title="Edit section: Import a Batch">edit</a>]</div><a name="Import_a_Batch"></a><h4>Import a Batch</h4>
+<p>If you are managing a large volume of transactions you may want to import a batch.<br /> 
+The standard import file is designed with Novated Lease transactions in mind.<br />
+If you know the Banking Date, Contract ID's and Amounts of your deposits, you can utilise this feature.<br /> 
+Use the file <a href="https://help.catch-e.net.au/clients/help/wiki/images/7/72/Deposit_Import.csv" class='internal' title="Deposit Import.csv">Deposit Import template</a> to create a deposit csv file.<br />
+Visit the <a href="Import_a_receipt_batch.html" title="Import a receipt batch">Import a receipt batch</a> process page for our recommended import process.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=3" title="Edit section: Creating an Import file">edit</a>]</div><a name="Creating_an_Import_file"></a><h4>Creating an Import file</h4>
+<p>The fields in the deposit file are listed below. Only three fields are required for a sucessful import, the other fields may be populated for your information, but are not shown anywhere in the receipt.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Field </th><th> Type </th><th> Required </th><th> Comments
+</th></tr>
+<tr>
+<td><b>contract_id</b></td><td>Num</td><td>No</td><td> Populate <i>contract_id</i> to identify which contract to allocate the receipt amount to. It is the recommended field to use for this import process.<br /> <i>reg_no</i> or <i>invoice_no</i> can also be used.
+</td></tr>
+<tr>
+<td>reg_no</td><td>Text</td><td>No</td><td>Populate the <i>reg_no</i> field if you know it.<br /> If both <i>contract_id</i> and <i>reg_no</i> are populated, an extra validation will occur to check that the Reg No belongs to the nominated Contract ID.<br />
+<p>If you populate the <i>reg_no</i> without the <i>contract_id</i>, your import will fail if two contracts exist that have the same <i>reg_no</i> (e.g. a re-finance of the vehicle).<br /> <i>contract_id</i> is the recommended field to populate for this import process.<br />
+</p>
+</td></tr>
+<tr>
+<td>driver_name</td><td>Text</td><td>No</td><td>Not used in the import. The column is for information only.
+</td></tr>
+<tr>
+<td>amount_gst</td><td>Num</td><td>No</td><td>Not used in the import. The column is for information only.
+</td></tr>
+<tr>
+<td>invoice_no</td><td>Num</td><td>No</td><td>You can populate and the <i>invoice_no</i> as the transaction identifier if neither a <i>contract_id</i> and <i>reg_no</i> has been included in the import file row.<br />
+<p>A validation is run to check that where an <i>invoice_no</i> has been recorded, the <i>contract_id</i> and <i>reg_no</i> are blank.<br />
+Where the amount_gross figure in the import file for the invoice is equal to the amount that is outstanding for the invoice (i.e. [fm_billing]amount_net+[fm_billing]amount_gst-[fm_billing]received_gross ), then an Item record will be created that allocates the money to each row in the invoice.<br />
+Where the amount_gross figure in the import file does not match the outstanding amount, then an 'On Account' row is created in the <b>Receipts / Allocate</b> Summary section. You will need to review this amount and manually allocate the value to each row in the invoice.<br />
+</p><p><i>contract_id</i> is the recommended field to populate for this import process.<br />
+</p>
+</td></tr>
+<tr>
+<td>invoice_date</td><td>Date</td><td>No</td><td>Not used in the import. The column is for information only.
+</td></tr>
+<tr>
+<td>bank_ref</td><td>Text</td><td>No</td><td>Not required, but will display in the Allocate-Item screen and can be useful in referring back to your Bank Statement. The import will create a new item on change of bank_ref.<br /> bank_ref is not validated against records stored in the <i>[sl_receipt_item_bank_references]</i> table (if used) during the import process.
+</td></tr>
+<tr>
+<td><b>amount_gross</b></td><td>Num</td><td>Yes</td><td>Deposit value for the <i>contract_id</i>, the sum of these will be the <b>Receipts / Allocate</b> Batch "Target".
+</td></tr>
+<tr>
+<td><b>account_no</b></td><td>Num</td><td>Yes</td><td>Must be populated with the bank gl code that this batch will be assigned to.
+</td></tr>
+<tr>
+<td>amount_net</td><td>Num</td><td>No</td><td>Not used in the import. The column is for information only.
+</td></tr></table><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=4" title="Edit section: Importing Files">edit</a>]</div><a name="Importing_Files"></a><h4>Importing Files</h4>
+<p>Visit the <a href="Import.html" title="Import">Import</a> page for more details about the import steps.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=5" title="Edit section: Import Business Rules">edit</a>]</div><a name="Import_Business_Rules"></a><h4>Import Business Rules</h4>
+<ol><li> One import file results in one Receipt Batch.
+</li><li> A new item is created for each "Client" / "Bank Ref" combination. This means you may have more than one Item for a Client if different Bank Ref's are used.
+</li><li> The Batch is created with today's date populating in as the "Banking Date".<i>Hint: Edit the "Banking Date" to reflect the actual banking date.</i>
+</li><li> An apostrophe can be included in the file name without effecting the import process.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=6" title="Edit section: Amount Allocations">edit</a>]</div><a name="Amount_Allocations"></a><h4>Amount Allocations</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=7" title="Edit section: Mixed">edit</a>]</div><a name="Mixed"></a><h5>Mixed</h5>
+<ol><li> If the import contains a mixture of records ( some populated with <i>invoice_no</i> and others with <i>contract_id</i>) then the <i>invoice_no</i> records will be allocated first.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=8" title="Edit section: contract_id and reg_no">edit</a>]</div><a name="contract_id_and_reg_no"></a><h5><i>contract_id</i> and <i>reg_no</i></h5>
+<ol><li> The amount recorded for each contract in the import file will be allocated to the oldest outstanding invoice for that contract, and then to each subsequent outstanding invoice until the receipt value is used up.
+</li><li> If the contract has no outstanding invoices, an 'On Account' transaction is created for the contract.
+</li><li> If an 'On Account' amount exists for a contract, the allocation process will apply the 'On Account' amount to the oldest outstanding invoice first (and so on) <i>and then</i> will allocate any new receipt amount that came from the import file. 
+</li><li> If the combination of the existing 'On Account' balance and the new import receipt row results in all billing transactions being paid with an excess remaining, the a new 'On Account' entry is create to store the remaining amount.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=9" title="Edit section: invoice_no">edit</a>]</div><a name="invoice_no"></a><h5><i>invoice_no</i></h5>
+<ol><li> Where the <i>contract_id</i> and <i>reg_no</i> fields are blank on the import file, but an invoice no has been provided a batch will be created. 
+</li><li> When the amount being imported does not equal the value of an invoice an 'on account' entry will be created
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=10" title="Edit section: Negative amounts">edit</a>]</div><a name="Negative_amounts"></a><h5>Negative amounts</h5>
+<ol><li> The amount recorded in the import file can be negative and behaves in the same way as positive amounts; it will be allocated to the oldest outstanding invoice (increasing the "Balance" of that row) or creating an "On Account" transaction if no outstanding transactions exist.
+</li><li> If there is a negative 'On Account' amount before the import, this will be applied to the oldest billing transaction and will result in an increased "Balance" for that billing row, which will then be reduced by any receipt amounts being applied for that contract.<br /><br />
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=11" title="Edit section: File Validation and Troubleshooting">edit</a>]</div><a name="File_Validation_and_Troubleshooting"></a><h4>File Validation and Troubleshooting</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+</p>
+<ol><li> The import file needs to be in CSV format and the data area of the file must be only 10 columns and no blank rows can exist.<br />
+</li><li> During the import, file records are checked to ensure the <i>contract_id</i> or <i>reg_no</i> or <i>invoice_no</i> exists.<br />
+</li><li> If both <i>contract_id</i> and <i>reg_no</i> are populated, these will be checked to make sure that the <i>reg_no</i> is the current <i>reg_no</i> on the listed contract.
+</li><li> If no validation errors occur, the file is imported and a new batch is created and you are then navigated to the first item.<br />
+</li><li> If all of your <a href="./Receipts:Allocate.html" title="Receipts:Allocate">Receipts / Allocate</a> Summary rows have been processed as 'On account entry', check that the client has been invoiced.
+</li><li> You can then review, check and post the batch.
+</li><li> If validation errors occur, a validation file is created that you can save or open - this contains a summary of the validation errors that need to be fixed. 
+<ol><li> Invalid bank account - the gl code for the bank account must correspond to the catch-e table gl_codes. The entry for the bank account must have an <i>account_type</i> = 'bank'
+</li><li> Registration number does not match contract! - the <i>reg_no</i> listed on the file must match the "Reg Number" listed on the Contract.
+</li><li> Invoice No duplicated - Line No:’x’ &amp; ‘x’, Duplicate invoice number identified
+</li><li> Invoice No not recognised - Line No:’x’, A valid invoice number is required
+</li><li> A valid registration number or contract id is required
+</li><li> Contract can not be identified based on registration number
+</li><li> If a "Bank Ref" list is being used, these records are not validated during the import process.  
+</li></ol>
+</li><li> If the validation file fails to appear when the import has failed, it may be caused by an extra line at the bottom of the csv import file. Set Scheduler Job Parameter 'Omit Final Line Break' check box to 'yes', re-run the report and try again.
+</li></ol>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;action=edit&amp;section=12" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li>3312:Build receipts import feature. ACTION: DB Changes - deployed to Live 08/09/2010. Live 13/11/2010
+</li><li>3939:Import file creates Items with 0 allocations. Live 18/02/2011
+</li><li>4182:Add Contract ID / Reg validation. Live 14/06/2011
+</li><li>4481: Receipts import failure posting dual values on account. Live 23/06/2011
+</li><li>14370: Modify Receipts import process to accept records by invoice number. Live 13/09/2017 
+</li><li>(DEV-21007) Error uploading receipts Live dd/03/2020
+</li><li> (DEV-20946) Attachment Drag and Drop function (Phase 2). Live dd/03/2020
+</li><li>(DEV-21575) Introduce a Drop list for Receipts / Bank Ref. Live dd/mm/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Receipts:Allocate:Import.html">https://help.catch-e.net.au/mediawiki/index.php/Receipts:Allocate:Import</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Receipts:Allocate:Import">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Receipts:Allocate:Import.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Receipts:Allocate:Import&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.10 secs. -->
+</body></html>

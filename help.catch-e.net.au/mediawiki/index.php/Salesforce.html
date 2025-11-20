@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Salesforce,Administration,Catch-e support,CreateQuoteWebService,FLEET,Gb::Queries::executeScript(),Global Controls,Import Or Export Files,Insert or update a record with auditing,Main Page,PatchQuote" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Salesforce - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Salesforce</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Salesforce.html#column-one">navigation</a>, <a href="Salesforce.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <b>Third Party Integrations</b> &rarr; <strong>Salesforce</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Salesforce.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Salesforce.html#Salesforce_key_fields"><span class="tocnumber">2</span> <span class="toctext">Salesforce key fields</span></a></li>
+<li class='toclevel-1'><a href="Salesforce.html#Salesforce_Set-Up"><span class="tocnumber">3</span> <span class="toctext">Salesforce Set-Up</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salesforce.html#Create_a_WSDL_File_Type"><span class="tocnumber">3.1</span> <span class="toctext">Create a WSDL File Type</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#Add_a_WSDL_File"><span class="tocnumber">3.2</span> <span class="toctext">Add a WSDL File</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salesforce.html#Rest_Set-up_.28apex.29"><span class="tocnumber">4</span> <span class="toctext">Rest Set-up (apex)</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salesforce.html#Global_Controls"><span class="tocnumber">4.1</span> <span class="toctext">Global Controls</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#Apex_API_Permissions"><span class="tocnumber">4.2</span> <span class="toctext">Apex API Permissions</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#Apex_API_Error_Codes"><span class="tocnumber">4.3</span> <span class="toctext">Apex API Error Codes</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#apexrest.2Fsyncquote"><span class="tocnumber">4.4</span> <span class="toctext">apexrest/syncquote</span></a>
+<ul>
+<li class='toclevel-3'><a href="Salesforce.html#Suppression"><span class="tocnumber">4.4.1</span> <span class="toctext">Suppression</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Salesforce.html#apexrest.2Fsynccontract"><span class="tocnumber">4.5</span> <span class="toctext">apexrest/synccontract</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salesforce.html#SOAP_Set-up_.28legacy.29"><span class="tocnumber">5</span> <span class="toctext">SOAP Set-up (legacy)</span></a>
+<ul>
+<li class='toclevel-2'><a href="Salesforce.html#Global_Controls_2"><span class="tocnumber">5.1</span> <span class="toctext">Global Controls</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#Processing_the_queue_.5Bgb_service_processes.5D_.28SOAP_method.29"><span class="tocnumber">5.2</span> <span class="toctext">Processing the queue [gb_service_processes] (SOAP method)</span></a></li>
+<li class='toclevel-2'><a href="Salesforce.html#Processing_the_queue_using_SQS_FIFO_.28SOAP_method.29"><span class="tocnumber">5.3</span> <span class="toctext">Processing the queue using SQS FIFO (SOAP method)</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Salesforce.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>Catch-e contains a number of fields and flags that enable <a href="https://salesforce.com/au" class='external free' title="https://salesforce.com/au" rel="nofollow">https://salesforce.com/au</a> to be interfaced using web services.<br /> 
+For new integrations with <strong>Salesforce</strong>, Catch-e recommends and prefers the <b>apex</b> method.<br /><br />
+</p><p>The processes and functionality used to provide a salesforce interface can be applied to other CRM packages as required.<br /><br />
+You can provide your prospective CRM providers with a high-level <a href="https://help.catch-e.net.au/clients/help/wiki/images/1/10/Salesforce_Guide.pdf" class='internal' title="Salesforce Guide.pdf">Salesforce Guide</a> about the integration services that are available to do this. Your <a href="Catch-e_support.html" title="Catch-e support">Account Manager</a> can then help you further on engagement.<br /><br />
+</p><p>Examples of the functionality a CRM interface can provide are listed below:
+</p>
+<ul><li> Transfer quote and product information 
+</li><li> Transfer any changes or updates to quotes
+</li><li> Call for and use Catch-e documents in your CRM system<br /><br />
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=2" title="Edit section: Salesforce key fields">edit</a>]</div><a name="Salesforce_key_fields"></a><h3>Salesforce key fields</h3>
+<p>The following fields in Catch-e have been created for using in a salesforce interface.<br /><br />
+<a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> / <a href="./Quotes:Header.html" title="Quotes:Header">Header</a> &rarr; "Opportunity No"<br />
+<a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> / <a href="./Quotes:Contract.html" title="Quotes:Contract">Contract</a> &rarr; "Opportunity ID"<br />
+<a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> / <a href="./Quotes:Contract.html" title="Quotes:Contract">Contract</a> &rarr; "Opportunity Number"<br />
+<a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Suppliers.html" title="Suppliers">Suppliers</a> / <a href="./Suppliers:Detail.html" title="Suppliers:Detail">Detail</a> &rarr; "External Code"
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=3" title="Edit section: Salesforce Set-Up">edit</a>]</div><a name="Salesforce_Set-Up"></a><h3>Salesforce Set-Up</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=4" title="Edit section: Create a WSDL File Type">edit</a>]</div><a name="Create_a_WSDL_File_Type"></a><h4>Create a WSDL File Type</h4>
+<p>A new file type record and directory needs to be created in <i>[gb_file_types]</i> by Catch-e staff. The directory path for this is '/clients/{client}/core/fleet/lib/interfaces/wsdls'
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=5" title="Edit section: Add a WSDL File">edit</a>]</div><a name="Add_a_WSDL_File"></a><h4>Add a WSDL File</h4>
+<p>To add or update the WSDL this feature requires:
+</p>
+<ol><li> Navigate to the <a href="Import_Or_Export_Files.html" title="Import Or Export Files">Setup / Import/Export Files</a> menu.<br /> 
+</li><li> Choose the file type 'Salesforce WSDLs'<br />
+</li><li> Choose the WSDL file that is applicable to the environment you are working in. E.g. 'salesforce-test.wsdl', 'salesforce-staging.wsdl' or 'salesforce-live.wsdl'. 
+</li><li> Upload the file.<br />
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=6" title="Edit section: Rest Set-up (apex)">edit</a>]</div><a name="Rest_Set-up_.28apex.29"></a><h3>Rest Set-up (apex)</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=7" title="Edit section: Global Controls">edit</a>]</div><a name="Global_Controls"></a><h4><a href="Global_Controls.html" title="Global Controls">Global Controls</a></h4>
+<p>If you are using the Apex Salesforce APIs, update the <a href="Global_Controls.html" title="Global Controls">Global Controls</a> listed below;
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Value
+</th></tr>
+<tr>
+<td>qt</td><td>salesforce_login_apex</td><td>Enter the required "Host", "Client Id" and "Client Secret" details that are required to use Salesforce Apex</td><td>encrypted
+</td></tr>
+<tr>
+<td>gb</td><td>salesforce_apex_interface_enabled_flag</td><td>Set this to 'yes' to use Salesforce Apex</td><td>yes
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">gb</td><td style="background:#e6e6e6">salesforce_interface_email_on_error</td><td style="background:#e6e6e6">Enter an email address here if you want to receive an email if there has been a salesforce update error. Supports multiple email recipients. Use comma to separate. (e.g. email1@client.com.au,email2@client.com.au) </td><td style="background:#e6e6e6">blank - not used for Rest
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">gb</td><td style="background:#e6e6e6">salesforce_interface_enabled_flag</td><td style="background:#e6e6e6">This control is set to "yes" if our client is interfacing with salesforce CRM software.<br /> In the Support environment, this is updated to 'no' on refresh to prevent the function from being triggered.</td><td style="background:#e6e6e6">no - not used for Rest
+</td></tr>
+<tr>
+<td style="background:#e6e6e6">gb</td><td style="background:#e6e6e6">salesforce_interface_service_worker_enabled_flag</td><td style="background:#e6e6e6">This control when set to "yes" will queue jobs using AWS SQS method on a first in first out (FIFO) basis.</td><td style="background:#e6e6e6"> no - not used for Rest
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=8" title="Edit section: Apex API Permissions">edit</a>]</div><a name="Apex_API_Permissions"></a><h4>Apex API Permissions</h4>
+<p>Check that the required API permissions are set-up to use the Salesforce_Apex APIs
+</p>
+<pre>
+select * 
+from gb_api_permissions
+WHERE permission = 'InterfaceSalesforceApex:SyncQuote'
+;
+
+select r.name,r.access_type,rap.* 
+from gb_role_api_permissions AS rap
+inner join gb_roles AS r ON r.role_id = rap.role_id
+WHERE permission = 'InterfaceSalesforceApex:SyncQuote'
+;
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=9" title="Edit section: Apex API Error Codes">edit</a>]</div><a name="Apex_API_Error_Codes"></a><h4>Apex API Error Codes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Number</th><th width="5%" align="left">Status</th><th width="10%" align="left">Validation</th><th width="20%" align="left">Validation Message</th><th width="60%" align="left">Comments
+</th></tr>
+<tr>
+<td>1</td><td>204 </td><td> No Content</td><td>  </td><td> Successful submission
+</td></tr>
+<tr>
+<td>2</td><td>  </td><td> No Content</td><td> Salesfore Apex Sync Quote failed </td><td> The set-up details for the API are populated, but a connection to Salesforce could not be made.
+</td></tr>
+<tr>
+<td>3</td><td>400</td><td> Bad Request </td><td> </td><td> [gb_controls]salesforce_login_apex "Client Secret" is incorrect.
+</td></tr>
+<tr>
+<td>4</td><td>403 </td><td> Forbidden </td><td> Salesforce Apex Interface Disabled </td><td> <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]salesforce_apex_interface_enabled_flag</i></a> is set to 'no'
+</td></tr>
+<tr>
+<td>5</td><td>404 </td><td> opportunity_number </td><td> Opportunity not found </td><td> E.g. opportunity_number = 0
+</td></tr>
+<tr>
+<td>6</td><td>422 </td><td> opportunity_number </td><td> Invalid opportunity number specified </td><td> The opportunity_number doesn't exist in Salesforce.
+</td></tr>
+<tr>
+<td>7</td><td>422</td><td> opportunity_number </td><td> Value is required and can't be empty </td><td> The opportunity_number is blank.
+</td></tr>
+<tr>
+<td>8</td><td>500</td><td> Internal Server Error </td><td>  </td><td>
+<p><a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]salesforce_login_apex</i></a> "Host" is blank.<br />
+<a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]salesforce_login_apex</i></a> "Client Id" is blank.<br />
+<a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]salesforce_login_apex</i></a> "Client Secret" is blank.<br />
+</p>
+</td></tr>
+<tr>
+<td>9</td><td>500</td><td>                 </td><td> Sales Apex Sync Quote failed<br />
+<p>Unable to perform this action! Please try again.<br /><br />
+</p><p>If the problem persists please contact your system administrator.<br /><br />
+</p><p>Error:<br />
+Array
+</p>
+</td><td> "Opportunity Number" is 0
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=10" title="Edit section: apexrest/syncquote">edit</a>]</div><a name="apexrest.2Fsyncquote"></a><h4>apexrest/syncquote</h4>
+<p>This call is triggered when the following functions are run in Catch-e
+</p>
+<ol><li> Create
+</li><li> Save
+</li><li> Apply
+</li><li> Accept
+</li></ol>
+<p>The <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> "Salesforce By" field shows the call timestamp and response.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=11" title="Edit section: Suppression">edit</a>]</div><a name="Suppression"></a><h5>Suppression</h5>
+<p>The call is suppressed if
+</p>
+<ol><li> The API <a href="CreateQuoteWebService.html" title="CreateQuoteWebService">createQuoteWebService</a> is used to create a quote
+</li><li> <a href="./Qt::Quotes::copyQuote().html" title="Qt::Quotes::copyQuote()">copyQuote()</a> is used to copy a quote.<br />
+</li></ol>
+<p>When the call has been supressed, the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> "Salesforce By" field will be blank.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=12" title="Edit section: apexrest/synccontract">edit</a>]</div><a name="apexrest.2Fsynccontract"></a><h4>apexrest/synccontract</h4>
+<p>This call is triggered when the following functions are run in Catch-e
+</p>
+<ol><li> Accept Quote 
+</li><li> Copy Contract
+</li><li> Edit Contract
+</li><li> Create, Edit or Delete a Contract Event (where Event triggers an update to Contract data. E.g. Driver Change)
+</li></ol>
+<p>This call is not triggered when the following functions are run in Catch-e
+</p>
+<ol><li> Contracts / Finance <b>Apply</b> button is clicked
+</li><li> Contracts / Finance <b>Get Application Status</b> button is clicked
+</li><li> Contracts / Finance <b>Get Documents</b> button is clicked
+</li><li> Scheduler / Job <a href="./Gb::Queries::executeScript().html" title="Gb::Queries::executeScript()">executeScript</a> updates
+</li></ol>
+<p>The call is suppressed if a contract is edited by running the API <a href="Insert_or_update_a_record_with_auditing.html" title="Insert or update a record with auditing">Insert or update a record with auditing</a>.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=13" title="Edit section: SOAP Set-up (legacy)">edit</a>]</div><a name="SOAP_Set-up_.28legacy.29"></a><h3>SOAP Set-up (legacy)</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=14" title="Edit section: Global Controls">edit</a>]</div><a name="Global_Controls_2"></a><h4><a href="Global_Controls.html" title="Global Controls">Global Controls</a></h4>
+<p>If you are using the Salesforce legacy web services, update the <a href="Global_Controls.html" title="Global Controls">Global Controls</a> listed below.<br />
+When configured, the API <a href="Sync_quote_with_Salesforce_(legacy)_interface.html" title="Sync quote with Salesforce (legacy) interface">Sync quote with Salesforce (legacy) interface</a> can be used.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Module</th><th width="20%" align="left">Name</th><th width="50%" align="left">Comment</th><th width="25%" align="left">Value
+</th></tr>
+<tr>
+<td>qt</td><td>salesforce_login</td><td>Enter the required details: <br />
+<p>"Username" - Used for both 'salesforce_interface_auth_method' types. <br />
+"Password" - Used for both 'salesforce_interface_auth_method' types.<br />
+"Client Id" - Only used for oauth2 'salesforce_interface_auth_method'.<br />
+"Client Secret" - Only used for oauth2 'salesforce_interface_auth_method'.<br />
+"Token Timeout" - Only used for oauth2 'salesforce_interface_auth_method'. This value should match the token timeout settings in your Salesforce environment.<br />
+</p>
+</td></tr>
+<tr>
+<td>gb</td><td>salesforce_interface_email_on_error</td><td>Enter an email address here if you want to receive an email if there has been a salesforce update error. Supports multiple email recipients. Use comma to separate. (e.g. email1@client.com.au,email2@client.com.au) </td><td>
+</td></tr>
+<tr>
+<td>gb</td><td>salesforce_interface_auth_method</td><td>Can be either 'login' or 'oath2'. Use 'oauth2' if your WSDL is version 65 or higher. You will also need to update additional fields in salesforce_login (see notes above).</td><td>'login' or 'oath2'
+</td></tr>
+<tr>
+<td>gb</td><td>salesforce_interface_enabled_flag</td><td>This control is set to "yes" if our client is interfacing with salesforce CRM software.<br /> In the Support environment, this is updated to 'no' on refresh to prevent the function from being triggered.</td><td> yes
+</td></tr>
+<tr>
+<td>gb</td><td>salesforce_interface_service_worker_enabled_flag</td><td>This control when set to "yes" will queue jobs using AWS SQS method on a first in first out (FIFO) basis.</td><td> yes
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=15" title="Edit section: Processing the queue [gb_service_processes] (SOAP method)">edit</a>]</div><a name="Processing_the_queue_.5Bgb_service_processes.5D_.28SOAP_method.29"></a><h4> Processing the queue [gb_service_processes] (SOAP method)</h4>
+<p>When a Quote or Contract is saved, a transaction record is inserted into the [gb_service_processes] table with a 'queued' timestamp equal to the timestamp the Quote or Contract was saved. This queue is processed one transaction at a time from oldest to newest. <br />
+The process will follow these steps:<br />
+1. Logs in to Salesforce to get session token if a current session token has not been cached. Session Tokens timeout after 8 hours. If a session token is still current, it will be re-used avoiding the need to login in which case this step will be skipped.<br />
+2. Sleep for 1 second<br />
+3. Performs Update Opportunity in Salesforce<br />
+4. Performs Update History for Opportunity in Salesforce<br />
+Repeat for next transaction in the queue.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=16" title="Edit section: Processing the queue using SQS FIFO (SOAP method)">edit</a>]</div><a name="Processing_the_queue_using_SQS_FIFO_.28SOAP_method.29"></a><h4> Processing the queue using SQS FIFO (SOAP method)</h4>
+<p>When a Quote of Contract is saved, a transaction record is inserted into the SQS FIFO queue. <br />
+Queued Salesforce operations will contain a MessageGroupId with the following formats:<br />
+</p><p>• qt:salesforce?opportunity_id=OPPORTUNITY_ID<br />
+• qt:salesforce?contract_id=CONTRACT_ID<br />
+• qt:salesforce?quote_id=QUOTE_ID<br />
+</p><p>Messages containing the same MessageGroupId will be processed in FIFO order. Messages that belong to the same message group are always processed one by one, in a strict order relative to the message group.
+</p><p>Queued Salesforce operations will also contain a MessageDeduplicationId with the following formats:
+</p><p>• qt:salesforce:updateOpportunityFromContract/{serialized-parameters}<br />
+• qt:salesforce:updateQuotationHistoryVehicleOptions/{serialized-parameters}<br />
+• qt:salesforce:updateOpportunityFromQuote/{serialized-parameters}<br />
+</p><p>If a message with a particular message deduplication ID is sent successfully, any messages sent with the same message deduplication ID are accepted successfully but will not be delivered during the 1-minute deduplication interval. This is to prevent frequent updates for the same opportunity/contract from impacting queue worker processing.
+</p><p>For full technical details please refer to <a href="https://help.catch-e.net.au/clients/help/wiki/images/1/18/17126_Specification_v1.2.pdf" class='internal' title="17126 Specification v1.2.pdf">original specification here</a>.
+</p><p><b>A note regarding <a href="PatchQuote.html" title="PatchQuote">patchQuote</a></b><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> Please note that a patchQuote request will <b>NOT</b> trigger data to be pushed to Salesforce. If you need the data updated in the patchQuote request to be sent to Salesforce please use the API 'salesforceLegacySyncQuote'.
+</td></tr></table>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;action=edit&amp;section=17" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-20658) Use Setup / Import Export / Import or Export Files for Importing updated WSDL. Live 08/04/2019
+</li><li> (DEV-21045) DB changes for Salesforce (Apex) Sync Quote API. Live dd/05/2020
+</li><li> (API-20051) Salesforce (Apex) Sync Quote API. Live dd/05/2020
+</li><li> (DEV-21334) Catch-e to Salesforce Interface error. Live 02/02/2021
+</li><li> (DEV-21340) Add session token cache to the Salesforce interface. Live 08/02/2021
+</li><li> (DEV-21377) Modify Salesforce Interface to support SQS Service Worker functionality. Live 15/03/2021
+</li><li> (DEV-21387) apexrest/syncquote is triggered by copyQuote(). Live 10/05/2021
+</li><li> (DEV-21359) Create API to call Salesforce when new contract record created Live 10/05/2021
+</li><li> (DEV-21437) Salesforce sync issues [faultcode] =&gt; sf:INVALID_SESSION_ID. Live 17/06/2021
+</li><li> (DEV-21745) Bugsnag implementation - turn off error emails and suppress Salesforce errors. Live 23/09/2022
+</li><li> (DEV-22346) Recommendations for the OPS-22316 incident. Live 17/11/2025
+</li><li> (DEV-22366) Salesforce SOAP Update login procedure for WSDL v64 to v65. Live dd/11/2025
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:1880-0!1!0!0!!en!2 and timestamp 20251120221047 -->
+<div class="printfooter">
+Retrieved from "<a href="Salesforce.html">https://help.catch-e.net.au/mediawiki/index.php/Salesforce</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Salesforce">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Salesforce.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Salesforce&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.02 secs. -->
+</body></html>

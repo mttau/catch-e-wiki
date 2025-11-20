@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Roadside Assistance,Administration,Catch-e support,Clients:Contract defaults,Clients:Quote defaults,Contract Types:Accruals,Contracts:Vehicle,FLEET,Global Controls,Import Table Data,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Roadside Assistance - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Roadside Assistance</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Roadside_Assistance.html#column-one">navigation</a>, <a href="Roadside_Assistance.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a>  &rarr; <a href="./Quotes:Lease.html" title="Quotes:Lease">Lease</a> &rarr;  <strong>Roadside Assistance</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Order_of_rules"><span class="tocnumber">2</span> <span class="toctext">Order of rules</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Budget_Calculation"><span class="tocnumber">3</span> <span class="toctext">Budget Calculation</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Re-calculation"><span class="tocnumber">4</span> <span class="toctext">Re-calculation</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Using_RSA_in_createQuote.28.29"><span class="tocnumber">5</span> <span class="toctext">Using RSA in createQuote()</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#createQuote.28.29_Order_of_rules"><span class="tocnumber">6</span> <span class="toctext">createQuote() Order of rules</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Accept_and_Settle_rules"><span class="tocnumber">7</span> <span class="toctext">Accept and Settle rules</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Reporting"><span class="tocnumber">8</span> <span class="toctext">Reporting</span></a></li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#Set-up_Notes"><span class="tocnumber">9</span> <span class="toctext">Set-up Notes</span></a>
+<ul>
+<li class='toclevel-2'><a href="Roadside_Assistance.html#gb_controls"><span class="tocnumber">9.1</span> <span class="toctext">gb_controls</span></a></li>
+<li class='toclevel-2'><a href="Roadside_Assistance.html#qt_roadside_assistance_plans"><span class="tocnumber">9.2</span> <span class="toctext">qt_roadside_assistance_plans</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Roadside_Assistance.html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>You can add a Roadside Assistance budget to a quote if the "Road Side Assistance" profile is enabled for the linked Contact Type.<br />
+Select the "Include?" check box and then choose the required "Supplier". Review and edit the "Premium" as required.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=2" title="Edit section: Order of rules">edit</a>]</div><a name="Order_of_rules"></a><h4>Order of rules</h4>
+<ol><li> If the <a href="./Contract_Types:Accruals.html" title="Contract Types:Accruals">Contract Types / Accruals</a> tab does not contain the RSA class, the Roadside Assistance profile is not shown.
+</li><li> If the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" field is populated, the quote's Roadside Assistance profile will be selected and calculated using this plan.
+</li><li> If <a href="Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "roadside_assistance_plan_code" is populated, the quote's Roadside Assistance profile will be selected and calculated using this plan.
+</li><li> If neither the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" field or the <a href="Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "roadside_assistance_plan_code" is populated, the quote's Roadside Assistance profile will be available, but not selected.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=3" title="Edit section: Budget Calculation">edit</a>]</div><a name="Budget_Calculation"></a><h4>Budget Calculation</h4>
+<p>The RSA "Total Budget" is calculated as follows; (Premium / 12) * Term
+<br /><br />
+The RSA "Monthly Budget" is calculated as follows;<br />
+If the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Budget Term Deferred" is checked <a href="./Image:Check-box_on.gif.html" class="image" title="Image:Check-box_on.gif"><img src="../../clients/help/wiki/images/d/d4/Check-box_on.gif" alt="Image:Check-box_on.gif" width="19" height="18" longdesc="/mediawiki/index.php/Image:Check-box_on.gif" /></a>, then "Monthly Budget" = Life Budget / (Term - Months Deferred) <br />
+If the <a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Budget Term Deferred" is un-checked <a href="./Image:Check-box.gif.html" class="image" title="Image:Check-box.gif"><img src="../../clients/help/wiki/images/c/c5/Check-box.gif" alt="Image:Check-box.gif" width="17" height="17" longdesc="/mediawiki/index.php/Image:Check-box.gif" /></a>, then  "Monthly Budget" = Life Budget / Term <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=4" title="Edit section: Re-calculation">edit</a>]</div><a name="Re-calculation"></a><h4>Re-calculation</h4>
+<p>Changing the quote's "Term" will recalculate the RSA budget amount.<br />
+If you change the quote's "Client Code", the RSA profile will be updated and re-calculated if the client's "Roadside Assistance" plan is different to the "Supplier" that is stored on the quote.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=5" title="Edit section: Using RSA in createQuote()">edit</a>]</div><a name="Using_RSA_in_createQuote.28.29"></a><h4>Using RSA in createQuote()</h4>
+<p>User can create quote using the web-service method <a href="./Qt::Salesforce::createQuote().html" title="Qt::Salesforce::createQuote()">createQuote()</a>
+</p>
+<ul><li> If the <i>product_roadside_assistance_flag = 'yes'</i> and plan cannot be found (not set-up, doesn't default, broken link, inactive plan or supplier), flag checked on and user must select plan. I.e. no errors appear when during the create Quote .
+</li><li>If the plan is not set when editing and saving the quote gives you a validation error.
+</li><li>When creating a new quote If the <i>product_roadside_assistance_flag = 'no'</i> and the selected client have a populated Roadside assistance field,flag checked off and plan should populate automatically
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=6" title="Edit section: createQuote() Order of rules">edit</a>]</div><a name="createQuote.28.29_Order_of_rules"></a><h4>createQuote() Order of rules</h4>
+<p>If the field <i>product_roadside_assistance_flag = 'yes' AND</i>
+</p>
+<ol><li> If the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" field is populated, the quote's Roadside Assistance profile will be selected and calculated using this plan.
+</li><li> If <a href="Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "roadside_assistance_plan_code" is populated, the quote's Roadside Assistance profile will be selected and calculated using this plan.
+</li><li> If neither the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" field or the <a href="Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">Setup / Reference Data → gb_controls</a> "roadside_assistance_plan_code" is populated, the quote's Roadside Assistance profile will be checked, but the "Supplier" will not be not selected and the budget will be 0. If a user edits a quote like this, they will need to either select a "Supplier" or to de-select Roadside Assistance before they can Save the quote.
+</li></ol>
+<p>If the field <i>product_roadside_assistance_flag = 'no'</i>
+</p>
+<ol><li> The quote's Roadside Assistance profile will be un-checked.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=7" title="Edit section: Accept and Settle rules">edit</a>]</div><a name="Accept_and_Settle_rules"></a><h4>Accept and Settle rules</h4>
+<p>On <a href="./Quotes:Accept.html" title="Quotes:Accept">Accept</a> or <a href="./Quotes:Accept.html" title="Quotes:Accept">Settle</a>
+</p>
+<ol><li> If the Quotes / Lease "Included?" check box is checked <a href="./Image:Check-box_on.gif.html" class="image" title="Image:Check-box_on.gif"><img src="../../clients/help/wiki/images/d/d4/Check-box_on.gif" alt="Image:Check-box_on.gif" width="19" height="18" longdesc="/mediawiki/index.php/Image:Check-box_on.gif" /></a>, <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> "Roadside Managed", "Roadside Supplier" and "Term" fields are updated with the values stored in the quote.<br />
+</li><li> If Quotes / Lease "Included?" check box is not checked <a href="./Image:Check-box.gif.html" class="image" title="Image:Check-box.gif"><img src="../../clients/help/wiki/images/c/c5/Check-box.gif" alt="Image:Check-box.gif" width="17" height="17" longdesc="/mediawiki/index.php/Image:Check-box.gif" /></a>, update <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> "Roadside Managed" will be un-checked, and "Roadside Supplier" and "Term" will be blank.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=8" title="Edit section: Reporting">edit</a>]</div><a name="Reporting"></a><h4>Reporting</h4>
+<p>If <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> "Roadside Managed" is checked <a href="./Image:Check-box_on.gif.html" class="image" title="Image:Check-box_on.gif"><img src="../../clients/help/wiki/images/d/d4/Check-box_on.gif" alt="Image:Check-box_on.gif" width="19" height="18" longdesc="/mediawiki/index.php/Image:Check-box_on.gif" /></a>, the contract will appear in the <a href="./Standard_Reports:Roadside_Assistance.html" title="Standard Reports:Roadside Assistance">Reporting / Standard Reports &rarr; Roadside Assistance</a> report.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=9" title="Edit section: Set-up Notes">edit</a>]</div><a name="Set-up_Notes"></a><h4>Set-up Notes</h4>
+<p>Contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> if you want help to set-up your Roadside Assistance plans.<br />
+</p>
+<ol><li> <a href="./Contract_Types:Accruals.html" title="Contract Types:Accruals">Contract Types / Accruals</a> "Class" - add in a "Class" record for 'RSA' to use the Roadside Assistance profile in your quotes. 
+</li><li> <b>Suppliers / Account</b> "Status" - check that your roadside supplier's "Status" is 'Active', otherwise the plan will not be shown in the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> "Supplier" drop list or the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" drop list.
+</li><li> <a href="Screen_Aliases.html" title="Screen Aliases">Screen Aliases</a> - <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> "Roadside Assistance" can be renamed. Contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> to update this for you.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=10" title="Edit section: gb_controls">edit</a>]</div><a name="gb_controls"></a><h5>gb_controls</h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> <i>Table</i> </th><th> Comment
+</th></tr>
+<tr>
+<td><i><a href="Global_Controls.html" title="Global Controls">[gb_controls]client_roadside_assistance_plan_code_default</a></i></td><td>Add a value to this record to default in a preferred Roadside Assistance plan, when creating new clients.
+</td></tr>
+<tr>
+<td><i><a href="Global_Controls.html" title="Global Controls">[gb_controls]fm_contracts_supplier_id_roadside_default</a></i></td><td>This control is only applicable if you are using the IFCS Card Import process, otherwise it can be disregarded.
+</td></tr>
+<tr>
+<td><i><a href="Global_Controls.html" title="Global Controls">[gb_controls]roadside_assistance_plan_code</a></i></td><td>Enter a plan code here to have a default entry for the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> "Supplier" field.
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=11" title="Edit section: qt_roadside_assistance_plans">edit</a>]</div><a name="qt_roadside_assistance_plans"></a><h5>qt_roadside_assistance_plans</h5>
+<p>Populate this <a href="Import_Table_Data.html" title="Import Table Data">table</a> with any plans you want to use. Some sample entries are below.<br />
+If the record's <i>status_flag</i> is not 'active', it will not be shown in the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> "Supplier" drop list, or the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Roadside Assistance" drop list.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>roadside_assistance_plan_id</th><th>supplier_id</th><th>roadside_assistance_code</th><th>roadside_assistance_plan_name</th><th>premium</th><th>cost</th><th>status_flag
+</th></tr>
+<tr>
+<td>100000</td><td>100500</td><td>ASSIST</td><td>Assist Australia Plan</td><td>120.00 </td><td> 22.00 </td><td> active
+</td></tr>
+<tr>
+<td>100001</td><td>100506</td><td>RACVR</td><td>RACV (Victoria) Plan</td><td>110.00 </td><td> 23.00 </td><td> active
+</td></tr>
+<tr>
+<td>100002</td><td>100507</td><td>MRSA</td><td>Manufacturer's Roadside Assistance Plan</td><td>0.00 </td><td> 0.00 </td><td> active
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;action=edit&amp;section=12" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20814) Roadside additions Live 25/11/2019
+</li><li> (DEV-21820) RSA cost drops out when copying a quote. Live 06/02/2023
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Roadside_Assistance.html">https://help.catch-e.net.au/mediawiki/index.php/Roadside_Assistance</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Roadside_Assistance">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Roadside_Assistance.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Roadside_Assistance&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.11 secs. -->
+</body></html>

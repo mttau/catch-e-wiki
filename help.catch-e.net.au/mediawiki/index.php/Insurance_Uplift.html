@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Insurance Uplift,Administration,FLEET,Insurance Uplift calculation model.xlsx,Main Page,Quotes,Quotes:Lease" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Insurance Uplift - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Insurance Uplift</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Insurance_Uplift.html#column-one">navigation</a>, <a href="Insurance_Uplift.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a>  &rarr; <a href="./Quotes:Lease.html#Insurance_Uplift_.28INSUP.29" title="Quotes:Lease">Lease</a> &rarr; <strong>Insurance Uplift (INSUP)</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Insurance_Uplift.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Insurance_Uplift.html#Calculation"><span class="tocnumber">2</span> <span class="toctext">Calculation</span></a>
+<ul>
+<li class='toclevel-2'><a href="Insurance_Uplift.html#Budget"><span class="tocnumber">2.1</span> <span class="toctext">Budget</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Insurance_Uplift.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insurance_Uplift&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<ol><li>A new budget item called Insurance Uplift (INSUP) is introduced.
+</li><li>INSUP automatically calculates a monthly allowance to cover annual Comprehensive Insurance increases.
+</li><li>The calculation is based on the Monthly Premium in the Comprehensive Insurance Profile section of the Lease tab.
+</li><li>INSUP will be applied to all Quotes, regardless of whether the insurance is through the Internal Insurer or a Driver Policy.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insurance_Uplift&amp;action=edit&amp;section=2" title="Edit section: Calculation">edit</a>]</div><a name="Calculation"></a><h4>Calculation</h4>
+<p>A budget amount will calculate and populate if set-up to do so.<br />Open the <a href="Insurance_Uplift_calculation_model.xlsx.html" title="Insurance Uplift calculation model.xlsx">Insurance Uplift calculation model.xlsx</a> to see the working calculation.<br />The INSUP Budget will not calculate if the Insurance Uplift Rate is set to '0.00'.
+</p><p>To use this budget:
+</p><p>Go to Posting Classes / Details and check that "INSUP" exists and create it if it is missing.<br />When creating 'INSUP', make sure the event check-boxes are un-checked. The class "Name" displays as the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> <b>Budgets</b> also.<br />Go to Contract Types / Accruals and add the "Class" 'INSUP'.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insurance_Uplift&amp;action=edit&amp;section=3" title="Edit section: Budget">edit</a>]</div><a name="Budget"></a><h5><a href="./Quotes:Lease.html#Budgets_Summary_Table" title="Quotes:Lease">Budget</a></h5>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">Screen Name or Function</th><th width="2%" align="left">module</th><th width="5%" align="left">page</th><th width="5%" align="left">sub_page</th><th width="5%" align="left">type</th><th width="15%" align="left">[gb_role_restrictions]name</th><th width="10%" align="left">restriction_type</th><th>Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="8"> <a href="./Quotes:Lease.html#Insurance_Uplift_Fee_.28INSUP.29" title="Quotes:Lease">Insurance Uplift Fee (INSUP)</a>
+</td></tr>
+<tr>
+<td> Insurance Uplift Fee Net</td><td> qt </td><td> quotes </td><td> lease </td><td> field </td><td> tmp_quote_budget_net_INSUP </td><td> display_only  </td><td> If <b>either</b> tmp_quote_budget_net_INSUP <b>or</b> tmp_quote_budget_gst_INSUP records exists,<br /> <b>both</b> the "Net" and "GST" fields will be read only. The field cannot be 'hidden'.
+</td></tr>
+<tr>
+<td> Insurance Uplift Fee GST</td><td> qt </td><td> quotes </td><td> lease </td><td> field </td><td> tmp_quote_budget_gst_INSUP </td><td> display_only  </td><td> If <b>either</b> tmp_quote_budget_net_INSUP <b>or</b> tmp_quote_budget_gst_INSUP records exists,<br /> <b>both</b> the "Net" and "GST" fields will be read only. The field cannot be 'hidden'.
+</td></tr>
+<tr>
+<td> Insurance Uplift Fee Quote Note</td><td> qt </td><td> quotes </td><td> lease </td><td> field </td><td> tmp_quote_budget_notes_INSUP </td><td> display_only </td><td>  If set, the field name and field will be read only. The field cannot be 'hidden'.
+</td></tr>
+</table>
+<p><br />
+NOTE: To make the fields editable, <b>BOTH</b> role restriction records, 'tmp_quote_budget_net_INSUP', and 'tmp_quote_budget_gst_INSUP' need to be removed.
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insurance_Uplift&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-22312) Create Annual Insurance Premium Uplift (INSUP) budget calculation. Live 13/10/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Insurance_Uplift.html">https://help.catch-e.net.au/mediawiki/index.php/Insurance_Uplift</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Insurance_Uplift">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Insurance_Uplift.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Insurance_Uplift&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.04 secs. -->
+</body></html>

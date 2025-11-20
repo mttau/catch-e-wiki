@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Qt::Salesforce::createQuote(),Clients:Quote defaults,CreateQuotes,Drivers:Contact,Employer FBT Type,Fm financier rates,Global Controls,Main Page,Plate Year,Quotes:Finance,Small Damage Repairs" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Qt::Salesforce::createQuote() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Qt::Salesforce::createQuote()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Qt::Salesforce::createQuote().html#column-one">navigation</a>, <a href="./Qt::Salesforce::createQuote().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <strong>createQuote()</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Audit_History"><span class="tocnumber">2</span> <span class="toctext">Audit History</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Input_Fields"><span class="tocnumber">3</span> <span class="toctext">Input Fields</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Input_URL_Example"><span class="tocnumber">4</span> <span class="toctext">Input URL Example</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Output_Example"><span class="tocnumber">5</span> <span class="toctext">Output Example</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Error_Codes"><span class="tocnumber">6</span> <span class="toctext">Error Codes</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Error_Output_Example_1"><span class="tocnumber">7</span> <span class="toctext">Error Output Example 1</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Error_Output_Example_2"><span class="tocnumber">8</span> <span class="toctext">Error Output Example 2</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Qt::Salesforce::createQuote().html#Troubleshooting"><span class="tocnumber">8.1</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#Field_Names"><span class="tocnumber">9</span> <span class="toctext">Field Names</span></a></li>
+<li class='toclevel-1'><a href="./Qt::Salesforce::createQuote().html#System_Notes"><span class="tocnumber">10</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td>  <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This web service has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="CreateQuotes.html" title="CreateQuotes">createQuotes</a> instead.
+</td></tr></table>
+<p><br />
+</p><p>This web service generates a lease quote.<br />
+A collection of parameters (listed below) are passed into the web service. These are used to construct a lease quotation.<br />
+</p><p>- The ID and Number of the related opportunity record is required, and is stored on the quote<br />
+- A code identifying an existing Catch-e client must be included<br />
+- Alpha numeric unique driver identifier is required, and a new driver record will be created if a driver bearing the identifier doesn't already exist<br />
+- Driver details can be updated when creating a new quote, see fields with the prefix 'driver_'<br />
+- When creating a second quote for any given opportunity, pass in the parent_quote_id to link the two quotes together<br />
+- An optional contract type can be passed in to be used in place of the default<br />
+- The redbook list price may be overridden using the list_price_gross field, or the list_price_net and list_price_gst fields<br /><br />
+</p><p>If a problem occurs a Catch-e error code (listed below) will be returned with the results. If successfully created, the quote PDF can be extracted using the quote download web service.<br />
+</p><p>The driver_surname field is required when creating a new driver record. To force the reading of this value or any other driver fields from the opportunity account, pass through the value 'encrypted'.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=2" title="Edit section: Audit History">edit</a>]</div><a name="Audit_History"></a><h3>Audit History</h3>
+<p>Audit history is created when using this web service. The history is attributed to the user_id passed in the parameter 'user_id_client_manager'.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=3" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h3>Input Fields</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 3%">Sort </th><th style="width: 15%">Query string key </th><th style="width: 9%"><div class="center">Format</center> </th><th style="width: 65%">Notes </th><th style="width: 8%"> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td> 1</td><td>annual_kilometres</td><td><div class="center">integer</center></td><td>Non-zero positive number</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 2</td><td>client_code</td><td><div class="center">string</center></td><td>Catch-e client_code, a short text string identifying the client</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 3</td><td>driver_annual_salary</td><td><div class="center">decimal</center></td><td>Annual gross salary</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 4</td><td>driver_surname</td><td><div class="center">string</center></td><td>Surname of the driver</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 5</td><td>state_registered</td><td><div class="center">string</center></td><td>State codes, VIC, NSW, ACT, NT, TAS, WA, SA, QLD, NZ.<br />When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'AUS' then it must be either 'NSW', 'VIC', 'QLD', 'ACT', 'TAS', 'SA', 'WA', or 'NT'.<br /> When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'NZ' then it must be 'NZ'.</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 6</td><td>term</td><td><div class="center">integer</center></td><td>1 - 60</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 7</td><td>user_id_client_manager</td><td><div class="center">int</center></td><td>Active Catch-e user_id i.e. not at 'deleted' status</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 8</td><td>variant_id</td><td><div class="center">int</center></td><td>Catch-e variant identifier</td><td><center>yes</div>
+</td></tr>
+<tr>
+<td> 9</td><td>aftermarket_requested_flag</td><td><div class="center">string</center></td><td>Override the default Aftermarket inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 10</td><td>colour_preference</td><td><div class="center">string</center></td><td>Set the colour preference</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 11</td><td>create_new_driver_flag</td><td><div class="center">string</center></td><td>Set this to 'yes' to create a new Driver. Requires driver_external_code if set to 'yes'.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 12</td><td>deal_type</td><td><div class="center">string</center></td><td>Deal Type field in Salesforce</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 13</td><td>driver_address_1</td><td><div class="center">string</center></td><td>Postal / Home address line 1 e.g. Level 1, 30 Coora Road'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 14</td><td>driver_address_2</td><td><div class="center">string</center></td><td>Postal / Home address line 2</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 15</td><td>driver_area</td><td><div class="center">string</center></td><td>Postal / Home area e.g. 'Oakleigh South'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 16</td><td>driver_external_code</td><td><div class="center">string</center></td><td>Pacman Unique reference used to identify this driver</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 17</td><td>driver_given_name</td><td><div class="center">string</center></td><td>Given name</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 18</td><td>driver_home_email</td><td><div class="center">string</center></td><td>Home email</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 19</td><td>driver_id</td><td><div class="center">string</div> </td><td> An alternative to passing the driver_external_code. The driver_id passed in here will be updated with data submitted in this call. <br />
+<ul><li> If URL contains: ‘driver_id=100000’ then, If driver_id match is found, update Driver record (if any changes required). <br />
+</li><li> If URL contains: ‘driver_id=0’ or not passed then, Do not create a new Driver Record. Simply add the driver_surname to [qt_quotes] driver_surname and driver_annual_salary to [qt_quotes] annual_salary. <br />
+</li><li> If URL contains: ‘create_new_driver_flag=yes’ then, Create a new Driver. 
+</li></ul>
+</td><td><div class="center">no</div>
+</td></tr>
+<tr>
+<td> 20</td><td>driver_phone</td><td><div class="center">string</center></td><td>Home phone number for Driver</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 21</td><td>driver_postcode</td><td><div class="center">string</center></td><td>Postal / Home postcode</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 22</td><td>driver_state</td><td><div class="center">string</center></td><td>Postal / Home state</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 23</td><td>driver_work_phone</td><td><div class="center">string</center></td><td>Work phone number</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 24</td><td>fbt_value</td><td><div class="center">decimal</center></td><td>Sets the FBT Value in the quote and turn on the lock_fbt_value_flag</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 25</td><td>inclusion_<i>{inclusion_code}</i>_flag</td><td><div class="center">string</center></td><td>Setting this to ‘yes’ will select and apply the defined inclusion to the quote. ‘no’ or omitting this key will set the plan as unchecked in the quote. If there is only one available plan, the second key is not required as the default plan will be used.  eg: inclusion_INC1_flag = ‘yes’ would populate this inclusion into the quote.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 26</td><td>inclusion_<i>{inclusion_plan_code}</i>_plan</td><td><div class="center">string</center> </td><td>If there are multiple plans available for an inclusion, the plan to use must also be defined. eg:inclusion_INC1_plan = ‘LIPLAN2’ would populate this plan into the quote. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 27</td><td>insurance_loading_type_driver_restriction</td><td><div class="center">string</div> </td><td>One of no_drivers_less_than_26_yo, all_drivers, no_drivers_less_than_22_yo. <br />
+<p>Insert one of the 'loading_code' values stored in [qt_insurance_loading_types].
+</p>
+</td><td><div class="center">no</div>
+</td></tr>
+<tr>
+<td> 28</td><td>insurance_loading_type_licence</td><td><div class="center">string</div> </td><td>One of no_loss, loss_in_2_to_5_years, loss_in_0_to_2_years. <br />
+<p>Insert one of the 'loading_code' values stored in [qt_insurance_loading_types].
+</p>
+</td><td><div class="center">no</div>
+</td></tr>
+<tr>
+<td> 29</td><td>insurance_loading_type_past_claims</td><td><div class="center">string</div> </td><td>One of no_claims_0_to_5_years, 1_claim_in_12_months, 1_claim_in_1_to_3_years, 2+_claims_0_to_3_years, 3+_claims_in_0_to_5_years. <br />
+<p>Insert one of the 'loading_code' values stored in [qt_insurance_loading_types]. 
+</p>
+</td><td><div class="center">no</div>
+</td></tr>
+<tr>
+<td> 30</td><td>insurer_location_postcode</td><td><div class="center">integer</center></td><td>Use this if your insurance set-up is configured by postcode, otherwise location_name should be used. The postcode must be valid for the supplied state_registered. If not passed in the respective postcode from <a href="Global_Controls.html" title="Global Controls">Global Controls</a> 'postcode_by_state_default' will be used to determine the Insurance price.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 31</td><td>list_price_gross</td><td><div class="center">decimal</center></td><td>Numeric dollar value, takes precedent over list_price_net i.e. if this is set then list_price_net is ignored</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 32</td><td>list_price_gst</td><td><div class="center">decimal</center></td><td>Numeric dollar value</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 33</td><td>list_price_net</td><td><div class="center">decimal</center></td><td>Numeric dollar value</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 34</td><td>location_name</td><td><div class="center">string</center></td><td>Set the Insurance location you want applied. This will display on the Quotes &rarr; Contract tab.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 35</td><td>new_used</td><td><div class="center">string</center></td><td>Indicates whether the vehicle is new or used, defaults to 'new'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 36</td><td>odometer</td><td><div class="center">string</center></td><td>If 'new_used' is set to 'used' or 'demonstrator' this value must bet set to a non-zero integer</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 37</td><td>opportunity_id</td><td> <div class="center">string</center></td><td> Salesforce opportunity id</td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 38</td><td>opportunity_number</td><td><div class="center">string</center></td><td>Salesforce opportunity #</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 39</td><td>parent_quote_id</td><td><div class="center">int</center></td><td>Quote ID to use as the parent of the new quote</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 40</td><td>pay_cycle_code</td><td><div class="center">string</center></td><td>Allows you to set the Pay Cycle for this quote. The list of available codes is stored in [gb_pay_cycles]pay_cycle_code. If not passed the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Client Pay Cycle</a> will be used.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 41</td><td>posting_map_code</td><td><div class="center">string</center></td><td>Contract type code</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 42</td><td>procurement_flag</td><td><div class="center">string</center></td><td>Sets the quote vehicle procurement flag</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 43</td><td>product_carbon_emissions_offset_flag</td><td><div class="center">string</center></td><td>Override the default Carbon Emissions profile flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 44</td><td>product_comprehensive_insurance_flag</td><td><div class="center">string</center></td><td>Override the default Comprehensive Insurance profile flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 45</td><td>product_extended_warranty_flag</td><td><div class="center">string</center></td><td>Override the default Extended Warranty profile flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 46</td><td>product_lti_top_up_benefit_name </td><td><div class="center">string</center> </td><td>If more than one active “Top Up Benefit” exists for the “Plan” passed, then a ‘product_lti_top_up_benefit_name’ should be passed as well.<br /> The Quote created should pre-populate the “Plan” and “Top Up Benefit” and include the “Premium” in its calculations.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 47</td><td>product_nlpi_flag</td><td><div class="center">string</center></td><td>Override the default NLPI inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 48</td><td>product_roadside_assistance_flag</td><td><div class="center">string</center></td><td>Override the default Roadside Asistance inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 49</td><td>product_rveh_amount_net</td><td><div class="center">string</center></td><td>Add the Relief Vehicle monthly cost to the Profile (Quotes / Lease -&gt; 'Monthly Budget')</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 50</td><td>product_rveh_flag</td><td><div class="center">string</center></td><td>Override the default Relief Vehicle inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 51</td><td>product_small_damage_repairs_flag</td><td><div class="center">string</center></td><td>Override the default <a href="Small_Damage_Repairs.html" title="Small Damage Repairs">Small Damage Repairs</a> profile flag, 'yes' or 'no'.<br /> If the quote term does not match one of the SDR profile records, SDR will be checked on but the premium will not calculate.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 52</td><td>product_tyre_and_rim_flag</td><td><div class="center">string</center></td><td>Override the default Tyre and Rim inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 53</td><td>product_vehicle_maintenance_program_flag</td><td><div class="center">string</center></td><td>Override the default Vehicle Maintenanace profile flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 54</td><td>product_walkaway_flag</td><td><div class="center">string</center></td><td>Override the default Walkaway inclusion flag, 'yes' or 'no'</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 55</td><td>purchase_stamp_duty</td><td><div class="center">decimal</center></td><td>Sets the Purchase Stamp Duty in the quote and turn on the lock_purchase_stamp_duty_flag</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 56</td><td>supplier_code_financier</td><td><div class="center">string</center></td><td>Set an alternative Financier. This will override the Financier default set on the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Quote Defaults</a> and must map to a Supplier with a 'Supplier Type' set to "Financier" on the <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> tab.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 57</td><td>user_id_assigned</td><td><div class="center">int</center></td><td>Set the Quote 'Assigned' user. Must be an active Catch-e user_id i.e. not at 'deleted' status</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 58</td><td>driver_driver_licence</td><td><div class="center">string</center> </td><td>If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Licence No"</a> will be updated. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 59</td><td>driver_driver_licence_state</td><td><div class="center">string</center> </td><td>If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Licence State"</a> will be updated. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 60</td><td>driver_mobile</td><td><div class="center">string</center> </td><td>If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Mobile"</a> will be updated. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 61</td><td>previous_fbt_value </td><td><div class="center">integer</center> </td><td>It's optional and can only be a positive number.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 62</td><td>previous_lease_start</td><td><div class="center">integer</center> </td><td>User can give a previous lease start date </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 63</td><td>product_lti_flag </td><td><div class="center">string</center></td><td>Either yes or no are the only acceptable values to be passed,if the fag is set to yes, <br />  If ‘product_lti_flag’ = yes is passed, and only one active “Plan” / “Top Up Benefit” is found, the Quote created should pre-populate the “Plan” and “Top Up Benefit” and include the “Premium” in its calculations.</td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 64</td><td>product_lti_plan_code </td><td><div class="center">string</center>  </td><td>If the ‘product_lti_plan_code’ passed has only one active “Top Up Benefit”, the Quote created should pre-populate the “Plan” and “Top Up Benefit” and include the “Premium” in its calculations. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 65</td><td>status_flag</td><td><div class="center">string</center> </td><td>Must be one of [qt_quote_statuses]description values. Default value is stored in <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]qt_quotes_status_flag_default</i></a>. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 66</td><td>cost_centre</td><td><div class="center">string</center> </td><td>Must be one of [fm_client_cost_centres]description values. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 67</td><td>division</td><td><div class="center">string</center> </td><td>Must be one of [fm_client_divisions]description values. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 68</td><td>plate_year</td><td><div class="center">string</div> </td><td> Pass a value to specify the <a href="Plate_Year.html" title="Plate Year">Plate Year</a>.<br /> The plate_year can be any year between 1900-2099.<br /> If plate_year not passed, the <i>[gb_controls]qt_quotes_plate_year_input</i> value for <b>Default Year</b> is used.
+</td><td><div class="center">no</div>
+</td></tr>
+<tr>
+<td> 69</td><td>driver_salutation</td><td><div class="center">string</center> </td><td>enum('Mr','Mrs','Ms','Miss','Dr','Prof','Rev','Capt') </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 70</td><td>driver_gender</td><td><div class="center">string</center> </td><td>enum('Male','Female','Other') </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 71</td><td>driver_date_of_birth</td><td><div class="center">string</center> </td><td>Date of Birth </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 72</td><td>employer_fbt_type </td><td> <div class="center">string</center> </td><td> Choose from 'full-fbt-payable', 'concessional-30000-exempt', 'concessional-17000-exempt', 'rebatable' or 'not-applicable'.<br /> If this field is passed, the value must conform to the <a href="Employer_FBT_Type.html" title="Employer FBT Type">Employer FBT Type</a> business rules, otherwise the call is rejected.<br /> If this field is not passed, the quote will update based on the <a href="Employer_FBT_Type.html" title="Employer FBT Type">Employer FBT Type</a> business rules. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 73</td><td>fbt_benefit_type</td><td><div class="center">string</center> </td><td> Choose from 'statutory','operating' or 'exempt'.<br /> If [[Clients:Quote defaults|Clients / Quote Defaults "Allow Operating FBT Type" is un-checked, then you cannot use 'operating'. </td><td><center>no</div>
+</td></tr>
+<tr>
+<td> 74</td><td>fbt_business_use</td><td><div class="center">string</center> </td><td>Bus. Use% </td><td><center>no</div>
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=4" title="Edit section: Input URL Example">edit</a>]</div><a name="Input_URL_Example"></a><h3>Input URL Example</h3>
+<pre>
+https://yourname.catch-e.net.au/services/qt/salesforce/createQuote/?opportunity_id=006O0000001sxBWIAY&amp;opportunity_number=61&amp;variant_id=123456&amp;state_registered=VIC&amp;annual_kilometres=20000
+&amp;term=36&amp;client_code=ABC&amp;driver_annual_salary=70000&amp;driver_external_code=1233456
+&amp;driver_surname=smith&amp;deal_type=dealer-sourced&amp;insurer_location_postcode=3000&amp;login=yourlogin&amp;password=yourpassword
+</pre>
+<pre>
+https://yourname.catch-e.net.au/services/qt/salesforce/createQuote?login=yourlogin&amp;password=yourpassword&amp;variant_id=163522&amp;user_id_client_manager=10133&amp;term=36&amp;annual_kilometres=5000&amp;state_registered=WA 
+&amp;client_code=ABC&amp;driver_annual_salary=100000&amp;driver_surname=DSurname&amp;posting_map_code=NOFB&amp;location_name=location test	
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=5" title="Edit section: Output Example">edit</a>]</div><a name="Output_Example"></a><h3>Output Example</h3>
+<p>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />
+&lt;return_status&gt;1&lt;/return_status&gt;<br />
+&lt;quote_id&gt;123456&lt;/quote_id&gt;
+
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=6" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h3>Error Codes</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_OPPORTUNITY_ID_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_OPPORTUNITY_NUMBER_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_VARIANT_ID_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_USER_ID_CLIENT_MANAGER_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 5 </td><td> CATCH_E_ERROR_MISSING_FIELD_LEASE_PERIOD </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 6 </td><td> CATCH_E_ERROR_MISSING_FIELD_ANNUAL_KILOMETRES </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 7 </td><td> CATCH_E_ERROR_TERM_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 8 </td><td> CATCH_E_ERROR_ANNUAL_KILOMETRES_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 9 </td><td> CATCH_E_ERROR_STATE_REGISTERED_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 10 </td><td> CATCH_E_ERROR_INSURER_LOCATION_POSTCODE_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 11 </td><td> CATCH_E_ERROR_CLIENT_CODE_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 12 </td><td> CATCH_E_ERROR_DRIVER_ANNUAL_SALARY_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 13 </td><td> CATCH_E_ERROR_DRIVER_EXTERNAL_CODE_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 14 </td><td> CATCH_E_ERROR_DRIVER_SURNAME_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 15 </td><td> CATCH_E_ERROR_DEAL_TYPE_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 16 </td><td> CATCH_E_ERROR_DEAL_TYPE_INVALID </td><td> Input field invalid, must be either 'dealer-non-sourced', 'dealer-sourced', 'private-sale', 'refinance', 'sale-and-leaseback', or 'generic-quote'
+</td></tr>
+<tr>
+<td> 17 </td><td> CATCH_E_ERROR_STATE_REGISTERED_MISSING </td><td> Input field missing
+</td></tr>
+<tr>
+<td> 18 </td><td> CATCH_E_ERROR_LIST_PRICE_NET_MISSING </td><td> Input field missing, this only occurs if the list_price_gst has been included
+</td></tr>
+<tr>
+<td> 19 </td><td> CATCH_E_ERROR_LIST_PRICE_GST_MISSING </td><td> Input field missing, this only occurs if the list_price_net has been included
+</td></tr>
+<tr>
+<td> 20 </td><td> CATCH_E_ERROR_ODOMETER_MISSING </td><td> Input field missing, this only applicable if NEW_USED is not 'new' e.g. 'used' or 'demonstrator'
+</td></tr>
+<tr>
+<td> 21 </td><td> CATCH_E_ERROR_OPPORTUNITY_ID_INVALID </td><td> Input field is empty
+</td></tr>
+<tr>
+<td> 22 </td><td> CATCH_E_ERROR_OPPORTUNITY_NUMBER_INVALID </td><td> Input field is empty
+</td></tr>
+<tr>
+<td> 23 </td><td> CATCH_E_ERROR_VARIANT_ID_INVALID </td><td> Input field invalid record not found
+</td></tr>
+<tr>
+<td> 24 </td><td> CATCH_E_ERROR_LIST_PRICE_GROSS_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 25 </td><td> CATCH_E_ERROR_LIST_PRICE_NET_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 26 </td><td> CATCH_E_ERROR_ANNUAL_KILOMETRES_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 27 </td><td> CATCH_E_ERROR_STATE_REGISTERED_INVALID </td><td> Input field invalid. <br />When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'AUS' then it must be either 'NSW', 'VIC', 'QLD', 'ACT', 'TAS', 'SA', 'WA', or 'NT' <br /> When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'NZ' then it must be 'NZ'.
+</td></tr>
+<tr>
+<td> 28 </td><td> CATCH_E_ERROR_TERM_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 29 </td><td> CATCH_E_ERROR_USER_ID_CLIENT_MANAGER_INVALID </td><td> Input field contains unknown account manager
+</td></tr>
+<tr>
+<td> 30 </td><td> CATCH_E_ERROR_DRIVER_ANNUAL_SALARY_INVALID </td><td> Input field invalid evaluates to zero
+</td></tr>
+<tr>
+<td> 31 </td><td> CATCH_E_ERROR_BAD_QUOTE_TEMPLATE </td><td> Data set up issue
+</td></tr>
+<tr>
+<td> 32 </td><td> CATCH_E_ERROR_QUOTE_VALIDATION_FAILED </td><td> There is a data set up issue. This error returns an additional details of the error (see example below).
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td>
+<p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />
+&lt;response&gt;<br />
+</p>
+<dl><dd>	&lt;return_status&gt;&lt;/return_status&gt;<br />
+</dd><dd>	&lt;error&gt;CATCH_E_ERROR_QUOTE_VALIDATION_FAILED&lt;/error&gt;<br />
+</dd><dd>	&lt;error_message&gt;Validation failed due to the following error(s):<br />
+</dd></dl>
+<dl><dd>		1. Procurement fee must contain a value.<br />
+</dd></dl>
+<dl><dd>	&lt;/error_message&gt;<br />
+</dd></dl>
+<p>&lt;/response&gt;<br />
+</p>
+</td></tr></table>
+<p><br />
+In this example, the default <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]procurement_fee</i></a> = '0', but the <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]procurement_fee_allow_zero_flag</i></a> = 'no'.<br /> 
+To fix this, update <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]procurement_fee</i></a> to contain a value or set the input field procurement_flag = 'no' or remove it from the call.
+</p>
+</td></tr>
+<tr>
+<td> 33 </td><td> CATCH_E_ERROR_CLIENT_CODE_INVALID </td><td> Client cannot be read
+</td></tr>
+<tr>
+<td> 34 </td><td> CATCH_E_ERROR_DRIVER_EXTERNAL_CODE_INVALID </td><td> Input field is blank
+</td></tr>
+<tr>
+<td> 35 </td><td> CATCH_E_ERROR_DRIVER_SURNAME_INVALID </td><td> Input field is blank
+</td></tr>
+<tr>
+<td> 36 </td><td> CATCH_E_ERROR_PARENT_QUOTE_ID_INVALID </td><td> Quote cannot be read
+</td></tr>
+<tr>
+<td> 37 </td><td> CATCH_E_ERROR_FAILED_CREATING_DRIVER </td><td> Driver record insert failed
+</td></tr>
+<tr>
+<td> 38 </td><td> CATCH_E_ERROR_FAILED_UPDATING_DRIVER </td><td> Driver record update failed
+</td></tr>
+<tr>
+<td> 39 </td><td> CATCH_E_ERROR_INSURER_LOCATION_POSTCODE_INVALID </td><td> Input field not an int
+</td></tr>
+<tr>
+<td> 40 </td><td> CATCH_E_ERROR_NEW_USED_INVALID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 41 </td><td> CATCH_E_ERROR_ODOMETER_INVALID </td><td> Input field evaluates to zero, this is only applicable if NEW_USED is not 'new', e.g. 'used' or 'demonstrator'
+</td></tr>
+<tr>
+<td> 42 </td><td> CATCH_E_ERROR_READING_ENCRYPTED_FIELDS </td><td> Error reading encrypted fields on callback
+</td></tr>
+<tr>
+<td> 43 </td><td> CATCH_E_ERROR_POSTING_MAP_CODE_INVALID </td><td> Invalid contract type
+</td></tr>
+<tr>
+<td> 44 </td><td> CATCH_E_ERROR_FBT_VALUE_INVALID </td><td> Must be a non-zero currency value
+</td></tr>
+<tr>
+<td> 45 </td><td> CATCH_E_ERROR_UPDATING_OPPORTUNITY </td><td> Failed to update Salesforce database
+</td></tr>
+<tr>
+<td> 46 </td><td> CATCH_E_ERROR_QUOTE_SAVE_FAILED </td><td> Failed saving quote in Catch-e database
+</td></tr>
+<tr>
+<td> 47 </td><td> CATCH_E_ERROR_BAD_CONTRACT_TYPE_DEFAULT </td><td> Bad setup in Catch-e. Contract Type "Status" may be 'inactive' or missing Quote Template value.
+</td></tr>
+<tr>
+<td> 48 </td><td> CATCH_E_ERROR_LOADING_TYPE_PAST_CLAIMS_INVALID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 49 </td><td> CATCH_E_ERROR_LOADING_TYPE_LICENCE_INVALID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 50 </td><td> CATCH_E_ERROR_LOADING_TYPE_DRIVER_RESTRICTION_INVALID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 51 </td><td> CATCH_E_ERROR_PROCUREMENT_FLAG_INVALID </td><td> Input field invalid
+</td></tr>
+<tr>
+<td> 52 </td><td> CATCH_E_ERROR_FINANCIER_CODE_INVALID </td><td> An invalid supplier_code_financier has been set. The code must map to a Supplier with a 'Supplier Type' set to "Financier" on the <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> tab.
+</td></tr>
+<tr>
+<td> 53 </td><td> CATCH_E_ERROR_PAY_CYCLE_CODE_INVALID </td><td> The Pay Cycle Code is invalid.
+</td></tr>
+<tr>
+<td> 54 </td><td>CATCH_E_ERROR_LTI_PLAN_CODE_MISSING </td><td>If more than one active “Plan” is found and ‘product_lti_plan_code’ not passed.
+</td></tr>
+<tr>
+<td> 55 </td><td>CATCH_E_ERROR_LTI_PLAN_CODE_INVALID </td><td>If ‘product_lti_plan_code’ not found.
+</td></tr>
+<tr>
+<td> 56 </td><td>CATCH_E_ERROR_LTI_TOP_UP_BENEFIT_NAME_MISSING </td><td>If more than one active “Top Up Benefit” is found and ‘product_lti_top_up_benefit_name’ not passed.
+</td></tr>
+<tr>
+<td> 57 </td><td>CATCH_E_ERROR_LTI_TOP_UP_BENEFIT_NAME_INVALID</td><td> If ‘product_lti_top_up_benefit_name’ not found.
+</td></tr>
+<tr>
+<td> 58 </td><td> CATCH_E_ERROR_INCLUSION_PLAN_{CODE}_INVALID </td><td> No match found for nominated Inclusion Plan Code
+</td></tr>
+<tr>
+<td> 59 </td><td> CATCH_E_ERROR_INCLUSION_SELECTION_INVALID </td><td> No match has been found for against the Inclusion for one or more nominated plans
+</td></tr>
+<tr>
+<td> 60 </td><td>CATCH_E_ERROR_QUOTE_VALIDATION_FAILED </td><td>Previous FBT Value must be 0 or a positive number.
+</td></tr>
+<tr>
+<td> 61 </td><td>CATCH_E_ERROR_INVALID_COST_CENTRE </td><td>The cost_centre passed is not stored in the database for the Client.
+</td></tr>
+<tr>
+<td> 62 </td><td>CATCH_E_ERROR_INVALID_DIVISION </td><td>The division passed is not stored in the database for the Client.
+</td></tr>
+<tr>
+<td> 63 </td><td>CATCH_E_ERROR_INVALID_PLATE_YEAR </td><td>The plate_year is not within valid range 1900-2099.
+</td></tr>
+<tr>
+<td> 64 </td><td>CATCH_E_ERROR_EMPLOYER_FBT_TYPE_INVALID </td><td>employer_fbt_type is not valid for this client. See <a href="Employer_FBT_Type.html" title="Employer FBT Type">Employer FBT Type</a> for full details of validation.
+</td></tr>
+<tr>
+<td> 65 </td><td>CATCH_E_ERROR_OPERATING_FBT_BENEFIT_TYPE_NOT_ALLOWED</td><td> Operating FBT type is not allowed due to Client <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">"Allow Operating FBT Type"</a> configuration
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=7" title="Edit section: Error Output Example 1">edit</a>]</div><a name="Error_Output_Example_1"></a><h3>Error Output Example 1</h3>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_VARIANT_ID_MISSING&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=8" title="Edit section: Error Output Example 2">edit</a>]</div><a name="Error_Output_Example_2"></a><h3>Error Output Example 2</h3>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_QUOTE_VALIDATION_FAILED&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p><p><br />
+&lt;error_message&gt;Validation failed due to the following error(s):
+</p><p><br />
+1. Contract Term(Months) must be between 1 and 60.
+</p><p>2. A valid Insurance Postcode is required!
+</p><p>&lt;/error_message&gt;
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=9" title="Edit section: Troubleshooting">edit</a>]</div><a name="Troubleshooting"></a><h4>Troubleshooting</h4>
+<p>The <a href="./Quotes:Finance.html" title="Quotes:Finance">Financier</a> used for this service will default from the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Financier" record. <br />
+</p><p>This Financier must have all of the following table records present (if not the <a href="./Quotes:Finance.html" title="Quotes:Finance">Financier</a> will be blank):<br />
+</p>
+<ul><li> [fm_suppliers] - Populated when creating a new <a href="Suppliers.html" title="Suppliers">Suppliers</a> record.<br />
+</li><li> [fm_financiers] - Populated when creating a new <a href="Suppliers.html" title="Suppliers">Suppliers</a> record and the <a href="./Suppliers:Account.html" title="Suppliers:Account">Supplier Type</a> is 'Financier'.<br />
+</li><li> [fm_financier_rates] - Go to <a href="Fm_financier_rates.html" title="Fm financier rates">Reference Data</a> screen to create/edit these records.<br />
+</li></ul>
+<p><br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=10" title="Edit section: Field Names">edit</a>]</div><a name="Field_Names"></a><h3>Field Names</h3>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+No fields are currently returned. Please contact <a href="mailto:support@catch-e.com.au" class='external text' title="mailto:support@catch-e.com.au" rel="nofollow">Catch-e support</a> to modify behaviour.
+
+</table>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;action=edit&amp;section=11" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 11846: Add Financier input field for createQuote() web service. Live 17/09/2015
+</li><li> 14438: Make createQuote() web service available to all clients. Live 14/11/2016
+</li><li> 14934: Add status_flag to gl_posting_maps. Live 04/04/2017
+</li><li> 15742: Modify updateQuotePricing() Web Service to allow Pay Cycle parameter to be passed in. Live 23/05/2017
+</li><li> 15012: Qt Create Quote not creating driver record. Live 19/06/2017
+</li><li> 14340: Lease Inclusion Plans. 01/08/2017
+</li><li> (DEV-20411) Update createQuote() to allow product_lti_flag to be passed Live 19/11/2018
+</li><li> (DEV-20434) Multiple lease inclusions. Live 17/12/2018
+</li><li> (DEV-21013) Add new Quote field called Previous FBT Value. Live 10/08/2020
+</li><li> (DEV-21178) createQuote() and Client Specific (Salesforce)changes. Live 12/10/2020
+</li><li> (DEV-21298) Rego Cost not populating on Quotes using createQuote() Web Service. Live 25/01/2021
+</li><li> (DEV-21483) Quote Status updates via createQuote() API. Live 23/08/2021
+</li><li> (DEV-21555) createQuote() is not populating Plate Year. Live 21/11/2021
+</li><li> (DEV-21634) Add three input fields (client_cost_centre, client_division, plate_year) to createQuote(). Live 16/05/2022
+</li><li> (DEV-21664) createQuote (WS) allows any employer_fbt_type value. Live 14/06/2022
+</li><li> (API-20299/DEV-21693) createQuote fbt_benefit_type &amp; allow_operating_fbt_type_flag. Live 18/07/2022
+</li><li> (DEV-21799) Production UI Quote Bugs. Live 16/01/2023
+</li><li> (DEV-21800) Production createQuote bug (status_flag). Live 16/01/2023
+</li><li> (DEV-21844) createQuote fbt_benefit_type &amp; allow_operating_fbt_type_flag - Correction. Live 17/04/2023
+</li><li> (DEV-22000 / API-20504) FBT type error (Rebatable). Live 19/02/2024
+</li><li> (DEV-22033) createQuoteWebService LCT &amp; PSD calculation issue. Live 25/03/2024
+</li><li> (DEV-22186) Driver created timestamp is blank for legacy createQuote WS/ LIVE dd/11/2024
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Qt::Salesforce::createQuote().html">https://help.catch-e.net.au/mediawiki/index.php/Qt::Salesforce::createQuote%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Qt::Salesforce::createQuote()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Qt::Salesforce::createQuote().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Qt::Salesforce::createQuote%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.11 secs. -->
+</body></html>

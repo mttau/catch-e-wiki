@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Web service Gb::Queries::query(),Web service Gb::Queries::query(),Catch-e Support,Global Controls,Main Page,Print a report query,User Defined Queries,Web Services,Web service urlencode" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Web service Gb::Queries::query() - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Web service Gb::Queries::query()</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="./Web_service_Gb::Queries::query().html#column-one">navigation</a>, <a href="./Web_service_Gb::Queries::query().html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Web_Services.html" title="Web Services">Web Services</a> &rarr; <b>query()</b>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#URL_Encoding_Tool"><span class="tocnumber">2</span> <span class="toctext">URL Encoding Tool</span></a></li>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#Input_Fields"><span class="tocnumber">3</span> <span class="toctext">Input Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Input_URL_Example_1"><span class="tocnumber">3.1</span> <span class="toctext">Input URL Example 1</span></a></li>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Input_URL_Example_2"><span class="tocnumber">3.2</span> <span class="toctext">Input URL Example 2</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#Output_Fields"><span class="tocnumber">4</span> <span class="toctext">Output Fields</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Output_Example"><span class="tocnumber">4.1</span> <span class="toctext">Output Example</span></a></li>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Output_Example_When_Query_Returns_Empty_Resultset"><span class="tocnumber">4.2</span> <span class="toctext">Output Example When Query Returns Empty Resultset</span></a></li>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Multiple_Queries_URL_Example"><span class="tocnumber">4.3</span> <span class="toctext">Multiple Queries URL Example</span></a></li>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Multiple_Query_Output_Example_.282_Queries.29"><span class="tocnumber">4.4</span> <span class="toctext">Multiple Query Output Example (2 Queries)</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#Error_Codes"><span class="tocnumber">5</span> <span class="toctext">Error Codes</span></a>
+<ul>
+<li class='toclevel-2'><a href="./Web_service_Gb::Queries::query().html#Error_Output"><span class="tocnumber">5.1</span> <span class="toctext">Error Output</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="./Web_service_Gb::Queries::query().html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td>  <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This web service has been deprecated and is no longer supported by Catch-e.<br /> You <u>must</u> use <a href="Print_a_report_query.html" title="Print a report query">Print a report query</a> instead and contact <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> if you need assistance with the set-up.
+</td></tr></table>
+<p><br />
+</p><p>Execute a specified query, and return the resultset as Text(csv), XML, or Office(xls). 
+The query can include <a href="User_Defined_Queries.html" title="User Defined Queries">Derived Fields</a>.
+<a href="./Web_service_Gb::Queries::query().html#Multiple_Queries_URL_Example" title="Web service Gb::Queries::query()">Multiple queries</a> are supported with the resultset limited to XML only.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=2" title="Edit section: URL Encoding Tool">edit</a>]</div><a name="URL_Encoding_Tool"></a><h4>URL Encoding Tool</h4>
+<p>SQL queries are to be encoded according to rfc3986 - example see <a href="http://www.php.net/manual/en/function.rawurlencode.php" class='external free' title="http://www.php.net/manual/en/function.rawurlencode.php" rel="nofollow">http://www.php.net/manual/en/function.rawurlencode.php</a><br /> <br />
+For your convenience there is an <a href="Web_service_urlencode.html" title="Web service urlencode">encode / decode tool</a> located at https://yourname.catch-e.net.au/utils/urlencode.phpo
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=3" title="Edit section: Input Fields">edit</a>]</div><a name="Input_Fields"></a><h4>Input Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Query string key </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>For output_format</center> </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> query </td><td style="width: 9%"> <div class="center">rfc3986 encoded</center> </td><td style="width: 65%"> See <a href="Web_service_urlencode.html" title="Web service urlencode">encode / decode</a> page for further details </td><td style="width: 9%"> </td><td style="width: 8%"> <center>yes</div>
+</td></tr>
+<tr>
+<td> 2 </td><td> output_format </td><td> <div class="center">string</center> </td><td> Request a specific output format, options include 'xml', 'text', and office(xls).   Defaults to 'xml'. </td><td>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 3 </td><td> column_headings_flag </td><td> <div class="center">string</center> </td><td> If you set this to 'yes', column headings will be included in the output. </td><td> <center>text</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 4 </td><td> separated_by </td><td> <div class="center">string</center> </td><td> You can change the default field separator character(s) with this, e.g. using {tab} will create a Tab separated file. </td><td> <center>text</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 5 </td><td> text_delimited_by </td><td> <div class="center">string</center> </td><td> This sets the character used to delimit fields containing special characters. Special characters include double quotes, newlines, and the delimiter character itself. The 'none' option will add no delimiters, and is useful when the query itself adds the delimiters e.g. creating a custom interface file to specification. </td><td> <center>text</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 6 </td><td> singleton_tags_flag </td><td> <div class="center">string</center> </td><td> If you set this to 'yes', tags with empty values will use the singleton style format e.g. &lt;Name /&gt; as opposed to &lt;Name&gt;&lt;/Name&gt;. </td><td> <center>xml</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 7 </td><td> indent_size </td><td> <div class="center">string</center> </td><td> You can set the indentation (whitespaces) used, this must be an integer between 0 and 9. The default is 2. </td><td> <center>xml</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 8 </td><td> newline_flag </td><td> <div class="center">string</center> </td><td> If you set this to 'yes', all lines will end in a newline character. This improves readability when viewing or printing the XML from non-specialized text editors. </td><td> <center>xml</center>  </td><td> <center>no</div>
+</td></tr>
+<tr>
+<td> 9 </td><td> limit </td><td> <div class="center">integer</center> </td><td> Add a LIMIT clause to the query </td><td>  </td><td> <center>no</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=4" title="Edit section: Input URL Example 1">edit</a>]</div><a name="Input_URL_Example_1"></a><h5>Input URL Example 1</h5>
+<pre>
+SELECT contract_id FROM fm_contracts LIMIT 10
+</pre>
+<p>To run the above query you would use:
+</p>
+<pre>
+https://yourname.catch-e.net.au/services/gb/queries/query?login=######&amp;password=######&amp;query=SELECT%20contract_id%20FROM%20fm_contracts%20LIMIT%2010
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=5" title="Edit section: Input URL Example 2">edit</a>]</div><a name="Input_URL_Example_2"></a><h5>Input URL Example 2</h5>
+<pre>
+SELECT t1.attachment_id, t1.table_name, t1.record_id, COUNT(t2.attachment_id) AS number_of_attachments
+FROM gb_attachments AS t1
+LEFT JOIN gb_attachments AS t2 ON t2.table_name = t1.table_name AND t2.record_id = t1.record_id AND t2.status_flag&nbsp;!= 'deleted'
+WHERE t1.status_flag&nbsp;!= 'deleted'
+GROUP BY t1.attachment_id
+HAVING number_of_attachments &gt; 0
+</pre>
+<p>To run the above query you would use:
+</p>
+<pre>
+https://yourname.catch-e.net.au/services/gb/queries/query?login=######&amp;password=######&amp;query=SELECT%20t1.attachment_id%2C%20t1.table_name%2C%20t1.record_id%2C%20COUNT%28t2.attachment_id%29%20AS%20number_of_attachments
+%0AFROM%20gb_attachments%20AS%20t1%0ALEFT%20JOIN%20gb_attachments%20AS%20t2%20ON%20t2.table_name%20%3D%20t1.table_name%20AND%20t2.record_id%20%3D%20t1.record_id%20
+AND%20t2.status_flag%20%21%3D%20%27deleted%27%0AWHERE%20t1.status_flag%20%21%3D%20%27deleted%27%0AGROUP%20BY%20t1.attachment_id%0AHAVING%20number_of_attachments%20%3E%200
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=6" title="Edit section: Output Fields">edit</a>]</div><a name="Output_Fields"></a><h4>Output Fields</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> XML element </th><th> <div class="center">Format</center> </th><th> Notes </th><th> <center>Mandatory</div>
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td style="width: 15%"> mixed </td><td style="width: 14%"> <div class="center">Text(csv) / XML / Office(xls)</center> </td><td style="width: 60%"> Mixed column data </td><td style="width: 8%"> <center>yes</div>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=7" title="Edit section: Output Example">edit</a>]</div><a name="Output_Example"></a><h5>Output Example</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p>
+<dl><dd>&lt;query name=&quot;custom_query&quot;&gt;
+</dd></dl>
+<dl><dd><dl><dd>&lt;row id=&quot;1&quot;&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd><dl><dd>&lt;make_id&gt;100000&lt;/make_id&gt;
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd><dl><dd>&lt;name&gt;Holden&lt;/name&gt;
+</dd><dd>...
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd>&lt;/row&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd>&lt;row id=&quot;2&quot;&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd><dl><dd>&lt;make_id&gt;100001&lt;/make_id&gt;
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd><dl><dd>&lt;name&gt;Ford&lt;/name&gt;
+</dd><dd>...
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd>&lt;/row&gt;
+</dd></dl>
+</dd></dl>
+<dl><dd>&lt;/query&gt;
+</dd></dl>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=8" title="Edit section: Output Example When Query Returns Empty Resultset">edit</a>]</div><a name="Output_Example_When_Query_Returns_Empty_Resultset"></a><h5>Output Example When Query Returns Empty Resultset</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p>
+<dl><dd>&lt;response&gt;
+<dl><dd>&lt;return_status&gt;1&lt;/return_status&gt;
+</dd><dd>&lt;recordset_size&gt;0&lt;/recordset_size&gt;
+</dd></dl>
+</dd><dd>&lt;/response&gt;
+</dd></dl>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=9" title="Edit section: Multiple Queries URL Example">edit</a>]</div><a name="Multiple_Queries_URL_Example"></a><h5>Multiple Queries URL Example</h5>
+<p>Each query must be separated by a semicolon (;) followed by a neIf Nothing Foundwline character.<br />
+</p>
+<pre>
+2 Queries:
+https://yourname.catch-e.net.au/services/gb/queries/query?login=######&amp;password=######&amp;query=SELECT%20contract_id%20FROM%20fm_contracts%20LIMIT%202%3B%0ASELECT%20vmrs_code%20FROM%20fm_vmrs_codes%20LIMIT%202%3B
+</pre>
+<pre>
+3 Queries: 
+https://yourname.catch-e.net.au/services/gb/queries/query?login=######&amp;password=######&amp;query=SELECT%20contract_id%20FROM%20fm_contracts%20LIMIT%2010;%0D%0ASELECT%20quote_id%20FROM%20qt_quotes%20LIMIT%2010;%0D%0A
+SELECT%20%2A%20FROM%20fm_clients%20LIMIT%201</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=10" title="Edit section: Multiple Query Output Example (2 Queries)">edit</a>]</div><a name="Multiple_Query_Output_Example_.282_Queries.29"></a><h5>Multiple Query Output Example (2 Queries)</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p>
+<dl><dd>&lt;query  name=&quot;custom_query&quot;&gt;
+<dl><dd>&lt;row id=&quot;1&quot;&gt;
+<dl><dd>&lt;contract_id&gt;100000&lt;/contract_id&gt;
+</dd></dl>
+</dd><dd>&lt;/row&gt;  &lt;row id=&quot;2&quot;&gt;
+<dl><dd>&lt;contract_id&gt;100001&lt;/contract_id&gt;
+</dd></dl>
+</dd><dd>&lt;/row&gt;&lt;/query&gt;
+</dd></dl>
+</dd><dd>&lt;query  name=&quot;custom_query&quot;&gt;
+<dl><dd>&lt;row id=&quot;1&quot;&gt;
+<dl><dd>&lt;vmrs_code&gt;4WDC&lt;/vmrs_code&gt;
+</dd></dl>
+</dd><dd>&lt;/row&gt;  &lt;row id=&quot;2&quot;&gt;
+<dl><dd>&lt;vmrs_code&gt;A/F&lt;/vmrs_code&gt;
+</dd></dl>
+</dd></dl>
+</dd><dd>&lt;/row&gt;&lt;/query&gt;
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=11" title="Edit section: Error Codes">edit</a>]</div><a name="Error_Codes"></a><h4>Error Codes</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_ERROR_BAD_QUERY </td><td> The SQL was badly formed and not executable
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_ERROR_BAD_QUERY_TYPE </td><td> The SQL was not a type that returns a resultset
+</td></tr>
+<tr>
+<td> 3 </td><td> CATCH_E_ERROR_MISSING_QUERY </td><td> An SQL query was not specified
+</td></tr>
+<tr>
+<td> 4 </td><td> CATCH_E_ERROR_TOO_MANY_REQUESTS </td><td> Rest call requests exceeded the limit set in <a href="Global_Controls.html#Global_.28GB.29" title="Global Controls"><i>[gb_controls]rest_rate_limit</i></a>.
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=12" title="Edit section: Error Output">edit</a>]</div><a name="Error_Output"></a><h5>Error Output</h5>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</p><p>&lt;response&gt;
+</p>
+<dl><dd>&lt;error&gt;CATCH_E_ERROR_MISSING_QUERY&lt;/error&gt;
+</dd></dl>
+<p>&lt;/response&gt;
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;action=edit&amp;section=13" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 10961: Modify query() web service to accept multiple queries. Live 02/04/2015
+</li><li> (DEV-20460) Add rate limiting to Catch-e web-services. Live dd/12/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="./Web_service_Gb::Queries::query().html">https://help.catch-e.net.au/mediawiki/index.php/Web_service_Gb::Queries::query%28%29</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Web_service_Gb::Queries::query()">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Web_service_Gb::Queries::query().html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Web_service_Gb::Queries::query%28%29&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.07 secs. -->
+</body></html>

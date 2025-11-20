@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Mail Limit,Catch-e support,Job Scheduler,Job Scheduler:Job,Mail Query,Main Page,SYSTEM,User Defined Queries" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Mail Limit - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Mail Limit</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Mail_Limit.html#column-one">navigation</a>, <a href="Mail_Limit.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> / <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> &rarr; <a href="Mail_Query.html" title="Mail Query">mailQuery</a>  &rarr; <strong>Mail Limit</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Mail_Limit.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#When_set"><span class="tocnumber">2</span> <span class="toctext">When set</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#Error_recipients"><span class="tocnumber">3</span> <span class="toctext">Error recipients</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#mailQueue_Workflow_Illustration"><span class="tocnumber">4</span> <span class="toctext">mailQueue Workflow Illustration</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#Validations_and_Alert_messages"><span class="tocnumber">5</span> <span class="toctext">Validations and Alert messages</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#Troubleshooting_tips_when_.22Mail_Limit.22_is_used"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting tips when "Mail Limit" is used</span></a></li>
+<li class='toclevel-1'><a href="Mail_Limit.html#System_Notes"><span class="tocnumber">7</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>The "Mail Limit" field allows you to set the limit of emails being sent. The default value for new jobs is "blank", but can be edited.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=2" title="Edit section: When set">edit</a>]</div><a name="When_set"></a><h4>When set</h4>
+<p>When a mail limit is set and the number of emails created in the mailQuery batch falls under the "Mail Limit" amount, the job will run successfully.<br />
+If the email batch volume exceeds the set limit, the job will fail and generates an error email with the following error “Email Limit exceeded – batch total xxxx.  Please re-set Mail Limit amount and re-run scheduled job.”<br /> 
+The same error is also displayed in the “Message” column of the affected row in the Scheduler / Queue tab.<br /> 
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=3" title="Edit section: Error recipients">edit</a>]</div><a name="Error_recipients"></a><h4>Error recipients</h4>
+<p>If you are setting a "Mail Limit", add your email address, or your businesses IT Support email address to the list of Error recipients, so that you can be alerted if the job fails.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=4" title="Edit section: mailQueue Workflow Illustration">edit</a>]</div><a name="mailQueue_Workflow_Illustration"></a><h4>mailQueue Workflow Illustration</h4>
+<p><a href="./Image:Mail_Limit.png.html" class="image" title="Image:Mail_Limit.png"><img src="../../clients/help/wiki/images/5/54/Mail_Limit.png" alt="Image:Mail_Limit.png" width="850" height="481" longdesc="/mediawiki/index.php/Image:Mail_Limit.png" /></a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=5" title="Edit section: Validations and Alert messages">edit</a>]</div><a name="Validations_and_Alert_messages"></a><h4>Validations and Alert messages</h4>
+<p>Below are alerts you may see during this process and the reasons why they have happened.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Alert</th><th>Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Validation email
+</td></tr>
+<tr>
+<td>Email Limit exceeded – batch total xxxx.  Please re-set Mail Limit amount and re-run scheduled job.</td><td>If the email batch volume exceeds the set limit, the job will<br />
+<ol><li> Not create any emails
+</li><li> Send the Error recipients the email message shown here
+</li><li> Update the job's "Status" to 'failed'
+</li></ol>
+<p><br />
+If your process volume has grown and the limit set is too low, increase the amount in this field and re-set the job to 'Pending' status. The batch total in the error email will help you decide if this is the case.
+<br />
+If you think there may be an error in the query used by this job that is creating too many emails, contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e support</a> to help you analyse this.
+<br />
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=6" title="Edit section: Troubleshooting tips when &quot;Mail Limit&quot; is used">edit</a>]</div><a name="Troubleshooting_tips_when_.22Mail_Limit.22_is_used"></a><h4>Troubleshooting tips when "Mail Limit" is used</h4>
+<p>The batch total is calculated by counting the ‘mail_group_by’ field. Therefore, the batch total of the job can only be determined at run time.<br />
+</p><p>If you are analysing a query used in a mailQuery job, check if it is using library placeholders, as the dataset may return more records than the scheduler job would.<br />
+I.e. if a HAVING clause is required, it will not process outside of the scheduler (see below).<br />
+</p><p><a href="User_Defined_Queries.html#Including_derived_fields_in_WHERE_or_HAVING_clause" title="User Defined Queries">Including derived fields in WHERE or HAVING clause</a><br />
+Derived fields can't be included in the WHERE or HAVING statements of the SQL. To overcome this, you can include a special comment 'having_clause' followed by the required logic. E.g.
+</p>
+<pre>
+# having_clause $row['service_overdue'] == 'yes'
+or
+# having_clause $row['service_overdue'] == 'yes' &amp;&amp; $row['service_overdue_days'] &gt; 10
+</pre>
+<p>Note, PHP code is used in the above, so 'is equal to' operator is == not =
+</p><p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;action=edit&amp;section=7" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20217) Create a limit for emails that a mailQuery job can send. Live dd/dd/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Mail_Limit.html">https://help.catch-e.net.au/mediawiki/index.php/Mail_Limit</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Mail_Limit">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Mail_Limit.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Mail_Limit&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.04 secs. -->
+</body></html>

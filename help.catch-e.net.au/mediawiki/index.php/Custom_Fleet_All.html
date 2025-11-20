@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Custom Fleet All,FLEET,FLEET CONTROLS,Fleet Card All,Interface To:Interface,Interface To Card Services,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Custom Fleet All - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Custom Fleet All</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Custom_Fleet_All.html#column-one">navigation</a>, <a href="Custom_Fleet_All.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="FLEET_CONTROLS.html" title="FLEET CONTROLS">Controls</a> / Interfaces / <a href="Interface_To_Card_Services.html" title="Interface To Card Services">Card Services</a> &rarr; <strong>CUSTA</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#Import_Details"><span class="tocnumber">2</span> <span class="toctext">Import Details</span></a></li>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#File_Columns_and_Mappings"><span class="tocnumber">3</span> <span class="toctext">File Columns and Mappings</span></a></li>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#Sample_file"><span class="tocnumber">4</span> <span class="toctext">Sample file</span></a></li>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#Set-up_Notes"><span class="tocnumber">5</span> <span class="toctext">Set-up Notes</span></a></li>
+<li class='toclevel-1'><a href="Custom_Fleet_All.html#System_Notes"><span class="tocnumber">6</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Custom Fleet transaction file interface is used for importing all Custom Fleet transactions.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=2" title="Edit section: Import Details">edit</a>]</div><a name="Import_Details"></a><h4>Import Details</h4>
+<p>The required file is in txt format. Only the transaction rows are imported (these are indicated by a '30' and '40' as the row type).<br />
+The file may be imported as either a zipped or text file.<br />
+Refer to the <a href="https://help.catch-e.net.au/clients/help/wiki/images/d/d0/SCTF_User_Manual_V1_1.docx" class='internal' title="SCTF User Manual V1 1.docx">Customfleet User Manual</a> for details on the Customfleet Standard Client Transaction File .
+Below are the mappings used where row type = '30' and '40'.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=3" title="Edit section: File Columns and Mappings">edit</a>]</div><a name="File_Columns_and_Mappings"></a><h4>File Columns and Mappings</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>File Column Name</th><th>[table]field</th><th>Comments
+</th></tr>
+<tr>
+<td>A Row Type</td><td></td><td>Only imported where Row Type = '30' and '40' and relates to contract vehicle data e.g. 'rental' for product type in column 'K'
+</td></tr>
+<tr>
+<td>B Invoice Number</td><td>[fm_fuel]invoice_no</td><td>
+</td></tr>
+<tr>
+<td>C Reference Number</td><td></td><td>For Column 'C' the Catch-e import process ignores the backslash and any value to the right of it from the reference number. The backslash and value to the right should be left in the import file. See the sample file below
+</td></tr>
+<tr>
+<td>D Reg No</td><td> </td><td>
+</td></tr>
+<tr>
+<td>E</td><td> </td><td>
+</td></tr>
+<tr>
+<td>F Transaction Date</td><td> </td><td>Transaction date from column 'F' can be formatted as either dd/mm/yy or dd/mm/yyyy in the txt file.
+</td></tr>
+<tr>
+<td>G Product Class</td><td> </td><td>
+</td></tr>
+<tr>
+<td>H Transaction Number</td><td>[fm_fuel]docket_number</td><td>
+</td></tr>
+<tr>
+<td>I Merchant Name</td><td>[fm_fuel]site_location</td><td>
+</td></tr>
+<tr>
+<td>J</td><td> </td><td>
+</td></tr>
+<tr>
+<td>K Product Type</td><td> </td><td>
+</td></tr>
+<tr>
+<td>L Product Description</td><td> </td><td>Description field in fm_fuel and fm_maintenance - use VMRS description followed by column 'L'.
+</td></tr>
+<tr>
+<td>M Quantity</td><td>[fm_fuel]quantity</td><td>
+</td></tr>
+<tr>
+<td>N Odometer</td><td>[fm_fuel]odometer</td><td>
+</td></tr>
+<tr>
+<td>O</td><td> </td><td>
+</td></tr>
+<tr>
+<td>P Amount Net</td><td>[fm_fuel]product_net</td><td>
+</td></tr>
+<tr>
+<td>Q Amount GST</td><td>[fm_fuel]product_gst</td><td>
+</td></tr>
+<tr>
+<td>R</td><td> </td><td>
+</td></tr>
+<tr>
+<td>S Amount Total</td><td> </td><td>
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=4" title="Edit section: Sample file">edit</a>]</div><a name="Sample_file"></a><h4>Sample file</h4>
+<p><a href="./Image:Sample_custa_interface_data.png.html" class="image" title="Image:sample_custa_interface_data.png"><img src="../../clients/help/wiki/images/1/16/Sample_custa_interface_data.png" alt="Image:sample_custa_interface_data.png" width="1757" height="384" longdesc="/mediawiki/index.php/Image:Sample_custa_interface_data.png" /></a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=5" title="Edit section: Set-up Notes">edit</a>]</div><a name="Set-up_Notes"></a><h4>Set-up Notes</h4>
+<p>On the  <a href="./Interface_To:Interface.html" title="Interface To:Interface">Fleet / Controls / Interfaces / Card Services/Interfaces</a> screen it is recommended that the field "Description Import Type" is set to "Suffix" to allow the short VMRS code description to be set before the Custom Fleet description to give a meaningful description.  Refer to the Catch-e demonstration system for examples of mappings.
+</p>
+<table style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a> </td><td align="left"> Custom Fleet sold the Fleet Card business in 2015/2016. Fleet Card issue an almost identical file to this one. If your file was generated by the Fleet Card entity please use the <a href="Fleet_Card_All.html" title="Fleet Card All">FLEETA</a> Interface.
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 13291: Change the ABN validation point from the Customfleet 'CUSTA' interface. Live 04/03/2016
+</li><li> 15011: Modify Card Transaction Interfaces CUSTA &amp; CUSTO/ Live 06/03/2017
+</li><li> 15940: Copy FLEETA interface as is, renaming it CUSTA. Live 01/06/2017
+</li><li> 16568: Changes to 'CUSTA' Interface. Live xx/02/2018
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Custom_Fleet_All.html">https://help.catch-e.net.au/mediawiki/index.php/Custom_Fleet_All</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Custom_Fleet_All">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Custom_Fleet_All.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Custom_Fleet_All&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.06 secs. -->
+</body></html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Onboarding contracts,FLEET,Fleet Management,IMPORT DATA,Importdata:contract Budgets,Main Page,Vehicle Scheduler Jobs,WORKFLOW" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Onboarding contracts - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Onboarding contracts</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Onboarding_contracts.html#column-one">navigation</a>, <a href="Onboarding_contracts.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="WORKFLOW.html" title="WORKFLOW">Workflow</a> &rarr; <a href="Fleet_Management.html" title="Fleet Management">Fleet Management</a> &rarr; <b>Contracts</b> &rarr; <strong>Onboarding contracts</strong>
+</p>
+<hr />
+<a name="Qualifiers"></a><h4>Qualifiers</h4>
+<ol><li> You want to create contracts in bulk
+</li><li> The contracts are for existing vehicles. E.g 
+<ol><li> Sale and Leaseback
+</li><li> Recording 'History Only' contracts to manage a client's vehicles as they fall due for renewal or replacement.
+</li></ol>
+</li></ol>
+<hr />
+<a name="Overview"></a><h4>Overview</h4>
+<p>There are many different approaches you can take to this.
+Below is a basic checklist and update files to do this
+</p>
+<a name="File_List"></a><h4>File List</h4>
+<ol><li> <a href="https://help.catch-e.net.au/clients/help/wiki/images/f/f5/Onboarding_checklist.xlsx" class='internal' title="Onboarding checklist.xlsx">Onboarding checklist.xlsx</a>
+</li><li> <a href="https://help.catch-e.net.au/clients/help/wiki/images/2/22/Onboarding_fm_drivers.xlsx" class='internal' title="Onboarding fm drivers.xlsx">Onboarding fm_drivers.xlsx</a>
+</li><li> <a href="https://help.catch-e.net.au/clients/help/wiki/images/a/af/Onboarding_fm_contracts.xlsx" class='internal' title="Onboarding fm contracts.xlsx">Onboarding fm_contracts.xlsx</a>
+</li></ol>
+<p><br />
+</p>
+<a name="Variant_Data"></a><h4>Variant Data</h4>
+<p>If you are able to populate either the red_book_code or the nvic_code and you have the vehicle data, you can back-fill variant data into the contract after creation.<br />
+See below for a sample query.<br />
+</p>
+<pre>
+select cl.client_code
+, c.contract_id, c.description, c.variant_id
+, c.red_book_code
+, c.service_interval_km
+, c.service_interval_months
+, '----&gt;' as fm_contracts_import
+, c.contract_id
+, ifnull(v.variant_id,0) as variant_id
+, ifnull(v.service_kms,c.service_interval_km) as service_interval_km
+, ifnull(v.service_mths,c.service_interval_months) as service_interval_months
+from fm_contracts as c
+inner join fm_clients as cl on cl.client_id = c.client_id and cl.client_code = 'CLIENTCODE'
+left join qt_variants as v on v.variant_code = red_book_code
+left join qt_quotes as q on q.quote_id = c.quote_id
+where q.quote_id is null
+order by c.red_book_code, c.contract_id
+;
+</pre>
+<p><br />
+</p>
+<hr />
+<p><small>
+</p>
+<a name="Related_Pages"></a><h4>Related Pages</h4>
+<dl><dd> <a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="WORKFLOW.html" title="WORKFLOW">Workflow</a> &rarr; <a href="Fleet_Management.html" title="Fleet Management">Fleet Management</a> &rarr; <b>Contracts</b> &rarr; <strong>Onboarding contracts</strong>
+</dd><dd> <a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="WORKFLOW.html" title="WORKFLOW">Workflow</a> &rarr; <a href="Fleet_Management.html" title="Fleet Management">Fleet Management</a> &rarr; <a href="Vehicle_Scheduler_Jobs.html" title="Vehicle Scheduler Jobs">Scheduler Jobs</a> &rarr; <a href="Vehicle_Scheduler_Jobs.html#Contract_Budgets" title="Vehicle Scheduler Jobs">Contract Budgets</a>
+</dd><dd> <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="IMPORT_DATA.html" title="IMPORT DATA">Import Data</a> &rarr; <a href="./Importdata:contract_Budgets.html" title="Importdata:contract Budgets">Contract Budgets</a></small>
+</dd></dl>
+<div class="printfooter">
+Retrieved from "<a href="Onboarding_contracts.html">https://help.catch-e.net.au/mediawiki/index.php/Onboarding_contracts</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Onboarding_contracts">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Onboarding_contracts.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Onboarding_contracts&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 906f514f4f4c in 0.08 secs. -->
+</body></html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Event Query,Event Query,Catch-e support,Clients:Events,Clients:Events:Queries,Drivers:Events:Queries,Job Scheduler,Job Scheduler:Job,Job Scheduler:Queue,Job Scheduler:Schedule,Main Page" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Event Query - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Event Query</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Event_Query.html#column-one">navigation</a>, <a href="Event_Query.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Job_Scheduler.html" title="Job Scheduler">Scheduler</a> &rarr; <a href="./Job_Scheduler:Schedule.html" title="Job Scheduler:Schedule">Schedule</a> | <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Job</a> | <a href="./Job_Scheduler:Queue.html" title="Job Scheduler:Queue">Queue</a> &rarr;   <a href="Scheduler_Job_Types.html#Queries" title="Scheduler Job Types">Method</a> &rarr; <strong>eventQuery()</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Event_Query.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Event_Query.html#How_it_works"><span class="tocnumber">2</span> <span class="toctext">How it works</span></a>
+<ul>
+<li class='toclevel-2'><a href="Event_Query.html#Parameters"><span class="tocnumber">2.1</span> <span class="toctext">Parameters</span></a></li>
+<li class='toclevel-2'><a href="Event_Query.html#Event_Table"><span class="tocnumber">2.2</span> <span class="toctext">Event Table</span></a></li>
+<li class='toclevel-2'><a href="Event_Query.html#Contract_Events"><span class="tocnumber">2.3</span> <span class="toctext">Contract Events</span></a></li>
+<li class='toclevel-2'><a href="Event_Query.html#Driver_Events"><span class="tocnumber">2.4</span> <span class="toctext">Driver Events</span></a></li>
+<li class='toclevel-2'><a href="Event_Query.html#Client_Events"><span class="tocnumber">2.5</span> <span class="toctext">Client Events</span></a></li>
+<li class='toclevel-2'><a href="Event_Query.html#System_Errors"><span class="tocnumber">2.6</span> <span class="toctext">System Errors</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Event_Query.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>An eventQuery <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Scheduled Job</a> can create Contract or Driver Events. The nature of the event created is determined by the query you write. One event is created per query row.
+</p><p>eventQuery is most suitable for executing repetitive, high-volume processes that you want to keep a record of or perhaps manage from the KPI screens.
+</p><p>Contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e support</a> if you would like us to set-up an eventQuery for you.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=2" title="Edit section: How it works">edit</a>]</div><a name="How_it_works"></a><h3>How it works</h3>
+<p>To create an eventQuery job, you need to write a specially formatted <a href="User_Defined_Queries.html" title="User Defined Queries">query</a> and save it in the <i>gb_queries</i> table (this is normally done for you by Catch-e staff). 
+You will now be able to select the query from the search list when setting up the scheduled job.<br />
+</p><p>The event query needs to contain all the information you want to use in the event records. 
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=3" title="Edit section: Parameters">edit</a>]</div><a name="Parameters"></a><h4>Parameters</h4>
+<p>Each type of job has different parameters that need to be defined in the <a href="./Job_Scheduler:Job.html" title="Job Scheduler:Job">Scheduler / Job</a> for it to run. Below are the parameters that are used in a eventQuery job.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Parameter </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 12%;"> Query ID</td><td> Input Text, query_id for the required gb_queries record.  Includes a search icon to search queries by Name or Description.
+</td></tr>
+<tr>
+<td>Event Table</td><td> Displays the type of event that will be created. <br />
+<p>Field is not editable and shows value based on set-up done in the query. Refer <a href="Event_Query.html#Parameters" title="Event Query">Event table</a> for set-up details.
+</p>
+</td></tr>
+<tr>
+<td>Event Type</td><td>Select the event you want to create and store the email record against. This is a list of events that belong to the chosen "Event Table".<br />
+<p><b>Note:</b> The contract events 'Accident', 'Cost Centre Change', 'Division Change', 'Driver Change' and 'Location Change' are excluded from the drop down list.  
+</p>
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=4" title="Edit section: Event Table">edit</a>]</div><a name="Event_Table"></a><h4>Event Table</h4>
+<p>It is one of the parameter available to set-up the job which shows the event type it will create. It is not editable and set-up is required to be done within the query.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Query attribute </th><th> Display Value </th><th> Comment
+</th></tr>
+<tr>
+<td style="width: 12%;"> event_contract_id</td><td style="width: 20%;"> Contract</td><td> To create contract events.
+</td></tr>
+<tr>
+<td> event_client_id</td><td> Client </td><td> To create client events.
+</td></tr>
+<tr>
+<td> event_driver_id</td><td> Driver </td><td> To create client events.
+</td></tr>
+<tr>
+<td> No event attributes </td><td> Event key not defined in this query </td><td> Event key is missing in the query and require correct set-up before query can be saved/scheduled.
+</td></tr>
+<tr>
+<td> Multiple event attributes </td><td> Multiple event keys in this query! </td><td> Only one type of contract, client or driver events can be created by the job. Correct set-up in query is required before it can be saved/scheduled.
+</td></tr></table>
+<p><br /> <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=5" title="Edit section: Contract Events">edit</a>]</div><a name="Contract_Events"></a><h4>Contract Events</h4>
+<p>If you are creating a 'Contract' event, the following values can be configured in your query to populate into new event records created by the job.<br /> 
+Use the "Query Field" below in the query to identify the field you are configuring. If the field is not specified in your query, the "Default Value" will be used.<br />
+If you don't want users to create events like this from the <b>Contracts / Events</b> tab, make sure the <a href="Posting_Classes.html" title="Posting Classes">Posting Classes / Details</a> "System Event" check box is checked.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Query Field </th><th> Type </th><th> Default Value </th><th> Description </th><th> {table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Configurable
+</td></tr>
+<tr>
+<td>event_contract_id</td><td>Mandatory</td><td><i>N/A</i></td><td>The contract id the event should be assigned to </td><td>[fm_contract_events]contract_id
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Value field</td><td>[fm_contract_events]event_value
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td><i>Selected posting class description</i></td><td>Value for the Event Description field</td><td>[fm_contract_events]description
+</td></tr>
+<tr>
+<td>event_amount</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Amount field</td><td>[fm_contract_events]event_amount
+</td></tr>
+<tr>
+<td>event_action_id</td><td>Optional</td><td><i>None</i></td><td>Value for the Event Action field</td><td>[fm_contract_events]contract_event_action_id
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Due Date field</td><td>[fm_contract_events]due_date
+</td></tr>
+<tr>
+<td>event_completed_flag</td><td>Optional</td><td><i>yes</i> (displays as checked)</td><td>Status of the Event Completed field</td><td>[fm_contract_events]completed_flag
+</td></tr>
+<tr>
+<td>event_table_name</td><td>Optional</td><td><i>NULL</i></td><td>Value for the Event Table Name field</td><td>[fm_contract_events]table_name
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="5"> Not Configurable
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>CURDATE()</td><td>When the job is run, the field "Date" will be populated with the system date.</td><td>[fm_contract_events]event_date
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>NULL</td><td>This will be populated if a report attachment is created by the job, otherwise it will be 'NULL'.</td><td>[fm_contract_events]attachment_id
+</td></tr>
+<tr>
+<td> </td><td>Not available</td><td>100000</td><td>When the job is run, the field "User" is populated with the system user record 'admin'.</td><td>[fm_contract_events]user_id
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=6" title="Edit section: Driver Events">edit</a>]</div><a name="Driver_Events"></a><h4><a href="./Drivers:Events:Queries.html" title="Drivers:Events:Queries">Driver Events</a></h4>
+<p>The following parameters apply if the Event Table "Driver" is selected in the mailQuery job configuration.<br />
+When the mailQuery job is run, the system date is used as the event "Date" for any new record that are created.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Name </th><th> Type </th><th> Default Value </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Configurable
+</td></tr>
+<tr>
+<td>event_driver_id</td><td>Mandatory</td><td>Automatic</td><td>The driver id the event should be assigned to
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td>NULL</td><td>Value for the Event Value field
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td>Selected posting class description</td><td>Value for the Event Description field
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td>NULL</td><td>Value for the Event Due Date field
+</td></tr>
+<tr>
+<td>event_completed_flag</td><td>Optional</td><td>yes</td><td>The default value of 'yes' is populated into this field. This means the "Completed" check box of the event will be checked on creation.
+</td></tr>
+</table>
+<p><br />
+</p><p>Following is an example of a query you could use in gb_queries to run a Driver eventQuery<br />
+This would create a driver event requiring follow-up in two days for quotes created in the last day and set to 'sent' status.;
+</p>
+<pre>
+SELECT q.driver_id AS event_driver_id,CONCAT('Quote ',q.quote_id) AS event_value
+,'' AS event_description
+,'100001' AS event_action_id,DATE_FORMAT(q.quote_date + 2,'%Y-%m-%d') AS event_due_date
+,'no' AS event_completed_flag
+, q.user_id_last_edit AS event_user_id_edit
+FROM qt_quotes AS q
+WHERE q.status_flag = 'sent' AND q.quote_date BETWEEN TIMESTAMP(CURDATE()) AND TIMESTAMP(ADDDATE(CURDATE(), INTERVAL 1 DAY))
+</pre>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=7" title="Edit section: Client Events">edit</a>]</div><a name="Client_Events"></a><h4><a href="./Clients:Events:Queries.html" title="Clients:Events:Queries">Client Events</a></h4>
+<p>The following parameters apply to events if the selected "Event Table" is 'Client' is selected in job configuration.<br />
+When the mailQuery job is run, the system date is used as the event "Date" for any new record that are created.<br /><br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th> Name </th><th> Type </th><th> Default Value </th><th> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Configurable
+</td></tr>
+<tr>
+<td>event_client_id</td><td>Mandatory</td><td>automatic</td><td>The client id the event should be assigned to
+</td></tr>
+<tr>
+<td>event_value</td><td>Optional</td><td>NULL</td><td>Value for the Event Value field
+</td></tr>
+<tr>
+<td>event_description</td><td>Optional</td><td>Selected posting class description</td><td>Value for the Event Description field
+</td></tr>
+<tr>
+<td>event_action_id</td><td>Optional</td><td>None</td><td>Value for the Event Action field
+</td></tr>
+<tr>
+<td>event_due_date</td><td>Optional</td><td>NULL</td><td>Value for the Event Due Date field
+</td></tr>
+<tr>
+<td>event_last_edit </td><td>Optional</td><td> </td><td>Last Edit
+</td></tr>
+<tr>
+<td>event_user_id_edit </td><td>Optional</td><td> </td><td>You can over-write this record with a particular user's record, so their name will be displayed in the <a href="./Clients:Events.html" title="Clients:Events">Clients / Events</a> tab and the event will display in their KPI's.
+</td></tr>
+<tr>
+<td>event_completed_flag </td><td>Optional</td><td>yes</td><td>The default value of 'yes' is populated into this field. This means the "Completed" check box of the event will be checked on creation.
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Not Configurable
+</td></tr>
+<tr>
+<td>attachment_id</td><td>Not available</td><td>NULL</td><td>This will be populated if a report attachment is created, otherwise it will be 'NULL'.
+</td></tr>
+</table>
+<p><br />
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=8" title="Edit section: System Errors">edit</a>]</div><a name="System_Errors"></a><h4>System Errors</h4>
+<p>Details about error code and its troubleshooting information.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> &nbsp; </th><th> Error Codes </th><th> Notes
+</th></tr>
+<tr>
+<td style="width: 3%"> 1 </td><td> CATCH_E_EVENT_KEY_NOT_DEFINED </td><td> When the query linked to the job is missing one of the event key fields i.e. 'event_contract_id', 'event_driver_id', or 'event_client_id'
+</td></tr>
+<tr>
+<td> 2 </td><td> CATCH_E_EVENT_MULTIPLE_KEYS </td><td> When the query linked to the job contains one more than one of the event key fields, then it's not clear which key is to be enforced. i.e. 'event_contract_id', 'event_driver_id', or 'event_client_id'.
+</td></tr></table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;action=edit&amp;section=9" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 4122:gb::queries::eventQuery()Live 23/01/2014
+</li><li> 9221:Scheduled Services:Refactor eventQuery Live 11/09/2014
+</li><li>(DEV-20593) mailQuery enhancements to Client Events Live 21/09/2019
+</li><li>(DEV-21030) mailQuery remove System Event codes from list (A,CC, DIV, Driver &amp; LOC). 14/04/2020 
+</li><li>(DEV-20906) Mail Query event creation enhancement. 05/10/2020
+</li><li> (DEV-21245) CATCH_E_EVENT_MULTIPLE_KEYS error triggered when same key exists multiple times . Live 25/10/2021
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Event_Query.html">https://help.catch-e.net.au/mediawiki/index.php/Event_Query</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Event_Query">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Event_Query.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Event_Query&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.06 secs. -->
+</body></html>

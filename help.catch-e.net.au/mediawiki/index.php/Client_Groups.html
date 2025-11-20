@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Client Groups,Administration,Billing,Clients:Contact,Clients:Contact details,Clients:Contract defaults,FLEET,Fm::billings,Mail Filters,Main Page,Parents and Children" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Client Groups - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Client Groups</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Client_Groups.html#column-one">navigation</a>, <a href="Client_Groups.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <strong>Client Groups</strong> &rarr; <strong>Contact</strong>  
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Client_Groups.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Client_Groups.html#Using_Groups"><span class="tocnumber">2</span> <span class="toctext">Using Groups</span></a></li>
+<li class='toclevel-1'><a href="Client_Groups.html#Field_Descriptions"><span class="tocnumber">3</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="Client_Groups.html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Client_Groups&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Create a client group when the clients are related. this enables you to filter records by group on Search and <a href="Billing.html" title="Billing">Billing</a> screens. You can also generate reports by group.<br />
+</p><p><a href="Billing.html" title="Billing">Billings</a> can be emailed to a stored group email address.<br /> There will be a separate attachment for each client's invoice because invoices cannot be issued at the group level, they must be invoiced to a specific client.<br />
+</p><p>You can also set-up specific <a href="./Fm::billings.html" title="Fm::billings">scheduler billing jobs</a> to run for a selected client group.<br />
+</p><p>For a nice way to navigate between related entity client records, visit the <a href="Parents_and_Children.html" title="Parents and Children">Parents and Children</a> page.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Client_Groups&amp;action=edit&amp;section=2" title="Edit section: Using Groups">edit</a>]</div><a name="Using_Groups"></a><h4>Using Groups</h4>
+<p><a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> "Group" - record the "Group code" in this field for each client that is part of the group.<br />
+<a href="./Clients:Contract_defaults.html" title="Clients:Contract defaults">Clients / Contract Defaults</a> "Use Group Email?" - check on this check box if you want to email the client's invoices to this email address instead of the <a href="./Clients:Contact.html" title="Clients:Contact">Clients / Contact</a> "A/C Payable" email address.<br />
+<a href="./Clients:Contact_details.html" title="Clients:Contact details">Clients / Contact Details</a> "Client Allocations" - allocate a client contact to multiple clients within a group here.<br />
+<a href="Mail_Filters.html" title="Mail Filters">Mail Queue</a> "Group Code" - use this field to filter and locate group email invoices.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Client_Groups&amp;action=edit&amp;section=3" title="Edit section: Field Descriptions">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Client Details (Left)
+</td></tr>
+<tr>
+<td> Group code ID </td><td> Numeric </td><td> System generated unique id </td><td>
+</td></tr>
+<tr>
+<td> Group code </td><td> Text </td><td> User assigned code, also unique. Used on various reports and billing to identify client group. The code cannot be blank or constructed entirely from spaces. </td><td>
+</td></tr>
+<tr>
+<td> Name </td><td> Text </td><td> Group name. </td><td>
+</td></tr>
+<tr>
+<td> Contact </td><td> Text </td><td> Contact name. </td><td>
+</td></tr>
+<tr>
+<td>ABN / ACN </td><td>Text (14)</td><td> Enter the client's Australian Business Number (ABN). If you are in New Zealand, this is the New Zealand Business Number (NZBN).<br /> Enter the client's Australian Company Number (ACN). If you are in New Zealand, this is the Company Number (CN or Co Number).
+</td><td>
+</td></tr>
+<tr>
+<td> A/C Payable</td><td> Text </td><td> Email address if sending billings to an central email address for a group. </td><td>
+</td></tr>
+<tr>
+<td> External Id </td><td> Text </td><td> Display only field. </td><td>
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Client_Groups&amp;action=edit&amp;section=4" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 12325: Prevent Client Code entry of [SPACE]. Live 27/01/2016
+</li><li> (DEV-20816) Add 'Contact' tab to Clients screen. Live dd/12/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Client_Groups.html">https://help.catch-e.net.au/mediawiki/index.php/Client_Groups</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Client_Groups">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Client_Groups.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Client_Groups&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.05 secs. -->
+</body></html>

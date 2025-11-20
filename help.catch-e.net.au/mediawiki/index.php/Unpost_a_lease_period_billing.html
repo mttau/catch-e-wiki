@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Unpost a lease period billing,Adjust a lease period billing,Billing,Billing Re-print,Contracts:Lease,Create an email billing batch,Main Page,Unpost an invoice,Workflow,Workflow Invoicing" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Unpost a lease period billing - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Unpost a lease period billing</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Unpost_a_lease_period_billing.html#column-one">navigation</a>, <a href="Unpost_a_lease_period_billing.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Workflow.html" title="Workflow">Workflow</a>  &rarr; <b>Accounting</b> &rarr; <b>Invoicing</b> &rarr;  <strong>Unpost a lease period billing</strong>
+</p>
+<hr />
+<a name="Qualifiers"></a><h4>Qualifiers</h4>
+<p>You want to unpost a lease period billing and the following conditions are met:
+</p>
+<dl><dd>1. The billing has not been receipted 
+<dl><dd> You can check by going to <b>Contracts / FBT</b> and printing the Receipts report).
+</dd><dd> If the billing has been receipted, you will need to update the Receipts batch and de-select the record
+</dd></dl>
+</dd><dd>2. The billing has not been exported
+</dd><dd>3. There are no adjustment records attached to the period you want to unpost
+<dl><dd> If you want to unpost records in a period with adjustments, these must be done in reverse sequence and also deleted to gain access to unpost the previous record.
+</dd><dd> E.g. Unpost record 4.3, then delete it. Unpost record 4.2, then delete it. Record 4 can then be unposted.
+</dd></dl>
+</dd></dl>
+<hr />
+<p><br />
+</p>
+<a name="Un-Post"></a><h4>Un-Post</h4>
+<ol><li> Note the Contract ID and Period that you want to unpost
+</li><li> Select the Contract ID and go to the <a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a> tab
+</li><li> <b>Period</b> - select the record you want to un-post. (Records must be un-posted in reverse order if there is more than one, E.g. unpost 2.2, then 2)
+</li><li> <a href="./Contracts:Lease.html#Action_Buttons" title="Contracts:Lease">Click on</a> <a href="./Image:Un-Post.png.html" class="image" title="Image:Un-Post.png"><img src="../../clients/help/wiki/images/9/94/Un-Post.png" alt="Image:Un-Post.png" width="55" height="24" longdesc="/mediawiki/index.php/Image:Un-Post.png" /></a>
+</li><li> Check the alert message
+</li><li> Click on OK
+</li><li> Repeat for each record you need to unpost
+</li></ol>
+<p><br />
+</p>
+<a name="Invoice"></a><h4>Invoice</h4>
+<p>An un-posted record will be removed from its invoice. The invoice still exists, but will update to only show remaining records.<br /> The invoice can be re-printed from the <a href="Billing_Re-print.html" title="Billing Re-print">Billing &rarr; Reprint</a> screen and will show the revised records and totals.<br />
+If all the records of an invoice have been un-posted, the invoice is deleted and is no longer available on the <a href="Billing_Re-print.html" title="Billing Re-print">Billing &rarr; Reprint</a> screen.<br />
+</p>
+<a name="Employee_Transactions"></a><h4>Employee Transactions</h4>
+<p>If you have linked employee transaction records, these are deleted and removed from <b>Employees / Transactions</b> when a billing record is unposted.
+</p>
+<a name="Email"></a><h4>Email</h4>
+<ol><li> The client's invoice email is still pending, this will send a corrected invoice
+<ol><li> Go to the Mail Queue 
+</li><li> Locate the email and launch the invoice
+</li><li> Check the invoice shows the correct amounts
+</li><li> Send the email
+</li></ol>
+</li><li> If the client's invoice email has already been sent and you want to send a corrected invoice
+<ol><li> Go to <a href="Billing_Re-print.html" title="Billing Re-print">Fleet / Billing / Re-print</a>
+</li><li> <b>Client Code</b> - enter the client code or
+</li><li> <b>Reg No</b> - enter the registration number or
+</li><li> <b>Invoice No</b> - enter the invoice number
+</li><li> Click on Go
+</li><li> Click on the PDF icon to launch the invoice
+</li><li> Check the invoice shows the correct amounts
+</li><li> Save and email to your client contact
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<a name="Next_Steps"></a><h4>Next Steps</h4>
+<ol><li> Once you have un-posted a record, it is returned to ‘pending’ status. 
+</li><li> It can be adjusted at this point and will re-invoice next time the billing is run.
+</li></ol>
+<p><br />
+</p>
+<hr />
+<p><small>
+</p>
+<a name="Related_Pages"></a><h4>Related Pages</h4>
+<p><a href="Billing.html" title="Billing"> Fleet / Billing</a>
+</p>
+<dl><dd><a href="Workflow_Invoicing.html" title="Workflow Invoicing">Creating Invoices</a>
+</dd><dd> <a href="Create_an_email_billing_batch.html" title="Create an email billing batch">Create an email billing batch</a>
+</dd></dl>
+<p><b>Fleet / Billing</b> &rarr; <a href="Billing_Re-print.html" title="Billing Re-print">Re-print</a>
+</p>
+<dl><dd><a href="Unpost_an_invoice.html" title="Unpost an invoice">Unpost an invoice</a>
+</dd></dl>
+<p><a href="./Contracts:Lease.html" title="Contracts:Lease">Contracts / Lease</a>
+</p>
+<dl><dd><strong>Unpost a lease period billing</strong>
+</dd><dd><a href="Adjust_a_lease_period_billing.html" title="Adjust a lease period billing">Adjust a lease period billing</a></small>
+</dd></dl>
+<div class="printfooter">
+Retrieved from "<a href="Unpost_a_lease_period_billing.html">https://help.catch-e.net.au/mediawiki/index.php/Unpost_a_lease_period_billing</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Unpost_a_lease_period_billing">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Unpost_a_lease_period_billing.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Unpost_a_lease_period_billing&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.04 secs. -->
+</body></html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Accident Management,Administration,Clients:Quote defaults,Contract Types,Contracts:Finance,Contracts:Vehicle,FLEET,Main Page,Posting Classes,Quotes,Quotes:Accept" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Accident Management - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Accident Management</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Accident_Management.html#column-one">navigation</a>, <a href="Accident_Management.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> &rarr; <a href="./Quotes:Lease.html" title="Quotes:Lease">Lease</a> &rarr; <strong>Accident Management</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Accident_Management.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Accident_Management.html#Set_Up_Steps"><span class="tocnumber">2</span> <span class="toctext">Set Up Steps</span></a>
+<ul>
+<li class='toclevel-2'><a href="Accident_Management.html#Posting_Classes"><span class="tocnumber">2.1</span> <span class="toctext">Posting Classes</span></a></li>
+<li class='toclevel-2'><a href="Accident_Management.html#Contract_Types"><span class="tocnumber">2.2</span> <span class="toctext">Contract Types</span></a></li>
+<li class='toclevel-2'><a href="Accident_Management.html#Renaming"><span class="tocnumber">2.3</span> <span class="toctext">Renaming</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Accident_Management.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>If configured to do so, an Accident Management budget will be available on new quotes when they are created.<br /> 
+If a value is stored in the client record, this budget will be selected and a "Monthly Budget" amount will be added automatically . You can edit the budget amount.<br />
+If a value is not stored in the client record, you can check the Accident Management flag and manually enter a budget amount. This amount can be $0.00 if required. <br /> 
+If the profile is available but not selected, you can select it and add a "Monthly Budget" if you want.<br />
+If a quote has an Accident Management budget selected, the <a href="./Contracts:Vehicle.html" title="Contracts:Vehicle">Contracts / Vehicle</a> "Accident Management" field will be checked when the linked quote is <a href="./Quotes:Accept.html" title="Quotes:Accept">accepted</a> or <a href="./Quotes:Accept.html" title="Quotes:Accept">settled</a>.
+<br />
+</p><p>To add this budget by default for new quotes, go to <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> and enter the required amount in the field "Accident Management Fee".<br />
+Remember that if the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Contract Defaults</a> "Budget Term Deferred" is checked and the quote has a "Months Deferred" value, the default budget amount will be re-calculated. E.g.<br />
+</p>
+<pre>
+&quot;Accident Management Fee&quot; = 6
+&quot;Budget Term Deferred&quot; is checked
+&quot;Term&quot; = 36
+&quot;Months Deferred&quot; = 2
+&quot;Monthly Budget&quot; = ROUND((6*36)/(36-2),2)
+                 = ROUND( 216 / 34 ),2)
+                 = 6.35
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=2" title="Edit section: Set Up Steps">edit</a>]</div><a name="Set_Up_Steps"></a><h4>Set Up Steps</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=3" title="Edit section: Posting Classes">edit</a>]</div><a name="Posting_Classes"></a><h5>Posting Classes</h5>
+<p>Check that the <a href="Posting_Classes.html" title="Posting Classes">Posting Class</a> that is required for this profile is set-up correctly.
+</p>
+<ol><li> Go to menu Fleet / Controls / Accounts / <a href="Posting_Classes.html" title="Posting Classes">Posting Classes</a>
+</li><li> Enter 'AMFEE' into the "Class Code" field and tab out
+</li><li> If 'AMFEE' exists, check the details described to create this record are correct for the existing code.
+</li></ol>
+<p>If 'AMFEE' DOES NOT exist, create it as follows:
+</p>
+<ol><li> Click on New
+</li><li> Enter class code 'AMFEE' ('AMFEE' is a reserved code that helps keep consistency throughout quotes and reports).
+</li><li> Enter "Name" as 'Accident Management' (you can nominate another name if you prefer, go to <a href="Posting_Classes.html" title="Posting Classes">Posting Classes</a> to find out more about how the "Name" works).
+</li><li> For "Quote Profile Table", select 'qt_quote_accident_management_fee' from the list.
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=4" title="Edit section: Contract Types">edit</a>]</div><a name="Contract_Types"></a><h5>Contract Types</h5>
+<p>Add the posting class 'AMFEE' to any Contract Type records you want to add this budget to.
+Remember that you'll need to update quote documents to accommodate this budget.
+<br />
+Go to menu Fleet / Controls / Accounts / <a href="Contract_Types.html" title="Contract Types">Contract Types</a>
+</p>
+<ol><li> Enter or search for the "Type code" you want
+</li><li> Go to Accruals Tab
+</li><li> Click on Edit
+</li><li> On a new row, in the "Class" column, select 'AMFEE' from the listbox
+</li><li> Enter the remaining set-up details in the right of screen and Save
+</li></ol>
+<p><b>Note:</b> New quotes you create now will have the product available. Existing quotes will need to be edited to add 'AMFEE' to the quote.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=5" title="Edit section: Renaming">edit</a>]</div><a name="Renaming"></a><h5>Renaming</h5>
+<p>The budget and profile name of "Accident Management Fee" shown in the <a href="./Quotes:Lease.html" title="Quotes:Lease">Quotes / Lease</a> tab can be renamed by changing the stored <a href="Posting_Classes.html" title="Posting Classes">posting class</a> "Name" for 'AMFEE'.<br />
+The field name "Accident Management" shown in the <a href="./Contracts:Finance.html" title="Contracts:Finance">Contracts / Vehicle</a> tab can be <a href="Screen_Aliases.html" title="Screen Aliases">renamed</a>. This field can also be <a href="Role_Restrictions.html" title="Role Restrictions">role restricted</a> to be 'hidden' or 'read only' if required.
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;action=edit&amp;section=6" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20815) Create Accident Management quote profile. Live 23/09/2019
+</li><li> (DEV-21566) AMFEE not sticking when Client Defaults is 0.00. Live 21/02/2022
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="Accident_Management.html">https://help.catch-e.net.au/mediawiki/index.php/Accident_Management</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Accident_Management">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Accident_Management.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Accident_Management&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.05 secs. -->
+</body></html>

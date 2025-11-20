@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Data File,Account Manager,Dependent Records,Error Report,ExecuteImportTableData,Export Table Data,Export data from a table,Export sample data from a table,Import Table Data,Import data to a table,MacLease Partner Setup" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Data File - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Data File</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Data_File.html#column-one">navigation</a>, <a href="Data_File.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SETUP.html" title="SETUP">Setup</a> / <a href="Import_Table_Data.html" title="Import Table Data">Import Table Data</a> &rarr; <strong>Data File</strong> | <a href="Table_Data.html" title="Table Data">Table Data</a> | <a href="Error_Report.html" title="Error Report">Error Report</a> | <a href="Dependent_Records.html" title="Dependent Records">Dependent Records</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Data_File.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#Recommended_Steps"><span class="tocnumber">3</span> <span class="toctext">Recommended Steps</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#Update_existing_records"><span class="tocnumber">4</span> <span class="toctext">Update existing records</span></a>
+<ul>
+<li class='toclevel-2'><a href="Data_File.html#Example_update"><span class="tocnumber">4.1</span> <span class="toctext">Example update</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Data_File.html#Create_new_records"><span class="tocnumber">5</span> <span class="toctext">Create new records</span></a>
+<ul>
+<li class='toclevel-2'><a href="Data_File.html#Example_create"><span class="tocnumber">5.1</span> <span class="toctext">Example create</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Data_File.html#Preparing_your_Import_file"><span class="tocnumber">6</span> <span class="toctext">Preparing your Import file</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#File_requirements"><span class="tocnumber">7</span> <span class="toctext">File requirements</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#Data_updates_for_new_records"><span class="tocnumber">8</span> <span class="toctext">Data updates for new records</span></a></li>
+<li class='toclevel-1'><a href="Data_File.html#Data_updates_for_existing_records"><span class="tocnumber">9</span> <span class="toctext">Data updates for existing records</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>You can create new records or update existing records in a table with the data file you upload.<br />
+</p><p>When you build the data file for your import, the file doesn't need to contain all of the fields that exist in the table
+</p>
+<ul><li> if changing existing records in a table, only add the fields you are changing to the file
+</li><li> if created new records, only put in the fields you had information for, other fields will be filled with the database's default values<br />
+</li></ul>
+<p>If you are using <a href="ExecuteImportTableData.html" title="ExecuteImportTableData">executeImportTableData</a>, the query you create needs to conform to the <strong>Data File</strong> requirements or the job will fail.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd> <a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a> 
+</dd><dd> <a href="Update_an_HTML_email_template.html" title="Update an HTML email template">Update an HTML email template</a>
+</dd><dd> <a href="Export_data_from_a_table.html" title="Export data from a table">Export data from a table</a>
+</dd></dl>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="5%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> 1. Importing data can disrupt tables in your system, so we recommend that only expert users use this feature.<br /> 2 <u>Always</u> test your upload files  by uploading them to your Staging or Support first.<br /> 3.Contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> for training on this feature.
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=3" title="Edit section: Recommended Steps">edit</a>]</div><a name="Recommended_Steps"></a><h4>Recommended Steps</h4>
+<p>The steps below are useful when building a new data file
+</p>
+<ol><li> <a href="Export_sample_data_from_a_table.html" title="Export sample data from a table">Export sample data from a table</a> to get a sample file of the table you want to update. 
+</li></ol>
+<ol><li> Visit the <strong>Data File</strong> page to check the data requirements for your upload file.
+</li><li> Visit the <a href="Table_Data.html" title="Table Data">Table Data</a> page where known required fields have been documented.
+</li></ol>
+<p><br />
+</p><p><br />
+</p><p><br />
+When you build the data file for your import, the file doesn't need to contain all of the fields that exist in the table
+</p>
+<ul><li> if changing existing records in a table, only add the fields you are changing to the file
+</li><li> if created new records, only put in the fields you had information for, other fields will be filled with the database's default values<br />
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=4" title="Edit section: Update existing records">edit</a>]</div><a name="Update_existing_records"></a><h4>Update existing records</h4>
+<ol><li> Create a base file that contains the records you want. Below are some approaches to this
+<ol><li> <a href="Export_data_from_a_table.html" title="Export data from a table">Export the entire table</a>. <i>(This is only suitable if the table is small)</i>.
+</li><li> Run a report from Contracts / Search or Quotes / Search
+</li><li> Run an existing scheduler job that contains the required fields
+</li><li> Run a select query in MySQL Workbench 
+</li></ol>
+</li><li> <b>unique_id(s)</b> - locate the unique id for the table. This is usually at the start of the table. 
+<ol><li> Some tables require more than one id in the data file. Visit <a href="Table_Data.html" title="Table Data">Table Data</a> to check a list of known tables like this. 
+</li></ol>
+</li><li> If there are records that you are not going to update in the file, find these and delete these rows. <i>(This reduces the risk of updating other records by mistake)</i>.
+</li><li> Locate the fields you want to update and remove all other fields from the file that are not needed. <i>(This reduces the risk of updating other fields by mistake)</i>.
+</li><li> Update the file fields you want to change.
+</li><li> Save your file in CSV format
+</li><li> <a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a>
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=5" title="Edit section: Example update">edit</a>]</div><a name="Example_update"></a><h5>Example update</h5>
+<p>You want to update the <b>Contracts / Insurance</b> "Start Date" and "Policy Due Date" for a selected list of contracts.<br />
+<br />
+<b>Module</b> - 'fm | Fleet Management'<br />
+<b>Table</b> - 'fm_contracts'<br /><br />
+</p><p><b>File</b>
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 40%;">
+<tr>
+<th width="33%" align="left">contract_id </th><th width="33%" align="left">insurance_start </th><th width="33%" align="left"> insurance_renewal
+</th></tr>
+<tr>
+<td> 100000 </td><td> 01/15/2025 </td><td> 01/15/2026
+</td></tr>
+<tr>
+<td> 100001 </td><td> 13/15/2025 </td><td> 13/15/2026
+</td></tr>
+<tr>
+<td> 100002 </td><td> 20/15/2025 </td><td> 20/15/2026
+</td></tr></table>
+<p><br />
+</p>
+<ol><li> The contract_id is the <b>unique_id</b> here.<br />
+</li><li> Only the <b>unique_id</b> and the two fields being updated are also in the file.<br />
+</li><li> When the file has been imported, the <b>Contracts / Insurance</b> "Start Date" and "Policy Due Date" fields will have been updated for the selected contracts.
+</li><li> The selected contracts will also have audit records recording those changes.
+</li><li> No other fields in those contracts, or any other contracts will be updated by the import
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=6" title="Edit section: Create new records">edit</a>]</div><a name="Create_new_records"></a><h4>Create new records</h4>
+<ol><li> Create a base file that contains the records you want. Below are some approaches to this
+<ol><li> <a href="Export_sample_data_from_a_table.html" title="Export sample data from a table">Export sample data from a table</a>
+</li><li> Run a select query in MySQL Workbench 
+</li></ol>
+</li><li> <b>unique_id(s)</b> - locate the unique id for the table. This is usually at the start of the table. Leave this blank.
+<ol><li> Some tables require more than one id in the data file. Visit <a href="Table_Data.html" title="Table Data">Table Data</a> to check a list of known tables like this. 
+</li><li> If you try to add new unique id number, you will get the 'Record does not exist' error on the <a href="Error_Report.html#Errors" title="Error Report">Error Report</a>.
+</li></ol>
+</li><li> Locate the fields you want to update and remove all other fields from the file that are not needed.
+<ol><li> Fields can be removed from the file if you want to use the system's default value populate into the field.
+</li></ol>
+</li><li> Update the file fields as required.
+</li><li> Save your file in CSV format
+</li><li> <a href="Import_data_to_a_table.html" title="Import data to a table">Import data to a table</a>
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=7" title="Edit section: Example create">edit</a>]</div><a name="Example_create"></a><h5>Example create</h5>
+<p>You want to add new records to the table <i>[qt_finance_types]</i> for selection in the <b>Quotes / Finance</b> "<a href="MacLease_Partner_Setup.html#Finance_Types" title="MacLease Partner Setup">Finance Types</a>" field.<br />
+<b>Module</b> - 'qt | Quotes'<br />
+<b>Table</b> - 'qt_finance_types'<br /><br />
+</p>
+<ol><li> Create a data file for the <i>[fm_contracts]</i> table that contains <i>contract_id, insurance_start, insurance_renewal</i>
+</li><li> Populate the file with the selected contracts and dates you want
+</li><li> When the file has been imported, the <b>Contracts / Insurance</b> "Start Date" and "Policy Due Date" fields will have been updated for the selected contracts.
+</li><li> The selected contracts will also have audit records recording those changes.
+</li><li> No other fields in those contracts, or any other contracts will be updated by the import
+</li></ol>
+<p><br />
+<b>All fields</b><br />
+The <b>finance_type_id</b> is blank here as these are new records. The system will allocate the ids automatically.<br />
+The new records will have audit records recording their creation.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 50%;">
+<tr>
+<th width="25%" align="left"> finance_type_id </th><th width="25%" align="left"> supplier_id </th><th width="25%" align="left"> finance_type</th><th width="25%" align="left"> status_flag
+</th></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> dealer_with_abn </td><td> active
+</td></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> private_no_abn </td><td> active
+</td></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> private_with_abn </td><td> active
+</td></tr></table>
+<p><br />
+</p><p><br />
+<b>Some fields</b><br />
+The <b>status_flag</b> field is missing, but will be populated automatically as 'active' as this is the system's default setting for this field.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 40%;">
+<tr>
+<th width="33%" align="left"> finance_type_id </th><th width="33%" align="left"> supplier_id </th><th width="33%" align="left"> finance_type
+</th></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> dealer_with_abn
+</td></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> private_no_abn
+</td></tr>
+<tr>
+<td>  </td><td> 100233 </td><td> private_with_abn
+</td></tr></table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=8" title="Edit section: Preparing your Import file">edit</a>]</div><a name="Preparing_your_Import_file"></a><h4>Preparing your Import file</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th> Field Type </th><th> Type </th><th>Required </th><th> Comments
+</th></tr>
+<tr>
+<td>Header Row</td><td>Text</td><td>yes</td><td>All files must contain a header row that lists each field that is being created or updated.<br /> E.g. To update roadside details in <i>[fm_contracts]</i>, you could have this header;<br /> <i>contract_id, roadside_managed_flag, roadside_start_date</i>
+</td></tr>
+<tr>
+<td>Primary Key</td><td>Num</td><td>if present</td><td>If the table has a Primary Key, the file must contain a column for this field. This is the field that uniquely identifies each record.<br /> E.g. for <i>[fm_contracts]</i>, it would be <i>contract_id</i>.<br />
+<p>When updating <b>existing</b> records, the Primary Key column must be populated.<br />
+</p><p>When creating <b>new</b> records, the Primary Key column must still be present. It's possible to upload the unique id as a blank field, null or NULL. We recommend you populate this field with the value 'null'.<br />
+Be careful to make sure you do <u>not</u> populate this column. This may result in over-writing existing records (if the key value already exists), or potentially creating future data corruptions.<br />
+During the import process, the <i>[gb_unique_ids]</i> table is checked and corrected if it is out of synch before the upload is done. This ensures that <b>new</b> records are given the correct next id.
+</p>
+</td></tr>
+<tr>
+<td>Unique Key</td><td>Various</td><td>if no Primary Key</td><td>Some tables do not have a Primary Key. In this case, the file needs to contain all of the fields that make up it's Unique Key.<br /> Visit the <a href="Table_Data.html" title="Table Data">Table Data</a> page where known required fields are documented.
+</td></tr>
+<tr>
+<td>Date</td><td>Date</td><td>no </td><td>Date fields must be in either 'YYYY-MM-DD' or 'DD/MM/YYYY' format.<br /> E.g. '2019-12-24' or '24/12/2019'.<br />
+<p>If you want to remove an existing date, the entry can be '00/00/0000', '0000-00-00', or null or NULL.<br />
+</p><p>If the field is blank, or the date is invalid, the upload will fail and you will get an error. e.g. blank, 01/13/2019 or 2022-12-35 are all bad entries.
+</p>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=9" title="Edit section: File requirements">edit</a>]</div><a name="File_requirements"></a><h4>File requirements</h4>
+<ol><li> The file must be in csv format. The maximum file size is 32MB (32768KB)
+</li><li> The file must have a header row that contains field names from the import table and the field names must exactly match field names of the import table
+</li><li> The <u>primary key</u>;
+<ol><li> Is a required field in all import files
+</li><li> Should be 'null' for <b>new</b> records
+</li><li> Should be populated for <b>existing</b> records
+</li></ol>
+</li><li> If the table contains <u>unique keys</u>, those fields are required in all import files
+</li><li> The file cannot contain blank rows
+<ol><li> If you are importing data using a file you have exported using the <a href="Export_Table_Data.html" title="Export Table Data">Export Table Data</a> menu, check to see no extraneous line has been added to the end of the file.
+</li><li> This can be achieved by converting the file to a .txt file.
+</li><li> Be sure to remove the line and save to .csv again prior to importing file.
+</li></ol>
+</li><li> The file you are uploading cannot be identical to one that has been imported previously
+</li><li> The file can contain all or only some of the fields that exist in the import table
+</li><li> The fields can be in any order
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=10" title="Edit section: Data updates for new records">edit</a>]</div><a name="Data_updates_for_new_records"></a><h4>Data updates for new records</h4>
+<ol><li> A primary key value is added to each new record.
+</li><li> Fields that are not in the import file will be created using the database default.
+</li><li> Audit records are written for all fields in the table, even if the field was not in the import file
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;action=edit&amp;section=11" title="Edit section: Data updates for existing records">edit</a>]</div><a name="Data_updates_for_existing_records"></a><h4>Data updates for existing records</h4>
+<ol><li> Fields are only changed if they are in the import file and the value is different to the stored value
+</li><li> Audit records are only written if the import has changed the field's value
+</li></ol>
+<p><br />
+</p><div class="printfooter">
+Retrieved from "<a href="Data_File.html">https://help.catch-e.net.au/mediawiki/index.php/Data_File</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Data_File">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Data_File.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Data_File&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.06 secs. -->
+</body></html>

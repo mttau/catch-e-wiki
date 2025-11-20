@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="BECS Troubleshooting,ACCOUNTS,BECS,BECS Bank Account Setup,Catch-e support,Export,General Ledger Export To BECS,Main Page,Troubleshooting" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>BECS Troubleshooting - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">BECS Troubleshooting</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="BECS_Troubleshooting.html#column-one">navigation</a>, <a href="BECS_Troubleshooting.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> / <a href="Export.html" title="Export">Export</a> / <a href="BECS.html" title="BECS">BECS</a> &rarr; <a href="General_Ledger_Export_To_BECS.html" title="General Ledger Export To BECS">Reimbursements (ABA)</a>  &rarr; <a href="BECS_Bank_Account_Setup.html" title="BECS Bank Account Setup">BECS Bank Account Setup</a> | <strong>BECS Troubleshooting</strong>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="BECS_Troubleshooting.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="BECS_Troubleshooting.html#Checking_the_aba_file_output"><span class="tocnumber">2</span> <span class="toctext">Checking the aba file output</span></a>
+<ul>
+<li class='toclevel-2'><a href="BECS_Troubleshooting.html#ABA_file_fields"><span class="tocnumber">2.1</span> <span class="toctext">ABA file fields</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="BECS_Troubleshooting.html#Changing_from_single_to_multiple_bank_accounts"><span class="tocnumber">3</span> <span class="toctext">Changing from single to multiple bank accounts</span></a></li>
+<li class='toclevel-1'><a href="BECS_Troubleshooting.html#System_Notes"><span class="tocnumber">4</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Tip.png.html" class="image" title=""><img src="../../clients/help/wiki/images/4/45/Tip.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Tip.png" /></a></td><td align="left">Visit the main <a href="Troubleshooting.html" title="Troubleshooting">Troubleshooting</a> page for a list of all the available problem-solving tips.
+</td></tr></table>
+<p><br />
+aba files will only be created when all details are complete in the export file and all banking details have been set up - for both your corporate account(s) and the individual driver's who are being paid.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;action=edit&amp;section=2" title="Edit section: Checking the aba file output">edit</a>]</div><a name="Checking_the_aba_file_output"></a><h4>Checking the aba file output</h4>
+<p>Visit the Australian Payments Clearing Association website: <a href="http://www.apca.com.au/" class='external autonumber' title="http://www.apca.com.au/" rel="nofollow">[1]</a> for more information.<br />
+The following programmer blog is also helpful about the aba file layout: <a href="http://ddkonline.blogspot.com.au/2009/01/aba-bank-payment-file-format-australian.html" class='external autonumber' title="http://ddkonline.blogspot.com.au/2009/01/aba-bank-payment-file-format-australian.html" rel="nofollow">[2]</a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;action=edit&amp;section=3" title="Edit section: ABA file fields">edit</a>]</div><a name="ABA_file_fields"></a><h5>ABA file fields</h5>
+<p>Vist the <a href="BECS_Bank_Account_Setup.html" title="BECS Bank Account Setup">BECS Bank Account Setup</a> page for the set-up requirements. The table below lists which fields are populated into the aba file from the banking tables. Use this information to check your aba file is working correctly.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>[table]field_name</th><th>Field Value</th><th>Comment
+</th></tr>
+<tr>
+<td>[gl_bank_accounts]bank</td><td>Text (3)</td><td>Must be an approved financial institution abbreviation. (Refer to APCA publication BSB Numbers in Australia.)
+</td></tr>
+<tr>
+<td>[gl_bank_accounts]account_name</td><td>Text (26)</td><td>Payer's Name. Must not be all blanks. Should be User preferred name.
+</td></tr>
+<tr>
+<td>[gl_bank_accounts]account_name_short</td><td>Text (16)</td><td>Name of Remitter. Must not contain all blanks. This field is used by Financial Institutions for statement narrative.
+</td></tr>
+<tr>
+<td>[gl_bank_accounts]bsb</td><td>Num (6)</td><td>The BSB that is displayed on a Detail-Credit row (if created).
+</td></tr>
+<tr>
+<td>[gl_bank_accounts]account_number</td><td>Num (9)</td><td>The Account Number that is displayed on a Detail-Credit row (if created).
+</td></tr>
+<tr>
+<td>[gl_bank_account_aba_mappings]acpa_number</td><td>Num (6)</td><td>User Identification Number which is assigned by APCA and User Financial Institutions for transacting credit ABA files.
+</td></tr>
+<tr>
+<td>[gl_bank_account_aba_mappings]aba_description</td><td>Text (12)</td><td>Transaction Description. Should accurately describe transactions. This is displayed in the first row of the ABA file. E.g. Payments
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;action=edit&amp;section=4" title="Edit section: Changing from single to multiple bank accounts">edit</a>]</div><a name="Changing_from_single_to_multiple_bank_accounts"></a><h4>Changing from single to multiple bank accounts</h4>
+<p>If you have received one of the following <a href="General_Ledger_Export_To_BECS.html#Validations_and_Alerts" title="General Ledger Export To BECS">Validations or Alerts</a>
+</p>
+<dl><dd> Banking details require set up!
+</dd><dd> Nothing to reimburse! (and you are expecting to see them)
+</dd><dd> Problem creating BES export - Unexpected transactions!
+</dd></dl>
+<p>This points to a set-up issue. Contact <a href="Catch-e_support.html" title="Catch-e support">Catch-e Support</a> to run checks over the banking setup for you.<br /> 
+Possible set-up issues include
+</p>
+<ol><li> A <i>[gl_bank_account_aba_mappings]</i> record has been set-up with <i>company_id</i> = '0'.
+<ol><li> Update <i>company_id</i> to be NULL. (Only use this solution if you do not use the Disbursements (ABA)).
+</li></ol>
+</li><li> A <i>[gl_bank_account_aba_mappings]</i> record has been updated from NULL to record an <i>company_id</i>
+<ol><li> Check that <i>[gb_companies]</i> has a default company set.
+</li><li> Check the links in the following fields <i>[gl_transactions]company_id</i> and <i>[fm_contracts]company_id</i>.
+</li></ol>
+</li><li> There is no <i>[gl_bank_account_aba_mappings]</i> record where process_type<i> = 'becs'. </i>
+<ol><li> Add the required <i>[gl_bank_account_aba_mappings]</i> record
+</li></ol>
+</li></ol>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (DEV-20419) Enable use of multiple bank accounts in BECS / Reimbursements (ABA). Live 17/10/2019
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="BECS_Troubleshooting.html">https://help.catch-e.net.au/mediawiki/index.php/BECS_Troubleshooting</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=BECS_Troubleshooting">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/BECS_Troubleshooting.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=BECS_Troubleshooting&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.06 secs. -->
+</body></html>

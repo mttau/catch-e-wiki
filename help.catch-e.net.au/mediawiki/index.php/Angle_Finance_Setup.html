@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Angle Interface Setup,Account Manager,Administration,Angle:JSON,Angle:employmentType,Angle:occupationType,Angle:residentialStatus,Angle Finance Mapping:Corporate Type,Angle Finance Mapping:Fees,Angle Finance Mapping:Fuel Type,Angle Finance Mapping:Gender" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Angle Interface Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Angle Interface Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Finance_Setup&amp;redirect=no" title="Angle Finance Setup">Angle Finance Setup</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="Angle_Finance_Setup.html#column-one">navigation</a>, <a href="Angle_Finance_Setup.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="FLEET.html" title="FLEET">Fleet</a> / <a href="Administration.html" title="Administration">Administration</a> / <a href="Quotes.html" title="Quotes">Quotes</a> &rarr; <a href="./Quotes:Finance.html" title="Quotes:Finance">Finance</a> &rarr; <a href="Angle_Interface.html" title="Angle Interface">Angle Interface</a> &rarr; <a href="./Angle:JSON.html" title="Angle:JSON">Application JSON</a> | <a href="Angle_Interface_Validation_Errors.html" title="Angle Interface Validation Errors">Validations and Alerts</a> &rarr;<a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>Angle Interface Setup</strong> &rarr; <a href="Angle_Mapping.html" title="Angle Mapping">Angle Mapping</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="Angle_Finance_Setup.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="Angle_Finance_Setup.html#Process_Pages"><span class="tocnumber">2</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="Angle_Finance_Setup.html#Client_Set-up"><span class="tocnumber">3</span> <span class="toctext">Client Set-up</span></a>
+<ul>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Get_an_Angle_API_Account"><span class="tocnumber">3.1</span> <span class="toctext">Get an Angle API Account</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Supplier_.2F_Financier_Settings"><span class="tocnumber">3.2</span> <span class="toctext">Supplier / Financier Settings</span></a>
+<ul>
+<li class='toclevel-3'><a href="Angle_Finance_Setup.html#Interface_Type"><span class="tocnumber">3.2.1</span> <span class="toctext">Interface Type</span></a></li>
+<li class='toclevel-3'><a href="Angle_Finance_Setup.html#Financier_Posting_Map_Defaults"><span class="tocnumber">3.2.2</span> <span class="toctext">Financier Posting Map Defaults</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#User_Signons"><span class="tocnumber">3.3</span> <span class="toctext">User Signons</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Angle_Finance_Setup.html#Catch-e_Set-Up_Steps"><span class="tocnumber">4</span> <span class="toctext">Catch-e Set-Up Steps</span></a>
+<ul>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Credentials"><span class="tocnumber">4.1</span> <span class="toctext">Credentials</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Originator_Record"><span class="tocnumber">4.2</span> <span class="toctext">Originator Record</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Global_Controls"><span class="tocnumber">4.3</span> <span class="toctext">Global Controls</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Review_Interface_Mappings"><span class="tocnumber">4.4</span> <span class="toctext">Review Interface Mappings</span></a></li>
+<li class='toclevel-2'><a href="Angle_Finance_Setup.html#Set-up_Queries_for_Catch-e_Staff"><span class="tocnumber">4.5</span> <span class="toctext">Set-up Queries for Catch-e Staff</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="Angle_Finance_Setup.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>Use the Angle Interface to submit a credit application to Angle Auto Finance (<a href="https://www.angleauto.com.au/" class='external free' title="https://www.angleauto.com.au/" rel="nofollow">https://www.angleauto.com.au/</a>) for a Novated quote in the system.<br />
+Applications are created in the <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> tab using the <b>Apply</b> button and may be updated using the <b>Resubmit</b> button.<br />
+</p><p>This page summarises the various flags and tables within Catch-e that need to be set-up and populated with data to enable the <a href="Angle_Interface.html" title="Angle Interface">Angle Interface</a>.<br /> Contact your <a href="Catch-e_support.html" title="Catch-e support">Account Manager</a> to help you implement this interface.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=2" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h3>Process Pages</h3>
+<dl><dd><a href="Apply_button_for_Angle_Auto_Finance.html" title="Apply button for Angle Auto Finance">Apply button for Angle Auto Finance</a>
+</dd><dd><a href="Mapping_Updates.html" title="Mapping Updates">Mapping Updates</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=3" title="Edit section: Client Set-up">edit</a>]</div><a name="Client_Set-up"></a><h3>Client Set-up</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=4" title="Edit section: Get an Angle API Account">edit</a>]</div><a name="Get_an_Angle_API_Account"></a><h4>Get an Angle API Account</h4>
+<p>The Angle Interface needs to be set-up by arrangement with Angle Auto Finance and Catch-e.<br />
+The steps are shown below.<br />
+</p>
+<ol><li> Contact your Relationship Manager at Angle Auto Finance to request API credentials.
+</li><li> Angle Auto Finance will send account and credential to you and Catch-e within 3 business days.
+</li><li> Catch-e will set-up an account in Staging for you to UAT and will advise you and your Angle Auto Finance Relationship Manager.
+</li><li> Contact Catch-e to confirm UAT is complete and ready for Live.
+</li><li> Catch-e will configure your Live system and confirm when it is ready for use.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=5" title="Edit section: Supplier / Financier Settings">edit</a>]</div><a name="Supplier_.2F_Financier_Settings"></a><h4>Supplier / Financier Settings</h4>
+<p>Visit the <a href="Financier.html" title="Financier">Financier</a> page and follow the general steps required to set-up a financier.<br />
+Points of note are:
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=6" title="Edit section: Interface Type">edit</a>]</div><a name="Interface_Type"></a><h5>Interface Type</h5>
+<p><b>Suppliers / Account</b> "Interface Type" - set as 'angle'.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=7" title="Edit section: Financier Posting Map Defaults">edit</a>]</div><a name="Financier_Posting_Map_Defaults"></a><h5>Financier Posting Map Defaults</h5>
+<p>Process page: <a href="Create_default_quote_fees_for_a_Financier_by_Contract_Type.html" title="Create default quote fees for a Financier by Contract Type">Create default quote fees for a Financier by Contract Type</a>
+</p>
+<ol><li> Enter the default fees and preferences in the <b>Setup / Reference Data</b> 'qt_financier_posting_map_defaults' table
+</li><li> If a 'Account Keeping Fee Novated' is being charged, you will need to populate this table
+</li><li> Store the GST Exclusive value of the fee in the "Fee" field.
+</li><li> Quotes are validated against Angle's stored fee on application. 
+</li><li> A <a href="Angle_Interface_Validation_Errors.html#Failed" title="Angle Interface Validation Errors">Failed</a> message will be returned if the fee does does not match Angle's set fee.
+</li></ol>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=8" title="Edit section: User Signons">edit</a>]</div><a name="User_Signons"></a><h4>User Signons</h4>
+<p>Each user must be set up to enable them to submit an Angle Auto Finance application.
+To set up each user, 
+</p>
+<ol><li> Enter their 'User Login' in the <a href="Users.html" title="Users">System / Users</a> screen.
+</li><li> Go to "Logins" tab.
+</li><li> Populate fields as shown below.<br /><br />
+</li></ol>
+<table class="catch-e" style="border-collapse: collapse; width: 50%;">
+<tr>
+<th width="25%" align="left"> Service </th><th width="25%" align="left">Login </th><th width="25%" align="left"> Password </th><th width="25%" align="left"> Status
+</th></tr>
+<tr>
+<td>Angle </td><td> Leave Blank </td><td> Leave Blank </td><td> Active
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=9" title="Edit section: Catch-e Set-Up Steps">edit</a>]</div><a name="Catch-e_Set-Up_Steps"></a><h3>Catch-e Set-Up Steps</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=10" title="Edit section: Credentials">edit</a>]</div><a name="Credentials"></a><h4>Credentials</h4>
+<p>Angle may supply the required credentials to you directly, or to Catch-e on your behalf.<br />
+The details of how to set-up the credentials are documented below.<br />
+You can set these up yourselves, or you can ask your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> to assist.<br /> 
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=11" title="Edit section: Originator Record">edit</a>]</div><a name="Originator_Record"></a><h4>Originator Record</h4>
+<p>The records below are stored in <i>[gb_originators]</i> as standard entries.<br />
+An 'Originator' must be selected from the <a href="./Quotes:Finance.html" title="Quotes:Finance">Quotes / Finance</a> <u>Finance Application</u> "Originator" field drop list.<br />
+Angle Auto Finance will provide Program Details to you. This will be used to set up the originator records.<br /><br />
+</p><p>Use the <a href="Import_Table_Data.html" title="Import Table Data">Import Table Data</a> feature to upload your originator records or your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> can set this up for you.
+The required upload file details are described below.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 80%;">
+<tr>
+<th>originator_id </th><th> supplier_id </th><th> originator_code </th><th> user_code </th><th> description </th><th> status_flag
+</th></tr>
+<tr>
+<td>leave blank </td><td> Add the <a href="./Suppliers:Detail.html" title="Suppliers:Detail">Suppliers / Detail</a> "Supplier ID"<br /> for each supplier used to make Angle Auto Finance applications here. </td><td> Add the <b>client number</b><br /> supplied by Angle Finance here.<br /> Cannot be NULL. </td><td> Add the <b>client application</b><br /> supplied by Angle Auto Finance here.<br />  Cannot be NULL. </td><td> Enter the <b>Program Name</b><br />  supplied by Angle Auto Finance here. </td><td> Enter as 'active'.<br />  If it is blank or set to 'inactive',<br /> it will not appear in the drop list.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=12" title="Edit section: Global Controls">edit</a>]</div><a name="Global_Controls"></a><h4><a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls">Global Controls</a></h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="5%" align="left">Module</th><th width="15%" align="left">Name</th><th width="45%" align="left">Comment</th><th width="30%" align="left">Default Value
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4">Angle Finance Application credentials
+</td></tr>
+<tr>
+<td> qt </td><td> angle_api_contact_details </td><td> If you want to pass generic contact details in <strong>Angle Interface Setup</strong> applications, enter them here.<br /> The following fields use the values from this control if they are populated<br />
+<ul><li> individualDetails - contactDetails - emails - type - WK
+</li><li> individualDetails - contactDetails - phones - type - WK
+</li><li> additionalDetails - contactDetails - emails - type - WK
+</li><li> additionalDetails - contactDetails - phones - type - WK
+</li><li> stateChangeNotification - loanConsultantEmail
+</li></ul>
+<p>If this control is left blank, the fields above will not be included in Angle Auto Finance applications.
+</p>
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Email Address</b></td><td width="70%" align="left"> address@clientdomain.com.au
+</td></tr>
+<tr>
+<td><b>Phone</b> </td><td> 61377779999
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td> qt</td><td> angle_api_credentials </td><td> Store credentials supplied by <strong>Angle Interface Setup</strong> here. These details must be populated and are encrypted.<br /> If you experience interface connectivity issues, confirm these credentials with your Angle Auto Finance Account Manager first.<br /> If the issues cannot be resolved with Angle Auto Finance, then contact Catch-e for assistance.
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Path</b></td><td width="70%" align="left"> Staging: <pre>https://live.uat.api.services.angleauto.com.au/nli/v2.0</pre>
+</td></tr>
+<tr>
+<td><b>Api Key</b> </td><td> **************************
+</td></tr>
+</table>
+</td></tr>
+<tr>
+<td>qt</td><td>angle_oauth_credentials</td><td> Store oauth credentials supplied by <a href="Angle_Finance_Setup.html" title="Angle Finance Setup">Angle Finance</a> here. All fields must be populated and are encrypted.<br /> If you experience interface connectivity issues, confirm these credentials with your Angle Auto Finance Relationship Manager  first.<br /> If the issues cannot be resolved with Angle Auto Finance, then contact Catch-e for assistance.
+</td><td>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+
+<tr>
+<td width="30%" align="left"><b>Path</b></td><td width="70%" align="left"> Staging: <pre>https://login.microsoftonline.com/
+c26f31b3-b539-4fea-af9f-0673a4291ed0/oauth2/v2.0/token</pre>
+</td></tr>
+<tr>
+<td><b>Client Id</b> </td><td> ***************
+</td></tr>
+<tr>
+<td><b>Scope</b> </td><td> Staging: <pre>https://nli.uat.api.angleauto.com.au/.default</pre>
+</td></tr>
+<tr>
+<td><b>Client Secret</b> </td><td> ***************
+</td></tr>
+<tr>
+<td><b>Grant Type</b> </td><td> Staging: <pre>client_credentials</pre>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=13" title="Edit section: Review Interface Mappings">edit</a>]</div><a name="Review_Interface_Mappings"></a><h4>Review Interface Mappings</h4>
+<p>There are a number of fields where the choices available in Catch-e are not an exact match for the choices in the Angle system.<br />
+In these cases, translation records have been created to manage this.<br />
+This enable valid selections to be used in the application with the name used in the Angle system.<br />
+</p><p>For example, the Insurer Name set up in Catch-e is 'ABC Insurance', the value Angle requires is 'ABC'. <br />
+</p><p>The translation tables contains a default set of records that are known to meet Angle requirements at the time this interface was developed. <br />
+Go to the <a href="Angle_Mapping.html" title="Angle Mapping">Angle Mapping</a> page for more details.<br />
+</p><p>The table below shows the default mappings in the system.<br />
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 65%;">
+<tr>
+<th width="10%" align="left">interface_type </th><th width="10%" align="left">interface_field_name </th><th width="20%" align="left">table_name </th><th width="20%" align="left"> field_name </th><th width="5%" align="left"> translations
+</th></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Industry.html" title="Angle Finance Mapping:Industry">industry</a> </td><td> fm_client_industries </td><td> client_industry_code </td><td> 1
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Gender.html" title="Angle Finance Mapping:Gender">gender</a> </td><td> fm_drivers </td><td>gender </td><td> 4
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Marital_Status.html" title="Angle Finance Mapping:Marital Status">relationshipStatus</a> </td><td> fm_drivers </td><td>marital_status </td><td> 8
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Residency_Status.html" title="Angle Finance Mapping:Residency Status">visaStatus</a> </td><td> fm_drivers </td><td> residency_status </td><td> 5
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle:residentialStatus.html" title="Angle:residentialStatus">residentialStatus</a> </td><td> fm_drivers </td><td>residential_status </td><td> 6
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Title.html" title="Angle Finance Mapping:Title">title</a> </td><td> fm_drivers </td><td>salutation </td><td> 7
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle:employmentType.html" title="Angle:employmentType">employmentType</a> </td><td> fm_driver_employment_types </td><td> driver_employment_type_code </td><td> 5
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle:occupationType.html" title="Angle:occupationType">occupationType</a> </td><td> fm_driver_occupation_codes </td><td> driver_occupation_code </td><td> 1
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Insurer_Code.html" title="Angle Finance Mapping:Insurer Code">insurerName</a> </td><td> fm_suppliers </td><td> supplier_code </td><td> 20
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Corporate_Type.html" title="Angle Finance Mapping:Corporate Type">entityType</a> </td><td> gb_corporate_types </td><td> corporate_code </td><td>16
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Fuel_Type.html" title="Angle Finance Mapping:Fuel Type">fuelType</a> </td><td> qt_fuel_type_translations </td><td> fuel_type_code </td><td> 10
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Fees.html" title="Angle Finance Mapping:Fees">ESTFEENL</a> </td><td> qt_quotes </td><td> establishment_fee </td><td> 0
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:New_/_Used.html" title="Angle Finance Mapping:New / Used">assetCondition</a> </td><td> qt_quotes </td><td> new_used </td><td> 3
+</td></tr>
+<tr>
+<td>angle</td><td> <a href="./Angle_Finance_Mapping:Fees.html" title="Angle Finance Mapping:Fees">ORIGFEE</a> </td><td> qt_quotes </td><td> originator_fee </td><td> 0
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=14" title="Edit section: Set-up Queries for Catch-e Staff">edit</a>]</div><a name="Set-up_Queries_for_Catch-e_Staff"></a><h4>Set-up Queries for Catch-e Staff</h4>
+<pre>
+# Selections and data checks
+select * from gb_controls where name LIKE '%data_source_default%'; # Check if client is using Glasses or RedBook data
+select * from fm_suppliers where interface_type = 'angle'; # One record or modify query below
+select * from gb_originators; 
+select * from gb_unique_ids where table_name = 'gb_originators';
+
+START TRANSACTION;
+# Unique Selections
+select @originator_id&nbsp;:= unique_id from gb_unique_ids where table_name = 'gb_originators';
+select @supplier_id&nbsp;:= supplier_id from fm_suppliers where interface_type = 'angle';
+select @originator_code&nbsp;:= 'client number'; # Up to 10 characters
+select @user_code&nbsp;:= 'client application'; # Up to 10 characters
+select @originator_description&nbsp;:= 'Program Name'; # Up to 50 characters
+;
+# Create New originator
+INSERT INTO gb_originators (originator_id, supplier_id, originator_code, user_code, description)
+VALUES (@originator_id, @supplier_id, @originator_code, @user_code, @originator_description);
+SELECT @next_id&nbsp;:= MAX(originator_id) + 1 from gb_originators;
+REPLACE INTO gb_unique_ids VALUES('gb_originators', @next_id);
+COMMIT;
+
+# Reveiw new record
+select s.supplier_code, s.name, o.originator_code as 'client number', o.user_code as 'client application'
+, o.description as 'Program Name'
+from gb_originators as o
+inner join fm_suppliers as s on s.supplier_id = o.supplier_id and s.interface_type = 'angle'
+;
+</pre>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;action=edit&amp;section=15" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> (DEV-22017) / (API-20511) Angle Interface APIs.  Live 22/04/2024
+</li><li> (API-20556) Angle Interface - add Previous Address, requestId stored and other fixes. Live 08/07/2024
+</li><li> (API-20584) Angle Interface - updates for 'numberOfDoors' and 'interestRate' when populating JSON. Live 05/08/2024
+</li><li> (API-20589) / (DEV-22135) Angle Interface - Apply and JSON updates. Live 26/08/2024
+</li><li> (API-20594) / (DEV-22150) Angle Finance Interface - enable Resubmit button. Live 22/10/2024
+</li><li> (API-20642) Angle Interface - update employmentDetails and liabilities for type 'Credit Card'. Live 17/02/2025
+</li><li> (DEV-22225) Angle Auto Finance Interface - Resubmit button not working as expected. Live 11/03/2025
+</li><li> (API-20699) Angle Auto Interface - Add 'AKFN' Fee and make externalSystemReference unique. Live 23/06/2025
+</li><li> (API-20728) Angle API failing due to crossover of clientIds in token header.  Live 21/07/2025
+</li><li> (API-20743) Angle Interface API update required - Privacy Consent change: DVS (Document Verification Service). Live 06/10/2025
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:4002-0!1!0!0!!en!2 and timestamp 20251120231259 -->
+<div class="printfooter">
+Retrieved from "<a href="Angle_Interface_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/Angle_Interface_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Angle_Interface_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Angle_Interface_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Angle_Interface_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.03 secs. -->
+</body></html>

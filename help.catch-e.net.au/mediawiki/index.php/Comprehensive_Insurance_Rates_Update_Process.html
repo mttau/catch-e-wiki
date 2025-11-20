@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Comprehensive Insurance Rates Update Process,Comprehensive Insurance,Insurance Premium,Insurer,Main Page,Policy Owner" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>Comprehensive Insurance Rates Update Process - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Comprehensive Insurance Rates Update Process</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="Comprehensive_Insurance_Rates_Update_Process.html#column-one">navigation</a>, <a href="Comprehensive_Insurance_Rates_Update_Process.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="Comprehensive_Insurance.html" title="Comprehensive Insurance">Comprehensive Insurance</a> &rarr; <a href="Policy_Owner.html" title="Policy Owner">Policy Owner</a> | <a href="Insurer.html" title="Insurer">Insurer</a> | <a href="Insurance_Premium.html" title="Insurance Premium">Insurance Premium</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a> Insurance Rates Update Process
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Comprehensive_Insurance_Rates_Update_Process&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3> Overview </h3>
+<p>Follow these steps to update your Comprehensive Insurance Rates.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Comprehensive_Insurance_Rates_Update_Process&amp;action=edit&amp;section=2" title="Edit section: Steps">edit</a>]</div><a name="Steps"></a><h3> Steps </h3>
+<p><b>A) Contract your Account Manager to set up follwoing&nbsp;:</b>
+</p>
+<ul><li> _sch_comprehensive_insurance table structure
+</li><li> Scheduler Job to update insurance rates table 
+</li></ul>
+<p><b>B) Create a CSV for your new rates.</b>
+</p>
+<ul><li> Use the provided example file, <a href="https://help.catch-e.net.au/clients/help/wiki/images/8/8a/Sch_comprehensive_insurance_2025-26.csv" class='internal' title="Sch comprehensive insurance 2025-26.csv">2025-26</a> rates CSV file, as a template.
+</li><li> Refer to the CSV file structure section below for detailed information on the required format and fields.
+</li></ul>
+<p><b>C) Setup / Import Table Data.</b>
+</p>
+<ul><li> Select Module: "_sch Scheduler".
+</li><li> Select Table: _sch_comprehensive_insurance.
+</li><li> Upload your CSV to the Data File section.
+</li></ul>
+<p><b>D) Schedule and Execution.</b>
+</p>
+<ul><li> Scheduler Job set up by your Account Manager will run at the specified time to update insurance rates table. 
+</li><li> Upon execution, this job will automatically add the new rate records from your uploaded CSV file to the [qt_insurance_rates] table.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Comprehensive_Insurance_Rates_Update_Process&amp;action=edit&amp;section=3" title="Edit section: CSV File Structure">edit</a>]</div><a name="CSV_File_Structure"></a><h3> CSV File Structure </h3>
+<p>Content of this file is uploaded to the _sch_comprehensive_insurance table. It has the following fields. Refer to the <a href="https://help.catch-e.net.au/clients/help/wiki/images/8/8a/Sch_comprehensive_insurance_2025-26.csv" class='internal' title="Sch comprehensive insurance 2025-26.csv">2025-26 rates CSV file</a> for examples.
+</p>
+<ul><li> <b>sch_comprehensive_insurance_uuid:</b> MUST be left blank.
+</li><li> <b>state:</b> Must be one of: ACT, NSW, NT, QLD, SA, TAS, VIC, WA.
+</li><li> <b>classification_name:</b> MUST be one of the values in name column in the qt_insurance_types table. This must match exactly the name column in the qt_insurance_types table. Download the existing list using 
+<ul><li> Setup / Export Table Data.
+</li><li> Select Module: "qt | Quotes".
+</li><li> Select Table: qt_insurance_types.
+</li><li> Check on Include Field Headers.
+</li><li> Download the table content.
+</li></ul>
+</li></ul>
+<ul><li> <b>lower_limit:</b>: Enter the lower limit of the rate band. 
+<ul><li> For the first band, use 0
+</li><li> For subsequent bands, the lower_limit MUST be exactly $0.01 greater than the upper_limit of the preceding rate band. For example, if the previous band's upper_limit is 18000.99, the next band's lower_limit should be 18001.
+</li></ul>
+</li></ul>
+<ul><li> <b>upper_limit:</b> Enter the upper limit of the rate band. This value MUST be exactly $0.01 less than the lower_limit of the subsequent rate band. For example, if the next band's lower_limit is 40001, the current band's upper_limit should be 40000.99.
+</li><li> <b>excess_rate:</b> Specify the excess rate for the band.
+<ul><li> Use 0 for rate bands where no excess rate applies.
+</li><li> Excess rate needs to be defined for a specific State and Classification at a particular limit e.g., 135000. Enter the excess rate as a decimal (e.g., 0.0232 for 2.32%, 0.0300 for 3%).
+</li></ul>
+</li></ul>
+<ul><li> <b>base_cost_monthly</b>: Enter the base monthly cost for this rate band. For the rate band that includes an excess_rate (i.e., the row with identical lower_limit and upper_limit), the base_cost_monthly should be the same as the base_cost_monthly of the rate band with the highest upper_limit for that specific state and classification.
+</li></ul>
+<ul><li> <b>effective_from</b>: Enter the date from which this rate becomes effective. The date MUST be in the format YYYY-MM-DD.
+</li></ul>
+<div class="printfooter">
+Retrieved from "<a href="Comprehensive_Insurance_Rates_Update_Process.html">https://help.catch-e.net.au/mediawiki/index.php/Comprehensive_Insurance_Rates_Update_Process</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=Comprehensive_Insurance_Rates_Update_Process">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/Comprehensive_Insurance_Rates_Update_Process.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Comprehensive_Insurance_Rates_Update_Process&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 6a1f7abdc40c in 0.07 secs. -->
+</body></html>

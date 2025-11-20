@@ -1,0 +1,1730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="CreateQuotes,APIs,Account Manager,Authenticate with the API,Clients:Quote defaults,Contract Types:Details,CreateQuoteWebService,Drivers:Contact,Employer FBT Type,FBT Treatment Type,Global Controls" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>CreateQuotes - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">CreateQuotes</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="CreateQuotes.html#column-one">navigation</a>, <a href="CreateQuotes.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <b>IT Set-up</b>  &rarr; <a href="APIs.html" title="APIs">APIs</a> &rarr; <a href="APIs.html#Quotes" title="APIs">Quotes</a> → <strong>createQuotes</strong>
+</p>
+<hr />
+<p><br />
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="CreateQuotes.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Permissions"><span class="tocnumber">2</span> <span class="toctext">Permissions</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Authentication"><span class="tocnumber">3</span> <span class="toctext">Authentication</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#HTTP_Method"><span class="tocnumber">4</span> <span class="toctext">HTTP Method</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#URL_Examples"><span class="tocnumber">5</span> <span class="toctext">URL Examples</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Headers"><span class="tocnumber">6</span> <span class="toctext">Headers</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Body_-_JSON"><span class="tocnumber">7</span> <span class="toctext">Body - JSON</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#JSON_example"><span class="tocnumber">8</span> <span class="toctext">JSON example</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Sucessful_Response_Details"><span class="tocnumber">9</span> <span class="toctext">Sucessful Response Details</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#Unsuccessful_Response_Details"><span class="tocnumber">10</span> <span class="toctext">Unsuccessful Response Details</span></a></li>
+<li class='toclevel-1'><a href="CreateQuotes.html#System_Notes"><span class="tocnumber">11</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p><br />
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Under_construction.png.html" class="image" title="Image:under_construction.png"><img src="../../clients/help/wiki/images/f/f8/Under_construction.png" alt="Image:under_construction.png" width="40" height="40" longdesc="/mediawiki/index.php/Image:Under_construction.png" /></a></td><td align="left"> This feature is currently under construction.
+</td></tr></table>
+<p><br />
+This API allows you to create a new quote.<br /> This performs the same function as navigating to <a href="./Quotes:Contract.html" title="Quotes:Contract">Fleet / Administration / Quotes</a> and creating a new quote.<br /> <i>This API is still being developed. A few features are not yet complete. Contact your Account Manager to discuss it's suitability for you.</i><br />
+</p><p><b>Alternative API:</b><br /> The <a href="CreateQuoteWebService.html" title="CreateQuoteWebService">createQuoteWebService</a> API is simpler and uses less variables.<br />
+</p><p>Supplementary SWAGGER documentation is available here: <a href="https://api.catch-e.com/docs/#/Quotes/createQuotes" class='external text' title="https://api.catch-e.com/docs/#/Quotes/createQuotes" rel="nofollow">api.catch-e.com/docs/#/Quotes/createQuotes</a><br /> 
+All text fields must only contain characters found in the CHARSET=latin1 (ISO 8859-1) character set. Refer to <a href="https://en.wikipedia.org/wiki/ISO/IEC_8859-1/" class='external text' title="https://en.wikipedia.org/wiki/ISO/IEC_8859-1/" rel="nofollow">wikipedia</a> for additional details.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=2" title="Edit section: Permissions">edit</a>]</div><a name="Permissions"></a><h4>Permissions</h4>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid silver;">
+
+<tr>
+<td width="50px" align="left"> <a href="./Image:Info.png.html" class="image" title=""><img src="../../clients/help/wiki/images/b/b3/Info.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Info.png" /></a></td><td align="left"> This permission and API are not available by default.<br /> Contact your <a href="Account_Manager.html" title="Account Manager">Account Manager</a> to get access to this API.<br />
+</td></tr></table>
+<p>To run this API, the nominated 'web-services' role needs to be given permission.<br />
+If you are not actively using the API, leave the permission off for better security.<br />
+Go to <a href="./Manage_Roles:Apis.html" title="Manage Roles:Apis">Roles / Apis</a> and check on <b>Quotes:Create</b>.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=3" title="Edit section: Authentication">edit</a>]</div><a name="Authentication"></a><h4>Authentication</h4>
+<p><a href="Authenticate_with_the_API.html" title="Authenticate with the API">Authenticate with the API</a> before running this API.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=4" title="Edit section: HTTP Method">edit</a>]</div><a name="HTTP_Method"></a><h4> HTTP Method </h4>
+<p>Use the HTTP Method 'POST' for consuming this web service. <br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=5" title="Edit section: URL Examples">edit</a>]</div><a name="URL_Examples"></a><h4>URL Examples</h4>
+<pre>
+https://api.test.catch-e.com/qt/quotes
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=6" title="Edit section: Headers">edit</a>]</div><a name="Headers"></a><h4>Headers</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">Key </th><th width="5%" align="left">Format</th><th width="70%" align="left"> Notes</th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> Audit-User-Id </td><td> string </td><td> If an Authenticated API user has the Audit:UserIdOverride permission, an optional header Audit-User-Id can be supplied on supported web-services that will create any associated Audit Records with the user_id specified. </td><td> No
+</td></tr>
+<tr>
+<td> Time-Zone </td><td> string </td><td> Date fields will use UTC by default. When a specified timezone. e.g. Australia/Melbourne is included, Date fields will use the specified timezone. Fields that are either 'date-time' or 'timestamps' will use system defaults (Australia-Sydney).</td><td> No
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=7" title="Edit section: Body - JSON">edit</a>]</div><a name="Body_-_JSON"></a><h4>Body - JSON</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="15%" align="left">JSON Field </th><th width="5%" align="left">Format</th><th width="70%" align="left"> Notes</th><th width="10%" align="left"> Mandatory
+</th></tr>
+<tr>
+<td> override_warnings_flag </td><td> string </td><td> If 'no', quotes will be validated and will not update if a warning is given.<br /> If 'yes', alerts will be ignored and the quote will be updated.</td><td> No
+</td></tr>
+<tr>
+<td> quote_status_id </td><td> string </td><td> Must be a valid record from [qt_quote_statuses]. Default value is stored in <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]qt_quotes_status_flag_default</i></a>.  </td><td> No
+</td></tr>
+<tr>
+<td> deal_type_id </td><td> string </td><td> Deal Type field in Salesforce </td><td> No
+</td></tr>
+<tr>
+<td> posting_map_id </td><td> string </td><td> Pass the <i>posting_map_id</i> to nominate the contract type to add to the <a href="./Quotes:Contract.html" title="Quotes:Contract">Quotes / Contract</a> “Type Code” field.<br /> Only contract types where <a href="./Contract_Types:Details.html" title="Contract Types:Details">Contract Types / Details</a> “Status” is ‘active’ will be selected.<br />
+<p>If not passed, the following logic will be used;<br /> 1. Use <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> “Contract Type” if populated.<br /> 2. Otherwise, default from <a href="Global_Controls.html#Quotes_.28QT.29" title="Global Controls"><i>[gb_controls]default_posting_map_id</i></a>.
+</p>
+</td><td> No
+</td></tr>
+<tr>
+<td> term </td><td> string </td><td>  1 to 60 </td><td> Yes
+</td></tr>
+<tr>
+<td> annual_kms </td><td> string </td><td> Non-zero positive number </td><td> Yes
+</td></tr>
+<tr>
+<td> state </td><td> string </td><td> State codes, VIC, NSW, ACT, NT, TAS, WA, SA, QLD, NZ.<br />When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'AUS' then it must be either 'NSW', 'VIC', 'QLD', 'ACT', 'TAS', 'SA', 'WA', or 'NT'.<br /> When <a href="Global_Controls.html" title="Global Controls"><i>[gb_controls]country_code</i></a> is 'NZ' then it must be 'NZ'. </td><td> Yes
+</td></tr>
+<tr>
+<td> cost_centre </td><td> string </td><td> Must be one of [fm_client_cost_centres]description values.  </td><td> No
+</td></tr>
+<tr>
+<td> division </td><td> string </td><td> Must be one of [fm_client_divisions]description values.  </td><td> No
+</td></tr>
+<tr>
+<td> location_name </td><td> string </td><td> Set the Insurance location you want applied. This will display on the Quotes &rarr; Contract tab. </td><td> No
+</td></tr>
+<tr>
+<td> parent_quote_id </td><td> string </td><td> Quote ID to use as the parent of the new quote </td><td> No
+</td></tr>
+<tr>
+<td> opportunity_id </td><td> string </td><td>  Salesforce opportunity id </td><td> No
+</td></tr>
+<tr>
+<td> opportunity_number </td><td> string </td><td> Salesforce opportunity # </td><td> No
+</td></tr>
+<tr>
+<td> client_id </td><td> string </td><td> Pass the Client ID here. I.e. <i>[fm_clients]client_id</i>. </td><td> Yes
+</td></tr>
+<tr>
+<td> client_name </td><td> string </td><td> This key is optional. If it is not passed, the name associated with the <b>client_id</b> key will be applied here, i.e. <i>[fm_clients]name</i>.<br /> Pass a client name here if you want to record a name in the field <i>[qt_quotes]client_name</i> that is different to the client's name. </td><td> No
+</td></tr>
+<tr>
+<td> user_id_client_manager </td><td> string </td><td> Active Catch-e user_id i.e. not at 'deleted' status </td><td> Yes
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Driver Fields
+</td></tr>
+<tr>
+<td> driver_id </td><td> string </td><td>  An alternative to passing the driver_external_code. The driver_id passed in here will be updated with data submitted in this call. <br />
+<ul><li> If URL contains: ‘driver_id=100000’ then, If driver_id match is found, update Driver record (if any changes required). <br />
+</li><li> If URL contains: ‘driver_id=0’ or not passed then, Do not create a new Driver Record. Simply add the driver_surname to [qt_quotes] driver_surname and driver_annual_salary to [qt_quotes] annual_salary. <br />
+</li><li> If URL contains: ‘create_new_driver_flag=yes’ then, Create a new Driver. || No
+</li></ul>
+</td></tr>
+<tr>
+<td> driver_surname </td><td> string </td><td>  </td><td> Yes
+</td></tr>
+<tr>
+<td> driver_given_name </td><td> string </td><td>  </td><td> No
+</td></tr>
+<tr>
+<td> driver_phone </td><td> string </td><td>  </td><td> No
+</td></tr>
+<tr>
+<td> insurance_loading_types </td><td> string </td><td>
+<p><b>past_claims</b> <br /> 
+One of no_claims_0_to_5_years, 1_claim_in_12_months, 1_claim_in_1_to_3_years, 2+_claims_0_to_3_years, 3+_claims_in_0_to_5_years. <br /> Insert one of the applicable 'insurance_loading_type_id' values stored in [qt_insurance_loading_types]. <br /> <br />
+<b>license</b> <br /> 
+One of no_loss, loss_in_2_to_5_years, loss_in_0_to_2_years. <br /> Insert one of the applicable 'insurance_loading_type_id' values stored in [qt_insurance_loading_types].  <br /> <br />
+<b>driver_restriction</b> <br />
+One of no_drivers_less_than_26_yo, all_drivers, no_drivers_less_than_22_yo. <br /> Insert one of the applicable 'insurance_loading_type_id' values stored in [qt_insurance_loading_types].  <br />
+</p>
+</td><td> No
+</td></tr>
+<tr>
+<td> user_id_assigned </td><td> string </td><td> Set the Quote 'Assigned' user. Must be an 'active' Catch-e user_id. </td><td> No
+</td></tr>
+<tr>
+<td> pay_cycle_id </td><td> string </td><td> Allows you to set the Pay Cycle for this quote. The list of available ids are stored in [gb_pay_cycles]. If not passed the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Client Pay Cycle</a> will be used. </td><td> No
+</td></tr>
+<tr>
+<td> annual_salary </td><td> string </td><td> Annual gross salary </td><td> Yes
+</td></tr>
+<tr>
+<td> employer_fbt_type </td><td> string </td><td>  Choose from 'full-fbt-payable', 'concessional-30000-exempt', 'concessional-17000-exempt', 'rebatable' or 'not-applicable'.<br /> If this field is passed, the value must conform to the <a href="Employer_FBT_Type.html" title="Employer FBT Type">Employer FBT Type</a> business rules, otherwise the call is rejected.<br /> If this field is not passed, the quote will update based on the <a href="Employer_FBT_Type.html" title="Employer FBT Type">Employer FBT Type</a> business rules.  </td><td> No
+</td></tr>
+<tr>
+<td> fbt_benefit_type </td><td> string </td><td>  Choose from 'statutory','operating' or 'exempt'.<br /> If <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Clients / Quote Defaults</a> "Allow Operating FBT Type" is un-checked, then 'operating' is not a valid choice for the client's quotes.  </td><td> No
+</td></tr>
+<tr>
+<td> fbt_business_use </td><td> string </td><td> FBT Bus. Use%  </td><td> No
+</td></tr>
+<tr>
+<td> previous_lease_start </td><td> string </td><td> User can give a previous lease start date  </td><td> No
+</td></tr>
+<tr>
+<td> previous_fbt_value </td><td> string </td><td> It's optional and can only be a positive number. </td><td> No
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Driver Element
+</td></tr>
+<tr>
+<td> driver </td><td> string </td><td>
+<pre>
+&quot;driver&quot;: {
+            &quot;addresses&quot;: {
+                &quot;home&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3001&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                },
+                &quot;post&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3002&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                }
+            },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> date_of_birth </td><td> string </td><td> Date of Birth  </td><td> No
+</td></tr>
+<tr>
+<td> driver_licence </td><td> string </td><td> If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Licence No"</a> will be updated.  </td><td> No
+</td></tr>
+<tr>
+<td> driver_licence_state </td><td> string </td><td> If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Licence State"</a> will be updated.  </td><td> No
+</td></tr>
+<tr>
+<td> external_code </td><td> string </td><td> Pacman Unique reference used to identify this driver </td><td> No
+</td></tr>
+<tr>
+<td> gender </td><td> string </td><td> enum('Male','Female','Other')  </td><td> No
+</td></tr>
+<tr>
+<td> given_name </td><td> string </td><td> Given name </td><td> No
+</td></tr>
+<tr>
+<td> home_email </td><td> string </td><td> Home email </td><td> No
+</td></tr>
+<tr>
+<td> home_postcode </td><td> string </td><td>  </td><td> No
+</td></tr>
+<tr>
+<td> home_state </td><td> string </td><td>  </td><td> No
+</td></tr>
+<tr>
+<td> mobile </td><td> string </td><td> If Driver found or new Driver created, Driver's <a href="./Drivers:Contact.html" title="Drivers:Contact">"Mobile"</a> will be updated.  </td><td> No
+</td></tr>
+<tr>
+<td> salutation </td><td> string </td><td> enum('Mr','Mrs','Ms','Miss','Dr','Prof','Rev','Capt')  </td><td> No
+</td></tr>
+<tr>
+<td> surname </td><td> string </td><td> Surname of the driver </td><td> No
+</td></tr>
+<tr>
+<td> work_phone </td><td> string </td><td> Work phone number </td><td> No
+</td></tr>
+<tr>
+<td> variant_id </td><td> string </td><td> Catch-e variant identifier </td><td> Yes
+</td></tr>
+<tr>
+<td> plate_year </td><td> string </td><td> Pass a value to specify the <a href="Plate_Year.html" title="Plate Year">Plate Year</a>.<br /> The plate_year can be any year between 1900-2099.<br /> If plate_year not passed, the <i>[gb_controls]qt_quotes_plate_year_input</i> value for <b>Default Year</b> is used.  </td><td> No
+</td></tr>
+<tr>
+<td> new_used </td><td> string </td><td> Indicates whether the vehicle is new or used, defaults to 'new'. Options are 'new', 'used' or 'demonstrator' </td><td> No
+</td></tr>
+<tr>
+<td> procurement_flag </td><td> string </td><td> Sets the quote vehicle procurement flag </td><td> No
+</td></tr>
+<tr>
+<td> odometer </td><td> string </td><td> If 'new_used' is set to 'used' or 'demonstrator' this value must bet set to a non-zero integer </td><td> No
+</td></tr>
+<tr>
+<td> colour_preference </td><td> string </td><td> Set the colour preference </td><td> No
+</td></tr>
+<tr>
+<td> list_price_net </td><td> string </td><td> Numeric dollar value </td><td> No
+</td></tr>
+<tr>
+<td> list_price_gst </td><td> string </td><td> Numeric dollar value </td><td> No
+</td></tr>
+<tr>
+<td> purchase_stamp_duty </td><td> string </td><td> Sets the Purchase Stamp Duty in the quote and turn on the lock_purchase_stamp_duty_flag </td><td> No
+</td></tr>
+<tr>
+<td> fbt_value </td><td> string </td><td> Sets the FBT Value in the quote and turn on the lock_fbt_value_flag </td><td> No
+</td></tr>
+<tr>
+<td> date_first_held </td><td> string </td><td>  date (yyyy-mm-dd). See also <a href="FBT_Treatment_Type.html" title="FBT Treatment Type">FBT Treatment Type</a>. </td><td> No
+</td></tr>
+<tr>
+<td> luxury_car_tax_paid_flag </td><td> string </td><td> yes or no. See also <a href="FBT_Treatment_Type.html" title="FBT Treatment Type">FBT Treatment Type</a>. </td><td> No
+</td></tr>
+<tr>
+<td> supplier_id_financier </td><td> string </td><td> Set an alternative Financier. This will override the Financier default set on the <a href="./Clients:Quote_defaults.html" title="Clients:Quote defaults">Quote Defaults</a> and must map to a Supplier with a 'Supplier Type' set to "Financier" on the <a href="./Suppliers:Account.html" title="Suppliers:Account">Suppliers / Account</a> tab. </td><td> No
+</td></tr>
+<tr>
+<td> insurance </td><td> string </td><td>
+<pre>
+&quot;insurance&quot;: {
+      &quot;supplier_id&quot;: &quot;string&quot;,
+      &quot;insurance_type_id&quot;: &quot;string&quot;,
+      &quot;billing_type&quot;: &quot;string&quot;,
+      &quot;claim_excess&quot;: 0,
+      &quot;annual_insurance&quot;: 0,
+      &quot;fund_1st_year_flag&quot;: &quot;no&quot;,
+      &quot;monthly_amount_net&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> roadside_assistance </td><td> string </td><td>
+<pre>
+&quot;roadside_assistance&quot;: {
+      &quot;roadside_assistance_plan_id&quot;: &quot;string&quot;,
+      &quot;premium&quot;: 0,
+      &quot;cost&quot;: 0,
+      &quot;monthly_amount_net&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> relief_vehicle </td><td> string </td><td>
+<pre>
+&quot;relief_vehicle&quot;: {
+      &quot;monthly_amount_net&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> vehicle_maintenance_program </td><td> string </td><td>
+<pre>
+&quot;vehicle_maintenance_program&quot;: {
+      &quot;monthly_amount_net&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> lti </td><td> string </td><td>
+<pre>
+&quot;lti&quot;: {
+      &quot;lti_top_up_benefit_id&quot;: &quot;string&quot;,
+      &quot;retail_price_gross&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> small_damage_repairs </td><td> string </td><td>
+<pre>
+&quot;small_damage_repairs&quot;: {
+      &quot;small_damage_repairs_id&quot;: &quot;string&quot;,
+      &quot;premium&quot;: 0,
+      &quot;monthly_amount_net&quot;: 0,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> redundancy_insurance_flag </td><td> string </td><td>
+<pre>
+&quot;redundancy_insurance_flag&quot;: &quot;no&quot;,
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> carbon_emissions_offset </td><td> string </td><td>
+<pre>
+&quot;carbon_emissions_offset&quot;: {
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> walkaway </td><td> string </td><td>
+<pre>
+&quot;walkaway&quot;: {
+      &quot;walkaway_plan_id&quot;: &quot;string&quot;,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> tyre_rim_insurance </td><td> string </td><td>
+<pre>
+&quot;tyre_rim_insurance&quot;: {
+      &quot;tyre_rim_insurance_plan_id&quot;: &quot;string&quot;,
+      &quot;included_flag&quot;: &quot;yes&quot;
+    },
+</pre>
+</td><td> No
+</td></tr>
+<tr>
+<td> inclusion_plans </td><td> string </td><td>
+<p>Input rules for: 
+</p>
+<ul><li> Default Lease Inclusion Plans, 
+</li><li> Excluding selected Lease Inclusion Plans 
+</li><li> Pricing of Plans etc 
+</li></ul>
+<p>can be found on the <a href="Lease_Inclusion_Plans.html" title="Lease Inclusion Plans">Lease Inclusion Plans</a> page.<br />
+All of these rules and logic are applied to the createQuotes functionality.
+<br />
+</p>
+<pre>
+&quot;inclusion_plans&quot;: [
+      {
+        &quot;inclusion_code&quot;: &quot;string&quot;,
+        &quot;inclusion_plan_code&quot;: &quot;string&quot;,
+        &quot;inclusion_plan_code_qualified&quot;: &quot;string&quot;,
+        &quot;retail_price_gross&quot;: 0,
+        &quot;included_flag&quot;: &quot;yes&quot;
+      }
+    ],
+</pre>
+</td><td> No
+</td></tr>
+</table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=8" title="Edit section: JSON example">edit</a>]</div><a name="JSON_example"></a><h4>JSON example</h4>
+<p>This example displays most of the available input fields. For complete list of fields please visit <a href="https://api.catch-e.com/docs/#/Quotes/createQuotes" class='external text' title="https://api.catch-e.com/docs/#/Quotes/createQuotes" rel="nofollow">api.catch-e.com/docs/#/Quotes/createQuotes</a><br />
+</p>
+<pre>
+[
+    {
+        &quot;override_warnings_flag&quot;: &quot;no&quot;,
+        &quot;duration&quot;: &quot;30&quot;,
+        &quot;quote_status_id&quot;: &quot;100007&quot;,
+        &quot;deal_type_id&quot;: &quot;100000&quot;,
+        &quot;posting_map_id&quot;: &quot;100023&quot;,
+        &quot;term&quot;: &quot;60&quot;,
+        &quot;annual_kms&quot;: &quot;15000&quot;,
+        &quot;contract_kms&quot;: &quot;75000&quot;,
+        &quot;state&quot;: &quot;NSW&quot;,
+        &quot;cost_centre&quot;: &quot;MATT CC1&quot;,
+        &quot;division&quot;: &quot;MATT DIV1&quot;,
+        &quot;location_name&quot;: &quot;Metro&quot;,
+        &quot;delivery_location_type&quot;: &quot;country&quot;,
+        &quot;vehicle_tracking_system_flag&quot;: &quot;yes&quot;,
+        &quot;parent_quote_id&quot;: &quot;135553&quot;,
+        &quot;opportunity_id&quot;: &quot;123456789101112131&quot;,
+        &quot;opportunity_number&quot;: &quot;100000&quot;,
+        &quot;opportunity_stage_id&quot;: &quot;100000&quot;,
+        &quot;lock_quote_flag&quot;: &quot;no&quot;,
+        &quot;client_id&quot;: &quot;100290&quot;,
+        &quot;client_name&quot;: &quot;Client Name Alternative for Quote&quot;,
+        &quot;client_contact_name&quot;: &quot;Your Quote Consultant Name&quot;,
+        &quot;client_email&quot;: &quot;email.address@client.com.au&quot;,
+        &quot;client_phone&quot;: &quot;03 9999 8881&quot;,
+        &quot;client_fax&quot;: &quot;03 9017 3521&quot;,
+        &quot;user_id_client_manager&quot;: &quot;10000&quot;,
+        &quot;after_hours_assistance_flag&quot;: &quot;yes&quot;,
+        &quot;comments&quot;: &quot;Bonus expires on 01/01/2025\r\n(this will display on the 2nd row in Catch-e APP).&quot;,
+        &quot;gap_insurance_flag&quot;: &quot;yes&quot;,
+        &quot;comments_internal&quot;: &quot;Internal Notes will not be shown to external users&quot;,
+        &quot;driver_id&quot;: &quot;101151&quot;,
+        &quot;driver_surname&quot;: &quot;Eyes&quot;,
+        &quot;driver_given_name&quot;: &quot;Blue&quot;,
+        &quot;driver_email&quot;: &quot;email.address@client.com.au&quot;,
+        &quot;driver_phone&quot;: &quot;0400000000&quot;,
+        &quot;driver_fax&quot;: &quot;03 9017 3522&quot;,
+        &quot;insurance_loading_types&quot;: {
+            &quot;past_claims&quot;: {
+                &quot;insurance_loading_type_id&quot;: &quot;100000&quot;
+            },
+            &quot;licence&quot;: {
+                &quot;insurance_loading_type_id&quot;: &quot;100005&quot;
+            },
+            &quot;driver_restriction&quot;: {
+                &quot;insurance_loading_type_id&quot;: &quot;100008&quot;
+            }
+        },
+        &quot;insurance_loss_licence_flag&quot;: &quot;yes&quot;,
+        &quot;insurance_at_fault_flag&quot;: &quot;yes&quot;,
+        &quot;insurance_conviction_flag&quot;: &quot;yes&quot;,
+        &quot;user_id_assigned&quot;: &quot;10000&quot;,
+        &quot;pay_cycle_id&quot;: &quot;100002&quot;,
+        &quot;annual_salary&quot;: &quot;90000&quot;,
+        &quot;employer_fbt_type&quot;: &quot;full-fbt-payable&quot;,
+        &quot;fbt_benefit_type&quot;: &quot;statutory&quot;,
+        &quot;fbt_business_use&quot;: &quot;60&quot;,
+        &quot;ecm_flag&quot;: &quot;yes&quot;,
+        &quot;previous_lease_start&quot;: &quot;2024-01-01&quot;,
+        &quot;previous_fbt_value&quot;: &quot;80000&quot;,
+        &quot;driver&quot;: {
+            &quot;accountant_contact_name&quot;: &quot;Accountant name&quot;,
+            &quot;accountant_contact_phone&quot;: &quot;03 9999 8881&quot;,
+            &quot;accountant_firm_name&quot;: &quot;Accountant Firm&quot;,
+            &quot;addresses&quot;: {
+                &quot;home&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3001&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                },
+                &quot;post&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3002&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                }
+            },
+            // &quot;address_id_home&quot;: &quot;100407&quot;,
+            // &quot;address_id_post&quot;: &quot;100406&quot;,
+            &quot;allowances&quot;: &quot;10&quot;,
+            &quot;annual_salary&quot;: &quot;90000&quot;,
+            &quot;asset_bank_accounts&quot;: &quot;10000&quot;,
+            &quot;asset_bank_accounts_description&quot;: &quot;Bank Asset&quot;,
+            &quot;asset_furniture&quot;: &quot;10000&quot;,
+            &quot;asset_furniture_description&quot;: &quot;furniture&quot;,
+            &quot;asset_investment_properties&quot;: &quot;10000&quot;,
+            &quot;asset_investment_properties_description&quot;: &quot;investment home&quot;,
+            &quot;asset_motor_vehicle&quot;: &quot;10000&quot;,
+            &quot;asset_motor_vehicle_description&quot;: &quot;car&quot;,
+            &quot;asset_other_investments&quot;: &quot;10000&quot;,
+            &quot;asset_other_investments_description&quot;: &quot;other invest&quot;,
+            &quot;asset_resident_property&quot;: &quot;10000&quot;,
+            &quot;asset_resident_property_description&quot;: &quot;home description&quot;,
+            &quot;asset_shares&quot;: &quot;10000&quot;,
+            &quot;asset_shares_description&quot;: &quot;shares&quot;,
+            &quot;asset_super&quot;: &quot;10000&quot;,
+            &quot;asset_super_description&quot;: &quot;super&quot;,
+            &quot;ato_loan_flag&quot;: &quot;yes&quot;,
+            &quot;australian_resident&quot;: &quot;yes&quot;,
+            &quot;card_account_number&quot;: &quot;111122223333&quot;,
+            &quot;client_cost_centre_id&quot;: &quot;100430&quot;,
+            &quot;client_id&quot;: &quot;100290&quot;,
+            &quot;contact_note&quot;: &quot;contact note&quot;,
+            &quot;corporate_type_id_previous_employer&quot;: &quot;100000&quot;,
+            &quot;created&quot;: &quot;2024-05-03 12:17:25&quot;,
+            &quot;credit_check_authorised_flag&quot;: &quot;yes&quot;,
+            &quot;date_of_birth&quot;: &quot;1997-02-10&quot;,
+            &quot;driver_claims_flag&quot;: &quot;yes&quot;,
+            &quot;driver_employment_type_id&quot;: &quot;100002&quot;,
+            &quot;driver_id_external&quot;: &quot;100000&quot;,
+            &quot;driver_lic_exp&quot;: &quot;2050-01-01&quot;,
+            &quot;driver_licence&quot;: &quot;LIC 049999999&quot;,
+            &quot;driver_licence_state&quot;: &quot;NSW&quot;,
+            &quot;driver_licence_card_number&quot;: &quot; NULL&quot;,
+            &quot;driver_occupation_code_id&quot;: &quot;100000&quot;,
+            &quot;employee_alias&quot;: &quot;Alias name&quot;,
+            &quot;employee_area&quot;: &quot;55555&quot;,
+            &quot;employee_end&quot;: &quot;2099-12-31&quot;,
+            &quot;employee_group&quot;: &quot;333&quot;,
+            &quot;employee_no&quot;: &quot;EMP 222333&quot;,
+            &quot;employee_pay_office&quot;: &quot;55555&quot;,
+            &quot;employee_sl_acc&quot;: &quot;10000&quot;,
+            &quot;employee_start&quot;: &quot;2000-01-01&quot;,
+            &quot;employee_super&quot;: &quot;0&quot;,
+            &quot;employer_address_1&quot;: &quot;employer address 1&quot;,
+            &quot;employer_address_2&quot;: &quot;employer address 1&quot;,
+            &quot;employer_address_3&quot;: &quot;employer address 3&quot;,
+            &quot;employer_address_postcode&quot;: &quot;3000&quot;,
+            &quot;employer_address_state&quot;: &quot;VIC&quot;,
+            &quot;employer_super&quot;: &quot;0&quot;,
+            &quot;expense_credit_card&quot;: &quot;10000&quot;,
+            &quot;expense_household&quot;: &quot;10000&quot;,
+            &quot;expense_mortgage&quot;: &quot;10000&quot;,
+            &quot;expense_other&quot;: &quot;10000&quot;,
+            &quot;expense_private_education_childcare&quot;: &quot;10000&quot;,
+            &quot;expense_rent&quot;: &quot;10000&quot;,
+            &quot;expense_vehicle&quot;: &quot;10000&quot;,
+            &quot;external_code&quot;: &quot;driverExternal1&quot;,
+            &quot;fbt_type&quot;: &quot;1&quot;,
+            &quot;financier_applicant_reference&quot;: &quot;appRef&quot;,
+            &quot;gender&quot;: &quot;Male&quot;,
+            &quot;generated_password&quot;: &quot;0&quot;,
+            &quot;given_name&quot;: &quot;Blue&quot;,
+            &quot;home_car_postcode&quot;: &quot;3000&quot;,
+            &quot;home_email&quot;: &quot;email.address@client.com.au&quot;,
+            &quot;home_fax&quot;: &quot;03 9999 8882&quot;,
+            &quot;home_phone&quot;: &quot;0400000000&quot;,
+            &quot;home_postcode&quot;: &quot;2000&quot;,
+            &quot;home_state&quot;: &quot;NSW&quot;,
+            &quot;home_street&quot;: &quot;333&quot;,
+            &quot;home_street_no&quot;: &quot;55555&quot;,
+            &quot;home_street_type&quot;: &quot;home_street_type&quot;,
+            &quot;home_suburb&quot;: &quot;home_suburb&quot;,
+            &quot;home_unit_no&quot;: &quot;55555&quot;,
+            &quot;income_government_benefits&quot;: &quot;10000&quot;,
+            &quot;income_gross&quot;: &quot;100000&quot;,
+            &quot;income_investment&quot;: &quot;10000&quot;,
+            &quot;income_net&quot;: &quot;10000&quot;,
+            &quot;income_other&quot;: &quot;10000&quot;,
+            &quot;income_rental_net&quot;: &quot;10000&quot;,
+            &quot;income_spouse_gross&quot;: &quot;10000&quot;,
+            &quot;income_spouse_net&quot;: &quot;10000&quot;,
+            &quot;income_superannuation&quot;: &quot;10000&quot;,
+            &quot;insurance_broker_fee_exempt_flag&quot;: &quot;yes&quot;,
+            &quot;kyc_verified_flag&quot;: &quot;no&quot;,
+            &quot;landlord_name&quot;: &quot;landlord_name&quot;,
+            &quot;landlord_telephone&quot;: &quot;03 9999 8881&quot;,
+            &quot;last_edit&quot;: &quot;2024-05-03 12:17:25&quot;,
+            &quot;liability_credit_card_limit&quot;: &quot;10000&quot;,
+            &quot;liability_credit_card_limit_description&quot;: &quot;liability_credit_card_limit_description&quot;,
+            &quot;liability_investment_mortgages&quot;: &quot;10000&quot;,
+            &quot;liability_investment_mortgages_description&quot;: &quot;liability_investment_mortgages_desc&quot;,
+            &quot;liability_loans&quot;: &quot;10000&quot;,
+            &quot;liability_loans_description&quot;: &quot;liability_loans_description&quot;,
+            &quot;liability_mortgages&quot;: &quot;10000&quot;,
+            &quot;liability_mortgages_description&quot;: &quot;liability_mortgages_description&quot;,
+            &quot;liability_other&quot;: &quot;10000&quot;,
+            &quot;liability_other_description&quot;: &quot;liability_other_description&quot;,
+            &quot;liability_overdraft&quot;: &quot;10000&quot;,
+            &quot;liability_overdraft_description&quot;: &quot;liability_overdraft_description&quot;,
+            &quot;liability_rent&quot;: &quot;10000&quot;,
+            &quot;liability_rent_description&quot;: &quot;10000&quot;,
+            &quot;licence_class&quot;: &quot;licence_class&quot;,
+            &quot;marital_status&quot;: &quot;married&quot;,
+            &quot;middle_name&quot;: &quot;middle_name&quot;,
+            &quot;mobile&quot;: &quot;0411662453&quot;,
+            &quot;name_on_account&quot;: &quot;name_on_account&quot;,
+            &quot;no_of_dependents&quot;: &quot;0&quot;,
+            &quot;pay_cycle_id&quot;: &quot;100002&quot;,
+            &quot;preferred_name&quot;: &quot;preferred_name&quot;,
+            &quot;previous_address_1&quot;: &quot;previous_address_1&quot;,
+            &quot;previous_address_2&quot;: &quot;previous_address_2&quot;,
+            &quot;previous_address_3&quot;: &quot;previous_address_3&quot;,
+            &quot;previous_address_country_id&quot;: &quot;16238953344683478812&quot;,
+            &quot;previous_address_postcode&quot;: &quot;3000&quot;,
+            &quot;previous_address_state&quot;: &quot;VIC&quot;,
+            &quot;previous_address_years_at_address&quot;: &quot;0&quot;,
+            &quot;previous_employer_name&quot;: &quot;previous_employer_name&quot;,
+            &quot;previous_employer_phone&quot;: &quot;03 9999 8881&quot;,
+            &quot;previous_years_employed&quot;: &quot;0&quot;,
+            &quot;report_delivery_type&quot;: &quot;email&quot;,
+            &quot;residency_status&quot;: &quot;permanent-resident&quot;,
+            &quot;residential_status&quot;: &quot;own&quot;,
+            &quot;salutation&quot;: &quot;Mr&quot;,
+            &quot;start_at_address&quot;: &quot;2000-01-01&quot;,
+            &quot;stop_becs_flag&quot;: &quot;no&quot;,
+            &quot;supplier_id_etag&quot;: &quot;100475&quot;,
+            &quot;supplier_id_financier&quot;: &quot;100492&quot;,
+            &quot;surname&quot;: &quot;Eyes&quot;,
+            &quot;tag_account_number&quot;: &quot;123456789&quot;,
+            &quot;tag_number&quot;: &quot;9999999999&quot;,
+            &quot;user_id_package_advisor&quot;: &quot;10000&quot;,
+            &quot;work_contact_given&quot;: &quot;The Bossman&quot;,
+            &quot;work_contact_position&quot;: &quot;BigWig&quot;,
+            &quot;work_contact_surname&quot;: &quot;work_contact_surname&quot;,
+            &quot;work_fax&quot;: &quot;03 9999 8882&quot;,
+            &quot;work_name&quot;: &quot;work_name&quot;,
+            &quot;work_phone&quot;: &quot;0400000000&quot;,
+            &quot;work_phone_ext&quot;: &quot;1234&quot;,
+            &quot;work_position&quot;: &quot;work_position&quot;,
+            &quot;work_postcode&quot;: &quot;3000&quot;,
+            &quot;work_state&quot;: &quot;VIC&quot;,
+            &quot;work_street&quot;: &quot;work_street&quot;,
+            &quot;work_street_no&quot;: &quot;55555&quot;,
+            &quot;work_street_type&quot;: &quot;work_street_type&quot;,
+            &quot;work_suburb&quot;: &quot;work_suburb&quot;,
+            &quot;work_type&quot;: &quot;work_type&quot;,
+            &quot;work_unit_no&quot;: &quot;55555&quot;,
+            &quot;years_at_address&quot;: &quot;0&quot;,
+            &quot;years_with_employer&quot;: &quot;0&quot;,
+            &quot;override_warnings_flag&quot;: &quot;no&quot;,
+        },
+        &quot;variant_id&quot;: &quot;184796&quot;,
+        &quot;plate_year&quot;: &quot;2022&quot;,
+        &quot;new_used&quot;: &quot;new&quot;,
+        &quot;procurement_flag&quot;: &quot;yes&quot;,
+        &quot;procurement_fee&quot;: &quot;500&quot;,
+        &quot;disposal_flag&quot;: &quot;yes&quot;,
+        &quot;disposal_fee&quot;: &quot;400&quot;,
+        &quot;odometer&quot;: &quot;10&quot;,
+        &quot;warranty_mths&quot;: &quot;60&quot;,
+        &quot;warranty_kms&quot;: &quot;77777&quot;,
+        &quot;colour_preference&quot;: &quot;Fbt Value Should stay LOCKED&quot;,
+        &quot;colour_preference_2&quot;: &quot;BLUE1 (BLUE2 - BLUE4)&quot;,
+        &quot;colour_preference_3&quot;: &quot;BLUE1 (BLUE2 - BLUE4)&quot;,
+        &quot;colour_preference_note&quot;: &quot;Test Colour API-20415&quot;,
+        &quot;trim_preference&quot;: &quot;Trrim&quot;,
+        &quot;supplier_id_dealer&quot;: &quot;100001&quot;,
+        &quot;dealer_comment&quot;: &quot;dealer comments&quot;,
+        &quot;discount_type_id&quot;: &quot;100001&quot;,
+        &quot;list_price_net&quot;: &quot;30302.73&quot;,
+        &quot;list_price_gst&quot;: &quot;3030.27&quot;,
+        &quot;lock_discount_flag&quot;: &quot;yes&quot;,
+        &quot;discount_net&quot;: &quot;1&quot;,
+        &quot;discount_gst&quot;: &quot;0.1&quot;,
+        &quot;rebate_net&quot;: &quot;2&quot;,
+        &quot;rebate_gst&quot;: &quot;0.2&quot;,
+        &quot;dealer_rebate_net&quot;: &quot;3&quot;,
+        &quot;dealer_rebate_gst&quot;: &quot;0.3&quot;,
+        &quot;bonus_amount_net&quot;: &quot;201&quot;,
+        &quot;bonus_amount_gst&quot;: &quot;20.1&quot;,
+        &quot;lock_dealer_discount_flag&quot;: &quot;yes&quot;,
+        &quot;dealer_discount_net&quot;: &quot;4&quot;,
+        &quot;dealer_discount_gst&quot;: &quot;0.4&quot;,
+        &quot;margin_net&quot;: &quot;5&quot;,
+        &quot;margin_gst&quot;: &quot;0.5&quot;,
+        &quot;dealer_delivery_net&quot;: &quot;60.01&quot;,
+        &quot;dealer_delivery_gst&quot;: &quot;600.01&quot;,
+        &quot;lock_luxury_car_tax_flag&quot;: &quot;yes&quot;,
+        &quot;luxury_car_tax&quot;: &quot;294.68&quot;,
+        &quot;ctp_initial_net&quot;: &quot;560&quot;,
+        &quot;ctp_initial_gst&quot;: &quot;0&quot;,
+        &quot;reg_initial_net&quot;: &quot;482&quot;,
+        &quot;premium_plates_net&quot;: &quot;80&quot;,
+        &quot;lock_purchase_stamp_duty_flag&quot;: &quot;yes&quot;,
+        &quot;purchase_stamp_duty&quot;: &quot;3000&quot;,
+        &quot;lock_fbt_value_flag&quot;: &quot;yes&quot;,
+        &quot;fbt_value&quot;: &quot;77995.36&quot;,
+        &quot;fbt_treatment_type&quot;: &quot;standard&quot;,
+        &quot;price_comment&quot;: &quot;price comments&quot;,
+        &quot;pricing_requested&quot;: &quot;2024-05-03 12:17:25&quot;,
+        &quot;pricing_received&quot;: &quot;2024-05-03 12:17:25&quot;,
+        &quot;pricing_reference&quot;: &quot;price ref&quot;,
+        &quot;optional_equipment&quot;: [
+            {
+                &quot;optional_equipment_id&quot;: &quot;271573&quot;,
+                &quot;description&quot;: &quot;Enhanced Autopilot&quot;,
+                &quot;cost_price_net&quot;: &quot;6027.27&quot;,
+                &quot;list_price_net&quot;: &quot;30302.73&quot;,
+                &quot;discount_net&quot;: &quot;1.00&quot;,
+                &quot;gst&quot;: &quot;602.73&quot;,
+                &quot;residual_rate&quot;: &quot;0&quot;,
+                &quot;included_flag&quot;: &quot;yes&quot;
+            }
+        ],
+        &quot;supplier_id_financier&quot;: &quot;100492&quot;,
+        &quot;finance_type_id&quot;: &quot;100000&quot;,
+        &quot;deposit_net&quot;: &quot;181.82&quot;,
+        &quot;deposit_gst&quot;: &quot;18.18&quot;,
+        &quot;trade_in_reg_no&quot;: &quot;TRADEIN&quot;,
+        &quot;trade_in_amount_net&quot;: &quot;272.73&quot;,
+        &quot;trade_in_amount_gst&quot;: &quot;27.27&quot;,
+        &quot;originator_id&quot;: &quot;100006&quot;,
+        &quot;application_reference&quot;: &quot;App Test 1-1&quot;,
+        &quot;application_date&quot;: &quot;2024-05-03 12:17:25&quot;,
+        &quot;application_status_flag&quot;: &quot;successful&quot;,
+        &quot;maintenance_service&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;maintenance_service_profile_id&quot;: &quot;100013&quot;,
+            &quot;service_mths&quot;: &quot;12&quot;,
+            &quot;service_kms&quot;: &quot;15000&quot;,
+            &quot;monthly_amount_net&quot;: &quot;50.01&quot;
+        },
+        &quot;tyres&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;tyre_id&quot;: &quot;100002&quot;,
+            &quot;tyres_per_set&quot;: &quot;4&quot;,
+            &quot;tyre_km_interval&quot;: &quot;40001&quot;,
+            &quot;unit_cost_net&quot;: &quot;400.01&quot;,
+            &quot;tyres_estimated&quot;: &quot;4&quot;,
+            &quot;limit_flag&quot;: &quot;yes&quot;,
+            &quot;monthly_amount_net&quot;: &quot;27.59&quot;
+        },
+        &quot;reg_ctp&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;annual_reg&quot;: &quot;482.01&quot;,
+            &quot;annual_ctp&quot;: &quot;560.01&quot;,
+            &quot;annual_plates&quot;: &quot;10.01&quot;,
+            &quot;renewals&quot;: &quot;4&quot;,
+            &quot;monthly_amount_net&quot;: &quot;79.04&quot;
+        },
+        &quot;insurer_location_id&quot;: &quot;100021&quot;,
+        //&quot;insurer_location_postcode&quot;: &quot;2000&quot;,
+        &quot;policy_owner_type&quot;: &quot;insurer_internal&quot;,
+        &quot;lock_comprehensive_insurance_flag&quot;: &quot;no&quot;,
+        &quot;insurance&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;supplier_id&quot;: &quot;100453&quot;,
+            &quot;billing_type&quot;: &quot;monthly&quot;,
+            &quot;insurance_type_id&quot;: &quot;100003&quot;,
+            &quot;claim_excess&quot;: &quot;500.01&quot;,
+            &quot;annual_insurance&quot;: &quot;3073.08&quot;,
+            &quot;fund_1st_year_flag&quot;: &quot;no&quot;,
+            &quot;monthly_amount_net&quot;: &quot;211.93&quot;
+        },
+        &quot;fuel&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;fuel_type_id&quot;: &quot;100001&quot;,
+            &quot;cost_per_litre&quot;: &quot;1.45&quot;,
+            &quot;usage_type&quot;: &quot;combined&quot;,
+            &quot;litres_per_100km&quot;: &quot;7.1&quot;,
+            &quot;monthly_amount_net&quot;: &quot;133.14&quot;
+        },
+        &quot;roadside_assistance&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;roadside_assistance_plan_id&quot;: &quot;100006&quot;,
+            &quot;premium&quot;: &quot;72.01&quot;,
+            &quot;cost&quot;: &quot;60.01&quot;,
+            &quot;monthly_amount_net&quot;: &quot;6.21&quot;
+        },
+        &quot;relief_vehicle&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;monthly_amount_net&quot;: &quot;20.69&quot;
+        },
+        &quot;vehicle_maintenance_program&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;monthly_amount_net&quot;: &quot;2.62&quot;
+        },
+        &quot;lti&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;lti_top_up_benefit_id&quot;: &quot;100002&quot;,
+            &quot;retail_price_gross&quot;: &quot;1700.01&quot;
+        },
+        &quot;small_damage_repairs&quot;: {
+            &quot;small_damage_repairs_id&quot;: &quot;100004&quot;,
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;premium&quot;: &quot;997.12&quot;,
+            &quot;monthly_amount_net&quot;: &quot;0.00&quot;
+        },
+        &quot;redundancy_insurance_flag&quot;: &quot;no&quot;,
+        &quot;carbon_emissions_offset&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;
+        },
+        &quot;walkaway&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;walkaway_plan_id&quot;: &quot;100000&quot;
+        },
+        &quot;tyre_rim_insurance&quot;: {
+            &quot;included_flag&quot;: &quot;yes&quot;,
+            &quot;tyre_rim_insurance_plan_id&quot;: &quot;100001&quot;
+        },
+        &quot;inclusion_plans&quot;: [
+            {
+                &quot;included_flag&quot;: &quot;yes&quot;,
+                &quot;inclusion_code&quot;: &quot;MP&quot;,
+                &quot;inclusion_plan_code&quot;: &quot;MP1&quot;,
+                &quot;inclusion_plan_code_qualified&quot;: &quot;MP-MP1-0000-00-00&quot;,
+                &quot;retail_price_gross&quot;: &quot;707.06&quot;
+            }
+        ],
+        &quot;bespoke_field_values&quot;: {}
+    }
+]
+</pre><br />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=9" title="Edit section: Sucessful Response Details">edit</a>]</div><a name="Sucessful_Response_Details"></a><h4>Sucessful Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 201 Created
+</td></tr>
+<tr>
+<td> <pre>
+{
+    &quot;quote_id&quot;: &quot;135725&quot;,
+    &quot;accepted_count&quot;: null,
+    &quot;accident_management_fee&quot;: {
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;advance_arrears&quot;: &quot;advance&quot;,
+    &quot;after_hours_assistance_flag&quot;: &quot;no&quot;,
+    &quot;allowances&quot;: 0,
+    &quot;annual_salary&quot;: 90000,
+    &quot;application_collection_date&quot;: &quot;0000-00-00&quot;,
+    &quot;application_date&quot;: null,
+    &quot;application_reference&quot;: &quot;&quot;,
+    &quot;application_status&quot;: &quot;&quot;,
+    &quot;application_status_flag&quot;: null,
+    &quot;arrears_interest&quot;: 0,
+    &quot;ato_loan_flag&quot;: &quot;no&quot;,
+    &quot;base_rate&quot;: 0.0625,
+    &quot;base_residual_rate&quot;: 0,
+    &quot;bespoke_field_values&quot;: {
+        &quot;bespoke_field_name&quot;: &quot;&quot;,
+        &quot;field_name_1&quot;: &quot;no&quot;,
+        &quot;field_name_2&quot;: &quot;&quot;,
+        &quot;field_name_3&quot;: &quot;&quot;,
+        &quot;input_type_checkbox&quot;: &quot;&quot;,
+        &quot;input_type_date&quot;: &quot;&quot;,
+        &quot;input_type_listbox&quot;: &quot;&quot;,
+        &quot;input_type_number&quot;: &quot;&quot;,
+        &quot;input_type_textarea&quot;: &quot;&quot;,
+        &quot;input_type_text_20_characters&quot;: &quot;&quot;
+    },
+    &quot;billing_periods&quot;: 60,
+    &quot;bonus_amount_gst&quot;: 0,
+    &quot;bonus_amount_net&quot;: 0,
+    &quot;broker_fee&quot;: 0,
+    &quot;broker_rate&quot;: 0,
+    &quot;budgets&quot;: {
+        &quot;AMFEE&quot;: {
+            &quot;posting_class_id&quot;: &quot;100119&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;CEO&quot;: {
+            &quot;posting_class_id&quot;: &quot;100065&quot;,
+            &quot;amount_net&quot;: 5.52,
+            &quot;amount_gst&quot;: 0.55,
+            &quot;total_amount_net&quot;: 331.2,
+            &quot;total_amount_gst&quot;: 33,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;ECM&quot;: {
+            &quot;posting_class_id&quot;: &quot;100034&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;ECMC&quot;: {
+            &quot;posting_class_id&quot;: &quot;100045&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;EW&quot;: {
+            &quot;posting_class_id&quot;: &quot;100051&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;F&quot;: {
+            &quot;posting_class_id&quot;: &quot;100004&quot;,
+            &quot;amount_net&quot;: 232,
+            &quot;amount_gst&quot;: 23.2,
+            &quot;total_amount_net&quot;: 13920,
+            &quot;total_amount_gst&quot;: 1392,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;FIN&quot;: {
+            &quot;posting_class_id&quot;: &quot;100006&quot;,
+            &quot;amount_net&quot;: 1487.82,
+            &quot;amount_gst&quot;: 148.78,
+            &quot;total_amount_net&quot;: 89269.2,
+            &quot;total_amount_gst&quot;: 8926.8,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;IFEE&quot;: {
+            &quot;posting_class_id&quot;: &quot;100096&quot;,
+            &quot;amount_net&quot;: 5,
+            &quot;amount_gst&quot;: 0.5,
+            &quot;total_amount_net&quot;: 300,
+            &quot;total_amount_gst&quot;: 30,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;INS&quot;: {
+            &quot;posting_class_id&quot;: &quot;100009&quot;,
+            &quot;amount_net&quot;: 200.6,
+            &quot;amount_gst&quot;: 19.13,
+            &quot;total_amount_net&quot;: 12036,
+            &quot;total_amount_gst&quot;: 1147.8,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;LTI&quot;: {
+            &quot;posting_class_id&quot;: &quot;100135&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;MAINT&quot;: {
+            &quot;posting_class_id&quot;: &quot;100012&quot;,
+            &quot;amount_net&quot;: 70,
+            &quot;amount_gst&quot;: 7,
+            &quot;total_amount_net&quot;: 4200,
+            &quot;total_amount_gst&quot;: 420,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;MFEE&quot;: {
+            &quot;posting_class_id&quot;: &quot;100014&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;NEW&quot;: {
+            &quot;posting_class_id&quot;: &quot;100094&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;O&quot;: {
+            &quot;posting_class_id&quot;: &quot;100044&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;REG&quot;: {
+            &quot;posting_class_id&quot;: &quot;100017&quot;,
+            &quot;amount_net&quot;: 76.41,
+            &quot;amount_gst&quot;: 7.64,
+            &quot;total_amount_net&quot;: 4584.6,
+            &quot;total_amount_gst&quot;: 458.4,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;RSA&quot;: {
+            &quot;posting_class_id&quot;: &quot;100043&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;RVEH&quot;: {
+            &quot;posting_class_id&quot;: &quot;100019&quot;,
+            &quot;amount_net&quot;: 5,
+            &quot;amount_gst&quot;: 0.5,
+            &quot;total_amount_net&quot;: 300,
+            &quot;total_amount_gst&quot;: 30,
+            &quot;notes&quot;: &quot;Included&quot;
+        },
+        &quot;SDR&quot;: {
+            &quot;posting_class_id&quot;: &quot;100074&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;T&quot;: {
+            &quot;posting_class_id&quot;: &quot;100021&quot;,
+            &quot;amount_net&quot;: 53.33,
+            &quot;amount_gst&quot;: 5.33,
+            &quot;total_amount_net&quot;: 3199.8,
+            &quot;total_amount_gst&quot;: 319.8,
+            &quot;notes&quot;: &quot;4 Included&quot;
+        },
+        &quot;VMP&quot;: {
+            &quot;posting_class_id&quot;: &quot;100087&quot;,
+            &quot;amount_net&quot;: 0,
+            &quot;amount_gst&quot;: 0,
+            &quot;total_amount_net&quot;: 0,
+            &quot;total_amount_gst&quot;: 0,
+            &quot;notes&quot;: &quot;Excluded&quot;
+        },
+        &quot;WOF&quot;: {
+            &quot;posting_class_id&quot;: &quot;100137&quot;,
+            &quot;amount_net&quot;: 5,
+            &quot;amount_gst&quot;: 0.5,
+            &quot;total_amount_net&quot;: 300,
+            &quot;total_amount_gst&quot;: 30,
+            &quot;notes&quot;: &quot;Included&quot;
+        }
+    },
+    &quot;budgets_financed&quot;: 0,
+    &quot;cancelled&quot;: &quot;0000-00-00 00:00:00&quot;,
+    &quot;capitalised_interest&quot;: 0,
+    &quot;carbon_emissions_offset&quot;: {
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;claimable_gst&quot;: 6191,
+    &quot;client_contact_name&quot;: &quot;&quot;,
+    &quot;client_cost_centre_id&quot;: &quot;0&quot;,
+    &quot;client_division_id&quot;: &quot;0&quot;,
+    &quot;client_email&quot;: &quot;&quot;,
+    &quot;client_fax&quot;: &quot;&quot;,
+    &quot;client_group_flag&quot;: &quot;no&quot;,
+    &quot;client_id&quot;: &quot;100206&quot;,
+    &quot;client_margin_net&quot;: 0,
+    &quot;client_margin_rate&quot;: 0,
+    &quot;client_name&quot;: &quot;&quot;,
+    &quot;client_phone&quot;: &quot;&quot;,
+    &quot;client_residual_rate&quot;: 0,
+    &quot;client_type&quot;: &quot;&quot;,
+    &quot;colour_preference&quot;: &quot;&quot;,
+    &quot;colour_preference_2&quot;: &quot;&quot;,
+    &quot;colour_preference_3&quot;: &quot;&quot;,
+    &quot;colour_preference_note&quot;: &quot;&quot;,
+    &quot;comments&quot;: &quot;&quot;,
+    &quot;comments_internal&quot;: null,
+    &quot;commission&quot;: 96.72,
+    &quot;commission_rate&quot;: 0.001,
+    &quot;competitor_id&quot;: &quot;0&quot;,
+    &quot;competitor_margin_id&quot;: &quot;0&quot;,
+    &quot;comprehensive_insurance&quot;: 0,
+    &quot;contract_kms&quot;: 75000,
+    &quot;cost_centre&quot;: &quot;&quot;,
+    &quot;created&quot;: &quot;2024-05-02 23:52:33&quot;,
+    &quot;csd_gst&quot;: 0,
+    &quot;csd_net&quot;: 0,
+    &quot;csd_rate&quot;: 0,
+    &quot;ctp_initial_gst&quot;: 0,
+    &quot;ctp_initial_net&quot;: 560,
+    &quot;date&quot;: &quot;2024-05-02&quot;,
+    &quot;date_to&quot;: &quot;2024-06-01&quot;,
+    &quot;deal_type_id&quot;: &quot;0&quot;,
+    &quot;dealer_comment&quot;: null,
+    &quot;dealer_delivery_gst&quot;: 77.78,
+    &quot;dealer_delivery_net&quot;: 777.77,
+    &quot;dealer_discount_gst&quot;: 0,
+    &quot;dealer_discount_net&quot;: 0,
+    &quot;dealer_rebate_gst&quot;: 0,
+    &quot;dealer_rebate_net&quot;: 0,
+    &quot;deferred_interest&quot;: 0,
+    &quot;delivery_fee&quot;: 0,
+    &quot;delivery_location_type&quot;: &quot;metro&quot;,
+    &quot;deposit_gst&quot;: 0,
+    &quot;deposit_net&quot;: 0,
+    &quot;depreciable_amount&quot;: 96720.81,
+    &quot;discount_gst&quot;: 0,
+    &quot;discount_name&quot;: &quot;&quot;,
+    &quot;discount_net&quot;: 0,
+    &quot;discount_type_id&quot;: &quot;0&quot;,
+    &quot;disposal_fee&quot;: 0,
+    &quot;disposal_flag&quot;: &quot;no&quot;,
+    &quot;division&quot;: &quot;&quot;,
+    &quot;driver&quot;: null,
+    &quot;driver_email&quot;: &quot;&quot;,
+    &quot;driver_fax&quot;: null,
+    &quot;driver_given_name&quot;: &quot;&quot;,
+    &quot;driver_id&quot;: null,
+    &quot;driver_phone&quot;: null,
+    &quot;driver_surname&quot;: &quot;Surname&quot;,
+    &quot;duration&quot;: 30,
+    &quot;early_termination_fee&quot;: null,
+    &quot;ecm_flag&quot;: &quot;yes&quot;,
+    &quot;employer_fbt_type&quot;: &quot;full-fbt-payable&quot;,
+    &quot;establishment_fee&quot;: 0,
+    &quot;establishment_fee_funded_flag&quot;: &quot;yes&quot;,
+    &quot;excess_km_flag&quot;: &quot;no&quot;,
+    &quot;excess_km_rate&quot;: 0,
+    &quot;extended_warranty&quot;: {
+        &quot;warranty_plan_id&quot;: &quot;0&quot;,
+        &quot;warranty_category_id&quot;: &quot;0&quot;,
+        &quot;months&quot;: 0,
+        &quot;kilometres&quot;: 0,
+        &quot;rate&quot;: 0,
+        &quot;retail_price_net&quot;: 0,
+        &quot;cost&quot;: 0,
+        &quot;margin_net&quot;: 0,
+        &quot;financed_flag&quot;: &quot;no&quot;,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;fbt_benefit_type&quot;: &quot;statutory&quot;,
+    &quot;fbt_business_use&quot;: 0,
+    &quot;fbt_statutory_rate&quot;: 0.2,
+    &quot;fbt_treatment_type&quot;: &quot;standard&quot;,
+    &quot;fbt_value&quot;: 97874.81,
+    &quot;fbt_value_yearly&quot;: 19138.32,
+    &quot;finance_administration_fee_gst&quot;: 0,
+    &quot;finance_administration_fee_net&quot;: 0,
+    &quot;finance_method&quot;: &quot;arrears_no_deferred&quot;,
+    &quot;finance_pmt_gst&quot;: 148.78,
+    &quot;finance_pmt_net&quot;: 1487.82,
+    &quot;finance_rate&quot;: 0.0625,
+    &quot;finance_type_id&quot;: null,
+    &quot;finance_uuid&quot;: &quot;&quot;,
+    &quot;financed_amount&quot;: 96817.53,
+    &quot;fuel&quot;: {
+        &quot;fuel_type_id&quot;: &quot;100001&quot;,
+        &quot;cost_per_litre&quot;: 1.45,
+        &quot;usage_type&quot;: &quot;combined&quot;,
+        &quot;litres_per_100km&quot;: 12.8,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;fuel_on_delivery_fee&quot;: null,
+    &quot;gap_insurance&quot;: 0,
+    &quot;gap_insurance_flag&quot;: &quot;yes&quot;,
+    &quot;gst_on_interest&quot;: 0,
+    &quot;high_km_adjustment_rate&quot;: 0,
+    &quot;inclusion_plan_total&quot;: 0,
+    &quot;inclusion_plans&quot;: [],
+    &quot;insurance&quot;: {
+        &quot;supplier_id&quot;: &quot;100453&quot;,
+        &quot;insurance_type_id&quot;: &quot;100004&quot;,
+        &quot;billing_type&quot;: &quot;monthly&quot;,
+        &quot;claim_excess&quot;: 1000,
+        &quot;base_rate_annual&quot;: 0,
+        &quot;broker_fee_monthly&quot;: 23,
+        &quot;broker_fee_annual&quot;: 0,
+        &quot;loading_rate&quot;: 0,
+        &quot;loading_rate_flag&quot;: &quot;not-applicable&quot;,
+        &quot;stamp_duty&quot;: 9.26,
+        &quot;fire_service_levy&quot;: 1.67,
+        &quot;annual_insurance&quot;: 2407.2,
+        &quot;fund_1st_year_flag&quot;: &quot;no&quot;,
+        &quot;cost&quot;: 166.67,
+        &quot;category_code&quot;: &quot;-----&quot;,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;insurance_at_fault_flag&quot;: null,
+    &quot;insurance_conviction_flag&quot;: null,
+    &quot;insurance_disclosures&quot;: {
+        &quot;100000&quot;: {
+            &quot;insurance_disclosures_id&quot;: &quot;100000&quot;,
+            &quot;value&quot;: null
+        },
+        &quot;100001&quot;: {
+            &quot;insurance_disclosures_id&quot;: &quot;100001&quot;,
+            &quot;value&quot;: null
+        },
+        &quot;100002&quot;: {
+            &quot;insurance_disclosures_id&quot;: &quot;100002&quot;,
+            &quot;value&quot;: null
+        },
+        &quot;100003&quot;: {
+            &quot;insurance_disclosures_id&quot;: &quot;100003&quot;,
+            &quot;value&quot;: null
+        },
+        &quot;100004&quot;: {
+            &quot;insurance_disclosures_id&quot;: &quot;100004&quot;,
+            &quot;value&quot;: &quot;0000-00-00&quot;
+        }
+    },
+    &quot;insurance_loading_types&quot;: [],
+    &quot;insurance_loss_licence_flag&quot;: null,
+    &quot;insurer_location_id&quot;: &quot;100021&quot;,
+    &quot;insurer_location_postcode&quot;: 2000,
+    &quot;interest_on_residual&quot;: 0,
+    &quot;last_edit&quot;: &quot;2024-05-02 23:52:34&quot;,
+    &quot;lessee_rate&quot;: 0.062849,
+    &quot;list_price_gst&quot;: 8380.95,
+    &quot;list_price_net&quot;: 83809.51,
+    &quot;location_name&quot;: &quot;&quot;,
+    &quot;location_registration_id&quot;: &quot;100001&quot;,
+    &quot;lock_comprehensive_insurance_flag&quot;: &quot;no&quot;,
+    &quot;lock_dealer_discount_flag&quot;: &quot;no&quot;,
+    &quot;lock_discount_flag&quot;: &quot;no&quot;,
+    &quot;lock_fbt_value_flag&quot;: &quot;no&quot;,
+    &quot;lock_lease_rate_flag&quot;: &quot;no&quot;,
+    &quot;lock_luxury_car_tax_flag&quot;: &quot;no&quot;,
+    &quot;lock_purchase_stamp_duty_flag&quot;: &quot;no&quot;,
+    &quot;lock_quote_flag&quot;: &quot;no&quot;,
+    &quot;lock_redundancy_insurance_flag&quot;: &quot;no&quot;,
+    &quot;lock_residual_flag&quot;: &quot;no&quot;,
+    &quot;look_ahead&quot;: 0,
+    &quot;lti&quot;: {
+        &quot;lti_plan_id&quot;: &quot;0&quot;,
+        &quot;lti_top_up_benefit_id&quot;: &quot;0&quot;,
+        &quot;external_quotation_number&quot;: &quot;0&quot;,
+        &quot;retail_price_net&quot;: 0,
+        &quot;retail_price_gross&quot;: 0,
+        &quot;cost_price_net&quot;: 0,
+        &quot;margin_net&quot;: 0,
+        &quot;retail_price_gst&quot;: 0,
+        &quot;retail_price_stamp_duty&quot;: 0,
+        &quot;request_date&quot;: &quot;0000-00-00&quot;,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;luxury_car_tax&quot;: 4828.8,
+    &quot;luxury_car_tax_exempt_flag&quot;: &quot;no&quot;,
+    &quot;luxury_charge&quot;: 1514.09,
+    &quot;maintenance_service&quot;: {
+        &quot;maintenance_service_profile_id&quot;: &quot;100024&quot;,
+        &quot;service_kms&quot;: 10000,
+        &quot;service_mths&quot;: 6,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;margin_gst&quot;: 0,
+    &quot;margin_net&quot;: 0,
+    &quot;months_in_arrears&quot;: 0,
+    &quot;mortgage_duty&quot;: 0,
+    &quot;new_used&quot;: &quot;new&quot;,
+    &quot;odometer&quot;: 0,
+    &quot;on_road_price_gst&quot;: 8458.73,
+    &quot;on_road_price_net&quot;: 94453.08,
+    &quot;opportunity_id&quot;: &quot;0&quot;,
+    &quot;opportunity_number&quot;: 0,
+    &quot;opportunity_stage_id&quot;: &quot;0&quot;,
+    &quot;optional_equipment&quot;: [],
+    &quot;optional_equipment_gst&quot;: 0,
+    &quot;optional_equipment_net&quot;: 0,
+    &quot;originator_fee&quot;: 0,
+    &quot;originator_id&quot;: &quot;0&quot;,
+    &quot;other_brokerage&quot;: 0,
+    &quot;package_admin_fee&quot;: 0,
+    &quot;packaging_advice_fee&quot;: 0,
+    &quot;parent_quote_id&quot;: null,
+    &quot;pay_cycle_billing_periods&quot;: 65,
+    &quot;pay_cycle_id&quot;: &quot;100007&quot;,
+    &quot;periods_deferred&quot;: 0,
+    &quot;plate_year&quot;: 2024,
+    &quot;policy_owner_type&quot;: &quot;insurer_internal&quot;,
+    &quot;post_tax_existing&quot;: 0,
+    &quot;posting_map&quot;: {
+        &quot;posting_map_id&quot;: &quot;100023&quot;,
+        &quot;1link_scheme_id&quot;: &quot;0&quot;,
+        &quot;insurance_group_id&quot;: &quot;0&quot;,
+        &quot;posting_map_code&quot;: &quot;NOFB&quot;,
+        &quot;posting_map_group&quot;: &quot;novated&quot;,
+        &quot;supplier_id_financier&quot;: &quot;100462&quot;,
+        &quot;name&quot;: &quot;Novated Fully Budgeted&quot;,
+        &quot;auto_extend_flag&quot;: &quot;no&quot;,
+        &quot;sl_export_flag&quot;: &quot;yes&quot;,
+        &quot;billing_adjustments_itemised_flag&quot;: &quot;yes&quot;,
+        &quot;1link_export_flag&quot;: &quot;no&quot;,
+        &quot;gst_code_id_residual&quot;: &quot;100000&quot;,
+        &quot;gst_on_finance_payment_method&quot;: &quot;standard&quot;,
+        &quot;quote_template&quot;: &quot;quote_novated.zip&quot;,
+        &quot;url&quot;: &quot;&quot;,
+        &quot;template_id_fbt_statutory&quot;: &quot;100021&quot;,
+        &quot;template_id_fbt_operating&quot;: &quot;100004&quot;,
+        &quot;fbt_email&quot;: &quot;yes&quot;,
+        &quot;driver_pack_flag&quot;: &quot;no&quot;,
+        &quot;package_item_profile_car_id&quot;: &quot;11989493400773612513&quot;,
+        &quot;order_invoice_to&quot;: &quot;&quot;,
+        &quot;order_delivery_for&quot;: &quot;&quot;,
+        &quot;order_registration_to&quot;: &quot;&quot;,
+        &quot;order_registration_notification_to&quot;: &quot;&quot;,
+        &quot;mail_to_quote_request&quot;: &quot;demo@catch-e.com.au&quot;,
+        &quot;residual_reserve&quot;: 0,
+        &quot;documentation_fee_rate_flag&quot;: &quot;no&quot;,
+        &quot;include_client_establishment_fee_flag&quot;: &quot;yes&quot;,
+        &quot;quote_procurement_fee_flag&quot;: &quot;yes&quot;,
+        &quot;quote_redundancy_insurance_flag&quot;: &quot;no&quot;,
+        &quot;apply_redundancy_insurance_validation_flag&quot;: &quot;yes&quot;,
+        &quot;quote_maximum_payload&quot;: 0,
+        &quot;quote_excess_km_rate_flag&quot;: &quot;no&quot;,
+        &quot;approval_note&quot;: &quot;&quot;,
+        &quot;comprehensive_insurance_fund_1st_year_flag&quot;: &quot;no&quot;,
+        &quot;insurance_rating_type&quot;: &quot;client&quot;,
+        &quot;order_manager_as_assigned_flag&quot;: &quot;no&quot;,
+        &quot;driver_contract_access_flag&quot;: &quot;yes&quot;,
+        &quot;disclose_running_costs_flag&quot;: &quot;yes&quot;,
+        &quot;insurance_loading_flag&quot;: &quot;yes&quot;,
+        &quot;validate_amount_financed_flag&quot;: &quot;no&quot;,
+        &quot;depreciable_amount_ex_regctp_flag&quot;: &quot;yes&quot;,
+        &quot;finance_payments_at_cof_flag&quot;: &quot;yes&quot;,
+        &quot;budgets_financed_flag&quot;: &quot;no&quot;,
+        &quot;payout_sub_page_flag&quot;: &quot;yes&quot;,
+        &quot;claim_sub_page_flag&quot;: &quot;yes&quot;,
+        &quot;funds_check_on_claim_sub_page_flag&quot;: &quot;yes&quot;,
+        &quot;auto_post_claims_flag&quot;: &quot;yes&quot;,
+        &quot;funds_check_on_reg_ctp_flag&quot;: &quot;yes&quot;,
+        &quot;allow_external_approvals_flag&quot;: &quot;yes&quot;,
+        &quot;service_due_overdue_report_flag&quot;: &quot;yes&quot;,
+        &quot;residual_value_risk_type_id&quot;: &quot;0&quot;,
+        &quot;maintenance_risk_type_id&quot;: &quot;0&quot;,
+        &quot;quote_note&quot;: &quot;&quot;,
+        &quot;status_flag&quot;: &quot;active&quot;
+    },
+    &quot;posting_map_id&quot;: &quot;100023&quot;,
+    &quot;pre_tax_existing&quot;: 0,
+    &quot;premium_plates_net&quot;: 0,
+    &quot;previous_fbt_value&quot;: 0,
+    &quot;previous_lease_start&quot;: &quot;0000-00-00&quot;,
+    &quot;price_comment&quot;: null,
+    &quot;pricing_received&quot;: &quot;0000-00-00 00:00:00&quot;,
+    &quot;pricing_reference&quot;: &quot;&quot;,
+    &quot;pricing_requested&quot;: &quot;0000-00-00 00:00:00&quot;,
+    &quot;procurement_fee&quot;: 500,
+    &quot;procurement_flag&quot;: &quot;yes&quot;,
+    &quot;purchase_stamp_duty&quot;: 3995,
+    &quot;purchase_stamp_duty_exempt_flag&quot;: &quot;no&quot;,
+    &quot;quote_date&quot;: &quot;2024-05-02&quot;,
+    &quot;quote_status&quot;: {
+        &quot;quote_status_id&quot;: &quot;100007&quot;,
+        &quot;description&quot;: &quot;sent&quot;,
+        &quot;active_flag&quot;: &quot;yes&quot;,
+        &quot;status_flag&quot;: &quot;active&quot;
+    },
+    &quot;quote_status_id&quot;: &quot;100007&quot;,
+    &quot;quote_sub_status_id&quot;: &quot;0&quot;,
+    &quot;rebate_gst&quot;: 0,
+    &quot;rebate_net&quot;: 0,
+    &quot;reduced_super_flag&quot;: &quot;no&quot;,
+    &quot;redundancy_insurance&quot;: 0,
+    &quot;redundancy_insurance_cost&quot;: 0,
+    &quot;redundancy_insurance_flag&quot;: &quot;no&quot;,
+    &quot;redundancy_insurance_rate&quot;: 0,
+    &quot;redundancy_insurance_validation_flag&quot;: &quot;yes&quot;,
+    &quot;reg_ctp&quot;: {
+        &quot;annual_reg&quot;: 482,
+        &quot;annual_ctp&quot;: 560,
+        &quot;annual_plates&quot;: 0,
+        &quot;renewals&quot;: 4,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;reg_initial_net&quot;: 482,
+    &quot;relief_vehicle&quot;: {
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;residual_basis&quot;: &quot;depreciable-amount&quot;,
+    &quot;residual_cash_pool_gst&quot;: 0,
+    &quot;residual_cash_pool_net&quot;: 0,
+    &quot;residual_cash_pool_rate&quot;: null,
+    &quot;residual_gst&quot;: 2720.76,
+    &quot;residual_insurance&quot;: 0,
+    &quot;residual_insurance_rate&quot;: null,
+    &quot;residual_net&quot;: 27207.56,
+    &quot;residual_rate&quot;: 0.2813,
+    &quot;residual_rate_gross&quot;: 0,
+    &quot;residual_rate_net&quot;: 0,
+    &quot;revs_fee&quot;: 0,
+    &quot;roadside_assistance&quot;: {
+        &quot;roadside_assistance_plan_id&quot;: &quot;0&quot;,
+        &quot;premium&quot;: 0,
+        &quot;cost&quot;: 0,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;small_damage_repairs&quot;: {
+        &quot;small_damage_repairs_id&quot;: &quot;0&quot;,
+        &quot;months&quot;: 0,
+        &quot;premium&quot;: 0,
+        &quot;cost&quot;: 0,
+        &quot;financed_flag&quot;: &quot;yes&quot;,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;state&quot;: &quot;NSW&quot;,
+    &quot;status_flag&quot;: &quot;sent&quot;,
+    &quot;superannuation&quot;: 0,
+    &quot;supplier_id_broker&quot;: &quot;100454&quot;,
+    &quot;supplier_id_dealer&quot;: &quot;0&quot;,
+    &quot;supplier_id_financier&quot;: &quot;100467&quot;,
+    &quot;supplier_id_insurer&quot;: &quot;100453&quot;,
+    &quot;supplier_id_residual_insurer&quot;: &quot;0&quot;,
+    &quot;term&quot;: 60,
+    &quot;total_brokerage&quot;: 96.72,
+    &quot;trade_in_amount_gst&quot;: 0,
+    &quot;trade_in_amount_net&quot;: 0,
+    &quot;trade_in_reg_no&quot;: &quot;&quot;,
+    &quot;trade_in_vehicle_description&quot;: &quot;&quot;,
+    &quot;trim_preference&quot;: &quot;&quot;,
+    &quot;tyre_rim_insurance&quot;: {
+        &quot;tyre_rim_insurance_plan_id&quot;: &quot;0&quot;,
+        &quot;retail_price_net&quot;: 0,
+        &quot;retail_price_gross&quot;: 0,
+        &quot;cost_price_net&quot;: 0,
+        &quot;margin_net&quot;: 0,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;tyre_rim_insurance_flag&quot;: &quot;no&quot;,
+    &quot;tyres&quot;: {
+        &quot;tyre_id&quot;: &quot;100667&quot;,
+        &quot;tyres_per_set&quot;: 4,
+        &quot;tyre_km_interval&quot;: 45001,
+        &quot;unit_cost_net&quot;: 800,
+        &quot;limit_flag&quot;: &quot;yes&quot;,
+        &quot;tyres_estimated&quot;: 4,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;usage_adjustment_rate&quot;: 0,
+    &quot;user_id_assigned&quot;: &quot;10000&quot;,
+    &quot;user_id_client_manager&quot;: &quot;10000&quot;,
+    &quot;user_id_create&quot;: &quot;10000&quot;,
+    &quot;user_id_last_edit&quot;: &quot;10000&quot;,
+    &quot;variant_adjustment_rate&quot;: 0,
+    &quot;variant_bonus_id&quot;: null,
+    &quot;variant_id&quot;: &quot;184796&quot;,
+    &quot;vehicle_maintenance_program&quot;: {
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;vehicle_tracking_system_flag&quot;: null,
+    &quot;vehicle_usage_type_id&quot;: &quot;100000&quot;,
+    &quot;walkaway&quot;: {
+        &quot;walkaway_plan_id&quot;: &quot;0&quot;,
+        &quot;retail_price_net&quot;: 0,
+        &quot;retail_price_gross&quot;: 0,
+        &quot;cost_price_net&quot;: 0,
+        &quot;margin_net&quot;: 0,
+        &quot;included_flag&quot;: &quot;no&quot;
+    },
+    &quot;walkaway_flag&quot;: &quot;no&quot;,
+    &quot;warrant_of_fitness&quot;: {
+        &quot;annual_warrant_of_fitness&quot;: 100,
+        &quot;renewals&quot;: 3,
+        &quot;included_flag&quot;: &quot;yes&quot;
+    },
+    &quot;warranty_kms&quot;: 0,
+    &quot;warranty_mths&quot;: 60,
+    &quot;web_service_initial_edit_flag&quot;: &quot;no&quot;,
+    &quot;_links&quot;: {
+        &quot;self&quot;: {
+            &quot;href&quot;: &quot;https://api.test.catch-e.com/qt/quotes/135725&quot;
+        }
+    }
+}
+</pre> </td><td> The request was a successful request. <br />
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=10" title="Edit section: Unsuccessful Response Details">edit</a>]</div><a name="Unsuccessful_Response_Details"></a><h4>Unsuccessful Response Details</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th style="width: 50%"> Validation Messages </th><th style="width: 50%">  Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 401 - Unauthorized
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unauthorized&quot;,
+    &quot;status&quot;: 401,
+    &quot;detail&quot;: &quot;Unauthorized&quot;
+}
+</pre>
+</td><td>
+<ol><li> You have not <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticated</a> before running this API or
+</li><li> The token_timeout of the current session has passed. You need to <a href="Authenticate_with_the_API.html" title="Authenticate with the API">authenticate</a> again.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 403 - Forbidden
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Forbidden&quot;,
+    &quot;status&quot;: 403,
+    &quot;detail&quot;: &quot;Forbidden&quot;
+}
+</pre>
+</td><td> You do not have permissions for this request.<br />
+<ol><li> Go to <b>System Roles</b> and enter 'web_services'
+</li><li> Navigate to the <a href="./Roles:Apis.html" title="Roles:Apis"> Roles / APIs</a> tab to make sure the permission you need to run this API is checked.
+</li></ol>
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> 422 - Unprocessable Entity
+</td></tr>
+<tr>
+<td>  <pre>
+	&quot;client_id&quot;: {
+                &quot;noRecordFound&quot;: &quot;No record matching the input was found&quot;
+            },
+            &quot;posting_map_id&quot;: {
+                &quot;isEmpty&quot;: &quot;Value is required and can't be empty&quot;
+            }
+</pre> </td><td>  Invalid Client ID.
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;client_name&quot;: {
+            &quot;stringLengthTooLong&quot;: &quot;The input is more than 100 characters long&quot;
+</pre> </td><td>  <i>client_name</i> must be 100 characters or less. Pass a shorter name.
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;client_id&quot;: {
+            &quot;clientQuotingDenied&quot;: &quot;Client not profiled for quoting. Refer to management.&quot;
+        }
+</pre> </td><td>  <b>Clients / Quote Defaults</b> "Allow Quoting" is unchecked.
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;driver_id&quot;: {
+            &quot;callbackInvalid&quot;: &quot;You cannot specify both the driver_id field and driver element&quot;
+        }
+</pre> </td><td>  If you specify a driver_id, the driver is assumed to be pre-configured with all details, including addresses.Do not include the driver object—doing so causes a conflict and the API will return an error.
+<pre>
+Example:- The payload below will cause this error, so not allowed.
+
+        &quot;driver_id&quot;: &quot;271772&quot;,
+  &quot;driver&quot;: {
+            &quot;addresses&quot;: {
+                &quot;home&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3001&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                },
+                &quot;post&quot;: {
+                    &quot;address_1&quot;: &quot;Address 1&quot;,
+                    &quot;address_2&quot;: &quot;Address 2&quot;,
+                    &quot;area&quot;: &quot;Address Area&quot;,
+                    &quot;state&quot;: &quot;NSW&quot;,
+                    &quot;postcode&quot;: &quot;3002&quot;,
+                    &quot;country_id&quot;: &quot;16238953344683478812&quot;
+                }
+            }},
+</pre>
+</td></tr>
+<tr>
+<td>  <pre>
+        &quot;new_used&quot;: {
+            &quot;invalidOdometer&quot;: &quot;When vehicle is 'used' or 'demonstrator', odometer must be greater than zero&quot;
+        }
+</pre> </td><td>  Input field "odometer" is missing, this only applicable if NEW_USED is not 'new' e.g. 'used' or 'demonstrator'
+</td></tr>
+<tr>
+<td>  <pre>
+{
+    &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+    &quot;title&quot;: &quot;Unprocessable Entity&quot;,
+    &quot;status&quot;: 422,
+    &quot;detail&quot;: &quot;Unrecognized fields: carbon_emission_offset&quot;
+}
+</pre> </td><td>  Issue unknown
+</td></tr>
+<tr>
+<td>  <pre>
+{
+  &quot;validation_messages&quot;: {
+    &quot;driver_id&quot;: {
+      &quot;noRecordFound&quot;: &quot;No record matching the input was found&quot;
+    }
+  },
+  &quot;type&quot;: &quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&quot;,
+  &quot;title&quot;: &quot;Unprocessable Entity&quot;,
+  &quot;status&quot;: 422,
+  &quot;detail&quot;: &quot;Failed Validation&quot;
+}
+</pre> </td><td>  Driver id Does not exist
+</td></tr>
+</table>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;action=edit&amp;section=11" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> (API-20094) Create API createQuotes. Live 20/05/2024.
+</li><li> (API-20630) Quote API - bugsnag errors. Live 09/12/2024.
+</li><li> (API-20598) Used EV Cars - Add Date First Registered validation prompt. Live dd/01/2025
+</li><li> (API-20643) PatchQuote is clearing the Luxury Car Charge. Live 13/01/2025
+</li><li> (API-20569) Fix Insurance loading rates bug. Live 28/01/2025
+</li><li> (DEV-22157 / API-20598) Used EV Cars - Add Date First Registered validation prompt. Live 28/01/2025
+</li><li> (API-20649) Handle incorrect typing in Create and Patch Quote.Live 10/02/2025
+</li><li> (API-20638) Light Commercial Vehicles EVE and PHEV - Max GST claimable and LCC. Live 26/05/2025
+</li><li> (API-20666) Fix for client_name and optional_equipment issues in createQuote API. Live 07/04/2025
+</li><li> (API-20694 &amp; DEV-22278) Default Contract Type by Client. Live 10/06/2025
+</li><li> (DEV-22298) Update Luxury Car Tax limits 2025-07-01. Live 01/07/2025
+</li><li> (API-20731) modify patchQuote &amp; createQuotes to fix typo of include_commision_flag to include_commission_flag (DEV-21643). Live 28/07/2025.
+</li><li> (API-20737) Create Quote API Field Validations - Erroneous Driver ID and Driver false-positive. Live 18/08/2025
+</li><li> (DEV-21931 / API-20463) Extend Inclusions feature. Live 08/09/2025
+</li><li> (API-20748) createQuotes and patchQuote APIs - relax odometer field validation. Live 08/09/2025.
+</li><li> (API-20734) Quoting for Annual Insurance Premium Uplift. Live dd/mm/2025
+</li><li> (API-20758) createQuotes and patchQuote APIs - allow client_name field to be 100 characters. Live 06/10/2025
+</li><li> (API-20495) createQuotes and patchQuote - auto populate ECM and ECMC budgets into quotes. Live 17/11/2025
+</li><li> (API-20714) Change qt_insurance_types to sort by name in dropdown in Quote. Live dd/11/2025
+</li><li> (API-20760) Modify Inclusions feature to allow selected products to be excluded by Contract Type. Live dd/11/2025
+</li><li> (API-20783) Urgent - Quotes generating 0% commission rate. Live 18/11/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="CreateQuotes.html">https://help.catch-e.net.au/mediawiki/index.php/CreateQuotes</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=CreateQuotes">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/CreateQuotes.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=CreateQuotes&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.21 secs. -->
+</body></html>

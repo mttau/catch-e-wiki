@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="2 Factor Authentication Setup,Driver Portal,Drivers:Contact,Employees:Contact,Global Controls,Main Page,Manage Users:Logins,Manage Users:Password,Roles:Details,SYSTEM,System Implementation" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>2 Factor Authentication Setup - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">2 Factor Authentication Setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub">(Redirected from <a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Process&amp;redirect=no" title="2 Factor Authentication Process">2 Factor Authentication Process</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="2_Factor_Authentication_Process.html#column-one">navigation</a>, <a href="2_Factor_Authentication_Process.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="SYSTEM.html" title="SYSTEM">System</a> / <a href="Users.html" title="Users">Users</a> &rarr; <a href="./Users:Details.html" title="Users:Details">Details</a> | <a href="./Users:Kpis.html" title="Users:Kpis">KPIs</a> | <a href="./Manage_Users:Password.html" title="Manage Users:Password">Password</a> | <a href="./Manage_Users:Logins.html" title="Manage Users:Logins">Logins</a> | <a href="./Users:2fa.html" title="Users:2fa">2 Factor Authentication</a> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><strong>2 Factor Authentication Setup</strong> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="2_Factor_Authentication_Process.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="2_Factor_Authentication_Process.html#Set-up_Steps"><span class="tocnumber">2</span> <span class="toctext">Set-up Steps</span></a>
+<ul>
+<li class='toclevel-2'><a href="2_Factor_Authentication_Process.html#Global_Controls"><span class="tocnumber">2.1</span> <span class="toctext">Global Controls</span></a></li>
+<li class='toclevel-2'><a href="2_Factor_Authentication_Process.html#Role"><span class="tocnumber">2.2</span> <span class="toctext">Role</span></a>
+<ul>
+<li class='toclevel-3'><a href="2_Factor_Authentication_Process.html#Auth_App"><span class="tocnumber">2.2.1</span> <span class="toctext">Auth App</span></a></li>
+<li class='toclevel-3'><a href="2_Factor_Authentication_Process.html#Sms"><span class="tocnumber">2.2.2</span> <span class="toctext">Sms</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="2_Factor_Authentication_Process.html#Users"><span class="tocnumber">2.3</span> <span class="toctext">Users</span></a>
+<ul>
+<li class='toclevel-3'><a href="2_Factor_Authentication_Process.html#Enrolment_Management"><span class="tocnumber">2.3.1</span> <span class="toctext">Enrolment Management</span></a></li>
+<li class='toclevel-3'><a href="2_Factor_Authentication_Process.html#Locked_out"><span class="tocnumber">2.3.2</span> <span class="toctext">Locked out</span></a></li>
+</ul>
+</li>
+<li class='toclevel-2'><a href="2_Factor_Authentication_Process.html#Enrolment_login_flowchart"><span class="tocnumber">2.4</span> <span class="toctext">Enrolment login flowchart</span></a></li>
+<li class='toclevel-2'><a href="2_Factor_Authentication_Process.html#Enrolment_process_flowchart"><span class="tocnumber">2.5</span> <span class="toctext">Enrolment process flowchart</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="2_Factor_Authentication_Process.html#System_Notes"><span class="tocnumber">3</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h3>Overview</h3>
+<p>Two-factor authentication (2FA) is an extra layer of identity checking you can use to strengthen access security. You can <a href="System_Implementation.html#Access" title="System Implementation">configure</a> this anytime.<br />
+</p><p>In the <a href="./Roles:Details.html" title="Roles:Details">Roles / Details</a> tab you can make 2FA optional or mandatory for some or all roles. For each <a href="./Roles:Details.html" title="Roles:Details">role</a>, you can also choose which authentication methods can be used.<br /> 
+It can be used on any role <u>except,</u> for the following; 'web_services', 'password_reset' and 'fbt_declaration'.<br />
+</p><p>Note that for 'drivers', 2FA will work in both the Catch-e system and the <a href="Driver_Portal.html" title="Driver Portal">Driver Portal</a>.<br /> If needed driver's and employee's 2FA can be unenrolled from <a href="./Drivers:Contact.html" title="Drivers:Contact">Drivers / Contact</a> or <a href="./Employees:Contact.html" title="Employees:Contact">Employees / Contact</a>.<br />
+</p><p>You can also choose to leave 2 Factor Authentication off completely for your business, so no role or user sees these settings.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=2" title="Edit section: Set-up Steps">edit</a>]</div><a name="Set-up_Steps"></a><h3>Set-up Steps</h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=3" title="Edit section: Global Controls">edit</a>]</div><a name="Global_Controls"></a><h4>Global Controls</h4>
+<p>Set <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]2factor_auth_enabled_flag</a></i> to 'yes' if you want to use 2FA. It is set to 'yes' by default. 
+</p>
+<dl><dd>When this is set to 'yes', the <a href="./Roles:Details.html" title="Roles:Details">Roles / Details</a> 2 Factor Authentication section and the <a href="./Users:2fa.html" title="Users:2fa">Users / 2 Factor Authentication</a> tab are displayed, otherwise they are hidden.<br />
+</dd><dd>When enabled, Catch-e's own staff are always configured to use 2FA.
+</dd></dl>
+<p>Set <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]2factor_auth_app_token_name</a></i> set the Token Name (Account Label). This text identifies the app for which this token is used. If this control is blank, the default token name will be [client name]: Operating Lease &amp; Fleet Management. If this control is populated it will be used as Token Name (Account Label). 
+<br /><b>Note if you are using Authy (from Twilio)</b>. Authy looks up a logo based on the text that appears before colon (&nbsp;: ) in the text. For example, if you enter <i>ABC Fleet:  Operating Lease &amp; Fleet Management</i> it will use ‘ABC Fleet’ to look up a logo. If the logo it looks up is not what you expect then you can change it to use the generic logo. Unfortunately Catch-e cannot force Authy to look up the logo you want.
+</p><p>Set <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]2factor_auth_revalidation_days</a></i> for the number of days a user may login without performing a 2 factor authentication.
+</p>
+<dl><dd>The system will not prompt for an access code for the defined number of days if the user is logging into the same browser, ip address, user login and method when they opted to 'Remember' the access code.<br /> 
+</dd><dd>Each time a user logs in and one of these variables has changed, a 2FA code will be required (but each scenario can be remembered).<br />
+</dd><dd>E.g. using a different combination of browser, network, computer, user login and enrolment method ('Sms' or 'Auth App') triggers the demand for a 2FA code.<br />
+</dd><dd><b>Note:</b> 'Remember' will not work if you are on a Wi-Fi network with changing ip addresses.<br />
+</dd></dl>
+<p>Set a <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]sms_provider</a></i> as 'smsglobal' to enable the 'Sms' enrolment method. If not set, 'Auth App' will be the default and 'Sms' will not be available.<br />
+</p><p>Populate <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]smsglobal_sms_provider_details</a></i> with the Api Key and Api Secret generated from your SMS Global account<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=4" title="Edit section: Role">edit</a>]</div><a name="Role"></a><h4>Role</h4>
+<p>Select the <a href="./Roles:Details.html" title="Roles:Details">Roles / Details</a> "Mandatory" checkbox for each role where 2FA is required. It is optional if this is unchecked.<br />
+</p><p>Choose a "Method" that users can use. These are discussed in detail below;
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=5" title="Edit section: Auth App">edit</a>]</div><a name="Auth_App"></a><h5>Auth App</h5>
+<p>If using the 'Auth App' method, select and recommend an <a href='http://www.ietf.org/rfc/rfc6238.txt' class='external' title="http://www.ietf.org/rfc/rfc6238.txt">RFC 6238</a> compliant 2 factor authentication application such as Google Authenticator, Microsoft Authenticator or Authy to your staff.<br />
+Where ‘Auth App' is the selected method, the user will be prompted to enter an authentication code generated by the phone App. The Token Name (Account Label) in the app can be set using <i><a href="Global_Controls.html#Global_.28GB.29" title="Global Controls">[gb_controls]2factor_auth_app_token_name</a></i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=6" title="Edit section: Sms">edit</a>]</div><a name="Sms"></a><h5>Sms</h5>
+<p>If 'Sms' is used an account with SMS Global will need to be set up.<br />
+</p><p>The required access code will be sent via SMS to the users mobile number. The access code will be valid for <i>5 minutes</i> from the time it was requested.<br />
+A mobile number can only be used for one user record.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=7" title="Edit section: Users">edit</a>]</div><a name="Users"></a><h4>Users</h4>
+<p>If 2FA is mandatory, all unenrolled users will be redirected to the <a href="./Users:2fa.html" title="Users:2fa">Users / 2 Factor Authentication</a> screen when they next login to complete the enrolment process.<br />
+If optional, users can navigate to the <a href="./Users:2fa.html" title="Users:2fa">Users / 2 Factor Authentication</a> screen and enrol if they want.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=8" title="Edit section: Enrolment Management">edit</a>]</div><a name="Enrolment_Management"></a><h5>Enrolment Management</h5>
+<p>Users with the 'admin' role can navigate into the <a href="./Users:2fa.html" title="Users:2fa">Users / 2 Factor Authentication</a> tab of any user and enrol or unenroll on their behalf.<br /> 
+I.e. go through the enrolment process steps to activate their 2FA.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=9" title="Edit section: Locked out">edit</a>]</div><a name="Locked_out"></a><h5>Locked out</h5>
+<p>If the entered app or sms code is valid, the user will have access into the Catch-e system. If it is invalid, three attempts will be allowed before the user is locked out of the system.<br />
+When a user is locked out, their <a href="./Users:Details.html" title="Users:Details">Users / Details</a> "Status" is 'locked'. An 'admin' role user can edit and change the status back to 'active'.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=10" title="Edit section: Enrolment login flowchart">edit</a>]</div><a name="Enrolment_login_flowchart"></a><h4>Enrolment login flowchart</h4>
+<p><a href="./Image:Login_process_2fa.png.html" class="image" title="Image:Login_process_2fa.png"><img src="../../clients/help/wiki/images/8/8b/Login_process_2fa.png" alt="Image:Login_process_2fa.png" width="883" height="676" longdesc="/mediawiki/index.php/Image:Login_process_2fa.png" /></a>
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=11" title="Edit section: Enrolment process flowchart">edit</a>]</div><a name="Enrolment_process_flowchart"></a><h4>Enrolment process flowchart</h4>
+<p><a href="./Image:User_enrollment_screen_process.png.html" class="image" title="image:User_enrollment_screen_process.png"><img src="../../clients/help/wiki/images/7/7c/User_enrollment_screen_process.png" alt="image:User_enrollment_screen_process.png" width="931" height="775" longdesc="/mediawiki/index.php/Image:User_enrollment_screen_process.png" /></a>
+<br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;action=edit&amp;section=12" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h3>System Notes</h3>
+<p><small>
+</p>
+<ul><li> 11169: T46 Use 2-factor authentication for access to High rated systems - Catch-e application. Live 09/07/2017
+</li><li> DEV-16239: Activate 2 Factor Authentication (2FA). Live dd/03/2018
+</li><li> (CAT-18127) Test SMS Capability for 2FA. Live 09/12/2022
+</li><li> (DEV-21814) Create Global Control for storing client name used in 2FA Authenticator Apps.  Live 07/2024
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:2568-0!1!0!0!!en!2 and timestamp 20251120231309 -->
+<div class="printfooter">
+Retrieved from "<a href="2_Factor_Authentication_Setup.html">https://help.catch-e.net.au/mediawiki/index.php/2_Factor_Authentication_Setup</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=2_Factor_Authentication_Setup">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/2_Factor_Authentication_Setup.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=2_Factor_Authentication_Setup&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.03 secs. -->
+</body></html>

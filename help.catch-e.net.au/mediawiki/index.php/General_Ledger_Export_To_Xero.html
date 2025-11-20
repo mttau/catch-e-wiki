@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="General Ledger Export To Xero,ACCOUNTS,Billing Re-print,Card Transactions,Catch-e Support,Clients:Contract defaults:Billing Terms,Company,Create an accounting export batch,Gl::xero::createExportBatch(),Gl::xero::createExportFile,Global Controls" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>General Ledger Export To Xero - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">General Ledger Export To Xero</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="General_Ledger_Export_To_Xero.html#column-one">navigation</a>, <a href="General_Ledger_Export_To_Xero.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> &rarr; <strong>General Ledger Export To Xero</strong> &rarr; <a href="./Image:Check.png.html" class="image" title="Image:check.png"><img src="../../clients/help/wiki/images/2/2a/Check.png" alt="Image:check.png" width="30" height="30" longdesc="/mediawiki/index.php/Image:Check.png" /></a><a href="Xero_Setup.html" title="Xero Setup">Xero Setup</a>
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Scheduler_Jobs"><span class="tocnumber">2</span> <span class="toctext">Scheduler Jobs</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Process_Pages"><span class="tocnumber">3</span> <span class="toctext">Process Pages</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Filters_and_Buttons"><span class="tocnumber">4</span> <span class="toctext">Filters and Buttons</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Field_Descriptions"><span class="tocnumber">5</span> <span class="toctext">Field Descriptions</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Output_Options"><span class="tocnumber">6</span> <span class="toctext">Output Options</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Action_Buttons"><span class="tocnumber">7</span> <span class="toctext">Action Buttons</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Validations_and_Alerts"><span class="tocnumber">8</span> <span class="toctext">Validations and Alerts</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Purchases"><span class="tocnumber">9</span> <span class="toctext">Purchases</span></a>
+<ul>
+<li class='toclevel-2'><a href="General_Ledger_Export_To_Xero.html#Record_Selections"><span class="tocnumber">9.1</span> <span class="toctext">Record Selections</span></a></li>
+<li class='toclevel-2'><a href="General_Ledger_Export_To_Xero.html#Grouping_Options"><span class="tocnumber">9.2</span> <span class="toctext">Grouping Options</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Sales"><span class="tocnumber">10</span> <span class="toctext">Sales</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Journals"><span class="tocnumber">11</span> <span class="toctext">Journals</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#Output_Definitions"><span class="tocnumber">12</span> <span class="toctext">Output Definitions</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_Xero.html#System_Notes"><span class="tocnumber">13</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>Create files to export sales, purchases or journal records to your accounting system. A separate file is created for each kind of record. The files contain summary data of transactions in the system.
+<br />
+</p><p>Transactions that have been exported are flagged and then excluded from subsequent export files. Transactions that have been exported cannot be edited. Exported transactions can be un-posted unless you are an 'Admin' user. 'Admin' users are warned of this before the un-posting is executed.
+<br />
+</p><p>If the multi-company feature is being used, transactions will be exported in separate files for each company. Visit the <a href="Company.html" title="Company">Company</a> page to read more about this feature.
+<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=2" title="Edit section: Scheduler Jobs">edit</a>]</div><a name="Scheduler_Jobs"></a><h4>Scheduler Jobs</h4>
+<p>You can automate this process with scheduler jobs:
+</p>
+<ol><li> Set-up a job to create the export batch:     <a href="./Gl::xero::createExportBatch().html" title="Gl::xero::createExportBatch()"> gl / xero / createExportBatch</a>
+</li><li> Then set-up a job to create the export file: <a href="./Gl::xero::createExportFile.html" title="Gl::xero::createExportFile"> gl / xero / createExportFile</a>
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=3" title="Edit section: Process Pages">edit</a>]</div><a name="Process_Pages"></a><h4>Process Pages</h4>
+<dl><dd><a href="Create_an_accounting_export_batch.html" title="Create an accounting export batch">Create an accounting export batch</a>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:HeaderAndFields&amp;action=edit&amp;section=1" title="Template:Accounts:Export:HeaderAndFields">edit</a>]</div><a name="Filters_and_Buttons"></a><h4>Filters and Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Field </th><th width="5%" align="left"> Type </th><th width="85%" align="left"> Description
+</th></tr>
+<tr>
+<td>Export ID</td><td>Lookup</td><td>Enter or look up the export batch you want to use.
+</td></tr>
+<tr>
+<td><a href="./Image:New.gif.html" class="image" title="Image:New.gif"><img src="../../clients/help/wiki/images/e/e0/New.gif" alt="Image:New.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:New.gif" /></a></td><td>Button</td><td>Click this when you want to create a new export batch.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:HeaderAndFields&amp;action=edit&amp;section=2" title="Template:Accounts:Export:HeaderAndFields">edit</a>]</div><a name="Field_Descriptions"></a><h4>Field Descriptions</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left">Field </th><th width="5%" align="left">Type </th><th width="70%" align="left">Description </th><th width="15%" align="left"> [table]field
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> Section Break
+</td></tr>
+<tr>
+<td>Export ID</td><td>Num</td><td>Unique ID of the selected record.</td><td>[gb_exports]export_id
+</td></tr>
+<tr>
+<td> Company </td><td>List </td><td> Select the company you want to create the export for. This field is hidden unless you are using the multi-company export feature.</td><td> [gb_exports]company_id
+</td></tr>
+<tr>
+<td> Type </td><td>List </td><td> Select the type of export you want to create. This can be Purchases, Sales or Journals. </td><td> [gb_exports]type_code
+</td></tr>
+<tr>
+<td> Control Invoices </td><td> Num </td><td>Display field shows a count of invoices in a proposed export, or the actual total of an existing export.<br /> E.g. 2 Approvals </td><td>[gb_exports]control_invoice_count
+</td></tr>
+<tr>
+<td> Control Items </td><td> Num </td><td> Display field shows a count of items in a proposed export, or the actual total of an existing export.<br /> E.g. There are 2 Approvals, but there are 7 rows in those approvals. </td><td>[gb_exports]control_item_count
+</td></tr>
+<tr>
+<td> Control Total </td><td> Num </td><td> Display field shows the calculated total of a proposed export, or the actual total of an existing export. </td><td>[gb_exports]control_total
+</td></tr>
+<tr>
+<td> Created  </td><td> Timestamp </td><td> Display field shows the date and time the export batch was created. </td><td>[gb_exports]created
+</td></tr>
+<tr>
+<td> By </td><td> Text </td><td> Displays the "Login" of the user who created the export.  </td><td>[gb_exports]user_id
+</td></tr>
+<tr>
+<td> Status </td><td> Text </td><td> New export records are set with a status of 'pending'. You can update this to 'exported_ok' to note finalised exports.</td><td>[gb_exports]status_flag
+</td></tr>
+<tr>
+<td> Notes </td><td> Text </td><td> Enter a note. </td><td>[gb_exports]notes
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:OutputOptions&amp;action=edit&amp;section=1" title="Template:Accounts:Export:OutputOptions">edit</a>]</div><a name="Output_Options"></a><h4>Output Options</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="150" align="left">Output</th><th> Description
+</th></tr>
+<tr>
+<td> <a href="Screen_Reports.html" title="Screen Reports">Screen Reports</a> </td><td> <a href="Screen_Reports.html" title="Screen Reports">Customised reports</a> can be configured to generate from here. Use this to get a custom export file or a 'Plain English' report of your export detail.<br />
+<p>The required key for these reports is '#export_id#'.
+</p>
+</td></tr>
+
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:ActionAndAlerts&amp;action=edit&amp;section=1" title="Template:Accounts:Export:ActionAndAlerts">edit</a>]</div><a name="Action_Buttons"></a><h4>Action Buttons</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="10%" align="left"> Button </th><th width="90%" align="left"> Description
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> View
+</td></tr>
+<tr>
+<td><a href="./Image:Print.gif.html" class="image" title="Image:Print.gif"><img src="../../clients/help/wiki/images/c/cf/Print.gif" alt="Image:Print.gif" width="38" height="23" longdesc="/mediawiki/index.php/Image:Print.gif" /></a> </td><td> Select a <a href="Screen_Reports.html" title="Screen Reports">screen report</a> to print. The button is hidden if there are no active <a href="Screen_Reports.html" title="Screen Reports">screen reports</a> set-up in your system.
+</td></tr>
+<tr>
+<td><a href="./Image:Export.gif.html" class="image" title="Image:Export.gif"><img src="../../clients/help/wiki/images/8/8d/Export.gif" alt="Image:Export.gif" width="45" height="20" longdesc="/mediawiki/index.php/Image:Export.gif" /></a></td><td>Click to generate an export file for the selected batch.
+</td></tr>
+<tr>
+<td><a href="./Image:Edit.gif.html" class="image" title="Image:Edit.gif"><img src="../../clients/help/wiki/images/b/b8/Edit.gif" alt="Image:Edit.gif" width="37" height="20" longdesc="/mediawiki/index.php/Image:Edit.gif" /></a></td><td>Click to edit the "Status" of the selected record, or to add "Notes".
+</td></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="4"> New
+</td></tr>
+<tr>
+<td><a href="./Image:Create.gif.html" class="image" title="Image:Create.gif"><img src="../../clients/help/wiki/images/b/bd/Create.gif" alt="Image:Create.gif" width="46" height="20" longdesc="/mediawiki/index.php/Image:Create.gif" /></a></td><td>Review the proposed export counts and total and then click to create the export batch.
+</td></tr>
+<tr>
+<td><a href="./Image:Cancel.gif.html" class="image" title="Image:Cancel.gif"><img src="../../clients/help/wiki/images/1/1a/Cancel.gif" alt="Image:Cancel.gif" width="47" height="20" longdesc="/mediawiki/index.php/Image:Cancel.gif" /></a></td><td>Cancel if you don't want to create an export batch at this time.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=Template:Accounts:Export:ActionAndAlerts&amp;action=edit&amp;section=2" title="Template:Accounts:Export:ActionAndAlerts">edit</a>]</div><a name="Validations_and_Alerts"></a><h4>Validations and Alerts</h4>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th width="30%" align="left"> Alert </th><th width="70%" align="left"> Comments
+</th></tr>
+<tr>
+<td class="catch-e_th_sub" colspan="2"> Export
+</td></tr>
+<tr>
+<td>Interface requires setup!, support has been notified!</td><td>Either <i><a href="Global_Controls.html" title="Global Controls">[gb_controls]dmz_path</a></i> is not set correctly for your business or the dmz_subfolder_path is not set in the server.<br /> Check the control setting and call or email <a href="Catch-e_Support.html" title="Catch-e Support">Catch-e Support</a> for assistance.
+</td></tr>
+<tr>
+<td> Nothing to export </td><td> This alert is shown if the sales export has a "Control Total" of 0.00.<br /> This can arise if you have exported an invoice batch and then unposted it in the <a href="Billing_Re-print.html#Action_Buttons" title="Billing Re-print">Billing Re-print</a> screen. I.e., the matching sales export batch is updated and becomes 0.
+</td></tr>
+<tr>
+<td> Error in the controls!, support has been notified!  </td><td> This alert is shown if there is a mis-match between the export's "Control Total" amount and the value of the underlying transactions.<br /> This can arise if you have exported sales invoices and then unposted them from the <a href="Billing_Re-print.html#Action_Buttons" title="Billing Re-print">Billing Re-print</a> screen.
+</td></tr>
+</table>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=4" title="Edit section: Purchases">edit</a>]</div><a name="Purchases"></a><h4>Purchases</h4>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=5" title="Edit section: Record Selections">edit</a>]</div><a name="Record_Selections"></a><h5>Record Selections</h5>
+<p>Purchase transactions are entered into Catch-e in five ways.
+</p>
+<ol><li>Via scheduled payments. Payment schedules are set-up on the payments tab of Fleet/Administration/Contracts. Then each month, within the Fleet/Payments/Periodic menu option, they are printed paid and posted
+</li><li>Via approvals. Fleet/Administration/Approvals – where they are entered and posted.
+</li><li>Via Claims. Fleet/Administration/Contracts.
+</li><li>Via interfaces. Fleet/Card Services/Transactions.
+</li><li>Via Bookings. Fleet/Administration/Bookings.
+</li></ol>
+<p>After posting these transactions, they become available to export and form part of the generated export file, (file produced will be in .csv format).
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=6" title="Edit section: Grouping Options">edit</a>]</div><a name="Grouping_Options"></a><h5>Grouping Options</h5>
+<p><b>Standard</b><br />
+Transactions are grouped by Company number and usually contain a detailed row per transaction.<br />
+</p><p><b>Card Transactions</b><br />
+<a href="Card_Transactions.html" title="Card Transactions">Card Services transactions</a> may be summarised to any fm_contracts field (e.g. contract_id, company_id using the <a href="Global_Controls.html#Fleet_Management_.28FM.29" title="Global Controls">Global Control</a> <i>card_services_posting_group_by</i>).<br />
+</p><p><b>Summarised</b><br />
+Summarise the data further using the <a href="Xero_Setup.html" title="Xero Setup">Xero Setup</a> control <b><i>xero_export_summarise_data</i>.</b><br />  When set to 'yes', the data in the export file will be summarised by supplier, becs_id, bpay_id or reference.<br /> In addition this control also splits rows to be 10% GST or zero GST to suit the Xero import process which calculates GST at 10%.<br /> 
+</p><p><b>Note:</b> this control goes through the complete process of creating the original non-summarised file.<br /> If that completes ok, and all the control checks pass, it replaces that file with the summarised data including a final control check.<br /> 
+</p><p>The control numbers and totals shown on screen and stored in the [gb_exports] use the same logic as before. The summarised counts are not used.
+</p><p><b>Business rules for output fields:</b><br />
+InvoiceNumber	CONCAT(fm_suppliers.supplier_code, '-',
+CASE
+</p>
+<pre>WHEN becs_id&nbsp;!= 0 THEN gl_transactions.becs_id
+WHEN gl_transactions.bpay_id&nbsp;!= 0 THEN gl_transactions.bpay_id
+ELSE gl_transactions.reference
+</pre>
+<p>InvoiceDate	MAX(gl_transactions.date) within the group defined above
+</p><p>Description	CASE
+</p>
+<pre>WHEN gl_transactions.becs_id&nbsp;!= 0 THEN CONCAT('BECS ID: ', gl_transactions.becs_id)
+WHEN gl_transactions.bpay_id&nbsp;!= 0 THEN CONCAT('BPAY ID: ', gl_transactions.bpay_id)
+ELSE CONCAT('Reference: ', gl_transactions.reference) <br /><br />
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=7" title="Edit section: Sales">edit</a>]</div><a name="Sales"></a><h4>Sales</h4>
+<p>The bulk of invoicing is done within the Fleet / Billing section including recharges, periodic, initial and combined billing.<br /> In addition billing can be done in Sale Management (vehicle sale invoicing).<br /> Once off billing can also be done in Fleet / Adminstration / Bookings.
+After completing these transactions, they become available to export and form part of the generated export file.
+</p><p>Note: the 'DueDate' created in the gl_to_xero_0_sl_xxxxxx.txt is the payment due date determined by the <a href="./Clients:Contract_defaults:Billing_Terms.html" title="Clients:Contract defaults:Billing Terms">Billing Term</a> used.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=8" title="Edit section: Journals">edit</a>]</div><a name="Journals"></a><h4>Journals</h4>
+<p>Corresponding journal exports are created to go with the sales exports.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=9" title="Edit section: Output Definitions">edit</a>]</div><a name="Output_Definitions"></a><h4>Output Definitions</h4>
+<p>Tax Types used in the interface are:
+</p><p>PL - GST on Expenses (used where GST is greater than $0.00)<br />
+PL - GST Free Expenses<br />
+SL - GST on Income (used where GST is greater than $0.00)<br />
+SL - GST Free Income
+</p><p>Open the <a href="https://help.catch-e.net.au/clients/help/wiki/images/d/da/Xero_Output_Definitions.xlsx" class='internal' title="Xero Output Definitions.xlsx">Xero Output Definitions.xlsx</a> file for more details.
+<br /><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;action=edit&amp;section=10" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 8499: Xero Accounting Package Interface. Live 05/05/2014
+</li><li> 10255: Amendment to Xero Accounting Package Interface. Live xx/xx/2015
+</li><li> 13269: Amendment to Xero Export files. Live xx/02/2016
+</li><li> 16272: Are MYOB related gb_controls inherited by the Xero Exports for PL, SL and Journal. Live xx/08/2017
+</li><li> (DEV-21074) Create default file path when dmz_subfolder_path is not set for Accounting export. Live 20/07/2020
+</li><li> (DEV-21283) Update Xero PL Export for P&amp;I Payments. Live 14/03/2022
+</li><li> (DEV-21682) Issue with Europcar invoices - Xero PL Export. Live 11/07/2022
+</li><li> (DEV-21744) Cannot print a Xero SL export file for Pay Run Invoice. Live dd/09/2022
+</li><li> (DEV-21697) Billing Re-Print Un-Post function - modify export_id updates. Live dd/mm/2022
+</li><li> (DEV-21839) Xero / General Ledger - enable Screen Reports. Live 15/05/2023
+</li><li> (DEV-21909) Enable Xero SL TaxType field text to be customised. Live 14/08/2023
+</li><li> (DEV-22054) Xero Purchases - InvoiceDate - create control so posted_date can be used for reimbursements. Live 06/05/2024
+</li><li> (DEV-22284) Xero: Summarise PL data. Live 10/06/2025
+</li></ul>
+<p></small>
+</p><div class="printfooter">
+Retrieved from "<a href="General_Ledger_Export_To_Xero.html">https://help.catch-e.net.au/mediawiki/index.php/General_Ledger_Export_To_Xero</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=General_Ledger_Export_To_Xero">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/General_Ledger_Export_To_Xero.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_Xero&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 2c88f4f4aa65 in 0.11 secs. -->
+</body></html>

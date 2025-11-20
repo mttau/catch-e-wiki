@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="General Ledger Export To BPAY,ACCOUNTS,BPAY,Disbursements,Main Page,Reg Or Ctp Renewals" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+		<title>General Ledger Export To BPAY - Help wiki</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "../skins/catche/main.css%3F7.css"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="../skins/common/commonPrint.css" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mediawiki/skins/catche/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mediawiki/skins/catche/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mediawiki/skins/catche/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mediawiki/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">var skin = 'catche';var stylepath = '/mediawiki/skins';</script>
+		<script type="text/javascript" src="../skins/common/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="../index.php%3Ftitle=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "../index.php%3Ftitle=MediaWiki:Common.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=MediaWiki:Catche.css&action=raw&ctype=text%252Fcss&smaxage=18000.css";
+@import "../index.php%3Ftitle=-&action=raw&gen=css&maxage=18000.css";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		      <style>
+        <!--
+        .editsection { display: none; }
+        -->
+      </style>
+	</head>
+<body  class="ns-0 ltr">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">General Ledger Export To BPAY</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Help wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="General_Ledger_Export_To_BPAY.html#column-one">navigation</a>, <a href="General_Ledger_Export_To_BPAY.html#searchInput">search</a></div>			<!-- start content -->
+			<p><a href="Main_Page.html" title="Main Page">Main Page</a> &rarr; <a href="ACCOUNTS.html" title="ACCOUNTS">Accounts</a> / Export / <a href="BPAY.html" title="BPAY">BPAY</a> &rarr; <strong>Payments (BPAY)</strong> | <a href="Disbursements.html" title="Disbursements">Disbursements (BPAY)</a> 
+</p>
+<hr />
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_BPAY.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_BPAY.html#Create_Export_Files"><span class="tocnumber">2</span> <span class="toctext">Create Export Files</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_BPAY.html#BPAY_file_layout_with_mappings_to_Catch-e_fields"><span class="tocnumber">3</span> <span class="toctext">BPAY file layout with mappings to Catch-e fields</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_BPAY.html#Useful_Queries"><span class="tocnumber">4</span> <span class="toctext">Useful Queries</span></a></li>
+<li class='toclevel-1'><a href="General_Ledger_Export_To_BPAY.html#System_Notes"><span class="tocnumber">5</span> <span class="toctext">System Notes</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</div><a name="Overview"></a><h4>Overview</h4>
+<p>System can generate BPay file based on CommBizz file specification version 6 (April 2011). The file can be downloaded <a href="https://help.catch-e.net.au/clients/help/wiki/images/c/cf/CommBiz_v_6.pdf" class='internal' title="CommBiz v 6.pdf">here</a>.
+</p>
+<table style="border-collapse: collapse; width: 100%; background: #ffd7d7; border: 1px solid silver;">
+
+<tr>
+<td width="5%" align="left"> <a href="./Image:Warning.png.html" class="image" title=""><img src="../../clients/help/wiki/images/c/cb/Warning.png" alt="" width="30" height="30" longdesc="/mediawiki/index.php/Image:Warning.png" /></a> </td><td> This function has not been used for some years and will not work with current setups. Contact your Account Manager to discuss using this function.
+</td></tr></table>
+<p><br />
+</p><p>Records will only be selected for file creation if <a href="Reg_Or_Ctp_Renewals.html" title="Reg Or Ctp Renewals">Reg or CTP Renewals</a> batches:
+</p>
+<ol><li> are Posted
+</li><li> have BPAY checkbox ON
+</li><li> have not been exported previously
+</li></ol>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;action=edit&amp;section=2" title="Edit section: Create Export Files">edit</a>]</div><a name="Create_Export_Files"></a><h4>Create Export Files</h4>
+<ol><li>Click on the ‘New’ tab
+</li><li>Click ‘Create’ 
+</li><li>Click ‘Export’ 
+</li><li>Save the csv file for import into your Banking software
+</li><li>Click ‘Edit’ 
+</li><li>Update the status from ‘pending’ to ‘exported ok’ 
+</li><li>Add any notes if required. 
+</li></ol>
+<p><br />
+The ‘create’ action flags the relevant transactions as exported and will not be duplicated in any subsequent ‘create’ actions.
+<br />
+Copies of exported files can be re-created anytime by using the search icon and selecting the relevant file.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;action=edit&amp;section=3" title="Edit section: BPAY file layout with mappings to Catch-e fields">edit</a>]</div><a name="BPAY_file_layout_with_mappings_to_Catch-e_fields"></a><h4>BPAY file layout with mappings to Catch-e fields</h4>
+<p>The highlighted fields are either mandatory or optional.  All other fields are for future use and are required to be empty.
+</p>
+<table class="catch-e" style="border-collapse: collapse; width: 100%;">
+<tr>
+<th>Field No</th><th>Field Name</th><th>Length</th><th>Format</th><th>Mandatory</th><th>Description</th><th>[table]field mapping to Catch-e
+</th></tr>
+<tr>
+<td> </td><td><b>Header</b></td><td> </td><td> </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>1</td><td style="background:#00CCFF"> Record Type</td><td>2</td><td>N</td><td>Yes</td><td>"01"</td><td>
+</td></tr>
+<tr>
+<td>2</td><td style="background:#00CCFF">File Creation Date</td><td>8</td><td>N</td><td></td><td>YYYYMMDD - the date the file was created.</td><td>[gb_bpay]created FORMATTED
+</td></tr>
+<tr>
+<td>3</td><td style="background:#00CCFF">File Creation Time</td><td>6</td><td>N</td><td></td><td>HHMMSS - the time the file was created.</td><td>[gb_bpay]created FORMATTED
+</td></tr>
+<tr>
+<td>4</td><td style="background:#00CCFF">File Number</td><td>3</td><td>N</td><td></td><td>Sequential number of file. Could commence at '001' each day.</td><td>[gb_bpay]bpay_id
+</td></tr>
+<tr>
+<td>5</td><td style="background:#00CCFF">Payment Account</td><td>20</td><td>N</td><td>Yes</td><td>The account number of the funding account.</td><td>[gb_controls]bank_accounts "becs" - "bsb""account_number"
+</td></tr>
+<tr>
+<td>6</td><td style="background:#00CCFF">Payment Date</td><td>8</td><td>N</td><td>Yes</td><td>YYYYMMDD - the date on which the payments are to be made. Can be up to 15 months into the future from the lodgement date. If left blank, will default to the date the file is submitted.</td><td>[gb_bpay]created FORMATTED
+</td></tr>
+<tr>
+<td>7</td><td style="background:#00CCFF">Number of Payment Records</td><td>6</td><td>N</td><td>Yes</td><td>The number of payments in the file.</td><td>[gb_bpay]control_invoice_count(should be the same as item_count)
+</td></tr>
+<tr>
+<td>8</td><td style="background:#00CCFF">Total Amount of Payments</td><td>12</td><td>N</td><td>Yes</td><td>The total amount of payments in the file, in cents.</td><td>[gb_bpay]control_total
+</td></tr>
+<tr>
+<td style="font-size:1%"> - </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td> </td><td><b> Payment Details </b> </td><td> </td><td> </td><td> </td><td> </td><td>
+</td></tr>
+<tr>
+<td>1</td><td style="background:#00CCFF">Record Type</td><td> 2 </td><td> N </td><td> Yes </td><td> "50" </td><td>
+</td></tr>
+<tr>
+<td>2</td><td>Payment Instruction Type </td><td> 2 </td><td> N </td><td> </td><td> empty </td><td>
+</td></tr>
+<tr>
+<td>3</td><td>BPAY Transaction Type</td><td> 1 </td><td> N </td><td> </td><td> empty </td><td>
+</td></tr>
+<tr>
+<td>4</td><td>Payer Institution Code</td><td>3</td><td> A </td><td> </td><td> empty </td><td>
+</td></tr>
+<tr>
+<td>5</td><td>Payment Account Detail</td><td>20</td><td>AN</td><td> </td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>6</td><td>Country of Payment</td><td>3</td><td>A</td><td> </td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>7</td><td>State of Payment</td><td>3</td><td>A</td><td> </td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>8</td><td>Currency Code of Payment</td><td>3</td><td>A</td><td> </td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>9</td><td style="background:#00CCFF">Biller Code</td><td>10</td><td>N</td><td>Yes</td><td>The BPay Biller Code of the beneficiary of the payment.</td><td>[gl_batches]bpay_biller_code
+</td></tr>
+<tr>
+<td>10</td><td>Service Code</td><td>7</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>11</td><td style="background:#00CCFF">Customer Reference Number</td><td>20</td><td>N</td><td>Yes</td><td>The account number, reference number, etc of the account that is being paid.</td><td>[fm_maintenance]invoice_no
+</td></tr>
+<tr>
+<td>12</td><td>Number Method</td><td>3</td><td>N</td><td> </td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>13</td><td>Entry Method</td><td>3</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>14</td><td style="background:#00CCFF">Amount</td><td>12</td><td>N</td><td>Yes</td><td>The amount of the payment, in cents.</td><td>[fm_maintenance]total_cost+gst_cost
+</td></tr>
+<tr>
+<td>15</td><td>Transaction Reference</td><td>21</td><td>AN</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>16</td><td>Number Reference</td><td>21</td><td>AN</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>17</td><td>BPAY Settlement Date</td><td>8</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>18</td><td>Date Payment Accepted</td><td>8</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>19</td><td>Time Payment Accepted</td><td>6</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>20</td><td>Payer Name</td><td>40</td><td>A</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>21</td><td>Additional Reference</td><td>20</td><td>A</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>22</td><td>Code Correction Reason</td><td>3</td><td>N</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>23</td><td>Discount Method</td><td>3</td><td>A</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>24</td><td>Discount Reference</td><td>20</td><td>A</td><td></td><td>empty</td><td>
+</td></tr>
+<tr>
+<td>25</td><td>Discretionary Data</td><td>50</td><td>A</td><td></td><td>empty</td><td>
+</td></tr>
+</table>
+<p><br /><br />
+</p><p>Click <a href="https://help.catch-e.net.au/clients/help/wiki/images/2/23/Bpay_to_catch_e_mapping.pdf" class='internal' title="Bpay to catch e mapping.pdf">here</a> for pdf version.
+<br /><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;action=edit&amp;section=4" title="Edit section: Useful Queries">edit</a>]</div><a name="Useful_Queries"></a><h4>Useful Queries</h4>
+<pre>
+select c.contract_id, pm.posting_map_group, c.company_id, m.maintenance_id, m.batch_no, m.item_no, bi.bpay_flag, bi.bpay_biller_code, t.bpay_id
+from fm_maintenance as m
+inner join fm_contracts as c on c.contract_id = m.contract_id
+inner join gl_posting_maps as pm on pm.posting_map_id = c.posting_map_id 
+inner join gl_batch_items as bi on bi.record_id = m.maintenance_id
+inner join gl_transactions as t on t.batch_no = m.batch_no and t.item_no = m.item_no
+group by m.maintenance_id
+order by maintenance_id desc
+limit 4
+;
+</pre>
+<p><br />
+</p>
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;action=edit&amp;section=5" title="Edit section: System Notes">edit</a>]</div><a name="System_Notes"></a><h4>System Notes</h4>
+<p><small>
+</p>
+<ul><li> 11050: BPAY Registrations. Live 14/04/2016
+</li><li> (DEV-21592) Update [gb_bpay] table - add fields. Live 21/02/2022
+</li></ul>
+<p></small>
+</p>
+<!-- Saved in parser cache with key help_catch_e_net_au:pcache:idhash:2386-0!1!0!0!!en!2 and timestamp 20251120045514 -->
+<div class="printfooter">
+Retrieved from "<a href="General_Ledger_Export_To_BPAY.html">https://help.catch-e.net.au/mediawiki/index.php/General_Ledger_Export_To_BPAY</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=Special:Userlogin&amp;returnto=General_Ledger_Export_To_BPAY">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(../../clients/help/wiki/common/images/logo.gif);" href="Main_Page.html" title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="./Special:Search.html" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="./Special:Whatlinkshere/General_Ledger_Export_To_BPAY.html">What links here</a></li>
+				<li id="t-print"><a href="https://help.catch-e.net.au/mediawiki/index.php?title=General_Ledger_Export_To_BPAY&amp;printable=yes">Printable version</a></li>			</ul>
+		</div>
+	</div>
+
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+&copy; 2025 Catch-e Pty Ltd			<ul id="f-list">
+				<li id="privacy"><a href="./Help_wiki:Privacy_policy.html" title="Help wiki:Privacy policy">Privacy policy</a></li>
+				<li id="disclaimer"><a href="./Help_wiki:General_disclaimer.html" title="Help wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by 521efbccd3b4 in 0.03 secs. -->
+</body></html>
